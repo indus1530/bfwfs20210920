@@ -38,7 +38,6 @@ public class SectionC1Activity extends AppCompatActivity {
         bi.setForm(form);
         form.setC100Name(MainApp.child.getH229());
         form.setCuid(MainApp.child.getUid());
-        setupSkips();
 
         bi.c102.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -47,61 +46,6 @@ public class SectionC1Activity extends AppCompatActivity {
             }
         });
 
-    }
-
-
-    private void setupSkips() {
-    /*    rgLsnr(bi.c101, bi.c101b, new ViewGroup[]{bi.fldGrpCVc102});
-        rgLsnr(bi.c106b, bi.c106bb, bi.c106b98, new ViewGroup[]{bi.fldGrpCVc106c});
-        rgLsnr(bi.c106d, bi.c106db, bi.c106d98, new ViewGroup[]{bi.fldGrpCVc106e, bi.fldGrpCVc106f});
-        rgLsnr(bi.c106g, bi.c106gb, bi.c106g98, new ViewGroup[]{bi.fldGrpCVc106h, bi.fldGrpCVc106i});
-        rgLsnr(bi.c106m, bi.c106mb, bi.c106m98, new ViewGroup[]{bi.fldGrpCVc106n});
-        rgLsnr(bi.c106p, bi.c106pb, bi.c106p98, new ViewGroup[]{bi.fldGrpCVc106q});
-        rgLsnr(bi.c107a, bi.c107ab, bi.c107a98, new ViewGroup[]{bi.fldGrpCVc107bt});*/
-        /*rgrps(bi.c107a);
-        rgrps(bi.c107c);
-        rgrps(bi.c107d);
-        rgrps(bi.c107e);
-        rgrps(bi.c107f);
-        rgrps(bi.c107g);
-        rgrps(bi.c107h);
-        rgrps(bi.c107i);
-        rgrps(bi.c107j);
-        rgrps(bi.c107k);
-        rgrps(bi.c107l);
-        rgrps(bi.c107m);
-        rgrps(bi.c107n);
-        rgrps(bi.c107o);
-        rgrps(bi.c107p);
-        rgrps(bi.c107q);
-        rgrps(bi.c107r);*/
-    }
-
-    private void rgrps(RadioGroup rg) {
-        rg.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (bi.c107aa.isChecked()
-                    || bi.c107ca.isChecked()
-                    || bi.c107da.isChecked()
-                    || bi.c107ea.isChecked()
-                    || bi.c107fa.isChecked()
-                    || bi.c107ga.isChecked()
-                    || bi.c107ha.isChecked()
-                    || bi.c107ia.isChecked()
-                    || bi.c107ja.isChecked()
-                    || bi.c107ka.isChecked()
-                    || bi.c107la.isChecked()
-                    || bi.c107ma.isChecked()
-                    || bi.c107na.isChecked()
-                    || bi.c107oa.isChecked()
-                    || bi.c107pa.isChecked()
-                    || bi.c107qa.isChecked()
-                    || bi.c107ra.isChecked()) {
-                form.setC107s("");
-                bi.fldGrpCVc107st.setVisibility(View.GONE);
-            } else {
-                bi.fldGrpCVc107st.setVisibility(View.VISIBLE);
-            }
-        });
     }
 
 
@@ -368,19 +312,12 @@ public class SectionC1Activity extends AppCompatActivity {
         return true;
     }
 
+
     @Override
     public void onBackPressed() {
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
-
-
-/*
-    @Override
-    public void onBackPressed() {
-        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-    }
-*/
 
 
 }

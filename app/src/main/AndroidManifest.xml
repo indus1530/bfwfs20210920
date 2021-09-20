@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="edu.aku.hassannaqvi.bfwfs20210920">
 
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -12,10 +14,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
-
     <application
-        android:name="edu.aku.hassannaqvi.bfwfs20210920.core.MainApp"
+        android:name=".core.MainApp"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/app_icon"
@@ -28,25 +28,28 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup">
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.lists.MwraListActivity"
+            android:name=".ui.sections.SectionA1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.lists.MwraListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.lists.ChildListActivity"
+            android:name=".ui.lists.ChildListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.lists.PregnancyListActivity"
+            android:name=".ui.lists.PregnancyListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.IdentificationActivity"
+            android:name=".ui.IdentificationActivity"
             android:label="@string/sech1title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.LoginActivity"
+            android:name=".ui.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.splashscreen"
             android:windowSoftInputMode="adjustResize|stateHidden">
@@ -57,161 +60,160 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH1Activity"
+            android:name=".ui.sections.SectionH1Activity"
             android:label="@string/sech1title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2aActivity"
+            android:name=".ui.sections.SectionH2aActivity"
             android:label="@string/sech2title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2bActivity"
+            android:name=".ui.sections.SectionH2bActivity"
             android:label="@string/sech2title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2cActivity"
+            android:name=".ui.sections.SectionH2cActivity"
             android:label="@string/sech2ctitle2"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2dActivity"
+            android:name=".ui.sections.SectionH2dActivity"
             android:label="@string/sech2dtitle"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH3aActivity"
+            android:name=".ui.sections.SectionH3aActivity"
             android:label="@string/sech3title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH3bActivity"
+            android:name=".ui.sections.SectionH3bActivity"
             android:label="@string/sech3title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH4Activity"
+            android:name=".ui.sections.SectionH4Activity"
             android:label="@string/sech4title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH5Activity"
+            android:name=".ui.sections.SectionH5Activity"
             android:label="@string/sech5title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH6Activity"
+            android:name=".ui.sections.SectionH6Activity"
             android:label="@string/sech6title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH7Activity"
+            android:name=".ui.sections.SectionH7Activity"
             android:label="@string/sech7title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionW1aActivity"
+            android:name=".ui.sections.SectionW1aActivity"
             android:label="@string/secw1title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionW1bActivity"
+            android:name=".ui.sections.SectionW1bActivity"
             android:label="@string/secw1atitle"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionW2Activity"
+            android:name=".ui.sections.SectionW2Activity"
             android:label="@string/secw2title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionW3Activity"
+            android:name=".ui.sections.SectionW3Activity"
             android:label="@string/secw3title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionW4Activity"
+            android:name=".ui.sections.SectionW4Activity"
             android:label="@string/secw4title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionC1Activity"
+            android:name=".ui.sections.SectionC1Activity"
             android:label="@string/secc1title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionC2Activity"
+            android:name=".ui.sections.SectionC2Activity"
             android:label="@string/secc2title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionC3Activity"
+            android:name=".ui.sections.SectionC3Activity"
             android:label="@string/secc3title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionAnthroActivity"
+            android:name=".ui.sections.SectionAnthroActivity"
             android:label="@string/moddtitle"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionSamplesActivity"
+            android:name=".ui.sections.SectionSamplesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.SyncActivity"
+            android:name=".ui.SyncActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.MainActivity"
+            android:name=".MainActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.EndingActivity"
+            android:name=".ui.EndingActivity"
             android:label="@string/istatus"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.TakePhoto"
+            android:name=".ui.TakePhoto"
             android:hardwareAccelerated="true"
             android:label="@string/app_name"
-
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.database.AndroidDatabaseManager"
+            android:name=".database.AndroidDatabaseManager"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.lists.FormsReportCluster"
+            android:name=".ui.lists.FormsReportCluster"
             android:exported="false"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.bfwfs20210920.ui.lists.FormsReportDate"
+            android:name=".ui.lists.FormsReportDate"
             android:exported="false"
             android:label="Forms Report"
             android:screenOrientation="portrait"
