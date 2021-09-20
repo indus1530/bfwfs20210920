@@ -35,7 +35,7 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:subtitle="@string/secta"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/modeatitle"
+            app:title="@string/modatitle"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
 
 
@@ -71,7 +71,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a101t  Title   -->
+                <!-- a101t DatePicker -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa101t"
                     style="@style/cardView">
