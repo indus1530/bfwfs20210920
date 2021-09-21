@@ -19,20 +19,20 @@ import edu.aku.hassannaqvi.bfwfs20210920.R;
 import edu.aku.hassannaqvi.bfwfs20210920.contracts.TableContracts;
 import edu.aku.hassannaqvi.bfwfs20210920.core.MainApp;
 import edu.aku.hassannaqvi.bfwfs20210920.database.DatabaseHelper;
-import edu.aku.hassannaqvi.bfwfs20210920.databinding.ActivitySectionA1Binding;
+import edu.aku.hassannaqvi.bfwfs20210920.databinding.ActivitySectionB1Binding;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.EndingActivity;
 
 
-public class SectionA1Activity extends AppCompatActivity {
-    private static final String TAG = "SectionA1Activity";
-    ActivitySectionA1Binding bi;
+public class SectionB1Activity extends AppCompatActivity {
+    private static final String TAG = "SectionB1Activity";
+    ActivitySectionB1Binding bi;
     private DatabaseHelper db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b1);
         bi.setCallback(this);
         bi.setForm(form);
 
