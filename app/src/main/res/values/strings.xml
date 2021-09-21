@@ -3625,8 +3625,8 @@
     <string name="c20608">No benefits</string>
     <string name="c20698">Don’t Know</string>
     <string name="c20696">Other specify</string>
-    <string name="module f">HOUSEHOLD DOOD INSECURITY, DIETARY DIVERSITY AND SOURCE ASSESSMENT</string>
-    <string name="section f1">HOUSEHOLD DOOD INSECURITY EXPERIENCE SCALE</string>
+    <string name="modulef">HOUSEHOLD DOOD INSECURITY, DIETARY DIVERSITY AND SOURCE ASSESSMENT</string>
+    <string name="sectionf1">HOUSEHOLD DOOD INSECURITY EXPERIENCE SCALE</string>
     <string name="ins">THIS SECTION WILL BE DILLED WITH INDEX MOTHER</string>
     <string name="f101">You or others in your household worried about not having enough food to eat because of a lack of money or other resources</string>
     <string name="f10101">Yes</string>
@@ -3767,7 +3767,7 @@
     <string name="d10716">Own wheat grinded</string>
     <string name="d10798">Don’t Know</string>
     <string name="d10796">Other specify</string>
-    <string name="section f2">Food Consumption                                                                                          </string>
+    <string name="sectionf2">Food Consumption                                                                                          </string>
     <string name="f201">Yesterday, how many meals were eaten by adults?</string>
     <string name="f202">How does this compare to usual for the adults?</string>
     <string name="f20201">Less</string>
@@ -3778,7 +3778,7 @@
     <string name="f20401">Less</string>
     <string name="f20402">Same</string>
     <string name="f20403">More</string>
-    <string name="section f3">HOUSEHOLD DIETARY DIVERSITY AND SOURCE ASSESMENT </string>
+    <string name="sectionf3">HOUSEHOLD DIETARY DIVERSITY AND SOURCE ASSESMENT </string>
     <string name="f301">foods made from grains (bread, wheat, rice, maize, etc</string>
     <string name="f30101">Not Consumed </string>
     <string name="f30102">own production</string>
@@ -4038,8 +4038,8 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="g20102">Goat milk</string>
     <string name="g20103">Buffalo milk</string>
     <string name="g20104">Tetra pack</string>
-    <string name="g20105">Don't drink milk</string>
-    <string name="g20106">Don't know</string>
+    <string name="g20105">Don\'t drink milk</string>
+    <string name="g20106">Don\'t know</string>
     <string name="g202">White milk (glass or with cereal)</string>
     <string name="g20201">1 glass per day  </string>
     <string name="g20202">2-3 glasses per </string>
@@ -4158,7 +4158,7 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="g21004">Vegetable oil</string>
     <string name="g21005">Safflower oil</string>
     <string name="g21006">Sunflower oil</string>
-    <string name="g21007">Don't know</string>
+    <string name="g21007">Don\'t know</string>
     <string name="sectiong3">DAST DOOD/JUNK DOOD/SNACKS</string>
     <string name="g301">Sweets (cake, pastries)</string>
     <string name="g30101">At home </string>
@@ -5004,7 +5004,7 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name='Q_ins'>ins</string>
     <string name='Q_modatitle'>modatitle</string>
     <string name='Q_modctitle'>modctitle</string>
-    <string name='Q_module f'>module f</string>
+    <string name='Q_modulef'>module f</string>
     <string name='Q_moduleb'>moduleb</string>
     <string name='Q_modulee'>modulee</string>
     <string name='Q_moduleg'>moduleg</string>
@@ -5012,9 +5012,9 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name='Q_seca3'>seca3</string>
     <string name='Q_secta'>secta</string>
     <string name='Q_secta2'>secta2</string>
-    <string name='Q_section f1'>section f1</string>
-    <string name='Q_section f2'>section f2</string>
-    <string name='Q_section f3'>section f3</string>
+    <string name='Q_sectionf1'>section f1</string>
+    <string name='Q_sectionf2'>section f2</string>
+    <string name='Q_sectionf3'>section f3</string>
     <string name='Q_sectionb1'>sectionb1</string>
     <string name='Q_sectiong1'>sectiong1</string>
     <string name='Q_sectiong2'>sectiong2</string>
