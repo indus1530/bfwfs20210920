@@ -8,11 +8,11 @@
 
         <variable
             name="form"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Form" />
+            type="foodfortificationsurvey.models.Form" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionB1Activity" />
+            type="foodfortificationsurvey.ui.sections.SectionB1Activity" />
 
     </data>
 

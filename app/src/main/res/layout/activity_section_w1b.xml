@@ -8,11 +8,11 @@
 
         <variable
             name="preg"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Pregnancy" />
+            type="foodfortificationsurvey.models.Pregnancy" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionW1bActivity" />
+            type="foodfortificationsurvey.ui.sections.SectionW1bActivity" />
 
     </data>
 

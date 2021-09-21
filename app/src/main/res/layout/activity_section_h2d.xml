@@ -7,11 +7,11 @@
 
         <variable
             name="child"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Child" />
+            type="foodfortificationsurvey.models.Child" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2dActivity" />
+            type="foodfortificationsurvey.ui.sections.SectionH2dActivity" />
 
     </data>
 

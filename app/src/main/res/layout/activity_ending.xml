@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="edu.aku.hassannaqvi.bfwfs20210920.ui.EndingActivity">
+    tools:context="foodfortificationsurvey.ui.EndingActivity">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="form"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Form" />
+            type="foodfortificationsurvey.models.Form" />
     </data>
 
 

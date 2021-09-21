@@ -8,11 +8,11 @@
 
         <variable
             name="anthro"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Anthro" />
+            type="foodfortificationsurvey.models.Anthro" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionAnthroActivity" />
+            type="foodfortificationsurvey.ui.sections.SectionAnthroActivity" />
 
     </data>
 
