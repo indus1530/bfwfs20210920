@@ -28,6 +28,7 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup">
 
+
         <activity
             android:name=".ui.lists.MwraListActivity"
             android:screenOrientation="portrait"
@@ -149,6 +150,12 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.sections.SectionG5Activity"
+            android:label="@string/secc3title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.sections.SectionG6Activity"
             android:label="@string/secc3title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
