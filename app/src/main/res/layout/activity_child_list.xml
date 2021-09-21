@@ -9,11 +9,11 @@
 
         <variable
             name="mwra"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.MWRA" />
+            type="foodfortificationsurvey.models.MWRA" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.lists.ChildListActivity" />
+            type="foodfortificationsurvey.ui.lists.ChildListActivity" />
     </data>
 
 

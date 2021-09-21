@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.SyncActivity" />
+            type="foodfortificationsurvey.ui.SyncActivity" />
     </data>
 
     <ScrollView

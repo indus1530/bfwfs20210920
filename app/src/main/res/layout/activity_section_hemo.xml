@@ -8,11 +8,11 @@
 
         <variable
             name="blood"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Blood" />
+            type="foodfortificationsurvey.models.Blood" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionHemoActivity" />
+            type="foodfortificationsurvey.ui.sections.SectionHemoActivity" />
 
     </data>
 

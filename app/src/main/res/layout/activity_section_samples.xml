@@ -8,11 +8,11 @@
 
         <variable
             name="samples"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.Samples" />
+            type="foodfortificationsurvey.models.Samples" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionSamplesActivity" />
+            type="foodfortificationsurvey.ui.sections.SectionSamplesActivity" />
 
     </data>
 

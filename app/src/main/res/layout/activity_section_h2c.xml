@@ -8,11 +8,11 @@
 
         <variable
             name="mwra"
-            type="edu.aku.hassannaqvi.bfwfs20210920.models.MWRA" />
+            type="foodfortificationsurvey.models.MWRA" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2cActivity" />
+            type="foodfortificationsurvey.ui.sections.SectionH2cActivity" />
 
     </data>
 
