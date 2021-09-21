@@ -33,7 +33,7 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/ToolbarTheme"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:subtitle="@string/sectiong1"
+            app:subtitle="@string/sectiong2"
             app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
             app:title="@string/moduleg"
             app:titleTextAppearance="@style/Toolbar.TitleText" />
@@ -51,22 +51,7 @@
                 android:orientation="vertical">
 
 
-                <!-- sectiong2  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVsectiong2"
-                    style="@style/cardView">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/sectiong2" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- g201  Radio   -->
                 <androidx.cardview.widget.CardView
