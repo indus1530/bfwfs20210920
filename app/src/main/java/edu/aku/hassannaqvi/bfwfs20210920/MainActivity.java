@@ -21,7 +21,7 @@ import edu.aku.hassannaqvi.bfwfs20210920.ui.lists.FormsReportDate;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionC1Activity;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionC2Activity;
-import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionC3Activity;
+import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionD1Activity;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH1Activity;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2aActivity;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.sections.SectionH2bActivity;
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.secc3:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionC3Activity.class));
+                startActivity(new Intent(this, SectionD1Activity.class));
                 break;
             case R.id.dbManager:
                 startActivity(new Intent(this, AndroidDatabaseManager.class));

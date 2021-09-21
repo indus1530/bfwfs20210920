@@ -19,22 +19,23 @@ import edu.aku.hassannaqvi.bfwfs20210920.R;
 import edu.aku.hassannaqvi.bfwfs20210920.contracts.TableContracts;
 import edu.aku.hassannaqvi.bfwfs20210920.core.MainApp;
 import edu.aku.hassannaqvi.bfwfs20210920.database.DatabaseHelper;
-import edu.aku.hassannaqvi.bfwfs20210920.databinding.ActivitySectionC3Binding;
+import edu.aku.hassannaqvi.bfwfs20210920.databinding.ActivitySectionD1Binding;
 import edu.aku.hassannaqvi.bfwfs20210920.ui.EndingActivity;
 
 
-public class SectionC3Activity extends AppCompatActivity {
-    private static final String TAG = "SectionC3Activity";
-    ActivitySectionC3Binding bi;
+public class SectionD1Activity extends AppCompatActivity {
+    private static final String TAG = "SectionD1Activity";
+    ActivitySectionD1Binding bi;
     private DatabaseHelper db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c3);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d1);
         bi.setCallback(this);
         bi.setForm(form);
+
     }
 
 
@@ -42,7 +43,7 @@ public class SectionC3Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SC3, form.sC3toString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SC1, form.sC1toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db_form + e.getMessage());
@@ -81,11 +82,6 @@ public class SectionC3Activity extends AppCompatActivity {
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
-
-   /* @Override
-    public void onBackPressed() {
-        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-    }*/
 
 
 }

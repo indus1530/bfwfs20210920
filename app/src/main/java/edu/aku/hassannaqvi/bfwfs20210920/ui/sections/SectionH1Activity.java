@@ -223,7 +223,7 @@ public class SectionH1Activity extends AppCompatActivity {
                 Log.d(TAG, "onOptionsItemSelected: C3 " + form.getC301().equals(""));
                 if (!form.getC301().equals("")) {
                     finish();
-                    startActivity(new Intent(this, SectionC3Activity.class));
+                    startActivity(new Intent(this, SectionD1Activity.class));
                 } else {
                     Toast.makeText(this, R.string.sec_not_available_moment, Toast.LENGTH_LONG).show();
                 }
