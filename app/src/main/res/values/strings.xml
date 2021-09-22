@@ -3642,10 +3642,10 @@
     <string name="f10302">No</string>
     <string name="f10303">Don’t Know </string>
     <string name="f10399">Refused</string>
-    <string name="f104">How often did this happen?       </string>
-    <string name="f10401">Rarely (once or twice in the past four weeks)</string>
-    <string name="f10401">Sometimes (three to ten times in the past four weeks)</string>
-    <string name="f10401">Often (more than ten times in the past four weeks)</string>
+    <string name="f104"> How often did this happen ? </string>
+    <string name="f104a"> Rarely (once or twice in the past four weeks) </string>
+    <string name="f104b"> Sometimes (three to ten times in the past four weeks) </string>
+    <string name="f104c"> Often (more than ten times in the past four weeks) </string>
     <string name="f105">Was there a time when you or others in your household ate only a few kinds of foods because of lack of money or other resources?</string>
     <string name="f10501">Yes</string>
     <string name="f10502">No</string>

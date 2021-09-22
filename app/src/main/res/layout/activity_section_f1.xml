@@ -8,11 +8,11 @@
 
         <variable
             name="form"
-            type="foodfortificationsurvey.models.Form" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.Form" />
 
         <variable
             name="callback"
-            type="foodfortificationsurvey.ui.sections.SectionF1Activity" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionF1Activity" />
 
     </data>
 
@@ -290,10 +290,10 @@
                                 android:text="@string/Q_f104" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f104" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -302,31 +302,35 @@
                             android:layout_height="wrap_content">
 
                             <RadioButton
-                                android:id="@+id/f10401"
+                                android:id="@+id/f104a"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.f104.equals(`1`)}"
                                 android:onClick="@{()->form.setF104(`1`)}"
-                                android:text="@string/f10401" />
+                                android:text="@string/f104a" />
 
                             <RadioButton
-                                android:id="@+id/f10401"
+                                android:id="@+id/f104b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.f104.equals(`2`)}"
                                 android:onClick="@{()->form.setF104(`2`)}"
-                                android:text="@string/f10401" />
+                                android:text="@string/f104b" />
 
                             <RadioButton
-                                android:id="@+id/f10401"
+                                android:id="@+id/f104c"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.f104.equals(`3`)}"
                                 android:onClick="@{()->form.setF104(`3`)}"
-                                android:text="@string/f10401" />
+                                android:text="@string/f104c" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f105  Radio   -->
                 <androidx.cardview.widget.CardView

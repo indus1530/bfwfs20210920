@@ -8,11 +8,11 @@
 
         <variable
             name="form"
-            type="foodfortificationsurvey.models.Form" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.Form" />
 
         <variable
             name="callback"
-            type="foodfortificationsurvey.ui.sections.SectionG3Activity" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG3Activity" />
 
     </data>
 
@@ -62,10 +62,13 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/labelsHead"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/g301" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- g30101  Radio   -->
@@ -222,6 +225,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+
                 <!-- g30103  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg30103"
@@ -295,9 +299,13 @@
                                 android:checked="@{form.g30103.equals(`5`)}"
                                 android:onClick="@{()->form.setG30103(`5`)}"
                                 android:text="@string/g30103e" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- g302  Title   -->
                 <androidx.cardview.widget.CardView
@@ -310,11 +318,15 @@
                         android:orientation="vertical">
 
                         <TextView
+                            style="@style/labelsHead"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/g302" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- g30201  Radio   -->
                 <androidx.cardview.widget.CardView

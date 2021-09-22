@@ -31,7 +31,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMwraListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.MWRA;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionH2cActivity;
 
 
 public class MwraListActivity extends AppCompatActivity {

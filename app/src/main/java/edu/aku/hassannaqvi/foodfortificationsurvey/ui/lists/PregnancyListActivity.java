@@ -26,8 +26,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityPregnancyListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Pregnancy;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionW1bActivity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionW2Activity;
 
 
 public class PregnancyListActivity extends AppCompatActivity {

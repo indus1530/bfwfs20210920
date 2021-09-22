@@ -10,7 +10,7 @@
 
         <variable
             name="form"
-            type="foodfortificationsurvey.models.Form" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.Form" />
     </data>
 
 

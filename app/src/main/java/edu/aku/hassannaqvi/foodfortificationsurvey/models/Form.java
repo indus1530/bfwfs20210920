@@ -12,9 +12,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.BR;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
+import foodfortificationsurvey.BR;
+
 
 public class Form extends BaseObservable implements Observable {
 
@@ -25,8 +26,6 @@ public class Form extends BaseObservable implements Observable {
     // APP VARIABLES
     private String id = StringUtils.EMPTY;
     private String uid = StringUtils.EMPTY;
-    private String wuid = StringUtils.EMPTY;
-    private String cuid = StringUtils.EMPTY;
     private String userName = StringUtils.EMPTY;
     private String sysDate = StringUtils.EMPTY;
     private String cluster = StringUtils.EMPTY;
@@ -39,26 +38,27 @@ public class Form extends BaseObservable implements Observable {
     private String iStatus96x = StringUtils.EMPTY;
     private String synced = StringUtils.EMPTY;
     private String syncDate = StringUtils.EMPTY;
+
+
     // SECTION VARIABLES
-    private String sH1 = StringUtils.EMPTY;
-    //private String sH2a = StringUtils.EMPTY;
-    private String sH2b = StringUtils.EMPTY;
-    /*    private String sH2c = StringUtils.EMPTY;
-        private String sH2d = StringUtils.EMPTY;*/
-    private String sH3a = StringUtils.EMPTY;
-    private String sH3b = StringUtils.EMPTY;
-    private String sH4 = StringUtils.EMPTY;
-    private String sH5 = StringUtils.EMPTY;
-    private String sH6 = StringUtils.EMPTY;
-    private String sH7 = StringUtils.EMPTY;
-    private String sW1a = StringUtils.EMPTY;
-    //private String sW1b = StringUtils.EMPTY;
-    private String sW2 = StringUtils.EMPTY;
-    private String sW3 = StringUtils.EMPTY;
-    private String sW4 = StringUtils.EMPTY;
+    private String sA1 = StringUtils.EMPTY;
+    private String sA2 = StringUtils.EMPTY;
+    private String sA3 = StringUtils.EMPTY;
+    private String sB1 = StringUtils.EMPTY;
     private String sC1 = StringUtils.EMPTY;
     private String sC2 = StringUtils.EMPTY;
-    private String sC3 = StringUtils.EMPTY;
+    private String sD1 = StringUtils.EMPTY;
+    private String sE1 = StringUtils.EMPTY;
+    private String sF1 = StringUtils.EMPTY;
+    private String sF2 = StringUtils.EMPTY;
+    private String sF3 = StringUtils.EMPTY;
+    private String sG1 = StringUtils.EMPTY;
+    private String sG2 = StringUtils.EMPTY;
+    private String sG3 = StringUtils.EMPTY;
+    private String sG4 = StringUtils.EMPTY;
+    private String sG5 = StringUtils.EMPTY;
+    private String sG6 = StringUtils.EMPTY;
+    private String sG7 = StringUtils.EMPTY;
 
 
     // FIELD VARIABLES
@@ -308,24 +308,6 @@ public class Form extends BaseObservable implements Observable {
     private String c205 = StringUtils.EMPTY;
     private String c206 = StringUtils.EMPTY;
     private String c20696x = StringUtils.EMPTY;
-    private String f101 = StringUtils.EMPTY;
-    private String f102 = StringUtils.EMPTY;
-    private String f103 = StringUtils.EMPTY;
-    private String f104 = StringUtils.EMPTY;
-    private String f105 = StringUtils.EMPTY;
-    private String f106 = StringUtils.EMPTY;
-    private String f107 = StringUtils.EMPTY;
-    private String f108 = StringUtils.EMPTY;
-    private String f109 = StringUtils.EMPTY;
-    private String f110 = StringUtils.EMPTY;
-    private String f111 = StringUtils.EMPTY;
-    private String f112 = StringUtils.EMPTY;
-    private String f113 = StringUtils.EMPTY;
-    private String f114 = StringUtils.EMPTY;
-    private String f115 = StringUtils.EMPTY;
-    private String f116 = StringUtils.EMPTY;
-    private String f117 = StringUtils.EMPTY;
-    private String f118 = StringUtils.EMPTY;
     private String d101 = StringUtils.EMPTY;
     private String d102 = StringUtils.EMPTY;
     private String d10296x = StringUtils.EMPTY;
@@ -364,6 +346,55 @@ public class Form extends BaseObservable implements Observable {
     private String d10798 = StringUtils.EMPTY;
     private String d10796 = StringUtils.EMPTY;
     private String d10796x = StringUtils.EMPTY;
+    private String e101 = StringUtils.EMPTY;
+    private String e102 = StringUtils.EMPTY;
+    private String e103 = StringUtils.EMPTY;
+    private String e10396x = StringUtils.EMPTY;
+    private String e104 = StringUtils.EMPTY;
+    private String e10401x = StringUtils.EMPTY;
+    private String e10402x = StringUtils.EMPTY;
+    private String e10403x = StringUtils.EMPTY;
+    private String e10404x = StringUtils.EMPTY;
+    private String e105 = StringUtils.EMPTY;
+    private String e10501x = StringUtils.EMPTY;
+    private String e106 = StringUtils.EMPTY;
+    private String e107 = StringUtils.EMPTY;
+    private String e108 = StringUtils.EMPTY;
+    private String e109 = StringUtils.EMPTY;
+    private String e110 = StringUtils.EMPTY;
+    private String e111 = StringUtils.EMPTY;
+    private String e11196x = StringUtils.EMPTY;
+    private String e11201 = StringUtils.EMPTY;
+    private String e11202 = StringUtils.EMPTY;
+    private String e11203 = StringUtils.EMPTY;
+    private String e11204 = StringUtils.EMPTY;
+    private String e11205 = StringUtils.EMPTY;
+    private String e113 = StringUtils.EMPTY;
+    private String e11396x = StringUtils.EMPTY;
+    private String e114 = StringUtils.EMPTY;
+    private String e11501 = StringUtils.EMPTY;
+    private String e11502 = StringUtils.EMPTY;
+    private String e11503 = StringUtils.EMPTY;
+    private String e11504 = StringUtils.EMPTY;
+    private String e11505 = StringUtils.EMPTY;
+    private String f101 = StringUtils.EMPTY;
+    private String f102 = StringUtils.EMPTY;
+    private String f103 = StringUtils.EMPTY;
+    private String f104 = StringUtils.EMPTY;
+    private String f105 = StringUtils.EMPTY;
+    private String f106 = StringUtils.EMPTY;
+    private String f107 = StringUtils.EMPTY;
+    private String f108 = StringUtils.EMPTY;
+    private String f109 = StringUtils.EMPTY;
+    private String f110 = StringUtils.EMPTY;
+    private String f111 = StringUtils.EMPTY;
+    private String f112 = StringUtils.EMPTY;
+    private String f113 = StringUtils.EMPTY;
+    private String f114 = StringUtils.EMPTY;
+    private String f115 = StringUtils.EMPTY;
+    private String f116 = StringUtils.EMPTY;
+    private String f117 = StringUtils.EMPTY;
+    private String f118 = StringUtils.EMPTY;
     private String f201 = StringUtils.EMPTY;
     private String f202 = StringUtils.EMPTY;
     private String f203 = StringUtils.EMPTY;
@@ -467,37 +498,6 @@ public class Form extends BaseObservable implements Observable {
     private String g610 = StringUtils.EMPTY;
     private String g611 = StringUtils.EMPTY;
     private String g701 = StringUtils.EMPTY;
-    private String e101 = StringUtils.EMPTY;
-    private String e102 = StringUtils.EMPTY;
-    private String e103 = StringUtils.EMPTY;
-    private String e10396x = StringUtils.EMPTY;
-    private String e104 = StringUtils.EMPTY;
-    private String e10401x = StringUtils.EMPTY;
-    private String e10402x = StringUtils.EMPTY;
-    private String e10403x = StringUtils.EMPTY;
-    private String e10404x = StringUtils.EMPTY;
-    private String e105 = StringUtils.EMPTY;
-    private String e10501x = StringUtils.EMPTY;
-    private String e106 = StringUtils.EMPTY;
-    private String e107 = StringUtils.EMPTY;
-    private String e108 = StringUtils.EMPTY;
-    private String e109 = StringUtils.EMPTY;
-    private String e110 = StringUtils.EMPTY;
-    private String e111 = StringUtils.EMPTY;
-    private String e11196x = StringUtils.EMPTY;
-    private String e11201 = StringUtils.EMPTY;
-    private String e11202 = StringUtils.EMPTY;
-    private String e11203 = StringUtils.EMPTY;
-    private String e11204 = StringUtils.EMPTY;
-    private String e11205 = StringUtils.EMPTY;
-    private String e113 = StringUtils.EMPTY;
-    private String e11396x = StringUtils.EMPTY;
-    private String e114 = StringUtils.EMPTY;
-    private String e11501 = StringUtils.EMPTY;
-    private String e11502 = StringUtils.EMPTY;
-    private String e11503 = StringUtils.EMPTY;
-    private String e11504 = StringUtils.EMPTY;
-    private String e11505 = StringUtils.EMPTY;
 
 
     public Form() {
@@ -636,111 +636,41 @@ public class Form extends BaseObservable implements Observable {
         this.sH2a = sH2a;
     }*/
 
-    public String getsH1() {
-        return sH1;
+    public String getsA1() {
+        return sA1;
     }
 
-    public void setsH1(String sH1) {
-        this.sH1 = sH1;
-    }
-
-    public String getsH2b() {
-        return sH2b;
-    }
-
-    public void setsH2b(String sH2b) {
-        this.sH2b = sH2b;
-    }
-
-    public String getsH3a() {
-        return sH3a;
-    }
-
-    public void setsH3a(String sH3a) {
-        this.sH3a = sH3a;
-    }
-
-    public String getsH3b() {
-        return sH3b;
-    }
-
-    public void setsH3b(String sH3b) {
-        this.sH3b = sH3b;
-    }
-
-    public String getsH4() {
-        return sH4;
-    }
-
-    public void setsH4(String sH4) {
-        this.sH4 = sH4;
-    }
-
-    public String getsH5() {
-        return sH5;
-    }
-
-    public void setsH5(String sH5) {
-        this.sH5 = sH5;
-    }
-
-    public String getsH6() {
-        return sH6;
-    }
-
-    public void setsH6(String sH6) {
-        this.sH6 = sH6;
-    }
-
-    public String getsH7() {
-        return sH7;
-    }
-
-    public void setsH7(String sH7) {
-        this.sH7 = sH7;
+    public void setsA1(String sA1) {
+        this.sA1 = sA1;
     }
 
 
-
-   /* public String getsW1b() {
-        return sW1b;
+    public String getsA2() {
+        return sA2;
     }
 
-    public void setsW1b(String sW1b) {
-        this.sW1b = sW1b;
-    }*/
-
-    public String getsW1a() {
-        return sW1a;
+    public void setsA2(String sA2) {
+        this.sA2 = sA2;
     }
 
-    public void setsW1a(String sW1a) {
-        this.sW1a = sW1a;
+
+    public String getsA3() {
+        return sA3;
     }
 
-    public String getsW2() {
-        return sW2;
+    public void setsA3(String sA3) {
+        this.sA3 = sA3;
     }
 
-    public void setsW2(String sW2) {
-        this.sW2 = sW2;
+
+    public String getsB1() {
+        return sB1;
     }
 
-    public String getsW3() {
-        return sW3;
+    public void setsB1(String sB1) {
+        this.sB1 = sB1;
     }
 
-    public void setsW3(String sW3) {
-        this.sW3 = sW3;
-    }
-
-    public String getsW4() {
-        return sW4;
-    }
-
-    public void setsW4(String sW4) {
-        this.sW4 = sW4;
-    }
 
     public String getsC1() {
         return sC1;
@@ -750,6 +680,7 @@ public class Form extends BaseObservable implements Observable {
         this.sC1 = sC1;
     }
 
+
     public String getsC2() {
         return sC2;
     }
@@ -758,6258 +689,2493 @@ public class Form extends BaseObservable implements Observable {
         this.sC2 = sC2;
     }
 
-    public String getsC3() {
-        return sC3;
-    }
-
-    public void setsC3(String sC3) {
-        this.sC3 = sC3;
-    }
-
-    @Bindable
-    public String getH101() {
-        return h101;
-    }
-
-    public void setH101(String h101) {
-        this.h101 = h101;
-        notifyPropertyChanged(BR.h101);
-    }
-
-    @Bindable
-    public String getH102() {
-        return h102;
-    }
-
-    public void setH102(String h102) {
-        this.h102 = h102;
-        notifyPropertyChanged(BR.h102);
-    }
-
-    @Bindable
-    public String getH103() {
-        return h103;
-    }
-
-    public void setH103(String h103) {
-        this.h103 = h103;
-        setCluster(h103);
-        notifyPropertyChanged(BR.h103);
-    }
-
-    @Bindable
-    public String getH104() {
-        return h104;
-    }
-
-    public void setH104(String h104) {
-        this.h104 = h104;
-        setHhid(h104);
-        notifyPropertyChanged(BR.h104);
-    }
-
-    @Bindable
-    public String getH105() {
-        return h105;
-    }
-
-    public void setH105(String h105) {
-        this.h105 = h105;
-        notifyPropertyChanged(BR.h105);
-    }
-
-    @Bindable
-    public String getH106() {
-        return h106;
-    }
-
-    public void setH106(String h106) {
-        this.h106 = h106;
-        notifyPropertyChanged(BR.h106);
-    }
-
-/*    @Bindable
-    public String getH107m() {
-        return h107m;
-    }
-
-    public void setH107m(String h107m) {
-        this.h107m = h107m;
-        notifyPropertyChanged(BR.h107m);
-    }*/
-
-    /*  @Bindable
-      public String getH106m() {
-          return h106m;
-      }
-
-      public void setH106m(String h106m) {
-          this.h106m = h106m;
-          notifyPropertyChanged(BR.h106m);
-      }
-
-      @Bindable
-      public String getH106y() {
-          return h106y;
-      }
-
-      public void setH106y(String h106y) {
-          this.h106y = h106y;
-          notifyPropertyChanged(BR.h106y);
-      }
-  */
-    @Bindable
-    public String getH107() {
-        return h107;
-    }
-
-    public void setH107(String h107) {
-        this.h107 = h107;
-        notifyPropertyChanged(BR.h107);
-    }
-
-    @Bindable
-    public String getH108() {
-        return h108;
-    }
-
-    public void setH108(String h108) {
-        this.h108 = h108;
-        notifyPropertyChanged(BR.h108);
-    }
-
-    @Bindable
-    public String getH109() {
-        return h109;
-    }
-
-    public void setH109(String h109) {
-        this.h109 = h109;
-        notifyPropertyChanged(BR.h109);
-    }
-
-    @Bindable
-    public String getH110() {
-        return h110;
-    }
-
-    public void setH110(String h110) {
-        this.h110 = h110;
-        notifyPropertyChanged(BR.h110);
-    }
-
-    @Bindable
-    public String getH111() {
-        return h111;
-    }
-
-    public void setH111(String h111) {
-        this.h111 = h111;
-        setH201(h111.equals("1") ? this.h201 : "");
-        setH202(h111.equals("1") ? this.h202 : "");
-        setH203d(h111.equals("1") ? this.h203d : "");
-        setH203m(h111.equals("1") ? this.h203m : "");
-        setH203y(h111.equals("1") ? this.h203y : "");
-        setH204(h111.equals("1") ? this.h204 : "");
-        setH205(h111.equals("1") ? this.h205 : "");
-        setH206(h111.equals("1") ? this.h206 : "");
-        setH207(h111.equals("1") ? this.h207 : "");
-        setH208(h111.equals("1") ? this.h208 : "");
-        notifyPropertyChanged(BR.h111);
-    }
-
-    @Bindable
-    public String getH112() {
-        return h112;
-    }
-
-    public void setH112(String h112) {
-        this.h112 = h112;
-        notifyPropertyChanged(BR.h112);
-    }
-
-    @Bindable
-    public String getH11296x() {
-        return h11296x;
-    }
-
-    public void setH11296x(String h11296x) {
-        this.h11296x = h11296x;
-        notifyPropertyChanged(BR.h11296x);
-    }
-
-    @Bindable
-    public String getH201() {
-        return h201;
-    }
-
-    public void setH201(String h201) {
-        this.h201 = h201;
-        notifyPropertyChanged(BR.h201);
-    }
-
-    @Bindable
-    public String getH202() {
-        return h202;
-    }
-
-    public void setH202(String h202) {
-        this.h202 = h202;
-        notifyPropertyChanged(BR.h202);
-    }
-
-    @Bindable
-    public String getH203d() {
-        return h203d;
-    }
-
-    public void setH203d(String h203d) {
-        this.h203d = h203d;
-        notifyPropertyChanged(BR.h203d);
-    }
-
-    @Bindable
-    public String getH203m() {
-        return h203m;
-    }
-
-    public void setH203m(String h203m) {
-        this.h203m = h203m;
-        notifyPropertyChanged(BR.h203m);
-    }
-
-    @Bindable
-    public String getH203y() {
-        return h203y;
-    }
-
-    public void setH203y(String h203y) {
-        this.h203y = h203y;
-        notifyPropertyChanged(BR.h203y);
-    }
-
-    @Bindable
-    public String getH204() {
-        return h204;
-    }
-
-    public void setH204(String h204) {
-        this.h204 = h204;
-        notifyPropertyChanged(BR.h204);
-    }
-
-    @Bindable
-    public String getH205() {
-        return h205;
-    }
-
-    public void setH205(String h205) {
-        this.h205 = h205;
-        notifyPropertyChanged(BR.h205);
-    }
-
-    @Bindable
-    public String getH206() {
-        return h206;
-    }
-
-    public void setH206(String h206) {
-        this.h206 = h206;
-        notifyPropertyChanged(BR.h206);
-    }
-
-    @Bindable
-    public String getH207() {
-        return h207;
-    }
-
-    public void setH207(String h207) {
-        this.h207 = h207;
-        notifyPropertyChanged(BR.h207);
-    }
-
-    @Bindable
-    public String getH208() {
-        return h208;
-    }
-
-    public void setH208(String h208) {
-        this.h208 = h208;
-        notifyPropertyChanged(BR.h208);
-    }
-
-    @Bindable
-    public String getH209t() {
-        return h209t;
-    }
-
-    public void setH209t(String h209t) {
-        this.h209t = h209t;
-        notifyPropertyChanged(BR.h209t);
-    }
-
-    @Bindable
-    public String getH209m() {
-        return h209m;
-    }
-
-    public void setH209m(String h209m) {
-        this.h209m = h209m;
-        notifyPropertyChanged(BR.h209m);
-    }
-
-    @Bindable
-    public String getH209f() {
-        return h209f;
-    }
-
-    public void setH209f(String h209f) {
-        this.h209f = h209f;
-        notifyPropertyChanged(BR.h209f);
-    }
-
-    @Bindable
-    public String getH210() {
-        return h210;
-    }
-
-    public void setH210(String h210) {
-        this.h210 = h210;
-      /*  setH211f(h210.equals("1") ? this.h211f : ""); // for all skips, mention all skipped questions
-        setH211m(h210.equals("1") ? this.h211m : ""); // for all skips, mention all skipped questions
-        setH211t(h210.equals("1") ? this.h211f : ""); // for all skips, mention all skipped questions*/
-
-        notifyPropertyChanged(BR.h210);
-    }
-
-    @Bindable
-    public String getH211t() {
-        return h211t;
-    }
-
-    public void setH211t(String h211t) {
-        this.h211t = h211t;
-        calculateTotalMember();
-        notifyPropertyChanged(BR.h211t);
-    }
-
-    @Bindable
-    public String getH211m() {
-        return h211m;
-    }
-
-    public void setH211m(String h211m) {
-        this.h211m = h211m;
-        if (!this.h211m.equals("") && !this.h211f.equals(""))
-            setH211t(String.valueOf(Integer.parseInt(this.h211m) + Integer.parseInt(this.h211f)));
-        notifyPropertyChanged(BR.h211m);
-    }
-
-    @Bindable
-    public String getH211f() {
-        return h211f;
-    }
-
-    public void setH211f(String h211f) {
-        this.h211f = h211f;
-        if (!this.h211m.equals("") && !this.h211f.equals(""))
-            setH211t(String.valueOf(Integer.parseInt(this.h211m) + Integer.parseInt(this.h211f)));
-        notifyPropertyChanged(BR.h211f);
-    }
-
-    @Bindable
-    public String getH212() {
-        return h212;
-    }
-
-    public void setH212(String h212) {
-        this.h212 = h212;
-     /*   setH213f(h212.equals("1") ? this.h213f : ""); // for all skips, mention all skipped questions
-        setH213m(h212.equals("1") ? this.h213m : ""); // for all skips, mention all skipped questions
-        setH213t(h212.equals("1") ? this.h213f : ""); // for all skips, mention all skipped questions*/
-        notifyPropertyChanged(BR.h212);
-    }
-
-    @Bindable
-    public String getH213t() {
-        return h213t;
-    }
-
-    public void setH213t(String h213t) {
-
-        this.h213t = h213t;
-        calculateTotalMember();
-
-        notifyPropertyChanged(BR.h213t);
-    }
-
-    @Bindable
-    public String getH213m() {
-        return h213m;
-    }
-
-    public void setH213m(String h213m) {
-        this.h213m = h213m;
-        if (!this.h213m.equals("") && !this.h213f.equals("")) {
-            setH213t(String.valueOf(Integer.valueOf(this.h213m) + Integer.valueOf(this.h213f)));
-        }
-        notifyPropertyChanged(BR.h213m);
-    }
-
-    @Bindable
-    public String getH213f() {
-        return h213f;
-    }
-
-    public void setH213f(String h213f) {
-        this.h213f = h213f;
-        if (!this.h213m.equals("") && !this.h213f.equals(""))
-            setH213t(String.valueOf(Integer.valueOf(this.h213m) + Integer.valueOf(this.h213f)));
-        notifyPropertyChanged(BR.h213f);
-    }
-
-    @Bindable
-    public String getH214() {
-        return h214;
-    }
-
-    public void setH214(String h214) {
-        this.h214 = h214;
-      /*  setH215f(h214.equals("1") ? this.h215f : ""); // for all skips, mention all skipped questions
-        setH215m(h214.equals("1") ? this.h215m : ""); // for all skips, mention all skipped questions
-        setH215t(h214.equals("1") ? this.h215f : ""); // for all skips, mention all skipped questions*/
-        notifyPropertyChanged(BR.h214);
-    }
-
-    @Bindable
-    public String getH215t() {
-        return h215t;
-    }
-
-    public void setH215t(String h215t) {
-        this.h215t = h215t;
-        calculateTotalMember();
-
-        notifyPropertyChanged(BR.h215t);
-    }
-
-    @Bindable
-    public String getH215m() {
-        return h215m;
-    }
-
-    public void setH215m(String h215m) {
-        this.h215m = h215m;
-        if (!this.h215m.equals("") && !this.h215f.equals(""))
-            setH215t(String.valueOf(Integer.valueOf(this.h215m) + Integer.valueOf(this.h215f)));
-        notifyPropertyChanged(BR.h215m);
-    }
-
-    @Bindable
-    public String getH215f() {
-        return h215f;
-    }
-
-    public void setH215f(String h215f) {
-        this.h215f = h215f;
-        if (!this.h215m.equals("") && !this.h215f.equals(""))
-            setH215t(String.valueOf(Integer.valueOf(this.h215m) + Integer.valueOf(this.h215f)));
-        notifyPropertyChanged(BR.h215f);
-    }
-
-    @Bindable
-    public String getH216() {
-        return h216;
-    }
-
-    public void setH216(String h216) {
-        this.h216 = h216;
-       /* setH217f(h216.equals("1") ? this.h217f : ""); // for all skips, mention all skipped questions
-        setH217m(h216.equals("1") ? this.h217m : ""); // for all skips, mention all skipped questions
-        setH217t(h216.equals("1") ? this.h217f : ""); // for all skips, mention all skipped questions*/
-        notifyPropertyChanged(BR.h216);
-    }
-
-    @Bindable
-    public String getH217t() {
-        return h217t;
-    }
-
-    public void setH217t(String h217t) {
-        this.h217t = h217t;
-        calculateTotalMember();
-
-        notifyPropertyChanged(BR.h217t);
-    }
-
-    @Bindable
-    public String getH217m() {
-        return h217m;
-    }
-
-    public void setH217m(String h217m) {
-        this.h217m = h217m;
-        if (!this.h217m.equals("") && !this.h217f.equals(""))
-            setH217t(String.valueOf(Integer.valueOf(this.h217m) + Integer.valueOf(this.h217f)));
-        notifyPropertyChanged(BR.h217m);
-    }
-
-    @Bindable
-    public String getH217f() {
-        return h217f;
-    }
-
-    public void setH217f(String h217f) {
-        this.h217f = h217f;
-        if (!this.h217m.equals("") && !this.h217f.equals(""))
-            setH217t(String.valueOf(Integer.valueOf(this.h217m) + Integer.valueOf(this.h217f)));
-        notifyPropertyChanged(BR.h217f);
-    }
-
-    @Bindable
-    public String getH218() {
-        return h218;
-    }
-
-    public void setH218(String h218) {
-        this.h218 = h218;
-      /*  setH219f(h218.equals("1") ? this.h219f : ""); // for all skips, mention all skipped questions
-        setH219m(h218.equals("1") ? this.h219m : ""); // for all skips, mention all skipped questions
-        setH219t(h218.equals("1") ? this.h219f : ""); // for all skips, mention all skipped questions*/
-        notifyPropertyChanged(BR.h218);
-    }
-
-    @Bindable
-    public String getH219t() {
-        return h219t;
-    }
-
-    public void setH219t(String h219t) {
-        this.h219t = h219t;
-        calculateTotalMember();
-        notifyPropertyChanged(BR.h219t);
-    }
-
-    @Bindable
-    public String getH219m() {
-        return h219m;
-    }
-
-    public void setH219m(String h219m) {
-        this.h219m = h219m;
-        if (!this.h219m.equals("") && !this.h219f.equals(""))
-            setH219t(String.valueOf(Integer.valueOf(this.h219m) + Integer.valueOf(this.h219f)));
-        notifyPropertyChanged(BR.h219m);
-    }
-
-    @Bindable
-    public String getH219f() {
-        return h219f;
-    }
-
-    public void setH219f(String h219f) {
-        this.h219f = h219f;
-        if (!this.h219m.equals("") && !this.h219f.equals(""))
-            setH219t(String.valueOf(Integer.valueOf(this.h219m) + Integer.valueOf(this.h219f)));
-        notifyPropertyChanged(BR.h219f);
-    }
-
-    @Bindable
-    public String getH220a() {
-        return h220a;
-    }
-
-    public void setH220a(String h220a) {
-        this.h220a = h220a;
-        notifyPropertyChanged(BR.h220a);
-    }
-
-    @Bindable
-    public String getH220b() {
-        return h220b;
-    }
-
-    public void setH220b(String h220b) {
-        this.h220b = h220b;
-        if (!this.h220b.equals("") && !this.h220c.equals("")) {
-            setH220a(String.valueOf(Integer.valueOf(this.h220b) + Integer.valueOf(this.h220c)));
-        }
-        notifyPropertyChanged(BR.h220b);
-    }
-
-    @Bindable
-    public String getH220c() {
-        return h220c;
-    }
-
-    public void setH220c(String h220c) {
-        this.h220c = h220c;
-        if (!this.h220b.equals("") && !this.h220c.equals("")) {
-            setH220a(String.valueOf(Integer.valueOf(this.h220b) + Integer.valueOf(this.h220c)));
-        }
-        notifyPropertyChanged(BR.h220c);
-    }
-
-    @Bindable
-    public String getH301() {
-        return h301;
-    }
-
-    public void setH301(String h301) {
-        this.h301 = h301;
-        setH30196x(h301.equals("96") ? this.h30196x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h301);
-    }
-
-    @Bindable
-    public String getH30196x() {
-        return h30196x;
-    }
-
-    public void setH30196x(String h30196x) {
-        this.h30196x = h30196x;
-        notifyPropertyChanged(BR.h30196x);
-    }
-
-    @Bindable
-    public String getH302() {
-        return h302;
-    }
-
-    public void setH302(String h302) {
-        this.h302 = h302;
-        setH30296x(h302.equals("96") ? this.h30296x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h302);
-    }
-
-    @Bindable
-    public String getH30296x() {
-        return h30296x;
-    }
-
-    public void setH30296x(String h30296x) {
-        this.h30296x = h30296x;
-        notifyPropertyChanged(BR.h30296x);
-    }
-
-    @Bindable
-    public String getH303() {
-        return h303;
-    }
-
-    public void setH303(String h303) {
-        this.h303 = h303;
-        setH30396x(h303.equals("96") ? this.h30396x : ""); // for all skips, mention all skipped questions
-        setH304(h303.equals("1") || h303.equals("2") ? "" : this.h304); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h303);
-    }
-
-    @Bindable
-    public String getH30396x() {
-        return h30396x;
-    }
-
-    public void setH30396x(String h30396x) {
-        this.h30396x = h30396x;
-        notifyPropertyChanged(BR.h30396x);
-    }
-
-    @Bindable
-    public String getH304() {
-        return h304;
-    }
-
-    public void setH304(String h304) {
-        this.h304 = h304;
-        notifyPropertyChanged(BR.h304);
-    }
-
-    @Bindable
-    public String getH305() {
-        return h305;
-    }
-
-    public void setH305(String h305) {
-        this.h305 = h305;
-        setH306(h305.equals("1") ? this.h306 : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h305);
-    }
-
-    @Bindable
-    public String getH306() {
-        return h306;
-    }
-
-    public void setH306(String h306) {
-        this.h306 = h306;
-        setH30696x(h306.equals("96") ? this.h30696x : ""); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h306);
-    }
-
-    @Bindable
-    public String getH30696x() {
-        return h30696x;
-    }
-
-    public void setH30696x(String h30696x) {
-        this.h30696x = h30696x;
-        notifyPropertyChanged(BR.h30696x);
-    }
-
-    @Bindable
-    public String getH307() {
-        return h307;
-    }
-
-    public void setH307(String h307) {
-        this.h307 = h307;
-        setH30796x(h307.equals("96") ? this.h30796x : ""); // for all skips, mention all skipped questions
-        setH308(h307.equals("8") || h307.equals("9") ? "" : this.h308); // for all skips, mention all skipped questions
-        setH309(h307.equals("8") || h307.equals("9") ? "" : this.h309); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h307);
-    }
-
-    @Bindable
-    public String getH30796x() {
-        return h30796x;
-    }
-
-    public void setH30796x(String h30796x) {
-        this.h30796x = h30796x;
-        notifyPropertyChanged(BR.h30796x);
-    }
-
-    @Bindable
-    public String getH308() {
-        return h308;
-    }
-
-    public void setH308(String h308) {
-        this.h308 = h308;
-        setH309(h308.equals("2") ? "" : this.h309); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h308);
-    }
-
-    @Bindable
-    public String getH309() {
-        return h309;
-    }
-
-    public void setH309(String h309) {
-        this.h309 = h309;
-        notifyPropertyChanged(BR.h309);
-    }
-
-    @Bindable
-    public String getH310() {
-        return h310;
-    }
-
-    public void setH310(String h310) {
-        this.h310 = h310;
-        notifyPropertyChanged(BR.h310);
-    }
-
-    @Bindable
-    public String getH31096x() {
-        return h31096x;
-    }
-
-    public void setH31096x(String h31096x) {
-        this.h31096x = h31096x;
-        notifyPropertyChanged(BR.h31096x);
-    }
-
-    @Bindable
-    public String getH311a() {
-        return h311a;
-    }
-
-    public void setH311a(String h311a) {
-        this.h311a = h311a;
-        notifyPropertyChanged(BR.h311a);
-    }
-
-    @Bindable
-    public String getH311b() {
-        return h311b;
-    }
-
-    public void setH311b(String h311b) {
-        this.h311b = h311b;
-        notifyPropertyChanged(BR.h311b);
-    }
-
-    @Bindable
-    public String getH311c() {
-        return h311c;
-    }
-
-    public void setH311c(String h311c) {
-        this.h311c = h311c;
-        notifyPropertyChanged(BR.h311c);
-    }
-
-    @Bindable
-    public String getH311d() {
-        return h311d;
-    }
-
-    public void setH311d(String h311d) {
-        this.h311d = h311d;
-        notifyPropertyChanged(BR.h311d);
-    }
-
-    @Bindable
-    public String getH311e() {
-        return h311e;
-    }
-
-    public void setH311e(String h311e) {
-        this.h311e = h311e;
-        notifyPropertyChanged(BR.h311e);
-    }
-
-    @Bindable
-    public String getH311f() {
-        return h311f;
-    }
-
-    public void setH311f(String h311f) {
-        this.h311f = h311f;
-        notifyPropertyChanged(BR.h311f);
-    }
-
-    @Bindable
-    public String getH311g() {
-        return h311g;
-    }
-
-    public void setH311g(String h311g) {
-        this.h311g = h311g;
-        notifyPropertyChanged(BR.h311g);
-    }
-
-    @Bindable
-    public String getH311h() {
-        return h311h;
-    }
-
-    public void setH311h(String h311h) {
-        this.h311h = h311h;
-        notifyPropertyChanged(BR.h311h);
-    }
-
-    @Bindable
-    public String getH311i() {
-        return h311i;
-    }
-
-    public void setH311i(String h311i) {
-        this.h311i = h311i;
-        notifyPropertyChanged(BR.h311i);
-    }
-
-    @Bindable
-    public String getH311j() {
-        return h311j;
-    }
-
-    public void setH311j(String h311j) {
-        this.h311j = h311j;
-        notifyPropertyChanged(BR.h311j);
-    }
-
-    @Bindable
-    public String getH311k() {
-        return h311k;
-    }
-
-    public void setH311k(String h311k) {
-        this.h311k = h311k;
-        notifyPropertyChanged(BR.h311k);
-    }
-
-    @Bindable
-    public String getH311l() {
-        return h311l;
-    }
-
-    public void setH311l(String h311l) {
-        this.h311l = h311l;
-        notifyPropertyChanged(BR.h311l);
-    }
-
-    @Bindable
-    public String getH311m() {
-        return h311m;
-    }
-
-    public void setH311m(String h311m) {
-        this.h311m = h311m;
-        notifyPropertyChanged(BR.h311m);
-    }
-
-    @Bindable
-    public String getH311n() {
-        return h311n;
-    }
-
-    public void setH311n(String h311n) {
-        this.h311n = h311n;
-        notifyPropertyChanged(BR.h311n);
-    }
-
-    @Bindable
-    public String getH311o() {
-        return h311o;
-    }
-
-    public void setH311o(String h311o) {
-        this.h311o = h311o;
-        notifyPropertyChanged(BR.h311o);
-    }
-
-    @Bindable
-    public String getH311p() {
-        return h311p;
-    }
-
-    public void setH311p(String h311p) {
-        this.h311p = h311p;
-        notifyPropertyChanged(BR.h311p);
-    }
-
-    @Bindable
-    public String getH311q() {
-        return h311q;
-    }
-
-    public void setH311q(String h311q) {
-        this.h311q = h311q;
-        notifyPropertyChanged(BR.h311q);
-    }
-
-    @Bindable
-    public String getH311r() {
-        return h311r;
-    }
-
-    public void setH311r(String h311r) {
-        this.h311r = h311r;
-        notifyPropertyChanged(BR.h311r);
-    }
-
-    @Bindable
-    public String getH311s() {
-        return h311s;
-    }
-
-    public void setH311s(String h311s) {
-        this.h311s = h311s;
-        notifyPropertyChanged(BR.h311s);
-    }
-
-    @Bindable
-    public String getH312a() {
-        return h312a;
-    }
-
-    public void setH312a(String h312a) {
-        this.h312a = h312a;
-        notifyPropertyChanged(BR.h312a);
-    }
-
-    @Bindable
-    public String getH312b() {
-        return h312b;
-    }
-
-    public void setH312b(String h312b) {
-        this.h312b = h312b;
-        notifyPropertyChanged(BR.h312b);
-    }
-
-    @Bindable
-    public String getH312c() {
-        return h312c;
-    }
-
-    public void setH312c(String h312c) {
-        this.h312c = h312c;
-        notifyPropertyChanged(BR.h312c);
-    }
-
-    @Bindable
-    public String getH312d() {
-        return h312d;
-    }
-
-    public void setH312d(String h312d) {
-        this.h312d = h312d;
-        notifyPropertyChanged(BR.h312d);
-    }
-
-    @Bindable
-    public String getH312e() {
-        return h312e;
-    }
-
-    public void setH312e(String h312e) {
-        this.h312e = h312e;
-        notifyPropertyChanged(BR.h312e);
-    }
-
-    @Bindable
-    public String getH312f() {
-        return h312f;
-    }
-
-    public void setH312f(String h312f) {
-        this.h312f = h312f;
-        notifyPropertyChanged(BR.h312f);
-    }
-
-    @Bindable
-    public String getH312g() {
-        return h312g;
-    }
-
-    public void setH312g(String h312g) {
-        this.h312g = h312g;
-        notifyPropertyChanged(BR.h312g);
-    }
-
-    @Bindable
-    public String getH313() {
-        return h313;
-    }
-
-    public void setH313(String h313) {
-        this.h313 = h313;
-        notifyPropertyChanged(BR.h313);
-    }
-
-    @Bindable
-    public String getH313a() {
-        return h313a;
-    }
-
-    public void setH313a(String h313a) {
-        if (this.h313a.equals(h313a)) return; // for all checkboxes
-        this.h313a = h313a;
-        notifyPropertyChanged(BR.h313a);
-    }
-
-    @Bindable
-    public String getH313b() {
-        return h313b;
-    }
-
-    public void setH313b(String h313b) {
-        if (this.h313b.equals(h313b)) return; // for all checkboxes
-        this.h313b = h313b;
-        notifyPropertyChanged(BR.h313b);
-    }
-
-    @Bindable
-    public String getH313c() {
-        return h313c;
-    }
-
-    public void setH313c(String h313c) {
-        if (this.h313c.equals(h313c)) return; // for all checkboxes
-
-        this.h313c = h313c;
-        notifyPropertyChanged(BR.h313c);
-    }
-
-    @Bindable
-    public String getH313d() {
-        return h313d;
-    }
-
-    public void setH313d(String h313d) {
-        if (this.h313d.equals(h313d)) return; // for all checkboxes
-        this.h313d = h313d;
-        notifyPropertyChanged(BR.h313d);
-    }
-
-    @Bindable
-    public String getH313e() {
-        return h313e;
-    }
-
-    public void setH313e(String h313e) {
-        if (this.h313e.equals(h313e)) return; // for all checkboxes
-        this.h313e = h313e;
-        notifyPropertyChanged(BR.h313e);
-    }
-
-    @Bindable
-    public String getH313f() {
-        return h313f;
-    }
-
-    public void setH313f(String h313f) {
-        if (this.h313f.equals(h313f)) return; // for all checkboxes
-        this.h313f = h313f;
-        notifyPropertyChanged(BR.h313f);
-    }
-
-    @Bindable
-    public String getH31396() {
-        return h31396;
-    }
-
-    public void setH31396(String h31396) {
-
-        if (this.h31396.equals(h31396)) return; // for all checkboxes
-        this.h31396 = h31396;
-        setH31396x(h31396.equals("96") ? this.h31396x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h31396);
-        Log.d(TAG, "setH31396: " + this.h31396);
-    }
-
-    @Bindable
-    public String getH31396x() {
-        return h31396x;
-    }
-
-    public void setH31396x(String h31396x) {
-        this.h31396x = h31396x;
-        notifyPropertyChanged(BR.h31396x);
-    }
-
-    @Bindable
-    public String getH314() {
-        return h314;
-    }
-
-    public void setH314(String h314) {
-        this.h314 = h314;
-        setH31496x(h314.equals("96") ? this.h31496x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h314);
-    }
-
-    @Bindable
-    public String getH31496x() {
-        return h31496x;
-    }
-
-    public void setH31496x(String h31496x) {
-        this.h31496x = h31496x;
-        notifyPropertyChanged(BR.h31496x);
-    }
-
-    @Bindable
-    public String getH315() {
-        return h315;
-    }
-
-    public void setH315(String h315) {
-        this.h315 = h315;
-        setH31596x(h315.equals("96") ? this.h31596x : ""); // for all skips, mention all skipped questions
-        setH316(h315.equals("1") ? this.h316 : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h315);
-    }
-
-    @Bindable
-    public String getH31596x() {
-        return h31596x;
-    }
-
-    public void setH31596x(String h31596x) {
-        this.h31596x = h31596x;
-        notifyPropertyChanged(BR.h31596x);
-    }
-
-    @Bindable
-    public String getH316() {
-        return h316;
-    }
-
-    public void setH316(String h316) {
-        this.h316 = h316;
-        notifyPropertyChanged(BR.h316);
-    }
-
-    @Bindable
-    public String getH317() {
-        return h317;
-    }
-
-    public void setH317(String h317) {
-        this.h317 = h317;
-        setH31796x(h318.equals("96") ? this.h31796x : ""); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h317);
-    }
-
-    @Bindable
-    public String getH31796x() {
-        return h31796x;
-    }
-
-    public void setH31796x(String h31796x) {
-        this.h31796x = h31796x;
-        notifyPropertyChanged(BR.h31796x);
-    }
-
-    @Bindable
-    public String getH318() {
-        return h318;
-    }
-
-    public void setH318(String h318) {
-        this.h318 = h318;
-        setH31896x(h318.equals("96") ? this.h31896x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h318);
-    }
-
-    @Bindable
-    public String getH31896x() {
-        return h31896x;
-    }
-
-    public void setH31896x(String h31896x) {
-        this.h31896x = h31896x;
-        notifyPropertyChanged(BR.h31896x);
-    }
-
-    @Bindable
-    public String getH319() {
-        return h319;
-    }
-
-    public void setH319(String h319) {
-        this.h319 = h319;
-        setH31996x(h319.equals("96") ? this.h31996x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h319);
-    }
-
-    @Bindable
-    public String getH31996x() {
-        return h31996x;
-    }
-
-    public void setH31996x(String h31996x) {
-        this.h31996x = h31996x;
-        notifyPropertyChanged(BR.h31996x);
-    }
-
-    @Bindable
-    public String getH320() {
-        return h320;
-    }
-
-    public void setH320(String h320) {
-        this.h320 = h320;
-        notifyPropertyChanged(BR.h320);
-    }
-
-    @Bindable
-    public String getH321() {
-        return h321;
-    }
-
-    public void setH321(String h321) {
-        this.h321 = h321;
-        setH322(h321.equals("2") ? "" : this.h322); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h321);
-    }
-
-    @Bindable
-    public String getH322() {
-        return h322;
-    }
-
-    public void setH322(String h322) {
-        this.h322 = h322;
-        setH322ax(h322.equals("1") ? this.h322ax : ""); // for all skips, mention all skipped questions
-        setH322bx(h322.equals("2") ? this.h322bx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h322);
-    }
-
-    @Bindable
-    public String getH322ax() {
-        return h322ax;
-    }
-
-    public void setH322ax(String h322ax) {
-        this.h322ax = h322ax;
-        notifyPropertyChanged(BR.h322ax);
-    }
-
-    @Bindable
-    public String getH322bx() {
-        return h322bx;
-    }
-
-    public void setH322bx(String h322bx) {
-        this.h322bx = h322bx;
-        notifyPropertyChanged(BR.h322bx);
-    }
-
-    @Bindable
-    public String getH323() {
-        return h323;
-    }
-
-    public void setH323(String h323) {
-        this.h323 = h323;
-
-        if (h323.equals("2")) {
-            setH3241("");
-            setH3242("");
-            setH3243("");
-            setH3244("");
-            setH3245("");
-            setH3246("");
-            setH3247("");
-        } else {
-            setH3241(this.h3241);
-            setH3242(this.h3242);
-            setH3243(this.h3243);
-            setH3244(this.h3244);
-            setH3245(this.h3245);
-            setH3246(this.h3246);
-            setH3247(this.h3247);
-        }
-        notifyPropertyChanged(BR.h323);
-    }
-
-    @Bindable
-    public String getH324() {
-        return h324;
-    }
-
-    public void setH324(String h324) {
-        this.h324 = h324;
-        notifyPropertyChanged(BR.h324);
-    }
-
-    @Bindable
-    public String getH3241() {
-        return h3241;
-    }
-
-    public void setH3241(String h3241) {
-        if (this.h3241 == h3241) return;
-        this.h3241 = h3241;
-        setH3241x(h3241.equals("1") ? this.h3241x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h3241);
-    }
-
-    @Bindable
-    public String getH3241x() {
-        return h3241x;
-    }
-
-    public void setH3241x(String h3241x) {
-        this.h3241x = h3241x;
-        notifyPropertyChanged(BR.h3241x);
-    }
-
-    @Bindable
-    public String getH3242() {
-        return h3242;
-    }
-
-    public void setH3242(String h3242) {
-        if (this.h3242.equals(h3242)) return;
-        this.h3242 = h3242;
-        setH3242x(h3242.equals("2") ? this.h3242x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h3242);
-    }
-
-    @Bindable
-    public String getH3242x() {
-        return h3242x;
-    }
-
-    public void setH3242x(String h3242x) {
-        this.h3242x = h3242x;
-        notifyPropertyChanged(BR.h3242x);
-    }
-
-    @Bindable
-    public String getH3243() {
-        return h3243;
-    }
-
-    public void setH3243(String h3243) {
-        if (this.h3243.equals(h3243)) return;
-        this.h3243 = h3243;
-        setH3243x(h3243.equals("3") ? this.h3243x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h3243);
-    }
-
-    @Bindable
-    public String getH3243x() {
-        return h3243x;
-    }
-
-    public void setH3243x(String h3243x) {
-        this.h3243x = h3243x;
-        notifyPropertyChanged(BR.h3243x);
-    }
-
-    @Bindable
-    public String getH3244() {
-        return h3244;
-    }
-
-    public void setH3244(String h3244) {
-        if (this.h3244.equals(h3244)) return;
-        this.h3244 = h3244;
-        setH3244x(h3244.equals("4") ? this.h3244x : ""); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h3244);
-    }
-
-    @Bindable
-    public String getH3244x() {
-        return h3244x;
-    }
-
-    public void setH3244x(String h3244x) {
-        this.h3244x = h3244x;
-        notifyPropertyChanged(BR.h3244x);
-    }
-
-    @Bindable
-    public String getH3245() {
-        return h3245;
-    }
-
-    public void setH3245(String h3245) {
-        if (this.h3245.equals(h3245)) return;
-
-        this.h3245 = h3245;
-        setH3245x(h3245.equals("5") ? this.h3245x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h3245);
-    }
-
-    @Bindable
-    public String getH3245x() {
-        return h3245x;
-    }
-
-    public void setH3245x(String h3245x) {
-        this.h3245x = h3245x;
-        notifyPropertyChanged(BR.h3245x);
-    }
-
-    @Bindable
-    public String getH3246() {
-        return h3246;
-    }
-
-    public void setH3246(String h3246) {
-        if (this.h3246.equals(h3246)) return;
-
-        this.h3246 = h3246;
-        setH3246x(h3246.equals("6") ? this.h3246x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h3246);
-    }
-
-    @Bindable
-    public String getH3246x() {
-        return h3246x;
-    }
-
-    public void setH3246x(String h3246x) {
-
-        this.h3246x = h3246x;
-        notifyPropertyChanged(BR.h3246x);
-    }
-
-    @Bindable
-    public String getH3247() {
-        return h3247;
-    }
-
-    public void setH3247(String h3247) {
-        if (this.h3247.equals(h3247)) return;
-
-        this.h3247 = h3247;
-        setH3247x(h3247.equals("7") ? this.h3247x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h3247);
-    }
-
-    @Bindable
-    public String getH3247x() {
-        return h3247x;
-    }
-
-    public void setH3247x(String h3247x) {
-        this.h3247x = h3247x;
-        notifyPropertyChanged(BR.h3247x);
-    }
-
-    @Bindable
-    public String getH401() {
-        return h401;
-    }
-
-    public void setH401(String h401) {
-        Log.d(TAG, "setH401: " + h401);
-        this.h401 = h401;
-        setH402(h401.equals("1") ? this.h402 : ""); // for all skips, mention all skipped questions
-        setH403a(h401.equals("1") ? this.h403a : ""); // for all skips, mention all skipped questions
-        setH403b(h401.equals("1") ? this.h403b : ""); // for all skips, mention all skipped questions
-        setH403c(h401.equals("1") ? this.h403c : ""); // for all skips, mention all skipped questions
-        setH403d(h401.equals("1") ? this.h403d : ""); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h401);
-    }
-
-    @Bindable
-    public String getH402() {
-        return h402;
-    }
-
-    public void setH402(String h402) {
-        Log.d(TAG, "H402: " + h402);
-        Log.d(TAG, "this.h402: " + this.h402);
-
-        this.h402 = h402;
-        notifyPropertyChanged(BR.h402);
-    }
-
-    @Bindable
-    public String getH403() {
-        return h403;
-    }
-
-    public void setH403(String h403) {
-        Log.d(TAG, "setH403: " + h403);
-
-        this.h403 = h403;
-        notifyPropertyChanged(BR.h403);
-    }
-
-    @Bindable
-    public String getH403a() {
-        return h403a;
-    }
-
-    public void setH403a(String h403a) {
-        Log.d(TAG, "setH403a: " + h403a);
-
-        if (this.h403a.equals(h403a)) return; // for all checkboxes
-        this.h403a = h403a;
-        notifyPropertyChanged(BR.h403a);
-    }
-
-    @Bindable
-    public String getH403b() {
-        return h403b;
-    }
-
-    public void setH403b(String h403b) {
-        Log.d(TAG, "setH403b: " + h403b);
-
-        if (this.h403b.equals(h403b)) return; // for all checkboxes
-        this.h403b = h403b;
-        notifyPropertyChanged(BR.h403b);
-    }
-
-    @Bindable
-    public String getH403c() {
-        return h403c;
-    }
-
-    public void setH403c(String h403c) {
-        Log.d(TAG, "setH403c: " + h403c);
-
-        if (this.h403c.equals(h403c)) return; // for all checkboxes
-        this.h403c = h403c;
-        notifyPropertyChanged(BR.h403c);
-    }
-
-    @Bindable
-    public String getH403d() {
-        return h403d;
-    }
-
-    public void setH403d(String h403d) {
-        Log.d(TAG, "setH403d: " + h403d);
-
-        if (this.h403d.equals(h403d)) return; // for all checkboxes
-        this.h403d = h403d;
-        // When NONE of above is selected clear all other check boxes for that question
-        setH403a(h403d.equals("97") ? "" : this.h403a); // for all skips, mention all skipped questions
-        setH403b(h403d.equals("97") ? "" : this.h403b); // for all skips, mention all skipped questions
-        setH403c(h403d.equals("97") ? "" : this.h403c); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h403d);
-    }
-
-    @Bindable
-    public String getH404() {
-        return h404;
-    }
-
-    public void setH404(String h404) {
-        Log.d(TAG, "h404: " + h404);
-        Log.d(TAG, "this.h404: " + this.h404);
-        this.h404 = h404;
-        setH405a(h404.equals("2") ? "" : this.h405a); // for all skips, mention all skipped questions
-        setH405b(h404.equals("2") ? "" : this.h405b); // for all skips, mention all skipped questions
-        setH405c(h404.equals("2") ? "" : this.h405c); // for all skips, mention all skipped questions
-        setH405d(h404.equals("2") ? "" : this.h405c); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h404);
-    }
-
-    @Bindable
-    public String getH405() {
-        return h405;
-    }
-
-    public void setH405(String h405) {
-        this.h405 = h405;
-        notifyPropertyChanged(BR.h405);
-    }
-
-    @Bindable
-    public String getH405a() {
-        return h405a;
-    }
-
-    public void setH405a(String h405a) {
-        Log.d(TAG, "h405a: " + h405a);
-        Log.d(TAG, "this.h405a: " + this.h405a);
-        if (this.h405a.equals(h405a)) return; // for all checkboxes
-        this.h405a = h405a;
-        notifyPropertyChanged(BR.h405a);
-    }
-
-    @Bindable
-    public String getH405b() {
-        return h405b;
-    }
-
-    public void setH405b(String h405b) {
-        if (this.h405b.equals(h405b)) return; // for all checkboxes
-        this.h405b = h405b;
-        notifyPropertyChanged(BR.h405b);
-    }
-
-    @Bindable
-    public String getH405c() {
-        return h405c;
-    }
-
-    public void setH405c(String h405c) {
-        if (this.h405c.equals(h405c)) return; // for all checkboxes
-        this.h405c = h405c;
-        notifyPropertyChanged(BR.h405c);
-    }
-
-    @Bindable
-    public String getH405d() {
-        return h405d;
-    }
-
-    public void setH405d(String h405d) {
-
-        if (this.h405d.equals(h405d)) return; // for all checkboxes
-        this.h405d = h405d;
-        // When NONE of above is selected clear all other check boxes for that question ()
-        setH405a(h405d.equals("97") ? "" : this.h405a); // for all skips, mention all skipped questions
-        setH405b(h405d.equals("97") ? "" : this.h405b); // for all skips, mention all skipped questions
-        setH405c(h405d.equals("97") ? "" : this.h405c); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h405d);
-    }
-
-    @Bindable
-    public String getH406a() {
-        return h406a;
-    }
-
-    public void setH406a(String h406a) {
-        this.h406a = h406a;
-        notifyPropertyChanged(BR.h406a);
-    }
-
-    @Bindable
-    public String getH406b() {
-        return h406b;
-    }
-
-    public void setH406b(String h406b) {
-        this.h406b = h406b;
-        notifyPropertyChanged(BR.h406b);
-    }
-
-    @Bindable
-    public String getH406c() {
-        return h406c;
-    }
-
-    public void setH406c(String h406c) {
-        this.h406c = h406c;
-        notifyPropertyChanged(BR.h406c);
-    }
-
-    @Bindable
-    public String getH406d() {
-        return h406d;
-    }
-
-    public void setH406d(String h406d) {
-        this.h406d = h406d;
-        notifyPropertyChanged(BR.h406d);
-    }
-
-    @Bindable
-    public String getH406e() {
-        return h406e;
-    }
-
-    public void setH406e(String h406e) {
-        this.h406e = h406e;
-        notifyPropertyChanged(BR.h406e);
-    }
-
-    @Bindable
-    public String getH406f() {
-        return h406f;
-    }
-
-    public void setH406f(String h406f) {
-        this.h406f = h406f;
-        setH406fx(h406f.equals("2") ? "" : this.h406fx); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h406f);
-    }
-
-    @Bindable
-    public String getH406fx() {
-        return h406fx;
-    }
-
-    public void setH406fx(String h406fx) {
-        this.h406fx = h406fx;
-        notifyPropertyChanged(BR.h406f);
-    }
-
-    @Bindable
-    public String getH501() {
-        return h501;
-    }
-
-    public void setH501(String h501) {
-        this.h501 = h501;
-
-        // seperated condition check which used in multiple skips
-        boolean h501check = h501.equals("1") || h501.equals("2") || h501.equals("3");
-
-        setH502(h501check ? this.h502 : ""); // for all skips, mention all skipped questions
-        setH503(h501check ? this.h503 : ""); // for all skips, mention all skipped questions
-        setH50196x(h501.equals("96") ? this.h50196x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h501);
-    }
-
-    @Bindable
-    public String getH50196x() {
-        return h50196x;
-    }
-
-    public void setH50196x(String h50196x) {
-        this.h50196x = h50196x;
-        notifyPropertyChanged(BR.h50196x);
-    }
-
-    @Bindable
-    public String getH502() {
-        return h502;
-    }
-
-    public void setH502(String h502) {
-        this.h502 = h502;
-        notifyPropertyChanged(BR.h502);
-    }
-
-    @Bindable
-    public String getH503() {
-        return h503;
-    }
-
-    public void setH503(String h503) {
-        this.h503 = h503;
-        notifyPropertyChanged(BR.h503);
-    }
-
-    @Bindable
-    public String getH601() {
-        return h601;
-    }
-
-    public void setH601(String h601) {
-        this.h601 = h601;
-        setH602(h601.equals("2") ? "" : this.h602); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h601);
-    }
-
-    @Bindable
-    public String getH602() {
-        return h602;
-    }
-
-    public void setH602(String h602) {
-        this.h602 = h602;
-        notifyPropertyChanged(BR.h602);
-    }
-
-    @Bindable
-    public String getH603() {
-        return h603;
-    }
-
-    public void setH603(String h603) {
-        this.h603 = h603;
-        setH604(h603.equals("2") ? "" : this.h604); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h603);
-    }
-
-    @Bindable
-    public String getH604() {
-        return h604;
-    }
-
-    public void setH604(String h604) {
-        this.h604 = h604;
-        notifyPropertyChanged(BR.h604);
-    }
-
-    @Bindable
-    public String getH605() {
-        return h605;
-    }
-
-    public void setH605(String h605) {
-        this.h605 = h605;
-        setH606(h605.equals("2") ? "" : this.h606); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h605);
-    }
-
-    @Bindable
-    public String getH606() {
-        return h606;
-    }
-
-    public void setH606(String h606) {
-        this.h606 = h606;
-        notifyPropertyChanged(BR.h606);
-    }
-
-    @Bindable
-    public String getH607() {
-        return h607;
-    }
-
-    public void setH607(String h607) {
-        this.h607 = h607;
-        setH608(h607.equals("2") ? "" : this.h608); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h607);
-    }
-
-    @Bindable
-    public String getH608() {
-        return h608;
-    }
-
-    public void setH608(String h608) {
-        this.h608 = h608;
-        notifyPropertyChanged(BR.h608);
-    }
-
-    @Bindable
-    public String getH609() {
-        return h609;
-    }
-
-    public void setH609(String h609) {
-        this.h609 = h609;
-        setH610(h609.equals("2") ? "" : this.h610); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h609);
-    }
-
-    @Bindable
-    public String getH610() {
-        return h610;
-    }
-
-    public void setH610(String h610) {
-        this.h610 = h610;
-        notifyPropertyChanged(BR.h610);
-    }
-
-    @Bindable
-    public String getH611() {
-        return h611;
-    }
-
-    public void setH611(String h611) {
-        this.h611 = h611;
-        setH612(h611.equals("2") ? "" : this.h612); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h611);
-    }
-
-    @Bindable
-    public String getH612() {
-        return h612;
-    }
-
-    public void setH612(String h612) {
-        this.h612 = h612;
-        notifyPropertyChanged(BR.h612);
-    }
-
-    @Bindable
-    public String getH613() {
-        return h613;
-    }
-
-    public void setH613(String h613) {
-        this.h613 = h613;
-        setH614(h613.equals("2") ? "" : this.h614); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h613);
-    }
-
-    @Bindable
-    public String getH614() {
-        return h614;
-    }
-
-    public void setH614(String h614) {
-        this.h614 = h614;
-        notifyPropertyChanged(BR.h614);
-    }
-
-    @Bindable
-    public String getH615() {
-        return h615;
-    }
-
-    public void setH615(String h615) {
-        this.h615 = h615;
-        setH616(h615.equals("2") ? "" : this.h616); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h615);
-    }
-
-    @Bindable
-    public String getH616() {
-        return h616;
-    }
-
-    public void setH616(String h616) {
-        this.h616 = h616;
-        notifyPropertyChanged(BR.h616);
-    }
-
-    @Bindable
-    public String getH617() {
-        return h617;
-    }
-
-    public void setH617(String h617) {
-        this.h617 = h617;
-        setH618(h617.equals("2") ? "" : this.h618); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h617);
-    }
-
-    @Bindable
-    public String getH618() {
-        return h618;
-    }
-
-    public void setH618(String h618) {
-        this.h618 = h618;
-        notifyPropertyChanged(BR.h618);
-    }
-
-    @Bindable
-    public String getH701() {
-        return h701;
-    }
-
-    public void setH701(String h701) {
-        this.h701 = h701;
-
-        setH701q(h701.equals("2") ? "" : this.h701q); // for all skips, mention all skipped questions
-        setH701s(h701.equals("2") ? "" : this.h701s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h701);
-    }
-
-    @Bindable
-    public String getH701q() {
-        return h701q;
-    }
-
-    public void setH701q(String h701q) {
-        this.h701q = h701q;
-        notifyPropertyChanged(BR.h701q);
-    }
-
-    @Bindable
-    public String getH701s() {
-        return h701s;
-    }
-
-    public void setH701s(String h701s) {
-        this.h701s = h701s;
-        notifyPropertyChanged(BR.h701s);
-    }
-
-    @Bindable
-    public String getH702() {
-        return h702;
-    }
-
-    public void setH702(String h702) {
-        this.h702 = h702;
-        setH702q(h702.equals("2") ? "" : this.h702q); // for all skips, mention all skipped questions
-        setH702s(h702.equals("2") ? "" : this.h702s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h702);
-    }
-
-    @Bindable
-    public String getH702q() {
-        return h702q;
-    }
-
-    public void setH702q(String h702q) {
-        this.h702q = h702q;
-        notifyPropertyChanged(BR.h702q);
-    }
-
-    @Bindable
-    public String getH702s() {
-        return h702s;
-    }
-
-    public void setH702s(String h702s) {
-        this.h702s = h702s;
-        notifyPropertyChanged(BR.h702s);
-    }
-
-    @Bindable
-    public String getH703() {
-        return h703;
-    }
-
-    public void setH703(String h703) {
-        this.h703 = h703;
-        setH703q(h703.equals("2") ? "" : this.h703q); // for all skips, mention all skipped questions
-        setH703s(h703.equals("2") ? "" : this.h703s); // for all skips, mention all skipped questions
-
-        notifyPropertyChanged(BR.h703);
-    }
-
-    @Bindable
-    public String getH703q() {
-        return h703q;
-    }
-
-    public void setH703q(String h703q) {
-        this.h703q = h703q;
-        notifyPropertyChanged(BR.h703q);
-    }
-
-    @Bindable
-    public String getH703s() {
-        return h703s;
-    }
-
-    public void setH703s(String h703s) {
-        this.h703s = h703s;
-        notifyPropertyChanged(BR.h703s);
-    }
-
-    @Bindable
-    public String getH704() {
-        return h704;
-    }
-
-    public void setH704(String h704) {
-        this.h704 = h704;
-        setH704q(h704.equals("2") ? "" : this.h704q); // for all skips, mention all skipped questions
-        setH704s(h704.equals("2") ? "" : this.h704s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h704);
-    }
-
-    @Bindable
-    public String getH704q() {
-        return h704q;
-    }
-
-    public void setH704q(String h704q) {
-        this.h704q = h704q;
-        notifyPropertyChanged(BR.h704q);
-    }
-
-    @Bindable
-    public String getH704s() {
-        return h704s;
-    }
-
-    public void setH704s(String h704s) {
-        this.h704s = h704s;
-        notifyPropertyChanged(BR.h704s);
-    }
-
-    @Bindable
-    public String getH705() {
-        return h705;
-    }
-
-    public void setH705(String h705) {
-        this.h705 = h705;
-        setH705q(h705.equals("2") ? "" : this.h705q); // for all skips, mention all skipped questions
-        setH705s(h705.equals("2") ? "" : this.h705s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h705);
-    }
-
-    @Bindable
-    public String getH705q() {
-        return h705q;
-    }
-
-    public void setH705q(String h705q) {
-        this.h705q = h705q;
-        notifyPropertyChanged(BR.h705q);
-    }
-
-    @Bindable
-    public String getH705s() {
-        return h705s;
-    }
-
-    public void setH705s(String h705s) {
-        this.h705s = h705s;
-        notifyPropertyChanged(BR.h705s);
-    }
-
-    @Bindable
-    public String getH706() {
-        return h706;
-    }
-
-    public void setH706(String h706) {
-        this.h706 = h706;
-        setH706q(h706.equals("2") ? "" : this.h706q); // for all skips, mention all skipped questions
-        setH706s(h706.equals("2") ? "" : this.h706s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h706);
-    }
-
-    @Bindable
-    public String getH706q() {
-        return h706q;
-    }
-
-    public void setH706q(String h706q) {
-        this.h706q = h706q;
-        notifyPropertyChanged(BR.h706q);
-    }
-
-    @Bindable
-    public String getH706s() {
-        return h706s;
-    }
-
-    public void setH706s(String h706s) {
-        this.h706s = h706s;
-        notifyPropertyChanged(BR.h706s);
-    }
-
-    @Bindable
-    public String getH707() {
-        return h707;
-    }
-
-    public void setH707(String h707) {
-        this.h707 = h707;
-        setH707q(h707.equals("2") ? "" : this.h707q); // for all skips, mention all skipped questions
-        setH707s(h707.equals("2") ? "" : this.h707s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h707);
-    }
-
-    @Bindable
-    public String getH707q() {
-        return h707q;
-    }
-
-    public void setH707q(String h707q) {
-        this.h707q = h707q;
-        notifyPropertyChanged(BR.h707q);
-    }
-
-    @Bindable
-    public String getH707s() {
-        return h707s;
-    }
-
-    public void setH707s(String h707s) {
-        this.h707s = h707s;
-        notifyPropertyChanged(BR.h707s);
-    }
-
-    @Bindable
-    public String getH708() {
-        return h708;
-    }
-
-    public void setH708(String h708) {
-        this.h708 = h708;
-        setH708q(h708.equals("2") ? "" : this.h708q); // for all skips, mention all skipped questions
-        setH708s(h708.equals("2") ? "" : this.h708s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h708);
-    }
-
-    @Bindable
-    public String getH708q() {
-        return h708q;
-    }
-
-    public void setH708q(String h708q) {
-        this.h708q = h708q;
-        notifyPropertyChanged(BR.h708q);
-    }
-
-    @Bindable
-    public String getH708s() {
-        return h708s;
-    }
-
-    public void setH708s(String h708s) {
-        this.h708s = h708s;
-        notifyPropertyChanged(BR.h708s);
-    }
-
-    @Bindable
-    public String getH709() {
-        return h709;
-    }
-
-    public void setH709(String h709) {
-        this.h709 = h709;
-        setH701q(h701.equals("2") ? "" : this.h701q); // for all skips, mention all skipped questions
-        setH701s(h701.equals("2") ? "" : this.h701s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h709);
-    }
-
-    @Bindable
-    public String getH709q() {
-        return h709q;
-    }
-
-    public void setH709q(String h709q) {
-        this.h709q = h709q;
-        notifyPropertyChanged(BR.h709q);
-    }
-
-    @Bindable
-    public String getH709s() {
-        return h709s;
-    }
-
-    public void setH709s(String h709s) {
-        this.h709s = h709s;
-        notifyPropertyChanged(BR.h709s);
-    }
-
-    @Bindable
-    public String getH710() {
-        return h710;
-    }
-
-    public void setH710(String h710) {
-        this.h710 = h710;
-        setH710q(h710.equals("2") ? "" : this.h710q); // for all skips, mention all skipped questions
-        setH710s(h710.equals("2") ? "" : this.h710s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h710);
-    }
-
-    @Bindable
-    public String getH710q() {
-        return h710q;
-    }
-
-    public void setH710q(String h710q) {
-        this.h710q = h710q;
-        notifyPropertyChanged(BR.h710q);
-    }
-
-    @Bindable
-    public String getH710s() {
-        return h710s;
-    }
-
-    public void setH710s(String h710s) {
-        this.h710s = h710s;
-        notifyPropertyChanged(BR.h710s);
-    }
-
-    @Bindable
-    public String getH711() {
-        return h711;
-    }
-
-    public void setH711(String h711) {
-        this.h711 = h711;
-        setH711q(h711.equals("2") ? "" : this.h711q); // for all skips, mention all skipped questions
-        setH711s(h711.equals("2") ? "" : this.h711s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h711);
-    }
-
-    @Bindable
-    public String getH711q() {
-        return h711q;
-    }
-
-    public void setH711q(String h711q) {
-        this.h711q = h711q;
-        notifyPropertyChanged(BR.h711q);
-    }
-
-    @Bindable
-    public String getH711s() {
-        return h711s;
-    }
-
-    public void setH711s(String h711s) {
-        this.h711s = h711s;
-        notifyPropertyChanged(BR.h711s);
-    }
-
-    @Bindable
-    public String getH712() {
-        return h712;
-    }
-
-    public void setH712(String h712) {
-        this.h712 = h712;
-        setH712q(h712.equals("2") ? "" : this.h712q); // for all skips, mention all skipped questions
-        setH712s(h712.equals("2") ? "" : this.h712s); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h712);
-    }
-
-    @Bindable
-    public String getH712q() {
-        return h712q;
-    }
-
-    public void setH712q(String h712q) {
-        this.h712q = h712q;
-        notifyPropertyChanged(BR.h712q);
-    }
-
-    @Bindable
-    public String getH712s() {
-        return h712s;
-    }
-
-    public void setH712s(String h712s) {
-        this.h712s = h712s;
-        notifyPropertyChanged(BR.h712s);
-    }
-
-    @Bindable
-    public String getH713a() {
-        return h713a;
-    }
-
-    public void setH713a(String h713a) {
-        this.h713a = h713a;
-        setH713b(h713a.equals("2") ? "" : this.h713b); // for all skips, mention all skipped questions
-        setH713c(h713a.equals("2") ? "" : this.h713c); // for all skips, mention all skipped questions
-        setH713d(h713a.equals("2") ? "" : this.h713d); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h713a);
-    }
-
-    @Bindable
-    public String getH713b() {
-        return h713b;
-    }
-
-    public void setH713b(String h713b) {
-        this.h713b = h713b;
-        notifyPropertyChanged(BR.h713b);
-    }
-
-    @Bindable
-    public String getH713c() {
-        return h713c;
-    }
-
-    public void setH713c(String h713c) {
-        this.h713c = h713c;
-        notifyPropertyChanged(BR.h713c);
-    }
-
-    @Bindable
-    public String getH713d() {
-        return h713d;
-    }
-
-    public void setH713d(String h713d) {
-        this.h713d = h713d;
-        notifyPropertyChanged(BR.h713d);
-    }
-
-    @Bindable
-    public String getH714a() {
-        return h714a;
-    }
-
-    public void setH714a(String h714a) {
-        this.h714a = h714a;
-        setH714b(h714a.equals("2") ? "" : this.h714b); // for all skips, mention all skipped questions
-        setH714c(h714a.equals("2") ? "" : this.h714c); // for all skips, mention all skipped questions
-        setH714d(h714a.equals("2") ? "" : this.h714d); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.h714a);
-    }
-
-    @Bindable
-    public String getH714b() {
-        return h714b;
-    }
-
-    public void setH714b(String h714b) {
-        this.h714b = h714b;
-        notifyPropertyChanged(BR.h714b);
-    }
-
-    @Bindable
-    public String getH714c() {
-        return h714c;
-    }
-
-    public void setH714c(String h714c) {
-        this.h714c = h714c;
-        notifyPropertyChanged(BR.h714c);
-    }
-
-    @Bindable
-    public String getH714d() {
-        return h714d;
-    }
-
-    public void setH714d(String h714d) {
-        this.h714d = h714d;
-        notifyPropertyChanged(BR.h714d);
-    }
-
-    @Bindable
-    public String getW101d() {
-        return w101d;
-    }
-
-    public void setW101d(String w101d) {
-        this.w101d = w101d;
-        notifyPropertyChanged(BR.w101d);
-    }
-
-    @Bindable
-    public String getW101m() {
-        return w101m;
-    }
-
-    public void setW101m(String w101m) {
-        this.w101m = w101m;
-        notifyPropertyChanged(BR.w101m);
-    }
-
-    @Bindable
-    public String getW101y() {
-        return w101y;
-    }
-
-    public void setW101y(String w101y) {
-        this.w101y = w101y;
-        notifyPropertyChanged(BR.w101y);
-    }
-
-    @Bindable
-    public String getW102() {
-        return w102;
-    }
-
-    public void setW102(String w102) {
-        this.w102 = w102;
-        notifyPropertyChanged(BR.w102);
-    }
-
-    @Bindable
-    public String getW103() {
-        return w103;
-    }
-
-    public void setW103(String w103) {
-        this.w103 = w103;
-        setW104(w103.equals("1") ? this.w104 : "");
-        setW105(w103.equals("1") ? this.w105 : "");
-        setW106(w103.equals("1") ? this.w106 : "");
-        setW107(w103.equals("1") ? this.w107 : "");
-        setW108(w103.equals("1") ? this.w108 : "");
-        setW109(w103.equals("1") ? this.w109 : "");
-        setW110(w103.equals("1") ? this.w110 : "");
-        setW111(w103.equals("1") ? this.w111 : "");
-        setW112(w103.equals("1") ? this.w112 : "");
-        notifyPropertyChanged(BR.w103);
-    }
-
-    @Bindable
-    public String getW104() {
-        return w104;
-    }
-
-    public void setW104(String w104) {
-        this.w104 = w104;
-        notifyPropertyChanged(BR.w104);
-    }
-
-    @Bindable
-    public String getW105() {
-        return w105;
-    }
-
-    public void setW105(String w105) {
-        this.w105 = w105;
-        notifyPropertyChanged(BR.w105);
-    }
-
-    @Bindable
-    public String getW106() {
-        return w106;
-    }
-
-    public void setW106(String w106) {
-        this.w106 = w106;
-        notifyPropertyChanged(BR.w106);
-    }
-
-    @Bindable
-    public String getW107() {
-        return w107;
-    }
-
-    public void setW107(String w107) {
-        this.w107 = w107;
-        notifyPropertyChanged(BR.w107);
-    }
-
-    @Bindable
-    public String getW108() {
-        return w108;
-    }
-
-    public void setW108(String w108) {
-        this.w108 = w108;
-        notifyPropertyChanged(BR.w108);
-    }
-
-    @Bindable
-    public String getW109() {
-        return w109;
-    }
-
-    public void setW109(String w109) {
-        this.w109 = w109;
-        notifyPropertyChanged(BR.w109);
-    }
-
-    @Bindable
-    public String getW110() {
-        return w110;
-    }
-
-    public void setW110(String w110) {
-        this.w110 = w110;
-        notifyPropertyChanged(BR.w110);
-    }
-
-    @Bindable
-    public String getW111() {
-        return w111;
-    }
-
-    public void setW111(String w111) {
-        this.w111 = w111;
-        notifyPropertyChanged(BR.w111);
-    }
-
-    @Bindable
-    public String getW112() {
-        return w112;
-    }
-
-    public void setW112(String w112) {
-        this.w112 = w112;
-        notifyPropertyChanged(BR.w112);
-    }
-
-    @Bindable
-    public String getW201() {
-        return w201;
-    }
-
-    public void setW201(String w201) {
-        this.w201 = w201;
-
-        setW202a(w201.equals("1") ? this.w202a : "");
-        setW202b(w201.equals("1") ? this.w202b : "");
-        setW202c(w201.equals("1") ? this.w202c : "");
-        setW202d(w201.equals("1") ? this.w202d : "");
-        setW202e(w201.equals("1") ? this.w202e : "");
-        setW202f(w201.equals("1") ? this.w202f : "");
-        setW202g(w201.equals("1") ? this.w202g : "");
-        setW202h(w201.equals("1") ? this.w202h : "");
-        setW20296(w201.equals("1") ? this.w20296 : "");
-
-        setW203(w201.equals("1") ? this.w203 : "");
-        setW204(w201.equals("1") ? this.w204 : "");
-        setW205(w201.equals("1") ? this.w205 : "");
-        setW206(w201.equals("1") ? this.w206 : "");
-
-        setW20601(w201.equals("1") ? this.w20601 : "");
-        setW20602(w201.equals("1") ? this.w20602 : "");
-        setW20603(w201.equals("1") ? this.w20603 : "");
-        setW20604(w201.equals("1") ? this.w20604 : "");
-        setW20605(w201.equals("1") ? this.w20605 : "");
-        setW20606(w201.equals("1") ? this.w20606 : "");
-        setW20607(w201.equals("1") ? this.w20607 : "");
-        setW20608(w201.equals("1") ? this.w20608 : "");
-        setW20696(w201.equals("1") ? this.w20696 : "");
-        setW20697(w201.equals("1") ? this.w20697 : "");
-        setW20696x(w201.equals("1") ? this.w20696x : "");
-
-        notifyPropertyChanged(BR.w201);
-    }
-
-    @Bindable
-    public String getW202() {
-        return w202;
-    }
-
-    public void setW202(String w202) {
-        this.w202 = w202;
-        notifyPropertyChanged(BR.w202);
-    }
-
-    @Bindable
-    public String getW202a() {
-        return w202a;
-    }
-
-    public void setW202a(String w202a) {
-        if (this.w202a.equals(w202a)) return; // for all checkboxes
-        this.w202a = w202a;
-        notifyPropertyChanged(BR.w202a);
-    }
-
-    @Bindable
-    public String getW202b() {
-        return w202b;
-    }
-
-    public void setW202b(String w202b) {
-        if (this.w202b.equals(w202b)) return; // for all checkboxes
-        this.w202b = w202b;
-        notifyPropertyChanged(BR.w202b);
-    }
-
-    @Bindable
-    public String getW202c() {
-        return w202c;
-    }
-
-    public void setW202c(String w202c) {
-        if (this.w202c.equals(w202c)) return; // for all checkboxes
-        this.w202c = w202c;
-        notifyPropertyChanged(BR.w202c);
-    }
-
-    @Bindable
-    public String getW202d() {
-        return w202d;
-    }
-
-    public void setW202d(String w202d) {
-        if (this.w202d.equals(w202d)) return; // for all checkboxes
-        this.w202d = w202d;
-        notifyPropertyChanged(BR.w202d);
-    }
-
-    @Bindable
-    public String getW202e() {
-        return w202e;
-    }
-
-    public void setW202e(String w202e) {
-        if (this.w202e.equals(w202e)) return; // for all checkboxes
-        this.w202e = w202e;
-        notifyPropertyChanged(BR.w202e);
-    }
-
-    @Bindable
-    public String getW202f() {
-        return w202f;
-    }
-
-    public void setW202f(String w202f) {
-        if (this.w202f.equals(w202f)) return; // for all checkboxes
-        this.w202f = w202f;
-        notifyPropertyChanged(BR.w202f);
-    }
-
-    @Bindable
-    public String getW202g() {
-        return w202g;
-    }
-
-    public void setW202g(String w202g) {
-        if (this.w202g.equals(w202g)) return; // for all checkboxes
-        this.w202g = w202g;
-        notifyPropertyChanged(BR.w202g);
-    }
-
-    @Bindable
-    public String getW202h() {
-        return w202h;
-    }
-
-    public void setW202h(String w202h) {
-        if (this.w202h.equals(w202h)) return; // for all checkboxes
-        this.w202h = w202h;
-        notifyPropertyChanged(BR.w202h);
-    }
-
-    @Bindable
-    public String getW20296() {
-        return w20296;
-    }
-
-    public void setW20296(String w20296) {
-        if (this.w20296.equals(w20296)) return; // for all checkboxes
-        this.w20296 = w20296;
-        setW20296x(w20296.equals("96") ? this.w20296x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w20296);
-    }
-
-    @Bindable
-    public String getW20296x() {
-        return w20296x;
-    }
-
-    public void setW20296x(String w20296x) {
-        this.w20296x = w20296x;
-        notifyPropertyChanged(BR.w20296x);
-    }
-
-    @Bindable
-    public String getW203() {
-        return w203;
-    }
-
-    public void setW203(String w203) {
-        this.w203 = w203;
-        setW203961x(w203.equals("961") ? this.w203961x : ""); // for all skips, mention all skipped questions
-        setW203962x(w203.equals("962") ? this.w203962x : ""); // for all skips, mention all skipped questions
-        setW203963x(w203.equals("963") ? this.w203963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w203);
-    }
-
-    @Bindable
-    public String getW203961x() {
-        return w203961x;
-    }
-
-    public void setW203961x(String w203961x) {
-        this.w203961x = w203961x;
-        notifyPropertyChanged(BR.w203961x);
-    }
-
-    @Bindable
-    public String getW203962x() {
-        return w203962x;
-    }
-
-    public void setW203962x(String w203962x) {
-        this.w203962x = w203962x;
-        notifyPropertyChanged(BR.w203962x);
-    }
-
-    @Bindable
-    public String getW203963x() {
-        return w203963x;
-    }
-
-    public void setW203963x(String w203963x) {
-        this.w203963x = w203963x;
-        notifyPropertyChanged(BR.w203963x);
-    }
-
-    @Bindable
-    public String getW204() {
-        return w204;
-    }
-
-    public void setW204(String w204) {
-        setW204wx(w204.equals("1") ? this.w204wx : ""); // for all skips, mention all skipped questions
-        setW204mx(w204.equals("2") ? this.w204mx : ""); // for all skips, mention all skipped questions
-        this.w204 = w204;
-        notifyPropertyChanged(BR.w204);
-    }
-
-    @Bindable
-    public String getW204wx() {
-        return w204wx;
-    }
-
-    public void setW204wx(String w204wx) {
-        this.w204wx = w204wx;
-        notifyPropertyChanged(BR.w204wx);
-    }
-
-    @Bindable
-    public String getW204mx() {
-        return w204mx;
-    }
-
-    public void setW204mx(String w204mx) {
-        this.w204mx = w204mx;
-        notifyPropertyChanged(BR.w204mx);
-    }
-
-    @Bindable
-    public String getW205() {
-        return w205;
-    }
 
-    public void setW205(String w205) {
-        if (this.w205.equals(w205)) return; // for all checkboxes
-        this.w205 = w205;
-        setW205ax(w205.equals("98") ? "" : this.w205ax); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w205);
+    public String getsD1() {
+        return sD1;
     }
 
-    @Bindable
-    public String getW205ax() {
-        return w205ax;
-    }
-
-    public void setW205ax(String w205ax) {
-        this.w205ax = w205ax;
-        notifyPropertyChanged(BR.w205ax);
-    }
-
-    @Bindable
-    public String getW206() {
-        return w206;
-    }
-
-    public void setW206(String w206) {
-        this.w206 = w206;
-        setW20696x(w206.equals("96") ? this.w20696x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w206);
-    }
-
-    @Bindable
-    public String getW20696x() {
-        return w20696x;
-    }
-
-    public void setW20696x(String w20696x) {
-        this.w20696x = w20696x;
-        notifyPropertyChanged(BR.w20696x);
-    }
-
-    @Bindable
-    public String getW20601() {
-        return w20601;
-    }
-
-    public void setW20601(String w20601) {
-        this.w20601 = w20601;
-        notifyPropertyChanged(BR.w20601);
-    }
-
-    @Bindable
-    public String getW20602() {
-        return w20602;
-    }
-
-    public void setW20602(String w20602) {
-        this.w20602 = w20602;
-        notifyPropertyChanged(BR.w20602);
-    }
-
-    @Bindable
-    public String getW20603() {
-        return w20603;
-    }
-
-    public void setW20603(String w20603) {
-        this.w20603 = w20603;
-        notifyPropertyChanged(BR.w20603);
-    }
-
-    @Bindable
-    public String getW20604() {
-        return w20604;
-    }
-
-    public void setW20604(String w20604) {
-        this.w20604 = w20604;
-        notifyPropertyChanged(BR.w20604);
-    }
-
-    @Bindable
-    public String getW20605() {
-        return w20605;
-    }
-
-    public void setW20605(String w20605) {
-        this.w20605 = w20605;
-        notifyPropertyChanged(BR.w20605);
-    }
-
-    @Bindable
-    public String getW20606() {
-        return w20606;
-    }
-
-    public void setW20606(String w20606) {
-        this.w20606 = w20606;
-        notifyPropertyChanged(BR.w20606);
-    }
-
-    @Bindable
-    public String getW20607() {
-        return w20607;
-    }
-
-    public void setW20607(String w20607) {
-        this.w20607 = w20607;
-        notifyPropertyChanged(BR.w20607);
-    }
-
-    @Bindable
-    public String getW20608() {
-        return w20608;
-    }
-
-    public void setW20608(String w20608) {
-        this.w20608 = w20608;
-        notifyPropertyChanged(BR.w20608);
-    }
-
-    @Bindable
-    public String getW20696() {
-        return w20696;
-    }
-
-    public void setW20696(String w20696) {
-        this.w20696 = w20696;
-        setW20696x(w20696.equals("1") ? this.w20696x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w20696);
-    }
-
-    @Bindable
-    public String getW20697() {
-        return w20697;
-    }
-
-    public void setW20697(String w20697) {
-        this.w20697 = w20697;
-        setW20601(w20697.equals("1") ? "" : this.w20601);
-        setW20602(w20697.equals("1") ? "" : this.w20602);
-        setW20603(w20697.equals("1") ? "" : this.w20603);
-        setW20604(w20697.equals("1") ? "" : this.w20604);
-        setW20605(w20697.equals("1") ? "" : this.w20605);
-        setW20606(w20697.equals("1") ? "" : this.w20606);
-        setW20607(w20697.equals("1") ? "" : this.w20607);
-        setW20608(w20697.equals("1") ? "" : this.w20608);
-        setW20696(w20697.equals("1") ? "" : this.w20696);
-        notifyPropertyChanged(BR.w20697);
-    }
-
-    @Bindable
-    public String getW207() {
-        return w207;
-    }
-
-    public void setW207(String w207) {
-        this.w207 = w207;
-        setW208(w207.equals("1") ? this.w208 : "");
-        setW209(w207.equals("1") ? this.w209 : "");
-        setW210961(w207.equals("1") ? this.w210961 : "");
-        setW210962(w207.equals("1") ? this.w210962 : "");
-        setW210963(w207.equals("1") ? this.w210963 : "");
-        setW211(w207.equals("1") ? this.w211 : "");
-        setW212(w207.equals("1") ? this.w212 : "");
-        notifyPropertyChanged(BR.w207);
-    }
-
-    @Bindable
-    public String getW208() {
-        return w208;
-    }
-
-    public void setW208(String w208) {
-        this.w208 = w208;
-        notifyPropertyChanged(BR.w208);
-    }
-
-    @Bindable
-    public String getW209() {
-        return w209;
-    }
-
-    public void setW209(String w209) {
-        this.w209 = w209;
-        setW20996x(w209.equals("96") ? this.w20996x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w209);
-    }
-
-    @Bindable
-    public String getW20996x() {
-        return w20996x;
-    }
-
-    public void setW20996x(String w20996x) {
-        this.w20996x = w20996x;
-        notifyPropertyChanged(BR.w20996x);
-    }
-
-    @Bindable
-    public String getW210() {
-        return w210;
-    }
-
-    public void setW210(String w210) {
-        this.w210 = w210;
-        notifyPropertyChanged(BR.w210);
-    }
-
-    @Bindable
-    public String getW210961() {
-        return w210961;
-    }
-
-    public void setW210961(String w210961) {
-        if (this.w210961.equals(w210961)) return; // for all checkboxes
-        this.w210961 = w210961;
-        setW210961x(w210961.equals("961") ? this.w210961x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w210961);
-    }
-
-    @Bindable
-    public String getW210961x() {
-        return w210961x;
-    }
-
-    public void setW210961x(String w210961x) {
-        this.w210961x = w210961x;
-        notifyPropertyChanged(BR.w210961x);
-    }
-
-    @Bindable
-    public String getW210962() {
-        return w210962;
-    }
-
-    public void setW210962(String w210962) {
-        if (this.w210962.equals(w210962)) return; // for all checkboxes
-        this.w210962 = w210962;
-        setW210962x(w210962.equals("962") ? this.w210962x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w210962);
-    }
-
-    @Bindable
-    public String getW210962x() {
-        return w210962x;
-    }
-
-    public void setW210962x(String w210962x) {
-        this.w210962x = w210962x;
-        notifyPropertyChanged(BR.w210962x);
-    }
-
-    @Bindable
-    public String getW210963() {
-        return w210963;
-    }
-
-    public void setW210963(String w210963) {
-        if (this.w210963.equals(w210963)) return; // for all checkboxes
-        this.w210963 = w210963;
-        setW210963x(w210963.equals("963") ? this.w210963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w210963);
-    }
-
-    @Bindable
-    public String getW210963x() {
-        return w210963x;
-    }
-
-    public void setW210963x(String w210963x) {
-        this.w210963x = w210963x;
-        notifyPropertyChanged(BR.w210963x);
-    }
-
-    @Bindable
-    public String getW211() {
-        return w211;
-    }
-
-    public void setW211(String w211) {
-        this.w211 = w211;
-        notifyPropertyChanged(BR.w211);
-    }
-
-    @Bindable
-    public String getW212() {
-        return w212;
-    }
-
-    public void setW212(String w212) {
-        this.w212 = w212;
-        setW212mx(w212.equals("1") ? this.w212mx : ""); // for all skips, mention all skipped questions
-        setW212dx(w212.equals("2") ? this.w212dx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w212);
+    public void setsD1(String sD1) {
+        this.sD1 = sD1;
     }
 
-    @Bindable
-    public String getW212mx() {
-        return w212mx;
-    }
-
-    public void setW212mx(String w212mx) {
-        this.w212mx = w212mx;
-        notifyPropertyChanged(BR.w212mx);
-    }
-
-    @Bindable
-    public String getW212dx() {
-        return w212dx;
-    }
-
-    public void setW212dx(String w212dx) {
-        this.w212dx = w212dx;
-        notifyPropertyChanged(BR.w212dx);
-    }
-
-    @Bindable
-    public String getW213() {
-        return w213;
-    }
-
-    public void setW213(String w213) {
-        this.w213 = w213;
-        setW214(w213.equals("1") ? this.w214 : "");
-        setW215961(w213.equals("1") ? this.w215961 : "");
-        setW215962(w213.equals("1") ? this.w215962 : "");
-        setW215963(w213.equals("1") ? this.w215963 : "");
-        setW216(w213.equals("1") ? this.w216 : "");
-        setW217(w213.equals("1") ? this.w217 : "");
-        notifyPropertyChanged(BR.w213);
-    }
-
-    @Bindable
-    public String getW214() {
-        return w214;
-    }
-
-    public void setW214(String w214) {
-        this.w214 = w214;
-        setW21496x(w214.equals("96") ? this.w21496x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w214);
-    }
-
-    @Bindable
-    public String getW21496x() {
-        return w21496x;
-    }
-
-    public void setW21496x(String w21496x) {
-        this.w21496x = w21496x;
-        notifyPropertyChanged(BR.w21496x);
-    }
-
-    @Bindable
-    public String getW215() {
-        return w215;
-    }
-
-    public void setW215(String w215) {
-        this.w215 = w215;
-        notifyPropertyChanged(BR.w215);
-    }
-
-    @Bindable
-    public String getW215961() {
-        return w215961;
-    }
-
-    public void setW215961(String w215961) {
-        if (this.w215961.equals(w215961)) return; // for all checkboxes
-        this.w215961 = w215961;
-        setW215961x(w215961.equals("961") ? this.w215961x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w215961);
-    }
-
-    @Bindable
-    public String getW215961x() {
-        return w215961x;
-    }
-
-    public void setW215961x(String w215961x) {
-        this.w215961x = w215961x;
-        notifyPropertyChanged(BR.w215961x);
-    }
-
-    @Bindable
-    public String getW215962() {
-        return w215962;
-    }
-
-    public void setW215962(String w215962) {
-        if (this.w215962.equals(w215962)) return; // for all checkboxes
-        this.w215962 = w215962;
-        setW215962x(w215962.equals("962") ? this.w215962x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w215962);
-    }
-
-    @Bindable
-    public String getW215962x() {
-        return w215962x;
-    }
-
-    public void setW215962x(String w215962x) {
-        this.w215962x = w215962x;
-        notifyPropertyChanged(BR.w215962x);
-    }
-
-    @Bindable
-    public String getW215963() {
-        return w215963;
-    }
-
-    public void setW215963(String w215963) {
-        if (this.w215963.equals(w215963)) return; // for all checkboxes
-        this.w215963 = w215963;
-        setW215963x(w215963.equals("963") ? this.w215963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w215963);
-    }
-
-    @Bindable
-    public String getW215963x() {
-        return w215963x;
-    }
-
-    public void setW215963x(String w215963x) {
-        this.w215963x = w215963x;
-        notifyPropertyChanged(BR.w215963x);
-    }
-
-    @Bindable
-    public String getW216() {
-        return w216;
-    }
-
-    public void setW216(String w216) {
-        this.w216 = w216;
-        notifyPropertyChanged(BR.w216);
-    }
 
-    @Bindable
-    public String getW217() {
-        return w217;
-    }
-
-    public void setW217(String w217) {
-        this.w217 = w217;
-        setW217mx(w217.equals("1") ? this.w217mx : ""); // for all skips, mention all skipped questions
-        setW217dx(w217.equals("2") ? this.w217dx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w217);
-    }
-
-    @Bindable
-    public String getW217mx() {
-        return w217mx;
-    }
-
-    public void setW217mx(String w217mx) {
-        this.w217mx = w217mx;
-        notifyPropertyChanged(BR.w217mx);
-    }
-
-    @Bindable
-    public String getW217dx() {
-        return w217dx;
-    }
-
-    public void setW217dx(String w217dx) {
-        this.w217dx = w217dx;
-        notifyPropertyChanged(BR.w217dx);
-    }
-
-    @Bindable
-    public String getW218() {
-        return w218;
-    }
-
-    public void setW218(String w218) {
-        this.w218 = w218;
-
-        setW219(w218.equals("2") ? this.w219 : "");
-
-        notifyPropertyChanged(BR.w218);
-    }
-
-    @Bindable
-    public String getW219() {
-        return w219;
-    }
-
-    public void setW219(String w219) {
-        this.w219 = w219;
-        notifyPropertyChanged(BR.w219);
-    }
-
-    @Bindable
-    public String getW220() {
-        return w220;
-    }
-
-    public void setW220(String w220) {
-        this.w220 = w220;
-        notifyPropertyChanged(BR.w220);
-    }
-
-    @Bindable
-    public String getW221() {
-        return w221;
-    }
-
-    public void setW221(String w221) {
-        this.w221 = w221;
-        setW221mx(w221.equals("1") ? this.w221mx : ""); // for all skips, mention all skipped questions
-        setW221dx(w221.equals("2") ? this.w221dx : ""); // for all skips, mention all skipped questions
-        setW222(w221.equals("98") ? "" : this.w222);
-        setW223a(w221.equals("98") ? "" : this.w223a);
-        setW223b(w221.equals("98") ? "" : this.w223b);
-        setW223c(w221.equals("98") ? "" : this.w223c);
-        setW223d(w221.equals("98") ? "" : this.w223d);
-        setW223e(w221.equals("98") ? "" : this.w223e);
-        setW223f(w221.equals("98") ? "" : this.w223f);
-        setW223g(w221.equals("98") ? "" : this.w223g);
-        setW223h(w221.equals("98") ? "" : this.w223h);
-        notifyPropertyChanged(BR.w221);
+    public String getsE1() {
+        return sE1;
     }
 
-    @Bindable
-    public String getW221mx() {
-        return w221mx;
+    public void setsE1(String sE1) {
+        this.sE1 = sE1;
     }
 
-    public void setW221mx(String w221mx) {
-        this.w221mx = w221mx;
-        notifyPropertyChanged(BR.w221mx);
-    }
 
-    @Bindable
-    public String getW221dx() {
-        return w221dx;
+    public String getsF1() {
+        return sF1;
     }
 
-    public void setW221dx(String w221dx) {
-        this.w221dx = w221dx;
-        notifyPropertyChanged(BR.w221dx);
+    public void setsF1(String sF1) {
+        this.sF1 = sF1;
     }
 
-    @Bindable
-    public String getW222() {
-        return w222;
-    }
 
-    public void setW222(String w222) {
-        this.w222 = w222;
-        setW22296x(w222.equals("96") ? this.w22296x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w222);
+    public String getsF2() {
+        return sF2;
     }
 
-    @Bindable
-    public String getW22296x() {
-        return w22296x;
+    public void setsF2(String sF2) {
+        this.sF2 = sF2;
     }
 
-    public void setW22296x(String w22296x) {
-        this.w22296x = w22296x;
-        notifyPropertyChanged(BR.w22296x);
-    }
 
-    @Bindable
-    public String getW223() {
-        return w223;
+    public String getsF3() {
+        return sF3;
     }
 
-    public void setW223(String w223) {
-        this.w223 = w223;
-        notifyPropertyChanged(BR.w223);
+    public void setsF3(String sF3) {
+        this.sF3 = sF3;
     }
 
-    @Bindable
-    public String getW223a() {
-        return w223a;
-    }
 
-    public void setW223a(String w223a) {
-        if (this.w223a.equals(w223a)) return; // for all checkboxes
-        this.w223a = w223a;
-        notifyPropertyChanged(BR.w223a);
+    public String getsG1() {
+        return sG1;
     }
 
-    @Bindable
-    public String getW223b() {
-        return w223b;
+    public void setsG1(String sG1) {
+        this.sG1 = sG1;
     }
 
-    public void setW223b(String w223b) {
-        if (this.w223b.equals(w223b)) return; // for all checkboxes
-        this.w223b = w223b;
-        notifyPropertyChanged(BR.w223b);
-    }
 
-    @Bindable
-    public String getW223c() {
-        return w223c;
+    public String getsG2() {
+        return sG2;
     }
 
-    public void setW223c(String w223c) {
-        if (this.w223c.equals(w223c)) return; // for all checkboxes
-        this.w223c = w223c;
-        notifyPropertyChanged(BR.w223c);
+    public void setsG2(String sG2) {
+        this.sG2 = sG2;
     }
 
-    @Bindable
-    public String getW223d() {
-        return w223d;
-    }
 
-    public void setW223d(String w223d) {
-        if (this.w223d.equals(w223d)) return; // for all checkboxes
-        this.w223d = w223d;
-        notifyPropertyChanged(BR.w223d);
+    public String getsG3() {
+        return sG3;
     }
 
-    @Bindable
-    public String getW223e() {
-        return w223e;
+    public void setsG3(String sG3) {
+        this.sG3 = sG3;
     }
 
-    public void setW223e(String w223e) {
-        if (this.w223e.equals(w223e)) return; // for all checkboxes
-        this.w223e = w223e;
-        notifyPropertyChanged(BR.w223e);
-    }
 
-    @Bindable
-    public String getW223f() {
-        return w223f;
+    public String getsG4() {
+        return sG4;
     }
 
-    public void setW223f(String w223f) {
-        if (this.w223f.equals(w223f)) return; // for all checkboxes
-        this.w223f = w223f;
-        notifyPropertyChanged(BR.w223f);
+    public void setsG4(String sG4) {
+        this.sG4 = sG4;
     }
 
-    @Bindable
-    public String getW223g() {
-        return w223g;
-    }
 
-    public void setW223g(String w223g) {
-        if (this.w223g.equals(w223g)) return; // for all checkboxes
-        this.w223g = w223g;
-        notifyPropertyChanged(BR.w223g);
+    public String getsG5() {
+        return sG5;
     }
 
-    @Bindable
-    public String getW223h() {
-        return w223h;
+    public void setsG5(String sG5) {
+        this.sG5 = sG5;
     }
 
-    public void setW223h(String w223h) {
-        if (this.w223h.equals(w223h)) return; // for all checkboxes
-        this.w223h = w223h;
-        notifyPropertyChanged(BR.w223h);
-    }
 
-    @Bindable
-    public String getW224() {
-        return w224;
+    public String getsG6() {
+        return sG6;
     }
 
-    public void setW224(String w224) {
-        this.w224 = w224;
-        setW225(w224.equals("4") ? "" : this.w225);
-        setW226(w224.equals("4") ? "" : this.w226);
-        notifyPropertyChanged(BR.w224);
+    public void setsG6(String sG6) {
+        this.sG6 = sG6;
     }
 
-    @Bindable
-    public String getW225() {
-        return w225;
-    }
 
-    public void setW225(String w225) {
-        this.w225 = w225;
-        setW226(w225.equals("1") ? this.w226 : "");
-        notifyPropertyChanged(BR.w225);
+    public String getsG7() {
+        return sG7;
     }
 
-    @Bindable
-    public String getW226() {
-        return w226;
+    public void setsG7(String sG7) {
+        this.sG7 = sG7;
     }
 
-    public void setW226(String w226) {
-        this.w226 = w226;
-        notifyPropertyChanged(BR.w226);
-    }
 
     @Bindable
-    public String getW301() {
-        return w301;
+    public String getA101d() {
+        return a101d;
     }
 
-    public void setW301(String w301) {
-        this.w301 = w301;
-        setW30196x(w301.equals("96") ? this.w30196x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w301);
+    public void setA101d(String a101d) {
+        this.a101d = a101d;
+        notifyPropertyChanged(BR.a101d);
     }
 
     @Bindable
-    public String getW30196x() {
-        return w30196x;
+    public String getA101m() {
+        return a101m;
     }
 
-    public void setW30196x(String w30196x) {
-        this.w30196x = w30196x;
-        notifyPropertyChanged(BR.w30196x);
+    public void setA101m(String a101m) {
+        this.a101m = a101m;
+        notifyPropertyChanged(BR.a101m);
     }
 
     @Bindable
-    public String getW302() {
-        return w302;
+    public String getA101y() {
+        return a101y;
     }
 
-    public void setW302(String w302) {
-        this.w302 = w302;
-        notifyPropertyChanged(BR.w302);
+    public void setA101y(String a101y) {
+        this.a101y = a101y;
+        notifyPropertyChanged(BR.a101y);
     }
 
     @Bindable
-    public String getW302a() {
-        return w302a;
+    public String getA102() {
+        return a102;
     }
 
-    public void setW302a(String w302a) {
-        if (this.w302a.equals(w302a)) return; // for all checkboxes
-        this.w302a = w302a;
-        notifyPropertyChanged(BR.w302a);
+    public void setA102(String a102) {
+        this.a102 = a102;
+        notifyPropertyChanged(BR.a102);
     }
 
     @Bindable
-    public String getW302b() {
-        return w302b;
+    public String getA103() {
+        return a103;
     }
 
-    public void setW302b(String w302b) {
-        if (this.w302b.equals(w302b)) return; // for all checkboxes
-        this.w302b = w302b;
-        notifyPropertyChanged(BR.w302b);
+    public void setA103(String a103) {
+        this.a103 = a103;
+        notifyPropertyChanged(BR.a103);
     }
 
     @Bindable
-    public String getW302c() {
-        return w302c;
+    public String getA104() {
+        return a104;
     }
 
-    public void setW302c(String w302c) {
-        if (this.w302c.equals(w302c)) return; // for all checkboxes
-        this.w302c = w302c;
-        notifyPropertyChanged(BR.w302c);
+    public void setA104(String a104) {
+        this.a104 = a104;
+        notifyPropertyChanged(BR.a104);
     }
 
     @Bindable
-    public String getW302d() {
-        return w302d;
+    public String getA105() {
+        return a105;
     }
 
-    public void setW302d(String w302d) {
-        if (this.w302d.equals(w302d)) return; // for all checkboxes
-        this.w302d = w302d;
-        notifyPropertyChanged(BR.w302d);
+    public void setA105(String a105) {
+        this.a105 = a105;
+        notifyPropertyChanged(BR.a105);
     }
 
     @Bindable
-    public String getW302e() {
-        return w302e;
+    public String getA106() {
+        return a106;
     }
 
-    public void setW302e(String w302e) {
-        if (this.w302e.equals(w302e)) return; // for all checkboxes
-        this.w302e = w302e;
-        notifyPropertyChanged(BR.w302e);
+    public void setA106(String a106) {
+        this.a106 = a106;
+        notifyPropertyChanged(BR.a106);
     }
 
     @Bindable
-    public String getW302f() {
-        return w302f;
+    public String getA107() {
+        return a107;
     }
 
-    public void setW302f(String w302f) {
-        if (this.w302f.equals(w302f)) return; // for all checkboxes
-        this.w302f = w302f;
-        notifyPropertyChanged(BR.w302f);
+    public void setA107(String a107) {
+        this.a107 = a107;
+        notifyPropertyChanged(BR.a107);
     }
 
     @Bindable
-    public String getW302g() {
-        return w302g;
+    public String getA108() {
+        return a108;
     }
 
-    public void setW302g(String w302g) {
-        if (this.w302g.equals(w302g)) return; // for all checkboxes
-        this.w302g = w302g;
-        notifyPropertyChanged(BR.w302g);
+    public void setA108(String a108) {
+        this.a108 = a108;
+        notifyPropertyChanged(BR.a108);
     }
 
     @Bindable
-    public String getW30296() {
-        return w30296;
+    public String getA109() {
+        return a109;
     }
 
-    public void setW30296(String w30296) {
-        if (this.w30296.equals(w30296)) return; // for all checkboxes
-        this.w30296 = w30296;
-        setW30296x(w30296.equals("96") ? this.w30296x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w30296);
+    public void setA109(String a109) {
+        this.a109 = a109;
+        notifyPropertyChanged(BR.a109);
     }
 
     @Bindable
-    public String getW30296x() {
-        return w30296x;
+    public String getA110() {
+        return a110;
     }
 
-    public void setW30296x(String w30296x) {
-        this.w30296x = w30296x;
-        notifyPropertyChanged(BR.w30296x);
+    public void setA110(String a110) {
+        this.a110 = a110;
+        notifyPropertyChanged(BR.a110);
     }
 
     @Bindable
-    public String getW30299() {
-        return w30299;
+    public String getA111t() {
+        return a111t;
     }
 
-    public void setW30299(String w30299) {
-        if (this.w30299.equals(w30299)) return; // for all checkboxes
-        this.w30299 = w30299;
-        setW302a(w30299.equals("99") ? "" : this.w302a);
-        setW302b(w30299.equals("99") ? "" : this.w302b);
-        setW302c(w30299.equals("99") ? "" : this.w302c);
-        setW302d(w30299.equals("99") ? "" : this.w302d);
-        setW302e(w30299.equals("99") ? "" : this.w302e);
-        setW302f(w30299.equals("99") ? "" : this.w302f);
-        setW302g(w30299.equals("99") ? "" : this.w302g);
-        setW30296(w30299.equals("99") ? "" : this.w30296);
-        notifyPropertyChanged(BR.w30299);
+    public void setA111t(String a111t) {
+        this.a111t = a111t;
+        notifyPropertyChanged(BR.a111t);
     }
 
     @Bindable
-    public String getW303() {
-        return w303;
+    public String getA112() {
+        return a112;
     }
 
-    public void setW303(String w303) {
-        this.w303 = w303;
-        setW303961x(w303.equals("961") ? this.w303961x : ""); // for all skips, mention all skipped questions
-        setW303962x(w303.equals("962") ? this.w303962x : ""); // for all skips, mention all skipped questions
-        setW303963x(w303.equals("963") ? this.w303963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w303);
+    public void setA112(String a112) {
+        this.a112 = a112;
+        notifyPropertyChanged(BR.a112);
     }
 
     @Bindable
-    public String getW303961x() {
-        return w303961x;
+    public String getA113() {
+        return a113;
     }
 
-    public void setW303961x(String w303961x) {
-        this.w303961x = w303961x;
-        notifyPropertyChanged(BR.w303961x);
+    public void setA113(String a113) {
+        this.a113 = a113;
+        notifyPropertyChanged(BR.a113);
     }
 
     @Bindable
-    public String getW303962x() {
-        return w303962x;
+    public String getA114t() {
+        return a114t;
     }
 
-    public void setW303962x(String w303962x) {
-        this.w303962x = w303962x;
-        notifyPropertyChanged(BR.w303962x);
+    public void setA114t(String a114t) {
+        this.a114t = a114t;
+        notifyPropertyChanged(BR.a114t);
     }
 
     @Bindable
-    public String getW303963x() {
-        return w303963x;
+    public String getA115t() {
+        return a115t;
     }
 
-    public void setW303963x(String w303963x) {
-        this.w303963x = w303963x;
-        notifyPropertyChanged(BR.w303963x);
+    public void setA115t(String a115t) {
+        this.a115t = a115t;
+        notifyPropertyChanged(BR.a115t);
     }
 
     @Bindable
-    public String getW304() {
-        return w304;
+    public String getA116t() {
+        return a116t;
     }
 
-    public void setW304(String w304) {
-        this.w304 = w304;
-        notifyPropertyChanged(BR.w304);
+    public void setA116t(String a116t) {
+        this.a116t = a116t;
+        notifyPropertyChanged(BR.a116t);
     }
 
     @Bindable
-    public String getW305() {
-        return w305;
+    public String getA11696x() {
+        return a11696x;
     }
 
-    public void setW305(String w305) {
-        this.w305 = w305;
-        notifyPropertyChanged(BR.w305);
+    public void setA11696x(String a11696x) {
+        this.a11696x = a11696x;
+        notifyPropertyChanged(BR.a11696x);
     }
 
     @Bindable
-    public String getW306() {
-        return w306;
+    public String getA201() {
+        return a201;
     }
 
-    public void setW306(String w306) {
-        this.w306 = w306;
-        setW307(w306.equals("2") || w306.equals("98") ? this.w307 : "");
-        notifyPropertyChanged(BR.w306);
+    public void setA201(String a201) {
+        this.a201 = a201;
+        notifyPropertyChanged(BR.a201);
     }
 
     @Bindable
-    public String getW307() {
-        return w307;
+    public String getA203t() {
+        return a203t;
     }
 
-    public void setW307(String w307) {
-        this.w307 = w307;
-        setW307ax(w307.equals("1") ? this.w307ax : ""); // for all skips, mention all skipped questions
-        setW307bx(w307.equals("2") ? this.w307bx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w307);
+    public void setA203t(String a203t) {
+        this.a203t = a203t;
+        notifyPropertyChanged(BR.a203t);
     }
 
     @Bindable
-    public String getW307ax() {
-        return w307ax;
+    public String getA20396x() {
+        return a20396x;
     }
 
-    public void setW307ax(String w307ax) {
-        this.w307ax = w307ax;
-        notifyPropertyChanged(BR.w307ax);
+    public void setA20396x(String a20396x) {
+        this.a20396x = a20396x;
+        notifyPropertyChanged(BR.a20396x);
     }
 
     @Bindable
-    public String getW307bx() {
-        return w307bx;
+    public String getA204() {
+        return a204;
     }
 
-    public void setW307bx(String w307bx) {
-        this.w307bx = w307bx;
-        notifyPropertyChanged(BR.w307bx);
+    public void setA204(String a204) {
+        this.a204 = a204;
+        notifyPropertyChanged(BR.a204);
     }
 
     @Bindable
-    public String getW308() {
-        return w308;
+    public String getA205d() {
+        return a205d;
     }
 
-    public void setW308(String w308) {
-        this.w308 = w308;
-        notifyPropertyChanged(BR.w308);
+    public void setA205d(String a205d) {
+        this.a205d = a205d;
+        notifyPropertyChanged(BR.a205d);
     }
 
     @Bindable
-    public String getW309() {
-        return w309;
+    public String getA205m() {
+        return a205m;
     }
 
-    public void setW309(String w309) {
-        this.w309 = w309;
-        notifyPropertyChanged(BR.w309);
+    public void setA205m(String a205m) {
+        this.a205m = a205m;
+        notifyPropertyChanged(BR.a205m);
     }
 
     @Bindable
-    public String getW310() {
-        return w310;
+    public String getA205y() {
+        return a205y;
     }
 
-    public void setW310(String w310) {
-        this.w310 = w310;
-        notifyPropertyChanged(BR.w310);
+    public void setA205y(String a205y) {
+        this.a205y = a205y;
+        notifyPropertyChanged(BR.a205y);
     }
 
     @Bindable
-    public String getW311() {
-        return w311;
+    public String getA206() {
+        return a206;
     }
 
-    public void setW311(String w311) {
-        this.w311 = w311;
-        setW311hx(w311.equals("2") ? this.w311hx : ""); // for all skips, mention all skipped questions
-        setW311dx(w311.equals("3") ? this.w311dx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w311);
+    public void setA206(String a206) {
+        this.a206 = a206;
+        notifyPropertyChanged(BR.a206);
     }
 
     @Bindable
-    public String getW311hx() {
-        return w311hx;
+    public String getA207t() {
+        return a207t;
     }
 
-    public void setW311hx(String w311hx) {
-        this.w311hx = w311hx;
-        notifyPropertyChanged(BR.w311hx);
+    public void setA207t(String a207t) {
+        this.a207t = a207t;
+        notifyPropertyChanged(BR.a207t);
     }
 
     @Bindable
-    public String getW311dx() {
-        return w311dx;
+    public String getA208t() {
+        return a208t;
     }
 
-    public void setW311dx(String w311dx) {
-        this.w311dx = w311dx;
-        notifyPropertyChanged(BR.w311dx);
+    public void setA208t(String a208t) {
+        this.a208t = a208t;
+        notifyPropertyChanged(BR.a208t);
     }
 
     @Bindable
-    public String getW312() {
-        return w312;
+    public String getA209t() {
+        return a209t;
     }
 
-    public void setW312(String w312) {
-        this.w312 = w312;
-        notifyPropertyChanged(BR.w312);
+    public void setA209t(String a209t) {
+        this.a209t = a209t;
+        notifyPropertyChanged(BR.a209t);
     }
 
     @Bindable
-    public String getW313() {
-        return w313;
+    public String getA210() {
+        return a210;
     }
 
-    public void setW313(String w313) {
-        this.w313 = w313;
-        notifyPropertyChanged(BR.w313);
+    public void setA210(String a210) {
+        this.a210 = a210;
+        notifyPropertyChanged(BR.a210);
     }
 
     @Bindable
-    public String getW31397() {
-        return w31397;
+    public String getA301() {
+        return a301;
     }
 
-    public void setW31397(String w31397) {
-        if (this.w31397.equals(w31397)) return; // for all checkboxes
-        this.w31397 = w31397;
-        setW313b(w31397.equals("97") ? "" : this.w313b);
-        setW313c(w31397.equals("97") ? "" : this.w313c);
-        setW313d(w31397.equals("97") ? "" : this.w313d);
-        setW313e(w31397.equals("97") ? "" : this.w313e);
-        setW31396(w31397.equals("97") ? "" : this.w31396);
-        setW31398(w31397.equals("97") ? "" : this.w31398);
-        notifyPropertyChanged(BR.w31397);
+    public void setA301(String a301) {
+        this.a301 = a301;
+        notifyPropertyChanged(BR.a301);
     }
 
     @Bindable
-    public String getW313b() {
-        return w313b;
+    public String getA30196x() {
+        return a30196x;
     }
 
-    public void setW313b(String w313b) {
-        if (this.w313b.equals(w313b)) return; // for all checkboxes
-        this.w313b = w313b;
-        setW314(w313b.equals("2") ? this.w314 : "");
-        notifyPropertyChanged(BR.w313b);
+    public void setA30196x(String a30196x) {
+        this.a30196x = a30196x;
+        notifyPropertyChanged(BR.a30196x);
     }
 
     @Bindable
-    public String getW313c() {
-        return w313c;
+    public String getA302() {
+        return a302;
     }
 
-    public void setW313c(String w313c) {
-        if (this.w313c.equals(w313c)) return; // for all checkboxes
-        this.w313c = w313c;
-        notifyPropertyChanged(BR.w313c);
+    public void setA302(String a302) {
+        this.a302 = a302;
+        notifyPropertyChanged(BR.a302);
     }
 
     @Bindable
-    public String getW313d() {
-        return w313d;
+    public String getA30296x() {
+        return a30296x;
     }
 
-    public void setW313d(String w313d) {
-        if (this.w313d.equals(w313d)) return; // for all checkboxes
-        this.w313d = w313d;
-        notifyPropertyChanged(BR.w313d);
+    public void setA30296x(String a30296x) {
+        this.a30296x = a30296x;
+        notifyPropertyChanged(BR.a30296x);
     }
 
     @Bindable
-    public String getW313e() {
-        return w313e;
+    public String getA303() {
+        return a303;
     }
 
-    public void setW313e(String w313e) {
-        if (this.w313e.equals(w313e)) return; // for all checkboxes
-        this.w313e = w313e;
-        notifyPropertyChanged(BR.w313e);
+    public void setA303(String a303) {
+        this.a303 = a303;
+        notifyPropertyChanged(BR.a303);
     }
 
     @Bindable
-    public String getW31396() {
-        return w31396;
+    public String getA30396x() {
+        return a30396x;
     }
 
-    public void setW31396(String w31396) {
-        if (this.w31396.equals(w31396)) return; // for all checkboxes
-        this.w31396 = w31396;
-        setW31396x(w31396.equals("96") ? this.w31396x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w31396);
+    public void setA30396x(String a30396x) {
+        this.a30396x = a30396x;
+        notifyPropertyChanged(BR.a30396x);
     }
 
     @Bindable
-    public String getW31396x() {
-        return w31396x;
+    public String getA304() {
+        return a304;
     }
 
-    public void setW31396x(String w31396x) {
-        this.w31396x = w31396x;
-        notifyPropertyChanged(BR.w31396x);
+    public void setA304(String a304) {
+        this.a304 = a304;
+        notifyPropertyChanged(BR.a304);
     }
 
     @Bindable
-    public String getW31398() {
-        return w31398;
+    public String getA30496x() {
+        return a30496x;
     }
 
-    public void setW31398(String w31398) {
-        if (this.w31398.equals(w31398)) return; // for all checkboxes
-        this.w31398 = w31398;
-        setW313b(w31398.equals("98") ? "" : this.w313b);
-        setW313c(w31398.equals("98") ? "" : this.w313c);
-        setW313d(w31398.equals("98") ? "" : this.w313d);
-        setW313e(w31398.equals("98") ? "" : this.w313e);
-        setW31396(w31398.equals("98") ? "" : this.w31396);
-        setW31397(w31398.equals("98") ? "" : this.w31397);
-        notifyPropertyChanged(BR.w31398);
+    public void setA30496x(String a30496x) {
+        this.a30496x = a30496x;
+        notifyPropertyChanged(BR.a30496x);
     }
 
     @Bindable
-    public String getW314() {
-        return w314;
+    public String getA305() {
+        return a305;
     }
 
-    public void setW314(String w314) {
-        this.w314 = w314;
-        setW314961x(w314.equals("961") ? this.w314961x : ""); // for all skips, mention all skipped questions
-        setW314962x(w314.equals("962") ? this.w314962x : ""); // for all skips, mention all skipped questions
-        setW314963x(w314.equals("963") ? this.w314963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w314);
+    public void setA305(String a305) {
+        this.a305 = a305;
+        notifyPropertyChanged(BR.a305);
     }
 
     @Bindable
-    public String getW314961x() {
-        return w314961x;
+    public String getA30596x() {
+        return a30596x;
     }
 
-    public void setW314961x(String w314961x) {
-        this.w314961x = w314961x;
-        notifyPropertyChanged(BR.w314961x);
+    public void setA30596x(String a30596x) {
+        this.a30596x = a30596x;
+        notifyPropertyChanged(BR.a30596x);
     }
 
     @Bindable
-    public String getW314962x() {
-        return w314962x;
+    public String getA306() {
+        return a306;
     }
 
-    public void setW314962x(String w314962x) {
-        this.w314962x = w314962x;
-        notifyPropertyChanged(BR.w314962x);
+    public void setA306(String a306) {
+        this.a306 = a306;
+        notifyPropertyChanged(BR.a306);
     }
 
     @Bindable
-    public String getW314963x() {
-        return w314963x;
+    public String getA30696x() {
+        return a30696x;
     }
 
-    public void setW314963x(String w314963x) {
-        this.w314963x = w314963x;
-        notifyPropertyChanged(BR.w314963x);
+    public void setA30696x(String a30696x) {
+        this.a30696x = a30696x;
+        notifyPropertyChanged(BR.a30696x);
     }
 
     @Bindable
-    public String getW315() {
-        return w315;
+    public String getA307() {
+        return a307;
     }
 
-    public void setW315(String w315) {
-        this.w315 = w315;
-        setW316a(w315.equals("1") ? this.w316a : "");
-        setW316b(w315.equals("1") ? this.w316b : "");
-        setW316c(w315.equals("1") ? this.w316c : "");
-        setW316d(w315.equals("1") ? this.w316d : "");
-        setW316e(w315.equals("1") ? this.w316e : "");
-        setW316f(w315.equals("1") ? this.w316f : "");
-        setW316g(w315.equals("1") ? this.w316g : "");
-        setW316h(w315.equals("1") ? this.w316h : "");
-        setW31696(w315.equals("1") ? this.w31696 : "");
-
-        setW317(w315.equals("1") ? this.w317 : "");
-        setW318(w315.equals("1") ? this.w318 : "");
-
-        setW319a(w315.equals("1") ? this.w319a : "");
-        setW319b(w315.equals("1") ? this.w319b : "");
-        setW319c(w315.equals("1") ? this.w319c : "");
-        setW319d(w315.equals("1") ? this.w319d : "");
-        setW319e(w315.equals("1") ? this.w319e : "");
-        setW319f(w315.equals("1") ? this.w319f : "");
-        setW319g(w315.equals("1") ? this.w319g : "");
-        setW319h(w315.equals("1") ? this.w319h : "");
-        setW31996(w315.equals("1") ? this.w31996 : "");
-        notifyPropertyChanged(BR.w315);
+    public void setA307(String a307) {
+        this.a307 = a307;
+        notifyPropertyChanged(BR.a307);
     }
 
     @Bindable
-    public String getW316() {
-        return w316;
+    public String getA30796x() {
+        return a30796x;
     }
 
-    public void setW316(String w316) {
-        this.w316 = w316;
-        notifyPropertyChanged(BR.w316);
+    public void setA30796x(String a30796x) {
+        this.a30796x = a30796x;
+        notifyPropertyChanged(BR.a30796x);
     }
 
     @Bindable
-    public String getW316a() {
-        return w316a;
+    public String getA308() {
+        return a308;
     }
 
-    public void setW316a(String w316a) {
-        if (this.w316a.equals(w316a)) return; // for all checkboxes
-        this.w316a = w316a;
-        notifyPropertyChanged(BR.w316a);
+    public void setA308(String a308) {
+        this.a308 = a308;
+        notifyPropertyChanged(BR.a308);
     }
 
     @Bindable
-    public String getW316b() {
-        return w316b;
+    public String getA309() {
+        return a309;
     }
 
-    public void setW316b(String w316b) {
-        if (this.w316b.equals(w316b)) return; // for all checkboxes
-        this.w316b = w316b;
-        notifyPropertyChanged(BR.w316b);
+    public void setA309(String a309) {
+        this.a309 = a309;
+        notifyPropertyChanged(BR.a309);
     }
 
     @Bindable
-    public String getW316c() {
-        return w316c;
+    public String getA30901x() {
+        return a30901x;
     }
 
-    public void setW316c(String w316c) {
-        if (this.w316c.equals(w316c)) return; // for all checkboxes
-        this.w316c = w316c;
-        notifyPropertyChanged(BR.w316c);
+    public void setA30901x(String a30901x) {
+        this.a30901x = a30901x;
+        notifyPropertyChanged(BR.a30901x);
     }
 
     @Bindable
-    public String getW316d() {
-        return w316d;
+    public String getA310() {
+        return a310;
     }
 
-    public void setW316d(String w316d) {
-        if (this.w316d.equals(w316d)) return; // for all checkboxes
-        this.w316d = w316d;
-        notifyPropertyChanged(BR.w316d);
+    public void setA310(String a310) {
+        this.a310 = a310;
+        notifyPropertyChanged(BR.a310);
     }
 
     @Bindable
-    public String getW316e() {
-        return w316e;
+    public String getA311() {
+        return a311;
     }
 
-    public void setW316e(String w316e) {
-        if (this.w316e.equals(w316e)) return; // for all checkboxes
-        this.w316e = w316e;
-        notifyPropertyChanged(BR.w316e);
+    public void setA311(String a311) {
+        this.a311 = a311;
+        notifyPropertyChanged(BR.a311);
     }
 
     @Bindable
-    public String getW316f() {
-        return w316f;
+    public String getA312() {
+        return a312;
     }
 
-    public void setW316f(String w316f) {
-        if (this.w316f.equals(w316f)) return; // for all checkboxes
-        this.w316f = w316f;
-        notifyPropertyChanged(BR.w316f);
+    public void setA312(String a312) {
+        this.a312 = a312;
+        notifyPropertyChanged(BR.a312);
     }
 
     @Bindable
-    public String getW316g() {
-        return w316g;
+    public String getA313() {
+        return a313;
     }
 
-    public void setW316g(String w316g) {
-        if (this.w316g.equals(w316g)) return; // for all checkboxes
-        this.w316g = w316g;
-        notifyPropertyChanged(BR.w316g);
+    public void setA313(String a313) {
+        this.a313 = a313;
+        notifyPropertyChanged(BR.a313);
     }
 
     @Bindable
-    public String getW316h() {
-        return w316h;
+    public String getA314() {
+        return a314;
     }
 
-    public void setW316h(String w316h) {
-        if (this.w316h.equals(w316h)) return; // for all checkboxes
-        this.w316h = w316h;
-        notifyPropertyChanged(BR.w316h);
+    public void setA314(String a314) {
+        this.a314 = a314;
+        notifyPropertyChanged(BR.a314);
     }
 
     @Bindable
-    public String getW31696() {
-        return w31696;
+    public String getA31496x() {
+        return a31496x;
     }
 
-    public void setW31696(String w31696) {
-        if (this.w31696.equals(w31696)) return; // for all checkboxes
-        this.w31696 = w31696;
-        setW31696x(w31696.equals("96") ? this.w31696x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w31696);
+    public void setA31496x(String a31496x) {
+        this.a31496x = a31496x;
+        notifyPropertyChanged(BR.a31496x);
     }
 
     @Bindable
-    public String getW31696x() {
-        return w31696x;
+    public String getA315() {
+        return a315;
     }
 
-    public void setW31696x(String w31696x) {
-        this.w31696x = w31696x;
-        notifyPropertyChanged(BR.w31696x);
+    public void setA315(String a315) {
+        this.a315 = a315;
+        notifyPropertyChanged(BR.a315);
     }
 
     @Bindable
-    public String getW317() {
-        return w317;
+    public String getA316() {
+        return a316;
     }
 
-    public void setW317(String w317) {
-        this.w317 = w317;
-        setW317hx(w317.equals("1") ? this.w317hx : ""); // for all skips, mention all skipped questions
-        setW317dx(w317.equals("2") ? this.w317dx : ""); // for all skips, mention all skipped questions
-        setW317wx(w317.equals("3") ? this.w317wx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w317);
+    public void setA316(String a316) {
+        this.a316 = a316;
+        notifyPropertyChanged(BR.a316);
     }
 
     @Bindable
-    public String getW317hx() {
-        return w317hx;
+    public String getA31696x() {
+        return a31696x;
     }
 
-    public void setW317hx(String w317hx) {
-        this.w317hx = w317hx;
-        notifyPropertyChanged(BR.w317hx);
+    public void setA31696x(String a31696x) {
+        this.a31696x = a31696x;
+        notifyPropertyChanged(BR.a31696x);
     }
 
     @Bindable
-    public String getW317dx() {
-        return w317dx;
+    public String getA317() {
+        return a317;
     }
 
-    public void setW317dx(String w317dx) {
-        this.w317dx = w317dx;
-        notifyPropertyChanged(BR.w317dx);
+    public void setA317(String a317) {
+        this.a317 = a317;
+        notifyPropertyChanged(BR.a317);
     }
 
     @Bindable
-    public String getW317wx() {
-        return w317wx;
+    public String getA31796x() {
+        return a31796x;
     }
 
-    public void setW317wx(String w317wx) {
-        this.w317wx = w317wx;
-        notifyPropertyChanged(BR.w317wx);
+    public void setA31796x(String a31796x) {
+        this.a31796x = a31796x;
+        notifyPropertyChanged(BR.a31796x);
     }
 
     @Bindable
-    public String getW318() {
-        return w318;
+    public String getA318() {
+        return a318;
     }
 
-    public void setW318(String w318) {
-        this.w318 = w318;
-        notifyPropertyChanged(BR.w318);
+    public void setA318(String a318) {
+        this.a318 = a318;
+        notifyPropertyChanged(BR.a318);
     }
 
     @Bindable
-    public String getW319() {
-        return w319;
+    public String getA31896x() {
+        return a31896x;
     }
 
-    public void setW319(String w319) {
-        this.w319 = w319;
-        notifyPropertyChanged(BR.w319);
+    public void setA31896x(String a31896x) {
+        this.a31896x = a31896x;
+        notifyPropertyChanged(BR.a31896x);
     }
 
     @Bindable
-    public String getW319a() {
-        return w319a;
+    public String getA319t() {
+        return a319t;
     }
 
-    public void setW319a(String w319a) {
-        if (this.w319a.equals(w319a)) return; // for all checkboxes
-        this.w319a = w319a;
-        notifyPropertyChanged(BR.w319a);
+    public void setA319t(String a319t) {
+        this.a319t = a319t;
+        notifyPropertyChanged(BR.a319t);
     }
 
     @Bindable
-    public String getW319b() {
-        return w319b;
+    public String getA319t1() {
+        return a319t1;
     }
 
-    public void setW319b(String w319b) {
-        if (this.w319b.equals(w319b)) return; // for all checkboxes
-        this.w319b = w319b;
-        notifyPropertyChanged(BR.w319b);
+    public void setA319t1(String a319t1) {
+        this.a319t1 = a319t1;
+        notifyPropertyChanged(BR.a319t1);
     }
 
     @Bindable
-    public String getW319c() {
-        return w319c;
+    public String getA319t2() {
+        return a319t2;
     }
 
-    public void setW319c(String w319c) {
-        if (this.w319c.equals(w319c)) return; // for all checkboxes
-        this.w319c = w319c;
-        notifyPropertyChanged(BR.w319c);
+    public void setA319t2(String a319t2) {
+        this.a319t2 = a319t2;
+        notifyPropertyChanged(BR.a319t2);
     }
 
     @Bindable
-    public String getW319d() {
-        return w319d;
+    public String getA319t3() {
+        return a319t3;
     }
 
-    public void setW319d(String w319d) {
-        if (this.w319d.equals(w319d)) return; // for all checkboxes
-        this.w319d = w319d;
-        notifyPropertyChanged(BR.w319d);
+    public void setA319t3(String a319t3) {
+        this.a319t3 = a319t3;
+        notifyPropertyChanged(BR.a319t3);
     }
 
     @Bindable
-    public String getW319e() {
-        return w319e;
+    public String getA319t4() {
+        return a319t4;
     }
 
-    public void setW319e(String w319e) {
-        if (this.w319e.equals(w319e)) return; // for all checkboxes
-        this.w319e = w319e;
-        notifyPropertyChanged(BR.w319e);
+    public void setA319t4(String a319t4) {
+        this.a319t4 = a319t4;
+        notifyPropertyChanged(BR.a319t4);
     }
 
     @Bindable
-    public String getW319f() {
-        return w319f;
+    public String getA319t5() {
+        return a319t5;
     }
 
-    public void setW319f(String w319f) {
-        if (this.w319f.equals(w319f)) return; // for all checkboxes
-        this.w319f = w319f;
-        notifyPropertyChanged(BR.w319f);
+    public void setA319t5(String a319t5) {
+        this.a319t5 = a319t5;
+        notifyPropertyChanged(BR.a319t5);
     }
 
     @Bindable
-    public String getW319g() {
-        return w319g;
+    public String getA319t6() {
+        return a319t6;
     }
 
-    public void setW319g(String w319g) {
-        if (this.w319g.equals(w319g)) return; // for all checkboxes
-        this.w319g = w319g;
-        notifyPropertyChanged(BR.w319g);
+    public void setA319t6(String a319t6) {
+        this.a319t6 = a319t6;
+        notifyPropertyChanged(BR.a319t6);
     }
 
     @Bindable
-    public String getW319h() {
-        return w319h;
+    public String getA319t7() {
+        return a319t7;
     }
 
-    public void setW319h(String w319h) {
-        if (this.w319h.equals(w319h)) return; // for all checkboxes
-        this.w319h = w319h;
-        notifyPropertyChanged(BR.w319h);
+    public void setA319t7(String a319t7) {
+        this.a319t7 = a319t7;
+        notifyPropertyChanged(BR.a319t7);
     }
 
     @Bindable
-    public String getW31996() {
-        return w31996;
+    public String getA319t8() {
+        return a319t8;
     }
 
-    public void setW31996(String w31996) {
-        if (this.w31996.equals(w31996)) return; // for all checkboxes
-        this.w31996 = w31996;
-        setW31996x(w31996.equals("96") ? this.w31996x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w31996);
+    public void setA319t8(String a319t8) {
+        this.a319t8 = a319t8;
+        notifyPropertyChanged(BR.a319t8);
     }
 
     @Bindable
-    public String getW31996x() {
-        return w31996x;
+    public String getA319t9() {
+        return a319t9;
     }
 
-    public void setW31996x(String w31996x) {
-        this.w31996x = w31996x;
-        notifyPropertyChanged(BR.w31996x);
+    public void setA319t9(String a319t9) {
+        this.a319t9 = a319t9;
+        notifyPropertyChanged(BR.a319t9);
     }
 
     @Bindable
-    public String getW320() {
-        return w320;
+    public String getA319t10() {
+        return a319t10;
     }
 
-    public void setW320(String w320) {
-        this.w320 = w320;
-        setW321a(w320.equals("1") ? this.w321a : "");
-        setW321b(w320.equals("1") ? this.w321b : "");
-        setW321c(w320.equals("1") ? this.w321c : "");
-        setW321d(w320.equals("1") ? this.w321d : "");
-        setW321e(w320.equals("1") ? this.w321e : "");
-        setW321f(w320.equals("1") ? this.w321f : "");
-        setW321g(w320.equals("1") ? this.w321g : "");
-        setW321h(w320.equals("1") ? this.w321h : "");
-        setW32196(w320.equals("1") ? this.w32196 : "");
-        setW322(w320.equals("1") ? this.w322 : "");
-        setW323(w320.equals("1") ? this.w323 : "");
-        setW324a(w320.equals("1") ? this.w324a : "");
-        setW324b(w320.equals("1") ? this.w324b : "");
-        setW324c(w320.equals("1") ? this.w324c : "");
-        setW324d(w320.equals("1") ? this.w324d : "");
-        setW32496(w320.equals("1") ? this.w32496 : "");
-        setW325(w320.equals("1") ? this.w325 : "");
-        setW326(w320.equals("1") ? this.w326 : "");
-        setW327(w320.equals("1") ? this.w327 : "");
-        notifyPropertyChanged(BR.w320);
+    public void setA319t10(String a319t10) {
+        this.a319t10 = a319t10;
+        notifyPropertyChanged(BR.a319t10);
     }
 
     @Bindable
-    public String getW321() {
-        return w321;
+    public String getA319t11() {
+        return a319t11;
     }
 
-    public void setW321(String w321) {
-        this.w321 = w321;
-        notifyPropertyChanged(BR.w321);
+    public void setA319t11(String a319t11) {
+        this.a319t11 = a319t11;
+        notifyPropertyChanged(BR.a319t11);
     }
 
     @Bindable
-    public String getW321a() {
-        return w321a;
+    public String getA319t12() {
+        return a319t12;
     }
 
-    public void setW321a(String w321a) {
-        if (this.w321a.equals(w321a)) return; // for all checkboxes
-        this.w321a = w321a;
-        notifyPropertyChanged(BR.w321a);
+    public void setA319t12(String a319t12) {
+        this.a319t12 = a319t12;
+        notifyPropertyChanged(BR.a319t12);
     }
 
     @Bindable
-    public String getW321b() {
-        return w321b;
+    public String getA319t13() {
+        return a319t13;
     }
 
-    public void setW321b(String w321b) {
-        if (this.w321b.equals(w321b)) return; // for all checkboxes
-        this.w321b = w321b;
-        notifyPropertyChanged(BR.w321b);
+    public void setA319t13(String a319t13) {
+        this.a319t13 = a319t13;
+        notifyPropertyChanged(BR.a319t13);
     }
 
     @Bindable
-    public String getW321c() {
-        return w321c;
+    public String getA319t14() {
+        return a319t14;
     }
 
-    public void setW321c(String w321c) {
-        if (this.w321c.equals(w321c)) return; // for all checkboxes
-        this.w321c = w321c;
-        notifyPropertyChanged(BR.w321c);
+    public void setA319t14(String a319t14) {
+        this.a319t14 = a319t14;
+        notifyPropertyChanged(BR.a319t14);
     }
 
     @Bindable
-    public String getW321d() {
-        return w321d;
+    public String getA319t15() {
+        return a319t15;
     }
 
-    public void setW321d(String w321d) {
-        if (this.w321d.equals(w321d)) return; // for all checkboxes
-        this.w321d = w321d;
-        notifyPropertyChanged(BR.w321d);
+    public void setA319t15(String a319t15) {
+        this.a319t15 = a319t15;
+        notifyPropertyChanged(BR.a319t15);
     }
 
     @Bindable
-    public String getW321e() {
-        return w321e;
+    public String getA319t16() {
+        return a319t16;
     }
 
-    public void setW321e(String w321e) {
-        if (this.w321e.equals(w321e)) return; // for all checkboxes
-        this.w321e = w321e;
-        notifyPropertyChanged(BR.w321e);
+    public void setA319t16(String a319t16) {
+        this.a319t16 = a319t16;
+        notifyPropertyChanged(BR.a319t16);
     }
 
     @Bindable
-    public String getW321f() {
-        return w321f;
+    public String getA319t17() {
+        return a319t17;
     }
 
-    public void setW321f(String w321f) {
-        if (this.w321f.equals(w321f)) return; // for all checkboxes
-        this.w321f = w321f;
-        notifyPropertyChanged(BR.w321f);
+    public void setA319t17(String a319t17) {
+        this.a319t17 = a319t17;
+        notifyPropertyChanged(BR.a319t17);
     }
 
     @Bindable
-    public String getW321g() {
-        return w321g;
+    public String getA320() {
+        return a320;
     }
 
-    public void setW321g(String w321g) {
-        if (this.w321g.equals(w321g)) return; // for all checkboxes
-        this.w321g = w321g;
-        notifyPropertyChanged(BR.w321g);
+    public void setA320(String a320) {
+        this.a320 = a320;
+        notifyPropertyChanged(BR.a320);
     }
 
     @Bindable
-    public String getW321h() {
-        return w321h;
+    public String getA321t() {
+        return a321t;
     }
 
-    public void setW321h(String w321h) {
-        if (this.w321h.equals(w321h)) return; // for all checkboxes
-        this.w321h = w321h;
-        notifyPropertyChanged(BR.w321h);
+    public void setA321t(String a321t) {
+        this.a321t = a321t;
+        notifyPropertyChanged(BR.a321t);
     }
 
     @Bindable
-    public String getW32196() {
-        return w32196;
+    public String getA321t1() {
+        return a321t1;
     }
 
-    public void setW32196(String w32196) {
-        if (this.w32196.equals(w32196)) return; // for all checkboxes
-        this.w32196 = w32196;
-        setW32196x(w32196.equals("96") ? this.w32196x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w32196);
+    public void setA321t1(String a321t1) {
+        this.a321t1 = a321t1;
+        notifyPropertyChanged(BR.a321t1);
     }
 
     @Bindable
-    public String getW32196x() {
-        return w32196x;
+    public String getA321t2() {
+        return a321t2;
     }
 
-    public void setW32196x(String w32196x) {
-        this.w32196x = w32196x;
-        notifyPropertyChanged(BR.w32196x);
+    public void setA321t2(String a321t2) {
+        this.a321t2 = a321t2;
+        notifyPropertyChanged(BR.a321t2);
     }
 
     @Bindable
-    public String getW322() {
-        return w322;
+    public String getA321t3() {
+        return a321t3;
     }
 
-    public void setW322(String w322) {
-        this.w322 = w322;
-        setW322hx(w322.equals("1") ? this.w322hx : ""); // for all skips, mention all skipped questions
-        setW322hx(w322.equals("2") ? this.w322dx : ""); // for all skips, mention all skipped questions
-        setW322hx(w322.equals("3") ? this.w322wx : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w322);
+    public void setA321t3(String a321t3) {
+        this.a321t3 = a321t3;
+        notifyPropertyChanged(BR.a321t3);
     }
 
     @Bindable
-    public String getW322hx() {
-        return w322hx;
+    public String getA321t4() {
+        return a321t4;
     }
 
-    public void setW322hx(String w322hx) {
-        this.w322hx = w322hx;
-        notifyPropertyChanged(BR.w322hx);
+    public void setA321t4(String a321t4) {
+        this.a321t4 = a321t4;
+        notifyPropertyChanged(BR.a321t4);
     }
 
     @Bindable
-    public String getW322dx() {
-        return w322dx;
+    public String getA321t5() {
+        return a321t5;
     }
 
-    public void setW322dx(String w322dx) {
-        this.w322dx = w322dx;
-        notifyPropertyChanged(BR.w322dx);
+    public void setA321t5(String a321t5) {
+        this.a321t5 = a321t5;
+        notifyPropertyChanged(BR.a321t5);
     }
 
     @Bindable
-    public String getW322wx() {
-        return w322wx;
+    public String getA321t6() {
+        return a321t6;
     }
 
-    public void setW322wx(String w322wx) {
-        this.w322wx = w322wx;
-        notifyPropertyChanged(BR.w322wx);
+    public void setA321t6(String a321t6) {
+        this.a321t6 = a321t6;
+        notifyPropertyChanged(BR.a321t6);
     }
 
     @Bindable
-    public String getW323() {
-        return w323;
+    public String getA321t7() {
+        return a321t7;
     }
 
-    public void setW323(String w323) {
-        this.w323 = w323;
-        notifyPropertyChanged(BR.w323);
+    public void setA321t7(String a321t7) {
+        this.a321t7 = a321t7;
+        notifyPropertyChanged(BR.a321t7);
     }
 
     @Bindable
-    public String getW324() {
-        return w324;
+    public String getA321t8() {
+        return a321t8;
     }
 
-    public void setW324(String w324) {
-        this.w324 = w324;
-        notifyPropertyChanged(BR.w324);
+    public void setA321t8(String a321t8) {
+        this.a321t8 = a321t8;
+        notifyPropertyChanged(BR.a321t8);
     }
 
     @Bindable
-    public String getW324a() {
-        return w324a;
+    public String getA322() {
+        return a322;
     }
 
-    public void setW324a(String w324a) {
-        if (this.w324a.equals(w324a)) return; // for all checkboxes
-        this.w324a = w324a;
-        notifyPropertyChanged(BR.w324a);
+    public void setA322(String a322) {
+        this.a322 = a322;
+        notifyPropertyChanged(BR.a322);
     }
 
     @Bindable
-    public String getW324b() {
-        return w324b;
+    public String getA32296x() {
+        return a32296x;
     }
 
-    public void setW324b(String w324b) {
-        if (this.w324b.equals(w324b)) return; // for all checkboxes
-        this.w324b = w324b;
-        notifyPropertyChanged(BR.w324b);
+    public void setA32296x(String a32296x) {
+        this.a32296x = a32296x;
+        notifyPropertyChanged(BR.a32296x);
     }
 
     @Bindable
-    public String getW324c() {
-        return w324c;
+    public String getA323() {
+        return a323;
     }
 
-    public void setW324c(String w324c) {
-        if (this.w324c.equals(w324c)) return; // for all checkboxes
-        this.w324c = w324c;
-        notifyPropertyChanged(BR.w324c);
+    public void setA323(String a323) {
+        this.a323 = a323;
+        notifyPropertyChanged(BR.a323);
     }
 
     @Bindable
-    public String getW324d() {
-        return w324d;
+    public String getA324() {
+        return a324;
     }
 
-    public void setW324d(String w324d) {
-        if (this.w324d.equals(w324d)) return; // for all checkboxes
-        this.w324d = w324d;
-        notifyPropertyChanged(BR.w324d);
+    public void setA324(String a324) {
+        this.a324 = a324;
+        notifyPropertyChanged(BR.a324);
     }
 
     @Bindable
-    public String getW32496() {
-        return w32496;
+    public String getA325() {
+        return a325;
     }
 
-    public void setW32496(String w32496) {
-        if (this.w32496.equals(w32496)) return; // for all checkboxes
-        this.w32496 = w32496;
-        setW32496x(w32496.equals("96") ? this.w32496x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w32496);
+    public void setA325(String a325) {
+        this.a325 = a325;
+        notifyPropertyChanged(BR.a325);
     }
 
     @Bindable
-    public String getW32496x() {
-        return w32496x;
+    public String getA326() {
+        return a326;
     }
 
-    public void setW32496x(String w32496x) {
-        this.w32496x = w32496x;
-        notifyPropertyChanged(BR.w32496x);
+    public void setA326(String a326) {
+        this.a326 = a326;
+        notifyPropertyChanged(BR.a326);
     }
 
     @Bindable
-    public String getW325() {
-        return w325;
+    public String getA327() {
+        return a327;
     }
 
-    public void setW325(String w325) {
-        this.w325 = w325;
-        notifyPropertyChanged(BR.w325);
+    public void setA327(String a327) {
+        this.a327 = a327;
+        notifyPropertyChanged(BR.a327);
     }
 
     @Bindable
-    public String getW326() {
-        return w326;
+    public String getA32701x() {
+        return a32701x;
     }
 
-    public void setW326(String w326) {
-        this.w326 = w326;
-        notifyPropertyChanged(BR.w326);
+    public void setA32701x(String a32701x) {
+        this.a32701x = a32701x;
+        notifyPropertyChanged(BR.a32701x);
     }
 
     @Bindable
-    public String getW327() {
-        return w327;
+    public String getA32702x() {
+        return a32702x;
     }
 
-    public void setW327(String w327) {
-        this.w327 = w327;
-        setW32796x(w327.equals("96") ? this.w32796x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.w327);
+    public void setA32702x(String a32702x) {
+        this.a32702x = a32702x;
+        notifyPropertyChanged(BR.a32702x);
     }
 
     @Bindable
-    public String getW32796x() {
-        return w32796x;
+    public String getA328() {
+        return a328;
     }
 
-    public void setW32796x(String w32796x) {
-        this.w32796x = w32796x;
-        notifyPropertyChanged(BR.w32796x);
+    public void setA328(String a328) {
+        this.a328 = a328;
+        notifyPropertyChanged(BR.a328);
     }
 
     @Bindable
-    public String getW401() {
-        return w401;
+    public String getA329() {
+        return a329;
     }
 
-    public void setW401(String w401) {
-        this.w401 = w401;
-        notifyPropertyChanged(BR.w401);
+    public void setA329(String a329) {
+        this.a329 = a329;
+        notifyPropertyChanged(BR.a329);
     }
 
     @Bindable
-    public String getW401a() {
-        return w401a;
+    public String getA32901() {
+        return a32901;
     }
 
-    public void setW401a(String w401a) {
-        if (this.w401a.equals(w401a)) return; // for all checkboxes
-        this.w401a = w401a;
-        notifyPropertyChanged(BR.w401a);
+    public void setA32901(String a32901) {
+        this.a32901 = a32901;
+        notifyPropertyChanged(BR.a32901);
     }
 
     @Bindable
-    public String getW401b() {
-        return w401b;
+    public String getA32901x() {
+        return a32901x;
     }
 
-    public void setW401b(String w401b) {
-        if (this.w401b.equals(w401b)) return; // for all checkboxes
-        this.w401b = w401b;
-        notifyPropertyChanged(BR.w401b);
+    public void setA32901x(String a32901x) {
+        this.a32901x = a32901x;
+        notifyPropertyChanged(BR.a32901x);
     }
 
     @Bindable
-    public String getW401c() {
-        return w401c;
+    public String getA32902() {
+        return a32902;
     }
 
-    public void setW401c(String w401c) {
-        if (this.w401c.equals(w401c)) return; // for all checkboxes
-        this.w401c = w401c;
-        notifyPropertyChanged(BR.w401c);
+    public void setA32902(String a32902) {
+        this.a32902 = a32902;
+        notifyPropertyChanged(BR.a32902);
     }
 
     @Bindable
-    public String getW401d() {
-        return w401d;
+    public String getA32902x() {
+        return a32902x;
     }
 
-    public void setW401d(String w401d) {
-        if (this.w401d.equals(w401d)) return; // for all checkboxes
-        this.w401d = w401d;
-        notifyPropertyChanged(BR.w401d);
+    public void setA32902x(String a32902x) {
+        this.a32902x = a32902x;
+        notifyPropertyChanged(BR.a32902x);
     }
 
     @Bindable
-    public String getW401e() {
-        return w401e;
+    public String getA32903() {
+        return a32903;
     }
 
-    public void setW401e(String w401e) {
-        if (this.w401e.equals(w401e)) return; // for all checkboxes
-        this.w401e = w401e;
-        notifyPropertyChanged(BR.w401e);
+    public void setA32903(String a32903) {
+        this.a32903 = a32903;
+        notifyPropertyChanged(BR.a32903);
     }
 
     @Bindable
-    public String getW401f() {
-        return w401f;
+    public String getA32903x() {
+        return a32903x;
     }
 
-    public void setW401f(String w401f) {
-        if (this.w401f.equals(w401f)) return; // for all checkboxes
-        this.w401f = w401f;
-        notifyPropertyChanged(BR.w401f);
+    public void setA32903x(String a32903x) {
+        this.a32903x = a32903x;
+        notifyPropertyChanged(BR.a32903x);
     }
 
     @Bindable
-    public String getW401g() {
-        return w401g;
+    public String getA32904() {
+        return a32904;
     }
 
-    public void setW401g(String w401g) {
-        if (this.w401g.equals(w401g)) return; // for all checkboxes
-        this.w401g = w401g;
-        notifyPropertyChanged(BR.w401g);
+    public void setA32904(String a32904) {
+        this.a32904 = a32904;
+        notifyPropertyChanged(BR.a32904);
     }
 
     @Bindable
-    public String getW40198() {
-        return w40198;
+    public String getA32904x() {
+        return a32904x;
     }
 
-    public void setW40198(String w40198) {
-        if (this.w40198.equals(w40198)) return; // for all checkboxes
-        this.w40198 = w40198;
-        setW401a(w40198.equals("98") ? "" : this.w401a);
-        setW401b(w40198.equals("98") ? "" : this.w401b);
-        setW401c(w40198.equals("98") ? "" : this.w401c);
-        setW401d(w40198.equals("98") ? "" : this.w401d);
-        setW401e(w40198.equals("98") ? "" : this.w401e);
-        setW401f(w40198.equals("98") ? "" : this.w401f);
-        setW401g(w40198.equals("98") ? "" : this.w401g);
-        notifyPropertyChanged(BR.w40198);
+    public void setA32904x(String a32904x) {
+        this.a32904x = a32904x;
+        notifyPropertyChanged(BR.a32904x);
     }
 
     @Bindable
-    public String getW402() {
-        return w402;
+    public String getA32905() {
+        return a32905;
     }
 
-    public void setW402(String w402) {
-        this.w402 = w402;
-        notifyPropertyChanged(BR.w402);
+    public void setA32905(String a32905) {
+        this.a32905 = a32905;
+        notifyPropertyChanged(BR.a32905);
     }
 
     @Bindable
-    public String getW402a() {
-        return w402a;
+    public String getA32905x() {
+        return a32905x;
     }
 
-    public void setW402a(String w402a) {
-        if (this.w402a.equals(w402a)) return; // for all checkboxes
-        this.w402a = w402a;
-        notifyPropertyChanged(BR.w402a);
+    public void setA32905x(String a32905x) {
+        this.a32905x = a32905x;
+        notifyPropertyChanged(BR.a32905x);
     }
 
     @Bindable
-    public String getW402b() {
-        return w402b;
+    public String getA32906() {
+        return a32906;
     }
 
-    public void setW402b(String w402b) {
-        if (this.w402b.equals(w402b)) return; // for all checkboxes
-        this.w402b = w402b;
-        notifyPropertyChanged(BR.w402b);
+    public void setA32906(String a32906) {
+        this.a32906 = a32906;
+        notifyPropertyChanged(BR.a32906);
     }
 
     @Bindable
-    public String getW402c() {
-        return w402c;
+    public String getA32906x() {
+        return a32906x;
     }
 
-    public void setW402c(String w402c) {
-        if (this.w402c.equals(w402c)) return; // for all checkboxes
-        this.w402c = w402c;
-        notifyPropertyChanged(BR.w402c);
+    public void setA32906x(String a32906x) {
+        this.a32906x = a32906x;
+        notifyPropertyChanged(BR.a32906x);
     }
 
     @Bindable
-    public String getW402d() {
-        return w402d;
+    public String getA330() {
+        return a330;
     }
 
-    public void setW402d(String w402d) {
-        if (this.w402d.equals(w402d)) return; // for all checkboxes
-        this.w402d = w402d;
-        notifyPropertyChanged(BR.w402d);
+    public void setA330(String a330) {
+        this.a330 = a330;
+        notifyPropertyChanged(BR.a330);
     }
 
     @Bindable
-    public String getW402e() {
-        return w402e;
+    public String getA331() {
+        return a331;
     }
 
-    public void setW402e(String w402e) {
-        if (this.w402e.equals(w402e)) return; // for all checkboxes
-        this.w402e = w402e;
-        notifyPropertyChanged(BR.w402e);
+    public void setA331(String a331) {
+        this.a331 = a331;
+        notifyPropertyChanged(BR.a331);
     }
 
     @Bindable
-    public String getW402f() {
-        return w402f;
+    public String getA33101x() {
+        return a33101x;
     }
 
-    public void setW402f(String w402f) {
-        if (this.w402f.equals(w402f)) return; // for all checkboxes
-        this.w402f = w402f;
-        notifyPropertyChanged(BR.w402f);
+    public void setA33101x(String a33101x) {
+        this.a33101x = a33101x;
+        notifyPropertyChanged(BR.a33101x);
     }
 
     @Bindable
-    public String getW402g() {
-        return w402g;
+    public String getA332() {
+        return a332;
     }
 
-    public void setW402g(String w402g) {
-        if (this.w402g.equals(w402g)) return; // for all checkboxes
-        this.w402g = w402g;
-        notifyPropertyChanged(BR.w402g);
+    public void setA332(String a332) {
+        this.a332 = a332;
+        notifyPropertyChanged(BR.a332);
     }
 
     @Bindable
-    public String getW40298() {
-        return w40298;
+    public String getA33201() {
+        return a33201;
     }
 
-    public void setW40298(String w40298) {
-        if (this.w40298.equals(w40298)) return; // for all checkboxes
-        this.w40298 = w40298;
-        setW402a(w40298.equals("98") ? "" : this.w402a);
-        setW402b(w40298.equals("98") ? "" : this.w402b);
-        setW402c(w40298.equals("98") ? "" : this.w402c);
-        setW402d(w40298.equals("98") ? "" : this.w402d);
-        setW402e(w40298.equals("98") ? "" : this.w402e);
-        setW402f(w40298.equals("98") ? "" : this.w402f);
-        setW402g(w40298.equals("98") ? "" : this.w402g);
-        notifyPropertyChanged(BR.w40298);
+    public void setA33201(String a33201) {
+        this.a33201 = a33201;
+        notifyPropertyChanged(BR.a33201);
     }
 
     @Bindable
-    public String getW403() {
-        return w403;
+    public String getA33202() {
+        return a33202;
     }
 
-    public void setW403(String w403) {
-        this.w403 = w403;
-        notifyPropertyChanged(BR.w403);
+    public void setA33202(String a33202) {
+        this.a33202 = a33202;
+        notifyPropertyChanged(BR.a33202);
     }
 
     @Bindable
-    public String getW403a() {
-        return w403a;
+    public String getA33203() {
+        return a33203;
     }
 
-    public void setW403a(String w403a) {
-        if (this.w403a.equals(w403a)) return; // for all checkboxes
-        this.w403a = w403a;
-        notifyPropertyChanged(BR.w403a);
+    public void setA33203(String a33203) {
+        this.a33203 = a33203;
+        notifyPropertyChanged(BR.a33203);
     }
 
     @Bindable
-    public String getW403b() {
-        return w403b;
+    public String getA33204() {
+        return a33204;
     }
 
-    public void setW403b(String w403b) {
-        if (this.w403b.equals(w403b)) return; // for all checkboxes
-        this.w403b = w403b;
-        notifyPropertyChanged(BR.w403b);
+    public void setA33204(String a33204) {
+        this.a33204 = a33204;
+        notifyPropertyChanged(BR.a33204);
     }
 
     @Bindable
-    public String getW403c() {
-        return w403c;
+    public String getA33205() {
+        return a33205;
     }
 
-    public void setW403c(String w403c) {
-        if (this.w403c.equals(w403c)) return; // for all checkboxes
-        this.w403c = w403c;
-        notifyPropertyChanged(BR.w403c);
+    public void setA33205(String a33205) {
+        this.a33205 = a33205;
+        notifyPropertyChanged(BR.a33205);
     }
 
     @Bindable
-    public String getW403d() {
-        return w403d;
+    public String getA33296() {
+        return a33296;
     }
 
-    public void setW403d(String w403d) {
-        if (this.w403d.equals(w403d)) return; // for all checkboxes
-        this.w403d = w403d;
-        notifyPropertyChanged(BR.w403d);
+    public void setA33296(String a33296) {
+        this.a33296 = a33296;
+        notifyPropertyChanged(BR.a33296);
     }
 
     @Bindable
-    public String getW403e() {
-        return w403e;
+    public String getA33296x() {
+        return a33296x;
     }
 
-    public void setW403e(String w403e) {
-        if (this.w403e.equals(w403e)) return; // for all checkboxes
-        this.w403e = w403e;
-        notifyPropertyChanged(BR.w403e);
+    public void setA33296x(String a33296x) {
+        this.a33296x = a33296x;
+        notifyPropertyChanged(BR.a33296x);
     }
 
     @Bindable
-    public String getW403f() {
-        return w403f;
+    public String getA333() {
+        return a333;
     }
 
-    public void setW403f(String w403f) {
-        if (this.w403f.equals(w403f)) return; // for all checkboxes
-        this.w403f = w403f;
-        notifyPropertyChanged(BR.w403f);
+    public void setA333(String a333) {
+        this.a333 = a333;
+        notifyPropertyChanged(BR.a333);
     }
 
     @Bindable
-    public String getW403g() {
-        return w403g;
+    public String getA33301() {
+        return a33301;
     }
 
-    public void setW403g(String w403g) {
-        if (this.w403g.equals(w403g)) return; // for all checkboxes
-        this.w403g = w403g;
-        notifyPropertyChanged(BR.w403g);
+    public void setA33301(String a33301) {
+        this.a33301 = a33301;
+        notifyPropertyChanged(BR.a33301);
     }
 
     @Bindable
-    public String getW40398() {
-        return w40398;
+    public String getA33302() {
+        return a33302;
     }
 
-    public void setW40398(String w40398) {
-        if (this.w40398.equals(w40398)) return; // for all checkboxes
-        this.w40398 = w40398;
-        setW403a(w40398.equals("98") ? "" : this.w403a);
-        setW403b(w40398.equals("98") ? "" : this.w403b);
-        setW403c(w40398.equals("98") ? "" : this.w403c);
-        setW403d(w40398.equals("98") ? "" : this.w403d);
-        setW403e(w40398.equals("98") ? "" : this.w403e);
-        setW403f(w40398.equals("98") ? "" : this.w403f);
-        setW403g(w40398.equals("98") ? "" : this.w403g);
-        notifyPropertyChanged(BR.w40398);
+    public void setA33302(String a33302) {
+        this.a33302 = a33302;
+        notifyPropertyChanged(BR.a33302);
     }
 
     @Bindable
-    public String getW404() {
-        return w404;
+    public String getA33303() {
+        return a33303;
     }
 
-    public void setW404(String w404) {
-        this.w404 = w404;
-        notifyPropertyChanged(BR.w404);
+    public void setA33303(String a33303) {
+        this.a33303 = a33303;
+        notifyPropertyChanged(BR.a33303);
     }
 
     @Bindable
-    public String getW404a() {
-        return w404a;
+    public String getA33396() {
+        return a33396;
     }
 
-    public void setW404a(String w404a) {
-        if (this.w404a.equals(w404a)) return; // for all checkboxes
-        this.w404a = w404a;
-        notifyPropertyChanged(BR.w404a);
+    public void setA33396(String a33396) {
+        this.a33396 = a33396;
+        notifyPropertyChanged(BR.a33396);
     }
 
     @Bindable
-    public String getW404b() {
-        return w404b;
+    public String getA33396x() {
+        return a33396x;
     }
 
-    public void setW404b(String w404b) {
-        if (this.w404b.equals(w404b)) return; // for all checkboxes
-        this.w404b = w404b;
-        notifyPropertyChanged(BR.w404b);
+    public void setA33396x(String a33396x) {
+        this.a33396x = a33396x;
+        notifyPropertyChanged(BR.a33396x);
     }
 
     @Bindable
-    public String getW404c() {
-        return w404c;
+    public String getB101() {
+        return b101;
     }
 
-    public void setW404c(String w404c) {
-        if (this.w404c.equals(w404c)) return; // for all checkboxes
-        this.w404c = w404c;
-        notifyPropertyChanged(BR.w404c);
+    public void setB101(String b101) {
+        this.b101 = b101;
+        notifyPropertyChanged(BR.b101);
     }
 
     @Bindable
-    public String getW404d() {
-        return w404d;
+    public String getB102() {
+        return b102;
     }
 
-    public void setW404d(String w404d) {
-        if (this.w404d.equals(w404d)) return; // for all checkboxes
-        this.w404d = w404d;
-        notifyPropertyChanged(BR.w404d);
+    public void setB102(String b102) {
+        this.b102 = b102;
+        notifyPropertyChanged(BR.b102);
     }
 
     @Bindable
-    public String getW404e() {
-        return w404e;
+    public String getB10201() {
+        return b10201;
     }
 
-    public void setW404e(String w404e) {
-        if (this.w404e.equals(w404e)) return; // for all checkboxes
-        this.w404e = w404e;
-        notifyPropertyChanged(BR.w404e);
+    public void setB10201(String b10201) {
+        this.b10201 = b10201;
+        notifyPropertyChanged(BR.b10201);
     }
 
     @Bindable
-    public String getW404f() {
-        return w404f;
+    public String getB10202() {
+        return b10202;
     }
 
-    public void setW404f(String w404f) {
-        if (this.w404f.equals(w404f)) return; // for all checkboxes
-        this.w404f = w404f;
-        notifyPropertyChanged(BR.w404f);
+    public void setB10202(String b10202) {
+        this.b10202 = b10202;
+        notifyPropertyChanged(BR.b10202);
     }
 
     @Bindable
-    public String getW404g() {
-        return w404g;
+    public String getB10203() {
+        return b10203;
     }
 
-    public void setW404g(String w404g) {
-        if (this.w404g.equals(w404g)) return; // for all checkboxes
-        this.w404g = w404g;
-        notifyPropertyChanged(BR.w404g);
+    public void setB10203(String b10203) {
+        this.b10203 = b10203;
+        notifyPropertyChanged(BR.b10203);
     }
 
     @Bindable
-    public String getW40498() {
-        return w40498;
+    public String getB10204() {
+        return b10204;
     }
 
-    public void setW40498(String w40498) {
-        if (this.w40498.equals(w40498)) return; // for all checkboxes
-        this.w40498 = w40498;
-        setW404a(w40498.equals("98") ? "" : this.w404a);
-        setW404b(w40498.equals("98") ? "" : this.w404b);
-        setW404c(w40498.equals("98") ? "" : this.w404c);
-        setW404d(w40498.equals("98") ? "" : this.w404d);
-        setW404e(w40498.equals("98") ? "" : this.w404e);
-        setW404f(w40498.equals("98") ? "" : this.w404f);
-        setW404g(w40498.equals("98") ? "" : this.w404g);
-        notifyPropertyChanged(BR.w40498);
+    public void setB10204(String b10204) {
+        this.b10204 = b10204;
+        notifyPropertyChanged(BR.b10204);
     }
 
     @Bindable
-    public String getW405() {
-        return w405;
+    public String getB10205() {
+        return b10205;
     }
 
-    public void setW405(String w405) {
-        this.w405 = w405;
-        notifyPropertyChanged(BR.w405);
+    public void setB10205(String b10205) {
+        this.b10205 = b10205;
+        notifyPropertyChanged(BR.b10205);
     }
 
     @Bindable
-    public String getW405a() {
-        return w405a;
+    public String getB10206() {
+        return b10206;
     }
 
-    public void setW405a(String w405a) {
-        if (this.w405a.equals(w405a)) return; // for all checkboxes
-        this.w405a = w405a;
-        notifyPropertyChanged(BR.w405a);
+    public void setB10206(String b10206) {
+        this.b10206 = b10206;
+        notifyPropertyChanged(BR.b10206);
     }
 
     @Bindable
-    public String getW405b() {
-        return w405b;
+    public String getB10207() {
+        return b10207;
     }
 
-    public void setW405b(String w405b) {
-        if (this.w405b.equals(w405b)) return; // for all checkboxes
-        this.w405b = w405b;
-        notifyPropertyChanged(BR.w405b);
+    public void setB10207(String b10207) {
+        this.b10207 = b10207;
+        notifyPropertyChanged(BR.b10207);
     }
 
     @Bindable
-    public String getW405c() {
-        return w405c;
+    public String getB10208() {
+        return b10208;
     }
 
-    public void setW405c(String w405c) {
-        if (this.w405c.equals(w405c)) return; // for all checkboxes
-        this.w405c = w405c;
-        notifyPropertyChanged(BR.w405c);
+    public void setB10208(String b10208) {
+        this.b10208 = b10208;
+        notifyPropertyChanged(BR.b10208);
     }
 
     @Bindable
-    public String getW405d() {
-        return w405d;
+    public String getB10298() {
+        return b10298;
     }
 
-    public void setW405d(String w405d) {
-        if (this.w405d.equals(w405d)) return; // for all checkboxes
-        this.w405d = w405d;
-        notifyPropertyChanged(BR.w405d);
+    public void setB10298(String b10298) {
+        this.b10298 = b10298;
+        notifyPropertyChanged(BR.b10298);
     }
 
     @Bindable
-    public String getW405e() {
-        return w405e;
+    public String getB10298x() {
+        return b10298x;
     }
 
-    public void setW405e(String w405e) {
-        if (this.w405e.equals(w405e)) return; // for all checkboxes
-        this.w405e = w405e;
-        notifyPropertyChanged(BR.w405e);
+    public void setB10298x(String b10298x) {
+        this.b10298x = b10298x;
+        notifyPropertyChanged(BR.b10298x);
     }
 
     @Bindable
-    public String getW405f() {
-        return w405f;
+    public String getB103a() {
+        return b103a;
     }
 
-    public void setW405f(String w405f) {
-        if (this.w405f.equals(w405f)) return; // for all checkboxes
-        this.w405f = w405f;
-        notifyPropertyChanged(BR.w405f);
+    public void setB103a(String b103a) {
+        this.b103a = b103a;
+        notifyPropertyChanged(BR.b103a);
     }
 
     @Bindable
-    public String getW405g() {
-        return w405g;
+    public String getB103a96x() {
+        return b103a96x;
     }
 
-    public void setW405g(String w405g) {
-        if (this.w405g.equals(w405g)) return; // for all checkboxes
-        this.w405g = w405g;
-        notifyPropertyChanged(BR.w405g);
+    public void setB103a96x(String b103a96x) {
+        this.b103a96x = b103a96x;
+        notifyPropertyChanged(BR.b103a96x);
     }
 
     @Bindable
-    public String getW40598() {
-        return w40598;
+    public String getB103b() {
+        return b103b;
     }
 
-    public void setW40598(String w40598) {
-        if (this.w40598.equals(w40598)) return; // for all checkboxes
-        this.w40598 = w40598;
-        setW405a(w40598.equals("98") ? "" : this.w405a);
-        setW405b(w40598.equals("98") ? "" : this.w405b);
-        setW405c(w40598.equals("98") ? "" : this.w405c);
-        setW405d(w40598.equals("98") ? "" : this.w405d);
-        setW405e(w40598.equals("98") ? "" : this.w405e);
-        setW405f(w40598.equals("98") ? "" : this.w405f);
-        setW405g(w40598.equals("98") ? "" : this.w405g);
-        notifyPropertyChanged(BR.w40598);
+    public void setB103b(String b103b) {
+        this.b103b = b103b;
+        notifyPropertyChanged(BR.b103b);
     }
 
     @Bindable
-    public String getW406() {
-        return w406;
+    public String getB103b96x() {
+        return b103b96x;
     }
 
-    public void setW406(String w406) {
-        this.w406 = w406;
-        notifyPropertyChanged(BR.w406);
+    public void setB103b96x(String b103b96x) {
+        this.b103b96x = b103b96x;
+        notifyPropertyChanged(BR.b103b96x);
     }
 
     @Bindable
-    public String getW406a() {
-        return w406a;
+    public String getB103c() {
+        return b103c;
     }
 
-    public void setW406a(String w406a) {
-        if (this.w406a.equals(w406a)) return; // for all checkboxes
-        this.w406a = w406a;
-        notifyPropertyChanged(BR.w406a);
+    public void setB103c(String b103c) {
+        this.b103c = b103c;
+        notifyPropertyChanged(BR.b103c);
     }
 
     @Bindable
-    public String getW406b() {
-        return w406b;
+    public String getB103c96x() {
+        return b103c96x;
     }
 
-    public void setW406b(String w406b) {
-        if (this.w406b.equals(w406b)) return; // for all checkboxes
-        this.w406b = w406b;
-        notifyPropertyChanged(BR.w406b);
+    public void setB103c96x(String b103c96x) {
+        this.b103c96x = b103c96x;
+        notifyPropertyChanged(BR.b103c96x);
     }
 
     @Bindable
-    public String getW406c() {
-        return w406c;
+    public String getB103d() {
+        return b103d;
     }
 
-    public void setW406c(String w406c) {
-        if (this.w406c.equals(w406c)) return; // for all checkboxes
-        this.w406c = w406c;
-        notifyPropertyChanged(BR.w406c);
+    public void setB103d(String b103d) {
+        this.b103d = b103d;
+        notifyPropertyChanged(BR.b103d);
     }
 
     @Bindable
-    public String getW406d() {
-        return w406d;
+    public String getB10396x() {
+        return b10396x;
     }
 
-    public void setW406d(String w406d) {
-        if (this.w406d.equals(w406d)) return; // for all checkboxes
-        this.w406d = w406d;
-        notifyPropertyChanged(BR.w406d);
+    public void setB10396x(String b10396x) {
+        this.b10396x = b10396x;
+        notifyPropertyChanged(BR.b10396x);
     }
 
     @Bindable
-    public String getW406e() {
-        return w406e;
+    public String getB103e() {
+        return b103e;
     }
 
-    public void setW406e(String w406e) {
-        if (this.w406e.equals(w406e)) return; // for all checkboxes
-        this.w406e = w406e;
-        notifyPropertyChanged(BR.w406e);
+    public void setB103e(String b103e) {
+        this.b103e = b103e;
+        notifyPropertyChanged(BR.b103e);
     }
 
     @Bindable
-    public String getW406f() {
-        return w406f;
+    public String getB103e96x() {
+        return b103e96x;
     }
 
-    public void setW406f(String w406f) {
-        if (this.w406f.equals(w406f)) return; // for all checkboxes
-        this.w406f = w406f;
-        notifyPropertyChanged(BR.w406f);
+    public void setB103e96x(String b103e96x) {
+        this.b103e96x = b103e96x;
+        notifyPropertyChanged(BR.b103e96x);
     }
 
     @Bindable
-    public String getW406g() {
-        return w406g;
+    public String getB103f() {
+        return b103f;
     }
 
-    public void setW406g(String w406g) {
-        if (this.w406g.equals(w406g)) return; // for all checkboxes
-        this.w406g = w406g;
-        notifyPropertyChanged(BR.w406g);
+    public void setB103f(String b103f) {
+        this.b103f = b103f;
+        notifyPropertyChanged(BR.b103f);
     }
 
     @Bindable
-    public String getW40698() {
-        return w40698;
+    public String getB103f96x() {
+        return b103f96x;
     }
 
-    public void setW40698(String w40698) {
-        if (this.w40698.equals(w40698)) return; // for all checkboxes
-        this.w40698 = w40698;
-        setW406a(w40698.equals("98") ? "" : this.w406a);
-        setW406b(w40698.equals("98") ? "" : this.w406b);
-        setW406c(w40698.equals("98") ? "" : this.w406c);
-        setW406d(w40698.equals("98") ? "" : this.w406d);
-        setW406e(w40698.equals("98") ? "" : this.w406e);
-        setW406f(w40698.equals("98") ? "" : this.w406f);
-        setW406g(w40698.equals("98") ? "" : this.w406g);
-        notifyPropertyChanged(BR.w40698);
+    public void setB103f96x(String b103f96x) {
+        this.b103f96x = b103f96x;
+        notifyPropertyChanged(BR.b103f96x);
     }
 
     @Bindable
-    public String getW407() {
-        return w407;
+    public String getB103g() {
+        return b103g;
     }
 
-    public void setW407(String w407) {
-        this.w407 = w407;
-        notifyPropertyChanged(BR.w407);
+    public void setB103g(String b103g) {
+        this.b103g = b103g;
+        notifyPropertyChanged(BR.b103g);
     }
 
     @Bindable
-    public String getW407a() {
-        return w407a;
+    public String getB103g96x() {
+        return b103g96x;
     }
 
-    public void setW407a(String w407a) {
-        if (this.w407a.equals(w407a)) return; // for all checkboxes
-        this.w407a = w407a;
-        notifyPropertyChanged(BR.w407a);
+    public void setB103g96x(String b103g96x) {
+        this.b103g96x = b103g96x;
+        notifyPropertyChanged(BR.b103g96x);
     }
 
     @Bindable
-    public String getW407b() {
-        return w407b;
+    public String getB103h() {
+        return b103h;
     }
 
-    public void setW407b(String w407b) {
-        if (this.w407b.equals(w407b)) return; // for all checkboxes
-        this.w407b = w407b;
-        notifyPropertyChanged(BR.w407b);
+    public void setB103h(String b103h) {
+        this.b103h = b103h;
+        notifyPropertyChanged(BR.b103h);
     }
 
     @Bindable
-    public String getW407c() {
-        return w407c;
+    public String getB103i() {
+        return b103i;
     }
 
-    public void setW407c(String w407c) {
-        if (this.w407c.equals(w407c)) return; // for all checkboxes
-        this.w407c = w407c;
-        notifyPropertyChanged(BR.w407c);
+    public void setB103i(String b103i) {
+        this.b103i = b103i;
+        notifyPropertyChanged(BR.b103i);
     }
 
     @Bindable
-    public String getW407d() {
-        return w407d;
+    public String getB103i96x() {
+        return b103i96x;
     }
 
-    public void setW407d(String w407d) {
-        if (this.w407d.equals(w407d)) return; // for all checkboxes
-        this.w407d = w407d;
-        notifyPropertyChanged(BR.w407d);
+    public void setB103i96x(String b103i96x) {
+        this.b103i96x = b103i96x;
+        notifyPropertyChanged(BR.b103i96x);
     }
 
     @Bindable
-    public String getW407e() {
-        return w407e;
+    public String getB103j() {
+        return b103j;
     }
 
-    public void setW407e(String w407e) {
-        if (this.w407e.equals(w407e)) return; // for all checkboxes
-        this.w407e = w407e;
-        notifyPropertyChanged(BR.w407e);
+    public void setB103j(String b103j) {
+        this.b103j = b103j;
+        notifyPropertyChanged(BR.b103j);
     }
 
     @Bindable
-    public String getW407f() {
-        return w407f;
+    public String getB103j96x() {
+        return b103j96x;
     }
 
-    public void setW407f(String w407f) {
-        if (this.w407f.equals(w407f)) return; // for all checkboxes
-        this.w407f = w407f;
-        notifyPropertyChanged(BR.w407f);
+    public void setB103j96x(String b103j96x) {
+        this.b103j96x = b103j96x;
+        notifyPropertyChanged(BR.b103j96x);
     }
 
     @Bindable
-    public String getW407g() {
-        return w407g;
+    public String getB103k() {
+        return b103k;
     }
 
-    public void setW407g(String w407g) {
-        if (this.w407g.equals(w407g)) return; // for all checkboxes
-        this.w407g = w407g;
-        notifyPropertyChanged(BR.w407g);
+    public void setB103k(String b103k) {
+        this.b103k = b103k;
+        notifyPropertyChanged(BR.b103k);
     }
 
     @Bindable
-    public String getW40798() {
-        return w40798;
+    public String getB103l() {
+        return b103l;
     }
 
-    public void setW40798(String w40798) {
-        if (this.w40798.equals(w40798)) return; // for all checkboxes
-        this.w40798 = w40798;
-        setW407a(w40798.equals("98") ? "" : this.w407a);
-        setW407b(w40798.equals("98") ? "" : this.w407b);
-        setW407c(w40798.equals("98") ? "" : this.w407c);
-        setW407d(w40798.equals("98") ? "" : this.w407d);
-        setW407e(w40798.equals("98") ? "" : this.w407e);
-        setW407f(w40798.equals("98") ? "" : this.w407f);
-        setW407g(w40798.equals("98") ? "" : this.w407g);
-        notifyPropertyChanged(BR.w40798);
+    public void setB103l(String b103l) {
+        this.b103l = b103l;
+        notifyPropertyChanged(BR.b103l);
     }
 
     @Bindable
-    public String getW408() {
-        return w408;
+    public String getB103l96x() {
+        return b103l96x;
     }
 
-    public void setW408(String w408) {
-        this.w408 = w408;
-        notifyPropertyChanged(BR.w408);
+    public void setB103l96x(String b103l96x) {
+        this.b103l96x = b103l96x;
+        notifyPropertyChanged(BR.b103l96x);
     }
 
     @Bindable
-    public String getW408a() {
-        return w408a;
+    public String getB104() {
+        return b104;
     }
 
-    public void setW408a(String w408a) {
-        if (this.w408a.equals(w408a)) return; // for all checkboxes
-        this.w408a = w408a;
-        notifyPropertyChanged(BR.w408a);
+    public void setB104(String b104) {
+        this.b104 = b104;
+        notifyPropertyChanged(BR.b104);
     }
 
     @Bindable
-    public String getW408b() {
-        return w408b;
+    public String getB10496x() {
+        return b10496x;
     }
 
-    public void setW408b(String w408b) {
-        if (this.w408b.equals(w408b)) return; // for all checkboxes
-        this.w408b = w408b;
-        notifyPropertyChanged(BR.w408b);
+    public void setB10496x(String b10496x) {
+        this.b10496x = b10496x;
+        notifyPropertyChanged(BR.b10496x);
     }
 
     @Bindable
-    public String getW408c() {
-        return w408c;
+    public String getB105() {
+        return b105;
     }
 
-    public void setW408c(String w408c) {
-        if (this.w408c.equals(w408c)) return; // for all checkboxes
-        this.w408c = w408c;
-        notifyPropertyChanged(BR.w408c);
+    public void setB105(String b105) {
+        this.b105 = b105;
+        notifyPropertyChanged(BR.b105);
     }
 
     @Bindable
-    public String getW408d() {
-        return w408d;
+    public String getB10596x() {
+        return b10596x;
     }
 
-    public void setW408d(String w408d) {
-        if (this.w408d.equals(w408d)) return; // for all checkboxes
-        this.w408d = w408d;
-        notifyPropertyChanged(BR.w408d);
+    public void setB10596x(String b10596x) {
+        this.b10596x = b10596x;
+        notifyPropertyChanged(BR.b10596x);
     }
 
     @Bindable
-    public String getW408e() {
-        return w408e;
+    public String getB106() {
+        return b106;
     }
 
-    public void setW408e(String w408e) {
-        if (this.w408e.equals(w408e)) return; // for all checkboxes
-        this.w408e = w408e;
-        notifyPropertyChanged(BR.w408e);
+    public void setB106(String b106) {
+        this.b106 = b106;
+        notifyPropertyChanged(BR.b106);
     }
 
     @Bindable
-    public String getW408f() {
-        return w408f;
+    public String getB10696x() {
+        return b10696x;
     }
 
-    public void setW408f(String w408f) {
-        if (this.w408f.equals(w408f)) return; // for all checkboxes
-        this.w408f = w408f;
-        notifyPropertyChanged(BR.w408f);
+    public void setB10696x(String b10696x) {
+        this.b10696x = b10696x;
+        notifyPropertyChanged(BR.b10696x);
     }
 
     @Bindable
-    public String getW408g() {
-        return w408g;
+    public String getB107() {
+        return b107;
     }
 
-    public void setW408g(String w408g) {
-        if (this.w408g.equals(w408g)) return; // for all checkboxes
-        this.w408g = w408g;
-        notifyPropertyChanged(BR.w408g);
+    public void setB107(String b107) {
+        this.b107 = b107;
+        notifyPropertyChanged(BR.b107);
     }
 
     @Bindable
-    public String getW40898() {
-        return w40898;
+    public String getB10701x() {
+        return b10701x;
     }
 
-    public void setW40898(String w40898) {
-        if (this.w40898.equals(w40898)) return; // for all checkboxes
-        this.w40898 = w40898;
-        setW408a(w40898.equals("98") ? "" : this.w408a);
-        setW408b(w40898.equals("98") ? "" : this.w408b);
-        setW408c(w40898.equals("98") ? "" : this.w408c);
-        setW408d(w40898.equals("98") ? "" : this.w408d);
-        setW408e(w40898.equals("98") ? "" : this.w408e);
-        setW408f(w40898.equals("98") ? "" : this.w408f);
-        setW408g(w40898.equals("98") ? "" : this.w408g);
-        notifyPropertyChanged(BR.w40898);
+    public void setB10701x(String b10701x) {
+        this.b10701x = b10701x;
+        notifyPropertyChanged(BR.b10701x);
     }
 
     @Bindable
-    public String getW409() {
-        return w409;
+    public String getB10801() {
+        return b10801;
     }
 
-    public void setW409(String w409) {
-        this.w409 = w409;
-        notifyPropertyChanged(BR.w409);
+    public void setB10801(String b10801) {
+        this.b10801 = b10801;
+        notifyPropertyChanged(BR.b10801);
     }
 
     @Bindable
-    public String getW409a() {
-        return w409a;
+    public String getB10901() {
+        return b10901;
     }
 
-    public void setW409a(String w409a) {
-        if (this.w409a.equals(w409a)) return; // for all checkboxes
-        this.w409a = w409a;
-        notifyPropertyChanged(BR.w409a);
+    public void setB10901(String b10901) {
+        this.b10901 = b10901;
+        notifyPropertyChanged(BR.b10901);
     }
 
     @Bindable
-    public String getW409b() {
-        return w409b;
+    public String getB110d() {
+        return b110d;
     }
 
-    public void setW409b(String w409b) {
-        if (this.w409b.equals(w409b)) return; // for all checkboxes
-        this.w409b = w409b;
-        notifyPropertyChanged(BR.w409b);
+    public void setB110d(String b110d) {
+        this.b110d = b110d;
+        notifyPropertyChanged(BR.b110d);
     }
 
     @Bindable
-    public String getW409c() {
-        return w409c;
+    public String getB110w() {
+        return b110w;
     }
 
-    public void setW409c(String w409c) {
-        if (this.w409c.equals(w409c)) return; // for all checkboxes
-        this.w409c = w409c;
-        notifyPropertyChanged(BR.w409c);
+    public void setB110w(String b110w) {
+        this.b110w = b110w;
+        notifyPropertyChanged(BR.b110w);
     }
 
     @Bindable
-    public String getW409d() {
-        return w409d;
+    public String getB110m() {
+        return b110m;
     }
 
-    public void setW409d(String w409d) {
-        if (this.w409d.equals(w409d)) return; // for all checkboxes
-        this.w409d = w409d;
-        notifyPropertyChanged(BR.w409d);
+    public void setB110m(String b110m) {
+        this.b110m = b110m;
+        notifyPropertyChanged(BR.b110m);
     }
 
     @Bindable
-    public String getW409e() {
-        return w409e;
+    public String getB111() {
+        return b111;
     }
 
-    public void setW409e(String w409e) {
-        if (this.w409e.equals(w409e)) return; // for all checkboxes
-        this.w409e = w409e;
-        notifyPropertyChanged(BR.w409e);
+    public void setB111(String b111) {
+        this.b111 = b111;
+        notifyPropertyChanged(BR.b111);
     }
 
     @Bindable
-    public String getW409f() {
-        return w409f;
+    public String getB11101x() {
+        return b11101x;
     }
 
-    public void setW409f(String w409f) {
-        if (this.w409f.equals(w409f)) return; // for all checkboxes
-        this.w409f = w409f;
-        notifyPropertyChanged(BR.w409f);
+    public void setB11101x(String b11101x) {
+        this.b11101x = b11101x;
+        notifyPropertyChanged(BR.b11101x);
     }
 
     @Bindable
-    public String getW409g() {
-        return w409g;
+    public String getB11201() {
+        return b11201;
     }
 
-    public void setW409g(String w409g) {
-        if (this.w409g.equals(w409g)) return; // for all checkboxes
-        this.w409g = w409g;
-        notifyPropertyChanged(BR.w409g);
+    public void setB11201(String b11201) {
+        this.b11201 = b11201;
+        notifyPropertyChanged(BR.b11201);
     }
 
     @Bindable
-    public String getW40998() {
-        return w40998;
+    public String getB11202() {
+        return b11202;
     }
 
-    public void setW40998(String w40998) {
-        if (this.w40998.equals(w40998)) return; // for all checkboxes
-        this.w40998 = w40998;
-        setW409a(w40998.equals("98") ? "" : this.w409a);
-        setW409b(w40998.equals("98") ? "" : this.w409b);
-        setW409c(w40998.equals("98") ? "" : this.w409c);
-        setW409d(w40998.equals("98") ? "" : this.w409d);
-        setW409e(w40998.equals("98") ? "" : this.w409e);
-        setW409f(w40998.equals("98") ? "" : this.w409f);
-        setW409g(w40998.equals("98") ? "" : this.w409g);
-        notifyPropertyChanged(BR.w40998);
+    public void setB11202(String b11202) {
+        this.b11202 = b11202;
+        notifyPropertyChanged(BR.b11202);
     }
 
     @Bindable
-    public String getW410() {
-        return w410;
+    public String getB11203() {
+        return b11203;
     }
 
-    public void setW410(String w410) {
-        this.w410 = w410;
-        notifyPropertyChanged(BR.w410);
+    public void setB11203(String b11203) {
+        this.b11203 = b11203;
+        notifyPropertyChanged(BR.b11203);
     }
 
     @Bindable
-    public String getW410a() {
-        return w410a;
+    public String getB11204() {
+        return b11204;
     }
 
-    public void setW410a(String w410a) {
-        if (this.w410a.equals(w410a)) return; // for all checkboxes
-        this.w410a = w410a;
-        notifyPropertyChanged(BR.w410a);
+    public void setB11204(String b11204) {
+        this.b11204 = b11204;
+        notifyPropertyChanged(BR.b11204);
     }
 
     @Bindable
-    public String getW410b() {
-        return w410b;
+    public String getB11205() {
+        return b11205;
     }
 
-    public void setW410b(String w410b) {
-        if (this.w410b.equals(w410b)) return; // for all checkboxes
-        this.w410b = w410b;
-        notifyPropertyChanged(BR.w410b);
+    public void setB11205(String b11205) {
+        this.b11205 = b11205;
+        notifyPropertyChanged(BR.b11205);
     }
 
     @Bindable
-    public String getW410c() {
-        return w410c;
+    public String getB113() {
+        return b113;
     }
 
-    public void setW410c(String w410c) {
-        if (this.w410c.equals(w410c)) return; // for all checkboxes
-        this.w410c = w410c;
-        notifyPropertyChanged(BR.w410c);
+    public void setB113(String b113) {
+        this.b113 = b113;
+        notifyPropertyChanged(BR.b113);
     }
 
     @Bindable
-    public String getW410d() {
-        return w410d;
+    public String getB114() {
+        return b114;
     }
 
-    public void setW410d(String w410d) {
-        if (this.w410d.equals(w410d)) return; // for all checkboxes
-        this.w410d = w410d;
-        notifyPropertyChanged(BR.w410d);
+    public void setB114(String b114) {
+        this.b114 = b114;
+        notifyPropertyChanged(BR.b114);
     }
 
     @Bindable
-    public String getW410e() {
-        return w410e;
+    public String getB115() {
+        return b115;
     }
 
-    public void setW410e(String w410e) {
-        if (this.w410e.equals(w410e)) return; // for all checkboxes
-        this.w410e = w410e;
-        notifyPropertyChanged(BR.w410e);
+    public void setB115(String b115) {
+        this.b115 = b115;
+        notifyPropertyChanged(BR.b115);
     }
 
     @Bindable
-    public String getW410f() {
-        return w410f;
+    public String getB11596x() {
+        return b11596x;
     }
 
-    public void setW410f(String w410f) {
-        if (this.w410f.equals(w410f)) return; // for all checkboxes
-        this.w410f = w410f;
-        notifyPropertyChanged(BR.w410f);
+    public void setB11596x(String b11596x) {
+        this.b11596x = b11596x;
+        notifyPropertyChanged(BR.b11596x);
     }
 
     @Bindable
-    public String getW410g() {
-        return w410g;
+    public String getB11601() {
+        return b11601;
     }
 
-    public void setW410g(String w410g) {
-        if (this.w410g.equals(w410g)) return; // for all checkboxes
-        this.w410g = w410g;
-        notifyPropertyChanged(BR.w410g);
+    public void setB11601(String b11601) {
+        this.b11601 = b11601;
+        notifyPropertyChanged(BR.b11601);
     }
 
     @Bindable
-    public String getW41098() {
-        return w41098;
+    public String getB11602() {
+        return b11602;
     }
 
-    public void setW41098(String w41098) {
-        if (this.w41098.equals(w41098)) return; // for all checkboxes
-        this.w41098 = w41098;
-        setW410a(w41098.equals("98") ? "" : this.w410a);
-        setW410b(w41098.equals("98") ? "" : this.w410b);
-        setW410c(w41098.equals("98") ? "" : this.w410c);
-        setW410d(w41098.equals("98") ? "" : this.w410d);
-        setW410e(w41098.equals("98") ? "" : this.w410e);
-        setW410f(w41098.equals("98") ? "" : this.w410f);
-        setW410g(w41098.equals("98") ? "" : this.w410g);
-        notifyPropertyChanged(BR.w41098);
+    public void setB11602(String b11602) {
+        this.b11602 = b11602;
+        notifyPropertyChanged(BR.b11602);
     }
 
     @Bindable
-    public String getC101() {
-        return c101;
+    public String getB11603() {
+        return b11603;
     }
 
-    public void setC101(String c101) {
-        this.c101 = c101;
-        setC102(c101.equals("1") ? this.c102 : "");
-        notifyPropertyChanged(BR.c101);
+    public void setB11603(String b11603) {
+        this.b11603 = b11603;
+        notifyPropertyChanged(BR.b11603);
     }
 
     @Bindable
-    public String getW100Name() {
-        return w100name;
+    public String getB11604() {
+        return b11604;
     }
 
-    public void setW100Name(String w100name) {
-        this.w100name = w100name;
-        notifyPropertyChanged(BR.w100Name);
+    public void setB11604(String b11604) {
+        this.b11604 = b11604;
+        notifyPropertyChanged(BR.b11604);
     }
 
     @Bindable
-    public String getC100Name() {
-        return c100name;
+    public String getB11605() {
+        return b11605;
     }
 
-    public void setC100Name(String c100name) {
-        this.c100name = c100name;
-        notifyPropertyChanged(BR.c100Name);
+    public void setB11605(String b11605) {
+        this.b11605 = b11605;
+        notifyPropertyChanged(BR.b11605);
     }
 
     @Bindable
-    public String getC102() {
-        return c102;
+    public String getB11606() {
+        return b11606;
     }
 
-    public void setC102(String c102) {
-        this.c102 = c102;
-        setC102x(this.c102.equals("3") ? "" : this.c102x);
-        setC102max(c101.equals("2") ? 23f : 99f);
-        notifyPropertyChanged(BR.c102);
+    public void setB11606(String b11606) {
+        this.b11606 = b11606;
+        notifyPropertyChanged(BR.b11606);
     }
 
     @Bindable
-    public String getC102x() {
-        return c102x;
+    public String getB11607() {
+        return b11607;
     }
 
-    public void setC102x(String c102x) {
-        this.c102x = c102x;
-        notifyPropertyChanged(BR.c102x);
+    public void setB11607(String b11607) {
+        this.b11607 = b11607;
+        notifyPropertyChanged(BR.b11607);
     }
 
     @Bindable
-    public float getC102max() {
-        return c102max;
+    public String getB11608() {
+        return b11608;
     }
 
-    public void setC102max(float c102max) {
-        this.c102max = c102max;
-        notifyPropertyChanged(BR.c102max);
+    public void setB11608(String b11608) {
+        this.b11608 = b11608;
+        notifyPropertyChanged(BR.b11608);
     }
-
 
     @Bindable
-    public String getC103() {
-        return c103;
+    public String getB11609() {
+        return b11609;
     }
 
-    public void setC103(String c103) {
-        this.c103 = c103;
-        notifyPropertyChanged(BR.c103);
+    public void setB11609(String b11609) {
+        this.b11609 = b11609;
+        notifyPropertyChanged(BR.b11609);
     }
 
     @Bindable
-    public String getC104() {
-        return c104;
+    public String getB11696() {
+        return b11696;
     }
 
-    public void setC104(String c104) {
-        this.c104 = c104;
-        notifyPropertyChanged(BR.c104);
+    public void setB11696(String b11696) {
+        this.b11696 = b11696;
+        notifyPropertyChanged(BR.b11696);
     }
 
     @Bindable
-    public String getC105() {
-        return c105;
+    public String getB117() {
+        return b117;
     }
 
-    public void setC105(String c105) {
-        this.c105 = c105;
-        notifyPropertyChanged(BR.c105);
+    public void setB117(String b117) {
+        this.b117 = b117;
+        notifyPropertyChanged(BR.b117);
     }
 
     @Bindable
-    public String getC106a() {
-        return c106a;
+    public String getC1res() {
+        return c1res;
     }
 
-    public void setC106a(String c106a) {
-        this.c106a = c106a;
-        notifyPropertyChanged(BR.c106a);
+    public void setC1res(String c1res) {
+        this.c1res = c1res;
+        notifyPropertyChanged(BR.c1res);
     }
 
     @Bindable
-    public String getC106b() {
-        return c106b;
+    public String getC1011() {
+        return c1011;
     }
 
-    public void setC106b(String c106b) {
-        this.c106b = c106b;
-        setC106ca(c106b.equals("1") ? this.c106ca : "");
-        notifyPropertyChanged(BR.c106b);
+    public void setC1011(String c1011) {
+        this.c1011 = c1011;
+        notifyPropertyChanged(BR.c1011);
     }
 
     @Bindable
-    public String getC106ca() {
-        return c106ca;
+    public String getC1012() {
+        return c1012;
     }
 
-    public void setC106ca(String c106ca) {
-        this.c106ca = c106ca;
-        notifyPropertyChanged(BR.c106ca);
+    public void setC1012(String c1012) {
+        this.c1012 = c1012;
+        notifyPropertyChanged(BR.c1012);
     }
 
     @Bindable
-    public String getC106d() {
-        return c106d;
+    public String getC1013() {
+        return c1013;
     }
 
-    public void setC106d(String c106d) {
-        this.c106d = c106d;
-        setC106ea(c106d.equals("1") ? this.c106ea : "");
-        setC106f(c106d.equals("1") ? this.c106f : "");
-        notifyPropertyChanged(BR.c106d);
+    public void setC1013(String c1013) {
+        this.c1013 = c1013;
+        notifyPropertyChanged(BR.c1013);
     }
 
     @Bindable
-    public String getC106ea() {
-        return c106ea;
+    public String getC1021() {
+        return c1021;
     }
 
-    public void setC106ea(String c106ea) {
-        this.c106ea = c106ea;
-        notifyPropertyChanged(BR.c106ea);
+    public void setC1021(String c1021) {
+        this.c1021 = c1021;
+        notifyPropertyChanged(BR.c1021);
     }
 
     @Bindable
-    public String getC106f() {
-        return c106f;
+    public String getC1022() {
+        return c1022;
     }
 
-    public void setC106f(String c106f) {
-        this.c106f = c106f;
-        notifyPropertyChanged(BR.c106f);
+    public void setC1022(String c1022) {
+        this.c1022 = c1022;
+        notifyPropertyChanged(BR.c1022);
     }
 
     @Bindable
-    public String getC106g() {
-        return c106g;
+    public String getC1023() {
+        return c1023;
     }
 
-    public void setC106g(String c106g) {
-        this.c106g = c106g;
-        setC106ha(c106g.equals("1") ? this.c106ha : "");
-        setC106i(c106g.equals("1") ? this.c106i : "");
-        notifyPropertyChanged(BR.c106g);
+    public void setC1023(String c1023) {
+        this.c1023 = c1023;
+        notifyPropertyChanged(BR.c1023);
     }
 
     @Bindable
-    public String getC106ha() {
-        return c106ha;
+    public String getC1031() {
+        return c1031;
     }
 
-    public void setC106ha(String c106ha) {
-        this.c106ha = c106ha;
-        notifyPropertyChanged(BR.c106ha);
+    public void setC1031(String c1031) {
+        this.c1031 = c1031;
+        notifyPropertyChanged(BR.c1031);
     }
 
     @Bindable
-    public String getC106i() {
-        return c106i;
+    public String getC1032() {
+        return c1032;
     }
 
-    public void setC106i(String c106i) {
-        this.c106i = c106i;
-        notifyPropertyChanged(BR.c106i);
+    public void setC1032(String c1032) {
+        this.c1032 = c1032;
+        notifyPropertyChanged(BR.c1032);
     }
 
     @Bindable
-    public String getC106j() {
-        return c106j;
+    public String getC1033() {
+        return c1033;
     }
 
-    public void setC106j(String c106j) {
-        this.c106j = c106j;
-        notifyPropertyChanged(BR.c106j);
+    public void setC1033(String c1033) {
+        this.c1033 = c1033;
+        notifyPropertyChanged(BR.c1033);
     }
 
     @Bindable
-    public String getC106k() {
-        return c106k;
+    public String getC1041() {
+        return c1041;
     }
 
-    public void setC106k(String c106k) {
-        this.c106k = c106k;
-        notifyPropertyChanged(BR.c106k);
+    public void setC1041(String c1041) {
+        this.c1041 = c1041;
+        notifyPropertyChanged(BR.c1041);
     }
 
     @Bindable
-    public String getC106l() {
-        return c106l;
+    public String getC1042() {
+        return c1042;
     }
 
-    public void setC106l(String c106l) {
-        this.c106l = c106l;
-        notifyPropertyChanged(BR.c106l);
+    public void setC1042(String c1042) {
+        this.c1042 = c1042;
+        notifyPropertyChanged(BR.c1042);
     }
 
     @Bindable
-    public String getC106m() {
-        return c106m;
+    public String getC1043() {
+        return c1043;
     }
 
-    public void setC106m(String c106m) {
-        this.c106m = c106m;
-        setC106n(c106m.equals("1") ? this.c106n : "");
-        notifyPropertyChanged(BR.c106m);
+    public void setC1043(String c1043) {
+        this.c1043 = c1043;
+        notifyPropertyChanged(BR.c1043);
     }
 
     @Bindable
-    public String getC106n() {
-        return c106n;
+    public String getC1051() {
+        return c1051;
     }
 
-    public void setC106n(String c106n) {
-        this.c106n = c106n;
-        notifyPropertyChanged(BR.c106n);
+    public void setC1051(String c1051) {
+        this.c1051 = c1051;
+        notifyPropertyChanged(BR.c1051);
     }
 
     @Bindable
-    public String getC106o() {
-        return c106o;
+    public String getC1052() {
+        return c1052;
     }
 
-    public void setC106o(String c106o) {
-        this.c106o = c106o;
-        notifyPropertyChanged(BR.c106o);
+    public void setC1052(String c1052) {
+        this.c1052 = c1052;
+        notifyPropertyChanged(BR.c1052);
     }
 
     @Bindable
-    public String getC106p() {
-        return c106p;
+    public String getC1053() {
+        return c1053;
     }
 
-    public void setC106p(String c106p) {
-        this.c106p = c106p;
-        setC106q(c106p.equals("1") ? this.c106q : "");
-        notifyPropertyChanged(BR.c106p);
+    public void setC1053(String c1053) {
+        this.c1053 = c1053;
+        notifyPropertyChanged(BR.c1053);
     }
 
     @Bindable
-    public String getC106q() {
-        return c106q;
+    public String getC1061() {
+        return c1061;
     }
 
-    public void setC106q(String c106q) {
-        this.c106q = c106q;
-        notifyPropertyChanged(BR.c106q);
+    public void setC1061(String c1061) {
+        this.c1061 = c1061;
+        notifyPropertyChanged(BR.c1061);
     }
 
     @Bindable
-    public String getC107a() {
-        return c107a;
+    public String getC1062() {
+        return c1062;
     }
 
-    public void setC107a(String c107a) {
-        this.c107a = c107a;
-        setC107sflag();
-        setC107b(c107a.equals("1") ? this.c107b : "");
-        notifyPropertyChanged(BR.c107a);
+    public void setC1062(String c1062) {
+        this.c1062 = c1062;
+        notifyPropertyChanged(BR.c1062);
     }
 
     @Bindable
-    public String getC107b() {
-        return c107b;
+    public String getC1063() {
+        return c1063;
     }
 
-    public void setC107b(String c107b) {
-        this.c107b = c107b;
-        notifyPropertyChanged(BR.c107b);
+    public void setC1063(String c1063) {
+        this.c1063 = c1063;
+        notifyPropertyChanged(BR.c1063);
     }
 
     @Bindable
-    public String getC107c() {
-        return c107c;
+    public String getC1071() {
+        return c1071;
     }
 
-    public void setC107c(String c107c) {
-        this.c107c = c107c;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107c);
+    public void setC1071(String c1071) {
+        this.c1071 = c1071;
+        notifyPropertyChanged(BR.c1071);
     }
 
     @Bindable
-    public String getC107d() {
-        return c107d;
+    public String getC1072() {
+        return c1072;
     }
 
-    public void setC107d(String c107d) {
-        this.c107d = c107d;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107d);
+    public void setC1072(String c1072) {
+        this.c1072 = c1072;
+        notifyPropertyChanged(BR.c1072);
     }
 
     @Bindable
-    public String getC107e() {
-        return c107e;
+    public String getC1073() {
+        return c1073;
     }
 
-    public void setC107e(String c107e) {
-        this.c107e = c107e;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107e);
+    public void setC1073(String c1073) {
+        this.c1073 = c1073;
+        notifyPropertyChanged(BR.c1073);
     }
 
     @Bindable
-    public String getC107f() {
-        return c107f;
+    public String getC1081() {
+        return c1081;
     }
 
-    public void setC107f(String c107f) {
-        this.c107f = c107f;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107f);
+    public void setC1081(String c1081) {
+        this.c1081 = c1081;
+        notifyPropertyChanged(BR.c1081);
     }
 
     @Bindable
-    public String getC107g() {
-        return c107g;
+    public String getC1082() {
+        return c1082;
     }
 
-    public void setC107g(String c107g) {
-        this.c107g = c107g;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107g);
+    public void setC1082(String c1082) {
+        this.c1082 = c1082;
+        notifyPropertyChanged(BR.c1082);
     }
 
     @Bindable
-    public String getC107h() {
-        return c107h;
+    public String getC1083() {
+        return c1083;
     }
 
-    public void setC107h(String c107h) {
-        this.c107h = c107h;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107h);
+    public void setC1083(String c1083) {
+        this.c1083 = c1083;
+        notifyPropertyChanged(BR.c1083);
     }
 
     @Bindable
-    public String getC107j() {
-        return c107j;
+    public String getC1091() {
+        return c1091;
     }
 
-    public void setC107j(String c107j) {
-        this.c107j = c107j;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107j);
+    public void setC1091(String c1091) {
+        this.c1091 = c1091;
+        notifyPropertyChanged(BR.c1091);
     }
 
     @Bindable
-    public String getC107i() {
-        return c107i;
+    public String getC1092() {
+        return c1092;
     }
 
-    public void setC107i(String c107i) {
-        this.c107i = c107i;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107i);
+    public void setC1092(String c1092) {
+        this.c1092 = c1092;
+        notifyPropertyChanged(BR.c1092);
     }
 
     @Bindable
-    public String getC107k() {
-        return c107k;
+    public String getC1093() {
+        return c1093;
     }
 
-    public void setC107k(String c107k) {
-        this.c107k = c107k;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107k);
+    public void setC1093(String c1093) {
+        this.c1093 = c1093;
+        notifyPropertyChanged(BR.c1093);
     }
 
     @Bindable
-    public String getC107l() {
-        return c107l;
+    public String getC1101() {
+        return c1101;
     }
 
-    public void setC107l(String c107l) {
-        this.c107l = c107l;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107l);
+    public void setC1101(String c1101) {
+        this.c1101 = c1101;
+        notifyPropertyChanged(BR.c1101);
     }
 
     @Bindable
-    public String getC107m() {
-        return c107m;
+    public String getC1102() {
+        return c1102;
     }
 
-    public void setC107m(String c107m) {
-        this.c107m = c107m;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107m);
+    public void setC1102(String c1102) {
+        this.c1102 = c1102;
+        notifyPropertyChanged(BR.c1102);
     }
 
     @Bindable
-    public String getC107n() {
-        return c107n;
+    public String getC1103() {
+        return c1103;
     }
 
-    public void setC107n(String c107n) {
-        this.c107n = c107n;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107n);
+    public void setC1103(String c1103) {
+        this.c1103 = c1103;
+        notifyPropertyChanged(BR.c1103);
     }
 
     @Bindable
-    public String getC107o() {
-        return c107o;
+    public String getC1111() {
+        return c1111;
     }
 
-    public void setC107o(String c107o) {
-        this.c107o = c107o;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107o);
+    public void setC1111(String c1111) {
+        this.c1111 = c1111;
+        notifyPropertyChanged(BR.c1111);
     }
 
     @Bindable
-    public String getC107p() {
-        return c107p;
+    public String getC1112() {
+        return c1112;
     }
 
-    public void setC107p(String c107p) {
-        this.c107p = c107p;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107p);
+    public void setC1112(String c1112) {
+        this.c1112 = c1112;
+        notifyPropertyChanged(BR.c1112);
     }
 
     @Bindable
-    public String getC107q() {
-        return c107q;
+    public String getC1113() {
+        return c1113;
     }
 
-    public void setC107q(String c107q) {
-        this.c107q = c107q;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107q);
+    public void setC1113(String c1113) {
+        this.c1113 = c1113;
+        notifyPropertyChanged(BR.c1113);
     }
 
     @Bindable
-    public String getC107r() {
-        return c107r;
+    public String getC1121() {
+        return c1121;
     }
 
-    public void setC107r(String c107r) {
-        this.c107r = c107r;
-        setC107sflag();
-        notifyPropertyChanged(BR.c107r);
+    public void setC1121(String c1121) {
+        this.c1121 = c1121;
+        notifyPropertyChanged(BR.c1121);
     }
 
     @Bindable
-    public String getC107sflag() {
-        return c107sflag;
+    public String getC1122() {
+        return c1122;
     }
 
-    public void setC107sflag() {
-        this.c107sflag = "";
-        if (this.c107a.equals("1")
-                || this.c107c.equals("1")
-                || this.c107d.equals("1")
-                || this.c107e.equals("1")
-                || this.c107f.equals("1")
-                || this.c107g.equals("1")
-                || this.c107h.equals("1")
-                || this.c107i.equals("1")
-                || this.c107j.equals("1")
-                || this.c107k.equals("1")
-                || this.c107l.equals("1")
-                || this.c107m.equals("1")
-                || this.c107n.equals("1")
-                || this.c107o.equals("1")
-                || this.c107p.equals("1")
-                || this.c107q.equals("1")
-                || this.c107r.equals("1")) {
-            setC107s("");
-            this.c107sflag = "";
-        } else {
-            setC107s(this.c107s);
-            this.c107sflag = "1";
-        }
-        notifyPropertyChanged(BR.c107sflag);
+    public void setC1122(String c1122) {
+        this.c1122 = c1122;
+        notifyPropertyChanged(BR.c1122);
     }
 
     @Bindable
-    public String getC107s() {
-        return c107s;
+    public String getC1123() {
+        return c1123;
     }
 
-    public void setC107s(String c107s) {
-        this.c107s = c107s;
-        notifyPropertyChanged(BR.c107s);
+    public void setC1123(String c1123) {
+        this.c1123 = c1123;
+        notifyPropertyChanged(BR.c1123);
     }
 
     @Bindable
-    public String getC108() {
-        return c108;
+    public String getC1131() {
+        return c1131;
     }
 
-    public void setC108(String c108) {
-        this.c108 = c108;
-        setC108t1(c108.equals("1") ? this.c108t1 : "");
-        setC109(c108.equals("1") ? this.c109 : "");
-        notifyPropertyChanged(BR.c108);
+    public void setC1131(String c1131) {
+        this.c1131 = c1131;
+        notifyPropertyChanged(BR.c1131);
     }
 
     @Bindable
-    public String getC108t1() {
-        return c108t1;
+    public String getC1132() {
+        return c1132;
     }
 
-    public void setC108t1(String c108t1) {
-        this.c108t1 = c108t1;
-        notifyPropertyChanged(BR.c108t1);
+    public void setC1132(String c1132) {
+        this.c1132 = c1132;
+        notifyPropertyChanged(BR.c1132);
     }
 
     @Bindable
-    public String getC109() {
-        return c109;
+    public String getC1133() {
+        return c1133;
     }
 
-    public void setC109(String c109) {
-        this.c109 = c109;
-        notifyPropertyChanged(BR.c109);
+    public void setC1133(String c1133) {
+        this.c1133 = c1133;
+        notifyPropertyChanged(BR.c1133);
     }
 
     @Bindable
@@ -7033,1771 +3199,23 @@ public class Form extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getC20301a() {
-        return c20301a;
+    public String getC20296x() {
+        return c20296x;
     }
 
-    public void setC20301a(String c20301a) {
-        this.c20301a = c20301a;
-        setC20301ba(c20301a.equals("1") ? this.c20301ba : "");
-        setC20301bb(c20301a.equals("1") ? this.c20301bb : "");
-        setC20301bc(c20301a.equals("1") ? this.c20301bc : "");
-        setC20301bd(c20301a.equals("1") ? this.c20301bd : "");
-        setC20301be(c20301a.equals("1") ? this.c20301be : "");
-        setC20301bf(c20301a.equals("1") ? this.c20301bf : "");
-        setC20301bg(c20301a.equals("1") ? this.c20301bg : "");
-        notifyPropertyChanged(BR.c20301a);
+    public void setC20296x(String c20296x) {
+        this.c20296x = c20296x;
+        notifyPropertyChanged(BR.c20296x);
     }
 
     @Bindable
-    public String getC20301b() {
-        return c20301b;
+    public String getC203() {
+        return c203;
     }
 
-    public void setC20301b(String c20301b) {
-        this.c20301b = c20301b;
-        notifyPropertyChanged(BR.c20301b);
-    }
-
-    @Bindable
-    public String getC20301ba() {
-        return c20301ba;
-    }
-
-    public void setC20301ba(String c20301ba) {
-        if (this.c20301ba.equals(c20301ba)) return; // for all checkboxes
-        this.c20301ba = c20301ba;
-        notifyPropertyChanged(BR.c20301ba);
-    }
-
-    @Bindable
-    public String getC20301bb() {
-        return c20301bb;
-    }
-
-    public void setC20301bb(String c20301bb) {
-        if (this.c20301bb.equals(c20301bb)) return; // for all checkboxes
-        this.c20301bb = c20301bb;
-        notifyPropertyChanged(BR.c20301bb);
-    }
-
-    @Bindable
-    public String getC20301bc() {
-        return c20301bc;
-    }
-
-    public void setC20301bc(String c20301bc) {
-        if (this.c20301bc.equals(c20301bc)) return; // for all checkboxes
-        this.c20301bc = c20301bc;
-        notifyPropertyChanged(BR.c20301bc);
-    }
-
-    @Bindable
-    public String getC20301bd() {
-        return c20301bd;
-    }
-
-    public void setC20301bd(String c20301bd) {
-        if (this.c20301bd.equals(c20301bd)) return; // for all checkboxes
-        this.c20301bd = c20301bd;
-        notifyPropertyChanged(BR.c20301bd);
-    }
-
-    @Bindable
-    public String getC20301be() {
-        return c20301be;
-    }
-
-    public void setC20301be(String c20301be) {
-        if (this.c20301be.equals(c20301be)) return; // for all checkboxes
-        this.c20301be = c20301be;
-        notifyPropertyChanged(BR.c20301be);
-    }
-
-    @Bindable
-    public String getC20301bf() {
-        return c20301bf;
-    }
-
-    public void setC20301bf(String c20301bf) {
-        if (this.c20301bf.equals(c20301bf)) return; // for all checkboxes
-        this.c20301bf = c20301bf;
-        notifyPropertyChanged(BR.c20301bf);
-    }
-
-    @Bindable
-    public String getC20301bg() {
-        return c20301bg;
-    }
-
-    public void setC20301bg(String c20301bg) {
-        if (this.c20301bg.equals(c20301bg)) return; // for all checkboxes
-        this.c20301bg = c20301bg;
-        notifyPropertyChanged(BR.c20301bg);
-    }
-
-    @Bindable
-    public String getC20302a() {
-        return c20302a;
-    }
-
-    public void setC20302a(String c20302a) {
-        this.c20302a = c20302a;
-        setC20302ba(c20302a.equals("1") ? this.c20302ba : "");
-        setC20302bb(c20302a.equals("1") ? this.c20302bb : "");
-        setC20302bc(c20302a.equals("1") ? this.c20302bc : "");
-        setC20302bd(c20302a.equals("1") ? this.c20302bd : "");
-        setC20302be(c20302a.equals("1") ? this.c20302be : "");
-        setC20302bf(c20302a.equals("1") ? this.c20302bf : "");
-        setC20302bg(c20302a.equals("1") ? this.c20302bg : "");
-        notifyPropertyChanged(BR.c20302a);
-    }
-
-    @Bindable
-    public String getC20302b() {
-        return c20302b;
-    }
-
-    public void setC20302b(String c20302b) {
-        this.c20302b = c20302b;
-        notifyPropertyChanged(BR.c20302b);
-    }
-
-    @Bindable
-    public String getC20302ba() {
-        return c20302ba;
-    }
-
-    public void setC20302ba(String c20302ba) {
-        if (this.c20302ba.equals(c20302ba)) return; // for all checkboxes
-        this.c20302ba = c20302ba;
-        notifyPropertyChanged(BR.c20302ba);
-    }
-
-    @Bindable
-    public String getC20302bb() {
-        return c20302bb;
-    }
-
-    public void setC20302bb(String c20302bb) {
-        if (this.c20302bb.equals(c20302bb)) return; // for all checkboxes
-        this.c20302bb = c20302bb;
-        notifyPropertyChanged(BR.c20302bb);
-    }
-
-    @Bindable
-    public String getC20302bc() {
-        return c20302bc;
-    }
-
-    public void setC20302bc(String c20302bc) {
-        if (this.c20302bc.equals(c20302bc)) return; // for all checkboxes
-        this.c20302bc = c20302bc;
-        notifyPropertyChanged(BR.c20302bc);
-    }
-
-    @Bindable
-    public String getC20302bd() {
-        return c20302bd;
-    }
-
-    public void setC20302bd(String c20302bd) {
-        if (this.c20302bd.equals(c20302bd)) return; // for all checkboxes
-        this.c20302bd = c20302bd;
-        notifyPropertyChanged(BR.c20302bd);
-    }
-
-    @Bindable
-    public String getC20302be() {
-        return c20302be;
-    }
-
-    public void setC20302be(String c20302be) {
-        if (this.c20302be.equals(c20302be)) return; // for all checkboxes
-        this.c20302be = c20302be;
-        notifyPropertyChanged(BR.c20302be);
-    }
-
-    @Bindable
-    public String getC20302bf() {
-        return c20302bf;
-    }
-
-    public void setC20302bf(String c20302bf) {
-        if (this.c20302bf.equals(c20302bf)) return; // for all checkboxes
-        this.c20302bf = c20302bf;
-        notifyPropertyChanged(BR.c20302bf);
-    }
-
-    @Bindable
-    public String getC20302bg() {
-        return c20302bg;
-    }
-
-    public void setC20302bg(String c20302bg) {
-        if (this.c20302bg.equals(c20302bg)) return; // for all checkboxes
-        this.c20302bg = c20302bg;
-        notifyPropertyChanged(BR.c20302bg);
-    }
-
-    @Bindable
-    public String getC20303a() {
-        return c20303a;
-    }
-
-    public void setC20303a(String c20303a) {
-        this.c20303a = c20303a;
-        setC20303ba(c20303a.equals("1") ? this.c20303ba : "");
-        setC20303bb(c20303a.equals("1") ? this.c20303bb : "");
-        setC20303bc(c20303a.equals("1") ? this.c20303bc : "");
-        setC20303bd(c20303a.equals("1") ? this.c20303bd : "");
-        setC20303be(c20303a.equals("1") ? this.c20303be : "");
-        setC20303bf(c20303a.equals("1") ? this.c20303bf : "");
-        setC20303bg(c20303a.equals("1") ? this.c20303bg : "");
-        notifyPropertyChanged(BR.c20303a);
-    }
-
-    @Bindable
-    public String getC20303b() {
-        return c20303b;
-    }
-
-    public void setC20303b(String c20303b) {
-        this.c20303b = c20303b;
-        notifyPropertyChanged(BR.c20303b);
-    }
-
-    @Bindable
-    public String getC20303ba() {
-        return c20303ba;
-    }
-
-    public void setC20303ba(String c20303ba) {
-        if (this.c20303ba.equals(c20303ba)) return; // for all checkboxes
-        this.c20303ba = c20303ba;
-        notifyPropertyChanged(BR.c20303ba);
-    }
-
-    @Bindable
-    public String getC20303bb() {
-        return c20303bb;
-    }
-
-    public void setC20303bb(String c20303bb) {
-        if (this.c20303bb.equals(c20303bb)) return; // for all checkboxes
-        this.c20303bb = c20303bb;
-        notifyPropertyChanged(BR.c20303bb);
-    }
-
-    @Bindable
-    public String getC20303bc() {
-        return c20303bc;
-    }
-
-    public void setC20303bc(String c20303bc) {
-        if (this.c20303bc.equals(c20303bc)) return; // for all checkboxes
-        this.c20303bc = c20303bc;
-        notifyPropertyChanged(BR.c20303bc);
-    }
-
-    @Bindable
-    public String getC20303bd() {
-        return c20303bd;
-    }
-
-    public void setC20303bd(String c20303bd) {
-        if (this.c20303bd.equals(c20303bd)) return; // for all checkboxes
-        this.c20303bd = c20303bd;
-        notifyPropertyChanged(BR.c20303bd);
-    }
-
-    @Bindable
-    public String getC20303be() {
-        return c20303be;
-    }
-
-    public void setC20303be(String c20303be) {
-        if (this.c20303be.equals(c20303be)) return; // for all checkboxes
-        this.c20303be = c20303be;
-        notifyPropertyChanged(BR.c20303be);
-    }
-
-    @Bindable
-    public String getC20303bf() {
-        return c20303bf;
-    }
-
-    public void setC20303bf(String c20303bf) {
-        if (this.c20303bf.equals(c20303bf)) return; // for all checkboxes
-        this.c20303bf = c20303bf;
-        notifyPropertyChanged(BR.c20303bf);
-    }
-
-    @Bindable
-    public String getC20303bg() {
-        return c20303bg;
-    }
-
-    public void setC20303bg(String c20303bg) {
-        if (this.c20303bg.equals(c20303bg)) return; // for all checkboxes
-        this.c20303bg = c20303bg;
-        notifyPropertyChanged(BR.c20303bg);
-    }
-
-    @Bindable
-    public String getC20304a() {
-        return c20304a;
-    }
-
-    public void setC20304a(String c20304a) {
-        this.c20304a = c20304a;
-        setC20304ba(c20304a.equals("1") ? this.c20304ba : "");
-        setC20304bb(c20304a.equals("1") ? this.c20304bb : "");
-        setC20304bc(c20304a.equals("1") ? this.c20304bc : "");
-        setC20304bd(c20304a.equals("1") ? this.c20304bd : "");
-        setC20304be(c20304a.equals("1") ? this.c20304be : "");
-        setC20304bf(c20304a.equals("1") ? this.c20304bf : "");
-        setC20304bg(c20304a.equals("1") ? this.c20304bg : "");
-        notifyPropertyChanged(BR.c20304a);
-    }
-
-    @Bindable
-    public String getC20304b() {
-        return c20304b;
-    }
-
-    public void setC20304b(String c20304b) {
-        this.c20304b = c20304b;
-        notifyPropertyChanged(BR.c20304b);
-    }
-
-    @Bindable
-    public String getC20304ba() {
-        return c20304ba;
-    }
-
-    public void setC20304ba(String c20304ba) {
-        if (this.c20304ba.equals(c20304ba)) return; // for all checkboxes
-        this.c20304ba = c20304ba;
-        notifyPropertyChanged(BR.c20304ba);
-    }
-
-    @Bindable
-    public String getC20304bb() {
-        return c20304bb;
-    }
-
-    public void setC20304bb(String c20304bb) {
-        if (this.c20304bb.equals(c20304bb)) return; // for all checkboxes
-        this.c20304bb = c20304bb;
-        notifyPropertyChanged(BR.c20304bb);
-    }
-
-    @Bindable
-    public String getC20304bc() {
-        return c20304bc;
-    }
-
-    public void setC20304bc(String c20304bc) {
-        if (this.c20304bc.equals(c20304bc)) return; // for all checkboxes
-        this.c20304bc = c20304bc;
-        notifyPropertyChanged(BR.c20304bc);
-    }
-
-    @Bindable
-    public String getC20304bd() {
-        return c20304bd;
-    }
-
-    public void setC20304bd(String c20304bd) {
-        if (this.c20304bd.equals(c20304bd)) return; // for all checkboxes
-        this.c20304bd = c20304bd;
-        notifyPropertyChanged(BR.c20304bd);
-    }
-
-    @Bindable
-    public String getC20304be() {
-        return c20304be;
-    }
-
-    public void setC20304be(String c20304be) {
-        if (this.c20304be.equals(c20304be)) return; // for all checkboxes
-        this.c20304be = c20304be;
-        notifyPropertyChanged(BR.c20304be);
-    }
-
-    @Bindable
-    public String getC20304bf() {
-        return c20304bf;
-    }
-
-    public void setC20304bf(String c20304bf) {
-        if (this.c20304bf.equals(c20304bf)) return; // for all checkboxes
-        this.c20304bf = c20304bf;
-        notifyPropertyChanged(BR.c20304bf);
-    }
-
-    @Bindable
-    public String getC20304bg() {
-        return c20304bg;
-    }
-
-    public void setC20304bg(String c20304bg) {
-        if (this.c20304bg.equals(c20304bg)) return; // for all checkboxes
-        this.c20304bg = c20304bg;
-        notifyPropertyChanged(BR.c20304bg);
-    }
-
-    @Bindable
-    public String getC20305a() {
-        return c20305a;
-    }
-
-    public void setC20305a(String c20305a) {
-        this.c20305a = c20305a;
-        setC20305ba(c20305a.equals("1") ? this.c20305ba : "");
-        setC20305bb(c20305a.equals("1") ? this.c20305bb : "");
-        setC20305bc(c20305a.equals("1") ? this.c20305bc : "");
-        setC20305bd(c20305a.equals("1") ? this.c20305bd : "");
-        setC20305be(c20305a.equals("1") ? this.c20305be : "");
-        setC20305bf(c20305a.equals("1") ? this.c20305bf : "");
-        setC20305bg(c20305a.equals("1") ? this.c20305bg : "");
-        notifyPropertyChanged(BR.c20305a);
-    }
-
-    @Bindable
-    public String getC20305b() {
-        return c20305b;
-    }
-
-    public void setC20305b(String c20305b) {
-        this.c20305b = c20305b;
-        notifyPropertyChanged(BR.c20305b);
-    }
-
-    @Bindable
-    public String getC20305ba() {
-        return c20305ba;
-    }
-
-    public void setC20305ba(String c20305ba) {
-        if (this.c20305ba.equals(c20305ba)) return; // for all checkboxes
-        this.c20305ba = c20305ba;
-        notifyPropertyChanged(BR.c20305ba);
-    }
-
-    @Bindable
-    public String getC20305bb() {
-        return c20305bb;
-    }
-
-    public void setC20305bb(String c20305bb) {
-        if (this.c20305bb.equals(c20305bb)) return; // for all checkboxes
-        this.c20305bb = c20305bb;
-        notifyPropertyChanged(BR.c20305bb);
-    }
-
-    @Bindable
-    public String getC20305bc() {
-        return c20305bc;
-    }
-
-    public void setC20305bc(String c20305bc) {
-        if (this.c20305bc.equals(c20305bc)) return; // for all checkboxes
-        this.c20305bc = c20305bc;
-        notifyPropertyChanged(BR.c20305bc);
-    }
-
-    @Bindable
-    public String getC20305bd() {
-        return c20305bd;
-    }
-
-    public void setC20305bd(String c20305bd) {
-        if (this.c20305bd.equals(c20305bd)) return; // for all checkboxes
-        this.c20305bd = c20305bd;
-        notifyPropertyChanged(BR.c20305bd);
-    }
-
-    @Bindable
-    public String getC20305be() {
-        return c20305be;
-    }
-
-    public void setC20305be(String c20305be) {
-        if (this.c20305be.equals(c20305be)) return; // for all checkboxes
-        this.c20305be = c20305be;
-        notifyPropertyChanged(BR.c20305be);
-    }
-
-    @Bindable
-    public String getC20305bf() {
-        return c20305bf;
-    }
-
-    public void setC20305bf(String c20305bf) {
-        if (this.c20305bf.equals(c20305bf)) return; // for all checkboxes
-        this.c20305bf = c20305bf;
-        notifyPropertyChanged(BR.c20305bf);
-    }
-
-    @Bindable
-    public String getC20305bg() {
-        return c20305bg;
-    }
-
-    public void setC20305bg(String c20305bg) {
-        if (this.c20305bg.equals(c20305bg)) return; // for all checkboxes
-        this.c20305bg = c20305bg;
-        notifyPropertyChanged(BR.c20305bg);
-    }
-
-    @Bindable
-    public String getC20306a() {
-        return c20306a;
-    }
-
-    public void setC20306a(String c20306a) {
-        this.c20306a = c20306a;
-        setC20306ba(c20306a.equals("1") ? this.c20306ba : "");
-        setC20306bb(c20306a.equals("1") ? this.c20306bb : "");
-        setC20306bc(c20306a.equals("1") ? this.c20306bc : "");
-        setC20306bd(c20306a.equals("1") ? this.c20306bd : "");
-        setC20306be(c20306a.equals("1") ? this.c20306be : "");
-        setC20306bf(c20306a.equals("1") ? this.c20306bf : "");
-        setC20306bg(c20306a.equals("1") ? this.c20306bg : "");
-        notifyPropertyChanged(BR.c20306a);
-    }
-
-    @Bindable
-    public String getC20306b() {
-        return c20306b;
-    }
-
-    public void setC20306b(String c20306b) {
-        this.c20306b = c20306b;
-        notifyPropertyChanged(BR.c20306b);
-    }
-
-    @Bindable
-    public String getC20306ba() {
-        return c20306ba;
-    }
-
-    public void setC20306ba(String c20306ba) {
-        if (this.c20306ba.equals(c20306ba)) return; // for all checkboxes
-        this.c20306ba = c20306ba;
-        notifyPropertyChanged(BR.c20306ba);
-    }
-
-    @Bindable
-    public String getC20306bb() {
-        return c20306bb;
-    }
-
-    public void setC20306bb(String c20306bb) {
-        if (this.c20306bb.equals(c20306bb)) return; // for all checkboxes
-        this.c20306bb = c20306bb;
-        notifyPropertyChanged(BR.c20306bb);
-    }
-
-    @Bindable
-    public String getC20306bc() {
-        return c20306bc;
-    }
-
-    public void setC20306bc(String c20306bc) {
-        if (this.c20306bc.equals(c20306bc)) return; // for all checkboxes
-        this.c20306bc = c20306bc;
-        notifyPropertyChanged(BR.c20306bc);
-    }
-
-    @Bindable
-    public String getC20306bd() {
-        return c20306bd;
-    }
-
-    public void setC20306bd(String c20306bd) {
-        if (this.c20306bd.equals(c20306bd)) return; // for all checkboxes
-        this.c20306bd = c20306bd;
-        notifyPropertyChanged(BR.c20306bd);
-    }
-
-    @Bindable
-    public String getC20306be() {
-        return c20306be;
-    }
-
-    public void setC20306be(String c20306be) {
-        if (this.c20306be.equals(c20306be)) return; // for all checkboxes
-        this.c20306be = c20306be;
-        notifyPropertyChanged(BR.c20306be);
-    }
-
-    @Bindable
-    public String getC20306bf() {
-        return c20306bf;
-    }
-
-    public void setC20306bf(String c20306bf) {
-        if (this.c20306bf.equals(c20306bf)) return; // for all checkboxes
-        this.c20306bf = c20306bf;
-        notifyPropertyChanged(BR.c20306bf);
-    }
-
-    @Bindable
-    public String getC20306bg() {
-        return c20306bg;
-    }
-
-    public void setC20306bg(String c20306bg) {
-        if (this.c20306bg.equals(c20306bg)) return; // for all checkboxes
-        this.c20306bg = c20306bg;
-        notifyPropertyChanged(BR.c20306bg);
-    }
-
-    @Bindable
-    public String getC20307a() {
-        return c20307a;
-    }
-
-    public void setC20307a(String c20307a) {
-        this.c20307a = c20307a;
-        setC20307ba(c20307a.equals("1") ? this.c20307ba : "");
-        setC20307bb(c20307a.equals("1") ? this.c20307bb : "");
-        setC20307bc(c20307a.equals("1") ? this.c20307bc : "");
-        setC20307bd(c20307a.equals("1") ? this.c20307bd : "");
-        setC20307be(c20307a.equals("1") ? this.c20307be : "");
-        setC20307bf(c20307a.equals("1") ? this.c20307bf : "");
-        setC20307bg(c20307a.equals("1") ? this.c20307bg : "");
-        notifyPropertyChanged(BR.c20307a);
-    }
-
-    @Bindable
-    public String getC20307b() {
-        return c20307b;
-    }
-
-    public void setC20307b(String c20307b) {
-        this.c20307b = c20307b;
-        notifyPropertyChanged(BR.c20307b);
-    }
-
-    @Bindable
-    public String getC20307ba() {
-        return c20307ba;
-    }
-
-    public void setC20307ba(String c20307ba) {
-        if (this.c20307ba.equals(c20307ba)) return; // for all checkboxes
-        this.c20307ba = c20307ba;
-        notifyPropertyChanged(BR.c20307ba);
-    }
-
-    @Bindable
-    public String getC20307bb() {
-        return c20307bb;
-    }
-
-    public void setC20307bb(String c20307bb) {
-        if (this.c20307bb.equals(c20307bb)) return; // for all checkboxes
-        this.c20307bb = c20307bb;
-        notifyPropertyChanged(BR.c20307bb);
-    }
-
-    @Bindable
-    public String getC20307bc() {
-        return c20307bc;
-    }
-
-    public void setC20307bc(String c20307bc) {
-        if (this.c20307bc.equals(c20307bc)) return; // for all checkboxes
-        this.c20307bc = c20307bc;
-        notifyPropertyChanged(BR.c20307bc);
-    }
-
-    @Bindable
-    public String getC20307bd() {
-        return c20307bd;
-    }
-
-    public void setC20307bd(String c20307bd) {
-        if (this.c20307bd.equals(c20307bd)) return; // for all checkboxes
-        this.c20307bd = c20307bd;
-        notifyPropertyChanged(BR.c20307bd);
-    }
-
-    @Bindable
-    public String getC20307be() {
-        return c20307be;
-    }
-
-    public void setC20307be(String c20307be) {
-        if (this.c20307be.equals(c20307be)) return; // for all checkboxes
-        this.c20307be = c20307be;
-        notifyPropertyChanged(BR.c20307be);
-    }
-
-    @Bindable
-    public String getC20307bf() {
-        return c20307bf;
-    }
-
-    public void setC20307bf(String c20307bf) {
-        if (this.c20307bf.equals(c20307bf)) return; // for all checkboxes
-        this.c20307bf = c20307bf;
-        notifyPropertyChanged(BR.c20307bf);
-    }
-
-    @Bindable
-    public String getC20307bg() {
-        return c20307bg;
-    }
-
-    public void setC20307bg(String c20307bg) {
-        if (this.c20307bg.equals(c20307bg)) return; // for all checkboxes
-        this.c20307bg = c20307bg;
-        notifyPropertyChanged(BR.c20307bg);
-    }
-
-    @Bindable
-    public String getC20308a() {
-        return c20308a;
-    }
-
-    public void setC20308a(String c20308a) {
-        this.c20308a = c20308a;
-        setC20308ba(c20308a.equals("1") ? this.c20308ba : "");
-        setC20308bb(c20308a.equals("1") ? this.c20308bb : "");
-        setC20308bc(c20308a.equals("1") ? this.c20308bc : "");
-        setC20308bd(c20308a.equals("1") ? this.c20308bd : "");
-        setC20308be(c20308a.equals("1") ? this.c20308be : "");
-        setC20308bf(c20308a.equals("1") ? this.c20308bf : "");
-        setC20308bg(c20308a.equals("1") ? this.c20308bg : "");
-        notifyPropertyChanged(BR.c20308a);
-    }
-
-    @Bindable
-    public String getC20308b() {
-        return c20308b;
-    }
-
-    public void setC20308b(String c20308b) {
-        this.c20308b = c20308b;
-        notifyPropertyChanged(BR.c20308b);
-    }
-
-    @Bindable
-    public String getC20308ba() {
-        return c20308ba;
-    }
-
-    public void setC20308ba(String c20308ba) {
-        if (this.c20308ba.equals(c20308ba)) return; // for all checkboxes
-        this.c20308ba = c20308ba;
-        notifyPropertyChanged(BR.c20308ba);
-    }
-
-    @Bindable
-    public String getC20308bb() {
-        return c20308bb;
-    }
-
-    public void setC20308bb(String c20308bb) {
-        if (this.c20308bb.equals(c20308bb)) return; // for all checkboxes
-        this.c20308bb = c20308bb;
-        notifyPropertyChanged(BR.c20308bb);
-    }
-
-    @Bindable
-    public String getC20308bc() {
-        return c20308bc;
-    }
-
-    public void setC20308bc(String c20308bc) {
-        if (this.c20308bc.equals(c20308bc)) return; // for all checkboxes
-        this.c20308bc = c20308bc;
-        notifyPropertyChanged(BR.c20308bc);
-    }
-
-    @Bindable
-    public String getC20308bd() {
-        return c20308bd;
-    }
-
-    public void setC20308bd(String c20308bd) {
-        if (this.c20308bd.equals(c20308bd)) return; // for all checkboxes
-        this.c20308bd = c20308bd;
-        notifyPropertyChanged(BR.c20308bd);
-    }
-
-    @Bindable
-    public String getC20308be() {
-        return c20308be;
-    }
-
-    public void setC20308be(String c20308be) {
-        if (this.c20308be.equals(c20308be)) return; // for all checkboxes
-        this.c20308be = c20308be;
-        notifyPropertyChanged(BR.c20308be);
-    }
-
-    @Bindable
-    public String getC20308bf() {
-        return c20308bf;
-    }
-
-    public void setC20308bf(String c20308bf) {
-        if (this.c20308bf.equals(c20308bf)) return; // for all checkboxes
-        this.c20308bf = c20308bf;
-        notifyPropertyChanged(BR.c20308bf);
-    }
-
-    @Bindable
-    public String getC20308bg() {
-        return c20308bg;
-    }
-
-    public void setC20308bg(String c20308bg) {
-        if (this.c20308bg.equals(c20308bg)) return; // for all checkboxes
-        this.c20308bg = c20308bg;
-        notifyPropertyChanged(BR.c20308bg);
-    }
-
-    @Bindable
-    public String getC20309a() {
-        return c20309a;
-    }
-
-    public void setC20309a(String c20309a) {
-        this.c20309a = c20309a;
-        setC20309ba(c20309a.equals("1") ? this.c20309ba : "");
-        setC20309bb(c20309a.equals("1") ? this.c20309bb : "");
-        setC20309bc(c20309a.equals("1") ? this.c20309bc : "");
-        setC20309bd(c20309a.equals("1") ? this.c20309bd : "");
-        setC20309be(c20309a.equals("1") ? this.c20309be : "");
-        setC20309bf(c20309a.equals("1") ? this.c20309bf : "");
-        setC20309bg(c20309a.equals("1") ? this.c20309bg : "");
-        notifyPropertyChanged(BR.c20309a);
-    }
-
-    @Bindable
-    public String getC20309b() {
-        return c20309b;
-    }
-
-    public void setC20309b(String c20309b) {
-        this.c20309b = c20309b;
-        notifyPropertyChanged(BR.c20309b);
-    }
-
-    @Bindable
-    public String getC20309ba() {
-        return c20309ba;
-    }
-
-    public void setC20309ba(String c20309ba) {
-        if (this.c20309ba.equals(c20309ba)) return; // for all checkboxes
-        this.c20309ba = c20309ba;
-        notifyPropertyChanged(BR.c20309ba);
-    }
-
-    @Bindable
-    public String getC20309bb() {
-        return c20309bb;
-    }
-
-    public void setC20309bb(String c20309bb) {
-        if (this.c20309bb.equals(c20309bb)) return; // for all checkboxes
-        this.c20309bb = c20309bb;
-        notifyPropertyChanged(BR.c20309bb);
-    }
-
-    @Bindable
-    public String getC20309bc() {
-        return c20309bc;
-    }
-
-    public void setC20309bc(String c20309bc) {
-        if (this.c20309bc.equals(c20309bc)) return; // for all checkboxes
-        this.c20309bc = c20309bc;
-        notifyPropertyChanged(BR.c20309bc);
-    }
-
-    @Bindable
-    public String getC20309bd() {
-        return c20309bd;
-    }
-
-    public void setC20309bd(String c20309bd) {
-        if (this.c20309bd.equals(c20309bd)) return; // for all checkboxes
-        this.c20309bd = c20309bd;
-        notifyPropertyChanged(BR.c20309bd);
-    }
-
-    @Bindable
-    public String getC20309be() {
-        return c20309be;
-    }
-
-    public void setC20309be(String c20309be) {
-        if (this.c20309be.equals(c20309be)) return; // for all checkboxes
-        this.c20309be = c20309be;
-        notifyPropertyChanged(BR.c20309be);
-    }
-
-    @Bindable
-    public String getC20309bf() {
-        return c20309bf;
-    }
-
-    public void setC20309bf(String c20309bf) {
-        if (this.c20309bf.equals(c20309bf)) return; // for all checkboxes
-        this.c20309bf = c20309bf;
-        notifyPropertyChanged(BR.c20309bf);
-    }
-
-    @Bindable
-    public String getC20309bg() {
-        return c20309bg;
-    }
-
-    public void setC20309bg(String c20309bg) {
-        if (this.c20309bg.equals(c20309bg)) return; // for all checkboxes
-        this.c20309bg = c20309bg;
-        notifyPropertyChanged(BR.c20309bg);
-    }
-
-    @Bindable
-    public String getC20310a() {
-        return c20310a;
-    }
-
-    public void setC20310a(String c20310a) {
-        this.c20310a = c20310a;
-        setC20310ba(c20310a.equals("1") ? this.c20310ba : "");
-        setC20310bb(c20310a.equals("1") ? this.c20310bb : "");
-        setC20310bc(c20310a.equals("1") ? this.c20310bc : "");
-        setC20310bd(c20310a.equals("1") ? this.c20310bd : "");
-        setC20310be(c20310a.equals("1") ? this.c20310be : "");
-        setC20310bf(c20310a.equals("1") ? this.c20310bf : "");
-        setC20310bg(c20310a.equals("1") ? this.c20310bg : "");
-        notifyPropertyChanged(BR.c20310a);
-    }
-
-    @Bindable
-    public String getC20310b() {
-        return c20310b;
-    }
-
-    public void setC20310b(String c20310b) {
-        this.c20310b = c20310b;
-        notifyPropertyChanged(BR.c20310b);
-    }
-
-    @Bindable
-    public String getC20310ba() {
-        return c20310ba;
-    }
-
-    public void setC20310ba(String c20310ba) {
-        if (this.c20310ba.equals(c20310ba)) return; // for all checkboxes
-        this.c20310ba = c20310ba;
-        notifyPropertyChanged(BR.c20310ba);
-    }
-
-    @Bindable
-    public String getC20310bb() {
-        return c20310bb;
-    }
-
-    public void setC20310bb(String c20310bb) {
-        if (this.c20310bb.equals(c20310bb)) return; // for all checkboxes
-        this.c20310bb = c20310bb;
-        notifyPropertyChanged(BR.c20310bb);
-    }
-
-    @Bindable
-    public String getC20310bc() {
-        return c20310bc;
-    }
-
-    public void setC20310bc(String c20310bc) {
-        if (this.c20310bc.equals(c20310bc)) return; // for all checkboxes
-        this.c20310bc = c20310bc;
-        notifyPropertyChanged(BR.c20310bc);
-    }
-
-    @Bindable
-    public String getC20310bd() {
-        return c20310bd;
-    }
-
-    public void setC20310bd(String c20310bd) {
-        if (this.c20310bd.equals(c20310bd)) return; // for all checkboxes
-        this.c20310bd = c20310bd;
-        notifyPropertyChanged(BR.c20310bd);
-    }
-
-    @Bindable
-    public String getC20310be() {
-        return c20310be;
-    }
-
-    public void setC20310be(String c20310be) {
-        if (this.c20310be.equals(c20310be)) return; // for all checkboxes
-        this.c20310be = c20310be;
-        notifyPropertyChanged(BR.c20310be);
-    }
-
-    @Bindable
-    public String getC20310bf() {
-        return c20310bf;
-    }
-
-    public void setC20310bf(String c20310bf) {
-        if (this.c20310bf.equals(c20310bf)) return; // for all checkboxes
-        this.c20310bf = c20310bf;
-        notifyPropertyChanged(BR.c20310bf);
-    }
-
-    @Bindable
-    public String getC20310bg() {
-        return c20310bg;
-    }
-
-    public void setC20310bg(String c20310bg) {
-        if (this.c20310bg.equals(c20310bg)) return; // for all checkboxes
-        this.c20310bg = c20310bg;
-        notifyPropertyChanged(BR.c20310bg);
-    }
-
-    @Bindable
-    public String getC20311a() {
-        return c20311a;
-    }
-
-    public void setC20311a(String c20311a) {
-        this.c20311a = c20311a;
-        setC20311ba(c20311a.equals("1") ? this.c20311ba : "");
-        setC20311bb(c20311a.equals("1") ? this.c20311bb : "");
-        setC20311bc(c20311a.equals("1") ? this.c20311bc : "");
-        setC20311bd(c20311a.equals("1") ? this.c20311bd : "");
-        setC20311be(c20311a.equals("1") ? this.c20311be : "");
-        setC20311bf(c20311a.equals("1") ? this.c20311bf : "");
-        setC20311bg(c20311a.equals("1") ? this.c20311bg : "");
-        notifyPropertyChanged(BR.c20311a);
-    }
-
-    @Bindable
-    public String getC20311b() {
-        return c20311b;
-    }
-
-    public void setC20311b(String c20311b) {
-        this.c20311b = c20311b;
-        notifyPropertyChanged(BR.c20311b);
-    }
-
-    @Bindable
-    public String getC20311ba() {
-        return c20311ba;
-    }
-
-    public void setC20311ba(String c20311ba) {
-        if (this.c20311ba.equals(c20311ba)) return; // for all checkboxes
-        this.c20311ba = c20311ba;
-        notifyPropertyChanged(BR.c20311ba);
-    }
-
-    @Bindable
-    public String getC20311bb() {
-        return c20311bb;
-    }
-
-    public void setC20311bb(String c20311bb) {
-        if (this.c20311bb.equals(c20311bb)) return; // for all checkboxes
-        this.c20311bb = c20311bb;
-        notifyPropertyChanged(BR.c20311bb);
-    }
-
-    @Bindable
-    public String getC20311bc() {
-        return c20311bc;
-    }
-
-    public void setC20311bc(String c20311bc) {
-        if (this.c20311bc.equals(c20311bc)) return; // for all checkboxes
-        this.c20311bc = c20311bc;
-        notifyPropertyChanged(BR.c20311bc);
-    }
-
-    @Bindable
-    public String getC20311bd() {
-        return c20311bd;
-    }
-
-    public void setC20311bd(String c20311bd) {
-        if (this.c20311bd.equals(c20311bd)) return; // for all checkboxes
-        this.c20311bd = c20311bd;
-        notifyPropertyChanged(BR.c20311bd);
-    }
-
-    @Bindable
-    public String getC20311be() {
-        return c20311be;
-    }
-
-    public void setC20311be(String c20311be) {
-        if (this.c20311be.equals(c20311be)) return; // for all checkboxes
-        this.c20311be = c20311be;
-        notifyPropertyChanged(BR.c20311be);
-    }
-
-    @Bindable
-    public String getC20311bf() {
-        return c20311bf;
-    }
-
-    public void setC20311bf(String c20311bf) {
-        if (this.c20311bf.equals(c20311bf)) return; // for all checkboxes
-        this.c20311bf = c20311bf;
-        notifyPropertyChanged(BR.c20311bf);
-    }
-
-    @Bindable
-    public String getC20311bg() {
-        return c20311bg;
-    }
-
-    public void setC20311bg(String c20311bg) {
-        if (this.c20311bg.equals(c20311bg)) return; // for all checkboxes
-        this.c20311bg = c20311bg;
-        notifyPropertyChanged(BR.c20311bg);
-    }
-
-    @Bindable
-    public String getC20312a() {
-        return c20312a;
-    }
-
-    public void setC20312a(String c20312a) {
-        this.c20312a = c20312a;
-        setC20312ba(c20312a.equals("1") ? this.c20312ba : "");
-        setC20312bb(c20312a.equals("1") ? this.c20312bb : "");
-        setC20312bc(c20312a.equals("1") ? this.c20312bc : "");
-        setC20312bd(c20312a.equals("1") ? this.c20312bd : "");
-        setC20312be(c20312a.equals("1") ? this.c20312be : "");
-        setC20312bf(c20312a.equals("1") ? this.c20312bf : "");
-        setC20312bg(c20312a.equals("1") ? this.c20312bg : "");
-        notifyPropertyChanged(BR.c20312a);
-    }
-
-    @Bindable
-    public String getC20312b() {
-        return c20312b;
-    }
-
-    public void setC20312b(String c20312b) {
-        this.c20312b = c20312b;
-        notifyPropertyChanged(BR.c20312b);
-    }
-
-    @Bindable
-    public String getC20312ba() {
-        return c20312ba;
-    }
-
-    public void setC20312ba(String c20312ba) {
-        if (this.c20312ba.equals(c20312ba)) return; // for all checkboxes
-        this.c20312ba = c20312ba;
-        notifyPropertyChanged(BR.c20312ba);
-    }
-
-    @Bindable
-    public String getC20312bb() {
-        return c20312bb;
-    }
-
-    public void setC20312bb(String c20312bb) {
-        if (this.c20312bb.equals(c20312bb)) return; // for all checkboxes
-        this.c20312bb = c20312bb;
-        notifyPropertyChanged(BR.c20312bb);
-    }
-
-    @Bindable
-    public String getC20312bc() {
-        return c20312bc;
-    }
-
-    public void setC20312bc(String c20312bc) {
-        if (this.c20312bc.equals(c20312bc)) return; // for all checkboxes
-        this.c20312bc = c20312bc;
-        notifyPropertyChanged(BR.c20312bc);
-    }
-
-    @Bindable
-    public String getC20312bd() {
-        return c20312bd;
-    }
-
-    public void setC20312bd(String c20312bd) {
-        if (this.c20312bd.equals(c20312bd)) return; // for all checkboxes
-        this.c20312bd = c20312bd;
-        notifyPropertyChanged(BR.c20312bd);
-    }
-
-    @Bindable
-    public String getC20312be() {
-        return c20312be;
-    }
-
-    public void setC20312be(String c20312be) {
-        if (this.c20312be.equals(c20312be)) return; // for all checkboxes
-        this.c20312be = c20312be;
-        notifyPropertyChanged(BR.c20312be);
-    }
-
-    @Bindable
-    public String getC20312bf() {
-        return c20312bf;
-    }
-
-    public void setC20312bf(String c20312bf) {
-        if (this.c20312bf.equals(c20312bf)) return; // for all checkboxes
-        this.c20312bf = c20312bf;
-        notifyPropertyChanged(BR.c20312bf);
-    }
-
-    @Bindable
-    public String getC20312bg() {
-        return c20312bg;
-    }
-
-    public void setC20312bg(String c20312bg) {
-        if (this.c20312bg.equals(c20312bg)) return; // for all checkboxes
-        this.c20312bg = c20312bg;
-        notifyPropertyChanged(BR.c20312bg);
-    }
-
-    @Bindable
-    public String getC20313a() {
-        return c20313a;
-    }
-
-    public void setC20313a(String c20313a) {
-        this.c20313a = c20313a;
-        setC20313ba(c20313a.equals("1") ? this.c20313ba : "");
-        setC20313bb(c20313a.equals("1") ? this.c20313bb : "");
-        setC20313bc(c20313a.equals("1") ? this.c20313bc : "");
-        setC20313bd(c20313a.equals("1") ? this.c20313bd : "");
-        setC20313be(c20313a.equals("1") ? this.c20313be : "");
-        setC20313bf(c20313a.equals("1") ? this.c20313bf : "");
-        setC20313bg(c20313a.equals("1") ? this.c20313bg : "");
-        notifyPropertyChanged(BR.c20313a);
-    }
-
-    @Bindable
-    public String getC20313b() {
-        return c20313b;
-    }
-
-    public void setC20313b(String c20313b) {
-        this.c20313b = c20313b;
-        notifyPropertyChanged(BR.c20313b);
-    }
-
-    @Bindable
-    public String getC20313ba() {
-        return c20313ba;
-    }
-
-    public void setC20313ba(String c20313ba) {
-        if (this.c20313ba.equals(c20313ba)) return; // for all checkboxes
-        this.c20313ba = c20313ba;
-        notifyPropertyChanged(BR.c20313ba);
-    }
-
-    @Bindable
-    public String getC20313bb() {
-        return c20313bb;
-    }
-
-    public void setC20313bb(String c20313bb) {
-        if (this.c20313bb.equals(c20313bb)) return; // for all checkboxes
-        this.c20313bb = c20313bb;
-        notifyPropertyChanged(BR.c20313bb);
-    }
-
-    @Bindable
-    public String getC20313bc() {
-        return c20313bc;
-    }
-
-    public void setC20313bc(String c20313bc) {
-        if (this.c20313bc.equals(c20313bc)) return; // for all checkboxes
-        this.c20313bc = c20313bc;
-        notifyPropertyChanged(BR.c20313bc);
-    }
-
-    @Bindable
-    public String getC20313bd() {
-        return c20313bd;
-    }
-
-    public void setC20313bd(String c20313bd) {
-        if (this.c20313bd.equals(c20313bd)) return; // for all checkboxes
-        this.c20313bd = c20313bd;
-        notifyPropertyChanged(BR.c20313bd);
-    }
-
-    @Bindable
-    public String getC20313be() {
-        return c20313be;
-    }
-
-    public void setC20313be(String c20313be) {
-        if (this.c20313be.equals(c20313be)) return; // for all checkboxes
-        this.c20313be = c20313be;
-        notifyPropertyChanged(BR.c20313be);
-    }
-
-    @Bindable
-    public String getC20313bf() {
-        return c20313bf;
-    }
-
-    public void setC20313bf(String c20313bf) {
-        if (this.c20313bf.equals(c20313bf)) return; // for all checkboxes
-        this.c20313bf = c20313bf;
-        notifyPropertyChanged(BR.c20313bf);
-    }
-
-    @Bindable
-    public String getC20313bg() {
-        return c20313bg;
-    }
-
-    public void setC20313bg(String c20313bg) {
-        if (this.c20313bg.equals(c20313bg)) return; // for all checkboxes
-        this.c20313bg = c20313bg;
-        notifyPropertyChanged(BR.c20313bg);
-    }
-
-    @Bindable
-    public String getC20314a() {
-        return c20314a;
-    }
-
-    public void setC20314a(String c20314a) {
-        this.c20314a = c20314a;
-        setC20314ba(c20314a.equals("1") ? this.c20314ba : "");
-        setC20314bb(c20314a.equals("1") ? this.c20314bb : "");
-        setC20314bc(c20314a.equals("1") ? this.c20314bc : "");
-        setC20314bd(c20314a.equals("1") ? this.c20314bd : "");
-        setC20314be(c20314a.equals("1") ? this.c20314be : "");
-        setC20314bf(c20314a.equals("1") ? this.c20314bf : "");
-        setC20314bg(c20314a.equals("1") ? this.c20314bg : "");
-        notifyPropertyChanged(BR.c20314a);
-    }
-
-    @Bindable
-    public String getC20314b() {
-        return c20314b;
-    }
-
-    public void setC20314b(String c20314b) {
-        this.c20314b = c20314b;
-        notifyPropertyChanged(BR.c20314b);
-    }
-
-    @Bindable
-    public String getC20314ba() {
-        return c20314ba;
-    }
-
-    public void setC20314ba(String c20314ba) {
-        if (this.c20314ba.equals(c20314ba)) return; // for all checkboxes
-        this.c20314ba = c20314ba;
-        notifyPropertyChanged(BR.c20314ba);
-    }
-
-    @Bindable
-    public String getC20314bb() {
-        return c20314bb;
-    }
-
-    public void setC20314bb(String c20314bb) {
-        if (this.c20314bb.equals(c20314bb)) return; // for all checkboxes
-        this.c20314bb = c20314bb;
-        notifyPropertyChanged(BR.c20314bb);
-    }
-
-    @Bindable
-    public String getC20314bc() {
-        return c20314bc;
-    }
-
-    public void setC20314bc(String c20314bc) {
-        if (this.c20314bc.equals(c20314bc)) return; // for all checkboxes
-        this.c20314bc = c20314bc;
-        notifyPropertyChanged(BR.c20314bc);
-    }
-
-    @Bindable
-    public String getC20314bd() {
-        return c20314bd;
-    }
-
-    public void setC20314bd(String c20314bd) {
-        if (this.c20314bd.equals(c20314bd)) return; // for all checkboxes
-        this.c20314bd = c20314bd;
-        notifyPropertyChanged(BR.c20314bd);
-    }
-
-    @Bindable
-    public String getC20314be() {
-        return c20314be;
-    }
-
-    public void setC20314be(String c20314be) {
-        if (this.c20314be.equals(c20314be)) return; // for all checkboxes
-        this.c20314be = c20314be;
-        notifyPropertyChanged(BR.c20314be);
-    }
-
-    @Bindable
-    public String getC20314bf() {
-        return c20314bf;
-    }
-
-    public void setC20314bf(String c20314bf) {
-        if (this.c20314bf.equals(c20314bf)) return; // for all checkboxes
-        this.c20314bf = c20314bf;
-        notifyPropertyChanged(BR.c20314bf);
-    }
-
-    @Bindable
-    public String getC20314bg() {
-        return c20314bg;
-    }
-
-    public void setC20314bg(String c20314bg) {
-        if (this.c20314bg.equals(c20314bg)) return; // for all checkboxes
-        this.c20314bg = c20314bg;
-        notifyPropertyChanged(BR.c20314bg);
-    }
-
-    @Bindable
-    public String getC20315a() {
-        return c20315a;
-    }
-
-    public void setC20315a(String c20315a) {
-        this.c20315a = c20315a;
-        setC20315ba(c20315a.equals("1") ? this.c20315ba : "");
-        setC20315bb(c20315a.equals("1") ? this.c20315bb : "");
-        setC20315bc(c20315a.equals("1") ? this.c20315bc : "");
-        setC20315bd(c20315a.equals("1") ? this.c20315bd : "");
-        setC20315be(c20315a.equals("1") ? this.c20315be : "");
-        setC20315bf(c20315a.equals("1") ? this.c20315bf : "");
-        setC20315bg(c20315a.equals("1") ? this.c20315bg : "");
-        notifyPropertyChanged(BR.c20315a);
-    }
-
-    @Bindable
-    public String getC20315b() {
-        return c20315b;
-    }
-
-    public void setC20315b(String c20315b) {
-        this.c20315b = c20315b;
-        notifyPropertyChanged(BR.c20315b);
-    }
-
-    @Bindable
-    public String getC20315ba() {
-        return c20315ba;
-    }
-
-    public void setC20315ba(String c20315ba) {
-        if (this.c20315ba.equals(c20315ba)) return; // for all checkboxes
-        this.c20315ba = c20315ba;
-        notifyPropertyChanged(BR.c20315ba);
-    }
-
-    @Bindable
-    public String getC20315bb() {
-        return c20315bb;
-    }
-
-    public void setC20315bb(String c20315bb) {
-        if (this.c20315bb.equals(c20315bb)) return; // for all checkboxes
-        this.c20315bb = c20315bb;
-        notifyPropertyChanged(BR.c20315bb);
-    }
-
-    @Bindable
-    public String getC20315bc() {
-        return c20315bc;
-    }
-
-    public void setC20315bc(String c20315bc) {
-        if (this.c20315bc.equals(c20315bc)) return; // for all checkboxes
-        this.c20315bc = c20315bc;
-        notifyPropertyChanged(BR.c20315bc);
-    }
-
-    @Bindable
-    public String getC20315bd() {
-        return c20315bd;
-    }
-
-    public void setC20315bd(String c20315bd) {
-        if (this.c20315bd.equals(c20315bd)) return; // for all checkboxes
-        this.c20315bd = c20315bd;
-        notifyPropertyChanged(BR.c20315bd);
-    }
-
-    @Bindable
-    public String getC20315be() {
-        return c20315be;
-    }
-
-    public void setC20315be(String c20315be) {
-        if (this.c20315be.equals(c20315be)) return; // for all checkboxes
-        this.c20315be = c20315be;
-        notifyPropertyChanged(BR.c20315be);
-    }
-
-    @Bindable
-    public String getC20315bf() {
-        return c20315bf;
-    }
-
-    public void setC20315bf(String c20315bf) {
-        if (this.c20315bf.equals(c20315bf)) return; // for all checkboxes
-        this.c20315bf = c20315bf;
-        notifyPropertyChanged(BR.c20315bf);
-    }
-
-    @Bindable
-    public String getC20315bg() {
-        return c20315bg;
-    }
-
-    public void setC20315bg(String c20315bg) {
-        if (this.c20315bg.equals(c20315bg)) return; // for all checkboxes
-        this.c20315bg = c20315bg;
-        notifyPropertyChanged(BR.c20315bg);
-    }
-
-    @Bindable
-    public String getC20316a() {
-        return c20316a;
-    }
-
-    public void setC20316a(String c20316a) {
-        this.c20316a = c20316a;
-        setC20316ba(c20316a.equals("1") ? this.c20316ba : "");
-        setC20316bb(c20316a.equals("1") ? this.c20316bb : "");
-        setC20316bc(c20316a.equals("1") ? this.c20316bc : "");
-        setC20316bd(c20316a.equals("1") ? this.c20316bd : "");
-        setC20316be(c20316a.equals("1") ? this.c20316be : "");
-        setC20316bf(c20316a.equals("1") ? this.c20316bf : "");
-        setC20316bg(c20316a.equals("1") ? this.c20316bg : "");
-        notifyPropertyChanged(BR.c20316a);
-    }
-
-    @Bindable
-    public String getC20316b() {
-        return c20316b;
-    }
-
-    public void setC20316b(String c20316b) {
-        this.c20316b = c20316b;
-        notifyPropertyChanged(BR.c20316b);
-    }
-
-    @Bindable
-    public String getC20316ba() {
-        return c20316ba;
-    }
-
-    public void setC20316ba(String c20316ba) {
-        if (this.c20316ba.equals(c20316ba)) return; // for all checkboxes
-        this.c20316ba = c20316ba;
-        notifyPropertyChanged(BR.c20316ba);
-    }
-
-    @Bindable
-    public String getC20316bb() {
-        return c20316bb;
-    }
-
-    public void setC20316bb(String c20316bb) {
-        if (this.c20316bb.equals(c20316bb)) return; // for all checkboxes
-        this.c20316bb = c20316bb;
-        notifyPropertyChanged(BR.c20316bb);
-    }
-
-    @Bindable
-    public String getC20316bc() {
-        return c20316bc;
-    }
-
-    public void setC20316bc(String c20316bc) {
-        if (this.c20316bc.equals(c20316bc)) return; // for all checkboxes
-        this.c20316bc = c20316bc;
-        notifyPropertyChanged(BR.c20316bc);
-    }
-
-    @Bindable
-    public String getC20316bd() {
-        return c20316bd;
-    }
-
-    public void setC20316bd(String c20316bd) {
-        if (this.c20316bd.equals(c20316bd)) return; // for all checkboxes
-        this.c20316bd = c20316bd;
-        notifyPropertyChanged(BR.c20316bd);
-    }
-
-    @Bindable
-    public String getC20316be() {
-        return c20316be;
-    }
-
-    public void setC20316be(String c20316be) {
-        if (this.c20316be.equals(c20316be)) return; // for all checkboxes
-        this.c20316be = c20316be;
-        notifyPropertyChanged(BR.c20316be);
-    }
-
-    @Bindable
-    public String getC20316bf() {
-        return c20316bf;
-    }
-
-    public void setC20316bf(String c20316bf) {
-        if (this.c20316bf.equals(c20316bf)) return; // for all checkboxes
-        this.c20316bf = c20316bf;
-        notifyPropertyChanged(BR.c20316bf);
-    }
-
-    @Bindable
-    public String getC20316bg() {
-        return c20316bg;
-    }
-
-    public void setC20316bg(String c20316bg) {
-        if (this.c20316bg.equals(c20316bg)) return; // for all checkboxes
-        this.c20316bg = c20316bg;
-        notifyPropertyChanged(BR.c20316bg);
-    }
-
-    @Bindable
-    public String getC20317a() {
-        return c20317a;
-    }
-
-    public void setC20317a(String c20317a) {
-        this.c20317a = c20317a;
-        setC20317ba(c20317a.equals("1") ? this.c20317ba : "");
-        setC20317bb(c20317a.equals("1") ? this.c20317bb : "");
-        setC20317bc(c20317a.equals("1") ? this.c20317bc : "");
-        setC20317bd(c20317a.equals("1") ? this.c20317bd : "");
-        setC20317be(c20317a.equals("1") ? this.c20317be : "");
-        setC20317bf(c20317a.equals("1") ? this.c20317bf : "");
-        setC20317bg(c20317a.equals("1") ? this.c20317bg : "");
-        notifyPropertyChanged(BR.c20317a);
-    }
-
-    @Bindable
-    public String getC20317b() {
-        return c20317b;
-    }
-
-    public void setC20317b(String c20317b) {
-        this.c20317b = c20317b;
-        notifyPropertyChanged(BR.c20317b);
-    }
-
-    @Bindable
-    public String getC20317ba() {
-        return c20317ba;
-    }
-
-    public void setC20317ba(String c20317ba) {
-        if (this.c20317ba.equals(c20317ba)) return; // for all checkboxes
-        this.c20317ba = c20317ba;
-        notifyPropertyChanged(BR.c20317ba);
-    }
-
-    @Bindable
-    public String getC20317bb() {
-        return c20317bb;
-    }
-
-    public void setC20317bb(String c20317bb) {
-        if (this.c20317bb.equals(c20317bb)) return; // for all checkboxes
-        this.c20317bb = c20317bb;
-        notifyPropertyChanged(BR.c20317bb);
-    }
-
-    @Bindable
-    public String getC20317bc() {
-        return c20317bc;
-    }
-
-    public void setC20317bc(String c20317bc) {
-        if (this.c20317bc.equals(c20317bc)) return; // for all checkboxes
-        this.c20317bc = c20317bc;
-        notifyPropertyChanged(BR.c20317bc);
-    }
-
-    @Bindable
-    public String getC20317bd() {
-        return c20317bd;
-    }
-
-    public void setC20317bd(String c20317bd) {
-        if (this.c20317bd.equals(c20317bd)) return; // for all checkboxes
-        this.c20317bd = c20317bd;
-        notifyPropertyChanged(BR.c20317bd);
-    }
-
-    @Bindable
-    public String getC20317be() {
-        return c20317be;
-    }
-
-    public void setC20317be(String c20317be) {
-        if (this.c20317be.equals(c20317be)) return; // for all checkboxes
-        this.c20317be = c20317be;
-        notifyPropertyChanged(BR.c20317be);
-    }
-
-    @Bindable
-    public String getC20317bf() {
-        return c20317bf;
-    }
-
-    public void setC20317bf(String c20317bf) {
-        if (this.c20317bf.equals(c20317bf)) return; // for all checkboxes
-        this.c20317bf = c20317bf;
-        notifyPropertyChanged(BR.c20317bf);
-    }
-
-    @Bindable
-    public String getC20317bg() {
-        return c20317bg;
-    }
-
-    public void setC20317bg(String c20317bg) {
-        if (this.c20317bg.equals(c20317bg)) return; // for all checkboxes
-        this.c20317bg = c20317bg;
-        notifyPropertyChanged(BR.c20317bg);
+    public void setC203(String c203) {
+        this.c203 = c203;
+        notifyPropertyChanged(BR.c203);
     }
 
     @Bindable
@@ -8811,821 +3229,1935 @@ public class Form extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getC301() {
-        return c301;
+    public String getC205() {
+        return c205;
     }
 
-    public void setC301(String c301) {
-        this.c301 = c301;
-        setC302(c301.equals("1") ? this.c302 : "");
-        setC303(c301.equals("1") ? this.c303 : "");
-        setC304(c301.equals("1") ? this.c304 : "");
-        setC305a(c301.equals("1") ? this.c305a : "");
-        setC305b(c301.equals("1") ? this.c305b : "");
-        setC305c(c301.equals("1") ? this.c305c : "");
-        setC305d(c301.equals("1") ? this.c305d : "");
-        setC305e(c301.equals("1") ? this.c305e : "");
-        setC305f(c301.equals("1") ? this.c305f : "");
-        setC305g(c301.equals("1") ? this.c305g : "");
-        setC305h(c301.equals("1") ? this.c305h : "");
-        setC305i(c301.equals("1") ? this.c305i : "");
-        setC305j(c301.equals("1") ? this.c305j : "");
-        setC30596(c301.equals("1") ? this.c30596 : "");
-        notifyPropertyChanged(BR.c301);
+    public void setC205(String c205) {
+        this.c205 = c205;
+        notifyPropertyChanged(BR.c205);
     }
 
     @Bindable
-    public String getC302() {
-        return c302;
+    public String getC206() {
+        return c206;
     }
 
-    public void setC302(String c302) {
-        this.c302 = c302;
-        setC303(c302.equals("2") ? this.c303 : "");
-        setC304(c302.equals("1") ? this.c304 : "");
-        setC305a(c302.equals("1") ? this.c305a : "");
-        setC305b(c302.equals("1") ? this.c305b : "");
-        setC305c(c302.equals("1") ? this.c305c : "");
-        setC305d(c302.equals("1") ? this.c305d : "");
-        setC305e(c302.equals("1") ? this.c305e : "");
-        setC305f(c302.equals("1") ? this.c305f : "");
-        setC305g(c302.equals("1") ? this.c305g : "");
-        setC305h(c302.equals("1") ? this.c305h : "");
-        setC305i(c302.equals("1") ? this.c305i : "");
-        setC305j(c302.equals("1") ? this.c305j : "");
-        setC30596(c302.equals("1") ? this.c30596 : "");
-        notifyPropertyChanged(BR.c302);
+    public void setC206(String c206) {
+        this.c206 = c206;
+        notifyPropertyChanged(BR.c206);
     }
 
     @Bindable
-    public String getC303() {
-        return c303;
+    public String getC20696x() {
+        return c20696x;
     }
 
-    public void setC303(String c303) {
-        this.c303 = c303;
-        setC30396x(c303.equals("96") ? this.c30396x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c303);
+    public void setC20696x(String c20696x) {
+        this.c20696x = c20696x;
+        notifyPropertyChanged(BR.c20696x);
     }
 
     @Bindable
-    public String getC30396x() {
-        return c30396x;
+    public String getD101() {
+        return d101;
     }
 
-    public void setC30396x(String c30396x) {
-        this.c30396x = c30396x;
-        notifyPropertyChanged(BR.c30396x);
+    public void setD101(String d101) {
+        this.d101 = d101;
+        notifyPropertyChanged(BR.d101);
     }
 
     @Bindable
-    public String getC304() {
-        return c304;
+    public String getD102() {
+        return d102;
     }
 
-    public void setC304(String c304) {
-        this.c304 = c304;
-        setC304961x(c304.equals("961") ? this.c304961x : ""); // for all skips, mention all skipped questions
-        setC304962x(c304.equals("962") ? this.c304962x : ""); // for all skips, mention all skipped questions
-        setC304963x(c304.equals("963") ? this.c304963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c304);
+    public void setD102(String d102) {
+        this.d102 = d102;
+        notifyPropertyChanged(BR.d102);
     }
 
     @Bindable
-    public String getC304961x() {
-        return c304961x;
+    public String getD10296x() {
+        return d10296x;
     }
 
-    public void setC304961x(String c304961x) {
-        this.c304961x = c304961x;
-        notifyPropertyChanged(BR.c304961x);
+    public void setD10296x(String d10296x) {
+        this.d10296x = d10296x;
+        notifyPropertyChanged(BR.d10296x);
     }
 
     @Bindable
-    public String getC304962x() {
-        return c304962x;
+    public String getD103() {
+        return d103;
     }
 
-    public void setC304962x(String c304962x) {
-        this.c304962x = c304962x;
-        notifyPropertyChanged(BR.c304962x);
+    public void setD103(String d103) {
+        this.d103 = d103;
+        notifyPropertyChanged(BR.d103);
     }
 
     @Bindable
-    public String getC304963x() {
-        return c304963x;
+    public String getD10301() {
+        return d10301;
     }
 
-    public void setC304963x(String c304963x) {
-        this.c304963x = c304963x;
-        notifyPropertyChanged(BR.c304963x);
+    public void setD10301(String d10301) {
+        this.d10301 = d10301;
+        notifyPropertyChanged(BR.d10301);
     }
 
     @Bindable
-    public String getC305() {
-        return c305;
+    public String getD10302() {
+        return d10302;
     }
 
-    public void setC305(String c305) {
-        this.c305 = c305;
-        notifyPropertyChanged(BR.c305);
+    public void setD10302(String d10302) {
+        this.d10302 = d10302;
+        notifyPropertyChanged(BR.d10302);
     }
 
     @Bindable
-    public String getC305a() {
-        return c305a;
+    public String getD10303() {
+        return d10303;
     }
 
-    public void setC305a(String c305a) {
-        if (this.c305a.equals(c305a)) return; // for all checkboxes
-        this.c305a = c305a;
-        notifyPropertyChanged(BR.c305a);
+    public void setD10303(String d10303) {
+        this.d10303 = d10303;
+        notifyPropertyChanged(BR.d10303);
     }
 
     @Bindable
-    public String getC305b() {
-        return c305b;
+    public String getD10304() {
+        return d10304;
     }
 
-    public void setC305b(String c305b) {
-        if (this.c305b.equals(c305b)) return; // for all checkboxes
-        this.c305b = c305b;
-        notifyPropertyChanged(BR.c305b);
+    public void setD10304(String d10304) {
+        this.d10304 = d10304;
+        notifyPropertyChanged(BR.d10304);
     }
 
     @Bindable
-    public String getC305c() {
-        return c305c;
+    public String getD10305() {
+        return d10305;
     }
 
-    public void setC305c(String c305c) {
-        if (this.c305c.equals(c305c)) return; // for all checkboxes
-        this.c305c = c305c;
-        notifyPropertyChanged(BR.c305c);
+    public void setD10305(String d10305) {
+        this.d10305 = d10305;
+        notifyPropertyChanged(BR.d10305);
     }
 
     @Bindable
-    public String getC305d() {
-        return c305d;
+    public String getD10306() {
+        return d10306;
     }
 
-    public void setC305d(String c305d) {
-        if (this.c305d.equals(c305d)) return; // for all checkboxes
-        this.c305d = c305d;
-        notifyPropertyChanged(BR.c305d);
+    public void setD10306(String d10306) {
+        this.d10306 = d10306;
+        notifyPropertyChanged(BR.d10306);
     }
 
     @Bindable
-    public String getC305e() {
-        return c305e;
+    public String getD10307() {
+        return d10307;
     }
 
-    public void setC305e(String c305e) {
-        if (this.c305e.equals(c305e)) return; // for all checkboxes
-        this.c305e = c305e;
-        notifyPropertyChanged(BR.c305e);
+    public void setD10307(String d10307) {
+        this.d10307 = d10307;
+        notifyPropertyChanged(BR.d10307);
     }
 
     @Bindable
-    public String getC305f() {
-        return c305f;
+    public String getD10308() {
+        return d10308;
     }
 
-    public void setC305f(String c305f) {
-        if (this.c305f.equals(c305f)) return; // for all checkboxes
-        this.c305f = c305f;
-        notifyPropertyChanged(BR.c305f);
+    public void setD10308(String d10308) {
+        this.d10308 = d10308;
+        notifyPropertyChanged(BR.d10308);
     }
 
     @Bindable
-    public String getC305g() {
-        return c305g;
+    public String getD10398() {
+        return d10398;
     }
 
-    public void setC305g(String c305g) {
-        if (this.c305g.equals(c305g)) return; // for all checkboxes
-        this.c305g = c305g;
-        notifyPropertyChanged(BR.c305g);
+    public void setD10398(String d10398) {
+        this.d10398 = d10398;
+        notifyPropertyChanged(BR.d10398);
     }
 
     @Bindable
-    public String getC305h() {
-        return c305h;
+    public String getD10396() {
+        return d10396;
     }
 
-    public void setC305h(String c305h) {
-        if (this.c305h.equals(c305h)) return; // for all checkboxes
-        this.c305h = c305h;
-        notifyPropertyChanged(BR.c305h);
+    public void setD10396(String d10396) {
+        this.d10396 = d10396;
+        notifyPropertyChanged(BR.d10396);
     }
 
     @Bindable
-    public String getC305i() {
-        return c305i;
+    public String getD10396x() {
+        return d10396x;
     }
 
-    public void setC305i(String c305i) {
-        if (this.c305i.equals(c305i)) return; // for all checkboxes
-        this.c305i = c305i;
-        notifyPropertyChanged(BR.c305i);
+    public void setD10396x(String d10396x) {
+        this.d10396x = d10396x;
+        notifyPropertyChanged(BR.d10396x);
     }
 
     @Bindable
-    public String getC305j() {
-        return c305j;
+    public String getD104() {
+        return d104;
     }
 
-    public void setC305j(String c305j) {
-        if (this.c305j.equals(c305j)) return; // for all checkboxes
-        this.c305j = c305j;
-        notifyPropertyChanged(BR.c305j);
+    public void setD104(String d104) {
+        this.d104 = d104;
+        notifyPropertyChanged(BR.d104);
     }
 
     @Bindable
-    public String getC30596() {
-        return c30596;
+    public String getD105() {
+        return d105;
     }
 
-    public void setC30596(String c30596) {
-        if (this.c30596.equals(c30596)) return; // for all checkboxes
-        this.c30596 = c30596;
-        setC30596x(c30596.equals("96") ? this.c30596x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c30596);
+    public void setD105(String d105) {
+        this.d105 = d105;
+        notifyPropertyChanged(BR.d105);
     }
 
     @Bindable
-    public String getC30596x() {
-        return c30596x;
+    public String getD106() {
+        return d106;
     }
 
-    public void setC30596x(String c30596x) {
-        this.c30596x = c30596x;
-        notifyPropertyChanged(BR.c30596x);
+    public void setD106(String d106) {
+        this.d106 = d106;
+        notifyPropertyChanged(BR.d106);
     }
 
     @Bindable
-    public String getC306() {
-        return c306;
+    public String getD107() {
+        return d107;
     }
 
-    public void setC306(String c306) {
-        this.c306 = c306;
-        setC307(c306.equals("1") ? this.c307 : "");
-        setC309(c306.equals("1") ? this.c309 : "");
-        setC310a(c306.equals("1") ? this.c310a : "");
-        setC310b(c306.equals("1") ? this.c310b : "");
-        setC310c(c306.equals("1") ? this.c310c : "");
-        setC310d(c306.equals("1") ? this.c310d : "");
-        setC310e(c306.equals("1") ? this.c310e : "");
-        setC310f(c306.equals("1") ? this.c310f : "");
-        setC310g(c306.equals("1") ? this.c310g : "");
-        setC31096(c306.equals("1") ? this.c31096 : "");
-        notifyPropertyChanged(BR.c306);
+    public void setD107(String d107) {
+        this.d107 = d107;
+        notifyPropertyChanged(BR.d107);
     }
 
     @Bindable
-    public String getC307() {
-        return c307;
+    public String getD10701() {
+        return d10701;
     }
 
-    public void setC307(String c307) {
-        this.c307 = c307;
-        setC308(c307.equals("2") ? this.c308 : "");
-        setC309(c307.equals("1") ? this.c309 : "");
-        setC310a(c307.equals("1") ? this.c310a : "");
-        setC310b(c307.equals("1") ? this.c310b : "");
-        setC310c(c307.equals("1") ? this.c310c : "");
-        setC310d(c307.equals("1") ? this.c310d : "");
-        setC310e(c307.equals("1") ? this.c310e : "");
-        setC310f(c307.equals("1") ? this.c310f : "");
-        setC310g(c307.equals("1") ? this.c310g : "");
-        setC31096(c307.equals("1") ? this.c31096 : "");
-        notifyPropertyChanged(BR.c307);
+    public void setD10701(String d10701) {
+        this.d10701 = d10701;
+        notifyPropertyChanged(BR.d10701);
     }
 
     @Bindable
-    public String getC308() {
-        return c308;
+    public String getD10702() {
+        return d10702;
     }
 
-    public void setC308(String c308) {
-        this.c308 = c308;
-        setC30896x(c308.equals("96") ? this.c30896x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c308);
+    public void setD10702(String d10702) {
+        this.d10702 = d10702;
+        notifyPropertyChanged(BR.d10702);
     }
 
     @Bindable
-    public String getC30896x() {
-        return c30896x;
+    public String getD10703() {
+        return d10703;
     }
 
-    public void setC30896x(String c30896x) {
-        this.c30896x = c30896x;
-        notifyPropertyChanged(BR.c30896x);
+    public void setD10703(String d10703) {
+        this.d10703 = d10703;
+        notifyPropertyChanged(BR.d10703);
     }
 
     @Bindable
-    public String getC309() {
-        return c309;
+    public String getD10704() {
+        return d10704;
     }
 
-    public void setC309(String c309) {
-        this.c309 = c309;
-        setC309961x(c309.equals("961") ? this.c309961x : ""); // for all skips, mention all skipped questions
-        setC309962x(c309.equals("962") ? this.c309962x : ""); // for all skips, mention all skipped questions
-        setC309963x(c309.equals("963") ? this.c309963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c309);
+    public void setD10704(String d10704) {
+        this.d10704 = d10704;
+        notifyPropertyChanged(BR.d10704);
     }
 
     @Bindable
-    public String getC309961x() {
-        return c309961x;
+    public String getD10705() {
+        return d10705;
     }
 
-    public void setC309961x(String c309961x) {
-        this.c309961x = c309961x;
-        notifyPropertyChanged(BR.c309961x);
+    public void setD10705(String d10705) {
+        this.d10705 = d10705;
+        notifyPropertyChanged(BR.d10705);
     }
 
     @Bindable
-    public String getC309962x() {
-        return c309962x;
+    public String getD10706() {
+        return d10706;
     }
 
-    public void setC309962x(String c309962x) {
-        this.c309962x = c309962x;
-        notifyPropertyChanged(BR.c309962x);
+    public void setD10706(String d10706) {
+        this.d10706 = d10706;
+        notifyPropertyChanged(BR.d10706);
     }
 
     @Bindable
-    public String getC309963x() {
-        return c309963x;
+    public String getD10707() {
+        return d10707;
     }
 
-    public void setC309963x(String c309963x) {
-        this.c309963x = c309963x;
-        notifyPropertyChanged(BR.c309963x);
+    public void setD10707(String d10707) {
+        this.d10707 = d10707;
+        notifyPropertyChanged(BR.d10707);
     }
 
     @Bindable
-    public String getC310() {
-        return c310;
+    public String getD10708() {
+        return d10708;
     }
 
-    public void setC310(String c310) {
-        this.c310 = c310;
-        notifyPropertyChanged(BR.c310);
+    public void setD10708(String d10708) {
+        this.d10708 = d10708;
+        notifyPropertyChanged(BR.d10708);
     }
 
     @Bindable
-    public String getC310a() {
-        return c310a;
+    public String getD10709() {
+        return d10709;
     }
 
-    public void setC310a(String c310a) {
-        if (this.c310a.equals(c310a)) return; // for all checkboxes
-        this.c310a = c310a;
-        notifyPropertyChanged(BR.c310a);
+    public void setD10709(String d10709) {
+        this.d10709 = d10709;
+        notifyPropertyChanged(BR.d10709);
     }
 
     @Bindable
-    public String getC310b() {
-        return c310b;
+    public String getD10710() {
+        return d10710;
     }
 
-    public void setC310b(String c310b) {
-        if (this.c310b.equals(c310b)) return; // for all checkboxes
-        this.c310b = c310b;
-        notifyPropertyChanged(BR.c310b);
+    public void setD10710(String d10710) {
+        this.d10710 = d10710;
+        notifyPropertyChanged(BR.d10710);
     }
 
     @Bindable
-    public String getC310c() {
-        return c310c;
+    public String getD10711() {
+        return d10711;
     }
 
-    public void setC310c(String c310c) {
-        if (this.c310c.equals(c310c)) return; // for all checkboxes
-        this.c310c = c310c;
-        notifyPropertyChanged(BR.c310c);
+    public void setD10711(String d10711) {
+        this.d10711 = d10711;
+        notifyPropertyChanged(BR.d10711);
     }
 
     @Bindable
-    public String getC310d() {
-        return c310d;
+    public String getD10712() {
+        return d10712;
     }
 
-    public void setC310d(String c310d) {
-        if (this.c310d.equals(c310d)) return; // for all checkboxes
-        this.c310d = c310d;
-        notifyPropertyChanged(BR.c310d);
+    public void setD10712(String d10712) {
+        this.d10712 = d10712;
+        notifyPropertyChanged(BR.d10712);
     }
 
     @Bindable
-    public String getC310e() {
-        return c310e;
+    public String getD10713() {
+        return d10713;
     }
 
-    public void setC310e(String c310e) {
-        if (this.c310e.equals(c310e)) return; // for all checkboxes
-        this.c310e = c310e;
-        notifyPropertyChanged(BR.c310e);
+    public void setD10713(String d10713) {
+        this.d10713 = d10713;
+        notifyPropertyChanged(BR.d10713);
     }
 
     @Bindable
-    public String getC310f() {
-        return c310f;
+    public String getD10714() {
+        return d10714;
     }
 
-    public void setC310f(String c310f) {
-        if (this.c310f.equals(c310f)) return; // for all checkboxes
-        this.c310f = c310f;
-        notifyPropertyChanged(BR.c310f);
+    public void setD10714(String d10714) {
+        this.d10714 = d10714;
+        notifyPropertyChanged(BR.d10714);
     }
 
     @Bindable
-    public String getC310g() {
-        return c310g;
+    public String getD10715() {
+        return d10715;
     }
 
-    public void setC310g(String c310g) {
-        if (this.c310g.equals(c310g)) return; // for all checkboxes
-        this.c310g = c310g;
-        notifyPropertyChanged(BR.c310g);
+    public void setD10715(String d10715) {
+        this.d10715 = d10715;
+        notifyPropertyChanged(BR.d10715);
     }
 
     @Bindable
-    public String getC31096() {
-        return c31096;
+    public String getD10716() {
+        return d10716;
     }
 
-    public void setC31096(String c31096) {
-        if (this.c31096.equals(c31096)) return; // for all checkboxes
-        this.c31096 = c31096;
-        setC31096x(c31096.equals("96") ? this.c31096x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c31096);
+    public void setD10716(String d10716) {
+        this.d10716 = d10716;
+        notifyPropertyChanged(BR.d10716);
     }
 
     @Bindable
-    public String getC31096x() {
-        return c31096x;
+    public String getD10798() {
+        return d10798;
     }
 
-    public void setC31096x(String c31096x) {
-        this.c31096x = c31096x;
-        notifyPropertyChanged(BR.c31096x);
+    public void setD10798(String d10798) {
+        this.d10798 = d10798;
+        notifyPropertyChanged(BR.d10798);
     }
 
     @Bindable
-    public String getC311() {
-        return c311;
+    public String getD10796() {
+        return d10796;
     }
 
-    public void setC311(String c311) {
-        this.c311 = c311;
-        setC312(c311.equals("1") ? this.c312 : "");
-        setC314(c311.equals("1") ? this.c314 : "");
-        setC315a(c311.equals("1") ? this.c315a : "");
-        setC315b(c311.equals("1") ? this.c315b : "");
-        setC315c(c311.equals("1") ? this.c315c : "");
-        setC315d(c311.equals("1") ? this.c315d : "");
-        setC315e(c311.equals("1") ? this.c315e : "");
-        setC315f(c311.equals("1") ? this.c315f : "");
-        setC315g(c311.equals("1") ? this.c315g : "");
-        setC315h(c311.equals("1") ? this.c315h : "");
-        setC31596(c311.equals("1") ? this.c31596 : "");
-        notifyPropertyChanged(BR.c311);
+    public void setD10796(String d10796) {
+        this.d10796 = d10796;
+        notifyPropertyChanged(BR.d10796);
     }
 
     @Bindable
-    public String getC312() {
-        return c312;
+    public String getD10796x() {
+        return d10796x;
     }
 
-    public void setC312(String c312) {
-        this.c312 = c312;
-        setC313(c312.equals("2") ? this.c313 : "");
-        setC314(c312.equals("1") ? this.c314 : "");
-        setC315a(c312.equals("1") ? this.c315a : "");
-        setC315b(c312.equals("1") ? this.c315b : "");
-        setC315c(c312.equals("1") ? this.c315c : "");
-        setC315d(c312.equals("1") ? this.c315d : "");
-        setC315e(c312.equals("1") ? this.c315e : "");
-        setC315f(c312.equals("1") ? this.c315f : "");
-        setC315g(c312.equals("1") ? this.c315g : "");
-        setC315h(c312.equals("1") ? this.c315h : "");
-        setC31596(c312.equals("1") ? this.c31596 : "");
-        notifyPropertyChanged(BR.c312);
+    public void setD10796x(String d10796x) {
+        this.d10796x = d10796x;
+        notifyPropertyChanged(BR.d10796x);
     }
 
     @Bindable
-    public String getC313() {
-        return c313;
+    public String getE101() {
+        return e101;
     }
 
-    public void setC313(String c313) {
-        this.c313 = c313;
-        setC31396x(c313.equals("96") ? this.c31396x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c313);
+    public void setE101(String e101) {
+        this.e101 = e101;
+        notifyPropertyChanged(BR.e101);
     }
 
     @Bindable
-    public String getC31396x() {
-        return c31396x;
+    public String getE102() {
+        return e102;
     }
 
-    public void setC31396x(String c31396x) {
-        this.c31396x = c31396x;
-        notifyPropertyChanged(BR.c31396x);
+    public void setE102(String e102) {
+        this.e102 = e102;
+        notifyPropertyChanged(BR.e102);
     }
 
     @Bindable
-    public String getC314() {
-        return c314;
+    public String getE103() {
+        return e103;
     }
 
-    public void setC314(String c314) {
-        this.c314 = c314;
-        setC314961x(c314.equals("961") ? this.c314961x : ""); // for all skips, mention all skipped questions
-        setC314962x(c314.equals("962") ? this.c314962x : ""); // for all skips, mention all skipped questions
-        setC314963x(c314.equals("963") ? this.c314963x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c314);
+    public void setE103(String e103) {
+        this.e103 = e103;
+        notifyPropertyChanged(BR.e103);
     }
 
     @Bindable
-    public String getC314961x() {
-        return c314961x;
+    public String getE10396x() {
+        return e10396x;
     }
 
-    public void setC314961x(String c314961x) {
-        this.c314961x = c314961x;
-        notifyPropertyChanged(BR.c314961x);
+    public void setE10396x(String e10396x) {
+        this.e10396x = e10396x;
+        notifyPropertyChanged(BR.e10396x);
     }
 
     @Bindable
-    public String getC314962x() {
-        return c314962x;
+    public String getE104() {
+        return e104;
     }
 
-    public void setC314962x(String c314962x) {
-        this.c314962x = c314962x;
-        notifyPropertyChanged(BR.c314962x);
+    public void setE104(String e104) {
+        this.e104 = e104;
+        notifyPropertyChanged(BR.e104);
     }
 
     @Bindable
-    public String getC314963x() {
-        return c314963x;
+    public String getE10401x() {
+        return e10401x;
     }
 
-    public void setC314963x(String c314963x) {
-        this.c314963x = c314963x;
-        notifyPropertyChanged(BR.c314963x);
+    public void setE10401x(String e10401x) {
+        this.e10401x = e10401x;
+        notifyPropertyChanged(BR.e10401x);
     }
 
     @Bindable
-    public String getC315() {
-        return c315;
+    public String getE10402x() {
+        return e10402x;
     }
 
-    public void setC315(String c315) {
-        this.c315 = c315;
-        notifyPropertyChanged(BR.c315);
+    public void setE10402x(String e10402x) {
+        this.e10402x = e10402x;
+        notifyPropertyChanged(BR.e10402x);
     }
 
     @Bindable
-    public String getC315a() {
-        return c315a;
+    public String getE10403x() {
+        return e10403x;
     }
 
-    public void setC315a(String c315a) {
-        if (this.c315a.equals(c315a)) return; // for all checkboxes
-        this.c315a = c315a;
-        notifyPropertyChanged(BR.c315a);
+    public void setE10403x(String e10403x) {
+        this.e10403x = e10403x;
+        notifyPropertyChanged(BR.e10403x);
     }
 
     @Bindable
-    public String getC315b() {
-        return c315b;
+    public String getE10404x() {
+        return e10404x;
     }
 
-    public void setC315b(String c315b) {
-        if (this.c315b.equals(c315b)) return; // for all checkboxes
-        this.c315b = c315b;
-        notifyPropertyChanged(BR.c315b);
+    public void setE10404x(String e10404x) {
+        this.e10404x = e10404x;
+        notifyPropertyChanged(BR.e10404x);
     }
 
     @Bindable
-    public String getC315c() {
-        return c315c;
+    public String getE105() {
+        return e105;
     }
 
-    public void setC315c(String c315c) {
-        if (this.c315c.equals(c315c)) return; // for all checkboxes
-        this.c315c = c315c;
-        notifyPropertyChanged(BR.c315c);
+    public void setE105(String e105) {
+        this.e105 = e105;
+        notifyPropertyChanged(BR.e105);
     }
 
     @Bindable
-    public String getC315d() {
-        return c315d;
+    public String getE10501x() {
+        return e10501x;
     }
 
-    public void setC315d(String c315d) {
-        if (this.c315d.equals(c315d)) return; // for all checkboxes
-        this.c315d = c315d;
-        notifyPropertyChanged(BR.c315d);
+    public void setE10501x(String e10501x) {
+        this.e10501x = e10501x;
+        notifyPropertyChanged(BR.e10501x);
     }
 
     @Bindable
-    public String getC315e() {
-        return c315e;
+    public String getE106() {
+        return e106;
     }
 
-    public void setC315e(String c315e) {
-        if (this.c315e.equals(c315e)) return; // for all checkboxes
-        this.c315e = c315e;
-        notifyPropertyChanged(BR.c315e);
+    public void setE106(String e106) {
+        this.e106 = e106;
+        notifyPropertyChanged(BR.e106);
     }
 
     @Bindable
-    public String getC315f() {
-        return c315f;
+    public String getE107() {
+        return e107;
     }
 
-    public void setC315f(String c315f) {
-        if (this.c315f.equals(c315f)) return; // for all checkboxes
-        this.c315f = c315f;
-        notifyPropertyChanged(BR.c315f);
+    public void setE107(String e107) {
+        this.e107 = e107;
+        notifyPropertyChanged(BR.e107);
     }
 
     @Bindable
-    public String getC315g() {
-        return c315g;
+    public String getE108() {
+        return e108;
     }
 
-    public void setC315g(String c315g) {
-        if (this.c315g.equals(c315g)) return; // for all checkboxes
-        this.c315g = c315g;
-        notifyPropertyChanged(BR.c315g);
+    public void setE108(String e108) {
+        this.e108 = e108;
+        notifyPropertyChanged(BR.e108);
     }
 
     @Bindable
-    public String getC315h() {
-        return c315h;
+    public String getE109() {
+        return e109;
     }
 
-    public void setC315h(String c315h) {
-        if (this.c315h.equals(c315h)) return; // for all checkboxes
-        this.c315h = c315h;
-        notifyPropertyChanged(BR.c315h);
+    public void setE109(String e109) {
+        this.e109 = e109;
+        notifyPropertyChanged(BR.e109);
     }
 
     @Bindable
-    public String getC31596() {
-        return c31596;
+    public String getE110() {
+        return e110;
     }
 
-    public void setC31596(String c31596) {
-        if (this.c31596.equals(c31596)) return; // for all checkboxes
-        this.c31596 = c31596;
-        setC31596x(c31596.equals("96") ? this.c31596x : ""); // for all skips, mention all skipped questions
-        notifyPropertyChanged(BR.c31596);
+    public void setE110(String e110) {
+        this.e110 = e110;
+        notifyPropertyChanged(BR.e110);
     }
 
     @Bindable
-    public String getC31596x() {
-        return c31596x;
+    public String getE111() {
+        return e111;
     }
 
-    public void setC31596x(String c31596x) {
-        this.c31596x = c31596x;
-        notifyPropertyChanged(BR.c31596x);
+    public void setE111(String e111) {
+        this.e111 = e111;
+        notifyPropertyChanged(BR.e111);
     }
 
     @Bindable
-    public String getC316() {
-        return c316;
+    public String getE11196x() {
+        return e11196x;
     }
 
-    public void setC316(String c316) {
-        this.c316 = c316;
-        setC317(c316.equals("1") ? this.c317 : "");
-        notifyPropertyChanged(BR.c316);
+    public void setE11196x(String e11196x) {
+        this.e11196x = e11196x;
+        notifyPropertyChanged(BR.e11196x);
     }
 
     @Bindable
-    public String getC317() {
-        return c317;
+    public String getE11201() {
+        return e11201;
     }
 
-    public void setC317(String c317) {
-        this.c317 = c317;
-        notifyPropertyChanged(BR.c317);
+    public void setE11201(String e11201) {
+        this.e11201 = e11201;
+        notifyPropertyChanged(BR.e11201);
     }
 
     @Bindable
-    public String getC318() {
-        return c318;
+    public String getE11202() {
+        return e11202;
     }
 
-    public void setC318(String c318) {
-        this.c318 = c318;
-        notifyPropertyChanged(BR.c318);
+    public void setE11202(String e11202) {
+        this.e11202 = e11202;
+        notifyPropertyChanged(BR.e11202);
     }
 
     @Bindable
-    public String getC319() {
-        return c319;
+    public String getE11203() {
+        return e11203;
     }
 
-    public void setC319(String c319) {
-        this.c319 = c319;
-        setC320(c319.equals("1") ? this.c320 : "");
-        notifyPropertyChanged(BR.c319);
+    public void setE11203(String e11203) {
+        this.e11203 = e11203;
+        notifyPropertyChanged(BR.e11203);
     }
 
     @Bindable
-    public String getC320() {
-        return c320;
+    public String getE11204() {
+        return e11204;
     }
 
-    public void setC320(String c320) {
-        this.c320 = c320;
-        notifyPropertyChanged(BR.c320);
+    public void setE11204(String e11204) {
+        this.e11204 = e11204;
+        notifyPropertyChanged(BR.e11204);
     }
 
     @Bindable
-    public String getC321() {
-        return c321;
+    public String getE11205() {
+        return e11205;
     }
 
-    public void setC321(String c321) {
-        this.c321 = c321;
-        notifyPropertyChanged(BR.c321);
+    public void setE11205(String e11205) {
+        this.e11205 = e11205;
+        notifyPropertyChanged(BR.e11205);
     }
 
     @Bindable
-    public String getC322() {
-        return c322;
+    public String getE113() {
+        return e113;
     }
 
-    public void setC322(String c322) {
-        this.c322 = c322;
-        setC323(c322.equals("1") ? this.c323 : "");
-        notifyPropertyChanged(BR.c322);
+    public void setE113(String e113) {
+        this.e113 = e113;
+        notifyPropertyChanged(BR.e113);
     }
 
     @Bindable
-    public String getC323() {
-        return c323;
+    public String getE11396x() {
+        return e11396x;
     }
 
-    public void setC323(String c323) {
-        this.c323 = c323;
-        setC323mx(c323.equals("1") ? this.c323mx : "");
-        setC323dx(c323.equals("2") ? this.c323dx : "");
-        notifyPropertyChanged(BR.c323);
+    public void setE11396x(String e11396x) {
+        this.e11396x = e11396x;
+        notifyPropertyChanged(BR.e11396x);
     }
 
     @Bindable
-    public String getC323mx() {
-        return c323mx;
+    public String getE114() {
+        return e114;
     }
 
-    public void setC323mx(String c323mx) {
-        this.c323mx = c323mx;
-        notifyPropertyChanged(BR.c323mx);
+    public void setE114(String e114) {
+        this.e114 = e114;
+        notifyPropertyChanged(BR.e114);
     }
 
     @Bindable
-    public String getC323dx() {
-        return c323dx;
+    public String getE11501() {
+        return e11501;
     }
 
-    public void setC323dx(String c323dx) {
-        this.c323dx = c323dx;
-        notifyPropertyChanged(BR.c323dx);
+    public void setE11501(String e11501) {
+        this.e11501 = e11501;
+        notifyPropertyChanged(BR.e11501);
     }
 
     @Bindable
-    public String getWuid() {
-        return wuid;
+    public String getE11502() {
+        return e11502;
     }
 
-    public void setWuid(String wuid) {
-        this.wuid = wuid;
-        notifyPropertyChanged(BR.wuid);
+    public void setE11502(String e11502) {
+        this.e11502 = e11502;
+        notifyPropertyChanged(BR.e11502);
     }
 
     @Bindable
-    public String getCuid() {
-        return cuid;
+    public String getE11503() {
+        return e11503;
     }
 
-    public void setCuid(String cuid) {
-        this.cuid = cuid;
-        notifyPropertyChanged(BR.cuid);
+    public void setE11503(String e11503) {
+        this.e11503 = e11503;
+        notifyPropertyChanged(BR.e11503);
     }
+
+    @Bindable
+    public String getE11504() {
+        return e11504;
+    }
+
+    public void setE11504(String e11504) {
+        this.e11504 = e11504;
+        notifyPropertyChanged(BR.e11504);
+    }
+
+    @Bindable
+    public String getE11505() {
+        return e11505;
+    }
+
+    public void setE11505(String e11505) {
+        this.e11505 = e11505;
+        notifyPropertyChanged(BR.e11505);
+    }
+
+    @Bindable
+    public String getF101() {
+        return f101;
+    }
+
+    public void setF101(String f101) {
+        this.f101 = f101;
+        notifyPropertyChanged(BR.f101);
+    }
+
+    @Bindable
+    public String getF102() {
+        return f102;
+    }
+
+    public void setF102(String f102) {
+        this.f102 = f102;
+        notifyPropertyChanged(BR.f102);
+    }
+
+    @Bindable
+    public String getF103() {
+        return f103;
+    }
+
+    public void setF103(String f103) {
+        this.f103 = f103;
+        notifyPropertyChanged(BR.f103);
+    }
+
+    @Bindable
+    public String getF104() {
+        return f104;
+    }
+
+    public void setF104(String f104) {
+        this.f104 = f104;
+        notifyPropertyChanged(BR.f104);
+    }
+
+    @Bindable
+    public String getF105() {
+        return f105;
+    }
+
+    public void setF105(String f105) {
+        this.f105 = f105;
+        notifyPropertyChanged(BR.f105);
+    }
+
+    @Bindable
+    public String getF106() {
+        return f106;
+    }
+
+    public void setF106(String f106) {
+        this.f106 = f106;
+        notifyPropertyChanged(BR.f106);
+    }
+
+    @Bindable
+    public String getF107() {
+        return f107;
+    }
+
+    public void setF107(String f107) {
+        this.f107 = f107;
+        notifyPropertyChanged(BR.f107);
+    }
+
+    @Bindable
+    public String getF108() {
+        return f108;
+    }
+
+    public void setF108(String f108) {
+        this.f108 = f108;
+        notifyPropertyChanged(BR.f108);
+    }
+
+    @Bindable
+    public String getF109() {
+        return f109;
+    }
+
+    public void setF109(String f109) {
+        this.f109 = f109;
+        notifyPropertyChanged(BR.f109);
+    }
+
+    @Bindable
+    public String getF110() {
+        return f110;
+    }
+
+    public void setF110(String f110) {
+        this.f110 = f110;
+        notifyPropertyChanged(BR.f110);
+    }
+
+    @Bindable
+    public String getF111() {
+        return f111;
+    }
+
+    public void setF111(String f111) {
+        this.f111 = f111;
+        notifyPropertyChanged(BR.f111);
+    }
+
+    @Bindable
+    public String getF112() {
+        return f112;
+    }
+
+    public void setF112(String f112) {
+        this.f112 = f112;
+        notifyPropertyChanged(BR.f112);
+    }
+
+    @Bindable
+    public String getF113() {
+        return f113;
+    }
+
+    public void setF113(String f113) {
+        this.f113 = f113;
+        notifyPropertyChanged(BR.f113);
+    }
+
+    @Bindable
+    public String getF114() {
+        return f114;
+    }
+
+    public void setF114(String f114) {
+        this.f114 = f114;
+        notifyPropertyChanged(BR.f114);
+    }
+
+    @Bindable
+    public String getF115() {
+        return f115;
+    }
+
+    public void setF115(String f115) {
+        this.f115 = f115;
+        notifyPropertyChanged(BR.f115);
+    }
+
+    @Bindable
+    public String getF116() {
+        return f116;
+    }
+
+    public void setF116(String f116) {
+        this.f116 = f116;
+        notifyPropertyChanged(BR.f116);
+    }
+
+    @Bindable
+    public String getF117() {
+        return f117;
+    }
+
+    public void setF117(String f117) {
+        this.f117 = f117;
+        notifyPropertyChanged(BR.f117);
+    }
+
+    @Bindable
+    public String getF118() {
+        return f118;
+    }
+
+    public void setF118(String f118) {
+        this.f118 = f118;
+        notifyPropertyChanged(BR.f118);
+    }
+
+    @Bindable
+    public String getF201() {
+        return f201;
+    }
+
+    public void setF201(String f201) {
+        this.f201 = f201;
+        notifyPropertyChanged(BR.f201);
+    }
+
+    @Bindable
+    public String getF202() {
+        return f202;
+    }
+
+    public void setF202(String f202) {
+        this.f202 = f202;
+        notifyPropertyChanged(BR.f202);
+    }
+
+    @Bindable
+    public String getF203() {
+        return f203;
+    }
+
+    public void setF203(String f203) {
+        this.f203 = f203;
+        notifyPropertyChanged(BR.f203);
+    }
+
+    @Bindable
+    public String getF204() {
+        return f204;
+    }
+
+    public void setF204(String f204) {
+        this.f204 = f204;
+        notifyPropertyChanged(BR.f204);
+    }
+
+    @Bindable
+    public String getF301() {
+        return f301;
+    }
+
+    public void setF301(String f301) {
+        this.f301 = f301;
+        notifyPropertyChanged(BR.f301);
+    }
+
+    @Bindable
+    public String getF302() {
+        return f302;
+    }
+
+    public void setF302(String f302) {
+        this.f302 = f302;
+        notifyPropertyChanged(BR.f302);
+    }
+
+    @Bindable
+    public String getF303() {
+        return f303;
+    }
+
+    public void setF303(String f303) {
+        this.f303 = f303;
+        notifyPropertyChanged(BR.f303);
+    }
+
+    @Bindable
+    public String getF304() {
+        return f304;
+    }
+
+    public void setF304(String f304) {
+        this.f304 = f304;
+        notifyPropertyChanged(BR.f304);
+    }
+
+    @Bindable
+    public String getF305() {
+        return f305;
+    }
+
+    public void setF305(String f305) {
+        this.f305 = f305;
+        notifyPropertyChanged(BR.f305);
+    }
+
+    @Bindable
+    public String getF306() {
+        return f306;
+    }
+
+    public void setF306(String f306) {
+        this.f306 = f306;
+        notifyPropertyChanged(BR.f306);
+    }
+
+    @Bindable
+    public String getF307() {
+        return f307;
+    }
+
+    public void setF307(String f307) {
+        this.f307 = f307;
+        notifyPropertyChanged(BR.f307);
+    }
+
+    @Bindable
+    public String getF308() {
+        return f308;
+    }
+
+    public void setF308(String f308) {
+        this.f308 = f308;
+        notifyPropertyChanged(BR.f308);
+    }
+
+    @Bindable
+    public String getF309() {
+        return f309;
+    }
+
+    public void setF309(String f309) {
+        this.f309 = f309;
+        notifyPropertyChanged(BR.f309);
+    }
+
+    @Bindable
+    public String getF310() {
+        return f310;
+    }
+
+    public void setF310(String f310) {
+        this.f310 = f310;
+        notifyPropertyChanged(BR.f310);
+    }
+
+    @Bindable
+    public String getF311() {
+        return f311;
+    }
+
+    public void setF311(String f311) {
+        this.f311 = f311;
+        notifyPropertyChanged(BR.f311);
+    }
+
+    @Bindable
+    public String getF312() {
+        return f312;
+    }
+
+    public void setF312(String f312) {
+        this.f312 = f312;
+        notifyPropertyChanged(BR.f312);
+    }
+
+    @Bindable
+    public String getF313() {
+        return f313;
+    }
+
+    public void setF313(String f313) {
+        this.f313 = f313;
+        notifyPropertyChanged(BR.f313);
+    }
+
+    @Bindable
+    public String getF314() {
+        return f314;
+    }
+
+    public void setF314(String f314) {
+        this.f314 = f314;
+        notifyPropertyChanged(BR.f314);
+    }
+
+    @Bindable
+    public String getG10101() {
+        return g10101;
+    }
+
+    public void setG10101(String g10101) {
+        this.g10101 = g10101;
+        notifyPropertyChanged(BR.g10101);
+    }
+
+    @Bindable
+    public String getG10102() {
+        return g10102;
+    }
+
+    public void setG10102(String g10102) {
+        this.g10102 = g10102;
+        notifyPropertyChanged(BR.g10102);
+    }
+
+    @Bindable
+    public String getG10103() {
+        return g10103;
+    }
+
+    public void setG10103(String g10103) {
+        this.g10103 = g10103;
+        notifyPropertyChanged(BR.g10103);
+    }
+
+    @Bindable
+    public String getG10201() {
+        return g10201;
+    }
+
+    public void setG10201(String g10201) {
+        this.g10201 = g10201;
+        notifyPropertyChanged(BR.g10201);
+    }
+
+    @Bindable
+    public String getG10202() {
+        return g10202;
+    }
+
+    public void setG10202(String g10202) {
+        this.g10202 = g10202;
+        notifyPropertyChanged(BR.g10202);
+    }
+
+    @Bindable
+    public String getG10203() {
+        return g10203;
+    }
+
+    public void setG10203(String g10203) {
+        this.g10203 = g10203;
+        notifyPropertyChanged(BR.g10203);
+    }
+
+    @Bindable
+    public String getG10301() {
+        return g10301;
+    }
+
+    public void setG10301(String g10301) {
+        this.g10301 = g10301;
+        notifyPropertyChanged(BR.g10301);
+    }
+
+    @Bindable
+    public String getG10302() {
+        return g10302;
+    }
+
+    public void setG10302(String g10302) {
+        this.g10302 = g10302;
+        notifyPropertyChanged(BR.g10302);
+    }
+
+    @Bindable
+    public String getG10401() {
+        return g10401;
+    }
+
+    public void setG10401(String g10401) {
+        this.g10401 = g10401;
+        notifyPropertyChanged(BR.g10401);
+    }
+
+    @Bindable
+    public String getG10402() {
+        return g10402;
+    }
+
+    public void setG10402(String g10402) {
+        this.g10402 = g10402;
+        notifyPropertyChanged(BR.g10402);
+    }
+
+    @Bindable
+    public String getG105() {
+        return g105;
+    }
+
+    public void setG105(String g105) {
+        this.g105 = g105;
+        notifyPropertyChanged(BR.g105);
+    }
+
+    @Bindable
+    public String getG10601() {
+        return g10601;
+    }
+
+    public void setG10601(String g10601) {
+        this.g10601 = g10601;
+        notifyPropertyChanged(BR.g10601);
+    }
+
+    @Bindable
+    public String getG10602() {
+        return g10602;
+    }
+
+    public void setG10602(String g10602) {
+        this.g10602 = g10602;
+        notifyPropertyChanged(BR.g10602);
+    }
+
+    @Bindable
+    public String getG201() {
+        return g201;
+    }
+
+    public void setG201(String g201) {
+        this.g201 = g201;
+        notifyPropertyChanged(BR.g201);
+    }
+
+    @Bindable
+    public String getG202() {
+        return g202;
+    }
+
+    public void setG202(String g202) {
+        this.g202 = g202;
+        notifyPropertyChanged(BR.g202);
+    }
+
+    @Bindable
+    public String getG203() {
+        return g203;
+    }
+
+    public void setG203(String g203) {
+        this.g203 = g203;
+        notifyPropertyChanged(BR.g203);
+    }
+
+    @Bindable
+    public String getG204() {
+        return g204;
+    }
+
+    public void setG204(String g204) {
+        this.g204 = g204;
+        notifyPropertyChanged(BR.g204);
+    }
+
+    @Bindable
+    public String getG20501() {
+        return g20501;
+    }
+
+    public void setG20501(String g20501) {
+        this.g20501 = g20501;
+        notifyPropertyChanged(BR.g20501);
+    }
+
+    @Bindable
+    public String getG20502() {
+        return g20502;
+    }
+
+    public void setG20502(String g20502) {
+        this.g20502 = g20502;
+        notifyPropertyChanged(BR.g20502);
+    }
+
+    @Bindable
+    public String getG20601() {
+        return g20601;
+    }
+
+    public void setG20601(String g20601) {
+        this.g20601 = g20601;
+        notifyPropertyChanged(BR.g20601);
+    }
+
+    @Bindable
+    public String getG20602() {
+        return g20602;
+    }
+
+    public void setG20602(String g20602) {
+        this.g20602 = g20602;
+        notifyPropertyChanged(BR.g20602);
+    }
+
+    @Bindable
+    public String getG20603() {
+        return g20603;
+    }
+
+    public void setG20603(String g20603) {
+        this.g20603 = g20603;
+        notifyPropertyChanged(BR.g20603);
+    }
+
+    @Bindable
+    public String getG20604() {
+        return g20604;
+    }
+
+    public void setG20604(String g20604) {
+        this.g20604 = g20604;
+        notifyPropertyChanged(BR.g20604);
+    }
+
+    @Bindable
+    public String getG207() {
+        return g207;
+    }
+
+    public void setG207(String g207) {
+        this.g207 = g207;
+        notifyPropertyChanged(BR.g207);
+    }
+
+    @Bindable
+    public String getG208() {
+        return g208;
+    }
+
+    public void setG208(String g208) {
+        this.g208 = g208;
+        notifyPropertyChanged(BR.g208);
+    }
+
+    @Bindable
+    public String getG20901() {
+        return g20901;
+    }
+
+    public void setG20901(String g20901) {
+        this.g20901 = g20901;
+        notifyPropertyChanged(BR.g20901);
+    }
+
+    @Bindable
+    public String getG20902() {
+        return g20902;
+    }
+
+    public void setG20902(String g20902) {
+        this.g20902 = g20902;
+        notifyPropertyChanged(BR.g20902);
+    }
+
+    @Bindable
+    public String getG210() {
+        return g210;
+    }
+
+    public void setG210(String g210) {
+        this.g210 = g210;
+        notifyPropertyChanged(BR.g210);
+    }
+
+    @Bindable
+    public String getG30101() {
+        return g30101;
+    }
+
+    public void setG30101(String g30101) {
+        this.g30101 = g30101;
+        notifyPropertyChanged(BR.g30101);
+    }
+
+    @Bindable
+    public String getG30102() {
+        return g30102;
+    }
+
+    public void setG30102(String g30102) {
+        this.g30102 = g30102;
+        notifyPropertyChanged(BR.g30102);
+    }
+
+    @Bindable
+    public String getG30103() {
+        return g30103;
+    }
+
+    public void setG30103(String g30103) {
+        this.g30103 = g30103;
+        notifyPropertyChanged(BR.g30103);
+    }
+
+    @Bindable
+    public String getG30201() {
+        return g30201;
+    }
+
+    public void setG30201(String g30201) {
+        this.g30201 = g30201;
+        notifyPropertyChanged(BR.g30201);
+    }
+
+    @Bindable
+    public String getG30202() {
+        return g30202;
+    }
+
+    public void setG30202(String g30202) {
+        this.g30202 = g30202;
+        notifyPropertyChanged(BR.g30202);
+    }
+
+    @Bindable
+    public String getG30203() {
+        return g30203;
+    }
+
+    public void setG30203(String g30203) {
+        this.g30203 = g30203;
+        notifyPropertyChanged(BR.g30203);
+    }
+
+    @Bindable
+    public String getG30301() {
+        return g30301;
+    }
+
+    public void setG30301(String g30301) {
+        this.g30301 = g30301;
+        notifyPropertyChanged(BR.g30301);
+    }
+
+    @Bindable
+    public String getG30302() {
+        return g30302;
+    }
+
+    public void setG30302(String g30302) {
+        this.g30302 = g30302;
+        notifyPropertyChanged(BR.g30302);
+    }
+
+    @Bindable
+    public String getG30303() {
+        return g30303;
+    }
+
+    public void setG30303(String g30303) {
+        this.g30303 = g30303;
+        notifyPropertyChanged(BR.g30303);
+    }
+
+    @Bindable
+    public String getG30401() {
+        return g30401;
+    }
+
+    public void setG30401(String g30401) {
+        this.g30401 = g30401;
+        notifyPropertyChanged(BR.g30401);
+    }
+
+    @Bindable
+    public String getG30402() {
+        return g30402;
+    }
+
+    public void setG30402(String g30402) {
+        this.g30402 = g30402;
+        notifyPropertyChanged(BR.g30402);
+    }
+
+    @Bindable
+    public String getG30403() {
+        return g30403;
+    }
+
+    public void setG30403(String g30403) {
+        this.g30403 = g30403;
+        notifyPropertyChanged(BR.g30403);
+    }
+
+    @Bindable
+    public String getG30501() {
+        return g30501;
+    }
+
+    public void setG30501(String g30501) {
+        this.g30501 = g30501;
+        notifyPropertyChanged(BR.g30501);
+    }
+
+    @Bindable
+    public String getG30502() {
+        return g30502;
+    }
+
+    public void setG30502(String g30502) {
+        this.g30502 = g30502;
+        notifyPropertyChanged(BR.g30502);
+    }
+
+    @Bindable
+    public String getG30503() {
+        return g30503;
+    }
+
+    public void setG30503(String g30503) {
+        this.g30503 = g30503;
+        notifyPropertyChanged(BR.g30503);
+    }
+
+    @Bindable
+    public String getG30601() {
+        return g30601;
+    }
+
+    public void setG30601(String g30601) {
+        this.g30601 = g30601;
+        notifyPropertyChanged(BR.g30601);
+    }
+
+    @Bindable
+    public String getG30602() {
+        return g30602;
+    }
+
+    public void setG30602(String g30602) {
+        this.g30602 = g30602;
+        notifyPropertyChanged(BR.g30602);
+    }
+
+    @Bindable
+    public String getG30603() {
+        return g30603;
+    }
+
+    public void setG30603(String g30603) {
+        this.g30603 = g30603;
+        notifyPropertyChanged(BR.g30603);
+    }
+
+    @Bindable
+    public String getG30701() {
+        return g30701;
+    }
+
+    public void setG30701(String g30701) {
+        this.g30701 = g30701;
+        notifyPropertyChanged(BR.g30701);
+    }
+
+    @Bindable
+    public String getG30702() {
+        return g30702;
+    }
+
+    public void setG30702(String g30702) {
+        this.g30702 = g30702;
+        notifyPropertyChanged(BR.g30702);
+    }
+
+    @Bindable
+    public String getG30703() {
+        return g30703;
+    }
+
+    public void setG30703(String g30703) {
+        this.g30703 = g30703;
+        notifyPropertyChanged(BR.g30703);
+    }
+
+    @Bindable
+    public String getG30801() {
+        return g30801;
+    }
+
+    public void setG30801(String g30801) {
+        this.g30801 = g30801;
+        notifyPropertyChanged(BR.g30801);
+    }
+
+    @Bindable
+    public String getG30802() {
+        return g30802;
+    }
+
+    public void setG30802(String g30802) {
+        this.g30802 = g30802;
+        notifyPropertyChanged(BR.g30802);
+    }
+
+    @Bindable
+    public String getG30803() {
+        return g30803;
+    }
+
+    public void setG30803(String g30803) {
+        this.g30803 = g30803;
+        notifyPropertyChanged(BR.g30803);
+    }
+
+    @Bindable
+    public String getG30901() {
+        return g30901;
+    }
+
+    public void setG30901(String g30901) {
+        this.g30901 = g30901;
+        notifyPropertyChanged(BR.g30901);
+    }
+
+    @Bindable
+    public String getG30902() {
+        return g30902;
+    }
+
+    public void setG30902(String g30902) {
+        this.g30902 = g30902;
+        notifyPropertyChanged(BR.g30902);
+    }
+
+    @Bindable
+    public String getG30903() {
+        return g30903;
+    }
+
+    public void setG30903(String g30903) {
+        this.g30903 = g30903;
+        notifyPropertyChanged(BR.g30903);
+    }
+
+    @Bindable
+    public String getG31001() {
+        return g31001;
+    }
+
+    public void setG31001(String g31001) {
+        this.g31001 = g31001;
+        notifyPropertyChanged(BR.g31001);
+    }
+
+    @Bindable
+    public String getG31002() {
+        return g31002;
+    }
+
+    public void setG31002(String g31002) {
+        this.g31002 = g31002;
+        notifyPropertyChanged(BR.g31002);
+    }
+
+    @Bindable
+    public String getG31003() {
+        return g31003;
+    }
+
+    public void setG31003(String g31003) {
+        this.g31003 = g31003;
+        notifyPropertyChanged(BR.g31003);
+    }
+
+    @Bindable
+    public String getG31101() {
+        return g31101;
+    }
+
+    public void setG31101(String g31101) {
+        this.g31101 = g31101;
+        notifyPropertyChanged(BR.g31101);
+    }
+
+    @Bindable
+    public String getG31102() {
+        return g31102;
+    }
+
+    public void setG31102(String g31102) {
+        this.g31102 = g31102;
+        notifyPropertyChanged(BR.g31102);
+    }
+
+    @Bindable
+    public String getG31103() {
+        return g31103;
+    }
+
+    public void setG31103(String g31103) {
+        this.g31103 = g31103;
+        notifyPropertyChanged(BR.g31103);
+    }
+
+    @Bindable
+    public String getG401() {
+        return g401;
+    }
+
+    public void setG401(String g401) {
+        this.g401 = g401;
+        notifyPropertyChanged(BR.g401);
+    }
+
+    @Bindable
+    public String getG402() {
+        return g402;
+    }
+
+    public void setG402(String g402) {
+        this.g402 = g402;
+        notifyPropertyChanged(BR.g402);
+    }
+
+    @Bindable
+    public String getG403() {
+        return g403;
+    }
+
+    public void setG403(String g403) {
+        this.g403 = g403;
+        notifyPropertyChanged(BR.g403);
+    }
+
+    @Bindable
+    public String getG404() {
+        return g404;
+    }
+
+    public void setG404(String g404) {
+        this.g404 = g404;
+        notifyPropertyChanged(BR.g404);
+    }
+
+    @Bindable
+    public String getG405() {
+        return g405;
+    }
+
+    public void setG405(String g405) {
+        this.g405 = g405;
+        notifyPropertyChanged(BR.g405);
+    }
+
+    @Bindable
+    public String getG501() {
+        return g501;
+    }
+
+    public void setG501(String g501) {
+        this.g501 = g501;
+        notifyPropertyChanged(BR.g501);
+    }
+
+    @Bindable
+    public String getG502() {
+        return g502;
+    }
+
+    public void setG502(String g502) {
+        this.g502 = g502;
+        notifyPropertyChanged(BR.g502);
+    }
+
+    @Bindable
+    public String getG503() {
+        return g503;
+    }
+
+    public void setG503(String g503) {
+        this.g503 = g503;
+        notifyPropertyChanged(BR.g503);
+    }
+
+    @Bindable
+    public String getG504() {
+        return g504;
+    }
+
+    public void setG504(String g504) {
+        this.g504 = g504;
+        notifyPropertyChanged(BR.g504);
+    }
+
+    @Bindable
+    public String getG505() {
+        return g505;
+    }
+
+    public void setG505(String g505) {
+        this.g505 = g505;
+        notifyPropertyChanged(BR.g505);
+    }
+
+    @Bindable
+    public String getG506() {
+        return g506;
+    }
+
+    public void setG506(String g506) {
+        this.g506 = g506;
+        notifyPropertyChanged(BR.g506);
+    }
+
+    @Bindable
+    public String getG507() {
+        return g507;
+    }
+
+    public void setG507(String g507) {
+        this.g507 = g507;
+        notifyPropertyChanged(BR.g507);
+    }
+
+    @Bindable
+    public String getG601() {
+        return g601;
+    }
+
+    public void setG601(String g601) {
+        this.g601 = g601;
+        notifyPropertyChanged(BR.g601);
+    }
+
+    @Bindable
+    public String getG602() {
+        return g602;
+    }
+
+    public void setG602(String g602) {
+        this.g602 = g602;
+        notifyPropertyChanged(BR.g602);
+    }
+
+    @Bindable
+    public String getG603() {
+        return g603;
+    }
+
+    public void setG603(String g603) {
+        this.g603 = g603;
+        notifyPropertyChanged(BR.g603);
+    }
+
+    @Bindable
+    public String getG604() {
+        return g604;
+    }
+
+    public void setG604(String g604) {
+        this.g604 = g604;
+        notifyPropertyChanged(BR.g604);
+    }
+
+    @Bindable
+    public String getG605() {
+        return g605;
+    }
+
+    public void setG605(String g605) {
+        this.g605 = g605;
+        notifyPropertyChanged(BR.g605);
+    }
+
+    @Bindable
+    public String getG606() {
+        return g606;
+    }
+
+    public void setG606(String g606) {
+        this.g606 = g606;
+        notifyPropertyChanged(BR.g606);
+    }
+
+    @Bindable
+    public String getG607() {
+        return g607;
+    }
+
+    public void setG607(String g607) {
+        this.g607 = g607;
+        notifyPropertyChanged(BR.g607);
+    }
+
+    @Bindable
+    public String getG608() {
+        return g608;
+    }
+
+    public void setG608(String g608) {
+        this.g608 = g608;
+        notifyPropertyChanged(BR.g608);
+    }
+
+    @Bindable
+    public String getG609() {
+        return g609;
+    }
+
+    public void setG609(String g609) {
+        this.g609 = g609;
+        notifyPropertyChanged(BR.g609);
+    }
+
+    @Bindable
+    public String getG610() {
+        return g610;
+    }
+
+    public void setG610(String g610) {
+        this.g610 = g610;
+        notifyPropertyChanged(BR.g610);
+    }
+
+    @Bindable
+    public String getG611() {
+        return g611;
+    }
+
+    public void setG611(String g611) {
+        this.g611 = g611;
+        notifyPropertyChanged(BR.g611);
+    }
+
+    @Bindable
+    public String getG701() {
+        return g701;
+    }
+
+    public void setG701(String g701) {
+        this.g701 = g701;
+        notifyPropertyChanged(BR.g701);
+    }
+
 
     public Form Hydrate(Cursor cursor) throws JSONException {
         this.id = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ID));
@@ -9641,29 +5173,24 @@ public class Form extends BaseObservable implements Observable {
         this.synced = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYNCED));
         this.syncDate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYNCED_DATE));
 
-        sH1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH1)));
-        sH2bHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH2B)));
-
-        /*sH2cHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH2c)));
-        sH2dHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH2d)));
-        */
-
-        sH3aHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH3A)));
-        sH3bHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH3B)));
-        sH4Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH4)));
-        sH5Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH5)));
-        sH6Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH6)));
-        sH7Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH7)));
-
-        sW1aHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SW1A)));
-        /*sW1bHydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SW1B)));*/
-        sW2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SW2)));
-        sW3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SW3)));
-        sW4Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SW4)));
-
-        sC1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SC1)));
-        sC2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SC2)));
-        sC3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SC3)));
+        sA1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA1)));
+        sA2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA2)));
+        sA3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA3)));
+        sB1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SB1)));
+        sC1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA3)));
+        sC2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SB1)));
+        sD1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SD1)));
+        sE1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SE1)));
+        sF1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF1)));
+        sF2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF2)));
+        sF3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF3)));
+        sG1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG1)));
+        sG2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG2)));
+        sG3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG3)));
+        sG4Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG4)));
+        sG5Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG5)));
+        sG6Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG6)));
+        sG7Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG7)));
 
         return this;
     }
@@ -10248,6 +5775,7 @@ public class Form extends BaseObservable implements Observable {
         }
     }
 
+
     public String sA1toString() throws JSONException {
         Log.d(TAG, "sA1toString: ");
         JSONObject json = new JSONObject();
@@ -10270,8 +5798,14 @@ public class Form extends BaseObservable implements Observable {
                 .put("a114t", a114t)
                 .put("a115t", a115t)
                 .put("a116t", a116t)
-                .put("a11696x", a11696x)
-                .put("a201", a201)
+                .put("a11696x", a11696x);
+        return json.toString();
+    }
+
+    public String sA2toString() throws JSONException {
+        Log.d(TAG, "sA2toString: ");
+        JSONObject json = new JSONObject();
+        json.put("a201", a201)
                 .put("a203t", a203t)
                 .put("a20396x", a20396x)
                 .put("a204", a204)
@@ -10282,8 +5816,15 @@ public class Form extends BaseObservable implements Observable {
                 .put("a207t", a207t)
                 .put("a208t", a208t)
                 .put("a209t", a209t)
-                .put("a210", a210)
-                .put("a301", a301)
+                .put("a210", a210);
+        return json.toString();
+    }
+
+    public String sA3toString() throws JSONException {
+        Log.d(TAG, "sA1toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("a301", a301)
                 .put("a30196x", a30196x)
                 .put("a302", a302)
                 .put("a30296x", a30296x)
@@ -10380,8 +5921,15 @@ public class Form extends BaseObservable implements Observable {
                 .put("a33302", a33302)
                 .put("a33303", a33303)
                 .put("a33396", a33396)
-                .put("a33396x", a33396x)
-                .put("b101", b101)
+                .put("a33396x", a33396x);
+        return json.toString();
+    }
+
+    public String sB1toString() throws JSONException {
+        Log.d(TAG, "sA1toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("b101", b101)
                 .put("b102", b102)
                 .put("b10201", b10201)
                 .put("b10202", b10202)
@@ -10449,8 +5997,15 @@ public class Form extends BaseObservable implements Observable {
                 .put("b11608", b11608)
                 .put("b11609", b11609)
                 .put("b11696", b11696)
-                .put("b117", b117)
-                .put("c1res", c1res)
+                .put("b117", b117);
+        return json.toString();
+    }
+
+    public String sC1toString() throws JSONException {
+        Log.d(TAG, "sC1toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("c1res", c1res)
                 .put("c1011", c1011)
                 .put("c1012", c1012)
                 .put("c1013", c1013)
@@ -10489,34 +6044,28 @@ public class Form extends BaseObservable implements Observable {
                 .put("c1123", c1123)
                 .put("c1131", c1131)
                 .put("c1132", c1132)
-                .put("c1133", c1133)
-                .put("c201", c201)
+                .put("c1133", c1133);
+        return json.toString();
+    }
+
+    public String sC2toString() throws JSONException {
+        Log.d(TAG, "sC2toString: ");
+        JSONObject json = new JSONObject();
+        json.put("c201", c201)
                 .put("c202", c202)
                 .put("c20296x", c20296x)
                 .put("c203", c203)
                 .put("c204", c204)
                 .put("c205", c205)
                 .put("c206", c206)
-                .put("c20696x", c20696x)
-                .put("f101", f101)
-                .put("f102", f102)
-                .put("f103", f103)
-                .put("f104", f104)
-                .put("f105", f105)
-                .put("f106", f106)
-                .put("f107", f107)
-                .put("f108", f108)
-                .put("f109", f109)
-                .put("f110", f110)
-                .put("f111", f111)
-                .put("f112", f112)
-                .put("f113", f113)
-                .put("f114", f114)
-                .put("f115", f115)
-                .put("f116", f116)
-                .put("f117", f117)
-                .put("f118", f118)
-                .put("d101", d101)
+                .put("c20696x", c20696x);
+        return json.toString();
+    }
+
+    public String sD1toString() throws JSONException {
+        Log.d(TAG, "sD1toString: ");
+        JSONObject json = new JSONObject();
+        json.put("d101", d101)
                 .put("d102", d102)
                 .put("d10296x", d10296x)
                 .put("d103", d103)
@@ -10553,111 +6102,14 @@ public class Form extends BaseObservable implements Observable {
                 .put("d10716", d10716)
                 .put("d10798", d10798)
                 .put("d10796", d10796)
-                .put("d10796x", d10796x)
-                .put("f201", f201)
-                .put("f202", f202)
-                .put("f203", f203)
-                .put("f204", f204)
-                .put("f301", f301)
-                .put("f302", f302)
-                .put("f303", f303)
-                .put("f304", f304)
-                .put("f305", f305)
-                .put("f306", f306)
-                .put("f307", f307)
-                .put("f308", f308)
-                .put("f309", f309)
-                .put("f310", f310)
-                .put("f311", f311)
-                .put("f312", f312)
-                .put("f313", f313)
-                .put("f314", f314)
-                .put("g10101", g10101)
-                .put("g10102", g10102)
-                .put("g10103", g10103)
-                .put("g10201", g10201)
-                .put("g10202", g10202)
-                .put("g10203", g10203)
-                .put("g10301", g10301)
-                .put("g10302", g10302)
-                .put("g10401", g10401)
-                .put("g10402", g10402)
-                .put("g105", g105)
-                .put("g10601", g10601)
-                .put("g10602", g10602)
-                .put("g201", g201)
-                .put("g202", g202)
-                .put("g203", g203)
-                .put("g204", g204)
-                .put("g20501", g20501)
-                .put("g20502", g20502)
-                .put("g20601", g20601)
-                .put("g20602", g20602)
-                .put("g20603", g20603)
-                .put("g20604", g20604)
-                .put("g207", g207)
-                .put("g208", g208)
-                .put("g20901", g20901)
-                .put("g20902", g20902)
-                .put("g210", g210)
-                .put("g30101", g30101)
-                .put("g30102", g30102)
-                .put("g30103", g30103)
-                .put("g30201", g30201)
-                .put("g30202", g30202)
-                .put("g30203", g30203)
-                .put("g30301", g30301)
-                .put("g30302", g30302)
-                .put("g30303", g30303)
-                .put("g30401", g30401)
-                .put("g30402", g30402)
-                .put("g30403", g30403)
-                .put("g30501", g30501)
-                .put("g30502", g30502)
-                .put("g30503", g30503)
-                .put("g30601", g30601)
-                .put("g30602", g30602)
-                .put("g30603", g30603)
-                .put("g30701", g30701)
-                .put("g30702", g30702)
-                .put("g30703", g30703)
-                .put("g30801", g30801)
-                .put("g30802", g30802)
-                .put("g30803", g30803)
-                .put("g30901", g30901)
-                .put("g30902", g30902)
-                .put("g30903", g30903)
-                .put("g31001", g31001)
-                .put("g31002", g31002)
-                .put("g31003", g31003)
-                .put("g31101", g31101)
-                .put("g31102", g31102)
-                .put("g31103", g31103)
-                .put("g401", g401)
-                .put("g402", g402)
-                .put("g403", g403)
-                .put("g404", g404)
-                .put("g405", g405)
-                .put("g501", g501)
-                .put("g502", g502)
-                .put("g503", g503)
-                .put("g504", g504)
-                .put("g505", g505)
-                .put("g506", g506)
-                .put("g507", g507)
-                .put("g601", g601)
-                .put("g602", g602)
-                .put("g603", g603)
-                .put("g604", g604)
-                .put("g605", g605)
-                .put("g606", g606)
-                .put("g607", g607)
-                .put("g608", g608)
-                .put("g609", g609)
-                .put("g610", g610)
-                .put("g611", g611)
-                .put("g701", g701)
-                .put("e101", e101)
+                .put("d10796x", d10796x);
+        return json.toString();
+    }
+
+    public String sE1toString() throws JSONException {
+        Log.d(TAG, "sE1toString: ");
+        JSONObject json = new JSONObject();
+        json.put("e101", e101)
                 .put("e102", e102)
                 .put("e103", e103)
                 .put("e10396x", e10396x)
@@ -10691,6 +6143,192 @@ public class Form extends BaseObservable implements Observable {
         return json.toString();
     }
 
+    public String sF1toString() throws JSONException {
+        Log.d(TAG, "sF1toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("f101", f101)
+                .put("f102", f102)
+                .put("f103", f103)
+                .put("f104", f104)
+                .put("f105", f105)
+                .put("f106", f106)
+                .put("f107", f107)
+                .put("f108", f108)
+                .put("f109", f109)
+                .put("f110", f110)
+                .put("f111", f111)
+                .put("f112", f112)
+                .put("f113", f113)
+                .put("f114", f114)
+                .put("f115", f115)
+                .put("f116", f116)
+                .put("f117", f117)
+                .put("f118", f118);
+        return json.toString();
+    }
+
+    public String sF2toString() throws JSONException {
+        Log.d(TAG, "sF2toString: ");
+        JSONObject json = new JSONObject();
+        json.put("f201", f201)
+                .put("f202", f202)
+                .put("f203", f203)
+                .put("f204", f204);
+        return json.toString();
+    }
+
+    public String sF3toString() throws JSONException {
+        Log.d(TAG, "sF3toString: ");
+        JSONObject json = new JSONObject();
+        json.put("f301", f301)
+                .put("f302", f302)
+                .put("f303", f303)
+                .put("f304", f304)
+                .put("f305", f305)
+                .put("f306", f306)
+                .put("f307", f307)
+                .put("f308", f308)
+                .put("f309", f309)
+                .put("f310", f310)
+                .put("f311", f311)
+                .put("f312", f312)
+                .put("f313", f313)
+                .put("f314", f314);
+        return json.toString();
+    }
+
+    public String sG1toString() throws JSONException {
+        Log.d(TAG, "sG1toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("g10101", g10101)
+                .put("g10102", g10102)
+                .put("g10103", g10103)
+                .put("g10201", g10201)
+                .put("g10202", g10202)
+                .put("g10203", g10203)
+                .put("g10301", g10301)
+                .put("g10302", g10302)
+                .put("g10401", g10401)
+                .put("g10402", g10402)
+                .put("g105", g105)
+                .put("g10601", g10601)
+                .put("g10602", g10602);
+        return json.toString();
+    }
+
+    public String sG2toString() throws JSONException {
+        Log.d(TAG, "sG2toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("g201", g201)
+                .put("g202", g202)
+                .put("g203", g203)
+                .put("g204", g204)
+                .put("g20501", g20501)
+                .put("g20502", g20502)
+                .put("g20601", g20601)
+                .put("g20602", g20602)
+                .put("g20603", g20603)
+                .put("g20604", g20604)
+                .put("g207", g207)
+                .put("g208", g208)
+                .put("g20901", g20901)
+                .put("g20902", g20902)
+                .put("g210", g210);
+        return json.toString();
+    }
+
+    public String sG3toString() throws JSONException {
+        Log.d(TAG, "sG3toString: ");
+        JSONObject json = new JSONObject();
+
+        json.put("g30101", g30101)
+                .put("g30102", g30102)
+                .put("g30103", g30103)
+                .put("g30201", g30201)
+                .put("g30202", g30202)
+                .put("g30203", g30203)
+                .put("g30301", g30301)
+                .put("g30302", g30302)
+                .put("g30303", g30303)
+                .put("g30401", g30401)
+                .put("g30402", g30402)
+                .put("g30403", g30403)
+                .put("g30501", g30501)
+                .put("g30502", g30502)
+                .put("g30503", g30503)
+                .put("g30601", g30601)
+                .put("g30602", g30602)
+                .put("g30603", g30603)
+                .put("g30701", g30701)
+                .put("g30702", g30702)
+                .put("g30703", g30703)
+                .put("g30801", g30801)
+                .put("g30802", g30802)
+                .put("g30803", g30803)
+                .put("g30901", g30901)
+                .put("g30902", g30902)
+                .put("g30903", g30903)
+                .put("g31001", g31001)
+                .put("g31002", g31002)
+                .put("g31003", g31003)
+                .put("g31101", g31101)
+                .put("g31102", g31102)
+                .put("g31103", g31103);
+        return json.toString();
+    }
+
+    public String sG4toString() throws JSONException {
+        Log.d(TAG, "sG4toString: ");
+        JSONObject json = new JSONObject();
+        json.put("g401", g401)
+                .put("g402", g402)
+                .put("g403", g403)
+                .put("g404", g404)
+                .put("g405", g405);
+        return json.toString();
+    }
+
+    public String sG5toString() throws JSONException {
+        Log.d(TAG, "sG5toString: ");
+        JSONObject json = new JSONObject();
+        json.put("g501", g501)
+                .put("g502", g502)
+                .put("g503", g503)
+                .put("g504", g504)
+                .put("g505", g505)
+                .put("g506", g506)
+                .put("g507", g507);
+        return json.toString();
+    }
+
+    public String sG6toString() throws JSONException {
+        Log.d(TAG, "sG6toString: ");
+        JSONObject json = new JSONObject();
+        json.put("g601", g601)
+                .put("g602", g602)
+                .put("g603", g603)
+                .put("g604", g604)
+                .put("g605", g605)
+                .put("g606", g606)
+                .put("g607", g607)
+                .put("g608", g608)
+                .put("g609", g609)
+                .put("g610", g610)
+                .put("g611", g611);
+        return json.toString();
+    }
+
+    public String sG7toString() throws JSONException {
+        Log.d(TAG, "sG7toString: ");
+        JSONObject json = new JSONObject();
+        json.put("g701", g701);
+        return json.toString();
+    }
+
+
     public JSONObject toJSONObject() throws JSONException {
         JSONObject json = new JSONObject();
 
@@ -10703,70 +6341,25 @@ public class Form extends BaseObservable implements Observable {
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceId);
         json.put(FormsTable.COLUMN_DEVICETAGID, this.deviceTag);
         json.put(FormsTable.COLUMN_ISTATUS, this.iStatus);
-        //  json.put(FormsTable.COLUMN_SYNCED, this.synced);
-        //  json.put(FormsTable.COLUMN_SYNCED_DATE, this.syncDate);
-
-        // Household
-
-        json.put(FormsTable.COLUMN_SH1, new JSONObject(sH1toString()));
-        json.put(FormsTable.COLUMN_SH2B, new JSONObject(sH2btoString()));
-            /*
-            json.put(FormsTable.COLUMN_SH2c, new JSONObject(sH2ctoString()));
-            json.put(FormsTable.COLUMN_SH2d, new JSONObject(sH2dtoString()));
-            */
-        json.put(FormsTable.COLUMN_SH3A, new JSONObject(sH3atoString()));
-        json.put(FormsTable.COLUMN_SH3B, new JSONObject(sH3btoString()));
-        json.put(FormsTable.COLUMN_SH4, new JSONObject(sH4toString()));
-        json.put(FormsTable.COLUMN_SH5, new JSONObject(sH5toString()));
-        json.put(FormsTable.COLUMN_SH6, new JSONObject(sH6toString()));
-        json.put(FormsTable.COLUMN_SH7, new JSONObject(sH7toString()));
-
-        // MWRA
-        json.put(FormsTable.COLUMN_SW1A, new JSONObject(sW1atoString()));
-        json.put(FormsTable.COLUMN_SW2, new JSONObject(sW2toString()));
-        json.put(FormsTable.COLUMN_SW3, new JSONObject(sW3toString()));
-        json.put(FormsTable.COLUMN_SW4, new JSONObject(sW4toString()));
-
-        // Children
+        json.put(FormsTable.COLUMN_SA1, new JSONObject(sA1toString()));
+        json.put(FormsTable.COLUMN_SA2, new JSONObject(sA2toString()));
+        json.put(FormsTable.COLUMN_SA3, new JSONObject(sA3toString()));
+        json.put(FormsTable.COLUMN_SB1, new JSONObject(sB1toString()));
         json.put(FormsTable.COLUMN_SC1, new JSONObject(sC1toString()));
         json.put(FormsTable.COLUMN_SC2, new JSONObject(sC2toString()));
-        json.put(FormsTable.COLUMN_SC3, new JSONObject(sC3toString()));
-
-
+        json.put(FormsTable.COLUMN_SD1, new JSONObject(sD1toString()));
+        json.put(FormsTable.COLUMN_SE1, new JSONObject(sE1toString()));
+        json.put(FormsTable.COLUMN_SF1, new JSONObject(sF1toString()));
+        json.put(FormsTable.COLUMN_SF2, new JSONObject(sF2toString()));
+        json.put(FormsTable.COLUMN_SF3, new JSONObject(sF3toString()));
+        json.put(FormsTable.COLUMN_SG1, new JSONObject(sG1toString()));
+        json.put(FormsTable.COLUMN_SG2, new JSONObject(sG2toString()));
+        json.put(FormsTable.COLUMN_SG3, new JSONObject(sG3toString()));
+        json.put(FormsTable.COLUMN_SG4, new JSONObject(sG4toString()));
+        json.put(FormsTable.COLUMN_SG5, new JSONObject(sG5toString()));
+        json.put(FormsTable.COLUMN_SG6, new JSONObject(sG6toString()));
+        json.put(FormsTable.COLUMN_SG7, new JSONObject(sG7toString()));
         return json;
-    }
-
-
-    private void calculateTotalMember() {
-        if (!this.h211t.equals("")
-                && !this.h213t.equals("")
-                && !this.h215t.equals("")
-                && !this.h217t.equals("")
-                && !this.h219t.equals("")) {
-
-            // Total Members
-            setH209t(String.valueOf(Integer.parseInt(this.h211t)
-                    + Integer.parseInt(this.h213t)
-                    + Integer.parseInt(this.h215t)
-                    + Integer.parseInt(this.h217t)
-                    + Integer.parseInt(this.h219t)
-            ));
-            // Total Males
-            setH209m(String.valueOf(Integer.parseInt(this.h211m)
-                    + Integer.parseInt(this.h213m)
-                    + Integer.parseInt(this.h215m)
-                    + Integer.parseInt(this.h217m)
-                    + Integer.parseInt(this.h219m)
-            ));
-            // Total Female
-            setH209f(String.valueOf(Integer.parseInt(this.h211f)
-                    + Integer.parseInt(this.h213f)
-                    + Integer.parseInt(this.h215f)
-                    + Integer.parseInt(this.h217f)
-                    + Integer.parseInt(this.h219f)
-            ));
-        }
-
     }
 
 

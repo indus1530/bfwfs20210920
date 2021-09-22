@@ -31,8 +31,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityChildListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Child;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionH2dActivity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionH3aActivity;
 
 
 public class ChildListActivity extends AppCompatActivity {

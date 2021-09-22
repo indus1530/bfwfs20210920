@@ -117,26 +117,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_HHID, form.getHhid());
         values.put(FormsTable.COLUMN_USERNAME, form.getUserName());
         values.put(FormsTable.COLUMN_SYSDATE, form.getSysDate());
-        values.put(FormsTable.COLUMN_SH1, form.sH1toString());
+        values.put(FormsTable.COLUMN_SA1, form.sH1toString());
 
         /* values.put(FormsTable.COLUMN_SH2A, form.getsH2a());*/
-        values.put(FormsTable.COLUMN_SH2B, form.sH2btoString());
+        values.put(FormsTable.COLUMN_SA2, form.sH2btoString());
 /*
         values.put(FormsTable.COLUMN_SH2d, form.getsH2d());
         values.put(FormsTable.COLUMN_SH2c, form.getsH2c());
 */
-        values.put(FormsTable.COLUMN_SH3A, form.sH3atoString());
-        values.put(FormsTable.COLUMN_SH3B, form.sH3btoString());
-        values.put(FormsTable.COLUMN_SH4, form.sH4toString());
-        values.put(FormsTable.COLUMN_SH5, form.sH5toString());
-        values.put(FormsTable.COLUMN_SH6, form.sH6toString());
-        values.put(FormsTable.COLUMN_SH7, form.sH7toString());
+        values.put(FormsTable.COLUMN_SA3, form.sH3atoString());
+        values.put(FormsTable.COLUMN_SB1, form.sH3btoString());
+        values.put(FormsTable.COLUMN_SD1, form.sH4toString());
+        values.put(FormsTable.COLUMN_SE1, form.sH5toString());
+        values.put(FormsTable.COLUMN_SF1, form.sH6toString());
+        values.put(FormsTable.COLUMN_SF2, form.sH7toString());
 
-        values.put(FormsTable.COLUMN_SW1A, form.sW1atoString());
+        values.put(FormsTable.COLUMN_SF3, form.sW1atoString());
         /*values.put(FormsTable.COLUMN_SW1B, form.sW1b());*/
-        values.put(FormsTable.COLUMN_SW2, form.sW2toString());
-        values.put(FormsTable.COLUMN_SW3, form.sW3toString());
-        values.put(FormsTable.COLUMN_SW4, form.sW4toString());
+        values.put(FormsTable.COLUMN_SG1, form.sW2toString());
+        values.put(FormsTable.COLUMN_SG2, form.sW3toString());
+        values.put(FormsTable.COLUMN_SG3, form.sW4toString());
 
         values.put(FormsTable.COLUMN_SC1, form.sC1toString());
         values.put(FormsTable.COLUMN_SC2, form.sC2toString());
@@ -2052,7 +2052,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public String getWraName(String uid) throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
-        String[] columns = {FormsTable.COLUMN_SW1A};
+        String[] columns = {FormsTable.COLUMN_SF3};
 
         String whereClause;
         whereClause = FormsTable.COLUMN_UID + "=?  ";
@@ -2077,7 +2077,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             );
             while (c.moveToNext()) {
                 form = new Form();
-                form.sW1aHydrate(c.getString(c.getColumnIndex(FormsTable.COLUMN_SW1A)));
+                form.sW1aHydrate(c.getString(c.getColumnIndex(FormsTable.COLUMN_SF3)));
 
 
             }

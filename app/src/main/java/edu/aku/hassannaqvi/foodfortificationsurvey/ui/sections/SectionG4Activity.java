@@ -15,26 +15,27 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
-import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionW3Binding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
+import foodfortificationsurvey.R;
+import foodfortificationsurvey.databinding.ActivitySectionG4Binding;
 
 
-public class SectionW3Activity extends AppCompatActivity {
-    private static final String TAG = "SectionW3Activity";
-    ActivitySectionW3Binding bi;
+public class SectionG4Activity extends AppCompatActivity {
+    private static final String TAG = "SectionG4Activity";
+    ActivitySectionG4Binding bi;
     private DatabaseHelper db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_w3);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g4);
         bi.setCallback(this);
         bi.setForm(form);
+
     }
 
 
@@ -42,15 +43,15 @@ public class SectionW3Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SW3, form.sW3toString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SG4, form.sG4toString());
         } catch (JSONException e) {
             e.printStackTrace();
-            Log.d(TAG, getString(R.string.upd_db) + e.getMessage());
-            Toast.makeText(this, getString(R.string.upd_db) + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Log.d(TAG, R.string.upd_db_form + e.getMessage());
+            Toast.makeText(this, R.string.upd_db_form + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
         if (updcount > 0) return true;
         else {
-            Toast.makeText(this, getString(R.string.upd_db_error), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
         }
     }
@@ -60,8 +61,8 @@ public class SectionW3Activity extends AppCompatActivity {
         if (!formValidation()) return;
         if (updateDB()) {
             finish();
-            startActivity(new Intent(this, SectionW4Activity.class).putExtra("complete", true));
-        } else Toast.makeText(this, getString(R.string.fail_db_upd), Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+        } else Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
     }
 
 
@@ -81,12 +82,6 @@ public class SectionW3Activity extends AppCompatActivity {
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
         setResult(RESULT_CANCELED);
     }
-
-
-    /*@Override
-    public void onBackPressed() {
-        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-    }*/
 
 
 }
