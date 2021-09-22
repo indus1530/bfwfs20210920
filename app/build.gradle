@@ -11,7 +11,7 @@ android {
         dataBinding true
         viewBinding true
     }
-    compileSdkVersion 31
+    compileSdkVersion 30
     buildToolsVersion '31.0.0'
 
     Properties versionProps = new Properties()
@@ -59,8 +59,8 @@ android {
             applicationId "edu.aku.hassannaqvi.foodfortificationsurvey"
             versionCode versionBuild
             versionName "${versionNumber}.${versionPatch}${versionType}"
-            minSdkVersion 31
-            targetSdkVersion 31
+            minSdkVersion 30
+            targetSdkVersion 30
         }
 
         applicationVariants.all { variant ->

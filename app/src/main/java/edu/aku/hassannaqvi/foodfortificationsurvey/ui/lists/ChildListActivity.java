@@ -31,6 +31,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityChildListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Child;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity;
 
 
 public class ChildListActivity extends AppCompatActivity {
@@ -182,7 +183,7 @@ public class ChildListActivity extends AppCompatActivity {
         finish();
 
 
-        startActivity(new Intent(this, SectionH3aActivity.class).putExtra("complete", true));
+        startActivity(new Intent(this, SectionA3Activity.class).putExtra("complete", true));
         //startActivity(new Intent(this, PregnancyListActivity.class).putExtra("complete", true));
 
     }
@@ -194,7 +195,7 @@ public class ChildListActivity extends AppCompatActivity {
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.
                 // The dialog is automatically dismissed when a dialog button is clicked.
-                .setPositiveButton(R.string.h111a, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.a101d, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // Continue with delete operation
                         addMoreChild();
@@ -202,7 +203,7 @@ public class ChildListActivity extends AppCompatActivity {
                 })
 
                 // A null listener allows the button to dismiss the dialog and take no further action.
-                .setNegativeButton(R.string.h111b, null)
+                .setNegativeButton(R.string.a101d, null)
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
@@ -215,7 +216,7 @@ public class ChildListActivity extends AppCompatActivity {
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.
                 // The dialog is automatically dismissed when a dialog button is clicked.
-                .setPositiveButton(R.string.h111a, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.a101d, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // Continue with delete operation
                         proceedSelect();
@@ -223,7 +224,7 @@ public class ChildListActivity extends AppCompatActivity {
                 })
 
                 // A null listener allows the button to dismiss the dialog and take no further action.
-                .setNegativeButton(R.string.h111b, null)
+                .setNegativeButton(R.string.a101d, null)
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
@@ -231,7 +232,7 @@ public class ChildListActivity extends AppCompatActivity {
 
 
     private void addMoreChild() {
-        Intent intent = new Intent(this, SectionH2dActivity.class);
+        Intent intent = new Intent(this, SectionA3Activity.class);
         //   finish();
         MemberInfoLauncher.launch(intent);
     }

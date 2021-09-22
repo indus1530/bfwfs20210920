@@ -117,30 +117,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_HHID, form.getHhid());
         values.put(FormsTable.COLUMN_USERNAME, form.getUserName());
         values.put(FormsTable.COLUMN_SYSDATE, form.getSysDate());
-        values.put(FormsTable.COLUMN_SA1, form.sH1toString());
-
-        /* values.put(FormsTable.COLUMN_SH2A, form.getsH2a());*/
-        values.put(FormsTable.COLUMN_SA2, form.sH2btoString());
-/*
-        values.put(FormsTable.COLUMN_SH2d, form.getsH2d());
-        values.put(FormsTable.COLUMN_SH2c, form.getsH2c());
-*/
-        values.put(FormsTable.COLUMN_SA3, form.sH3atoString());
-        values.put(FormsTable.COLUMN_SB1, form.sH3btoString());
-        values.put(FormsTable.COLUMN_SD1, form.sH4toString());
-        values.put(FormsTable.COLUMN_SE1, form.sH5toString());
-        values.put(FormsTable.COLUMN_SF1, form.sH6toString());
-        values.put(FormsTable.COLUMN_SF2, form.sH7toString());
-
-        values.put(FormsTable.COLUMN_SF3, form.sW1atoString());
-        /*values.put(FormsTable.COLUMN_SW1B, form.sW1b());*/
-        values.put(FormsTable.COLUMN_SG1, form.sW2toString());
-        values.put(FormsTable.COLUMN_SG2, form.sW3toString());
-        values.put(FormsTable.COLUMN_SG3, form.sW4toString());
-
+        values.put(FormsTable.COLUMN_SA1, form.sA1toString());
+        values.put(FormsTable.COLUMN_SA2, form.sA2toString());
+        values.put(FormsTable.COLUMN_SA3, form.sA3toString());
+        values.put(FormsTable.COLUMN_SB1, form.sB1toString());
         values.put(FormsTable.COLUMN_SC1, form.sC1toString());
         values.put(FormsTable.COLUMN_SC2, form.sC2toString());
-        values.put(FormsTable.COLUMN_SC3, form.sC3toString());
+        values.put(FormsTable.COLUMN_SD1, form.sD1toString());
+        values.put(FormsTable.COLUMN_SE1, form.sE1toString());
+        values.put(FormsTable.COLUMN_SF1, form.sF1toString());
+        values.put(FormsTable.COLUMN_SF2, form.sF2toString());
+        values.put(FormsTable.COLUMN_SF3, form.sF3toString());
+        values.put(FormsTable.COLUMN_SG1, form.sG1toString());
+        values.put(FormsTable.COLUMN_SG2, form.sG2toString());
+        values.put(FormsTable.COLUMN_SG3, form.sG3toString());
+        values.put(FormsTable.COLUMN_SG4, form.sG4toString());
+        values.put(FormsTable.COLUMN_SG5, form.sG5toString());
+        values.put(FormsTable.COLUMN_SG6, form.sG6toString());
+        values.put(FormsTable.COLUMN_SG7, form.sG7toString());
 
 
         values.put(FormsTable.COLUMN_ISTATUS, form.getiStatus());
@@ -2077,7 +2071,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             );
             while (c.moveToNext()) {
                 form = new Form();
-                form.sW1aHydrate(c.getString(c.getColumnIndex(FormsTable.COLUMN_SF3)));
+                form.sF3Hydrate(c.getString(c.getColumnIndex(FormsTable.COLUMN_SF3)));
 
 
             }
@@ -2089,7 +2083,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 db.close();
             }
         }
-        return form.getW100Name();
+        return form.getA101d();
     }
 
     public String getChildName(String uid) throws JSONException {
@@ -2132,7 +2126,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 db.close();
             }
         }
-        return form.getC100Name();
+        return form.getC1res();
     }
 
 }

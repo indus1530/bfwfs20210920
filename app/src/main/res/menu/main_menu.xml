@@ -61,71 +61,71 @@
 
                         <item
                             android:id="@+id/mwraList"
-                            android:title="@string/mwratitle" />
+                            android:title="1" />
                         <item
                             android:id="@+id/childList"
-                            android:title="@string/childtitle" />
+                            android:title="2" />
                     </group>
 
                     <group android:id="@+id/secH">
                         <item
                             android:id="@+id/secH1"
-                            android:title="@string/sech1title" />
+                            android:title="3" />
                         <item
                             android:id="@+id/secH2b"
-                            android:title="@string/sec2btitle" />
+                            android:title="4" />
                         <item
                             android:id="@+id/secH3a"
-                            android:title="@string/sech3title" />
+                            android:title="5" />
 
                         <item
                             android:id="@+id/secH4"
-                            android:title="@string/sech4title" />
+                            android:title="6" />
                         <item
                             android:id="@+id/secH5"
-                            android:title="@string/sech5title" />
+                            android:title="H5" />
                         <item
                             android:id="@+id/secH6"
-                            android:title="@string/sech6title" />
+                            android:title="H6" />
                         <item
                             android:id="@+id/secH7"
-                            android:title="@string/sech7title" />
+                            android:title="7" />
                         <item
                             android:id="@+id/sech6"
-                            android:title="@string/sech6title" />
+                            android:title="sech6" />
                     </group>
                     <group android:id="@+id/secW">
 
 
                         <item
                             android:id="@+id/secW1"
-                            android:title="@string/secw1title" />
+                            android:title="secW1" />
                         <item
                             android:id="@+id/secW1b"
-                            android:title="@string/secw1atitle" />
+                            android:title="secW1b" />
                         <item
                             android:id="@+id/secW2"
-                            android:title="@string/secw2title" />
+                            android:title="secW2" />
                         <item
                             android:id="@+id/secW3"
-                            android:title="@string/secw3title" />
+                            android:title="secW3" />
 
                         <item
                             android:id="@+id/secW4"
-                            android:title="@string/secw4title" />
+                            android:title="secW4" />
 
                     </group>
                     <group android:id="@+id/secC">
 
                         <item
                             android:id="@+id/secC1"
-                            android:title="@string/secc1title" />
+                            android:title="secC1" />
                         <item
                             android:id="@+id/secC2"
-                            android:title="@string/secc2title" />
+                            android:title="secC2" />
                         <item
                             android:id="@+id/secC3"
-                            android:title="@string/secc3title" />
+                            android:title="secC3" />
 
                     </group>
 

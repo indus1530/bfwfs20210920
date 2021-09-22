@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="foodfortificationsurvey.ui.lists.MwraListActivity" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.MwraListActivity" />
     </data>
 
     <LinearLayout

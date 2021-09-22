@@ -416,23 +416,23 @@ public class TakePhoto extends Activity implements SurfaceHolder.Callback, Camer
         File inputPath = getDir(0);
         File outputPath = getDir(1);
         File actualImage = new File(inputPath + File.separator + inputFile);
-        try {
-            File compressedImgFile = new Compressor(this)
+        /*try {
+            *//*File compressedImgFile = new Compressor(this)
                     .setDestinationDirectoryPath(outputPath + File.separator)
 //                    .setMaxWidth(2576)
 //                    .setMaxHeight(1932)
 //
-                    /*      .setMaxWidth(640)
-                          .setMaxHeight(480)*/
+                    *//**//*      .setMaxWidth(640)
+                          .setMaxHeight(480)*//**//*
                     .setQuality(88)
                     .setCompressFormat(Bitmap.CompressFormat.JPEG)
-                    .compressToFile(actualImage);
+                    .compressToFile(actualImage);*//*
 
         } catch (IOException e) {
             e.printStackTrace();
             Log.e("tag", e.getMessage());
 
-        }
+        }*/
         // delete the original file
         new File(inputPath + File.separator + inputFile).delete();
         Toast.makeText(this, "Photo Saved in " + outputPath + File.separator + inputFile, Toast.LENGTH_SHORT).show();

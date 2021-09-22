@@ -31,6 +31,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMwraListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.MWRA;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity;
 
 
 public class MwraListActivity extends AppCompatActivity {
@@ -166,7 +167,7 @@ public class MwraListActivity extends AppCompatActivity {
 
     public void addFemale() {
 
-        if (MainApp.mwraList.size() >= Integer.parseInt(MainApp.form.getH220b())) {
+        if (MainApp.mwraList.size() >= Integer.parseInt(MainApp.form.getA101d())) {
             displayAddMoreDialog();
         } else {
             addMoreMWRA();
@@ -257,11 +258,11 @@ public class MwraListActivity extends AppCompatActivity {
     private void displayAddMoreDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.title_mwra_dialog)
-                .setMessage(String.format(getString(R.string.message_mwra_dialog_addmore), MainApp.form.getH220b()))
+                .setMessage(String.format(getString(R.string.message_mwra_dialog_addmore), MainApp.form.getA101d()))
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.
                 // The dialog is automatically dismissed when a dialog button is clicked.
-                .setPositiveButton(R.string.h111a, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.a101d, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // Continue with delete operation
                         addMoreMWRA();
@@ -269,7 +270,7 @@ public class MwraListActivity extends AppCompatActivity {
                 })
 
                 // A null listener allows the button to dismiss the dialog and take no further action.
-                .setNegativeButton(R.string.h111b, null)
+                .setNegativeButton(R.string.a101d, null)
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
@@ -278,11 +279,11 @@ public class MwraListActivity extends AppCompatActivity {
     private void displayProceedDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.title_mwra_dialog)
-                .setMessage(String.format(getString(R.string.message_mwra_dialog_proceeed), MainApp.mwraList.size() + "", MainApp.form.getH220b()))
+                .setMessage(String.format(getString(R.string.message_mwra_dialog_proceeed), MainApp.mwraList.size() + "", MainApp.form.getA101d()))
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.
                 // The dialog is automatically dismissed when a dialog button is clicked.
-                .setPositiveButton(R.string.h111a, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.a101d, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // Continue with delete operation
                         proceedSelect();
@@ -290,14 +291,14 @@ public class MwraListActivity extends AppCompatActivity {
                 })
 
                 // A null listener allows the button to dismiss the dialog and take no further action.
-                .setNegativeButton(R.string.h111b, null)
+                .setNegativeButton(R.string.a101d, null)
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
     }
 
     private void addMoreMWRA() {
-        Intent intent = new Intent(this, SectionH2cActivity.class);
+        Intent intent = new Intent(this, SectionA3Activity.class);
         //   finish();
         MemberInfoLauncher.launch(intent);
     }
@@ -329,7 +330,7 @@ public class MwraListActivity extends AppCompatActivity {
     }*/
 
     public void btnRand(View view) {
-        if (MainApp.mwraList.size() < Integer.parseInt(MainApp.form.getH220b())) {
+        if (MainApp.mwraList.size() < Integer.parseInt(MainApp.form.getA101d())) {
             displayProceedDialog();
         } else {
             proceedSelect();

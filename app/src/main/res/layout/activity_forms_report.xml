@@ -9,15 +9,15 @@
 
         <variable
             name="custerReport"
-            type="foodfortificationsurvey.ui.lists.FormsReportCluster" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportCluster" />
 
         <variable
             name="dtReport"
-            type="foodfortificationsurvey.ui.lists.FormsReportDate" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportDate" />
 
         <variable
             name="pendingReport"
-            type="foodfortificationsurvey.ui.lists.FormsReportPending" />
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportPending" />
     </data>
 
     <LinearLayout

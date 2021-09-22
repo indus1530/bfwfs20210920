@@ -2515,6 +2515,7 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name='Q_sectiong6'>sectiong6</string>
     <string name='Q_sectiong7'>sectiong7</string>
 
+    <string name="Q_istatus"> status</string>
     <string name="istatus">Result of Household Questionnaire interview</string>
     <string name="istatusa">Completed</string>
     <string name="istatusb">No household member at home or no competent respondent at home at time of visit</string>

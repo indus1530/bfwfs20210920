@@ -97,22 +97,22 @@ public class PregAdapter extends RecyclerView.Adapter<PregAdapter.ViewHolder> {
         String birthStatus = "";
         switch (preg.getW115()) {
             case "1":
-                birthStatus = mContext.getString(R.string.w115a);
+                birthStatus = mContext.getString(R.string.a101d);
                 break;
             case "2":
-                birthStatus = mContext.getString(R.string.w115b);
+                birthStatus = mContext.getString(R.string.a101d);
                 break;
             case "3":
-                birthStatus = mContext.getString(R.string.w115c);
+                birthStatus = mContext.getString(R.string.a101d);
                 break;
             case "4":
-                birthStatus = mContext.getString(R.string.w115d);
+                birthStatus = mContext.getString(R.string.a101d);
                 break;
             case "5":
-                birthStatus = mContext.getString(R.string.w115e);
+                birthStatus = mContext.getString(R.string.a101d);
                 break;
             case "6":
-                birthStatus = mContext.getString(R.string.w115f);
+                birthStatus = mContext.getString(R.string.a101d);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + preg.getW115());

@@ -14,7 +14,7 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
-import foodfortificationsurvey.BR;
+import edu.aku.hassannaqvi.foodfortificationsurvey.BR;
 
 
 public class Form extends BaseObservable implements Observable {
@@ -117,6 +117,7 @@ public class Form extends BaseObservable implements Observable {
     private String a314 = StringUtils.EMPTY;
     private String a31496x = StringUtils.EMPTY;
     private String a315 = StringUtils.EMPTY;
+    private String a31501x = StringUtils.EMPTY;
     private String a316 = StringUtils.EMPTY;
     private String a31696x = StringUtils.EMPTY;
     private String a317 = StringUtils.EMPTY;
@@ -1346,6 +1347,16 @@ public class Form extends BaseObservable implements Observable {
     public void setA315(String a315) {
         this.a315 = a315;
         notifyPropertyChanged(BR.a315);
+    }
+
+    @Bindable
+    public String getA31501x() {
+        return a31501x;
+    }
+
+    public void setA31501x(String a31501x) {
+        this.a31501x = a31501x;
+        notifyPropertyChanged(BR.a31501x);
     }
 
     @Bindable
