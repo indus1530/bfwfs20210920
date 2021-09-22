@@ -20,8 +20,8 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionD1Activity;
-import foodfortificationsurvey.R;
-import foodfortificationsurvey.databinding.ActivityMainBinding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.R;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -60,8 +60,8 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.AppInfo;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
-import foodfortificationsurvey.R;
-import foodfortificationsurvey.databinding.ActivityLoginBinding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.R;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 

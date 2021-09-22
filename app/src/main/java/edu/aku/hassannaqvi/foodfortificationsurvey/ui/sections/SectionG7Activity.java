@@ -19,8 +19,8 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import foodfortificationsurvey.R;
-import foodfortificationsurvey.databinding.ActivitySectionG7Binding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.R;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionG7Binding;
 
 
 public class SectionG7Activity extends AppCompatActivity {

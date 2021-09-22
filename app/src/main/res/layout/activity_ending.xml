@@ -60,11 +60,6 @@
                             android:background="@drawable/bottom"
                             android:orientation="horizontal">
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_istatus" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -82,37 +77,49 @@
                                 android:id="@+id/istatusa"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/istatusa" />
+                                android:text="@string/istatus01" />
 
                             <RadioButton
                                 android:id="@+id/istatusb"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/istatusb" />
+                                android:text="@string/istatus02" />
 
                             <RadioButton
                                 android:id="@+id/istatusc"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/istatusc" />
+                                android:text="@string/istatus03" />
 
                             <RadioButton
                                 android:id="@+id/istatusd"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/istatusd" />
+                                android:text="@string/istatus04" />
 
                             <RadioButton
                                 android:id="@+id/istatuse"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/istatuse" />
+                                android:text="@string/istatus05" />
 
                             <RadioButton
                                 android:id="@+id/istatusf"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/istatusf" />
+                                android:text="@string/istatus06" />
+
+                            <RadioButton
+                                android:id="@+id/istatusg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/istatus07" />
+
+                            <RadioButton
+                                android:id="@+id/istatush"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/istatus08" />
 
                             <RadioButton
                                 android:id="@+id/istatus96"

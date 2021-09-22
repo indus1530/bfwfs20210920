@@ -52,7 +52,7 @@
                  </menu>
              </item>
  -->
-            <item
+          <!--  <item
                 android:id="@+id/action_sections"
                 android:title="Sections">
 
@@ -131,7 +131,7 @@
 
 
                 </menu>
-            </item>
+            </item>-->
         </menu>
     </item>
 </menu>
