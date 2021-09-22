@@ -15,22 +15,24 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
+import foodfortificationsurvey.R;
+import foodfortificationsurvey.databinding.ActivitySectionG4Binding;
 
 
-public class SectionA1Activity extends AppCompatActivity {
-    private static final String TAG = "SectionA1Activity";
-    ActivitySectionA1Binding bi;
+public class SectionG4Activity extends AppCompatActivity {
+    private static final String TAG = "SectionG4Activity";
+    ActivitySectionG4Binding bi;
     private DatabaseHelper db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a1);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g4);
         bi.setForm(form);
 
     }
