@@ -53,22 +53,25 @@
         <entry key="..\:/Users/Abdul.sajid/Desktop/ANDROID APPS/Android/tajik_anemia_study/app/src/main/res/layout/activity_section_w1a.xml" value="0.53" />
         <entry key="..\:/Users/Abdul.sajid/Desktop/ANDROID APPS/Android/tajik_anemia_study/app/src/main/res/layout/activity_section_w1b.xml" value="0.5" />
         <entry key="..\:/Users/Abdul.sajid/Desktop/ANDROID APPS/Android/tajik_anemia_study/app/src/main/res/layout/child_row.xml" value="0.5578125" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_identification.xml" value="0.55859375" />
+        <entry key="..\:/Users/Hassan.naqvi/StudioProjects/FoodFortificationSurvey/app/src/main/res/layout/activity_login.xml" value="0.52" />
+        <entry key="..\:/Users/Hassan.naqvi/StudioProjects/FoodFortificationSurvey/app/src/main/res/layout/activity_main.xml" value="0.58125" />
+        <entry key="..\:/Users/Hassan.naqvi/StudioProjects/FoodFortificationSurvey/app/src/main/res/layout/activity_section_d1.xml" value="0.58125" />
+        <entry key="..\:/Users/Hassan.naqvi/StudioProjects/FoodFortificationSurvey/app/src/main/res/layout/activity_sync.xml" value="0.32890625" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_a1.xml" value="0.3850296176628972" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_a2.xml" value="0.6" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_a3.xml" value="0.1" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_b1.xml" value="0.4" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_b1.xml" value="0.1" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_c1.xml" value="0.11528539180909383" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_c2.xml" value="0.4725" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_c3.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_d1.xml" value="0.4055587067498582" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_e1.xml" value="0.21575135787567895" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_f1.xml" value="0.6" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_f1.xml" value="0.20072992700729927" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_f2.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_f3.xml" value="0.11738630766704974" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g1.xml" value="0.16425453710085" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g2.xml" value="0.536" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g3.xml" value="0.536" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g2.xml" value="0.203125" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g3.xml" value="0.11871160551220322" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g4.xml" value="0.5375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g5.xml" value="0.3917808219178082" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/BFWFS20210920/app/src/main/res/layout/activity_section_g6.xml" value="0.3743455497382199" />
@@ -76,7 +79,8 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

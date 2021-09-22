@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "BFWFS"
+rootProject.name = "foodfortificationsurvey"
