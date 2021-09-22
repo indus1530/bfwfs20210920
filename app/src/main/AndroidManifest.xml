@@ -27,9 +27,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup">
-        <activity
-            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG3Activity"
-            android:exported="true" />
+
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.MwraListActivity"
             android:screenOrientation="portrait"
@@ -116,6 +115,42 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG2Activity"
+            android:label="@string/moduleg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG3Activity"
+            android:label="@string/moduleg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG4Activity"
+            android:label="@string/moduleg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG5Activity"
+            android:label="@string/moduleg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG6Activity"
+            android:label="@string/moduleg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG7Activity"
+            android:label="@string/moduleg"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
