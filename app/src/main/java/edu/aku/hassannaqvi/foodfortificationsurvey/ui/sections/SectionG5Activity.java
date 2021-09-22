@@ -20,19 +20,19 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
 import foodfortificationsurvey.R;
-import foodfortificationsurvey.databinding.ActivitySectionA2Binding;
+import foodfortificationsurvey.databinding.ActivitySectionG5Binding;
 
 
-public class SectionA2Activity extends AppCompatActivity {
-    private static final String TAG = "SectionA2Activity";
-    ActivitySectionA2Binding bi;
+public class SectionG5Activity extends AppCompatActivity {
+    private static final String TAG = "SectionG5Activity";
+    ActivitySectionG5Binding bi;
     private DatabaseHelper db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g5);
         bi.setCallback(this);
         bi.setForm(form);
 
@@ -43,7 +43,7 @@ public class SectionA2Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SC1, form.sC1toString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SG5, form.sG5toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db_form + e.getMessage());
