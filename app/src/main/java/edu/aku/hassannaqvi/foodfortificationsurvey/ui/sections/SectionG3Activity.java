@@ -15,12 +15,12 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
+import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionG3Binding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import foodfortificationsurvey.R;
-import foodfortificationsurvey.databinding.ActivitySectionG3Binding;
 
 
 public class SectionG3Activity extends AppCompatActivity {
@@ -43,7 +43,7 @@ public class SectionG3Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SC1, form.sC1toString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SG3, form.sG3toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db_form + e.getMessage());
