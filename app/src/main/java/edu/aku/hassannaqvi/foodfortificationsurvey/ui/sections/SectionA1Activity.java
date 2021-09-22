@@ -15,12 +15,12 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
+import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA1Binding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import foodfortificationsurvey.R;
-import foodfortificationsurvey.databinding.ActivitySectionA1Binding;
 
 
 public class SectionA1Activity extends AppCompatActivity {
