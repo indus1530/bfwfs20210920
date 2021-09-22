@@ -22,6 +22,8 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA3Binding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
+import  edu.aku.hassannaqvi.foodfortificationsurvey.R;
+import  edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA3Binding;
 
 
 public class SectionA3Activity extends AppCompatActivity {
