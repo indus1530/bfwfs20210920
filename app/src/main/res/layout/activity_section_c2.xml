@@ -355,11 +355,14 @@
                             android:inputType="number"
                             android:maxLength="3"
                             android:text="@={form.c204}"
-
+                            app:minValue="0"
                             app:maxValue="100"
                             app:type="range" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- c205  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
@@ -398,7 +401,7 @@
                             android:inputType="number"
                             android:maxLength="3"
                             android:text="@={form.c205}"
-
+                            app:minValue="0"
                             app:maxValue="100"
                             app:type="range" />
                     </LinearLayout>
