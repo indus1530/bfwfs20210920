@@ -1843,7 +1843,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a315"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:hint="##"
@@ -2241,7 +2241,7 @@
                             <RadioButton
                                 android:id="@+id/a31901a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31901.equals(`1`)}"
                                 android:onClick="@{()->form.setA31901(`1`)}"
@@ -2250,7 +2250,7 @@
                             <RadioButton
                                 android:id="@+id/a31901b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31901.equals(`2`)}"
                                 android:onClick="@{()->form.setA31901(`2`)}"
@@ -2275,7 +2275,7 @@
                             <RadioButton
                                 android:id="@+id/a31902a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31902.equals(`1`)}"
                                 android:onClick="@{()->form.setA31902(`1`)}"
@@ -2284,7 +2284,7 @@
                             <RadioButton
                                 android:id="@+id/a31902b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31902.equals(`2`)}"
                                 android:onClick="@{()->form.setA31902(`2`)}"
@@ -2309,7 +2309,7 @@
                             <RadioButton
                                 android:id="@+id/a31903a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31903.equals(`1`)}"
                                 android:onClick="@{()->form.setA31903(`1`)}"
@@ -2318,7 +2318,7 @@
                             <RadioButton
                                 android:id="@+id/a31903b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31903.equals(`2`)}"
                                 android:onClick="@{()->form.setA31903(`2`)}"
@@ -2343,7 +2343,7 @@
                             <RadioButton
                                 android:id="@+id/a31904a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31904.equals(`1`)}"
                                 android:onClick="@{()->form.setA31904(`1`)}"
@@ -2352,7 +2352,7 @@
                             <RadioButton
                                 android:id="@+id/a31904b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31904.equals(`2`)}"
                                 android:onClick="@{()->form.setA31904(`2`)}"
@@ -2377,7 +2377,7 @@
                             <RadioButton
                                 android:id="@+id/a31905a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31905.equals(`1`)}"
                                 android:onClick="@{()->form.setA31905(`1`)}"
@@ -2386,7 +2386,7 @@
                             <RadioButton
                                 android:id="@+id/a31905b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31905.equals(`2`)}"
                                 android:onClick="@{()->form.setA31905(`2`)}"
@@ -2411,7 +2411,7 @@
                             <RadioButton
                                 android:id="@+id/a31906a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31906.equals(`1`)}"
                                 android:onClick="@{()->form.setA31906(`1`)}"
@@ -2420,7 +2420,7 @@
                             <RadioButton
                                 android:id="@+id/a31906b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31906.equals(`2`)}"
                                 android:onClick="@{()->form.setA31906(`2`)}"
@@ -2445,7 +2445,7 @@
                             <RadioButton
                                 android:id="@+id/a31907a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31907.equals(`1`)}"
                                 android:onClick="@{()->form.setA31907(`1`)}"
@@ -2454,7 +2454,7 @@
                             <RadioButton
                                 android:id="@+id/a31907b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31907.equals(`2`)}"
                                 android:onClick="@{()->form.setA31907(`2`)}"
@@ -2479,7 +2479,7 @@
                             <RadioButton
                                 android:id="@+id/a31908a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31908.equals(`1`)}"
                                 android:onClick="@{()->form.setA31908(`1`)}"
@@ -2488,7 +2488,7 @@
                             <RadioButton
                                 android:id="@+id/a31908b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31908.equals(`2`)}"
                                 android:onClick="@{()->form.setA31908(`2`)}"
@@ -2513,7 +2513,7 @@
                             <RadioButton
                                 android:id="@+id/a31909a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31909.equals(`1`)}"
                                 android:onClick="@{()->form.setA31909(`1`)}"
@@ -2522,7 +2522,7 @@
                             <RadioButton
                                 android:id="@+id/a31909b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31909.equals(`2`)}"
                                 android:onClick="@{()->form.setA31909(`2`)}"
@@ -2547,7 +2547,7 @@
                             <RadioButton
                                 android:id="@+id/a31910a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31910.equals(`1`)}"
                                 android:onClick="@{()->form.setA31910(`1`)}"
@@ -2556,7 +2556,7 @@
                             <RadioButton
                                 android:id="@+id/a31910b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31910.equals(`2`)}"
                                 android:onClick="@{()->form.setA31910(`2`)}"
@@ -2581,7 +2581,7 @@
                             <RadioButton
                                 android:id="@+id/a31911a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31911.equals(`1`)}"
                                 android:onClick="@{()->form.setA31911(`1`)}"
@@ -2590,7 +2590,7 @@
                             <RadioButton
                                 android:id="@+id/a31911b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31911.equals(`2`)}"
                                 android:onClick="@{()->form.setA31911(`2`)}"
@@ -2615,7 +2615,7 @@
                             <RadioButton
                                 android:id="@+id/a31912a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31912.equals(`1`)}"
                                 android:onClick="@{()->form.setA31912(`1`)}"
@@ -2624,7 +2624,7 @@
                             <RadioButton
                                 android:id="@+id/a31912b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31912.equals(`2`)}"
                                 android:onClick="@{()->form.setA31912(`2`)}"
@@ -2649,7 +2649,7 @@
                             <RadioButton
                                 android:id="@+id/a31913a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31913.equals(`1`)}"
                                 android:onClick="@{()->form.setA31913(`1`)}"
@@ -2658,7 +2658,7 @@
                             <RadioButton
                                 android:id="@+id/a31913b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31913.equals(`2`)}"
                                 android:onClick="@{()->form.setA31913(`2`)}"
@@ -2683,7 +2683,7 @@
                             <RadioButton
                                 android:id="@+id/a31914a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31914.equals(`1`)}"
                                 android:onClick="@{()->form.setA31914(`1`)}"
@@ -2692,7 +2692,7 @@
                             <RadioButton
                                 android:id="@+id/a31914b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31914.equals(`2`)}"
                                 android:onClick="@{()->form.setA31914(`2`)}"
@@ -2717,7 +2717,7 @@
                             <RadioButton
                                 android:id="@+id/a31915a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31915.equals(`1`)}"
                                 android:onClick="@{()->form.setA31915(`1`)}"
@@ -2726,7 +2726,7 @@
                             <RadioButton
                                 android:id="@+id/a31915b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31915.equals(`2`)}"
                                 android:onClick="@{()->form.setA31915(`2`)}"
@@ -2751,7 +2751,7 @@
                             <RadioButton
                                 android:id="@+id/a31916a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31916.equals(`1`)}"
                                 android:onClick="@{()->form.setA31916(`1`)}"
@@ -2760,7 +2760,7 @@
                             <RadioButton
                                 android:id="@+id/a31916b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31916.equals(`2`)}"
                                 android:onClick="@{()->form.setA31916(`2`)}"
@@ -2785,7 +2785,7 @@
                             <RadioButton
                                 android:id="@+id/a31917a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31917.equals(`1`)}"
                                 android:onClick="@{()->form.setA31917(`1`)}"
@@ -2794,7 +2794,7 @@
                             <RadioButton
                                 android:id="@+id/a31917b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31917.equals(`2`)}"
                                 android:onClick="@{()->form.setA31917(`2`)}"
@@ -2819,7 +2819,7 @@
                             <RadioButton
                                 android:id="@+id/a31918a"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31918.equals(`1`)}"
                                 android:onClick="@{()->form.setA31918(`1`)}"
@@ -2828,7 +2828,7 @@
                             <RadioButton
                                 android:id="@+id/a31918b"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a31918.equals(`2`)}"
                                 android:onClick="@{()->form.setA31918(`2`)}"
