@@ -33,14 +33,18 @@
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.MwraListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.ChildListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.PregnancyListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.LoginActivity"
             android:screenOrientation="portrait"
@@ -53,66 +57,86 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA32Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish1"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionD1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionE1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionF1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionF2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionF3Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionG2Activity"
             android:label="@string/moduleg"
