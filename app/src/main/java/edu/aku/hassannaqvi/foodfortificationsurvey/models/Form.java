@@ -1806,6 +1806,7 @@ public class Form extends BaseObservable implements Observable {
     public void setA32901(String a32901) {
         if (this.a32901.equals(a32901)) return; // for all checkboxes
         this.a32901 = a32901;
+        setA32901x(a32901.equals("1") ? this.a32901x : "");
         notifyPropertyChanged(BR.a32901);
     }
 
@@ -1827,6 +1828,7 @@ public class Form extends BaseObservable implements Observable {
     public void setA32902(String a32902) {
         if (this.a32902.equals(a32902)) return; // for all checkboxes
         this.a32902 = a32902;
+        setA32902x(a32902.equals("2") ? this.a32902x : "");
         notifyPropertyChanged(BR.a32902);
     }
 
@@ -1848,6 +1850,7 @@ public class Form extends BaseObservable implements Observable {
     public void setA32903(String a32903) {
         if (this.a32903.equals(a32903)) return; // for all checkboxes
         this.a32903 = a32903;
+        setA32903x(a32903.equals("3") ? this.a32903x : "");
         notifyPropertyChanged(BR.a32903);
     }
 
@@ -1869,6 +1872,7 @@ public class Form extends BaseObservable implements Observable {
     public void setA32904(String a32904) {
         if (this.a32904.equals(a32904)) return; // for all checkboxes
         this.a32904 = a32904;
+        setA32904x(a32904.equals("4") ? this.a32904x : "");
         notifyPropertyChanged(BR.a32904);
     }
 
@@ -1890,6 +1894,7 @@ public class Form extends BaseObservable implements Observable {
     public void setA32905(String a32905) {
         if (this.a32905.equals(a32905)) return; // for all checkboxes
         this.a32905 = a32905;
+        setA32905x(a32905.equals("5") ? this.a32905x : "");
         notifyPropertyChanged(BR.a32905);
     }
 
@@ -1911,6 +1916,7 @@ public class Form extends BaseObservable implements Observable {
     public void setA32906(String a32906) {
         if (this.a32906.equals(a32906)) return; // for all checkboxes
         this.a32906 = a32906;
+        setA32906x(a32906.equals("6") ? this.a32906x : "");
         notifyPropertyChanged(BR.a32906);
     }
 
