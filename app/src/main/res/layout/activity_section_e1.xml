@@ -316,7 +316,7 @@
                                 android:maxLength="4"
                                 android:tag="e10401"
                                 android:text="@={form.e10401x}"
-
+                                app:minValue="0"
                                 android:visibility='@{e10401.checked? View.VISIBLE : View.GONE}'
                                 app:maxValue="1000"
                                 app:type="range" />
@@ -338,7 +338,7 @@
                                 android:maxLength="4"
                                 android:tag="e10402"
                                 android:text="@={form.e10402x}"
-
+                                app:minValue="0"
                                 android:visibility='@{e10402.checked? View.VISIBLE : View.GONE}'
                                 app:maxValue="1000"
                                 app:type="range" />
@@ -360,7 +360,7 @@
                                 android:maxLength="4"
                                 android:tag="e10403"
                                 android:text="@={form.e10403x}"
-
+                                app:minValue="0"
                                 android:visibility='@{e10403.checked? View.VISIBLE : View.GONE}'
                                 app:maxValue="1000"
                                 app:type="range" />
@@ -382,7 +382,7 @@
                                 android:maxLength="4"
                                 android:tag="e10404"
                                 android:text="@={form.e10404x}"
-
+                                app:minValue="0"
                                 android:visibility='@{e10404.checked? View.VISIBLE : View.GONE}'
                                 app:maxValue="1000"
                                 app:type="range" />
@@ -449,7 +449,7 @@
                                 android:maxLength="4"
                                 android:tag="e10501"
                                 android:text="@={form.e10501x}"
-
+                                app:minValue="0"
                                 android:visibility='@{e10501.checked? View.VISIBLE : View.GONE}'
                                 app:maxValue="1000"
                                 app:type="range" />
@@ -555,7 +555,7 @@
                             android:inputType="number"
                             android:maxLength="4"
                             android:text="@={form.e107}"
-
+                            app:minValue="0"
                             app:maxValue="1000"
                             app:type="range" />
                     </LinearLayout>
