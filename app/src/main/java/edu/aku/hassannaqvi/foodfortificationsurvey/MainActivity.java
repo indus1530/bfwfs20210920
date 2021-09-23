@@ -12,6 +12,7 @@ import androidx.databinding.DataBindingUtil;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.AndroidDatabaseManager;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMainBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.SyncActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportCluster;
@@ -19,13 +20,11 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportDate;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportPending;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionD1Activity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.R;
-import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMainBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionE1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionF1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionF2Activity;
@@ -99,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.seca3:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionA3Activity.class));
+                startActivity(new Intent(this, SectionA31Activity.class));
                 break;
             case R.id.secb1:
                 MainApp.form = new Form();

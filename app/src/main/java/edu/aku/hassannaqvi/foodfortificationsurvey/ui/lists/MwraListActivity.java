@@ -31,7 +31,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMwraListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.MWRA;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 
 
 public class MwraListActivity extends AppCompatActivity {
@@ -298,7 +298,7 @@ public class MwraListActivity extends AppCompatActivity {
     }
 
     private void addMoreMWRA() {
-        Intent intent = new Intent(this, SectionA3Activity.class);
+        Intent intent = new Intent(this, SectionA31Activity.class);
         //   finish();
         MemberInfoLauncher.launch(intent);
     }

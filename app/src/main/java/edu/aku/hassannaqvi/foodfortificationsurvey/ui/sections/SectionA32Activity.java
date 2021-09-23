@@ -20,22 +20,19 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
-import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA3Binding;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import  edu.aku.hassannaqvi.foodfortificationsurvey.R;
-import  edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA3Binding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA32Binding;
 
 
-public class SectionA3Activity extends AppCompatActivity {
-    private static final String TAG = "SectionA3Activity";
-    ActivitySectionA3Binding bi;
+public class SectionA32Activity extends AppCompatActivity {
+    private static final String TAG = "SectionA32Activity";
+    ActivitySectionA32Binding bi;
     private DatabaseHelper db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a3);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a32);
         bi.setCallback(this);
         bi.setForm(form);
 

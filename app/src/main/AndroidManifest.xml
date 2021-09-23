@@ -64,7 +64,7 @@
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity"
+            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1"
             android:windowSoftInputMode="adjustPan|stateHidden" />

@@ -31,7 +31,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityChildListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Child;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 
 
 public class ChildListActivity extends AppCompatActivity {
@@ -183,7 +183,7 @@ public class ChildListActivity extends AppCompatActivity {
         finish();
 
 
-        startActivity(new Intent(this, SectionA3Activity.class).putExtra("complete", true));
+        startActivity(new Intent(this, SectionA31Activity.class).putExtra("complete", true));
         //startActivity(new Intent(this, PregnancyListActivity.class).putExtra("complete", true));
 
     }
@@ -232,7 +232,7 @@ public class ChildListActivity extends AppCompatActivity {
 
 
     private void addMoreChild() {
-        Intent intent = new Intent(this, SectionA3Activity.class);
+        Intent intent = new Intent(this, SectionA31Activity.class);
         //   finish();
         MemberInfoLauncher.launch(intent);
     }

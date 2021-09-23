@@ -26,7 +26,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityPregnancyListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Pregnancy;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA3Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 
 
 public class PregnancyListActivity extends AppCompatActivity {
@@ -154,7 +154,7 @@ public class PregnancyListActivity extends AppCompatActivity {
     }
 
     public void addPreg() {
-        Intent intent = new Intent(this, SectionA3Activity.class);
+        Intent intent = new Intent(this, SectionA31Activity.class);
         //   finish();
         MemberInfoLauncher.launch(intent);
     }
@@ -164,7 +164,7 @@ public class PregnancyListActivity extends AppCompatActivity {
         // MainApp.preg = db.getYoungestPregByMUID(MainApp.mwra.getUid());
         MainApp.pregList = new ArrayList<>();
         finish();
-        startActivity(new Intent(this, SectionA3Activity.class).putExtra("complete", true));
+        startActivity(new Intent(this, SectionA31Activity.class).putExtra("complete", true));
 
     }
 
