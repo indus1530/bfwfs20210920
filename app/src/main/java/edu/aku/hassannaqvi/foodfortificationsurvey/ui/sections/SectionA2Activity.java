@@ -21,9 +21,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA2Binding;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import  edu.aku.hassannaqvi.foodfortificationsurvey.R;
-import  edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA2Binding;
 
 
 public class SectionA2Activity extends AppCompatActivity {
@@ -64,14 +61,14 @@ public class SectionA2Activity extends AppCompatActivity {
         if (!formValidation()) return;
         if (updateDB()) {
             finish();
-            startActivity(new Intent(this, MainActivity.class).putExtra("complete", true));
+            startActivity(new Intent(this, MainActivity.class));
         } else Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
     }
 
 
     public void btnEnd(View view) {
         finish();
-        startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+        startActivity(new Intent(this, MainActivity.class));
     }
 
 

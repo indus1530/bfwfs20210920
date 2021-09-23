@@ -44,10 +44,9 @@
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.LoginActivity"
             android:screenOrientation="portrait"
-            android:exported="true"
             android:theme="@style/Theme.splashscreen"
             android:windowSoftInputMode="adjustResize|stateHidden"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
