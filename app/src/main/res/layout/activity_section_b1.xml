@@ -828,9 +828,13 @@
                                 android:tag="b10396"
                                 android:text="@={form.b10396x}"
                                 android:visibility='@{b10396.checked? View.VISIBLE : View.GONE}' />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103e  Radio   -->
                 <androidx.cardview.widget.CardView
