@@ -490,6 +490,24 @@
                                 android:onClick="@{()->form.setE105(`1`)}"
                                 android:text="@string/e10501" />
 
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/e10501x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:enabled="@{form.e105.equals(`1`)}"
+                                android:gravity="center"
+                                android:hint="####"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:padding="8dp"
+                                android:tag="e10501"
+                                android:text="@={form.e10501x}"
+                                app:maxValue="1000"
+                                app:minValue="1"
+                                app:type="range" />
+
                             <RadioButton
                                 android:id="@+id/e10502"
                                 android:layout_width="0dp"
@@ -498,23 +516,6 @@
                                 android:checked="@{form.e105.equals(`98`)}"
                                 android:onClick="@{()->form.setE105(`98`)}"
                                 android:text="@string/e10502" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/e10501x"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="7dp"
-                                android:layout_weight="1"
-                                android:enabled="@{form.e105.equals(`1`)}"
-                                android:gravity="center"
-                                android:hint="####"
-                                android:inputType="number"
-                                android:maxLength="4"
-                                android:tag="e10501"
-                                android:text="@={form.e10501x}"
-                                app:maxValue="1000"
-                                app:minValue="0"
-                                app:type="range" />
 
                         </RadioGroup>
 
