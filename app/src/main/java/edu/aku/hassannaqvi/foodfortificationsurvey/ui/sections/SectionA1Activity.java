@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.form;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -21,7 +22,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA1Binding;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
 
 
 public class SectionA1Activity extends AppCompatActivity {
@@ -37,6 +37,20 @@ public class SectionA1Activity extends AppCompatActivity {
         bi.setCallback(this);
         bi.setForm(form);
 
+    }
+
+
+    public void ageSkip(CharSequence s, int i, int i1, int i2) {
+        if (TextUtils.isEmpty(bi.a113.getText())) return;
+        if (Integer.parseInt(bi.a113.getText().toString()) < 18) {
+            bi.a114t.clearCheck();
+            bi.a115t.clearCheck();
+            bi.fldGrpCVa114t.setVisibility(View.GONE);
+            bi.fldGrpCVa115t.setVisibility(View.GONE);
+        } else {
+            bi.fldGrpCVa114t.setVisibility(View.VISIBLE);
+            bi.fldGrpCVa115t.setVisibility(View.VISIBLE);
+        }
     }
 
 
