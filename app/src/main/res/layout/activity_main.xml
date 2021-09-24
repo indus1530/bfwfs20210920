@@ -323,7 +323,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="A1"
+                            android:text="A2"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp"/>
 
@@ -338,7 +338,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="A2"
+                            android:text="A31"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 
@@ -353,7 +353,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="A3"
+                            android:text="A32"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 
