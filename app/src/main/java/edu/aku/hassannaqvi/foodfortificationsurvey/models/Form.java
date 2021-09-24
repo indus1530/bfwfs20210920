@@ -3469,6 +3469,15 @@ public class Form extends BaseObservable implements Observable {
     public void setD10398(String d10398) {
         if (this.d10398.equals(d10398)) return; // for all checkboxes
         this.d10398 = d10398;
+        setD10301(d10398.equals("98") ? "" : this.d10301);
+        setD10302(d10398.equals("98") ? "" : this.d10302);
+        setD10303(d10398.equals("98") ? "" : this.d10303);
+        setD10304(d10398.equals("98") ? "" : this.d10304);
+        setD10305(d10398.equals("98") ? "" : this.d10305);
+        setD10306(d10398.equals("98") ? "" : this.d10306);
+        setD10307(d10398.equals("98") ? "" : this.d10307);
+        setD10308(d10398.equals("98") ? "" : this.d10308);
+        setD10396(d10398.equals("98") ? "" : this.d10396);
         notifyPropertyChanged(BR.d10398);
     }
 
