@@ -1258,6 +1258,9 @@ public class Form extends BaseObservable implements Observable {
 
     public void setA308(String a308) {
         this.a308 = a308;
+        setA309(a308.equals("3") ? this.a309 : "");
+        setA30901x(a308.equals("3") ? this.a30901x : "");
+        setA310(a308.equals("3") ? this.a310 : "");
         notifyPropertyChanged(BR.a308);
     }
 

@@ -28,6 +28,7 @@ public class SectionA1Activity extends AppCompatActivity {
     private static final String TAG = "SectionA1Activity";
     ActivitySectionA1Binding bi;
     private DatabaseHelper db;
+    private boolean flag = false;
 
 
     @Override
@@ -47,9 +48,11 @@ public class SectionA1Activity extends AppCompatActivity {
             bi.a115t.clearCheck();
             bi.fldGrpCVa114t.setVisibility(View.GONE);
             bi.fldGrpCVa115t.setVisibility(View.GONE);
+            flag = true;
         } else {
             bi.fldGrpCVa114t.setVisibility(View.VISIBLE);
             bi.fldGrpCVa115t.setVisibility(View.VISIBLE);
+            flag = false;
         }
     }
 
