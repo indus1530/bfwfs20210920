@@ -236,7 +236,7 @@
                                 android:id="@+id/b10298"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.b10298.equals(`96`)}"
+                                android:checked="@{form.b10298.equals(`98`)}"
                                 android:onClick="@{()->form.setB10298(form.b10298.equals(`96`)?``:`96`)}"
                                 android:text="@string/b10298" />
 
@@ -248,7 +248,7 @@
                                 android:hint="@string/b10298"
                                 android:tag="b10298"
                                 android:text="@={form.b10298x}"
-                                android:visibility='@{b10298.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{form.b10298.equals(`98`)? View.VISIBLE : View.GONE}' />
 
                         </LinearLayout>
 
@@ -314,9 +314,8 @@
                                 android:text="@string/Q_b103a" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103a" />
 
                         </LinearLayout>
@@ -422,10 +421,14 @@
                                 android:hint="@string/b103a96"
                                 android:tag="b103a96"
                                 android:text="@={form.b103a96x}"
-                                android:visibility='@{b103a96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103a.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103b  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -450,10 +453,10 @@
                                 android:text="@string/Q_b103b" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103b" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -557,10 +560,14 @@
                                 android:hint="@string/b103b96"
                                 android:tag="b103b96"
                                 android:text="@={form.b103b96x}"
-                                android:visibility='@{b103b96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103b.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103c  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -585,10 +592,10 @@
                                 android:text="@string/Q_b103c" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103c" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -692,10 +699,14 @@
                                 android:hint="@string/b103c96"
                                 android:tag="b103c96"
                                 android:text="@={form.b103c96x}"
-                                android:visibility='@{b103c96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{form.b103c.equals(`96`) ? View.VISIBLE : View.GONE}' />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103d  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -720,10 +731,10 @@
                                 android:text="@string/Q_b103d" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103d" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -827,7 +838,7 @@
                                 android:hint="@string/b10396"
                                 android:tag="b10396"
                                 android:text="@={form.b10396x}"
-                                android:visibility='@{b10396.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103d.equals(`96`) ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 
@@ -859,10 +870,10 @@
                                 android:text="@string/Q_b103e" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103e" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -966,10 +977,14 @@
                                 android:hint="@string/b103e96"
                                 android:tag="b103e96"
                                 android:text="@={form.b103e96x}"
-                                android:visibility='@{b103e96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103e.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103f  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -994,10 +1009,10 @@
                                 android:text="@string/Q_b103f" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103f" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1101,10 +1116,14 @@
                                 android:hint="@string/b103f96"
                                 android:tag="b103f96"
                                 android:text="@={form.b103f96x}"
-                                android:visibility='@{b103f96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103f.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103g  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1129,10 +1148,10 @@
                                 android:text="@string/Q_b103g" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103g" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1236,10 +1255,14 @@
                                 android:hint="@string/b103g96"
                                 android:tag="b103g96"
                                 android:text="@={form.b103g96x}"
-                                android:visibility='@{b103g96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103g.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103h  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1264,10 +1287,10 @@
                                 android:text="@string/Q_b103h" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103h" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1362,9 +1385,13 @@
                                 android:checked="@{form.b103h.equals(`96`)}"
                                 android:onClick="@{()->form.setB103h(`96`)}"
                                 android:text="@string/b103h96" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103i  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1389,10 +1416,10 @@
                                 android:text="@string/Q_b103i" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103i" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1496,10 +1523,14 @@
                                 android:hint="@string/b103i96"
                                 android:tag="b103i96"
                                 android:text="@={form.b103i96x}"
-                                android:visibility='@{b103i96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103i.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103j  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1524,10 +1555,10 @@
                                 android:text="@string/Q_b103j" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103j" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1631,10 +1662,14 @@
                                 android:hint="@string/b103j96"
                                 android:tag="b103j96"
                                 android:text="@={form.b103j96x}"
-                                android:visibility='@{b103j96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103j.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103k  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1659,10 +1694,10 @@
                                 android:text="@string/Q_b103k" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103k" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1757,9 +1792,13 @@
                                 android:checked="@{form.b103k.equals(`96`)}"
                                 android:onClick="@{()->form.setB103k(`96`)}"
                                 android:text="@string/b103k96" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b103l  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1784,10 +1823,10 @@
                                 android:text="@string/Q_b103l" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b103l" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1891,10 +1930,14 @@
                                 android:hint="@string/b103l96"
                                 android:tag="b103l96"
                                 android:text="@={form.b103l96x}"
-                                android:visibility='@{b103l96.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.b103l.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- b104  Radio   -->
                 <!--<androidx.cardview.widget.CardView
