@@ -504,7 +504,8 @@
                         <RadioGroup
                             android:id="@+id/a322"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()-> a323.clearCheck() + a324.clearCheck() + a325.clearCheck()}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -640,7 +641,8 @@
                 <!-- a323  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa323"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.a322.equals(`11`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -670,6 +672,7 @@
                             android:id="@+id/a323"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->a324.clearCheck() + a325.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -700,7 +703,8 @@
                 <!-- a324  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa324"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.a322.equals(`11`) || form.a323.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -760,7 +764,8 @@
                 <!-- a325  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa325"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.a322.equals(`11`) || form.a323.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -904,7 +909,8 @@
                 <!-- a327  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa327"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.a3262.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -975,7 +981,7 @@
                             android:maxLength="3"
                             android:tag="a32701"
                             android:text="@={form.a32701x}"
-                            android:visibility='@{a32701.checked? View.VISIBLE : View.GONE}'
+                            android:visibility="@{form.a327.equals(`1`)? View.VISIBLE : View.GONE}"
                             app:maxValue="100"
                             app:minValue="0"
                             app:type="range" />
@@ -990,7 +996,7 @@
                             android:maxLength="3"
                             android:tag="a32702"
                             android:text="@={form.a32702x}"
-                            android:visibility='@{a32702.checked? View.VISIBLE : View.GONE}'
+                            android:visibility="@{form.a327.equals(`2`)? View.VISIBLE : View.GONE}"
                             app:maxValue="100"
                             app:minValue="0"
                             app:type="range" />
