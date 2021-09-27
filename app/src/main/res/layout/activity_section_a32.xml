@@ -629,7 +629,7 @@
                                 android:hint="@string/a32296"
                                 android:tag="a32296"
                                 android:text="@={form.a32296x}"
-                                android:visibility='@{a32296.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.a322.equals(`96`) ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 

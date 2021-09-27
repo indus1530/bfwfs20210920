@@ -2524,6 +2524,7 @@ public class Form extends BaseObservable implements Observable {
     public void setB104(String b104) {
         this.b104 = b104;
         setB10496x(b104.equals("96") ? this.b10496x : "");
+        setB10901(b104.equals("6") ? "" : b104.equals("7") ? "" : this.b10901);
         notifyPropertyChanged(BR.b104);
     }
 
@@ -2566,6 +2567,10 @@ public class Form extends BaseObservable implements Observable {
     public void setB106(String b106) {
         this.b106 = b106;
         setB10696x(b106.equals("96") ? this.b10696x : "");
+        setB107(b106.equals("1") ? this.b107
+                : b106.equals("2") ? this.b107
+                : b106.equals("3") ? this.b107
+                : "");
         notifyPropertyChanged(BR.b106);
     }
 
@@ -2728,6 +2733,19 @@ public class Form extends BaseObservable implements Observable {
 
     public void setB113(String b113) {
         this.b113 = b113;
+        setB114(b113.equals("2") ? "" : this.b114);
+        setB115(b113.equals("2") ? "" : this.b115);
+        setB11601(b113.equals("2") ? "" : this.b11601);
+        setB11602(b113.equals("2") ? "" : this.b11602);
+        setB11603(b113.equals("2") ? "" : this.b11603);
+        setB11604(b113.equals("2") ? "" : this.b11604);
+        setB11605(b113.equals("2") ? "" : this.b11605);
+        setB11606(b113.equals("2") ? "" : this.b11606);
+        setB11607(b113.equals("2") ? "" : this.b11607);
+        setB11608(b113.equals("2") ? "" : this.b11608);
+        setB11609(b113.equals("2") ? "" : this.b11609);
+        setB11696(b113.equals("2") ? "" : this.b11696);
+        setB117(b113.equals("2") ? "" : this.b117);
         notifyPropertyChanged(BR.b113);
     }
 
@@ -2738,6 +2756,18 @@ public class Form extends BaseObservable implements Observable {
 
     public void setB114(String b114) {
         this.b114 = b114;
+        setB115(b114.equals("2") ? "" : this.b115);
+        setB11601(b114.equals("2") ? "" : this.b11601);
+        setB11602(b114.equals("2") ? "" : this.b11602);
+        setB11603(b114.equals("2") ? "" : this.b11603);
+        setB11604(b114.equals("2") ? "" : this.b11604);
+        setB11605(b114.equals("2") ? "" : this.b11605);
+        setB11606(b114.equals("2") ? "" : this.b11606);
+        setB11607(b114.equals("2") ? "" : this.b11607);
+        setB11608(b114.equals("2") ? "" : this.b11608);
+        setB11609(b114.equals("2") ? "" : this.b11609);
+        setB11696(b114.equals("2") ? "" : this.b11696);
+        setB117(b114.equals("2") ? "" : this.b117);
         notifyPropertyChanged(BR.b114);
     }
 
