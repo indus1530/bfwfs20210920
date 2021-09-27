@@ -3813,6 +3813,23 @@ public class Form extends BaseObservable implements Observable {
     public void setD10798(String d10798) {
         if (this.d10798.equals(d10798)) return; // for all checkboxes
         this.d10798 = d10798;
+        setD10701(d10798.equals("98") ? "" : this.d10701);
+        setD10702(d10798.equals("98") ? "" : this.d10702);
+        setD10703(d10798.equals("98") ? "" : this.d10703);
+        setD10704(d10798.equals("98") ? "" : this.d10704);
+        setD10705(d10798.equals("98") ? "" : this.d10705);
+        setD10706(d10798.equals("98") ? "" : this.d10706);
+        setD10707(d10798.equals("98") ? "" : this.d10707);
+        setD10708(d10798.equals("98") ? "" : this.d10708);
+        setD10709(d10798.equals("98") ? "" : this.d10709);
+        setD10710(d10798.equals("98") ? "" : this.d10710);
+        setD10711(d10798.equals("98") ? "" : this.d10711);
+        setD10712(d10798.equals("98") ? "" : this.d10712);
+        setD10713(d10798.equals("98") ? "" : this.d10713);
+        setD10714(d10798.equals("98") ? "" : this.d10714);
+        setD10715(d10798.equals("98") ? "" : this.d10715);
+        setD10716(d10798.equals("98") ? "" : this.d10716);
+        setD10796(d10798.equals("98") ? "" : this.d10796);
         notifyPropertyChanged(BR.d10798);
     }
 
