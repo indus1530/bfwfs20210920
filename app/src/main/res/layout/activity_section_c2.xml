@@ -116,40 +116,49 @@
                                 android:text="@string/Q_c201" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/c201" />
+
                         </LinearLayout>
 
                         <RadioGroup
                             android:id="@+id/c201"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->c202.clearCheck() + c203.clearCheck() + c206.clearCheck()}"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/c20101"
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.c201.equals(`1`)}"
                                 android:onClick="@{()->form.setC201(`1`)}"
                                 android:text="@string/c20101" />
 
                             <RadioButton
                                 android:id="@+id/c20102"
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.c201.equals(`2`)}"
                                 android:onClick="@{()->form.setC201(`2`)}"
                                 android:text="@string/c20102" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- c202  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVc202"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.c201.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -169,10 +178,10 @@
                                 android:text="@string/Q_c202" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/c202" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -260,15 +269,20 @@
                                 android:hint="@string/c20296"
                                 android:tag="c20296"
                                 android:text="@={form.c20296x}"
-                                android:visibility='@{c20296.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.c202.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- c203  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVc203"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.c201.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -288,40 +302,48 @@
                                 android:text="@string/Q_c203" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/c203" />
+
                         </LinearLayout>
 
                         <RadioGroup
                             android:id="@+id/c203"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
                             <RadioButton
                                 android:id="@+id/c20301"
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.c203.equals(`1`)}"
                                 android:onClick="@{()->form.setC203(`1`)}"
                                 android:text="@string/c20301" />
 
                             <RadioButton
                                 android:id="@+id/c20302"
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:checked="@{form.c203.equals(`2`)}"
                                 android:onClick="@{()->form.setC203(`2`)}"
                                 android:text="@string/c20302" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- c204  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVc204"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.c201.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -341,23 +363,39 @@
                                 android:text="@string/Q_c204" />
 
                             <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/c204" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:text="@string/c204" />
-                        </LinearLayout>
+                                android:text="@string/c204a" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/c204"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/c204"
-                            android:inputType="number"
-                            android:maxLength="3"
-                            android:text="@={form.c204}"
-                            app:minValue="0"
-                            app:maxValue="100"
-                            app:type="range" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c204"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="###"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:text="@={form.c204}"
+                                app:maxValue="100"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -367,7 +405,8 @@
                 <!-- c205  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVc205"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.c201.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -387,30 +426,50 @@
                                 android:text="@string/Q_c205" />
 
                             <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/c205" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textView"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:text="@string/c205" />
+                                android:text="@string/c205a" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c205"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="###"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:text="@={form.c205}"
+                                app:maxValue="100"
+                                app:minValue="0"
+                                app:type="range" />
+
                         </LinearLayout>
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/c205"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/c205"
-                            android:inputType="number"
-                            android:maxLength="3"
-                            android:text="@={form.c205}"
-                            app:minValue="0"
-                            app:maxValue="100"
-                            app:type="range" />
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- c206  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVc206"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.c201.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -430,10 +489,10 @@
                                 android:text="@string/Q_c206" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/c206" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -529,9 +588,12 @@
                                 android:hint="@string/c20696"
                                 android:tag="c20696"
                                 android:text="@={form.c20696x}"
-                                android:visibility='@{c20696.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility="@{form.c206.equals(`96`) ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 
