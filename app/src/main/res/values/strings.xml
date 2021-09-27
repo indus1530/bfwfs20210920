@@ -850,9 +850,9 @@
     <string name="b11203">Adult Females </string>
     <string name="b11204">Children unde 5Y </string>
     <string name="b11205">Children 5-under 18Y</string>
-    <string name="b113">Do you have the wheat flour package, you purchased/got last time in your home now?</string>
-    <string name="b11301">YES</string>
-    <string name="b11302">NO</string>
+    <string name="b113"> Do you have the wheat flour package, you purchased/got last time in your home now ? </string>
+    <string name="b11301"> Yes </string>
+    <string name="b11302"> No </string>
     <string name="b114">Observation (Ask to See Wheat Flour Package and Look for Fortification Logo or words Such as Fortified)</string>
     <string name="b11401">Logo, or words like Fortified or Fortification observed</string>
     <string name="b11402">Logo, or words like Fortified or Fortification not observed</string>
