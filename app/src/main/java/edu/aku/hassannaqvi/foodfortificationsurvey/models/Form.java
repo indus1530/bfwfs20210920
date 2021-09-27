@@ -3434,6 +3434,7 @@ public class Form extends BaseObservable implements Observable {
         setD10306(d101.equals("2") ? "" : this.d10306);
         setD10307(d101.equals("2") ? "" : this.d10307);
         setD10308(d101.equals("2") ? "" : this.d10308);
+        setD10398(d101.equals("2") ? "" : this.d10398);
         setD10396(d101.equals("2") ? "" : this.d10396);
         setD104(d101.equals("2") ? "" : this.d104);
         setD105(d101.equals("2") ? "" : this.d105);
@@ -3608,6 +3609,7 @@ public class Form extends BaseObservable implements Observable {
 
     public void setD104(String d104) {
         this.d104 = d104;
+        setD105(d104.equals("1") ? this.d105 : "");
         notifyPropertyChanged(BR.d104);
     }
 
@@ -3628,6 +3630,24 @@ public class Form extends BaseObservable implements Observable {
 
     public void setD106(String d106) {
         this.d106 = d106;
+        setD10701(d106.equals("1") ? "" : this.d10701);
+        setD10702(d106.equals("1") ? "" : this.d10702);
+        setD10703(d106.equals("1") ? "" : this.d10703);
+        setD10704(d106.equals("1") ? "" : this.d10704);
+        setD10705(d106.equals("1") ? "" : this.d10705);
+        setD10706(d106.equals("1") ? "" : this.d10706);
+        setD10707(d106.equals("1") ? "" : this.d10707);
+        setD10708(d106.equals("1") ? "" : this.d10708);
+        setD10709(d106.equals("1") ? "" : this.d10709);
+        setD10710(d106.equals("1") ? "" : this.d10710);
+        setD10711(d106.equals("1") ? "" : this.d10711);
+        setD10712(d106.equals("1") ? "" : this.d10712);
+        setD10713(d106.equals("1") ? "" : this.d10713);
+        setD10714(d106.equals("1") ? "" : this.d10714);
+        setD10715(d106.equals("1") ? "" : this.d10715);
+        setD10716(d106.equals("1") ? "" : this.d10716);
+        setD10798(d106.equals("1") ? "" : this.d10798);
+        setD10796(d106.equals("1") ? "" : this.d10796);
         notifyPropertyChanged(BR.d106);
     }
 
