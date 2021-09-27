@@ -126,6 +126,7 @@
                             android:id="@+id/d101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->d102.clearCheck() + d104.clearCheck() + d105.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -156,7 +157,8 @@
                 <!-- d102  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVd102"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.d101.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -279,7 +281,8 @@
                 <!-- d103  CheckBox   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVd103"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.d101.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -421,7 +424,8 @@
                 <!-- d104  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVd104"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.d101.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -490,7 +494,8 @@
                 <!-- d105  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVd105"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.d101.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
