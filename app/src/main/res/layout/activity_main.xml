@@ -87,7 +87,7 @@
                                 android:drawablePadding="12dp"
                                 android:gravity="center_vertical"
                                 android:minWidth="460dp"
-                                android:text="@string/open_household_form"
+                                android:text="A1"
                                 android:textColor="@color/colorPrimary"
                                 android:textSize="16dp" />
 
@@ -120,7 +120,6 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="24dp"
                     android:padding="12dp"
-                    android:visibility="gone"
                     app:cardCornerRadius="24dp">
 
                     <LinearLayout
@@ -145,7 +144,7 @@
                                 android:drawablePadding="12dp"
                                 android:gravity="center_vertical"
                                 android:minWidth="460dp"
-                                android:text="@string/open_anthro_form"
+                                android:text="A2"
                                 android:textColor="@color/colorPrimary"
                                 android:textSize="16dp" />
 
@@ -323,7 +322,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="A2"
+                            android:text="A31"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp"/>
 
@@ -338,7 +337,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="A31"
+                            android:text="A32"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 
@@ -353,7 +352,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="A32"
+                            android:text="B1"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 
@@ -368,7 +367,7 @@
                             android:onClick="sectionPress"
                             android:padding="8dp"
                             android:shadowRadius="8"
-                            android:text="B1"
+                            android:text="B2"
                             android:textColor="@color/colorAccentLight"
                             android:textSize="14sp" />
 

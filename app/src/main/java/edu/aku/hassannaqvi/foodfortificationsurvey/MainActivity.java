@@ -22,6 +22,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA1Activity
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA32Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC2Activity;
@@ -82,24 +83,27 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
 
             case R.id.openForm:
-            case R.id.openAnthro:
             case R.id.updateBlood:
             case R.id.updateStool:
                 MainApp.form = new Form();
                 startActivity(new Intent(this, SectionA1Activity.class));
                 break;
-            case R.id.seca1:
+            case R.id.openAnthro:
                 MainApp.form = new Form();
                 startActivity(new Intent(this, SectionA2Activity.class));
                 break;
-            case R.id.seca2:
+            case R.id.seca1:
                 MainApp.form = new Form();
                 startActivity(new Intent(this, SectionA31Activity.class));
+                break;
+            case R.id.seca2:
+                MainApp.form = new Form();
+                startActivity(new Intent(this, SectionA32Activity.class));
                 break;
 
             case R.id.seca3:
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionA32Activity.class));
+                startActivity(new Intent(this, SectionB1Activity.class));
                 break;
             case R.id.secb1:
                 MainApp.form = new Form();

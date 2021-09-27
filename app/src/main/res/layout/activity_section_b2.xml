@@ -1569,19 +1569,14 @@
                                 android:layout_weight="1"
                                 android:text="@string/b11696" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <EditText
                                 android:id="@+id/b11696"
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:hint="###"
-                                android:inputType="number"
-                                android:maxLength="3"
-                                android:text="@={form.b11696}"
-                                app:maxValue="100"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                                android:hint="@string/b11596"
+                                android:tag="b11596"
+                                android:text="@={form.b11696}" />
 
                         </LinearLayout>
 
@@ -1613,9 +1608,8 @@
                                 android:text="@string/Q_b117" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/b117" />
 
                         </LinearLayout>
