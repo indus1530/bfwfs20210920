@@ -1659,6 +1659,7 @@
                             android:id="@+id/a313"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()-> a314.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -1698,7 +1699,8 @@
                 <!-- a314  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa314"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.a313.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
