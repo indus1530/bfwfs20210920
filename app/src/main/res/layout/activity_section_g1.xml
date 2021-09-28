@@ -536,6 +536,7 @@
                             </RadioGroup>
 
                             <RadioGroup
+                                android:id="@+id/g10203"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1">
@@ -609,6 +610,7 @@
                                     android:checked="@{form.g10203.equals(`8`)}"
                                     android:onClick="@{()->form.setG10203(`8`)}"
                                     android:text="@string/g10203h" />
+
                             </RadioGroup>
 
                         </LinearLayout>

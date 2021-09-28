@@ -1527,6 +1527,10 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="g20105">Don\'t drink milk</string>
     <string name="g20106">Don\'t know</string>
     <string name="g202">White milk (glass or with cereal)</string>
+    <string name="g202abc"> White Milk / Flavored Milk / Other Milk </string>
+    <string name="g202a"> glass or with cereal </string>
+    <string name="g202b"> i.e. chocolate </string>
+    <string name="g202c"> yogurt-based i.e. lassi </string>
     <string name="g20201">1 glass per day  </string>
     <string name="g20202">2-3 glasses per </string>
     <string name="g20203">3 or more glasses per day</string>
