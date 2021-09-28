@@ -21,7 +21,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionF1Binding;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
 
 
 public class SectionF1Activity extends AppCompatActivity {
@@ -44,7 +43,7 @@ public class SectionF1Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SF1, form.sC1toString());
+            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SF1, form.sF1toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db_form + e.getMessage());

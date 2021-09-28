@@ -74,10 +74,10 @@
                                 android:text="@string/Q_f301" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f301" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -156,9 +156,13 @@
                                 android:checked="@{form.f301.equals(`9`)}"
                                 android:onClick="@{()->form.setF301(`9`)}"
                                 android:text="@string/f30109" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f302  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -183,10 +187,10 @@
                                 android:text="@string/Q_f302" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f302" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -265,9 +269,13 @@
                                 android:checked="@{form.f302.equals(`9`)}"
                                 android:onClick="@{()->form.setF302(`9`)}"
                                 android:text="@string/f30209" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f303  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -292,10 +300,10 @@
                                 android:text="@string/Q_f303" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f303" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -374,9 +382,13 @@
                                 android:checked="@{form.f303.equals(`9`)}"
                                 android:onClick="@{()->form.setF303(`9`)}"
                                 android:text="@string/f30309" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f304  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -401,10 +413,10 @@
                                 android:text="@string/Q_f304" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f304" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -483,9 +495,13 @@
                                 android:checked="@{form.f304.equals(`9`)}"
                                 android:onClick="@{()->form.setF304(`9`)}"
                                 android:text="@string/f30409" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f305  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -510,10 +526,10 @@
                                 android:text="@string/Q_f305" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f305" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -592,9 +608,13 @@
                                 android:checked="@{form.f305.equals(`9`)}"
                                 android:onClick="@{()->form.setF305(`9`)}"
                                 android:text="@string/f30509" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f306  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -619,10 +639,10 @@
                                 android:text="@string/Q_f306" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f306" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -701,9 +721,13 @@
                                 android:checked="@{form.f306.equals(`9`)}"
                                 android:onClick="@{()->form.setF306(`9`)}"
                                 android:text="@string/f30609" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f307  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -728,10 +752,10 @@
                                 android:text="@string/Q_f307" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f307" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -810,9 +834,13 @@
                                 android:checked="@{form.f307.equals(`9`)}"
                                 android:onClick="@{()->form.setF307(`9`)}"
                                 android:text="@string/f30709" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f308  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -837,10 +865,10 @@
                                 android:text="@string/Q_f308" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f308" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -919,9 +947,13 @@
                                 android:checked="@{form.f308.equals(`9`)}"
                                 android:onClick="@{()->form.setF308(`9`)}"
                                 android:text="@string/f30809" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f309  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -946,10 +978,10 @@
                                 android:text="@string/Q_f309" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f309" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1028,9 +1060,13 @@
                                 android:checked="@{form.f309.equals(`9`)}"
                                 android:onClick="@{()->form.setF309(`9`)}"
                                 android:text="@string/f30909" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f310  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1055,10 +1091,10 @@
                                 android:text="@string/Q_f310" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f310" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1137,9 +1173,13 @@
                                 android:checked="@{form.f310.equals(`9`)}"
                                 android:onClick="@{()->form.setF310(`9`)}"
                                 android:text="@string/f31009" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f311  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1164,10 +1204,10 @@
                                 android:text="@string/Q_f311" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f311" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1246,9 +1286,13 @@
                                 android:checked="@{form.f311.equals(`9`)}"
                                 android:onClick="@{()->form.setF311(`9`)}"
                                 android:text="@string/f31109" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f312  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1273,10 +1317,10 @@
                                 android:text="@string/Q_f312" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f312" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1355,9 +1399,13 @@
                                 android:checked="@{form.f312.equals(`9`)}"
                                 android:onClick="@{()->form.setF312(`9`)}"
                                 android:text="@string/f31209" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f313  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1382,10 +1430,10 @@
                                 android:text="@string/Q_f313" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f313" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1464,9 +1512,13 @@
                                 android:checked="@{form.f313.equals(`9`)}"
                                 android:onClick="@{()->form.setF313(`9`)}"
                                 android:text="@string/f31309" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- f314  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -1491,10 +1543,10 @@
                                 android:text="@string/Q_f314" />
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
                                 android:text="@string/f314" />
+
                         </LinearLayout>
 
                         <RadioGroup
@@ -1573,8 +1625,11 @@
                                 android:checked="@{form.f314.equals(`9`)}"
                                 android:onClick="@{()->form.setF314(`9`)}"
                                 android:text="@string/f31409" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
 

@@ -105,6 +105,7 @@
                             android:id="@+id/e101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->e102.clearCheck()+e103.clearCheck()+e104.clearCheck()+e105.clearCheck()+e106.clearCheck()+e108.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -135,7 +136,8 @@
                 <!-- e102  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe102"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -165,6 +167,7 @@
                             android:id="@+id/e102"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->e103.clearCheck()+e104.clearCheck()+e105.clearCheck()+e106.clearCheck()+e108.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -204,7 +207,8 @@
                 <!-- e103  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe103"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) || !form.e102.equals(`1`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -287,7 +291,8 @@
                 <!-- e104  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe104"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) || !form.e102.equals(`1`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -449,7 +454,8 @@
                 <!-- e105  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe105"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) || !form.e102.equals(`1`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -527,7 +533,8 @@
                 <!-- e106  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe106"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) || !form.e102.equals(`1`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -557,6 +564,7 @@
                             android:id="@+id/e106"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->e108.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -587,7 +595,8 @@
                 <!-- e107  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe107"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) || !form.e102.equals(`1`) || form.e106.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -634,7 +643,8 @@
                 <!-- e108  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe108"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e101.equals(`2`) || !form.e102.equals(`1`)  || form.e106.equals(`2`) ? View.GONE : View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -669,40 +679,40 @@
                                 android:id="@+id/e10801"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e108.equals(``)}"
-                                android:onClick="@{()->form.setE108(``)}"
+                                android:checked="@{form.e108.equals(`1`)}"
+                                android:onClick="@{()->form.setE108(`1`)}"
                                 android:text="@string/e10801" />
 
                             <RadioButton
                                 android:id="@+id/e10802"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e108.equals(`1`)}"
-                                android:onClick="@{()->form.setE108(`1`)}"
+                                android:checked="@{form.e108.equals(`2`)}"
+                                android:onClick="@{()->form.setE108(`2`)}"
                                 android:text="@string/e10802" />
 
                             <RadioButton
                                 android:id="@+id/e10803"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e108.equals(`2`)}"
-                                android:onClick="@{()->form.setE108(`2`)}"
+                                android:checked="@{form.e108.equals(`3`)}"
+                                android:onClick="@{()->form.setE108(`3`)}"
                                 android:text="@string/e10803" />
 
                             <RadioButton
                                 android:id="@+id/e10804"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e108.equals(`3`)}"
-                                android:onClick="@{()->form.setE108(`3`)}"
+                                android:checked="@{form.e108.equals(`4`)}"
+                                android:onClick="@{()->form.setE108(`4`)}"
                                 android:text="@string/e10804" />
 
                             <RadioButton
                                 android:id="@+id/e10805"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e108.equals(`4`)}"
-                                android:onClick="@{()->form.setE108(`4`)}"
+                                android:checked="@{form.e108.equals(`5`)}"
+                                android:onClick="@{()->form.setE108(`5`)}"
                                 android:text="@string/e10805" />
 
                         </RadioGroup>
@@ -745,6 +755,7 @@
                             android:id="@+id/e109"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->e110.clearCheck() + e111.clearCheck() + e11201.clearCheck() + e11202.clearCheck() + e11203.clearCheck() + e11204.clearCheck() + e11205.clearCheck() + e113.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -784,7 +795,8 @@
                 <!-- e110  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe110"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e109.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -814,6 +826,7 @@
                             android:id="@+id/e110"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onCheckedChanged="@{()->e111.clearCheck() + e11201.clearCheck() + e11202.clearCheck() + e11203.clearCheck() + e11204.clearCheck() + e11205.clearCheck() + e113.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -853,7 +866,8 @@
                 <!-- e111  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe111"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e109.equals(`1`) &amp;&amp; form.e110.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -944,7 +958,8 @@
                 <!-- e112  MultiRadioGroup   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe11201"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e109.equals(`1`) &amp;&amp; form.e110.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1193,7 +1208,8 @@
                 <!-- e113  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe113"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility="@{form.e109.equals(`1`) &amp;&amp; form.e110.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
