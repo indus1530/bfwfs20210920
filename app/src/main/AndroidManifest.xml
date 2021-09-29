@@ -30,22 +30,6 @@
 
 
         <activity
-            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.MwraListActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
-
-        <activity
-            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.ChildListActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
-
-        <activity
-            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.PregnancyListActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
-
-
-        <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.splashscreen"

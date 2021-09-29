@@ -40,7 +40,7 @@ public class MainApp extends Application {
 
     //COUNTRIES
     public static int PAKISTAN = 1;
-    public static int TAJIKISTAN = 3;
+    public static int URDU = 3;
 
     public static File sdDir;
     public static String[] downloadData;

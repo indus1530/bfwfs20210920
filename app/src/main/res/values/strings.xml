@@ -1,80 +1,76 @@
 <resources>
-    <string name="app_name">Food Fortification Survey</string>
-    <string name="section1_mainheading"> Section 1: Identifying Information</string>
-    <string name="section2_mainheading"> Section 2: Young Infant Information</string>
-    <string name="section3_mainheading"> Section 3: Eligibility </string>
-    <string name="section4_mainheading"> Section 4: Treatment </string>
-    <string name="section5_mainheading"> Section 5: Diagnosis and outcome</string>
-    <string name="btnSync">Download Data</string>
+    <string name="app_name" translatable="false">Food Fortification Survey</string>
+    <string name="btnDownload" translatable="false">Download Data</string>
     <string name="btnUpload">Upload Data</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Login</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="splashText"> </string>
-    <string name="splashText2">  </string>
     <string name="check_pending_forms">CHECK PENDING FORMS</string>
-    <string name="open_household_form">OPEN HOUSEHOLD FORM</string>
-    <string name="open_anthro_form">UPDATE ANTHRO FORM</string>
-    <string name="open_blood_form">UPDATE BLOOD INFORMANTION</string>
-    <string name="open_stool_form">UPDATE STOOL INFORMANTION</string>
+    <string name="open_household_form" translatable="false">OPEN HOUSEHOLD FORM</string>
+    <string name="open_anthro_form" translatable="false">UPDATE ANTHRO FORM</string>
+    <string name="open_blood_form" translatable="false">UPDATE BLOOD INFORMANTION</string>
+    <string name="open_stool_form" translatable="false">UPDATE STOOL INFORMANTION</string>
     <string name="records_summary">Records Summary</string>
     <string name="main_menu">Main Menu</string>
     <string name="only_for_testing">ONLY FOR TESTING</string>
     <string name="database">Database</string>
-    <string name="region">REGION</string>
-    <string name="district">DISTRICT</string>
-    <string name="uc">UC</string>
-    <string name="cityVillage">City / Village</string>
-    <string name="childScreening">Child Screening</string>
-    <string name="childFollowup">Child Follow-up</string>
-    <string name="wraScreening">WRAs Screening</string>
-    <string name="wraFollowup">WRAs Follow-up</string>
-    <string name="btnSave">Save</string>
-    <string name="btnEnd">Cancel</string>
-    <string name="signin">SIGN IN</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="country">Country (Click to change)</string>
-    <string name="pakistan">Pakistan</string>
-    <string name="tajikistan">Tajikistan</string>
-    <string name="btnLogin">Login</string>
-    <string name="btnDownloadData">Download Data</string>
-    <string name="cs_MAexist">might be already exist</string>
+    <string name="region" translatable="false">REGION</string>
+    <string name="district" translatable="false">DISTRICT</string>
+    <string name="uc" translatable="false">UC</string>
+    <string name="cityVillage" translatable="false">City / Village</string>
+    <string name="childScreening" translatable="false">Child Screening</string>
+    <string name="childFollowup" translatable="false">Child Follow-up</string>
+    <string name="wraScreening" translatable="false">WRAs Screening</string>
+    <string name="wraFollowup" translatable="false">WRAs Follow-up</string>
+    <string name="btnSave" translatable="false">Save</string>
+    <string name="btnEnd" translatable="false">Cancel</string>
+    <string name="signin" translatable="false">SIGN IN</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="country">Language (Click to change)</string>
+    <string name="pakistan" translatable="false">Pakistan</string>
+    <string name="tajikistan" translatable="false">Tajikistan</string>
+    <string name="btnLogin" translatable="false">Login</string>
+    <string name="btnDownloadData" translatable="false">Download Data</string>
+    <string name="cs_MAexist" translatable="false">might be already exist</string>
 
-    <string name="netwrok">Network connection not available!</string>
-    <string name="invalidpass">Invalid Password</string>
-    <string name="unameRequired">Username is required.</string>
-    <string name="incorrcetPass">Incorrect Password</string>
-    <string name="downData">Download Data</string>
-    <string name="permission">Permissions Required</string>
-    <string name="warning">Warning</string>
-    <string name="newApp">New App downloaded!!</string>
-    <string name="appVer">App New Version</string>
-    <string name="downloaded">Downloaded</string>
-    <string name="appDownload">appDownload</string>
-    <string name="newVer">New Version</string>
-    <string name="downloading">Downloading</string>
-    <string name="available">Available</string>
-    <string name="downError">Cant download.. Internet connectivity issue!</string>
-    <string name="backBtn">Press Back again to Exit</string>
-    <string name="noNetwork">No network connection available!</string>
-    <string name="appAvailable">APP is available!</string>
-    <string name="oldAppMsg">App Ver." + " is now available. Your are currently using older Ver."</string>
-    <string name="installNewApp">Install new version to use this app</string>
-    <string name="install">Install</string>
-    <string name="cancel">Cancel</string>
-    <string name="complete">complete</string>
-    <string name="updatingError">Error in updating db!!</string>
-    <string name="updateDbError1">"Sorry. You can't go further."</string>
-    <string name="updateDbError2">"Please contact IT Team (Failed to update DB)"</string>
-    <string name="bckBtn">You Cant go back</string>
-    <string name="processing">Processing</string>
-    <string name="confirmation">Confirmation!</string>
-    <string name="cntBtn">Are you sure, you want to continue - interview</string>
-    <string name="failedUpdateDb">SORRY! Failed to update DB</string>
-    <string name="invalidDate">Invalid date!</string>
-    <string name="ageCalc">"Both Month and Year don't be zero!!"</string>
+    <string name="netwrok" translatable="false">Network connection not available!</string>
+    <string name="invalidpass" translatable="false">Invalid Password</string>
+    <string name="unameRequired" translatable="false">Username is required.</string>
+    <string name="incorrcetPass" translatable="false">Incorrect Password</string>
+    <string name="downData" translatable="false">Download Data</string>
+    <string name="permission" translatable="false">Permissions Required</string>
+    <string name="warning" translatable="false">Warning</string>
+    <string name="newApp" translatable="false">New App downloaded!!</string>
+    <string name="appVer" translatable="false">App New Version</string>
+    <string name="downloaded" translatable="false">Downloaded</string>
+    <string name="appDownload" translatable="false">appDownload</string>
+    <string name="newVer" translatable="false">New Version</string>
+    <string name="downloading" translatable="false">Downloading</string>
+    <string name="available" translatable="false">Available</string>
+    <string name="downError" translatable="false">Cant download.. Internet connectivity issue!</string>
+    <string name="backBtn" translatable="false">Press Back again to Exit</string>
+    <string name="noNetwork" translatable="false">No network connection available!</string>
+    <string name="appAvailable" translatable="false">APP is available!</string>
+    <string name="oldAppMsg" translatable="false">App Ver." + " is now available. Your are currently using older Ver."</string>
+    <string name="installNewApp" translatable="false">Install new version to use this app</string>
+    <string name="install" translatable="false">Install</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="complete" translatable="false">complete</string>
+    <string name="updatingError" translatable="false">Error in updating db!!</string>
+    <string name="updateDbError1" translatable="false">"Sorry. You can't go further."</string>
+    <string name="updateDbError2" translatable="false">"Please contact IT Team (Failed to update DB)"</string>
+    <string name="bckBtn" translatable="false">You Cant go back</string>
+    <string name="processing" translatable="false">Processing</string>
+    <string name="confirmation" translatable="false">Confirmation!</string>
+    <string name="cntBtn" translatable="false">Are you sure, you want to continue - interview</string>
+    <string name="failedUpdateDb" translatable="false">SORRY! Failed to update DB</string>
+    <string name="invalidDate" translatable="false">Invalid date!</string>
+    <string name="ageCalc" translatable="false">"Both Month and Year don't be zero!!"</string>
+    <string name="action_database" translatable="false">Database Manager</string>
+    <string name="action_data_sync" translatable="false">Sync Data</string>
     <string name="no"> No </string>
     <string name="dkn"> Don’t Know </string>
     <string name="none"> No one </string>
@@ -110,67 +106,67 @@
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
-    <string name="btnDownload">Download Data</string>
+    <!-- <string name="btnDownload">Download Data</string>
 
-    <!--Z-Score-->
-    <string name="zScoreMsg">"Please click on Z-Score Button"</string>
-    <string name="zScoreEmpty">"Z-Score cannot be evaluated with missing values."</string>
-    <string name="hlaz">HLAZ</string>
-    <string name="waz">WAZ</string>
-    <string name="whz">WHZ</string>
-    <string name="q_h311">H311</string>
-    <string name="title_activity_mwradetail_host">MWRA Detail Host Activity</string>
-    <string name="title_mwra_list">MWRAS</string>
-    <string name="title_mwra_detail">MWRA Detail</string>
-    <string name="Q_e120">E120</string>
-    <string name="e120">Who\'s Sample is it?</string>
-    <string name="action_database">Database Manager</string>
-    <string name="action_data_sync">Sync Data</string>
+     &lt;!&ndash;Z-Score&ndash;&gt;
+     <string name="zScoreMsg">"Please click on Z-Score Button"</string>
+     <string name="zScoreEmpty">"Z-Score cannot be evaluated with missing values."</string>
+     <string name="hlaz">HLAZ</string>
+     <string name="waz">WAZ</string>
+     <string name="whz">WHZ</string>
+     <string name="q_h311">H311</string>
+     <string name="title_activity_mwradetail_host">MWRA Detail Host Activity</string>
+     <string name="title_mwra_list">MWRAS</string>
+     <string name="title_mwra_detail">MWRA Detail</string>
+     <string name="Q_e120">E120</string>
+     <string name="e120">Who\'s Sample is it?</string>
+     <string name="action_database">Database Manager</string>
+     <string name="action_data_sync">Sync Data</string>
 
 
-    <!--ERROR MESSAGES-->
-    <string name="error_member_count">%1$s total does not match count of Male and Female</string>
-    <string name="error_member_count_household">%1$s total does not match count of various members of different ages</string>
-    <string name="title_mwra_dialog">MWRA Count</string>
-    <string name="message_mwra_dialog_addmore">You have already entered %1$s MWRAS. \nAre you sure you want to add more MWRA?</string>
-    <string name="message_mwra_dialog_proceeed">You have entered only %1$s of %2$s MWRAS in the household. \nAre you sure you want to select a MWRA now?</string>
-    <string name="title_child_dialog">Children Count</string>
-    <string name="message_child_dialog_addmore">You have already entered %1$s Child(ren). \nAre you sure you want to add more Child?</string>
-    <string name="message_child_dialog_proceeed">You have entered only %1$s of %2$s Child(ren) in the household. \nAre you sure you want to select aChild now?</string>
+     &lt;!&ndash;ERROR MESSAGES&ndash;&gt;
+     <string name="error_member_count">%1$s total does not match count of Male and Female</string>
+     <string name="error_member_count_household">%1$s total does not match count of various members of different ages</string>
+     <string name="title_mwra_dialog">MWRA Count</string>
+     <string name="message_mwra_dialog_addmore">You have already entered %1$s MWRAS. \nAre you sure you want to add more MWRA?</string>
+     <string name="message_mwra_dialog_proceeed">You have entered only %1$s of %2$s MWRAS in the household. \nAre you sure you want to select a MWRA now?</string>
+     <string name="title_child_dialog">Children Count</string>
+     <string name="message_child_dialog_addmore">You have already entered %1$s Child(ren). \nAre you sure you want to add more Child?</string>
+     <string name="message_child_dialog_proceeed">You have entered only %1$s of %2$s Child(ren) in the household. \nAre you sure you want to select aChild now?</string>
 
-    <string name="upd_db_form"> updateDB(Form):\t </string>
-    <string name="upd_db_error"> Updating Database… ERROR! </string>
-    <string name="db_excp_error"> Database Exception... ERROR! </string>
-    <string name="upd_db"> Updating Database...\t </string>
-    <string name="fail_db_upd"> Failed to Update Database! </string>
-    <string name="backPress"> Back Press Not Allowed </string>
-    <string name="invalid_response"> Invalid Response </string>
-    <string name="agecal">ageCal:\t</string>
-    <string name="network_conn_error"> Network connection not available ! </string>
-    <string name="no_mother_selected_child_list"> No Mother has been selected. Please select a mother before opening Child List </string>
-    <string name="sec_not_available_moment"> This section is not available at the moment. </string>
-    <string name="no_mother_selected_preg_list"> No Mother has been selected. Please select a mother before opening Pregnancy List </string>
-    <string name="h220_error"> H220: WRA count does not match Females 20–49. </string>
-    <string name="onitemselected"> onItemSelected(Samples):\t </string>
-    <string name="upd_samples"> updateDB(Samples):\t </string>
-    <string name="upd_anthro"> updateDB(Anthro):\t </string>
-    <string name="folder_not_created"> Folder Not Created </string>
-    <string name="invalid_password"> Invalid Password </string>
-    <string name="username_required"> Username is required. </string>
-    <string name="incorrect_username_or_password">Incorrect Username or Password</string>
-    <string name="open_hh_form"> Open Household Form </string>
-    <string name="open_anhtro_form">Open Anthro Form</string>
-    <string name="info_hh_form_not_exist">INFO: Household information does not exist.</string>
-    <string name="hh_not_found">Household not Found</string>
-    <string name="hh_exists_form"> hhExists(Form): \t </string>
-    <string name="w202t2">Probe for the type of person seen and record all answers given.</string>
-    <string name="w311t2">Агар аз 24 соат камтар бошад, соатро нависед.</string>
-    <string name="instrc3">Варақчаи Гуруҳи Ғизоҳоро истифода баред то ин ки ғизо муайян шавад ки ба кадом гурӯҳ дохил мебошад.</string>
-    <string name="modetitle">MODULE E: САНҶИШИ ГЕМОГЛОБИН ВА ҶАМЪОВАРИИ СТУЛ</string>
-    <string name="woman_child_info_missing">Please fill woman and child sections before entering this information</string>
-    <string name="child_info_missing">Please fill child sections before entering this information</string>
-    <string name="open_new_form">Открыть новую форму</string>
-    <string name="options">Options</string>
+     <string name="upd_db_form"> updateDB(Form):\t </string>
+     <string name="upd_db_error"> Updating Database… ERROR! </string>
+     <string name="db_excp_error"> Database Exception... ERROR! </string>
+     <string name="upd_db"> Updating Database...\t </string>
+     <string name="fail_db_upd"> Failed to Update Database! </string>
+     <string name="backPress"> Back Press Not Allowed </string>
+     <string name="invalid_response"> Invalid Response </string>
+     <string name="agecal">ageCal:\t</string>
+     <string name="network_conn_error"> Network connection not available ! </string>
+     <string name="no_mother_selected_child_list"> No Mother has been selected. Please select a mother before opening Child List </string>
+     <string name="sec_not_available_moment"> This section is not available at the moment. </string>
+     <string name="no_mother_selected_preg_list"> No Mother has been selected. Please select a mother before opening Pregnancy List </string>
+     <string name="h220_error"> H220: WRA count does not match Females 20–49. </string>
+     <string name="onitemselected"> onItemSelected(Samples):\t </string>
+     <string name="upd_samples"> updateDB(Samples):\t </string>
+     <string name="upd_anthro"> updateDB(Anthro):\t </string>
+     <string name="folder_not_created"> Folder Not Created </string>
+     <string name="invalid_password"> Invalid Password </string>
+     <string name="username_required"> Username is required. </string>
+     <string name="incorrect_username_or_password">Incorrect Username or Password</string>
+     <string name="open_hh_form"> Open Household Form </string>
+     <string name="open_anhtro_form">Open Anthro Form</string>
+     <string name="info_hh_form_not_exist">INFO: Household information does not exist.</string>
+     <string name="hh_not_found">Household not Found</string>
+     <string name="hh_exists_form"> hhExists(Form): \t </string>
+     <string name="w202t2">Probe for the type of person seen and record all answers given.</string>
+     <string name="w311t2">Агар аз 24 соат камтар бошад, соатро нависед.</string>
+     <string name="instrc3">Варақчаи Гуруҳи Ғизоҳоро истифода баред то ин ки ғизо муайян шавад ки ба кадом гурӯҳ дохил мебошад.</string>
+     <string name="modetitle">MODULE E: САНҶИШИ ГЕМОГЛОБИН ВА ҶАМЪОВАРИИ СТУЛ</string>
+     <string name="woman_child_info_missing">Please fill woman and child sections before entering this information</string>
+     <string name="child_info_missing">Please fill child sections before entering this information</string>
+     <string name="open_new_form">Открыть новую форму</string>
+     <string name="options">Options</string>-->
 
 
     <!--BFWFS-->
@@ -224,7 +220,7 @@
     <string name="secta2">HOUSEHOLD MEMBERS’ INFORMATION</string>
     <string name="a2ins">Now I would like to ask you questions on household member information who are living with you in this house and share the same kitchen.</string>
     <string name="a201">Line number</string>
-    <string name="a202t">First, please tell me the name of each person who usually lives here, starting with the head of the household.</string>
+    <string name="a202t" translatable="false">First, please tell me the name of each person who usually lives here, starting with the head of the household.</string>
     <string name="a203t"> relationship with Head of household)?</string>
     <string name="a20301"> Head of HH </string>
     <string name="a20302"> Wife / Husband </string>
@@ -298,7 +294,7 @@
     <string name="a21012">Teacher</string>
     <string name="a21099">Not Applicable</string>
     <string name="seca3">SOCIO ECONOMIC STATUS OF HOUSEHOLD</string>
-    <string name="insa">This section will be filled from the index mother</string>
+    <string name="insa" translatable="false">This section will be filled from the index mother</string>
     <string name="a301">What language do you usually speak in your household?</string>
     <string name="a30101">Sindhi</string>
     <string name="a30102">Siraiki</string>
@@ -375,7 +371,7 @@
     <string name="a30516">Wood planks/shingles</string>
     <string name="a30596">Other specify</string>
     <string name="a306">What is the main source of drinking water for members of your household?</string>
-    <string name="a306t1">Piped water</string>
+    <string name="a306t1" translatable="false">Piped water</string>
     <string name="a30601">Piped into dwelling</string>
     <string name="a30602">Piped to yard/plot</string>
     <string name="a30603">Piped to neighbor</string>
@@ -395,7 +391,7 @@
     <string name="a30615">Bottled water</string>
     <string name="a30696">Other (Specify) </string>
     <string name="a307">What is the main source of water used by your household for other purposes such as cooking and hand washing?</string>
-    <string name="a307t1">Piped water</string>
+    <string name="a307t1" translatable="false">Piped water</string>
     <string name="a30701">Piped into dwelling</string>
     <string name="a30702">Piped to yard/plot</string>
     <string name="a30703">Piped to neighbor</string>
@@ -448,7 +444,7 @@
     <string name="a31406">Let it stand and settl</string>
     <string name="a31496">Other (Specify) </string>
     <string name="a315">How many rooms in this house are used for sleeping?</string>
-    <string name="a31501">Number of rooms </string>
+    <string name="a31501" translatable="false">Number of rooms </string>
     <string name="a316">Do you own or rent the house that you live in?</string>
     <string name="a31601">Own  </string>
     <string name="a31602">Rent</string>
@@ -819,11 +815,11 @@
     <string name="b10598">Don’t Know </string>
     <string name="b10596">Other (Specify) </string>
     <string name="b106">The last time your household got wheat flour, was it branded or unbranded?</string>
-    <string name="b106t1">Branded</string>
+    <string name="b106t1" translatable="false">Branded</string>
     <string name="b10601">Chakki Brand </string>
     <string name="b10602">Flour mill brand </string>
     <string name="b10603">Company/Shop brand </string>
-    <string name="b106t2">Unbranded</string>
+    <string name="b106t2" translatable="false">Unbranded</string>
     <string name="b10605">Chakki</string>
     <string name="b10606">Flour mill </string>
     <string name="b10607">Company/Shop </string>
@@ -1097,9 +1093,9 @@
     <string name="c20301">Yes</string>
     <string name="c20302">No</string>
     <string name="c204"> How much time does its take for wheat flour to be fermented and ready to cook ? </string>
-    <string name="c204a"> Time in Hours </string>
+    <string name="c204a" translatable="false"> Time in Hours </string>
     <string name="c205"> For how long do you use wheat flour once Fermented ? </string>
-    <string name="c205a"> Days </string>
+    <string name="c205a" translatable="false"> Days </string>
     <string name="c206"> What are the benefits of fermenting wheat flour and its usage ? </string>
     <string name="c20601">Increased Nutritional value 1</string>
     <string name="c20602">Good for health</string>
@@ -1111,9 +1107,9 @@
     <string name="c20608">No benefits</string>
     <string name="c20698">Don’t Know</string>
     <string name="c20696">Other specify</string>
-    <string name="modulef">HOUSEHOLD DOOD INSECURITY, DIETARY DIVERSITY AND SOURCE ASSESSMENT</string>
-    <string name="sectionf1">HOUSEHOLD DOOD INSECURITY EXPERIENCE SCALE</string>
-    <string name="insf">THIS SECTION WILL BE DILLED WITH INDEX MOTHER</string>
+    <string name="modulef" translatable="false">HOUSEHOLD DOOD INSECURITY, DIETARY DIVERSITY AND SOURCE ASSESSMENT</string>
+    <string name="sectionf1" translatable="false">HOUSEHOLD DOOD INSECURITY EXPERIENCE SCALE</string>
+    <string name="insf" translatable="false">THIS SECTION WILL BE DILLED WITH INDEX MOTHER</string>
     <string name="f101">You or others in your household worried about not having enough food to eat because of a lack of money or other resources</string>
     <string name="f10101">Yes</string>
     <string name="f10102">No</string>
@@ -1129,9 +1125,9 @@
     <string name="f10303">Don’t Know </string>
     <string name="f10399">Refused</string>
     <string name="f104"> How often did this happen ? </string>
-    <string name="f104a"> Rarely (once or twice in the past four weeks) </string>
-    <string name="f104b"> Sometimes (three to ten times in the past four weeks) </string>
-    <string name="f104c"> Often (more than ten times in the past four weeks) </string>
+    <string name="f104a" translatable="false"> Rarely (once or twice in the past four weeks) </string>
+    <string name="f104b" translatable="false"> Sometimes (three to ten times in the past four weeks) </string>
+    <string name="f104c" translatable="false"> Often (more than ten times in the past four weeks) </string>
     <string name="f105">Was there a time when you or others in your household ate only a few kinds of foods because of lack of money or other resources?</string>
     <string name="f10501">Yes</string>
     <string name="f10502">No</string>
@@ -1253,7 +1249,7 @@
     <string name="d10716">Own wheat grinded</string>
     <string name="d10798">Don’t Know</string>
     <string name="d10796">Other specify</string>
-    <string name="sectionf2">Food Consumption                                                                                          </string>
+    <string name="sectionf2" translatable="false">Food Consumption                                                                                          </string>
     <string name="f201">Yesterday, how many meals were eaten by adults?</string>
     <string name="f202">How does this compare to usual for the adults?</string>
     <string name="f20201">Less</string>
@@ -1264,7 +1260,7 @@
     <string name="f20401">Less</string>
     <string name="f20402">Same</string>
     <string name="f20403">More</string>
-    <string name="sectionf3">HOUSEHOLD DIETARY DIVERSITY AND SOURCE ASSESMENT </string>
+    <string name="sectionf3" translatable="false">HOUSEHOLD DIETARY DIVERSITY AND SOURCE ASSESMENT </string>
     <string name="f301">foods made from grains (bread, wheat, rice, maize, etc</string>
     <string name="f30101">Not Consumed </string>
     <string name="f30102">own production</string>
@@ -1405,7 +1401,7 @@
     <string name="f31407">Gift</string>
     <string name="f31408">food aid</string>
     <string name="f31409">Other</string>
-    <string name="moduleg">SEMI-QUANTITATIVE FOOD FREQUENCY</string>
+    <string name="moduleg" translatable="false">SEMI-QUANTITATIVE FOOD FREQUENCY</string>
     <string name="modulegins">This section will Be asked Drom mother (MWRA 18 &amp; Above Y) for herself and her index child of 6 months to &lt; =18 years (Seperately) </string>
     <string name="sectiong1">EEVERAGES</string>
     <string name="g101">Full sugar carbonated
@@ -1527,10 +1523,10 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="g20105">Don\'t drink milk</string>
     <string name="g20106">Don\'t know</string>
     <string name="g202">White milk (glass or with cereal)</string>
-    <string name="g202abc"> White Milk / Flavored Milk / Other Milk </string>
-    <string name="g202a"> glass or with cereal </string>
-    <string name="g202b"> i.e. chocolate </string>
-    <string name="g202c"> yogurt-based i.e. lassi </string>
+    <string name="g202abc" translatable="false"> White Milk / Flavored Milk / Other Milk </string>
+    <string name="g202a" translatable="false"> glass or with cereal </string>
+    <string name="g202b" translatable="false"> i.e. chocolate </string>
+    <string name="g202c" translatable="false"> yogurt-based i.e. lassi </string>
     <string name="g20201">1 glass per day  </string>
     <string name="g20202">2-3 glasses per </string>
     <string name="g20203">3 or more glasses per day</string>
@@ -2014,7 +2010,7 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="g70104">1–3 times per month </string>
     <string name="g70105">Never/less than 1 per month </string>
     <string name="modulee">KNOWLEDGE ABOUT BIOFORTIFICATION OF WHEAT GRAIN</string>
-    <string name="inse">THIS SECTION WILL BE FILLED WITH INDEX MOTHER READ ALOUD TO THE FEMALE HEAD OF HOUSEHOLD: </string>
+    <string name="inse" translatable="false">THIS SECTION WILL BE FILLED WITH INDEX MOTHER READ ALOUD TO THE FEMALE HEAD OF HOUSEHOLD: </string>
     <string name="e101">Does your household cultivate agricultural lands?</string>
     <string name="e10101">Yes</string>
     <string name="e10102">No</string>
@@ -2116,403 +2112,403 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="e1150598">Don’t Know </string>
 
     <!--QUESTION IDs-->
-    <string name='Q_a101t'>a101t</string>
-    <string name='Q_a102'>a102</string>
-    <string name='Q_a103'>a103</string>
-    <string name='Q_a104'>a104</string>
-    <string name='Q_a105'>a105</string>
-    <string name='Q_a106'>a106</string>
-    <string name='Q_a107'>a107</string>
-    <string name='Q_a108'>a108</string>
-    <string name='Q_a109'>a109</string>
-    <string name='Q_a110'>a110</string>
-    <string name='Q_a111t'>a111t</string>
-    <string name='Q_a112'>a112</string>
-    <string name='Q_a113'>a113</string>
-    <string name='Q_a114t'>a114t</string>
-    <string name='Q_a115t'>a115t</string>
-    <string name='Q_a116t'>a116t</string>
-    <string name='Q_a201'>a201</string>
-    <string name='Q_a202t'>a202t</string>
-    <string name='Q_a203t'>a203t</string>
-    <string name='Q_a204'>a204</string>
-    <string name='Q_a205t'>a205t</string>
-    <string name='Q_a206'>a206</string>
-    <string name='Q_a207t'>a207t</string>
-    <string name='Q_a208t'>a208t</string>
-    <string name='Q_a209t'>a209t</string>
-    <string name='Q_a210'>a210</string>
-    <string name='Q_a2ins'>a2ins</string>
-    <string name='Q_a301'>a301</string>
-    <string name='Q_a30101'>a30101</string>
-    <string name='Q_a302'>a302</string>
-    <string name='Q_a303'>a303</string>
-    <string name='Q_a304'>a304</string>
-    <string name='Q_a305'>a305</string>
-    <string name='Q_a306'>a306</string>
-    <string name='Q_a307'>a307</string>
-    <string name='Q_a308'>a308</string>
-    <string name='Q_a309'>a309</string>
-    <string name='Q_a310'>a310</string>
-    <string name='Q_a311'>a311</string>
-    <string name='Q_a312'>a312</string>
-    <string name='Q_a313'>a313</string>
-    <string name='Q_a314'>a314</string>
-    <string name='Q_a315'>a315</string>
-    <string name='Q_a316'>a316</string>
-    <string name='Q_a317'>a317</string>
-    <string name='Q_a318'>a318</string>
-    <string name='Q_a319'>a319</string>
-    <string name='Q_a319t'>a319t</string>
-    <string name='Q_a319t1'>a319t1</string>
-    <string name='Q_a319t10'>a319t10</string>
-    <string name='Q_a319t11'>a319t11</string>
-    <string name='Q_a319t12'>a319t12</string>
-    <string name='Q_a319t13'>a319t13</string>
-    <string name='Q_a319t14'>a319t14</string>
-    <string name='Q_a319t15'>a319t15</string>
-    <string name='Q_a319t16'>a319t16</string>
-    <string name='Q_a319t17'>a319t17</string>
-    <string name='Q_a319t2'>a319t2</string>
-    <string name='Q_a319t3'>a319t3</string>
-    <string name='Q_a319t4'>a319t4</string>
-    <string name='Q_a319t5'>a319t5</string>
-    <string name='Q_a319t6'>a319t6</string>
-    <string name='Q_a319t7'>a319t7</string>
-    <string name='Q_a319t8'>a319t8</string>
-    <string name='Q_a319t9'>a319t9</string>
-    <string name='Q_a320'>a320</string>
-    <string name='Q_a321'>a321</string>
-    <string name='Q_a321t'>a321t</string>
-    <string name='Q_a321t1'>a321t1</string>
-    <string name='Q_a321t2'>a321t2</string>
-    <string name='Q_a321t3'>a321t3</string>
-    <string name='Q_a321t4'>a321t4</string>
-    <string name='Q_a321t5'>a321t5</string>
-    <string name='Q_a321t6'>a321t6</string>
-    <string name='Q_a321t7'>a321t7</string>
-    <string name='Q_a321t8'>a321t8</string>
-    <string name='Q_a322'>a322</string>
-    <string name='Q_a323'>a323</string>
-    <string name='Q_a324'>a324</string>
-    <string name='Q_a325'>a325</string>
-    <string name='Q_a326'>a326</string>
-    <string name='Q_a327'>a327</string>
-    <string name='Q_a328'>a328</string>
-    <string name='Q_a329'>a329</string>
-    <string name='Q_a330'>a330</string>
-    <string name='Q_a331'>a331</string>
-    <string name='Q_a332'>a332</string>
-    <string name='Q_a333'>a333</string>
-    <string name='Q_ains'>ains</string>
-    <string name='Q_b101'>b101</string>
-    <string name='Q_b102'>b102</string>
-    <string name='Q_b103'>b103</string>
-    <string name='Q_b103a'>b103a</string>
-    <string name='Q_b103b'>b103b</string>
-    <string name='Q_b103c'>b103c</string>
-    <string name='Q_b103d'>b103d</string>
-    <string name='Q_b103e'>b103e</string>
-    <string name='Q_b103f'>b103f</string>
-    <string name='Q_b103g'>b103g</string>
-    <string name='Q_b103h'>b103h</string>
-    <string name='Q_b103i'>b103i</string>
-    <string name='Q_b103i1'>b103i1</string>
-    <string name='Q_b103i10'>b103i10</string>
-    <string name='Q_b103i2'>b103i2</string>
-    <string name='Q_b103i3'>b103i3</string>
-    <string name='Q_b103i4'>b103i4</string>
-    <string name='Q_b103i5'>b103i5</string>
-    <string name='Q_b103i6'>b103i6</string>
-    <string name='Q_b103i7'>b103i7</string>
-    <string name='Q_b103i8'>b103i8</string>
-    <string name='Q_b103i9'>b103i9</string>
-    <string name='Q_b103i96'>b103i96</string>
-    <string name='Q_b103j'>b103j</string>
-    <string name='Q_b103k'>b103k</string>
-    <string name='Q_b103l'>b103l</string>
-    <string name='Q_b104'>b104</string>
-    <string name='Q_b105'>b105</string>
-    <string name='Q_b106'>b106</string>
-    <string name='Q_b107'>b107</string>
-    <string name='Q_b108'>b108</string>
-    <string name='Q_b109'>b109</string>
-    <string name='Q_b110'>b110</string>
-    <string name='Q_b111'>b111</string>
-    <string name='Q_b112'>b112</string>
-    <string name='Q_b113'>b113</string>
-    <string name='Q_b114'>b114</string>
-    <string name='Q_b115'>b115</string>
-    <string name='Q_b116'>b116</string>
-    <string name='Q_b117'>b117</string>
-    <string name='Q_bins'>bins</string>
-    <string name='Q_c101'>c101</string>
-    <string name='Q_c1011'>c1011</string>
-    <string name='Q_c1012'>c1012</string>
-    <string name='Q_c1013'>c1013</string>
-    <string name='Q_c102'>c102</string>
-    <string name='Q_c1021'>c1021</string>
-    <string name='Q_c1022'>c1022</string>
-    <string name='Q_c1023'>c1023</string>
-    <string name='Q_c103'>c103</string>
-    <string name='Q_c1031'>c1031</string>
-    <string name='Q_c1032'>c1032</string>
-    <string name='Q_c1033'>c1033</string>
-    <string name='Q_c104'>c104</string>
-    <string name='Q_c1041'>c1041</string>
-    <string name='Q_c1042'>c1042</string>
-    <string name='Q_c1043'>c1043</string>
-    <string name='Q_c105'>c105</string>
-    <string name='Q_c1051'>c1051</string>
-    <string name='Q_c1052'>c1052</string>
-    <string name='Q_c1053'>c1053</string>
-    <string name='Q_c106'>c106</string>
-    <string name='Q_c1061'>c1061</string>
-    <string name='Q_c1062'>c1062</string>
-    <string name='Q_c1063'>c1063</string>
-    <string name='Q_c107'>c107</string>
-    <string name='Q_c1071'>c1071</string>
-    <string name='Q_c1072'>c1072</string>
-    <string name='Q_c1073'>c1073</string>
-    <string name='Q_c108'>c108</string>
-    <string name='Q_c1081'>c1081</string>
-    <string name='Q_c1082'>c1082</string>
-    <string name='Q_c1083'>c1083</string>
-    <string name='Q_c109'>c109</string>
-    <string name='Q_c1091'>c1091</string>
-    <string name='Q_c1092'>c1092</string>
-    <string name='Q_c1093'>c1093</string>
-    <string name='Q_c110'>c110</string>
-    <string name='Q_c1101'>c1101</string>
-    <string name='Q_c1102'>c1102</string>
-    <string name='Q_c1103'>c1103</string>
-    <string name='Q_c111'>c111</string>
-    <string name='Q_c1111'>c1111</string>
-    <string name='Q_c1112'>c1112</string>
-    <string name='Q_c1113'>c1113</string>
-    <string name='Q_c112'>c112</string>
-    <string name='Q_c1121'>c1121</string>
-    <string name='Q_c1122'>c1122</string>
-    <string name='Q_c1123'>c1123</string>
-    <string name='Q_c113'>c113</string>
-    <string name='Q_c1131'>c1131</string>
-    <string name='Q_c1132'>c1132</string>
-    <string name='Q_c1133'>c1133</string>
-    <string name='Q_c1res'>c1res</string>
-    <string name='Q_c1s1int1'>c1s1int1</string>
-    <string name='Q_c1s1int2'>c1s1int2</string>
-    <string name='Q_c1s1int3'>c1s1int3</string>
-    <string name='Q_c1s1int4'>c1s1int4</string>
-    <string name='Q_c1sec1title'>c1sec1title</string>
-    <string name='Q_c1title'>c1title</string>
-    <string name='Q_c201'>c201</string>
-    <string name='Q_c202'>c202</string>
-    <string name='Q_c203'>c203</string>
-    <string name='Q_c204'>c204</string>
-    <string name='Q_c205'>c205</string>
-    <string name='Q_c206'>c206</string>
-    <string name='Q_c2inst'>c2inst</string>
-    <string name='Q_c2note'>c2note</string>
-    <string name='Q_c2title'>c2title</string>
-    <string name='Q_d101'>d101</string>
-    <string name='Q_d102'>d102</string>
-    <string name='Q_d103'>d103</string>
-    <string name='Q_d104'>d104</string>
-    <string name='Q_d105'>d105</string>
-    <string name='Q_d106'>d106</string>
-    <string name='Q_d107'>d107</string>
-    <string name='Q_d1instr'>d1instr</string>
-    <string name='Q_d1note'>d1note</string>
-    <string name='Q_dmaintitle'>dmaintitle</string>
-    <string name='Q_dsec1title'>dsec1title</string>
-    <string name='Q_e101'>e101</string>
-    <string name='Q_e102'>e102</string>
-    <string name='Q_e103'>e103</string>
-    <string name='Q_e104'>e104</string>
-    <string name='Q_e105'>e105</string>
-    <string name='Q_e106'>e106</string>
-    <string name='Q_e107'>e107</string>
-    <string name='Q_e108'>e108</string>
-    <string name='Q_e10801'>e10801</string>
-    <string name='Q_e109'>e109</string>
-    <string name='Q_e110'>e110</string>
-    <string name='Q_e111'>e111</string>
-    <string name='Q_e112'>e112</string>
-    <string name='Q_e11201'>e11201</string>
-    <string name='Q_e11202'>e11202</string>
-    <string name='Q_e11203'>e11203</string>
-    <string name='Q_e11204'>e11204</string>
-    <string name='Q_e11205'>e11205</string>
-    <string name='Q_e113'>e113</string>
-    <string name='Q_e114'>e114</string>
-    <string name='Q_e115'>e115</string>
-    <string name='Q_e11501'>e11501</string>
-    <string name='Q_e11502'>e11502</string>
-    <string name='Q_e11503'>e11503</string>
-    <string name='Q_e11504'>e11504</string>
-    <string name='Q_e11505'>e11505</string>
-    <string name='Q_f101'>f101</string>
-    <string name='Q_f102'>f102</string>
-    <string name='Q_f103'>f103</string>
-    <string name='Q_f104'>f104</string>
-    <string name='Q_f105'>f105</string>
-    <string name='Q_f106'>f106</string>
-    <string name='Q_f107'>f107</string>
-    <string name='Q_f108'>f108</string>
-    <string name='Q_f109'>f109</string>
-    <string name='Q_f110'>f110</string>
-    <string name='Q_f111'>f111</string>
-    <string name='Q_f112'>f112</string>
-    <string name='Q_f113'>f113</string>
-    <string name='Q_f114'>f114</string>
-    <string name='Q_f115'>f115</string>
-    <string name='Q_f116'>f116</string>
-    <string name='Q_f117'>f117</string>
-    <string name='Q_f118'>f118</string>
-    <string name='Q_f201'>f201</string>
-    <string name='Q_f202'>f202</string>
-    <string name='Q_f203'>f203</string>
-    <string name='Q_f204'>f204</string>
-    <string name='Q_f301'>f301</string>
-    <string name='Q_f302'>f302</string>
-    <string name='Q_f303'>f303</string>
-    <string name='Q_f304'>f304</string>
-    <string name='Q_f305'>f305</string>
-    <string name='Q_f306'>f306</string>
-    <string name='Q_f307'>f307</string>
-    <string name='Q_f308'>f308</string>
-    <string name='Q_f309'>f309</string>
-    <string name='Q_f310'>f310</string>
-    <string name='Q_f311'>f311</string>
-    <string name='Q_f312'>f312</string>
-    <string name='Q_f313'>f313</string>
-    <string name='Q_f314'>f314</string>
-    <string name='Q_g101'>g101</string>
-    <string name='Q_g10101'>g10101</string>
-    <string name='Q_g10102'>g10102</string>
-    <string name='Q_g10103'>g10103</string>
-    <string name='Q_g102'>g102</string>
-    <string name='Q_g10201'>g10201</string>
-    <string name='Q_g10202'>g10202</string>
-    <string name='Q_g10203'>g10203</string>
-    <string name='Q_g103'>g103</string>
-    <string name='Q_g10301'>g10301</string>
-    <string name='Q_g10302'>g10302</string>
-    <string name='Q_g104'>g104</string>
-    <string name='Q_g10401'>g10401</string>
-    <string name='Q_g10402'>g10402</string>
-    <string name='Q_g105'>g105</string>
-    <string name='Q_g106'>g106</string>
-    <string name='Q_g10601'>g10601</string>
-    <string name='Q_g10602'>g10602</string>
-    <string name='Q_g201'>g201</string>
-    <string name='Q_g202'>g202</string>
-    <string name='Q_g203'>g203</string>
-    <string name='Q_g204'>g204</string>
-    <string name='Q_g205'>g205</string>
-    <string name='Q_g20501'>g20501</string>
-    <string name='Q_g20502'>g20502</string>
-    <string name='Q_g206'>g206</string>
-    <string name='Q_g20601'>g20601</string>
-    <string name='Q_g20602'>g20602</string>
-    <string name='Q_g20603'>g20603</string>
-    <string name='Q_g20604'>g20604</string>
-    <string name='Q_g207'>g207</string>
-    <string name='Q_g208'>g208</string>
-    <string name='Q_g209'>g209</string>
-    <string name='Q_g20901'>g20901</string>
-    <string name='Q_g20902'>g20902</string>
-    <string name='Q_g210'>g210</string>
-    <string name='Q_g301'>g301</string>
-    <string name='Q_g30101'>g30101</string>
-    <string name='Q_g30102'>g30102</string>
-    <string name='Q_g30103'>g30103</string>
-    <string name='Q_g302'>g302</string>
-    <string name='Q_g30201'>g30201</string>
-    <string name='Q_g30202'>g30202</string>
-    <string name='Q_g30203'>g30203</string>
-    <string name='Q_g303'>g303</string>
-    <string name='Q_g30301'>g30301</string>
-    <string name='Q_g30302'>g30302</string>
-    <string name='Q_g30303'>g30303</string>
-    <string name='Q_g304'>g304</string>
-    <string name='Q_g30401'>g30401</string>
-    <string name='Q_g30402'>g30402</string>
-    <string name='Q_g30403'>g30403</string>
-    <string name='Q_g305'>g305</string>
-    <string name='Q_g30501'>g30501</string>
-    <string name='Q_g30502'>g30502</string>
-    <string name='Q_g30503'>g30503</string>
-    <string name='Q_g306'>g306</string>
-    <string name='Q_g30601'>g30601</string>
-    <string name='Q_g30602'>g30602</string>
-    <string name='Q_g30603'>g30603</string>
-    <string name='Q_g307'>g307</string>
-    <string name='Q_g30701'>g30701</string>
-    <string name='Q_g30702'>g30702</string>
-    <string name='Q_g30703'>g30703</string>
-    <string name='Q_g308'>g308</string>
-    <string name='Q_g30801'>g30801</string>
-    <string name='Q_g30802'>g30802</string>
-    <string name='Q_g30803'>g30803</string>
-    <string name='Q_g309'>g309</string>
-    <string name='Q_g30901'>g30901</string>
-    <string name='Q_g30902'>g30902</string>
-    <string name='Q_g30903'>g30903</string>
-    <string name='Q_g310'>g310</string>
-    <string name='Q_g31001'>g31001</string>
-    <string name='Q_g31002'>g31002</string>
-    <string name='Q_g31003'>g31003</string>
-    <string name='Q_g311'>g311</string>
-    <string name='Q_g31101'>g31101</string>
-    <string name='Q_g31102'>g31102</string>
-    <string name='Q_g31103'>g31103</string>
-    <string name='Q_g401'>g401</string>
-    <string name='Q_g402'>g402</string>
-    <string name='Q_g403'>g403</string>
-    <string name='Q_g404'>g404</string>
-    <string name='Q_g405'>g405</string>
-    <string name='Q_g501'>g501</string>
-    <string name='Q_g502'>g502</string>
-    <string name='Q_g503'>g503</string>
-    <string name='Q_g504'>g504</string>
-    <string name='Q_g505'>g505</string>
-    <string name='Q_g506'>g506</string>
-    <string name='Q_g507'>g507</string>
-    <string name='Q_g601'>g601</string>
-    <string name='Q_g602'>g602</string>
-    <string name='Q_g603'>g603</string>
-    <string name='Q_g604'>g604</string>
-    <string name='Q_g605'>g605</string>
-    <string name='Q_g606'>g606</string>
-    <string name='Q_g607'>g607</string>
-    <string name='Q_g608'>g608</string>
-    <string name='Q_g609'>g609</string>
-    <string name='Q_g610'>g610</string>
-    <string name='Q_g611'>g611</string>
-    <string name='Q_g701'>g701</string>
-    <string name='Q_ins'>ins</string>
-    <string name='Q_modatitle'>modatitle</string>
-    <string name='Q_modctitle'>modctitle</string>
-    <string name='Q_modulef'>module f</string>
-    <string name='Q_moduleb'>moduleb</string>
-    <string name='Q_modulee'>modulee</string>
-    <string name='Q_moduleg'>moduleg</string>
-    <string name='Q_modulegins'>modulegins</string>
-    <string name='Q_seca3'>seca3</string>
-    <string name='Q_secta'>secta</string>
-    <string name='Q_secta2'>secta2</string>
-    <string name='Q_sectionf1'>section f1</string>
-    <string name='Q_sectionf2'>section f2</string>
-    <string name='Q_sectionf3'>section f3</string>
-    <string name='Q_sectionb1'>sectionb1</string>
-    <string name='Q_sectiong1'>sectiong1</string>
-    <string name='Q_sectiong2'>sectiong2</string>
-    <string name='Q_sectiong3'>sectiong3</string>
-    <string name='Q_sectiong4'>sectiong4</string>
-    <string name='Q_sectiong5'>sectiong5</string>
-    <string name='Q_sectiong6'>sectiong6</string>
-    <string name='Q_sectiong7'>sectiong7</string>
+    <string name="Q_a101t">a101t</string>
+    <string name="Q_a102">a102</string>
+    <string name="Q_a103">a103</string>
+    <string name="Q_a104">a104</string>
+    <string name="Q_a105">a105</string>
+    <string name="Q_a106">a106</string>
+    <string name="Q_a107">a107</string>
+    <string name="Q_a108">a108</string>
+    <string name="Q_a109">a109</string>
+    <string name="Q_a110">a110</string>
+    <string name="Q_a111t">a111t</string>
+    <string name="Q_a112">a112</string>
+    <string name="Q_a113">a113</string>
+    <string name="Q_a114t">a114t</string>
+    <string name="Q_a115t">a115t</string>
+    <string name="Q_a116t">a116t</string>
+    <string name="Q_a201">a201</string>
+    <string name="Q_a202t">a202t</string>
+    <string name="Q_a203t">a203t</string>
+    <string name="Q_a204">a204</string>
+    <string name="Q_a205t">a205t</string>
+    <string name="Q_a206">a206</string>
+    <string name="Q_a207t">a207t</string>
+    <string name="Q_a208t">a208t</string>
+    <string name="Q_a209t">a209t</string>
+    <string name="Q_a210">a210</string>
+    <string name="Q_a2ins">a2ins</string>
+    <string name="Q_a301">a301</string>
+    <string name="Q_a30101">a30101</string>
+    <string name="Q_a302">a302</string>
+    <string name="Q_a303">a303</string>
+    <string name="Q_a304">a304</string>
+    <string name="Q_a305">a305</string>
+    <string name="Q_a306">a306</string>
+    <string name="Q_a307">a307</string>
+    <string name="Q_a308">a308</string>
+    <string name="Q_a309">a309</string>
+    <string name="Q_a310">a310</string>
+    <string name="Q_a311">a311</string>
+    <string name="Q_a312">a312</string>
+    <string name="Q_a313">a313</string>
+    <string name="Q_a314">a314</string>
+    <string name="Q_a315">a315</string>
+    <string name="Q_a316">a316</string>
+    <string name="Q_a317">a317</string>
+    <string name="Q_a318">a318</string>
+    <string name="Q_a319">a319</string>
+    <string name="Q_a319t">a319t</string>
+    <string name="Q_a319t1">a319t1</string>
+    <string name="Q_a319t10">a319t10</string>
+    <string name="Q_a319t11">a319t11</string>
+    <string name="Q_a319t12">a319t12</string>
+    <string name="Q_a319t13">a319t13</string>
+    <string name="Q_a319t14">a319t14</string>
+    <string name="Q_a319t15">a319t15</string>
+    <string name="Q_a319t16">a319t16</string>
+    <string name="Q_a319t17">a319t17</string>
+    <string name="Q_a319t2">a319t2</string>
+    <string name="Q_a319t3">a319t3</string>
+    <string name="Q_a319t4">a319t4</string>
+    <string name="Q_a319t5">a319t5</string>
+    <string name="Q_a319t6">a319t6</string>
+    <string name="Q_a319t7">a319t7</string>
+    <string name="Q_a319t8">a319t8</string>
+    <string name="Q_a319t9">a319t9</string>
+    <string name="Q_a320">a320</string>
+    <string name="Q_a321">a321</string>
+    <string name="Q_a321t">a321t</string>
+    <string name="Q_a321t1">a321t1</string>
+    <string name="Q_a321t2">a321t2</string>
+    <string name="Q_a321t3">a321t3</string>
+    <string name="Q_a321t4">a321t4</string>
+    <string name="Q_a321t5">a321t5</string>
+    <string name="Q_a321t6">a321t6</string>
+    <string name="Q_a321t7">a321t7</string>
+    <string name="Q_a321t8">a321t8</string>
+    <string name="Q_a322">a322</string>
+    <string name="Q_a323">a323</string>
+    <string name="Q_a324">a324</string>
+    <string name="Q_a325">a325</string>
+    <string name="Q_a326">a326</string>
+    <string name="Q_a327">a327</string>
+    <string name="Q_a328">a328</string>
+    <string name="Q_a329">a329</string>
+    <string name="Q_a330">a330</string>
+    <string name="Q_a331">a331</string>
+    <string name="Q_a332">a332</string>
+    <string name="Q_a333">a333</string>
+    <string name="Q_ains">ains</string>
+    <string name="Q_b101">b101</string>
+    <string name="Q_b102">b102</string>
+    <string name="Q_b103">b103</string>
+    <string name="Q_b103a">b103a</string>
+    <string name="Q_b103b">b103b</string>
+    <string name="Q_b103c">b103c</string>
+    <string name="Q_b103d">b103d</string>
+    <string name="Q_b103e">b103e</string>
+    <string name="Q_b103f">b103f</string>
+    <string name="Q_b103g">b103g</string>
+    <string name="Q_b103h">b103h</string>
+    <string name="Q_b103i">b103i</string>
+    <string name="Q_b103i1">b103i1</string>
+    <string name="Q_b103i10">b103i10</string>
+    <string name="Q_b103i2">b103i2</string>
+    <string name="Q_b103i3">b103i3</string>
+    <string name="Q_b103i4">b103i4</string>
+    <string name="Q_b103i5">b103i5</string>
+    <string name="Q_b103i6">b103i6</string>
+    <string name="Q_b103i7">b103i7</string>
+    <string name="Q_b103i8">b103i8</string>
+    <string name="Q_b103i9">b103i9</string>
+    <string name="Q_b103i96">b103i96</string>
+    <string name="Q_b103j">b103j</string>
+    <string name="Q_b103k">b103k</string>
+    <string name="Q_b103l">b103l</string>
+    <string name="Q_b104">b104</string>
+    <string name="Q_b105">b105</string>
+    <string name="Q_b106">b106</string>
+    <string name="Q_b107">b107</string>
+    <string name="Q_b108">b108</string>
+    <string name="Q_b109">b109</string>
+    <string name="Q_b110">b110</string>
+    <string name="Q_b111">b111</string>
+    <string name="Q_b112">b112</string>
+    <string name="Q_b113">b113</string>
+    <string name="Q_b114">b114</string>
+    <string name="Q_b115">b115</string>
+    <string name="Q_b116">b116</string>
+    <string name="Q_b117">b117</string>
+    <string name="Q_bins">bins</string>
+    <string name="Q_c101">c101</string>
+    <string name="Q_c1011">c1011</string>
+    <string name="Q_c1012">c1012</string>
+    <string name="Q_c1013">c1013</string>
+    <string name="Q_c102">c102</string>
+    <string name="Q_c1021">c1021</string>
+    <string name="Q_c1022">c1022</string>
+    <string name="Q_c1023">c1023</string>
+    <string name="Q_c103">c103</string>
+    <string name="Q_c1031">c1031</string>
+    <string name="Q_c1032">c1032</string>
+    <string name="Q_c1033">c1033</string>
+    <string name="Q_c104">c104</string>
+    <string name="Q_c1041">c1041</string>
+    <string name="Q_c1042">c1042</string>
+    <string name="Q_c1043">c1043</string>
+    <string name="Q_c105">c105</string>
+    <string name="Q_c1051">c1051</string>
+    <string name="Q_c1052">c1052</string>
+    <string name="Q_c1053">c1053</string>
+    <string name="Q_c106">c106</string>
+    <string name="Q_c1061">c1061</string>
+    <string name="Q_c1062">c1062</string>
+    <string name="Q_c1063">c1063</string>
+    <string name="Q_c107">c107</string>
+    <string name="Q_c1071">c1071</string>
+    <string name="Q_c1072">c1072</string>
+    <string name="Q_c1073">c1073</string>
+    <string name="Q_c108">c108</string>
+    <string name="Q_c1081">c1081</string>
+    <string name="Q_c1082">c1082</string>
+    <string name="Q_c1083">c1083</string>
+    <string name="Q_c109">c109</string>
+    <string name="Q_c1091">c1091</string>
+    <string name="Q_c1092">c1092</string>
+    <string name="Q_c1093">c1093</string>
+    <string name="Q_c110">c110</string>
+    <string name="Q_c1101">c1101</string>
+    <string name="Q_c1102">c1102</string>
+    <string name="Q_c1103">c1103</string>
+    <string name="Q_c111">c111</string>
+    <string name="Q_c1111">c1111</string>
+    <string name="Q_c1112">c1112</string>
+    <string name="Q_c1113">c1113</string>
+    <string name="Q_c112">c112</string>
+    <string name="Q_c1121">c1121</string>
+    <string name="Q_c1122">c1122</string>
+    <string name="Q_c1123">c1123</string>
+    <string name="Q_c113">c113</string>
+    <string name="Q_c1131">c1131</string>
+    <string name="Q_c1132">c1132</string>
+    <string name="Q_c1133">c1133</string>
+    <string name="Q_c1res">c1res</string>
+    <string name="Q_c1s1int1">c1s1int1</string>
+    <string name="Q_c1s1int2">c1s1int2</string>
+    <string name="Q_c1s1int3">c1s1int3</string>
+    <string name="Q_c1s1int4">c1s1int4</string>
+    <string name="Q_c1sec1title">c1sec1title</string>
+    <string name="Q_c1title">c1title</string>
+    <string name="Q_c201">c201</string>
+    <string name="Q_c202">c202</string>
+    <string name="Q_c203">c203</string>
+    <string name="Q_c204">c204</string>
+    <string name="Q_c205">c205</string>
+    <string name="Q_c206">c206</string>
+    <string name="Q_c2inst">c2inst</string>
+    <string name="Q_c2note">c2note</string>
+    <string name="Q_c2title">c2title</string>
+    <string name="Q_d101">d101</string>
+    <string name="Q_d102">d102</string>
+    <string name="Q_d103">d103</string>
+    <string name="Q_d104">d104</string>
+    <string name="Q_d105">d105</string>
+    <string name="Q_d106">d106</string>
+    <string name="Q_d107">d107</string>
+    <string name="Q_d1instr">d1instr</string>
+    <string name="Q_d1note">d1note</string>
+    <string name="Q_dmaintitle">dmaintitle</string>
+    <string name="Q_dsec1title">dsec1title</string>
+    <string name="Q_e101">e101</string>
+    <string name="Q_e102">e102</string>
+    <string name="Q_e103">e103</string>
+    <string name="Q_e104">e104</string>
+    <string name="Q_e105">e105</string>
+    <string name="Q_e106">e106</string>
+    <string name="Q_e107">e107</string>
+    <string name="Q_e108">e108</string>
+    <string name="Q_e10801">e10801</string>
+    <string name="Q_e109">e109</string>
+    <string name="Q_e110">e110</string>
+    <string name="Q_e111">e111</string>
+    <string name="Q_e112">e112</string>
+    <string name="Q_e11201">e11201</string>
+    <string name="Q_e11202">e11202</string>
+    <string name="Q_e11203">e11203</string>
+    <string name="Q_e11204">e11204</string>
+    <string name="Q_e11205">e11205</string>
+    <string name="Q_e113">e113</string>
+    <string name="Q_e114">e114</string>
+    <string name="Q_e115">e115</string>
+    <string name="Q_e11501">e11501</string>
+    <string name="Q_e11502">e11502</string>
+    <string name="Q_e11503">e11503</string>
+    <string name="Q_e11504">e11504</string>
+    <string name="Q_e11505">e11505</string>
+    <string name="Q_f101">f101</string>
+    <string name="Q_f102">f102</string>
+    <string name="Q_f103">f103</string>
+    <string name="Q_f104">f104</string>
+    <string name="Q_f105">f105</string>
+    <string name="Q_f106">f106</string>
+    <string name="Q_f107">f107</string>
+    <string name="Q_f108">f108</string>
+    <string name="Q_f109">f109</string>
+    <string name="Q_f110">f110</string>
+    <string name="Q_f111">f111</string>
+    <string name="Q_f112">f112</string>
+    <string name="Q_f113">f113</string>
+    <string name="Q_f114">f114</string>
+    <string name="Q_f115">f115</string>
+    <string name="Q_f116">f116</string>
+    <string name="Q_f117">f117</string>
+    <string name="Q_f118">f118</string>
+    <string name="Q_f201">f201</string>
+    <string name="Q_f202">f202</string>
+    <string name="Q_f203">f203</string>
+    <string name="Q_f204">f204</string>
+    <string name="Q_f301">f301</string>
+    <string name="Q_f302">f302</string>
+    <string name="Q_f303">f303</string>
+    <string name="Q_f304">f304</string>
+    <string name="Q_f305">f305</string>
+    <string name="Q_f306">f306</string>
+    <string name="Q_f307">f307</string>
+    <string name="Q_f308">f308</string>
+    <string name="Q_f309">f309</string>
+    <string name="Q_f310">f310</string>
+    <string name="Q_f311">f311</string>
+    <string name="Q_f312">f312</string>
+    <string name="Q_f313">f313</string>
+    <string name="Q_f314">f314</string>
+    <string name="Q_g101">g101</string>
+    <string name="Q_g10101">g10101</string>
+    <string name="Q_g10102">g10102</string>
+    <string name="Q_g10103">g10103</string>
+    <string name="Q_g102">g102</string>
+    <string name="Q_g10201">g10201</string>
+    <string name="Q_g10202">g10202</string>
+    <string name="Q_g10203">g10203</string>
+    <string name="Q_g103">g103</string>
+    <string name="Q_g10301">g10301</string>
+    <string name="Q_g10302">g10302</string>
+    <string name="Q_g104">g104</string>
+    <string name="Q_g10401">g10401</string>
+    <string name="Q_g10402">g10402</string>
+    <string name="Q_g105">g105</string>
+    <string name="Q_g106">g106</string>
+    <string name="Q_g10601">g10601</string>
+    <string name="Q_g10602">g10602</string>
+    <string name="Q_g201">g201</string>
+    <string name="Q_g202">g202</string>
+    <string name="Q_g203">g203</string>
+    <string name="Q_g204">g204</string>
+    <string name="Q_g205">g205</string>
+    <string name="Q_g20501">g20501</string>
+    <string name="Q_g20502">g20502</string>
+    <string name="Q_g206">g206</string>
+    <string name="Q_g20601">g20601</string>
+    <string name="Q_g20602">g20602</string>
+    <string name="Q_g20603">g20603</string>
+    <string name="Q_g20604">g20604</string>
+    <string name="Q_g207">g207</string>
+    <string name="Q_g208">g208</string>
+    <string name="Q_g209">g209</string>
+    <string name="Q_g20901">g20901</string>
+    <string name="Q_g20902">g20902</string>
+    <string name="Q_g210">g210</string>
+    <string name="Q_g301">g301</string>
+    <string name="Q_g30101">g30101</string>
+    <string name="Q_g30102">g30102</string>
+    <string name="Q_g30103">g30103</string>
+    <string name="Q_g302">g302</string>
+    <string name="Q_g30201">g30201</string>
+    <string name="Q_g30202">g30202</string>
+    <string name="Q_g30203">g30203</string>
+    <string name="Q_g303">g303</string>
+    <string name="Q_g30301">g30301</string>
+    <string name="Q_g30302">g30302</string>
+    <string name="Q_g30303">g30303</string>
+    <string name="Q_g304">g304</string>
+    <string name="Q_g30401">g30401</string>
+    <string name="Q_g30402">g30402</string>
+    <string name="Q_g30403">g30403</string>
+    <string name="Q_g305">g305</string>
+    <string name="Q_g30501">g30501</string>
+    <string name="Q_g30502">g30502</string>
+    <string name="Q_g30503">g30503</string>
+    <string name="Q_g306">g306</string>
+    <string name="Q_g30601">g30601</string>
+    <string name="Q_g30602">g30602</string>
+    <string name="Q_g30603">g30603</string>
+    <string name="Q_g307">g307</string>
+    <string name="Q_g30701">g30701</string>
+    <string name="Q_g30702">g30702</string>
+    <string name="Q_g30703">g30703</string>
+    <string name="Q_g308">g308</string>
+    <string name="Q_g30801">g30801</string>
+    <string name="Q_g30802">g30802</string>
+    <string name="Q_g30803">g30803</string>
+    <string name="Q_g309">g309</string>
+    <string name="Q_g30901">g30901</string>
+    <string name="Q_g30902">g30902</string>
+    <string name="Q_g30903">g30903</string>
+    <string name="Q_g310">g310</string>
+    <string name="Q_g31001">g31001</string>
+    <string name="Q_g31002">g31002</string>
+    <string name="Q_g31003">g31003</string>
+    <string name="Q_g311">g311</string>
+    <string name="Q_g31101">g31101</string>
+    <string name="Q_g31102">g31102</string>
+    <string name="Q_g31103">g31103</string>
+    <string name="Q_g401">g401</string>
+    <string name="Q_g402">g402</string>
+    <string name="Q_g403">g403</string>
+    <string name="Q_g404">g404</string>
+    <string name="Q_g405">g405</string>
+    <string name="Q_g501">g501</string>
+    <string name="Q_g502">g502</string>
+    <string name="Q_g503">g503</string>
+    <string name="Q_g504">g504</string>
+    <string name="Q_g505">g505</string>
+    <string name="Q_g506">g506</string>
+    <string name="Q_g507">g507</string>
+    <string name="Q_g601">g601</string>
+    <string name="Q_g602">g602</string>
+    <string name="Q_g603">g603</string>
+    <string name="Q_g604">g604</string>
+    <string name="Q_g605">g605</string>
+    <string name="Q_g606">g606</string>
+    <string name="Q_g607">g607</string>
+    <string name="Q_g608">g608</string>
+    <string name="Q_g609">g609</string>
+    <string name="Q_g610">g610</string>
+    <string name="Q_g611">g611</string>
+    <string name="Q_g701">g701</string>
+    <string name="Q_ins">ins</string>
+    <string name="Q_modatitle">modatitle</string>
+    <string name="Q_modctitle">modctitle</string>
+    <string name="Q_modulef">module f</string>
+    <string name="Q_moduleb">moduleb</string>
+    <string name="Q_modulee">modulee</string>
+    <string name="Q_moduleg">moduleg</string>
+    <string name="Q_modulegins">modulegins</string>
+    <string name="Q_seca3">seca3</string>
+    <string name="Q_secta">secta</string>
+    <string name="Q_secta2">secta2</string>
+    <string name="Q_sectionf1">section f1</string>
+    <string name="Q_sectionf2">section f2</string>
+    <string name="Q_sectionf3">section f3</string>
+    <string name="Q_sectionb1">sectionb1</string>
+    <string name="Q_sectiong1">sectiong1</string>
+    <string name="Q_sectiong2">sectiong2</string>
+    <string name="Q_sectiong3">sectiong3</string>
+    <string name="Q_sectiong4">sectiong4</string>
+    <string name="Q_sectiong5">sectiong5</string>
+    <string name="Q_sectiong6">sectiong6</string>
+    <string name="Q_sectiong7">sectiong7</string>
 
     <string name="a116t"> Result of Household Questionnaire interview </string>
     <string name="a116i"> Discuss any result not completed with team leader </string>
@@ -2526,7 +2522,6 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="a11608"> No MWRA 18 or above of age live in this household ? </string>
     <string name="a11696"> Other (Specify) </string>
 
-    <string name="Q_istatus"> status </string>
     <string name="istatus"> Result of Household Questionnaire interview </string>
     <string name="istatusi"> Discuss any result not completed with team leader </string>
     <string name="istatus01"> Completed </string>
@@ -2540,4 +2535,50 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="istatus96"> Other (Specify) </string>
 
 
+    <!--Error Messages-->
+    <string name="upd_db_form" translatable="false"> updateDB(Form):\t </string>
+    <string name="upd_db_error" translatable="false"> Updating Database… ERROR! </string>
+    <string name="db_excp_error" translatable="false"> Database Exception... ERROR! </string>
+    <string name="upd_db" translatable="false"> Updating Database...\t </string>
+    <string name="fail_db_upd" translatable="false"> Failed to Update Database! </string>
+    <string name="backPress" translatable="false"> Back Press Not Allowed </string>
+    <string name="invalid_response" translatable="false"> Invalid Response </string>
+    <string name="agecal" translatable="false">ageCal:\t</string>
+    <string name="network_conn_error" translatable="false"> Network connection not available ! </string>
+    <string name="no_mother_selected_child_list" translatable="false"> No Mother has been selected. Please select a mother before opening Child List </string>
+    <string name="sec_not_available_moment" translatable="false"> This section is not available at the moment. </string>
+    <string name="no_mother_selected_preg_list" translatable="false"> No Mother has been selected. Please select a mother before opening Pregnancy List </string>
+    <string name="h220_error" translatable="false"> H220: WRA count does not match Females 20–49. </string>
+    <string name="onitemselected" translatable="false"> onItemSelected(Samples):\t </string>
+    <string name="upd_samples" translatable="false"> updateDB(Samples):\t </string>
+    <string name="upd_anthro" translatable="false"> updateDB(Anthro):\t </string>
+    <string name="folder_not_created" translatable="false"> Folder Not Created </string>
+    <string name="invalid_password" translatable="false"> Invalid Password </string>
+    <string name="username_required" translatable="false"> Username is required. </string>
+    <string name="incorrect_username_or_password" translatable="false">Incorrect Username or Password</string>
+    <string name="open_hh_form" translatable="false"> Open Household Form </string>
+    <string name="open_anhtro_form" translatable="false">Open Anthro Form</string>
+    <string name="info_hh_form_not_exist" translatable="false">INFO: Household information does not exist.</string>
+    <string name="hh_not_found" translatable="false">Household not Found</string>
+    <string name="hh_exists_form" translatable="false"> hhExists(Form): \t </string>
+    <string name="w202t2" translatable="false">Probe for the type of person seen and record all answers given.</string>
+    <string name="w311t2" translatable="false">Агар аз 24 соат камтар бошад, соатро нависед.</string>
+    <string name="instrc3" translatable="false">Варақчаи Гуруҳи Ғизоҳоро истифода баред то ин ки ғизо муайян шавад ки ба кадом гурӯҳ дохил мебошад.</string>
+    <string name="modetitle" translatable="false">MODULE E: САНҶИШИ ГЕМОГЛОБИН ВА ҶАМЪОВАРИИ СТУЛ</string>
+    <string name="woman_child_info_missing" translatable="false">Please fill woman and child sections before entering this information</string>
+    <string name="child_info_missing" translatable="false">Please fill child sections before entering this information</string>
+    <string name="open_new_form" translatable="false">OPEN NEW FORM</string>
+    <string name="options" translatable="false">Options</string>
+    <string name="a202">را ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
+    <string name="a211">(نام) کیا اس وقت موجود ہے</string>
+    <string name="a21101">ہاں</string>
+    <string name="a21102">نہیں</string>
+    <string name="a212">والدکا لائن نمبر</string>
+    <string name="a212_info">(6 ماہ سے لیکر18 سال سے کم عمر کے بچوں کے لئے</string>
+    <string name="a213">"والدہ کا لائن نمبر "</string>
+    <string name="a213_info">(6 ماہ سے لیکر18 سال سے کم عمر کے بچوں کے لئے</string>
+    <string name="ins">ہدایات : یہ سیکشن انڈیکس ماں سے پوچھا جائیگا: گھرانے کی خاتون سربراہ  کو  اونچی آواز میں پڑھ کر سنائیں۔</string>
+    <string name="f10401">"کبھی کبھار (پچھلے چار ہفتوں کے دوران ایک سے دو مرتبہ) "</string>
+    <string name="f10402">"کبھی کبھی (پچھلے چار ہفتوں کے دوران تین سے دس مرتبہ) "</string>
+    <string name="f10403">"اکثر(پچھلے چار ہفتوں کے دوران دس سےزیادہ مرتبہ) "</string>
 </resources>

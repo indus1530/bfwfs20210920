@@ -1,7 +1,7 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui;
 
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.PROJECT_NAME;
-import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.TAJIKISTAN;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.URDU;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_COPY;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_NAME;
@@ -56,12 +56,12 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.MainActivity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.AppInfo;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
-import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityLoginBinding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -383,9 +383,9 @@ public class LoginActivity extends AppCompatActivity {
     private void changeLanguage(int countryCode) {
         String lang;
         String country;
-        if (countryCode == TAJIKISTAN) {
-            lang = "tg";
-            country = "TJ";
+        if (countryCode == URDU) {
+            lang = "ur";
+            country = "PK";
             MainApp.editor
                     .putString("lang", "3")
                     .apply();
