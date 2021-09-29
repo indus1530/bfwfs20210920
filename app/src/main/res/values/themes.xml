@@ -105,6 +105,10 @@
         <item name="android:minHeight">52dp</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <item name="android:background">@drawable/grad_lable</item>
+        <item name="android:shadowColor">#7f000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
     </style>
 
     <style name="labelsHead" parent="@android:style/TextAppearance.Widget.TextView">
@@ -143,7 +147,14 @@
         <item name="android:singleLine">true</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
+
+
         <!--
+                        android:shadowColor="@color/text_shadow_white"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+
                 <item name="android:textStyle">bold</item>
         -->
         <!--        <item name="android:textDirection">ltr</item>-->

@@ -62,7 +62,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/labelsHead"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/c1s1int1" />

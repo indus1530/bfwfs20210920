@@ -111,7 +111,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10101" />
@@ -189,7 +189,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10102" />
@@ -267,7 +267,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10103" />
@@ -386,7 +386,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10201" />
@@ -464,7 +464,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10202" />
@@ -542,7 +542,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10203" />
@@ -661,7 +661,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10301" />
@@ -731,7 +731,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10302" />
@@ -842,7 +842,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10401" />
@@ -912,7 +912,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10402" />
@@ -1096,7 +1096,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10601" />
@@ -1150,7 +1150,7 @@
                                 android:layout_weight="1">
 
                                 <TextView
-                                    style="@style/textView"
+                                    style="@style/sub_labels"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g10602" />
