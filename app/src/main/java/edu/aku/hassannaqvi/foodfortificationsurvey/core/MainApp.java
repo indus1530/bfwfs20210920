@@ -102,6 +102,34 @@ public class MainApp extends Application {
         return "deviceId";
     }
 
+    public static int kishGrid(int Hh_Sno, int totalMwra) {
+
+        // GENERATE RANDOM
+        // int household  = 1 + (int)(Math.random() * ((10 - 1) + 1));
+        // int eligibles = 1 + (int)(Math.random() * ((8 - 1) + 1));
+
+        int household = Math.min(Hh_Sno, 10);
+        int eligibles = Math.min(totalMwra, 8);
+
+        int[][] grid = {
+                {1, 1, 1, 1, 1, 1, 1, 1},
+                {1, 2, 2, 2, 2, 2, 2, 2},
+                {1, 1, 3, 3, 3, 3, 3, 3},
+                {1, 2, 1, 4, 4, 4, 4, 4},
+                {1, 1, 2, 1, 5, 5, 5, 5},
+                {1, 2, 3, 2, 1, 6, 6, 6},
+                {1, 1, 1, 3, 2, 1, 7, 7},
+                {1, 2, 2, 4, 3, 2, 1, 8},
+                {1, 1, 3, 1, 4, 3, 2, 1},
+                {1, 2, 1, 2, 5, 4, 3, 2},
+        };
+
+        // System.out.println(household+"-"+eligibles);
+        // System.out.println(grid[household-1][eligibles-1]);
+
+        return grid[household - 1][eligibles - 1];
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();

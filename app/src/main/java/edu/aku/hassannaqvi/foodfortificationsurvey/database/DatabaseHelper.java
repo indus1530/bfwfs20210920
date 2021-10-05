@@ -25,9 +25,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.EnumBlocksTable;
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FamilyMemberListTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.RandomTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.UsersTable;
@@ -133,28 +134,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_PROJECT_NAME, members.getProjectName());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_UID, members.getUid());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_UUID, members.getUuid());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_CLUSTER, members.getCluster());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_HHID, members.getHhid());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_USERNAME, members.getUserName());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_SYSDATE, members.getSysDate());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, members.getIndexed());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_SA2, members.sA2toString());
+        values.put(FamilyMemberListTable.COLUMN_PROJECT_NAME, members.getProjectName());
+        values.put(FamilyMemberListTable.COLUMN_UID, members.getUid());
+        values.put(FamilyMemberListTable.COLUMN_UUID, members.getUuid());
+        values.put(FamilyMemberListTable.COLUMN_CLUSTER, members.getCluster());
+        values.put(FamilyMemberListTable.COLUMN_HHID, members.getHhid());
+        values.put(FamilyMemberListTable.COLUMN_USERNAME, members.getUserName());
+        values.put(FamilyMemberListTable.COLUMN_SYSDATE, members.getSysDate());
+        values.put(FamilyMemberListTable.COLUMN_INDEXED, members.getIndexed());
+        values.put(FamilyMemberListTable.COLUMN_SA2, members.sA2toString());
 
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_ISTATUS, members.getiStatus());
+        values.put(FamilyMemberListTable.COLUMN_ISTATUS, members.getiStatus());
 
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_DEVICETAGID, members.getDeviceTag());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_DEVICEID, members.getDeviceId());
-        values.put(TableContracts.FamilyMemberListTable.COLUMN_APPVERSION, members.getAppver());
+        values.put(FamilyMemberListTable.COLUMN_DEVICETAGID, members.getDeviceTag());
+        values.put(FamilyMemberListTable.COLUMN_DEVICEID, members.getDeviceId());
+        values.put(FamilyMemberListTable.COLUMN_APPVERSION, members.getAppver());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                TableContracts.FamilyMemberListTable.TABLE_NAME,
-                TableContracts.FamilyMemberListTable.COLUMN_NAME_NULLABLE,
+                FamilyMemberListTable.TABLE_NAME,
+                FamilyMemberListTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -182,10 +183,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(column, value);
 
-        String selection = TableContracts.FamilyMemberListTable._ID + " =? ";
+        String selection = FamilyMemberListTable._ID + " =? ";
         String[] selectionArgs = {String.valueOf(MainApp.members.getId())};
 
-        return db.update(TableContracts.FamilyMemberListTable.TABLE_NAME,
+        return db.update(FamilyMemberListTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -943,5 +944,103 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         }
         return randHH;
+    }
+
+    public List<FamilyMembers> getMemberBYUID(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FamilyMemberListTable.COLUMN_UUID + "=?";
+
+        String[] whereArgs = {uid};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FamilyMemberListTable.COLUMN_ID + " ASC";
+
+        ArrayList<FamilyMembers> membersByUID = new ArrayList<>();
+        try {
+            c = db.query(
+                    FamilyMemberListTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                FamilyMembers mwra = new FamilyMembers().Hydrate(c);
+
+                membersByUID.add(mwra);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return membersByUID;
+    }
+
+    public FamilyMembers getSelectedMemberBYUID(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FamilyMemberListTable.COLUMN_UUID + "=? AND "
+                + FamilyMemberListTable.COLUMN_INDEXED + "=?";
+
+        String[] whereArgs = {uid, "1"};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FamilyMemberListTable.COLUMN_ID + " ASC";
+
+        FamilyMembers membersByUID = new FamilyMembers();
+        try {
+            c = db.query(
+                    FamilyMemberListTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                membersByUID = new FamilyMembers().Hydrate(c);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return membersByUID;
+    }
+
+    public int updatesfamilyListColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = FamilyMemberListTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.members.getId())};
+
+        return db.update(FamilyMemberListTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
     }
 }

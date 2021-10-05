@@ -1,7 +1,6 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,23 +11,23 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import org.json.JSONException;
+
 import java.util.ArrayList;
-import java.util.Random;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.MainActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.FamilyMembersAdapter;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityFamilyListBinding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA1Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
@@ -89,7 +88,12 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         db = MainApp.appInfo.dbHelper;
         MainApp.familyList = new ArrayList<>();
         Log.d(TAG, "onCreate: familyList " + MainApp.familyList.size());
-        MainApp.familyList = db.getMWRABYUID(MainApp.form.getUid());
+        try {
+            MainApp.familyList = db.getMemberBYUID(MainApp.form.getUid());
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
         MainApp.selectedMember = "";
         // Set Selected MWRA
         for (int i = 0; i < MainApp.familyList.size(); i++) {
@@ -116,10 +120,10 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!MainApp.form.getiStatus().equals("1")) {
                     //     Toast.makeText(MwraActivity.this, "Opening Mwra Form", Toast.LENGTH_LONG).show();
-                    MainApp.familyMember = new MWRA();
+                    MainApp.familyMember = new FamilyMembers();
                     addFemale();
                 } else {
-                    Toast.makeText(familyListActivity.this, "This form has been locked. You cannot add new MWRA to locked forms", Toast.LENGTH_LONG).show();
+                    Toast.makeText(FamilyMambersListActivity.this, "This form has been locked. You cannot add new MWRA to locked forms", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -178,7 +182,13 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
     public void btnContinue(View view) {
 
-        MainApp.familyMember = db.getSelectedMwraBYUID(MainApp.form.getUid());
+        try {
+            MainApp.familyMember = db.getSelectedMemberBYUID(MainApp.form.getUid());
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_LONG).show();
+
+        }
         MainApp.familyList = new ArrayList<>();
         finish();
         startActivity(new Intent(this, !MainApp.familyMember.getIndexed().equals("1") ? EndingActivity.class : SectionA31Activity.class).putExtra("complete", true));
@@ -199,7 +209,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
     }
 
-    private void proceedSelect() {
+  /*  private void proceedSelect() {
 
 
         int aCount = 0;
@@ -243,7 +253,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             MainApp.selectedMember = String.valueOf(indx);
 
             // Updating database to mark indexed mother
-            db.updatesfamilyListColumn(TableContracts.familyListTable.COLUMN_INDEXED, "1");
+            db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "1");
 
             // Updating adapter
             MainApp.familyList.get(indx).setIndexed("1");
@@ -253,10 +263,10 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             bi.btnContinue.setEnabled(true);
         }
 
-    }
+    }*/
 
 
-    private void displayAddMoreDialog() {
+/*    private void displayAddMoreDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.title_mwra_dialog)
                 .setMessage(String.format(getString(R.string.message_mwra_dialog_addmore), MainApp.form.getH220b()))
@@ -275,9 +285,9 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
-    }
+    }*/
 
-    private void displayProceedDialog() {
+/*    private void displayProceedDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.title_mwra_dialog)
                 .setMessage(String.format(getString(R.string.message_mwra_dialog_proceeed), MainApp.familyList.size() + "", MainApp.form.getH220b()))
@@ -296,7 +306,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
-    }
+    }*/
 
     private void addMoreMember() {
         Intent intent = new Intent(this, SectionA1Activity.class);
@@ -331,10 +341,10 @@ public class FamilyMambersListActivity extends AppCompatActivity {
     }*/
 
     public void btnRand(View view) {
-        if (MainApp.familyList.size() < Integer.parseInt(MainApp.form.getH220b())) {
+     /*   if (MainApp.familyList.size() < Integer.parseInt(MainApp.form.getH220b())) {
             displayProceedDialog();
         } else {
             proceedSelect();
-        }
+        }*/
     }
 }
