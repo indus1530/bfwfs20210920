@@ -44,7 +44,21 @@ public class FamilyMembers extends BaseObservable {
     private String syncDate = StringUtils.EMPTY;
 
     // SECTION VARIABLES
-    private String s1 = StringUtils.EMPTY;
+    private String sA2 = StringUtils.EMPTY;
+
+    // FIELD VARIABLES
+    private String a201 = StringUtils.EMPTY;
+    private String a203t = StringUtils.EMPTY;
+    private String a20396x = StringUtils.EMPTY;
+    private String a204 = StringUtils.EMPTY;
+    private String a205d = StringUtils.EMPTY;
+    private String a205m = StringUtils.EMPTY;
+    private String a205y = StringUtils.EMPTY;
+    private String a206 = StringUtils.EMPTY;
+    private String a207t = StringUtils.EMPTY;
+    private String a208t = StringUtils.EMPTY;
+    private String a209t = StringUtils.EMPTY;
+    private String a210 = StringUtils.EMPTY;
 
     //Not saving in DB
     private final LocalDate localDate = null;
@@ -204,12 +218,133 @@ public class FamilyMembers extends BaseObservable {
     }
 
 
-    public String getS1() {
-        return s1;
+    public String getsA2() {
+        return sA2;
     }
 
-    public void setS1(String s1) {
-        this.s1 = s1;
+    public void setsA2(String sA2) {
+        this.sA2 = sA2;
+    }
+
+    @Bindable
+    public String getA201() {
+        return a201;
+    }
+
+    public void setA201(String a201) {
+        this.a201 = a201;
+        notifyPropertyChanged(BR.a201);
+    }
+
+    @Bindable
+    public String getA203t() {
+        return a203t;
+    }
+
+    public void setA203t(String a203t) {
+        this.a203t = a203t;
+        setA20396x(a203t.equals("96") ? this.a20396x : "");
+        notifyPropertyChanged(BR.a203t);
+    }
+
+    @Bindable
+    public String getA20396x() {
+        return a20396x;
+    }
+
+    public void setA20396x(String a20396x) {
+        this.a20396x = a20396x;
+        notifyPropertyChanged(BR.a20396x);
+    }
+
+    @Bindable
+    public String getA204() {
+        return a204;
+    }
+
+    public void setA204(String a204) {
+        this.a204 = a204;
+        notifyPropertyChanged(BR.a204);
+    }
+
+    @Bindable
+    public String getA205d() {
+        return a205d;
+    }
+
+    public void setA205d(String a205d) {
+        this.a205d = a205d;
+        notifyPropertyChanged(BR.a205d);
+    }
+
+    @Bindable
+    public String getA205m() {
+        return a205m;
+    }
+
+    public void setA205m(String a205m) {
+        this.a205m = a205m;
+        notifyPropertyChanged(BR.a205m);
+    }
+
+    @Bindable
+    public String getA205y() {
+        return a205y;
+    }
+
+    public void setA205y(String a205y) {
+        this.a205y = a205y;
+        notifyPropertyChanged(BR.a205y);
+    }
+
+    @Bindable
+    public String getA206() {
+        return a206;
+    }
+
+    public void setA206(String a206) {
+        this.a206 = a206;
+        notifyPropertyChanged(BR.a206);
+    }
+
+    @Bindable
+    public String getA207t() {
+        return a207t;
+    }
+
+    public void setA207t(String a207t) {
+        this.a207t = a207t;
+        notifyPropertyChanged(BR.a207t);
+    }
+
+    @Bindable
+    public String getA208t() {
+        return a208t;
+    }
+
+    public void setA208t(String a208t) {
+        this.a208t = a208t;
+        notifyPropertyChanged(BR.a208t);
+    }
+
+    @Bindable
+    public String getA209t() {
+        return a209t;
+    }
+
+    public void setA209t(String a209t) {
+        this.a209t = a209t;
+        notifyPropertyChanged(BR.a209t);
+    }
+
+    @Bindable
+    public String getA210() {
+        return a210;
+    }
+
+    public void setA210(String a210) {
+        this.a210 = a210;
+        notifyPropertyChanged(BR.a210);
     }
 
 
@@ -224,7 +359,7 @@ public class FamilyMembers extends BaseObservable {
     }
 
 
-    public FamilyMembers Hydrate(Cursor cursor) {
+    public FamilyMembers Hydrate(Cursor cursor) throws JSONException {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_UID));
         this.uuid = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_UUID));
@@ -240,9 +375,29 @@ public class FamilyMembers extends BaseObservable {
         this.synced = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_SYNCED));
         this.syncDate = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_SYNCED_DATE));
 
-        s1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_S1)));
+        sA2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_SA2)));
 
         return this;
+    }
+
+    public void sA2Hydrate(String string) throws JSONException {
+        Log.d(TAG, "sA2Hydrate: " + string);
+        if (string != null) {
+            JSONObject json = null;
+            json = new JSONObject(string);
+            this.a201 = json.getString("a201");
+            this.a203t = json.getString("a203t");
+            this.a20396x = json.getString("a20396x");
+            this.a204 = json.getString("a204");
+            this.a205d = json.getString("a205d");
+            this.a205m = json.getString("a205m");
+            this.a205y = json.getString("a205y");
+            this.a206 = json.getString("a206");
+            this.a207t = json.getString("a207t");
+            this.a208t = json.getString("a208t");
+            this.a209t = json.getString("a209t");
+            this.a210 = json.getString("a210");
+        }
     }
 
 
@@ -265,12 +420,30 @@ public class FamilyMembers extends BaseObservable {
             //  json.put(FamilyMemberListTable.COLUMN_SYNCED, this.synced);
             //  json.put(FamilyMemberListTable.COLUMN_SYNCED_DATE, this.syncDate);
 
-            json.put(FamilyMemberListTable.COLUMN_S1, new JSONObject(s1toString()));
+            json.put(FamilyMemberListTable.COLUMN_SA2, new JSONObject(sA2toString()));
             return json;
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, "toJSONObject: " + e.getMessage());
             return null;
         }
+    }
+
+    public String sA2toString() throws JSONException {
+        Log.d(TAG, "sA2toString: ");
+        JSONObject json = new JSONObject();
+        json.put("a201", a201)
+                .put("a203t", a203t)
+                .put("a20396x", a20396x)
+                .put("a204", a204)
+                .put("a205d", a205d)
+                .put("a205m", a205m)
+                .put("a205y", a205y)
+                .put("a206", a206)
+                .put("a207t", a207t)
+                .put("a208t", a208t)
+                .put("a209t", a209t)
+                .put("a210", a210);
+        return json.toString();
     }
 }

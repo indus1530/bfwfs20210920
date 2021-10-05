@@ -1,6 +1,6 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
-import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.form;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.members;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,7 +34,7 @@ public class SectionA2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
         bi.setCallback(this);
-        bi.setForm(form);
+        bi.setMember(members);
 
     }
 
@@ -43,7 +43,7 @@ public class SectionA2Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA2, form.sA2toString());
+            updcount = db.updatesMemberColumn(TableContracts.FamilyMemberListTable.COLUMN_SA2, members.sA2toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db_form + e.getMessage());

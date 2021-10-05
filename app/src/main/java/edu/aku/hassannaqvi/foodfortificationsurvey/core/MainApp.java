@@ -39,6 +39,7 @@ public class MainApp extends Application {
     public static File sdDir;
     public static String[] downloadData;
     public static Form form;
+    public static FamilyMembers members;
 
     //public static Samples samples;
 

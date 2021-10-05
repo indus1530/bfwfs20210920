@@ -15,7 +15,6 @@ public class TableContracts {
         public static final String COLUMN_USERNAME = "username";
         public static final String COLUMN_SYSDATE = "sysdate";
         public static final String COLUMN_SA1 = "sA1";
-        public static final String COLUMN_SA2 = "sA2";
         public static final String COLUMN_SA3 = "sA3";
         public static final String COLUMN_SB1 = "sB1";
         public static final String COLUMN_SC1 = "sC1";
@@ -99,7 +98,7 @@ public class TableContracts {
         public static final String COLUMN_USERNAME = "username";
         public static final String COLUMN_SYSDATE = "sysdate";
         public static final String COLUMN_INDEXED = "indexed";
-        public static final String COLUMN_S1 = "s1";
+        public static final String COLUMN_SA2 = "sA2";
 
         public static final String COLUMN_DEVICEID = "deviceid";
         public static final String COLUMN_DEVICETAGID = "devicetagid";

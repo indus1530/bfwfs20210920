@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.foodfortificationsurvey.database;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_NAME;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_VERSION;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_ENUMBLOCKS;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_FAMILY_MEMBERS;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_FORMS;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_RANDOM;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_USERS;
@@ -25,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.EnumBlocksTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.RandomTable;
@@ -32,6 +34,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.User
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.VersionTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.EnumBlocks;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.RandomHH;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
@@ -59,6 +62,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_ENUMBLOCKS);
         db.execSQL(SQL_CREATE_RANDOM);
         db.execSQL(SQL_CREATE_FORMS);
+        db.execSQL(SQL_CREATE_FAMILY_MEMBERS);
 
         db.execSQL(SQL_CREATE_VERSIONAPP);
 
@@ -88,7 +92,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_USERNAME, form.getUserName());
         values.put(FormsTable.COLUMN_SYSDATE, form.getSysDate());
         values.put(FormsTable.COLUMN_SA1, form.sA1toString());
-        values.put(FormsTable.COLUMN_SA2, form.sA2toString());
         values.put(FormsTable.COLUMN_SA3, form.sA3toString());
         values.put(FormsTable.COLUMN_SB1, form.sB1toString());
         values.put(FormsTable.COLUMN_SC1, form.sC1toString());
@@ -123,7 +126,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+    public Long addFamilyMembersList(FamilyMembers members) throws JSONException {
 
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_PROJECT_NAME, members.getProjectName());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_UID, members.getUid());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_UUID, members.getUuid());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_CLUSTER, members.getCluster());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_HHID, members.getHhid());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_USERNAME, members.getUserName());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_SYSDATE, members.getSysDate());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, members.getIndexed());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_SA2, members.sA2toString());
+
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_ISTATUS, members.getiStatus());
+
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_DEVICETAGID, members.getDeviceTag());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_DEVICEID, members.getDeviceId());
+        values.put(TableContracts.FamilyMemberListTable.COLUMN_APPVERSION, members.getAppver());
+
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                TableContracts.FamilyMemberListTable.TABLE_NAME,
+                TableContracts.FamilyMemberListTable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
 
 
     //UPDATE in DB
@@ -137,6 +171,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(MainApp.form.getId())};
 
         return db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    public int updatesMemberColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = TableContracts.FamilyMemberListTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.members.getId())};
+
+        return db.update(TableContracts.FamilyMemberListTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
