@@ -116,7 +116,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <!--<item name="android:layout_marginTop">24dp</item>-->
+        <item name="android:layout_marginTop">24dp</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:gravity">center</item>
@@ -125,8 +125,8 @@
         <item name="android:paddingTop">4dp</item>
         <item name="android:paddingBottom">6dp</item>
         <item name="android:minHeight">52dp</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
-        <item name="android:background">@color/grayLight</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:background">@color/colorAccentLight</item>
     </style>
 
 
@@ -246,8 +246,10 @@
         <item name="android:background">@color/colorAccent</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:padding">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
         <item name="android:minHeight">52dp</item>
+        <item name="android:minWidth">56dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">@font/roboto</item>

@@ -13,14 +13,8 @@ import java.io.File;
 import java.util.List;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.BuildConfig;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Anthro;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Blood;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Child;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.MWRA;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Pregnancy;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Samples;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.Stool;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
 
 
@@ -29,14 +23,14 @@ public class MainApp extends Application {
     public static final String PROJECT_NAME = "foodfortificationsurvey";
     public static final String DIST_ID = null;
     public static final String SYNC_LOGIN = "sync_login";
-    public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
-    //public static final String _IP = "http://f38158/prosystem";// .TEST server
+    //public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
+    public static final String _IP = "http://f38158/prosystem";// .TEST server
     //public static final String _IP = "http://43.245.131.159:8080";// .TEST server
-    public static final String _HOST_URL = MainApp._IP + "/anemia_study_tj/api/";// .TEST server;
+    public static final String _HOST_URL = MainApp._IP + "/food_survey/api/";// .TEST server;
     public static final String _SERVER_URL = "sync.php";
     public static final String _SERVER_GET_URL = "getData.php";
     public static final String _PHOTO_UPLOAD_URL = _HOST_URL + "uploads.php";
-    public static final String _UPDATE_URL = MainApp._IP + "/anemia_study_tj/app/";
+    public static final String _UPDATE_URL = MainApp._IP + "/food_survey/app/";
 
     //COUNTRIES
     public static int PAKISTAN = 1;
@@ -45,15 +39,9 @@ public class MainApp extends Application {
     public static File sdDir;
     public static String[] downloadData;
     public static Form form;
-    public static MWRA mwra;
-    public static Child child;
-    public static Anthro anthro;
-    public static Blood blood;
+
     //public static Samples samples;
-    public static Stool stool;
-    public static Pregnancy preg;
-    public static int pregSr = 1;
-    public static Samples samples;
+
     public static String DeviceURL = "devices.php";
     public static AppInfo appInfo;
     public static Users user;
@@ -68,22 +56,14 @@ public class MainApp extends Application {
     public static long TWO_MINUTES = 1000 * 60 * 2;
     public static boolean permissionCheck = false;
     public static int idType = 0;
-    public static boolean mwraComplete;
-    public static boolean childComplete;
-    public static boolean pregComplete;
-    public static List<MWRA> mwraList;
-    public static List<Child> childList;
-    public static List<Pregnancy> pregList;
-    public static int mwraCount = 0;
-    public static int childCount = 0;
-    public static int pregCount = 0;
-    public static String selectedFemale = "";
-    public static String selectedChild = "";
-    public static String selectedPreg = "";
-    public static int mwraCountComplete = 0;
-    public static int childCountComplete = 0;
-    public static int pregCountComplete = 0;
+
     public static List<String> subjectNames;
+    public static List<FamilyMembers> familyList;
+    public static FamilyMembers familyMember;
+    public static int memberCount;
+    public static String selectedMember;
+    public static int memberCountComplete;
+    public static boolean memberComplete;
 
 
     public static void hideSystemUI(View decorView) {

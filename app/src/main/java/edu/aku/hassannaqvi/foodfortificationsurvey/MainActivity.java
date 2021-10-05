@@ -14,12 +14,11 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.AndroidDatabaseManager;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityMainBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.IdentificationActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.SyncActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportCluster;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportDate;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FormsReportPending;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA1Activity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA32Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB1Activity;
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.openForm:
                 MainApp.idType = 1;
                 break;
-            case R.id.openAnthro:
+        /*    case R.id.openAnthro:
                 MainApp.idType = 2;
                 break;
 
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.updateStool:
                 MainApp.idType = 4;
-                break;
+                break;*/
             default:
                 MainApp.idType = 0;
 
@@ -83,15 +82,14 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
 
             case R.id.openForm:
-            case R.id.updateBlood:
-            case R.id.updateStool:
+
                 MainApp.form = new Form();
-                startActivity(new Intent(this, SectionA1Activity.class));
+                startActivity(new Intent(this, IdentificationActivity.class));
                 break;
-            case R.id.openAnthro:
+        /*    case R.id.openAnthro:
                 MainApp.form = new Form();
                 startActivity(new Intent(this, SectionA2Activity.class));
-                break;
+                break;*/
             case R.id.seca1:
                 MainApp.form = new Form();
                 startActivity(new Intent(this, SectionA31Activity.class));

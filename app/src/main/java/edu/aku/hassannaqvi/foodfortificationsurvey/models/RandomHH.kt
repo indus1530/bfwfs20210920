@@ -12,7 +12,7 @@ import org.json.JSONObject
 class RandomHH {
     var ID: Long = 0
     var sno: String = StringUtils.EMPTY
-    var clusterNo: String = StringUtils.EMPTY
+    var ebcode: String = StringUtils.EMPTY
     var hhno: String = StringUtils.EMPTY
     var headhh: String = StringUtils.EMPTY
 
@@ -24,18 +24,18 @@ class RandomHH {
     fun sync(jsonObject: JSONObject): RandomHH {
         ID = jsonObject.getLong(RandomTable.COLUMN_ID)
         sno = jsonObject.getString(RandomTable.COLUMN_SNO)
-        clusterNo = jsonObject.getString(RandomTable.COLUMN_CLUSTER_NO)
+        ebcode = jsonObject.getString(RandomTable.COLUMN_ENUM_BLOCK_CODE)
         hhno = jsonObject.getString(RandomTable.COLUMN_HH_NO)
         headhh = jsonObject.getString(RandomTable.COLUMN_HEAD_HH)
         return this
     }
 
     fun hydrate(cursor: Cursor): RandomHH {
-        ID = cursor.getLong(cursor.getColumnIndex(RandomTable.COLUMN_ID))
-        sno = cursor.getString(cursor.getColumnIndex(RandomTable.COLUMN_SNO))
-        clusterNo = cursor.getString(cursor.getColumnIndex(RandomTable.COLUMN_CLUSTER_NO))
-        hhno = cursor.getString(cursor.getColumnIndex(RandomTable.COLUMN_HH_NO))
-        headhh = cursor.getString(cursor.getColumnIndex(RandomTable.COLUMN_HEAD_HH))
+        ID = cursor.getLong(cursor.getColumnIndexOrThrow(RandomTable.COLUMN_ID))
+        sno = cursor.getString(cursor.getColumnIndexOrThrow(RandomTable.COLUMN_SNO))
+        ebcode = cursor.getString(cursor.getColumnIndexOrThrow(RandomTable.COLUMN_ENUM_BLOCK_CODE))
+        hhno = cursor.getString(cursor.getColumnIndexOrThrow(RandomTable.COLUMN_HH_NO))
+        headhh = cursor.getString(cursor.getColumnIndexOrThrow(RandomTable.COLUMN_HEAD_HH))
         return this
     }
 

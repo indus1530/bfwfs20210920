@@ -47,14 +47,9 @@ import java.util.concurrent.TimeUnit;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.adapters.SyncListAdapter;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.AnthroTable;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.ChildListTable;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.ClustersTable;
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.EnumBlocksTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.MWRAListTable;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.PregnancyTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.RandomTable;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.SamplesTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.UsersTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.VersionTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
@@ -64,7 +59,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.models.SyncModel;
 import edu.aku.hassannaqvi.foodfortificationsurvey.workers.DataDownWorkerALL;
 import edu.aku.hassannaqvi.foodfortificationsurvey.workers.DataUpWorkerALL;
 import edu.aku.hassannaqvi.foodfortificationsurvey.workers.PhotoUploadWorker2;
-import edu.aku.hassannaqvi.foodfortificationsurvey.workers.ReadJSONWorker;
 
 
 public class SyncActivity extends AppCompatActivity {
@@ -101,10 +95,10 @@ public class SyncActivity extends AppCompatActivity {
 
         db = MainApp.appInfo.dbHelper;
         //dbBackup(this);
-        OneTimeWorkRequest JSONWorker =
+       /* OneTimeWorkRequest JSONWorker =
                 new OneTimeWorkRequest.Builder(ReadJSONWorker.class)
                         .build();
-        WorkManager.getInstance(this).enqueue(JSONWorker);
+        WorkManager.getInstance(this).enqueue(JSONWorker);*/
 
     }
 
@@ -149,49 +143,6 @@ public class SyncActivity extends AppCompatActivity {
                 uploadTables.add(new SyncModel(FormsTable.TABLE_NAME));
                 MainApp.uploadData.add(db.getUnsyncedForms());
 
-                // MWRA
-                uploadTables.add(new SyncModel(MWRAListTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedMWRAList());
-
-                // Child
-                uploadTables.add(new SyncModel(ChildListTable.TABLE_NAME));
-                try {
-                    MainApp.uploadData.add(db.getUnsyncedChildList());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(this, "JSONException(Child): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-
-                // Anthro
-                uploadTables.add(new SyncModel(AnthroTable.TABLE_NAME));
-                try {
-                    MainApp.uploadData.add(db.getUnsyncedAnthro());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(this, "JSONException(Anthro): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-
-                /*// Blood
-                uploadTables.add(new SyncModel(BloodTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedBlood());
-
-                // Stool
-                uploadTables.add(new SyncModel(StoolTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedStool());*/
-
-                // Pregnancy
-                uploadTables.add(new SyncModel(PregnancyTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedPreg());
-
-                // Samples
-                uploadTables.add(new SyncModel(SamplesTable.TABLE_NAME));
-                try {
-                    MainApp.uploadData.add(db.getUnsyncedSamp());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Log.d(TAG, "ProcessStart(getUnsyncedSamp): " + e.getMessage());
-                    Toast.makeText(this, "ProcessStart(getUnsyncedSamp): " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                }
 
                 MainApp.downloadData = new String[uploadData.size()];
 
@@ -208,8 +159,10 @@ public class SyncActivity extends AppCompatActivity {
                 downloadTables.clear();
                 boolean sync_flag = getIntent().getBooleanExtra("login", false);
                 if (sync_flag) {
+
                     downloadTables.add(new SyncModel(UsersTable.TABLE_NAME));
-                    downloadTables.add(new SyncModel(ClustersTable.TABLE_NAME));
+
+                    downloadTables.add(new SyncModel(EnumBlocksTable.TABLE_NAME));
                     downloadTables.add(new SyncModel(RandomTable.TABLE_NAME));
                     downloadTables.add(new SyncModel(VersionTable.TABLE_NAME));
                 } else {
@@ -294,7 +247,7 @@ public class SyncActivity extends AppCompatActivity {
                                         jsonArray = new JSONArray(result);
                                         insertCount = db.syncUser(jsonArray);
                                         break;
-                                    case ClustersTable.TABLE_NAME:
+                                    case EnumBlocksTable.TABLE_NAME:
                                         jsonArray = new JSONArray(result);
                                         insertCount = db.syncClusters(jsonArray);
                                         break;

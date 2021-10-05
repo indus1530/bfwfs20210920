@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.foodfortificationsurvey.adapters;
+package edu.aku.hassannaqvi.foodfortificationsurvey.contracts;
 
 import android.content.Context;
 import android.util.Log;
@@ -14,26 +14,26 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.MWRA;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 
 
-public class MWRAAdapter extends RecyclerView.Adapter<MWRAAdapter.ViewHolder> {
+public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdapter.ViewHolder> {
     private static final String TAG = "MWRAAdapter";
     private final Context mContext;
-    private final List<MWRA> mwra;
+    private final List<FamilyMembers> member;
     private final int mExpandedPosition = -1;
     private final int completeCount;
 
     /**
      * Initialize the dataset of the Adapter.
      *
-     * @param mwra List<FemaleMembersModel> containing the data to populate views to be used by RecyclerView.
+     * @param members List<FemaleMembersModel> containing the data to populate views to be used by RecyclerView.
      */
-    public MWRAAdapter(Context mContext, List<MWRA> mwra) {
-        this.mwra = mwra;
+    public FamilyMembersAdapter(Context mContext, List<FamilyMembers> members) {
+        this.member = members;
         this.mContext = mContext;
         completeCount = 0;
-        MainApp.mwraComplete = false;
+        MainApp.memberComplete = false;
 
 
     }
@@ -42,7 +42,7 @@ public class MWRAAdapter extends RecyclerView.Adapter<MWRAAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
         Log.d(TAG, "Element " + position + " set.");
-        MWRA mwra = this.mwra.get(position);        // Get element from your dataset at this position and replace the contents of the view
+        FamilyMembers members = this.member.get(position);        // Get element from your dataset at this position and replace the contents of the view
         // with that element
 
         TextView fName = viewHolder.fName;
@@ -51,15 +51,15 @@ public class MWRAAdapter extends RecyclerView.Adapter<MWRAAdapter.ViewHolder> {
         View indicator = viewHolder.indicator;
         View cloaked = viewHolder.cloaked;
 
-        //String pregStatus = mwra.getRb07().equals("1") ? "Pregnant" : "Not Pregnant";
+        //String pregStatus = members.getRb07().equals("1") ? "Pregnant" : "Not Pregnant";
 
-        MainApp.mwraComplete = completeCount == MainApp.mwraCount;
+        MainApp.memberComplete = completeCount == MainApp.memberCount;
 
-        fName.setText(mwra.getH221());
-        fAge.setText(mwra.getH223());
+        fName.setText(members.getH221());
+        fAge.setText(members.getH223());
 
     /*    String marStatus = "";
-        switch (mwra.getRb06()) {
+        switch (members.getRb06()) {
             case "2":
                 marStatus = "Currently Married";
                 break;
@@ -75,16 +75,16 @@ public class MWRAAdapter extends RecyclerView.Adapter<MWRAAdapter.ViewHolder> {
 
 */
 
-        cloaked.setVisibility(mwra.getH227().equals("1") ? View.GONE : View.VISIBLE);
-        indicator.setBackgroundColor(mwra.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : mContext.getResources().getColor(R.color.gray));
-        if (!MainApp.selectedFemale.equals("")) {
-            cloaked.setVisibility(mwra.getIndexed().equals("1") ? View.GONE : View.VISIBLE);
+        cloaked.setVisibility(members.getH227().equals("1") ? View.GONE : View.VISIBLE);
+        indicator.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : mContext.getResources().getColor(R.color.gray));
+        if (!MainApp.selectedMember.equals("")) {
+            cloaked.setVisibility(members.getIndexed().equals("1") ? View.GONE : View.VISIBLE);
         }
-        fMaritalStatus.setText("Children: " + mwra.getH226m() + " boy(s), " + mwra.getH226f() + " girl(s)");
+        fMaritalStatus.setText("Children: " + members.getH226m() + " boy(s), " + members.getH226f() + " girl(s)");
       /*  viewHolder.itemView.setOnClickListener(v -> {
             // Get the current state of the item
 
-            MainApp.mwra = MainApp.mwra.get(position);
+            MainApp.members = MainApp.members.get(position);
             Intent intent = new Intent(mContext, SectionBActivity.class);
 
             intent.putExtra("position", position);
@@ -104,14 +104,14 @@ public class MWRAAdapter extends RecyclerView.Adapter<MWRAAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
 
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.mother_row, viewGroup, false);
+                .inflate(R.layout.famlily_member_row, viewGroup, false);
 
         return new ViewHolder(v);
     }
 
     @Override
     public int getItemCount() {
-        return mwra.size();
+        return member.size();
     }
 
     /**

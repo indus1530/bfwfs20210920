@@ -5456,37 +5456,37 @@ public class Form extends BaseObservable implements Observable {
 
 
     public Form Hydrate(Cursor cursor) throws JSONException {
-        this.id = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ID));
-        this.uid = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_UID));
-        this.cluster = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_CLUSTER));
-        this.hhid = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_HHID));
-        this.userName = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USERNAME));
-        this.sysDate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYSDATE));
-        this.deviceId = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICEID));
-        this.deviceTag = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICETAGID));
-        this.appver = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_APPVERSION));
-        this.iStatus = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ISTATUS));
-        this.synced = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYNCED));
-        this.syncDate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYNCED_DATE));
+        this.id = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ID));
+        this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_UID));
+        this.cluster = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENUM_BLOCK));
+        this.hhid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_HHID));
+        this.userName = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_USERNAME));
+        this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE));
+        this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICEID));
+        this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICETAGID));
+        this.appver = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_APPVERSION));
+        this.iStatus = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ISTATUS));
+        this.synced = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYNCED));
+        this.syncDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYNCED_DATE));
 
-        sA1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA1)));
-        sA2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA2)));
-        sA3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA3)));
-        sB1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SB1)));
-        sC1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA3)));
-        sC2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SB1)));
-        sD1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SD1)));
-        sE1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SE1)));
-        sF1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF1)));
-        sF2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF2)));
-        sF3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF3)));
-        sG1Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG1)));
-        sG2Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG2)));
-        sG3Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG3)));
-        sG4Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG4)));
-        sG5Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG5)));
-        sG6Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG6)));
-        sG7Hydrate(cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG7)));
+        sA1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA1)));
+        sA2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA2)));
+        sA3Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA3)));
+        sB1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SB1)));
+        sC1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA3)));
+        sC2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SB1)));
+        sD1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SD1)));
+        sE1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SE1)));
+        sF1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SF1)));
+        sF2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SF2)));
+        sF3Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SF3)));
+        sG1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG1)));
+        sG2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG2)));
+        sG3Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG3)));
+        sG4Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG4)));
+        sG5Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG5)));
+        sG6Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG6)));
+        sG7Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SG7)));
 
         return this;
     }
@@ -6630,7 +6630,7 @@ public class Form extends BaseObservable implements Observable {
 
         json.put(FormsTable.COLUMN_ID, this.id);
         json.put(FormsTable.COLUMN_UID, this.uid);
-        json.put(FormsTable.COLUMN_CLUSTER, this.cluster);
+        json.put(FormsTable.COLUMN_ENUM_BLOCK, this.cluster);
         json.put(FormsTable.COLUMN_HHID, this.hhid);
         json.put(FormsTable.COLUMN_USERNAME, this.userName);
         json.put(FormsTable.COLUMN_SYSDATE, this.sysDate);

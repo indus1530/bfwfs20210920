@@ -230,7 +230,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a103  Input   -->
+            <!--    &lt;!&ndash; a103  Input   &ndash;&gt;
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa103"
                     style="@style/cardView">
@@ -271,7 +271,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a104  Input   -->
+                &lt;!&ndash; a104  Input   &ndash;&gt;
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa104"
                     style="@style/cardView">
@@ -312,7 +312,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a105  Input   -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa105"
                     style="@style/cardView">
@@ -353,7 +353,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a106  Input   -->
+                &lt;!&ndash; a106  Input   &ndash;&gt;
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa106"
                     style="@style/cardView">
@@ -394,7 +394,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a107  Input   -->
+                &lt;!&ndash; a107  Input   &ndash;&gt;
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa107"
                     style="@style/cardView">
@@ -435,7 +435,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a108  Input   -->
+                &lt;!&ndash; a108  Input   &ndash;&gt;
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa108"
                     style="@style/cardView">
@@ -473,7 +473,7 @@
 
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>-->
 
 
                 <!-- a109  Input   -->
@@ -517,50 +517,50 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a110  Input   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVa110"
-                    style="@style/cardView">
+                <!--        &lt;!&ndash; a110  Input   &ndash;&gt;
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fldGrpCVa110"
+                            style="@style/cardView">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_a110" />
-
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="@string/a110" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
 
-                        </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bottom"
+                                    android:orientation="horizontal">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/a110"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:hint="###"
-                            android:inputType="number"
-                            android:text="@={form.a110}"
-                            app:maxValue="100"
-                            app:minValue="0"
-                            app:type="range" />
+                                    <TextView
+                                        style="@style/quesNum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/Q_a110" />
 
-                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/a110" />
 
-                </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/a110"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:text="@={form.a110}"
+                                    app:maxValue="100"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>-->
 
 
                 <!-- a111t  Radio   -->
@@ -656,6 +656,8 @@
                             android:id="@+id/a112"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:inputType="textPersonName|textCapWords"
                             android:hint="@string/a112"
                             android:text="@={form.a112}" />
 
