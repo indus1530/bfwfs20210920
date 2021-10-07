@@ -636,7 +636,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- g206  6RadioGroups   -->
+                <!-- g206  4RadioGroups   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg206"
                     style="@style/cardView">
@@ -670,6 +670,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
+                            <!--g20601-->
                             <RadioGroup
                                 android:id="@+id/g20601"
                                 android:layout_width="0dp"
@@ -740,6 +741,7 @@
 
                             </RadioGroup>
 
+                            <!--g20602-->
                             <RadioGroup
                                 android:id="@+id/g20602"
                                 android:layout_width="0dp"
@@ -810,6 +812,20 @@
 
                             </RadioGroup>
 
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:shadowColor="@color/black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--g20603-->
                             <RadioGroup
                                 android:id="@+id/g20603"
                                 android:layout_width="0dp"
@@ -880,19 +896,7 @@
 
                             </RadioGroup>
 
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="20dp"
-                            android:shadowColor="@color/black" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
+                            <!--g20604-->
                             <RadioGroup
                                 android:id="@+id/g20604"
                                 android:layout_width="0dp"
@@ -971,6 +975,48 @@
 
                             </RadioGroup>
 
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- g208  2RadioGroups   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg208"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g208" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/g208" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--g207-->
                             <RadioGroup
                                 android:id="@+id/g207"
                                 android:layout_width="0dp"
@@ -1041,6 +1087,7 @@
 
                             </RadioGroup>
 
+                            <!--g208-->
                             <RadioGroup
                                 android:id="@+id/g208"
                                 android:layout_width="0dp"
