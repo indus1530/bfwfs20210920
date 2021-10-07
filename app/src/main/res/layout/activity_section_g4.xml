@@ -51,38 +51,30 @@
                 android:orientation="vertical">
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <!-- g401  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg401"
+                    style="@style/cardView">
 
-                    <!-- g401  Radio   -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVg401"
-                        style="@style/cardView"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g401" />
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bottom"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_g401" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g401" />
 
@@ -135,37 +127,35 @@
 
                             </RadioGroup>
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                    <!-- g402  Radio   -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVg402"
-                        style="@style/cardView"
-                        android:layout_width="0dp"
+
+                <!-- g402  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg402"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g402" />
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bottom"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_g402" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g402" />
 
@@ -218,45 +208,35 @@
 
                             </RadioGroup>
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <!-- g403  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg403"
+                    style="@style/cardView">
 
-                    <!-- g403  Radio   -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVg403"
-                        style="@style/cardView"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g403" />
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bottom"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_g403" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g403" />
 
@@ -309,38 +289,35 @@
 
                             </RadioGroup>
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                    <!-- g404  Radio   -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/fldGrpCVg404"
-                        style="@style/cardView"
-                        android:layout_width="0dp"
+                <!-- g404  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg404"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1">
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g404" />
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bottom"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    style="@style/quesNum"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/Q_g404" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/g404" />
 
@@ -396,8 +373,6 @@
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
 
 
                 <!-- g405  Radio   -->
