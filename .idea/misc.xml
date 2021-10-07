@@ -97,18 +97,18 @@
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_f1.xml" value="0.536" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_f2.xml" value="0.55859375" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_f3.xml" value="0.536" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g1.xml" value="0.30952380952380953" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g1.xml" value="0.536" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g2.xml" value="0.536" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g3.xml" value="0.536" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g4.xml" value="0.38092701118806604" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g4.xml" value="0.536" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g5.xml" value="0.536" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g6.xml" value="0.2822739834188709" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/layout/activity_section_g6.xml" value="0.26570048309178745" />
         <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/foodfortificationsurvey/app/src/main/res/menu/main_menu.xml" value="0.209375" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
