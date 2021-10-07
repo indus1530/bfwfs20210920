@@ -256,8 +256,17 @@ public class IdentificationActivity extends AppCompatActivity {
     }
 
     public void checkHousehold(View view) {
-        RandomHH randHH = db.getHHbyEnumBlocks(bi.a105.getText().toString(), bi.a110.getText().toString());
-
+        RandomHH testRand = new RandomHH();
+        testRand.setSno("1");
+        testRand.setEbcode("909090909");
+        testRand.setHeadhh("Test Head");
+        testRand.setHhno("999-99");
+        RandomHH randHH = new RandomHH();
+        if (!bi.a105.getText().toString().equals("909090909")) {
+            randHH = db.getHHbyEnumBlocks(bi.a105.getText().toString(), bi.a110.getText().toString());
+        } else {
+            randHH = testRand;
+        }
         if (!randHH.getEbcode().equals("")) {
             bi.ahhead.setError(null);
             bi.ahhead.setText(randHH.getHeadhh());
@@ -340,8 +349,17 @@ public class IdentificationActivity extends AppCompatActivity {
 
     public void searchEB(View view) {
         bi.btnContinue.setEnabled(false);
+        EnumBlocks testEb = new EnumBlocks();
+        testEb.setEnumBlock("909090909");
+        testEb.setDistrictName("Test District 9");
+        testEb.setTehsilName("Test Tehsil 9");
+        EnumBlocks enumBlock = new EnumBlocks();
+        if (!bi.a105.getText().toString().equals(testEb.getEnumBlock())) {
+            enumBlock = db.getEnumBlocks(bi.a105.getText().toString());
+        } else {
+            enumBlock = testEb;
+        }
 
-        EnumBlocks enumBlock = db.getEnumBlocks(bi.a105.getText().toString());
        /* ebCode = new ArrayList<>();
         districtNames = new ArrayList<>();
         tehsilNames = new ArrayList<>();
