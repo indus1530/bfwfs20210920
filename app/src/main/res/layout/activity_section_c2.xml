@@ -51,46 +51,11 @@
                 android:orientation="vertical">
 
 
-                <!-- c2inst  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVc2inst"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/c2inst" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-                <!-- c2note  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVc2note"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/c2note" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- c201  Radio   -->
@@ -376,7 +341,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -439,7 +404,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"

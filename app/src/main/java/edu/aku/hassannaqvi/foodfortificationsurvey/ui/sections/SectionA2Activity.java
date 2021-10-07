@@ -1,10 +1,10 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
-import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.members;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.familyMember;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.memberCount;
 
-import android.content.Intent;
+import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -15,7 +15,6 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.MainActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
@@ -34,23 +33,49 @@ public class SectionA2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
         bi.setCallback(this);
-        bi.setMember(members);
+        familyMember.setA201(String.valueOf(memberCount + 1));
+
+
+        bi.setMember(familyMember);
+
+        db = MainApp.appInfo.dbHelper;
+        bi.btnContinue.setText(MainApp.familyMember.getUid().equals("") ? "Save" : "Update");
+
 
     }
 
 
-    private boolean updateDB() {
-        db = MainApp.appInfo.getDbHelper();
-        long updcount = 0;
+    private boolean insertNewRecord() {
+        if (!familyMember.getUid().equals("")) return true;
+        long rowId = 0;
         try {
-            updcount = db.updatesMemberColumn(TableContracts.FamilyMemberListTable.COLUMN_SA2, members.sA2toString());
+            rowId = db.addFamilyMembers(familyMember);
         } catch (JSONException e) {
             e.printStackTrace();
-            Log.d(TAG, R.string.upd_db_form + e.getMessage());
-            Toast.makeText(this, R.string.upd_db_form + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.db_excp_error, Toast.LENGTH_SHORT).show();
+            return false;
         }
-        if (updcount > 0) return true;
-        else {
+        familyMember.setId(String.valueOf(rowId));
+        if (rowId > 0) {
+            familyMember.setUid(familyMember.getDeviceId() + familyMember.getId());
+            db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_UID, familyMember.getUid());
+            return true;
+        } else {
+            Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    }
+
+    private boolean updateDB() {
+        int updcount = 0;
+        try {
+            updcount = db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_SA2, familyMember.sA2toString());
+        } catch (JSONException e) {
+            Toast.makeText(this, R.string.upd_db + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        if (updcount == 1) {
+            return true;
+        } else {
             Toast.makeText(this, R.string.upd_db_error, Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -59,18 +84,19 @@ public class SectionA2Activity extends AppCompatActivity {
 
     public void btnContinue(View view) {
         if (!formValidation()) return;
-        if (updateDB()) {
+        if (MainApp.familyMember.getUid().equals("") ? insertNewRecord() : updateDB()) {
+            setResult(RESULT_OK);
             finish();
-            startActivity(new Intent(this, MainActivity.class));
-        } else Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+        }
     }
 
 
     public void btnEnd(View view) {
+        setResult(Activity.RESULT_CANCELED);
         finish();
-        startActivity(new Intent(this, MainActivity.class));
     }
-
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);

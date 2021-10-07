@@ -15,12 +15,13 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.MainActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
+import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA1Binding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FamilyMambersListActivity;
 
 
 public class SectionA1Activity extends AppCompatActivity {
@@ -36,6 +37,7 @@ public class SectionA1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a1);
         bi.setCallback(this);
         bi.setForm(form);
+        db = MainApp.appInfo.dbHelper;
 
     }
 
@@ -102,7 +104,7 @@ public class SectionA1Activity extends AppCompatActivity {
 
             // Check Consent = Yes
             if (bi.a11101.isChecked()) {
-                i = new Intent(this, SectionA2Activity.class).putExtra("complete", true);
+                i = new Intent(this, FamilyMambersListActivity.class).putExtra("complete", true);
             } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);
             }
@@ -116,7 +118,7 @@ public class SectionA1Activity extends AppCompatActivity {
 
     public void btnEnd(View view) {
         finish();
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
     }
 
 

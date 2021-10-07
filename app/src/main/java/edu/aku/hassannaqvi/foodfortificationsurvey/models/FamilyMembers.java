@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.models;
 
+import static java.util.concurrent.TimeUnit.MILLISECONDS;
+
 import android.database.Cursor;
 import android.util.Log;
 
@@ -11,7 +13,12 @@ import org.apache.commons.lang3.StringUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.BR;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FamilyMemberListTable;
@@ -19,21 +26,22 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 
 public class FamilyMembers extends BaseObservable {
 
-    private final String TAG = "MWRA";
+    private final String TAG = "FamilyMembers";
     private final transient PropertyChangeRegistry propertyChangeRegistry = new PropertyChangeRegistry();
-
+    //Not saving in DB
+    private final LocalDate localDate = null;
+    private final boolean exist = false;
     // APP VARIABLES
     private String projectName = MainApp.PROJECT_NAME;
     // APP VARIABLES
     private String id = StringUtils.EMPTY;
     private String uid = StringUtils.EMPTY;
     private String uuid = StringUtils.EMPTY;
-    private String cluster = StringUtils.EMPTY;
+    private String ebCode = StringUtils.EMPTY;
     private String hhid = StringUtils.EMPTY;
     private String userName = StringUtils.EMPTY;
     private String sysDate = StringUtils.EMPTY;
     private String indexed = StringUtils.EMPTY;
-
     private String deviceId = StringUtils.EMPTY;
     private String deviceTag = StringUtils.EMPTY;
     private String appver = StringUtils.EMPTY;
@@ -42,12 +50,11 @@ public class FamilyMembers extends BaseObservable {
     private String iStatus96x = StringUtils.EMPTY;
     private String synced = StringUtils.EMPTY;
     private String syncDate = StringUtils.EMPTY;
-
     // SECTION VARIABLES
     private String sA2 = StringUtils.EMPTY;
-
     // FIELD VARIABLES
     private String a201 = StringUtils.EMPTY;
+    private String a202 = StringUtils.EMPTY;
     private String a203t = StringUtils.EMPTY;
     private String a20396x = StringUtils.EMPTY;
     private String a204 = StringUtils.EMPTY;
@@ -59,14 +66,21 @@ public class FamilyMembers extends BaseObservable {
     private String a208t = StringUtils.EMPTY;
     private String a209t = StringUtils.EMPTY;
     private String a210 = StringUtils.EMPTY;
-
-    //Not saving in DB
-    private final LocalDate localDate = null;
-    private final boolean exist = false;
     private boolean expanded;
+    private boolean mwra;
 
 
     public FamilyMembers() {
+
+        setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
+        setUserName(MainApp.user.getUserName());
+        setUuid(MainApp.form.getUid());
+        setDeviceId(MainApp.deviceid);
+        setAppver(MainApp.appInfo.getAppVersion());
+        setAppver(MainApp.appInfo.getAppVersion());
+        setEbCode(MainApp.currentHousehold.getEbcode());
+        setHhid(MainApp.currentHousehold.getHhno());
+
     }
 
 
@@ -106,13 +120,13 @@ public class FamilyMembers extends BaseObservable {
 
 
     @Bindable
-    public String getCluster() {
-        return cluster;
+    public String getEbCode() {
+        return ebCode;
     }
 
-    public void setCluster(String cluster) {
-        this.cluster = cluster;
-        notifyPropertyChanged(BR.cluster);
+    public void setEbCode(String ebCode) {
+        this.ebCode = ebCode;
+        notifyPropertyChanged(BR.ebCode);
     }
 
     @Bindable
@@ -133,6 +147,17 @@ public class FamilyMembers extends BaseObservable {
     public void setExpanded(boolean expanded) {
         this.expanded = expanded;
         notifyPropertyChanged(BR.expanded);
+    }
+
+    @Bindable
+    public boolean isMwra() {
+        return mwra;
+    }
+
+    public void setMwra(boolean mwra) {
+        this.mwra = mwra;
+
+        notifyPropertyChanged(BR.mwra);
     }
 
 
@@ -237,6 +262,16 @@ public class FamilyMembers extends BaseObservable {
     }
 
     @Bindable
+    public String getA202() {
+        return a202;
+    }
+
+    public void setA202(String a202) {
+        this.a202 = a202;
+        notifyPropertyChanged(BR.a202);
+    }
+
+    @Bindable
     public String getA203t() {
         return a203t;
     }
@@ -274,6 +309,8 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA205d(String a205d) {
         this.a205d = a205d;
+        CaluculateAge();
+
         notifyPropertyChanged(BR.a205d);
     }
 
@@ -284,6 +321,10 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA205m(String a205m) {
         this.a205m = a205m;
+        if (a205m.equals("98")) {
+            setA205m("98");
+        }
+        CaluculateAge();
         notifyPropertyChanged(BR.a205m);
     }
 
@@ -294,6 +335,15 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA205y(String a205y) {
         this.a205y = a205y;
+
+        if (a205y.equals("9998")) {
+            setA205m("98");
+            setA206("");
+
+        }
+        // Calculate age
+        CaluculateAge();
+
         notifyPropertyChanged(BR.a205y);
     }
 
@@ -314,6 +364,13 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA207t(String a207t) {
         this.a207t = a207t;
+
+        if (!this.a204.equals("") && !this.a206.equals("") && !this.a207t.equals("")) {
+            int ageInYears = Integer.parseInt(getA206());
+            boolean genderCheck = getA204().equals("2");
+            boolean maritalCheck = !getA207t().equals("2");
+            setMwra(maritalCheck && genderCheck && ageInYears > 14 && ageInYears < 50);
+        }
         notifyPropertyChanged(BR.a207t);
     }
 
@@ -363,7 +420,7 @@ public class FamilyMembers extends BaseObservable {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_UID));
         this.uuid = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_UUID));
-        this.cluster = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_CLUSTER));
+        this.ebCode = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_EB_CODE));
         this.hhid = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_HHID));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_USERNAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_SYSDATE));
@@ -377,6 +434,7 @@ public class FamilyMembers extends BaseObservable {
 
         sA2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FamilyMemberListTable.COLUMN_SA2)));
 
+
         return this;
     }
 
@@ -386,6 +444,7 @@ public class FamilyMembers extends BaseObservable {
             JSONObject json = null;
             json = new JSONObject(string);
             this.a201 = json.getString("a201");
+            this.a202 = json.getString("a202");
             this.a203t = json.getString("a203t");
             this.a20396x = json.getString("a20396x");
             this.a204 = json.getString("a204");
@@ -397,6 +456,13 @@ public class FamilyMembers extends BaseObservable {
             this.a208t = json.getString("a208t");
             this.a209t = json.getString("a209t");
             this.a210 = json.getString("a210");
+
+            if (!this.a204.equals("") && !this.a206.equals("") && !this.a207t.equals("")) {
+                int ageInYears = Integer.parseInt(getA206());
+                boolean genderCheck = getA204().equals("2");
+                boolean maritalCheck = !getA207t().equals("2");
+                setMwra(maritalCheck && genderCheck && ageInYears > 14 && ageInYears < 50);
+            }
         }
     }
 
@@ -409,7 +475,7 @@ public class FamilyMembers extends BaseObservable {
             json.put(FamilyMemberListTable.COLUMN_ID, this.id);
             json.put(FamilyMemberListTable.COLUMN_UID, this.uid);
             json.put(FamilyMemberListTable.COLUMN_UUID, this.uuid);
-            json.put(FamilyMemberListTable.COLUMN_CLUSTER, this.cluster);
+            json.put(FamilyMemberListTable.COLUMN_EB_CODE, this.ebCode);
             json.put(FamilyMemberListTable.COLUMN_HHID, this.hhid);
             json.put(FamilyMemberListTable.COLUMN_USERNAME, this.userName);
             json.put(FamilyMemberListTable.COLUMN_SYSDATE, this.sysDate);
@@ -433,6 +499,7 @@ public class FamilyMembers extends BaseObservable {
         Log.d(TAG, "sA2toString: ");
         JSONObject json = new JSONObject();
         json.put("a201", a201)
+                .put("a202", a202)
                 .put("a203t", a203t)
                 .put("a20396x", a20396x)
                 .put("a204", a204)
@@ -445,5 +512,55 @@ public class FamilyMembers extends BaseObservable {
                 .put("a209t", a209t)
                 .put("a210", a210);
         return json.toString();
+    }
+
+
+    private void CaluculateAge() {
+        Log.d(TAG, "CaluculateAge: " + this.a205y + "-" + this.a205m + "-" + this.a205d);
+
+        if (!this.a205y.equals("") && !this.a205y.equals("9998") && !this.a205m.equals("") && !this.a205d.equals("")) {
+
+            int day = !this.a205d.equals("98") ? Integer.parseInt(this.a205d) : 15;
+            int month = !this.a205m.equals("98") ? Integer.parseInt(this.a205m) : 6;
+            int year = Integer.parseInt(this.a205y);
+
+            SimpleDateFormat df = new SimpleDateFormat("yyyy MM dd", Locale.ENGLISH);
+            String todayDate = df.format(Calendar.getInstance().getTime());
+            Calendar cal = Calendar.getInstance();
+            Calendar cur = Calendar.getInstance();
+
+            try {
+                cal.setTime(df.parse(year + " " + month + " " + day));
+                long millis = System.currentTimeMillis() - cal.getTimeInMillis();
+                cal.setTimeInMillis(millis);
+
+             /*   int mYear = cal.get(Calendar.YEAR)-1970;
+                int mMonth = cal.get(Calendar.MONTH);
+                int mDay = cal.get(Calendar.DAY_OF_MONTH)-1;
+
+                Log.d(TAG, "CaluculateAge: " + (mYear) + "-" + mMonth + "-" + mDay);
+*/
+                long tYear = MILLISECONDS.toDays(millis) / 365;
+                long tMonth = (MILLISECONDS.toDays(millis) - (tYear * 365)) / 30;
+                long tDay = MILLISECONDS.toDays(millis) - ((tYear * 365) + (tMonth * 30));
+
+                Log.d(TAG, "CaluculateAge: Y-" + tYear + " M-" + tMonth + " D-" + tDay);
+               /* setH231d(String.valueOf(tDay));
+                setH231m(String.valueOf(tMonth));*/
+                setA206(String.valueOf(tYear));
+                //setAge(String.valueOf(((tYear) * 12) + tMonth));
+
+
+        /*        String.format("%d min, %d sec",
+                        ,
+                        TimeUnit.MILLISECONDS.toSeconds(millis) -
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis))
+                );*/
+
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }

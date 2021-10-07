@@ -51,46 +51,16 @@
                 android:orientation="vertical">
 
 
-                <!-- d1note  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVd1note"
-                    style="@style/cardView">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/d1note" />
 
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
-                <!-- d1instr  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVd1instr"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/sub_labels"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/d1instr" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- d101  Radio   -->

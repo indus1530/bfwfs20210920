@@ -23,13 +23,14 @@ import java.util.ArrayList;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.MainActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
-import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.FamilyMembersAdapter;
+import edu.aku.hassannaqvi.foodfortificationsurvey.adapters.FamilyMembersAdapter;
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityFamilyListBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA1Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
 
 
@@ -61,14 +62,16 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                         ) {*/
                         MainApp.familyList.add(MainApp.familyMember);
-
+                        if (MainApp.familyMember.isMwra()) {
+                            MainApp.mwraList.add(MainApp.familyList.size() - 1);
+                            //MainApp.mwraCount++;
+                        }
                         MainApp.memberCount++;
                         familyMembersAdapter.notifyItemInserted(MainApp.familyList.size() - 1);
                         //  Collections.sort(MainApp.fm, new SortByStatus());
                         //fmAdapter.notifyDataSetChanged();
 
                         //        }
-
                         checkCompleteFm();
                     }
                     if (result.getResultCode() == Activity.RESULT_CANCELED) {
@@ -87,26 +90,41 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
         db = MainApp.appInfo.dbHelper;
         MainApp.familyList = new ArrayList<>();
+        MainApp.mwraList = new ArrayList<Integer>();
         Log.d(TAG, "onCreate: familyList " + MainApp.familyList.size());
         try {
             MainApp.familyList = db.getMemberBYUID(MainApp.form.getUid());
+            int fmCount = 0;
+            for (FamilyMembers fm : MainApp.familyList) {
+                fmCount++;
+                if (fm.isMwra()) {
+                    MainApp.mwraList.add(fmCount - 1);
+                    //MainApp.mwraCount++;
+                }
+
+            }
+
+
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_LONG).show();
         }
-        MainApp.selectedMember = "";
+        MainApp.selectedMWRA = "";
         // Set Selected MWRA
         for (int i = 0; i < MainApp.familyList.size(); i++) {
             if (MainApp.familyList.get(i).getIndexed().equals("1")) {
-                MainApp.selectedMember = String.valueOf(i);
+                MainApp.selectedMWRA = String.valueOf(i);
+
                 bi.btnRand.setVisibility(View.INVISIBLE);
                 bi.btnContinue.setVisibility(View.VISIBLE);
                 break;
             }
+
+
         }
 
-        bi.btnContinue.setEnabled(!MainApp.selectedMember.equals(""));
-        bi.btnContinue.setVisibility(!MainApp.selectedMember.equals("") ? View.VISIBLE : View.INVISIBLE);
+        bi.btnContinue.setEnabled(!MainApp.selectedMWRA.equals(""));
+        bi.btnContinue.setVisibility(!MainApp.selectedMWRA.equals("") ? View.VISIBLE : View.INVISIBLE);
         MainApp.memberCount = Math.round(MainApp.familyList.size());
 
         familyMembersAdapter = new FamilyMembersAdapter(this, MainApp.familyList);
@@ -138,8 +156,8 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
         //MainApp.familyMember = new MWRA();
         //MainApp.child = new Child();
-        if (MainApp.familyList.size() > 0 && MainApp.selectedMember.equals("")) {
-            //MainApp.fm.get(Integer.parseInt(String.valueOf(MainApp.selectedMember))).setStatus("1");
+        if (MainApp.mwraList.size() > 0 && MainApp.selectedMWRA.equals("")) {
+            //MainApp.fm.get(Integer.parseInt(String.valueOf(MainApp.selectedMWRA))).setStatus("1");
             bi.btnRand.setVisibility(View.VISIBLE);
             bi.btnContinue.setVisibility(View.INVISIBLE);
 
@@ -193,7 +211,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         finish();
         startActivity(new Intent(this, !MainApp.familyMember.getIndexed().equals("1") ? EndingActivity.class : SectionA31Activity.class).putExtra("complete", true));
 
-        //MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMember));
+        //MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA));
 
     /*    MainApp.familyMember = db.getSelectedMwraBYUID(MainApp.form.getUid());
         MainApp.familyList = new ArrayList<>();
@@ -209,10 +227,12 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
     }
 
-  /*  private void proceedSelect() {
+    private void proceedSelect() {
 
+        MainApp.selectedMWRA = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.mwraList.size());
+        int indx = MainApp.mwraList.get(Integer.parseInt(MainApp.selectedMWRA));
 
-        int aCount = 0;
+      /*  int aCount = 0;
         for (int i = 0; i < MainApp.familyList.size(); i++) {
 
             // Get MWRA from list
@@ -233,7 +253,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
         if (aCount < 1) {
             Toast.makeText(this, "No MWRA available for selection.", Toast.LENGTH_LONG).show();
-            MainApp.selectedMember = "";
+            MainApp.selectedMWRA = "";
             bi.btnRand.setVisibility(View.INVISIBLE);
             //bi.btnContinue.setVisibility(View.VISIBLE);
             return;
@@ -242,31 +262,25 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
         Random r = new Random();
         int indx = r.nextInt(MainApp.memberCount);
+*/
 
+        // Updating database to mark indexed mother
         MainApp.familyMember = MainApp.familyList.get(indx);
-        if (MainApp.familyMember.getIndexed().equals("-1") || MainApp.familyMember.getH227().equals("2")) {
+        db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "1");
 
-            // No MWRA selected because randomised and refused is already indexed or not available.
-            Toast.makeText(this, "No member was selected.", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, MainApp.familyMember.getH221() + " has been selected. Please continue.", Toast.LENGTH_LONG).show();
-            MainApp.selectedMember = String.valueOf(indx);
+        // Updating adapter
+        MainApp.familyList.get(indx).setIndexed("1");
 
-            // Updating database to mark indexed mother
-            db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "1");
-
-            // Updating adapter
-            MainApp.familyList.get(indx).setIndexed("1");
-            familyMembersAdapter.notifyItemChanged(indx);
-            bi.btnRand.setVisibility(View.INVISIBLE);
-            bi.btnContinue.setVisibility(View.VISIBLE);
-            bi.btnContinue.setEnabled(true);
-        }
-
-    }*/
+        familyMembersAdapter.notifyItemChanged(indx);
+        bi.btnRand.setVisibility(View.INVISIBLE);
+        bi.btnContinue.setVisibility(View.VISIBLE);
+        bi.btnContinue.setEnabled(true);
 
 
-/*    private void displayAddMoreDialog() {
+    }
+
+
+  /*  private void displayAddMoreDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.title_mwra_dialog)
                 .setMessage(String.format(getString(R.string.message_mwra_dialog_addmore), MainApp.form.getH220b()))
@@ -285,9 +299,9 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                 .setIcon(R.drawable.ic_alert_24)
                 .show();
 
-    }*/
+    }
 
-/*    private void displayProceedDialog() {
+    private void displayProceedDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.title_mwra_dialog)
                 .setMessage(String.format(getString(R.string.message_mwra_dialog_proceeed), MainApp.familyList.size() + "", MainApp.form.getH220b()))
@@ -309,7 +323,8 @@ public class FamilyMambersListActivity extends AppCompatActivity {
     }*/
 
     private void addMoreMember() {
-        Intent intent = new Intent(this, SectionA1Activity.class);
+        MainApp.familyMember = new FamilyMembers();
+        Intent intent = new Intent(this, SectionA2Activity.class);
         //   finish();
         MemberInfoLauncher.launch(intent);
     }
@@ -329,22 +344,22 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         // check if the request code is same as what is passed  here it is 2
         if (requestCode == 2) {
             if (resultCode == Activity.RESULT_OK) {
-                //   mwra.get(selectedMember).setExpanded(false);
+                //   mwra.get(selectedMWRA).setExpanded(false);
                 checkCompleteFm();
-                mwraAdapter.notifyItemChanged(selectedMember);
+                mwraAdapter.notifyItemChanged(selectedMWRA);
             }
             if (resultCode == Activity.RESULT_CANCELED) {
                 // Write your code if there's no result
-                Toast.makeText(this, "Child for " + MainApp.familyList.get(selectedMember).getH221() + " was not added.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Child for " + MainApp.familyList.get(selectedMWRA).getH221() + " was not added.", Toast.LENGTH_SHORT).show();
             }
         }
     }*/
 
     public void btnRand(View view) {
-     /*   if (MainApp.familyList.size() < Integer.parseInt(MainApp.form.getH220b())) {
+/*        if (MainApp.familyList.size() < Integer.parseInt(MainApp.form.getH220b())) {
             displayProceedDialog();
-        } else {
-            proceedSelect();
-        }*/
+        } else {*/
+        proceedSelect();
+        /*       }*/
     }
 }

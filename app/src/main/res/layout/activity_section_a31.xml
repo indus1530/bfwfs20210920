@@ -51,25 +51,11 @@
                 android:orientation="vertical">
 
 
-                <!-- ins  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVins"
-                    style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            style="@style/labelsHead"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/insa" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    style="@style/labelsHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insa" />
 
 
                 <!-- a301  Radio   -->
@@ -337,7 +323,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a303t1" />
@@ -359,7 +345,7 @@
                                 android:text="@string/a30302" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a303t2" />
@@ -381,7 +367,7 @@
                                 android:text="@string/a30304" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a303t3" />
@@ -502,7 +488,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a304t1" />
@@ -532,7 +518,7 @@
                                 android:text="@string/a30403" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a304t2" />
@@ -578,7 +564,7 @@
                                 android:text="@string/a30408" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a304t3" />
@@ -699,7 +685,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a305t1" />
@@ -729,7 +715,7 @@
                                 android:text="@string/a30503" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a305t2" />
@@ -791,7 +777,7 @@
                                 android:text="@string/a30510" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a305t3" />
@@ -904,7 +890,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a306t1" />
@@ -950,7 +936,7 @@
                                 android:text="@string/a30605" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a306t2" />
@@ -980,7 +966,7 @@
                                 android:text="@string/a30608" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a306t3" />
@@ -1101,7 +1087,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a307t1" />
@@ -1147,7 +1133,7 @@
                                 android:text="@string/a30705" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a307t2" />
@@ -1177,7 +1163,7 @@
                                 android:text="@string/a30708" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a307t3" />
@@ -1445,7 +1431,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a310t" />
@@ -1839,7 +1825,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1985,7 +1971,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a317t" />
@@ -2007,7 +1993,7 @@
                                 android:text="@string/a31702" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a317t1" />
@@ -2237,7 +2223,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2271,7 +2257,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2305,7 +2291,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2339,7 +2325,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2373,7 +2359,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2407,7 +2393,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2441,7 +2427,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2475,7 +2461,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2509,7 +2495,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2543,7 +2529,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2577,7 +2563,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2611,7 +2597,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2645,7 +2631,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2679,7 +2665,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2713,7 +2699,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2747,7 +2733,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2781,7 +2767,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2815,7 +2801,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -2844,8 +2830,6 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-
 
 
                 <!--EndButton LinearLayout-->

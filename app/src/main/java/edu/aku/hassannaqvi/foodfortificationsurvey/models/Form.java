@@ -12,6 +12,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 import edu.aku.hassannaqvi.foodfortificationsurvey.BR;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
@@ -28,8 +32,9 @@ public class Form extends BaseObservable implements Observable {
     private String uid = StringUtils.EMPTY;
     private String userName = StringUtils.EMPTY;
     private String sysDate = StringUtils.EMPTY;
-    private String cluster = StringUtils.EMPTY;
+    private String ebCode = StringUtils.EMPTY;
     private String hhid = StringUtils.EMPTY;
+    private String sno = StringUtils.EMPTY;
     private String deviceId = StringUtils.EMPTY;
     private String deviceTag = StringUtils.EMPTY;
     private String appver = StringUtils.EMPTY;
@@ -488,6 +493,13 @@ public class Form extends BaseObservable implements Observable {
 
 
     public Form() {
+
+        setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
+        setUserName(MainApp.user.getUserName());
+        setDeviceId(MainApp.deviceid);
+        setAppver(MainApp.appInfo.getAppVersion());
+        setAppver(MainApp.appInfo.getAppVersion());
+
     }
 
 
@@ -516,13 +528,13 @@ public class Form extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getCluster() {
-        return cluster;
+    public String getEbCode() {
+        return ebCode;
     }
 
-    public void setCluster(String cluster) {
-        this.cluster = cluster;
-        notifyPropertyChanged(BR.cluster);
+    public void setEbCode(String ebCode) {
+        this.ebCode = ebCode;
+        notifyPropertyChanged(BR.ebCode);
     }
 
     @Bindable
@@ -533,6 +545,16 @@ public class Form extends BaseObservable implements Observable {
     public void setHhid(String hhid) {
         this.hhid = hhid;
         notifyPropertyChanged(BR.hhid);
+    }
+
+    @Bindable
+    public String getSno() {
+        return sno;
+    }
+
+    public void setSno(String sno) {
+        this.sno = sno;
+        notifyPropertyChanged(BR.sno);
     }
 
     public String getUserName() {
@@ -843,6 +865,7 @@ public class Form extends BaseObservable implements Observable {
 
     public void setA105(String a105) {
         this.a105 = a105;
+        setEbCode(a105);
         notifyPropertyChanged(BR.a105);
     }
 
@@ -893,6 +916,7 @@ public class Form extends BaseObservable implements Observable {
 
     public void setA110(String a110) {
         this.a110 = a110;
+        setHhid(a110);
         notifyPropertyChanged(BR.a110);
     }
 
@@ -5315,8 +5339,9 @@ public class Form extends BaseObservable implements Observable {
     public Form Hydrate(Cursor cursor) throws JSONException {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_UID));
-        this.cluster = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENUM_BLOCK));
+        this.ebCode = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_ENUM_BLOCK));
         this.hhid = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_HHID));
+        this.sno = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SNO));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_USERNAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE));
         this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_DEVICEID));
@@ -5329,8 +5354,8 @@ public class Form extends BaseObservable implements Observable {
         sA1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA1)));
         sA3Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA3)));
         sB1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SB1)));
-        sC1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SA3)));
-        sC2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SB1)));
+        sC1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SC1)));
+        sC2Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SC2)));
         sD1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SD1)));
         sE1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SE1)));
         sF1Hydrate(cursor.getString(cursor.getColumnIndexOrThrow(FormsTable.COLUMN_SF1)));
@@ -6448,8 +6473,9 @@ public class Form extends BaseObservable implements Observable {
 
         json.put(FormsTable.COLUMN_ID, this.id);
         json.put(FormsTable.COLUMN_UID, this.uid);
-        json.put(FormsTable.COLUMN_ENUM_BLOCK, this.cluster);
+        json.put(FormsTable.COLUMN_ENUM_BLOCK, this.ebCode);
         json.put(FormsTable.COLUMN_HHID, this.hhid);
+        json.put(FormsTable.COLUMN_SNO, this.sno);
         json.put(FormsTable.COLUMN_USERNAME, this.userName);
         json.put(FormsTable.COLUMN_SYSDATE, this.sysDate);
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceId);

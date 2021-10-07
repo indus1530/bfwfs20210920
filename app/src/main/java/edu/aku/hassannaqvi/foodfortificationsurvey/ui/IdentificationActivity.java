@@ -220,6 +220,7 @@ public class IdentificationActivity extends AppCompatActivity {
         MainApp.form.setA107(bi.a107.getText().toString());
         MainApp.form.setA108(bi.a108.getText().toString());
         MainApp.form.setA110(bi.a110.getText().toString());
+        MainApp.form.setSno(MainApp.currentHousehold.getSno());
 
 
     }
@@ -262,6 +263,8 @@ public class IdentificationActivity extends AppCompatActivity {
             bi.ahhead.setText(randHH.getHeadhh());
             bi.btnContinue.setBackgroundTintList(ContextCompat.getColorStateList(IdentificationActivity.this, R.color.colorAccent));
             bi.btnContinue.setEnabled(true);
+
+            MainApp.currentHousehold = randHH;
 
         } else {
             bi.ahhead.setError("Not Found!");

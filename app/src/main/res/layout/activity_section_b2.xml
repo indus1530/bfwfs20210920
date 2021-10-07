@@ -51,23 +51,14 @@
                 android:orientation="vertical">
 
 
-                <!-- bins  Title   -->
-                <androidx.cardview.widget.CardView style="@style/cardView">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/bins" />
 
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
 
                 <!-- b104  Radio   -->
@@ -408,7 +399,7 @@
                             android:onCheckedChanged="@{()->b107.clearCheck()}">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/b106t1" />
@@ -438,7 +429,7 @@
                                 android:text="@string/b10603" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/b106t2" />
@@ -614,7 +605,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -677,7 +668,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -859,23 +850,6 @@
                                 android:onClick="@{()->form.setB111(`1`)}"
                                 android:text="@string/b11101" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/b11101x"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:layout_margin="8dp"
-                                android:padding="8dp"
-                                android:enabled="@{form.b111.equals(`1`)}"
-                                android:gravity="center"
-                                android:hint="#####"
-                                android:inputType="number"
-                                android:maxLength="5"
-                                android:tag="b11101"
-                                android:text="@={form.b11101x}"
-                                app:maxValue="10000"
-                                app:minValue="1"
-                                app:type="range" />
 
                             <RadioButton
                                 android:id="@+id/b11198"
@@ -888,6 +862,20 @@
 
                         </RadioGroup>
 
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/b11101x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="@{form.b111.equals(`1`)}"
+                            android:gravity="center"
+                            android:hint="#####"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:tag="b11101"
+                            android:text="@={form.b11101x}"
+                            app:maxValue="10000"
+                            app:minValue="1"
+                            app:type="range" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -929,7 +917,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -958,7 +946,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -987,7 +975,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1016,7 +1004,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1045,7 +1033,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1310,7 +1298,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1339,7 +1327,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1368,7 +1356,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1397,7 +1385,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1426,7 +1414,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1455,7 +1443,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1484,7 +1472,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1513,7 +1501,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1542,7 +1530,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1571,7 +1559,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"

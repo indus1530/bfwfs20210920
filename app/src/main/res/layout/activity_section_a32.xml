@@ -508,13 +508,13 @@
                             android:onCheckedChanged="@{()-> a323.clearCheck() + a324.clearCheck() + a325.clearCheck()}">
 
                             <TextView
-                                style="@style/sub_labels"
+                                style="@style/info"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a322ins" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a322t1" />
@@ -560,7 +560,7 @@
                                 android:text="@string/a32205" />
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/a322t2" />
@@ -791,11 +791,6 @@
 
                         </LinearLayout>
 
-                        <TextView
-                            style="@style/textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/a325t" />
 
                         <RadioGroup
                             android:id="@+id/a325"

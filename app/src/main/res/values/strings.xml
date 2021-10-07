@@ -45,6 +45,7 @@
     <string name="warning" translatable="false">Warning</string>
     <string name="newApp" translatable="false">New App downloaded!!</string>
     <string name="appVer" translatable="false">App New Version</string>
+    <string name="btnSync">Download Data</string>
     <string name="downloaded" translatable="false">Downloaded</string>
     <string name="appDownload" translatable="false">appDownload</string>
     <string name="newVer" translatable="false">New Version</string>
@@ -126,7 +127,7 @@
 
      &lt;!&ndash;ERROR MESSAGES&ndash;&gt;
      <string name="error_member_count">%1$s total does not match count of Male and Female</string>
-     <string name="error_member_count_household">%1$s total does not match count of various members of different ages</string>
+     <string name="error_member_count_household">%1$s total does not match count of various familyMember of different ages</string>
      <string name="title_mwra_dialog">MWRA Count</string>
      <string name="message_mwra_dialog_addmore">You have already entered %1$s MWRAS. \nAre you sure you want to add more MWRA?</string>
      <string name="message_mwra_dialog_proceeed">You have entered only %1$s of %2$s MWRAS in the household. \nAre you sure you want to select a MWRA now?</string>
@@ -220,7 +221,8 @@
     <string name="secta2">HOUSEHOLD MEMBERS’ INFORMATION</string>
     <string name="a2ins">Now I would like to ask you questions on household member information who are living with you in this house and share the same kitchen.</string>
     <string name="a201">Line number</string>
-    <string name="a202t" translatable="false">First, please tell me the name of each person who usually lives here, starting with the head of the household.</string>
+    <string name="a202t">First, please tell me the name of each person who usually lives here, starting with the head of the household.</string>
+    <string name="a202"> Name of Person </string>
     <string name="a203t"> relationship with Head of household)?</string>
     <string name="a20301"> Head of HH </string>
     <string name="a20302"> Wife / Husband </string>
@@ -2129,6 +2131,7 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="Q_a115t">a115t</string>
     <string name="Q_a116t">a116t</string>
     <string name="Q_a201">a201</string>
+    <string name="Q_a202">a202</string>
     <string name="Q_a202t">a202t</string>
     <string name="Q_a203t">a203t</string>
     <string name="Q_a204">a204</string>
@@ -2569,7 +2572,8 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="child_info_missing" translatable="false">Please fill child sections before entering this information</string>
     <string name="open_new_form" translatable="false">OPEN NEW FORM</string>
     <string name="options" translatable="false">Options</string>
-    <string name="a202">را ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
+    <!--  <string name="a202t">را ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
+      <string name="a202">فرد کا نام </string>-->
     <string name="a211">(نام) کیا اس وقت موجود ہے</string>
     <string name="a21101">ہاں</string>
     <string name="a21102">نہیں</string>
@@ -2583,46 +2587,46 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="f10403">"اکثر(پچھلے چار ہفتوں کے دوران دس سےزیادہ مرتبہ) "</string>
 
 
-    <string name="error_member_count">%1$s total does not match count of Male and Female</string>
-    <string name="error_member_count_household">%1$s total does not match count of various members of different ages</string>
-    <string name="title_mwra_dialog">MWRA Count</string>
-    <string name="message_mwra_dialog_addmore">You have already entered %1$s MWRAS. \nAre you sure you want to add more MWRA?</string>
-    <string name="message_mwra_dialog_proceeed">You have entered only %1$s of %2$s MWRAS in the household. \nAre you sure you want to select a MWRA now?</string>
-    <string name="title_child_dialog">Children Count</string>
-    <string name="message_child_dialog_addmore">You have already entered %1$s Child(ren). \nAre you sure you want to add more Child?</string>
-    <string name="message_child_dialog_proceeed">You have entered only %1$s of %2$s Child(ren) in the household. \nAre you sure you want to select aChild now?</string>
+    <!--   <string name="error_member_count">%1$s total does not match count of Male and Female</string>
+       <string name="error_member_count_household">%1$s total does not match count of various familyMember of different ages</string>
+       <string name="title_mwra_dialog">MWRA Count</string>
+       <string name="message_mwra_dialog_addmore">You have already entered %1$s MWRAS. \nAre you sure you want to add more MWRA?</string>
+       <string name="message_mwra_dialog_proceeed">You have entered only %1$s of %2$s MWRAS in the household. \nAre you sure you want to select a MWRA now?</string>
+       <string name="title_child_dialog">Children Count</string>
+       <string name="message_child_dialog_addmore">You have already entered %1$s Child(ren). \nAre you sure you want to add more Child?</string>
+       <string name="message_child_dialog_proceeed">You have entered only %1$s of %2$s Child(ren) in the household. \nAre you sure you want to select aChild now?</string>
 
-    <string name="upd_db_form"> updateDB(Form):\t </string>
-    <string name="upd_db_error"> Updating Database… ERROR! </string>
-    <string name="db_excp_error"> Database Exception... ERROR! </string>
-    <string name="upd_db"> Updating Database...\t </string>
-    <string name="fail_db_upd"> Failed to Update Database! </string>
-    <string name="backPress"> Back Press Not Allowed </string>
-    <string name="invalid_response"> Invalid Response </string>
-    <string name="agecal">ageCal:\t</string>
-    <string name="network_conn_error"> Network connection not available ! </string>
-    <string name="no_mother_selected_child_list"> No Mother has been selected. Please select a mother before opening Child List </string>
-    <string name="sec_not_available_moment"> This section is not available at the moment. </string>
-    <string name="no_mother_selected_preg_list"> No Mother has been selected. Please select a mother before opening Pregnancy List </string>
-    <string name="h220_error"> H220: WRA count does not match Females 20–49. </string>
-    <string name="onitemselected"> onItemSelected(Samples):\t </string>
-    <string name="upd_samples"> updateDB(Samples):\t </string>
-    <string name="upd_anthro"> updateDB(Anthro):\t </string>
-    <string name="folder_not_created"> Folder Not Created </string>
-    <string name="invalid_password"> Invalid Password </string>
-    <string name="username_required"> Username is required. </string>
-    <string name="incorrect_username_or_password">Incorrect Username or Password</string>
-    <string name="open_hh_form"> Open Household Form </string>
-    <string name="open_anhtro_form">Open Anthro Form</string>
-    <string name="info_hh_form_not_exist">INFO: Household information does not exist.</string>
-    <string name="hh_not_found">Household not Found</string>
-    <string name="hh_exists_form"> hhExists(Form): \t </string>
-    <string name="w202t2">Probe for the type of person seen and record all answers given.</string>
-    <string name="w311t2">Агар аз 24 соат камтар бошад, соатро нависед.</string>
-    <string name="instrc3">Варақчаи Гуруҳи Ғизоҳоро истифода баред то ин ки ғизо муайян шавад ки ба кадом гурӯҳ дохил мебошад.</string>
-    <string name="modetitle">MODULE E: САНҶИШИ ГЕМОГЛОБИН ВА ҶАМЪОВАРИИ СТУЛ</string>
-    <string name="woman_child_info_missing">Please fill woman and child sections before entering this information</string>
-    <string name="child_info_missing">Please fill child sections before entering this information</string>
-    <string name="open_new_form">Открыть новую форму</string>
-    <string name="options">Options</string>
+       <string name="upd_db_form"> updateDB(Form):\t </string>
+       <string name="upd_db_error"> Updating Database… ERROR! </string>
+       <string name="db_excp_error"> Database Exception... ERROR! </string>
+       <string name="upd_db"> Updating Database...\t </string>
+       <string name="fail_db_upd"> Failed to Update Database! </string>
+       <string name="backPress"> Back Press Not Allowed </string>
+       <string name="invalid_response"> Invalid Response </string>
+       <string name="agecal">ageCal:\t</string>
+       <string name="network_conn_error"> Network connection not available ! </string>
+       <string name="no_mother_selected_child_list"> No Mother has been selected. Please select a mother before opening Child List </string>
+       <string name="sec_not_available_moment"> This section is not available at the moment. </string>
+       <string name="no_mother_selected_preg_list"> No Mother has been selected. Please select a mother before opening Pregnancy List </string>
+       <string name="h220_error"> H220: WRA count does not match Females 20–49. </string>
+       <string name="onitemselected"> onItemSelected(Samples):\t </string>
+       <string name="upd_samples"> updateDB(Samples):\t </string>
+       <string name="upd_anthro"> updateDB(Anthro):\t </string>
+       <string name="folder_not_created"> Folder Not Created </string>
+       <string name="invalid_password"> Invalid Password </string>
+       <string name="username_required"> Username is required. </string>
+       <string name="incorrect_username_or_password">Incorrect Username or Password</string>
+       <string name="open_hh_form"> Open Household Form </string>
+       <string name="open_anhtro_form">Open Anthro Form</string>
+       <string name="info_hh_form_not_exist">INFO: Household information does not exist.</string>
+       <string name="hh_not_found">Household not Found</string>
+       <string name="hh_exists_form"> hhExists(Form): \t </string>
+       <string name="w202t2">Probe for the type of person seen and record all answers given.</string>
+       <string name="w311t2">Агар аз 24 соат камтар бошад, соатро нависед.</string>
+       <string name="instrc3">Варақчаи Гуруҳи Ғизоҳоро истифода баред то ин ки ғизо муайян шавад ки ба кадом гурӯҳ дохил мебошад.</string>
+       <string name="modetitle">MODULE E: САНҶИШИ ГЕМОГЛОБИН ВА ҶАМЪОВАРИИ СТУЛ</string>
+       <string name="woman_child_info_missing">Please fill woman and child sections before entering this information</string>
+       <string name="child_info_missing">Please fill child sections before entering this information</string>
+       <string name="open_new_form">Открыть новую форму</string>
+       <string name="options">Options</string>-->
 </resources>

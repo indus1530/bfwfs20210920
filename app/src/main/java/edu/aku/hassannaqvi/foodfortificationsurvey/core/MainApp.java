@@ -15,6 +15,7 @@ import java.util.List;
 import edu.aku.hassannaqvi.foodfortificationsurvey.BuildConfig;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.RandomHH;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
 
 
@@ -39,7 +40,7 @@ public class MainApp extends Application {
     public static File sdDir;
     public static String[] downloadData;
     public static Form form;
-    public static FamilyMembers members;
+    public static FamilyMembers familyMember;
 
     //public static Samples samples;
 
@@ -60,11 +61,15 @@ public class MainApp extends Application {
 
     public static List<String> subjectNames;
     public static List<FamilyMembers> familyList;
-    public static FamilyMembers familyMember;
-    public static int memberCount;
-    public static String selectedMember;
+    public static List<Integer> mwraList;
+    //public static FamilyMembers familyMember;
+    public static int memberCount = 0;
+    public static String selectedMWRA;
     public static int memberCountComplete;
     public static boolean memberComplete;
+    //public static int mwraCount;
+    public static FamilyMembers mwra;
+    public static RandomHH currentHousehold;
 
 
     public static void hideSystemUI(View decorView) {
@@ -102,7 +107,7 @@ public class MainApp extends Application {
         return "deviceId";
     }
 
-    public static int kishGrid(int Hh_Sno, int totalMwra) {
+    public static String kishGrid(int Hh_Sno, int totalMwra) {
 
         // GENERATE RANDOM
         // int household  = 1 + (int)(Math.random() * ((10 - 1) + 1));
@@ -127,7 +132,8 @@ public class MainApp extends Application {
         // System.out.println(household+"-"+eligibles);
         // System.out.println(grid[household-1][eligibles-1]);
 
-        return grid[household - 1][eligibles - 1];
+        // return Index of MWRAList (total-1)
+        return String.valueOf((grid[household - 1][eligibles - 1]) - 1);
     }
 
     @Override

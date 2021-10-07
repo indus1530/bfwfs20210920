@@ -51,26 +51,13 @@
                 android:orientation="vertical">
 
 
-                <!-- ins  Title   -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVins"
-                    style="@style/cardView">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub_labels"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/inse" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
 
                 <!-- e101  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -496,23 +483,6 @@
                                 android:onClick="@{()->form.setE105(`1`)}"
                                 android:text="@string/e10501" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/e10501x"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="7dp"
-                                android:layout_weight="1"
-                                android:enabled="@{form.e105.equals(`1`)}"
-                                android:gravity="center"
-                                android:hint="####"
-                                android:inputType="number"
-                                android:maxLength="4"
-                                android:padding="8dp"
-                                android:tag="e10501"
-                                android:text="@={form.e10501x}"
-                                app:maxValue="1000"
-                                app:minValue="1"
-                                app:type="range" />
 
                             <RadioButton
                                 android:id="@+id/e10502"
@@ -524,6 +494,21 @@
                                 android:text="@string/e10502" />
 
                         </RadioGroup>
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/e10501x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="@{form.e105.equals(`1`)}"
+                            android:gravity="center"
+                            android:hint="####"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:tag="e10501"
+                            android:text="@={form.e10501x}"
+                            app:maxValue="1000"
+                            app:minValue="1"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -993,7 +978,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1036,7 +1021,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1079,7 +1064,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1122,7 +1107,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1165,7 +1150,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1419,7 +1404,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1462,7 +1447,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1505,7 +1490,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1548,7 +1533,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
@@ -1591,7 +1576,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                style="@style/textView"
+                                style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"

@@ -62,7 +62,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/labelsHead"
+                            style="@style/info"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/a2ins" />
@@ -96,16 +96,35 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="@string/a201" />
+                            android:text="@={member.a201}" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- a202t  Title   -->
+                <!--                &lt;!&ndash; a202t  Title   &ndash;&gt;
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/fldGrpCVa202t"
+                                    style="@style/cardView">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/sub_labels"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/a202t" />
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>-->
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/fldGrpCVa202t"
+                    android:id="@+id/fldGrpCVa202"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -113,17 +132,36 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            style="@style/sub_labels"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/a202t" />
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_a202" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/a202" />
+
+                        </LinearLayout>
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/a202"
+                            digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName|textCapWords"
+                            android:text="@={member.a202}" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-
                 <!-- a203t  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa203t"
@@ -465,7 +503,7 @@
                                 android:maxLength="4"
                                 android:text="@={member.a205y}"
                                 app:maxValue="2021"
-                                app:minValue="2021"
+                                app:minValue="1922"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -505,11 +543,18 @@
 
                         </LinearLayout>
 
-                        <TextView
-                            style="@style/sub_labels"
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/a206"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/a206ins" />
+                            android:gravity="center"
+                            android:hint="###"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:text="@={member.a206}"
+                            app:maxValue="100"
+                            app:minValue="0"
+                            app:type="range" />
 
                     </LinearLayout>
 

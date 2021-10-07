@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.foodfortificationsurvey.contracts;
+package edu.aku.hassannaqvi.foodfortificationsurvey.adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -47,44 +47,54 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
 
         TextView fName = viewHolder.fName;
         TextView fAge = viewHolder.fAge;
+        // LinearLayout subItem = viewHolder.subItem;
+        ImageView fmRow = viewHolder.fmRow;
+        ImageView mainIcon = viewHolder.mainIcon;
+        // TextView addSec = viewHolder.addSec;
         TextView fMaritalStatus = viewHolder.fMatitalStatus;
-        View indicator = viewHolder.indicator;
-        View cloaked = viewHolder.cloaked;
+        TextView secStatus = viewHolder.secStatus;
+        View cloaked = viewHolder.cloak;
 
-        //String pregStatus = members.getRb07().equals("1") ? "Pregnant" : "Not Pregnant";
+        //String pregStatus = familyMember.getRb07().equals("1") ? "Pregnant" : "Not Pregnant";
 
         MainApp.memberComplete = completeCount == MainApp.memberCount;
 
-        fName.setText(members.getH221());
-        fAge.setText(members.getH223());
+        fName.setText(members.getA202());
+        fAge.setText(members.getA206() + "y ");
 
-    /*    String marStatus = "";
-        switch (members.getRb06()) {
+        String marStatus = "";
+        switch (members.getA207t()) {
+            case "1":
+                marStatus = "Married";
+                break;
             case "2":
-                marStatus = "Currently Married";
+                marStatus = "Unmarried";
                 break;
             case "3":
-                marStatus = "Unmarried";
+                marStatus = "Widowed";
+                break;
+            case "4":
+                marStatus = "Divorced/Separated";
                 break;
             default:
                 marStatus = "Value Unknown";
                 break;
         }
 
+        fMaritalStatus.setText(marStatus);
 
 
-*/
-
-        cloaked.setVisibility(members.getH227().equals("1") ? View.GONE : View.VISIBLE);
-        indicator.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : mContext.getResources().getColor(R.color.gray));
-        if (!MainApp.selectedMember.equals("")) {
+        cloaked.setVisibility(members.isMwra() ? View.GONE : View.VISIBLE);
+        mainIcon.setImageResource((members.getA204().equals("1") ? R.drawable.ic_boy : R.drawable.ic_girl));
+        mainIcon.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : (members.getA204().equals("1") ? mContext.getResources().getColor(R.color.boy_blue) : mContext.getResources().getColor(R.color.girl_pink)));
+        if (!MainApp.selectedMWRA.equals("")) {
             cloaked.setVisibility(members.getIndexed().equals("1") ? View.GONE : View.VISIBLE);
         }
-        fMaritalStatus.setText("Children: " + members.getH226m() + " boy(s), " + members.getH226f() + " girl(s)");
+        //fMaritalStatus.setText("Children: " + familyMember.getH226m() + " boy(s), " + familyMember.getH226f() + " girl(s)");
       /*  viewHolder.itemView.setOnClickListener(v -> {
             // Get the current state of the item
 
-            MainApp.members = MainApp.members.get(position);
+            MainApp.familyMember = MainApp.familyMember.get(position);
             Intent intent = new Intent(mContext, SectionBActivity.class);
 
             intent.putExtra("position", position);
@@ -122,20 +132,24 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         private final TextView fAge;
         private final TextView fMatitalStatus;
         private final TextView secStatus;
+        //private final TextView addSec;
+        //private final LinearLayout subItem;
         private final ImageView fmRow;
-        private final View indicator;
-        private final View cloaked;
+        private final ImageView mainIcon;
+        private final View cloak;
 
 
         public ViewHolder(View v) {
             super(v);
-            fName = v.findViewById(R.id.hh02);
-            fAge = v.findViewById(R.id.hh05);
-            fMatitalStatus = v.findViewById(R.id.hh06);
-            secStatus = v.findViewById(R.id.secStatus);
-            fmRow = v.findViewById(R.id.fmRow);
-            indicator = v.findViewById(R.id.indicator);
-            cloaked = v.findViewById(R.id.cloaked);
+            fName = v.findViewById(R.id.chh02);
+            fAge = v.findViewById(R.id.chh05);
+            fMatitalStatus = v.findViewById(R.id.chh06);
+            secStatus = v.findViewById(R.id.csecStatus);
+            //  addSec = v.findViewById(R.id.cadd_section);
+            //  subItem = v.findViewById(R.id.csubitem);
+            fmRow = v.findViewById(R.id.cfmRow);
+            mainIcon = v.findViewById(R.id.mainIcon);
+            cloak = v.findViewById(R.id.cloaked);
 
         }
 

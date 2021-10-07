@@ -130,7 +130,7 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:minHeight="56dp"
                     android:radius="10dp"
-                    android:text="FEMALE MEMBERS"
+                    android:text="FAMILY MEMBERS"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                     android:textColor="@color/white" />
 
@@ -189,7 +189,7 @@
                     android:paddingStart="12dp"
                     android:paddingEnd="12dp"
                     android:shadowColor="@color/redDark"
-                    android:text="Select Mother"
+                    android:text="Select Indexed Mother"
                     android:textColor="@color/white"
                     android:visibility="invisible" />
 

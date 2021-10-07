@@ -127,9 +127,9 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
         }
 
         holder.hhno.setText(fc.get(position).getHhid());
-        holder.cluster.setText(fc.get(position).getCluster());
-        holder.cluster.setText(fc.get(position).getCluster());
-        holder.cluster.setText(fc.get(position).getCluster());
+        holder.ebCode.setText(fc.get(position).getEbCode());
+        holder.ebCode.setText(fc.get(position).getEbCode());
+        holder.ebCode.setText(fc.get(position).getEbCode());
         holder.istatus.setText(iStatus);
       /*  holder.fatherName.setText(motherName + " / " + childName);
         holder.secStatusAnthro.setText(anthroStatus == 2 ? "  Done   " : " Pending ");
@@ -171,7 +171,7 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
     private void editHousehold(int position) {
         MainApp.form = new Form();
         try {
-            MainApp.form = db.getFormByClusterHHNo(fc.get(position).getCluster(), fc.get(position).getHhid());
+            MainApp.form = db.getFormByClusterHHNo(fc.get(position).getEbCode(), fc.get(position).getHhid());
         } catch (JSONException e) {
             Log.d(TAG, c.getString(R.string.hh_exists_form) + e.getMessage());
             Toast.makeText(c, c.getString(R.string.hh_exists_form) + e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -184,7 +184,7 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public RecyclerView rv;
         public TextView sysdate;
-        public TextView cluster;
+        public TextView ebCode;
         public TextView hhno;
         public TextView istatus;
         public TextView secStatusAnthro;
@@ -197,7 +197,7 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
             super(v);
 //            rv = v.findViewById(R.id.FormsList);
             sysdate = v.findViewById(R.id.sysdate);
-            cluster = v.findViewById(R.id.cluster);
+            ebCode = v.findViewById(R.id.ebCode);
             hhno = v.findViewById(R.id.hhno);
             istatus = v.findViewById(R.id.istatus);
             fatherName = v.findViewById(R.id.fathername);

@@ -100,7 +100,8 @@
     <string name="secta2">گھرانے کے افراد کی معلومات</string>
     <string name="a2ins">اب میں آپ سے گھر کے افراد کے متعلق سوالات پوچھنا چاہونگی جو اس گھر میں آپ کے ساتھ رہتے ہیں اور ایک ہی باورچی خانه استعمال کرتے ہیں۔ </string>
     <string name="a201">لائن نمبر</string>
-    <string name="a202">را ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
+    <string name="a202t">را ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
+    <string name="a202">فرد کا نام </string>
     <string name="a203t">گھر کے سربراہ سے رشتہ ؟</string>
     <string name="a20301">گھر کا سربراہ</string>
     <string name="a20302">،بیوی/شوہر </string>
@@ -2001,6 +2002,7 @@
     <string name="Q_a115t">a115t</string>
     <string name="Q_a116t">a116t</string>
     <string name="Q_a201">a201</string>
+    <string name="Q_a202">a202</string>
     <string name="Q_a202t">a202t</string>
     <string name="Q_a203t">a203t</string>
     <string name="Q_a204">a204</string>
