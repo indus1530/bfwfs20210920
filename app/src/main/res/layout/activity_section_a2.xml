@@ -151,17 +151,19 @@
 
                         </LinearLayout>
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
+                        <EditText
                             android:id="@+id/a202"
-                            digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPersonName|textCapWords"
+                            digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                             android:text="@={member.a202}" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+
                 <!-- a203t  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa203t"
