@@ -229,7 +229,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1011.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1011.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -335,7 +335,7 @@
                             android:id="@+id/c1021"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1022.clearCheck() + c1023.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1022.clearCheck() + c1023.clearCheck() + form.setC1022(``) + form.setC1023(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -370,7 +370,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1021.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1021.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -412,7 +412,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1021.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1021.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -518,7 +518,7 @@
                             android:id="@+id/c1031"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1032.clearCheck() + c1033.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1032.clearCheck() + c1033.clearCheck() + form.setC1032(``) + form.setC1033(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -553,7 +553,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1031.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1031.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -595,7 +595,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1031.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1031.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -701,7 +701,7 @@
                             android:id="@+id/c1041"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1042.clearCheck() + c1043.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1042.clearCheck() + c1043.clearCheck() + form.setC1042(``) + form.setC1043(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -736,7 +736,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1041.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1041.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -778,7 +778,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1041.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1041.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -884,7 +884,7 @@
                             android:id="@+id/c1051"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1052.clearCheck() + c1053.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1052.clearCheck() + c1053.clearCheck() + form.setC1052(``) + form.setC1053(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -919,7 +919,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1051.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1051.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -961,13 +961,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1051.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1051.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:layout_height="match_parent"
                                 android:gravity="top|center"
                                 android:text="@string/c1053" />
 
@@ -1067,7 +1067,7 @@
                             android:id="@+id/c1061"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1062.clearCheck() + c1063.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1062.clearCheck() + c1063.clearCheck() + form.setC1062(``) + form.setC1063(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1102,7 +1102,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1061.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1061.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1144,13 +1144,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1061.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1061.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:layout_height="match_parent"
                                 android:gravity="top|center"
                                 android:text="@string/c1063" />
 
@@ -1250,7 +1250,7 @@
                             android:id="@+id/c1071"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1072.clearCheck() + c1073.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1072.clearCheck() + c1073.clearCheck() + form.setC1072(``) + form.setC1073(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1285,7 +1285,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1071.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1071.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1327,13 +1327,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1071.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1071.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:layout_height="match_parent"
                                 android:gravity="top|center"
                                 android:text="@string/c1073" />
 
@@ -1433,7 +1433,7 @@
                             android:id="@+id/c1081"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1082.clearCheck() + c1083.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1082.clearCheck() + c1083.clearCheck() + form.setC1082(``) + form.setC1083(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1468,7 +1468,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1081.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1081.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1510,7 +1510,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1081.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1081.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1616,7 +1616,7 @@
                             android:id="@+id/c1091"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1092.clearCheck() + c1093.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1092.clearCheck() + c1093.clearCheck() + form.setC1092(``) + form.setC1093(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1651,7 +1651,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1091.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1091.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1693,7 +1693,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1091.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1091.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1799,7 +1799,7 @@
                             android:id="@+id/c1101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1102.clearCheck() + c1103.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1102.clearCheck() + c1103.clearCheck() + form.setC1102(``) + form.setC1103(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1834,7 +1834,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1101.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1101.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1876,7 +1876,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1101.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1101.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -1982,7 +1982,7 @@
                             android:id="@+id/c1111"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1112.clearCheck() + c1113.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1112.clearCheck() + c1113.clearCheck() + form.setC1112(``) + form.setC1113(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2017,7 +2017,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1111.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1111.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -2059,7 +2059,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1111.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1111.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -2165,7 +2165,7 @@
                             android:id="@+id/c1121"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1122.clearCheck() + c1123.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1122.clearCheck() + c1123.clearCheck() + form.setC1122(``) + form.setC1123(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2200,7 +2200,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1121.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1121.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -2242,7 +2242,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1121.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1121.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -2348,7 +2348,7 @@
                             android:id="@+id/c1131"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1132.clearCheck() + c1133.clearCheck()}"
+                            android:onCheckedChanged="@{()->c1132.clearCheck() + c1133.clearCheck() + form.setC1132(``) + form.setC1133(``)}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2383,7 +2383,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1131.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1131.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -2425,7 +2425,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{form.c1131.equals(`2`) ? View.GONE : View.VISIBLE}">
+                            android:visibility="@{form.c1131.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
