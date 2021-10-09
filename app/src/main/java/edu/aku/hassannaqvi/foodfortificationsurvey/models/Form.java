@@ -947,8 +947,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setA113(String a113) {
         this.a113 = a113;
-        setA114t(Integer.parseInt(a113) < 18 ? "" : this.a114t);
-        setA115t(Integer.parseInt(a113) < 18 ? "" : this.a115t);
+        setA114t(a113.length() > 0 ? (Integer.parseInt(a113) < 18 ? "" : this.a114t) : this.a114t);
+        setA115t(a113.length() > 0 ? (Integer.parseInt(a113) < 18 ? "" : this.a115t) : this.a115t);
         notifyPropertyChanged(BR.a113);
     }
 
@@ -1273,6 +1273,7 @@ public class Form extends BaseObservable implements Observable {
 
     public void setA317(String a317) {
         this.a317 = a317;
+        setA31796x(a317.equals("96") ? this.a31796x : "");
         notifyPropertyChanged(BR.a317);
     }
 
@@ -1283,7 +1284,6 @@ public class Form extends BaseObservable implements Observable {
 
     public void setA31796x(String a31796x) {
         this.a31796x = a31796x;
-        setA31796x(a317.equals("96") ? this.a31796x : "");
         notifyPropertyChanged(BR.a31796x);
     }
 
