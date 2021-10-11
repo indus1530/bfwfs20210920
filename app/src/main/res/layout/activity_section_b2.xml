@@ -50,16 +50,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
-
-
-                        <TextView
-                            style="@style/info"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/bins" />
-
-
+                <TextView
+                    style="@style/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bins" />
 
                 <!-- b104  Radio   -->
                 <androidx.cardview.widget.CardView

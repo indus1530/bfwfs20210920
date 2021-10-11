@@ -193,8 +193,8 @@ public class Form extends BaseObservable implements Observable {
     private String b10206 = StringUtils.EMPTY;
     private String b10207 = StringUtils.EMPTY;
     private String b10208 = StringUtils.EMPTY;
-    private String b10298 = StringUtils.EMPTY;
-    private String b10298x = StringUtils.EMPTY;
+    private String b10296 = StringUtils.EMPTY;
+    private String b10296x = StringUtils.EMPTY;
     private String b103a = StringUtils.EMPTY;
     private String b103a96x = StringUtils.EMPTY;
     private String b103b = StringUtils.EMPTY;
@@ -202,7 +202,7 @@ public class Form extends BaseObservable implements Observable {
     private String b103c = StringUtils.EMPTY;
     private String b103c96x = StringUtils.EMPTY;
     private String b103d = StringUtils.EMPTY;
-    private String b10396x = StringUtils.EMPTY;
+    private String b103d96x = StringUtils.EMPTY;
     private String b103e = StringUtils.EMPTY;
     private String b103e96x = StringUtils.EMPTY;
     private String b103f = StringUtils.EMPTY;
@@ -210,11 +210,13 @@ public class Form extends BaseObservable implements Observable {
     private String b103g = StringUtils.EMPTY;
     private String b103g96x = StringUtils.EMPTY;
     private String b103h = StringUtils.EMPTY;
+    private String b103h96x = StringUtils.EMPTY;
     private String b103i = StringUtils.EMPTY;
     private String b103i96x = StringUtils.EMPTY;
     private String b103j = StringUtils.EMPTY;
     private String b103j96x = StringUtils.EMPTY;
     private String b103k = StringUtils.EMPTY;
+    private String b103k96x = StringUtils.EMPTY;
     private String b103l = StringUtils.EMPTY;
     private String b103l96x = StringUtils.EMPTY;
     private String b104 = StringUtils.EMPTY;
@@ -2146,25 +2148,25 @@ public class Form extends BaseObservable implements Observable {
     }
 
     @Bindable
-    public String getB10298() {
-        return b10298;
+    public String getB10296() {
+        return b10296;
     }
 
-    public void setB10298(String b10298) {
-        if (this.b10298.equals(b10298)) return; // for all checkboxes
-        this.b10298 = b10298;
-        setB10298x(b10298.equals("98") ? this.b10298x : "");
-        notifyPropertyChanged(BR.b10298);
+    public void setB10296(String b10296) {
+        if (this.b10296.equals(b10296)) return; // for all checkboxes
+        this.b10296 = b10296;
+        setB10296x(b10296.equals("96") ? this.b10296x : "");
+        notifyPropertyChanged(BR.b10296);
     }
 
     @Bindable
-    public String getB10298x() {
-        return b10298x;
+    public String getB10296x() {
+        return b10296x;
     }
 
-    public void setB10298x(String b10298x) {
-        this.b10298x = b10298x;
-        notifyPropertyChanged(BR.b10298x);
+    public void setB10296x(String b10296x) {
+        this.b10296x = b10296x;
+        notifyPropertyChanged(BR.b10296x);
     }
 
     @Bindable
@@ -2237,18 +2239,18 @@ public class Form extends BaseObservable implements Observable {
 
     public void setB103d(String b103d) {
         this.b103d = b103d;
-        setB10396x(b103d.equals("96") ? this.b10396x : "");
+        setB103d96x(b103d.equals("96") ? this.b103d96x : "");
         notifyPropertyChanged(BR.b103d);
     }
 
     @Bindable
-    public String getB10396x() {
-        return b10396x;
+    public String getB103d96x() {
+        return b103d96x;
     }
 
-    public void setB10396x(String b10396x) {
-        this.b10396x = b10396x;
-        notifyPropertyChanged(BR.b10396x);
+    public void setB103d96x(String b103d96x) {
+        this.b103d96x = b103d96x;
+        notifyPropertyChanged(BR.b103d96x);
     }
 
     @Bindable
@@ -2325,6 +2327,16 @@ public class Form extends BaseObservable implements Observable {
     }
 
     @Bindable
+    public String getB103h96x() {
+        return b103h96x;
+    }
+
+    public void setB103h96x(String b103h96x) {
+        this.b103h96x = b103h96x;
+        notifyPropertyChanged(BR.b103h96x);
+    }
+
+    @Bindable
     public String getB103i() {
         return b103i;
     }
@@ -2374,6 +2386,16 @@ public class Form extends BaseObservable implements Observable {
     public void setB103k(String b103k) {
         this.b103k = b103k;
         notifyPropertyChanged(BR.b103k);
+    }
+
+    @Bindable
+    public String getB103k96x() {
+        return b103k96x;
+    }
+
+    public void setB103k96x(String b103k96x) {
+        this.b103k96x = b103k96x;
+        notifyPropertyChanged(BR.b103k96x);
     }
 
     @Bindable
@@ -5494,8 +5516,8 @@ public class Form extends BaseObservable implements Observable {
             this.b10206 = json.getString("b10206");
             this.b10207 = json.getString("b10207");
             this.b10208 = json.getString("b10208");
-            this.b10298 = json.getString("b10298");
-            this.b10298x = json.getString("b10298x");
+            this.b10296 = json.getString("b10296");
+            this.b10296x = json.getString("b10296x");
             this.b103a = json.getString("b103a");
             this.b103a96x = json.getString("b103a96x");
             this.b103b = json.getString("b103b");
@@ -5503,7 +5525,7 @@ public class Form extends BaseObservable implements Observable {
             this.b103c = json.getString("b103c");
             this.b103c96x = json.getString("b103c96x");
             this.b103d = json.getString("b103d");
-            this.b10396x = json.getString("b10396x");
+            this.b103d96x = json.getString("b103d96x");
             this.b103e = json.getString("b103e");
             this.b103e96x = json.getString("b103e96x");
             this.b103f = json.getString("b103f");
@@ -5511,11 +5533,13 @@ public class Form extends BaseObservable implements Observable {
             this.b103g = json.getString("b103g");
             this.b103g96x = json.getString("b103g96x");
             this.b103h = json.getString("b103h");
+            this.b103h96x = json.getString("b103h96x");
             this.b103i = json.getString("b103i");
             this.b103i96x = json.getString("b103i96x");
             this.b103j = json.getString("b103j");
             this.b103j96x = json.getString("b103j96x");
             this.b103k = json.getString("b103k");
+            this.b103k96x = json.getString("b103k96x");
             this.b103l = json.getString("b103l");
             this.b103l96x = json.getString("b103l96x");
             this.b104 = json.getString("b104");
@@ -6052,8 +6076,8 @@ public class Form extends BaseObservable implements Observable {
                 .put("b10206", b10206)
                 .put("b10207", b10207)
                 .put("b10208", b10208)
-                .put("b10298", b10298)
-                .put("b10298x", b10298x)
+                .put("b10296", b10296)
+                .put("b10296x", b10296x)
                 .put("b103a", b103a)
                 .put("b103a96x", b103a96x)
                 .put("b103b", b103b)
@@ -6061,7 +6085,7 @@ public class Form extends BaseObservable implements Observable {
                 .put("b103c", b103c)
                 .put("b103c96x", b103c96x)
                 .put("b103d", b103d)
-                .put("b10396x", b10396x)
+                .put("b103d96x", b103d96x)
                 .put("b103e", b103e)
                 .put("b103e96x", b103e96x)
                 .put("b103f", b103f)
@@ -6069,11 +6093,13 @@ public class Form extends BaseObservable implements Observable {
                 .put("b103g", b103g)
                 .put("b103g96x", b103g96x)
                 .put("b103h", b103h)
+                .put("b103h96x", b103h96x)
                 .put("b103i", b103i)
                 .put("b103i96x", b103i96x)
                 .put("b103j", b103j)
                 .put("b103j96x", b103j96x)
                 .put("b103k", b103k)
+                .put("b103k96x", b103k96x)
                 .put("b103l", b103l)
                 .put("b103l96x", b103l96x)
                 .put("b104", b104)
