@@ -2822,6 +2822,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1011(String c1011) {
         this.c1011 = c1011;
+        setC1012(c1011.equals("2") ? "" : this.c1012);
+        setC1013(c1011.equals("2") ? "" : this.c1013);
         notifyPropertyChanged(BR.c1011);
     }
 
@@ -2852,6 +2854,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1021(String c1021) {
         this.c1021 = c1021;
+        setC1022(c1021.equals("2") ? "" : this.c1022);
+        setC1023(c1021.equals("2") ? "" : this.c1023);
         notifyPropertyChanged(BR.c1021);
     }
 
@@ -2882,6 +2886,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1031(String c1031) {
         this.c1031 = c1031;
+        setC1032(c1031.equals("2") ? "" : this.c1032);
+        setC1033(c1031.equals("2") ? "" : this.c1033);
         notifyPropertyChanged(BR.c1031);
     }
 
@@ -2912,6 +2918,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1041(String c1041) {
         this.c1041 = c1041;
+        setC1042(c1041.equals("2") ? "" : this.c1042);
+        setC1043(c1041.equals("2") ? "" : this.c1043);
         notifyPropertyChanged(BR.c1041);
     }
 
@@ -2942,6 +2950,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1051(String c1051) {
         this.c1051 = c1051;
+        setC1052(c1051.equals("2") ? "" : this.c1052);
+        setC1053(c1051.equals("2") ? "" : this.c1053);
         notifyPropertyChanged(BR.c1051);
     }
 
@@ -2972,6 +2982,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1061(String c1061) {
         this.c1061 = c1061;
+        setC1062(c1061.equals("2") ? "" : this.c1062);
+        setC1063(c1061.equals("2") ? "" : this.c1063);
         notifyPropertyChanged(BR.c1061);
     }
 
@@ -3002,6 +3014,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1071(String c1071) {
         this.c1071 = c1071;
+        setC1072(c1071.equals("2") ? "" : this.c1072);
+        setC1073(c1071.equals("2") ? "" : this.c1073);
         notifyPropertyChanged(BR.c1071);
     }
 
@@ -3032,6 +3046,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1081(String c1081) {
         this.c1081 = c1081;
+        setC1082(c1081.equals("2") ? "" : this.c1082);
+        setC1083(c1081.equals("2") ? "" : this.c1083);
         notifyPropertyChanged(BR.c1081);
     }
 
@@ -3062,6 +3078,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1091(String c1091) {
         this.c1091 = c1091;
+        setC1092(c1091.equals("2") ? "" : this.c1092);
+        setC1093(c1091.equals("2") ? "" : this.c1093);
         notifyPropertyChanged(BR.c1091);
     }
 
@@ -3092,6 +3110,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1101(String c1101) {
         this.c1101 = c1101;
+        setC1102(c1101.equals("2") ? "" : this.c1102);
+        setC1103(c1101.equals("2") ? "" : this.c1103);
         notifyPropertyChanged(BR.c1101);
     }
 
@@ -3122,6 +3142,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1111(String c1111) {
         this.c1111 = c1111;
+        setC1112(c1111.equals("2") ? "" : this.c1112);
+        setC1113(c1111.equals("2") ? "" : this.c1113);
         notifyPropertyChanged(BR.c1111);
     }
 
@@ -3152,6 +3174,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1121(String c1121) {
         this.c1121 = c1121;
+        setC1122(c1121.equals("2") ? "" : this.c1122);
+        setC1123(c1121.equals("2") ? "" : this.c1123);
         notifyPropertyChanged(BR.c1121);
     }
 
@@ -3182,6 +3206,8 @@ public class Form extends BaseObservable implements Observable {
 
     public void setC1131(String c1131) {
         this.c1131 = c1131;
+        setC1132(c1131.equals("2") ? "" : this.c1132);
+        setC1133(c1131.equals("2") ? "" : this.c1133);
         notifyPropertyChanged(BR.c1131);
     }
 
