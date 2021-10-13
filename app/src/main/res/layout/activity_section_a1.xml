@@ -517,7 +517,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!--        &lt;!&ndash; a110  Input   &ndash;&gt;
+                        <!-- a110  Input   -->
                         <androidx.cardview.widget.CardView
                             android:id="@+id/fldGrpCVa110"
                             style="@style/cardView">
@@ -560,7 +560,7 @@
 
                             </LinearLayout>
 
-                        </androidx.cardview.widget.CardView>-->
+                        </androidx.cardview.widget.CardView>
 
 
                 <!-- a111t  Radio   -->

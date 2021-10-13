@@ -152,7 +152,7 @@
                             android:id="@+id/c1011"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1012.clearCheck() + c1013.clearCheck() + form.setC1012(``) + form.setC1013(``)}"
+                            android:onCheckedChanged="@{()->c1012.clearCheck() + c1013.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -335,7 +335,7 @@
                             android:id="@+id/c1021"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1022.clearCheck() + c1023.clearCheck() + form.setC1022(``) + form.setC1023(``)}"
+                            android:onCheckedChanged="@{()->c1022.clearCheck() + c1023.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -518,7 +518,7 @@
                             android:id="@+id/c1031"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1032.clearCheck() + c1033.clearCheck() + form.setC1032(``) + form.setC1033(``)}"
+                            android:onCheckedChanged="@{()->c1032.clearCheck() + c1033.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -701,7 +701,7 @@
                             android:id="@+id/c1041"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1042.clearCheck() + c1043.clearCheck() + form.setC1042(``) + form.setC1043(``)}"
+                            android:onCheckedChanged="@{()->c1042.clearCheck() + c1043.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -884,7 +884,7 @@
                             android:id="@+id/c1051"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1052.clearCheck() + c1053.clearCheck() + form.setC1052(``) + form.setC1053(``)}"
+                            android:onCheckedChanged="@{()->c1052.clearCheck() + c1053.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1067,7 +1067,7 @@
                             android:id="@+id/c1061"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1062.clearCheck() + c1063.clearCheck() + form.setC1062(``) + form.setC1063(``)}"
+                            android:onCheckedChanged="@{()->c1062.clearCheck() + c1063.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1250,7 +1250,7 @@
                             android:id="@+id/c1071"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1072.clearCheck() + c1073.clearCheck() + form.setC1072(``) + form.setC1073(``)}"
+                            android:onCheckedChanged="@{()->c1072.clearCheck() + c1073.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1433,7 +1433,7 @@
                             android:id="@+id/c1081"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1082.clearCheck() + c1083.clearCheck() + form.setC1082(``) + form.setC1083(``)}"
+                            android:onCheckedChanged="@{()->c1082.clearCheck() + c1083.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1616,7 +1616,7 @@
                             android:id="@+id/c1091"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1092.clearCheck() + c1093.clearCheck() + form.setC1092(``) + form.setC1093(``)}"
+                            android:onCheckedChanged="@{()->c1092.clearCheck() + c1093.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1799,7 +1799,7 @@
                             android:id="@+id/c1101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1102.clearCheck() + c1103.clearCheck() + form.setC1102(``) + form.setC1103(``)}"
+                            android:onCheckedChanged="@{()->c1102.clearCheck() + c1103.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1982,7 +1982,7 @@
                             android:id="@+id/c1111"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1112.clearCheck() + c1113.clearCheck() + form.setC1112(``) + form.setC1113(``)}"
+                            android:onCheckedChanged="@{()->c1112.clearCheck() + c1113.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2165,7 +2165,7 @@
                             android:id="@+id/c1121"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1122.clearCheck() + c1123.clearCheck() + form.setC1122(``) + form.setC1123(``)}"
+                            android:onCheckedChanged="@{()->c1122.clearCheck() + c1123.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2348,7 +2348,7 @@
                             android:id="@+id/c1131"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1132.clearCheck() + c1133.clearCheck() + form.setC1132(``) + form.setC1133(``)}"
+                            android:onCheckedChanged="@{()->c1132.clearCheck() + c1133.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
