@@ -322,7 +322,7 @@ public class FamilyMembers extends BaseObservable {
     public void setA205m(String a205m) {
         this.a205m = a205m;
         if (a205m.equals("98")) {
-            setA205m("98");
+            setA205d("98");
         }
         CaluculateAge();
         notifyPropertyChanged(BR.a205m);

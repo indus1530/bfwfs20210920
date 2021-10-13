@@ -153,10 +153,10 @@
 
                         <EditText
                             android:id="@+id/a202"
+                            digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPersonName|textCapWords"
-                            digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                             android:text="@={member.a202}" />
 
                     </LinearLayout>
@@ -476,6 +476,7 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={member.a205d}"
+                                app:defaultValue="98"
                                 app:maxValue="30"
                                 app:minValue="1"
                                 app:type="range" />
@@ -490,6 +491,7 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text="@={member.a205m}"
+                                app:defaultValue="98"
                                 app:maxValue="12"
                                 app:minValue="1"
                                 app:type="range" />
@@ -504,6 +506,7 @@
                                 android:inputType="number"
                                 android:maxLength="4"
                                 android:text="@={member.a205y}"
+                                app:defaultValue="9998"
                                 app:maxValue="2021"
                                 app:minValue="1922"
                                 app:type="range" />

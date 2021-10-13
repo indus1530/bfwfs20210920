@@ -5,6 +5,7 @@ import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.memberCou
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,6 +15,8 @@ import androidx.databinding.DataBindingUtil;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
+
+import java.util.Calendar;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
@@ -43,6 +46,23 @@ public class SectionA2Activity extends AppCompatActivity {
 
 
     }
+
+    /*public void ageInYears(CharSequence s, int i, int i1, int i2) {
+        if (TextUtils.isEmpty(bi.a205y.getText())) return;
+        bi.a206.setText("");
+        bi.a206.setEnabled(true);
+
+        if (i == 0) return;
+
+        int dobYear = Integer.parseInt(s.toString());
+        int curYear = Calendar.getInstance().get(Calendar.YEAR);
+
+        if (dobYear > (curYear - 99) && dobYear < curYear && bi.a205y.getText().length() == 4) {
+            String ageInYears = String.valueOf(curYear - dobYear);
+            bi.a206.setText(ageInYears);
+            bi.a206.setEnabled(false);
+        }
+    }*/
 
 
     private boolean insertNewRecord() {
