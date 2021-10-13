@@ -185,6 +185,7 @@
 
                 <!-- a102  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
+                    android:visibility="gone"
                     android:id="@+id/fldGrpCVa102"
                     style="@style/cardView">
 
@@ -212,7 +213,7 @@
 
                         </LinearLayout>
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
+                        <!--<com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/a102"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -223,7 +224,7 @@
                             android:text="@={form.a102}"
                             app:maxValue="100"
                             app:minValue="0"
-                            app:type="range" />
+                            app:type="range" />-->
 
                     </LinearLayout>
 

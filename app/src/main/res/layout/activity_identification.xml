@@ -76,6 +76,7 @@
                                 android:text="@string/a105" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
+                                android:inputType="number"
                                 android:id="@+id/a105"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
@@ -179,7 +180,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:hint="@string/a110"
-                                    android:inputType="text" />
+                                    android:inputType="number" />
 
                                 <Button
                                     android:layout_width="wrap_content"
