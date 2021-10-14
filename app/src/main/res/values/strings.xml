@@ -295,6 +295,13 @@
     <string name="a21011">Retired</string>
     <string name="a21012">Teacher</string>
     <string name="a21099">Not Applicable</string>
+    <string name="a211">Is [name] available?</string>
+    <string name="a21101">YES</string>
+    <string name="a21102">NO</string>
+    <string name="a212">Father Line No </string>
+    <string name="a212_info">(Only for 6 months to &lt;18 -year Children)</string>
+    <string name="a213">Mother Line No </string>
+    <string name="a213_info">Only for 6 months to &lt;18 -year  Children)</string>
     <string name="seca3">SOCIO ECONOMIC STATUS OF HOUSEHOLD</string>
     <string name="insa" translatable="false">This section will be filled from the index mother</string>
     <string name="a301">What language do you usually speak in your household?</string>
@@ -2141,6 +2148,9 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="Q_a208t">a208t</string>
     <string name="Q_a209t">a209t</string>
     <string name="Q_a210">a210</string>
+    <string name='Q_a211'>a211</string>
+    <string name='Q_a212'>a212</string>
+    <string name='Q_a213'>a213</string>
     <string name="Q_a2ins">a2ins</string>
     <string name="Q_a301">a301</string>
     <string name="Q_a30101">a30101</string>
@@ -2574,13 +2584,6 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="options" translatable="false">Options</string>
     <!--  <string name="a202t">را ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
       <string name="a202">فرد کا نام </string>-->
-    <string name="a211">(نام) کیا اس وقت موجود ہے</string>
-    <string name="a21101">ہاں</string>
-    <string name="a21102">نہیں</string>
-    <string name="a212">والدکا لائن نمبر</string>
-    <string name="a212_info">(6 ماہ سے لیکر18 سال سے کم عمر کے بچوں کے لئے</string>
-    <string name="a213">"والدہ کا لائن نمبر "</string>
-    <string name="a213_info">(6 ماہ سے لیکر18 سال سے کم عمر کے بچوں کے لئے</string>
     <string name="ins">ہدایات : یہ سیکشن انڈیکس ماں سے پوچھا جائیگا: گھرانے کی خاتون سربراہ  کو  اونچی آواز میں پڑھ کر سنائیں۔</string>
     <string name="f10401">"کبھی کبھار (پچھلے چار ہفتوں کے دوران ایک سے دو مرتبہ) "</string>
     <string name="f10402">"کبھی کبھی (پچھلے چار ہفتوں کے دوران تین سے دس مرتبہ) "</string>

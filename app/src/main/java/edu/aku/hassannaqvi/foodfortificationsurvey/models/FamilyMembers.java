@@ -66,6 +66,9 @@ public class FamilyMembers extends BaseObservable {
     private String a208t = StringUtils.EMPTY;
     private String a209t = StringUtils.EMPTY;
     private String a210 = StringUtils.EMPTY;
+    private String a211 = StringUtils.EMPTY;
+    private String a212 = StringUtils.EMPTY;
+    private String a213 = StringUtils.EMPTY;
     private boolean expanded;
     private boolean mwra;
 
@@ -381,6 +384,7 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA208t(String a208t) {
         this.a208t = a208t;
+        setA209t(a208t.equals("2") ? this.a209t : "");
         notifyPropertyChanged(BR.a208t);
     }
 
@@ -402,6 +406,36 @@ public class FamilyMembers extends BaseObservable {
     public void setA210(String a210) {
         this.a210 = a210;
         notifyPropertyChanged(BR.a210);
+    }
+
+    @Bindable
+    public String getA211() {
+        return a211;
+    }
+
+    public void setA211(String a211) {
+        this.a211 = a211;
+        notifyPropertyChanged(BR.a211);
+    }
+
+    @Bindable
+    public String getA212() {
+        return a212;
+    }
+
+    public void setA212(String a212) {
+        this.a212 = a212;
+        notifyPropertyChanged(BR.a212);
+    }
+
+    @Bindable
+    public String getA213() {
+        return a213;
+    }
+
+    public void setA213(String a213) {
+        this.a213 = a213;
+        notifyPropertyChanged(BR.a213);
     }
 
 
@@ -456,6 +490,9 @@ public class FamilyMembers extends BaseObservable {
             this.a208t = json.getString("a208t");
             this.a209t = json.getString("a209t");
             this.a210 = json.getString("a210");
+            this.a211 = json.getString("a211");
+            this.a212 = json.getString("a212");
+            this.a213 = json.getString("a213");
 
             if (!this.a204.equals("") && !this.a206.equals("") && !this.a207t.equals("")) {
                 int ageInYears = Integer.parseInt(getA206());
@@ -510,7 +547,10 @@ public class FamilyMembers extends BaseObservable {
                 .put("a207t", a207t)
                 .put("a208t", a208t)
                 .put("a209t", a209t)
-                .put("a210", a210);
+                .put("a210", a210)
+                .put("a211", a211)
+                .put("a212", a212)
+                .put("a213", a213);
         return json.toString();
     }
 
