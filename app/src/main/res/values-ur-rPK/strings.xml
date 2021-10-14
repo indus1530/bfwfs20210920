@@ -219,11 +219,11 @@
     <string name="a304">گھر کی چھت میں استعمال ہونے والا بنیادی مواد(مشاہدہ کریں)</string>
     <string name="a304t1">قدرتی چھت</string>
     <string name="a30401">کوئی چھت نہیں</string>
-    <string name="a30402">گھاس پھوس /کھجو ر کے پتے</string>
+    <string name="a30402">گھاس پھوس / کھجور کے پتے</string>
     <string name="a30403">گھاس کی چھت</string>
     <string name="a304t2">بنیادی سادہ چھت</string>
     <string name="a30404">تنکے کی چٹائی</string>
-    <string name="a30405">ھجور یاناریل کے درخت/بانس</string>
+    <string name="a30405">کھجور یاناریل کے درخت / بانس</string>
     <string name="a30406">لکڑی کے تختے</string>
     <string name="a30407">گتے سے بنی ہوئی چھت </string>
     <string name="a30408">کپڑا / خیمہ</string>
@@ -257,6 +257,9 @@
     <string name="a30515">کچی اینٹوں سے بنی (لیپ کی ہوئی) </string>
     <string name="a30516">لکڑی کے تختے </string>
     <string name="a30596"> دیگر وضاحت کریں</string>
+    <string name="a30616">میونسپل کمیٹی کا پانی کاکنکشن </string>
+    <string name="a3061601">ہاں</string>
+    <string name="a3061602">نہیں </string>
     <string name="a306">آپ کے گھر میں پینے کے پانی کا سب سے اہم ذریعہ کیا ہے ؟</string>
     <string name="a306t1"></string>
     <string name="a30601">گھر میں لگانلکا</string>
@@ -328,7 +331,7 @@
     <string name="a31403">کپڑے کے ذریعہ چھانتے ہیں </string>
     <string name="a31404"> پا نی کا فلٹر استعمال کرتے ہیں </string>
     <string name="a31405">سورج کی شعاعوں سے/دھوپ میں رکھتے ہیں  </string>
-    <string name="a31406"> برتن میں پانی ڈال کر ھننے کا انتظار کرتے ہیں 6</string>
+    <string name="a31406"> برتن میں پانی ڈال کر چھٹنے کاانتظار کرتے ہیں 6</string>
     <string name="a31496"> دیگر وضاحت کریں  ………….96</string>
     <string name="a315">آپ کے گھر میں کتنے کمرے سونے کے لیے استعمال ہوتے ہیں ؟        </string>
     <string name="a316">آپ کے گھرکی مالکانہ حیثیت کیا ہے ؟ </string>
@@ -351,7 +354,7 @@
     <string name="a31804">بجلی</string>
     <string name="a31805">مٹی کا تیل </string>
     <string name="a31806">قدرتی کوئلہ </string>
-    <string name="a31807">کٹری کاکوئلہ </string>
+    <string name="a31807">لکٹری کاکوئلہ </string>
     <string name="a31808">لکٹری</string>
     <string name="a31809">تنکے/جھاڑیاں/گھاس پھونس </string>
     <string name="a31810">جانوروں کا گوبر(اوپلے) </string>
@@ -2023,6 +2026,7 @@
     <string name="Q_a304">a304</string>
     <string name="Q_a305">a305</string>
     <string name="Q_a306">a306</string>
+    <string name="Q_a30616">a30616</string>
     <string name="Q_a307">a307</string>
     <string name="Q_a308">a308</string>
     <string name="Q_a309">a309</string>

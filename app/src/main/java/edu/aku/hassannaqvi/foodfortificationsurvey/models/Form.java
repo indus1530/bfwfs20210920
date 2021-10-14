@@ -96,6 +96,7 @@ public class Form extends BaseObservable implements Observable {
     private String a305 = StringUtils.EMPTY;
     private String a30596x = StringUtils.EMPTY;
     private String a306 = StringUtils.EMPTY;
+    private String a30616 = StringUtils.EMPTY;
     private String a30696x = StringUtils.EMPTY;
     private String a307 = StringUtils.EMPTY;
     private String a30796x = StringUtils.EMPTY;
@@ -1098,6 +1099,17 @@ public class Form extends BaseObservable implements Observable {
     public void setA30596x(String a30596x) {
         this.a30596x = a30596x;
         notifyPropertyChanged(BR.a30596x);
+    }
+
+    @Bindable
+    public String getA30616() {
+        return a30616;
+    }
+
+    public void setA30616(String a30616) {
+        this.a30616 = a30616;
+        //setA306(a30616.equals(""));
+        notifyPropertyChanged(BR.a30616);
     }
 
     @Bindable
@@ -5436,6 +5448,7 @@ public class Form extends BaseObservable implements Observable {
             this.a30496x = json.getString("a30496x");
             this.a305 = json.getString("a305");
             this.a30596x = json.getString("a30596x");
+            this.a30616 = json.getString("a30616");
             this.a306 = json.getString("a306");
             this.a30696x = json.getString("a30696x");
             this.a307 = json.getString("a307");
@@ -5997,6 +6010,7 @@ public class Form extends BaseObservable implements Observable {
                 .put("a30496x", a30496x)
                 .put("a305", a305)
                 .put("a30596x", a30596x)
+                .put("a30616", a30616)
                 .put("a306", a306)
                 .put("a30696x", a30696x)
                 .put("a307", a307)

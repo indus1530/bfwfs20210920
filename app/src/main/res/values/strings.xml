@@ -379,6 +379,9 @@
     <string name="a30515">Covered adobe</string>
     <string name="a30516">Wood planks/shingles</string>
     <string name="a30596">Other specify</string>
+    <string name="a30616">Municipal Community Water Connection</string>
+    <string name="a3061601">Yes</string>
+    <string name="a3061602">No</string>
     <string name="a306">What is the main source of drinking water for members of your household?</string>
     <string name="a306t1" translatable="false">Piped water</string>
     <string name="a30601">Piped into dwelling</string>
@@ -2159,6 +2162,7 @@ soft drinks (i.e. Pepsi/Coca-Cola)
     <string name="Q_a304">a304</string>
     <string name="Q_a305">a305</string>
     <string name="Q_a306">a306</string>
+    <string name="Q_a30616">a30616</string>
     <string name="Q_a307">a307</string>
     <string name="Q_a308">a308</string>
     <string name="Q_a309">a309</string>

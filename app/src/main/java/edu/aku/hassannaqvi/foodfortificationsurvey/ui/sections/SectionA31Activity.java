@@ -35,6 +35,15 @@ public class SectionA31Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a31);
         bi.setCallback(this);
         bi.setForm(form);
+        setListener();
+
+    }
+
+    private void setListener() {
+
+        /*if (bi.a30616.equals("1")){
+            bi.a30601.isEnabled(false)
+        }*/
 
     }
 
