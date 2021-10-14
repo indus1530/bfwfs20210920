@@ -2058,6 +2058,27 @@ public class Form extends BaseObservable implements Observable {
 
     public void setB101(String b101) {
         this.b101 = b101;
+        setB10201(b101.equals("2") ? "" : this.b10201);
+        setB10202(b101.equals("2") ? "" : this.b10202);
+        setB10203(b101.equals("2") ? "" : this.b10203);
+        setB10204(b101.equals("2") ? "" : this.b10204);
+        setB10205(b101.equals("2") ? "" : this.b10205);
+        setB10206(b101.equals("2") ? "" : this.b10206);
+        setB10207(b101.equals("2") ? "" : this.b10207);
+        setB10208(b101.equals("2") ? "" : this.b10208);
+        setB10296(b101.equals("2") ? "" : this.b10296);
+        setB103a(b101.equals("2") ? "" : this.b103a);
+        setB103b(b101.equals("2") ? "" : this.b103b);
+        setB103c(b101.equals("2") ? "" : this.b103c);
+        setB103d(b101.equals("2") ? "" : this.b103d);
+        setB103e(b101.equals("2") ? "" : this.b103e);
+        setB103f(b101.equals("2") ? "" : this.b103f);
+        setB103g(b101.equals("2") ? "" : this.b103g);
+        setB103h(b101.equals("2") ? "" : this.b103h);
+        setB103i(b101.equals("2") ? "" : this.b103i);
+        setB103j(b101.equals("2") ? "" : this.b103j);
+        setB103k(b101.equals("2") ? "" : this.b103k);
+        setB103l(b101.equals("2") ? "" : this.b103l);
         notifyPropertyChanged(BR.b101);
     }
 
