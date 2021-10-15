@@ -302,6 +302,16 @@ public class Form extends BaseObservable implements Observable {
     private String c204 = StringUtils.EMPTY;
     private String c205 = StringUtils.EMPTY;
     private String c206 = StringUtils.EMPTY;
+    private String c20601 = StringUtils.EMPTY;
+    private String c20602 = StringUtils.EMPTY;
+    private String c20603 = StringUtils.EMPTY;
+    private String c20604 = StringUtils.EMPTY;
+    private String c20605 = StringUtils.EMPTY;
+    private String c20606 = StringUtils.EMPTY;
+    private String c20607 = StringUtils.EMPTY;
+    private String c20608 = StringUtils.EMPTY;
+    private String c20698 = StringUtils.EMPTY;
+    private String c20696 = StringUtils.EMPTY;
     private String c20696x = StringUtils.EMPTY;
     private String d101 = StringUtils.EMPTY;
     private String d102 = StringUtils.EMPTY;
@@ -3275,7 +3285,16 @@ public class Form extends BaseObservable implements Observable {
         setC203(c201.equals("2") ? "" : this.c203);
         setC204(c201.equals("2") ? "" : this.c204);
         setC205(c201.equals("2") ? "" : this.c205);
-        setC206(c201.equals("2") ? "" : this.c206);
+        setC20601(c201.equals("2") ? "" : this.c20601);
+        setC20602(c201.equals("2") ? "" : this.c20602);
+        setC20603(c201.equals("2") ? "" : this.c20603);
+        setC20604(c201.equals("2") ? "" : this.c20604);
+        setC20605(c201.equals("2") ? "" : this.c20605);
+        setC20606(c201.equals("2") ? "" : this.c20606);
+        setC20607(c201.equals("2") ? "" : this.c20607);
+        setC20608(c201.equals("2") ? "" : this.c20608);
+        setC20698(c201.equals("2") ? "" : this.c20698);
+        setC20696(c201.equals("2") ? "" : this.c20696);
         notifyPropertyChanged(BR.c201);
     }
 
@@ -3309,7 +3328,16 @@ public class Form extends BaseObservable implements Observable {
         this.c203 = c203;
         setC204(c203.equals("2") ? "" : this.c204);
         setC205(c203.equals("2") ? "" : this.c205);
-        setC206(c203.equals("2") ? "" : this.c206);
+        setC20601(c203.equals("2") ? "" : this.c20601);
+        setC20602(c203.equals("2") ? "" : this.c20602);
+        setC20603(c203.equals("2") ? "" : this.c20603);
+        setC20604(c203.equals("2") ? "" : this.c20604);
+        setC20605(c203.equals("2") ? "" : this.c20605);
+        setC20606(c203.equals("2") ? "" : this.c20606);
+        setC20607(c203.equals("2") ? "" : this.c20607);
+        setC20608(c203.equals("2") ? "" : this.c20608);
+        setC20698(c203.equals("2") ? "" : this.c20698);
+        setC20696(c203.equals("2") ? "" : this.c20696);
         notifyPropertyChanged(BR.c203);
     }
 
@@ -3343,6 +3371,108 @@ public class Form extends BaseObservable implements Observable {
         setC20696x(c206.equals("96") ? this.c20696x : "");
         notifyPropertyChanged(BR.c206);
     }
+
+
+    @Bindable
+    public String getC20601() {
+        return c20601;
+    }
+
+    public void setC20601(String c20601) {
+        this.c20601 = c20601;
+        notifyPropertyChanged(BR.c20601);
+    }
+
+    @Bindable
+    public String getC20602() {
+        return c20602;
+    }
+
+    public void setC20602(String c20602) {
+        this.c20602 = c20602;
+        notifyPropertyChanged(BR.c20602);
+    }
+
+    @Bindable
+    public String getC20603() {
+        return c20603;
+    }
+
+    public void setC20603(String c20603) {
+        this.c20603 = c20603;
+        notifyPropertyChanged(BR.c20603);
+    }
+
+    @Bindable
+    public String getC20604() {
+        return c20604;
+    }
+
+    public void setC20604(String c20604) {
+        this.c20604 = c20604;
+        notifyPropertyChanged(BR.c20604);
+    }
+
+    @Bindable
+    public String getC20605() {
+        return c20605;
+    }
+
+    public void setC20605(String c20605) {
+        this.c20605 = c20605;
+        notifyPropertyChanged(BR.c20605);
+    }
+
+    @Bindable
+    public String getC20606() {
+        return c20606;
+    }
+
+    public void setC20606(String c20606) {
+        this.c20606 = c20606;
+        notifyPropertyChanged(BR.c20606);
+    }
+
+    @Bindable
+    public String getC20607() {
+        return c20607;
+    }
+
+    public void setC20607(String c20607) {
+        this.c20607 = c20607;
+        notifyPropertyChanged(BR.c20607);
+    }
+
+    @Bindable
+    public String getC20608() {
+        return c20608;
+    }
+
+    public void setC20608(String c20608) {
+        this.c20608 = c20608;
+        notifyPropertyChanged(BR.c20608);
+    }
+
+    @Bindable
+    public String getC20698() {
+        return c20698;
+    }
+
+    public void setC20698(String c20698) {
+        this.c20698 = c20698;
+        notifyPropertyChanged(BR.c20698);
+    }
+
+    @Bindable
+    public String getC20696() {
+        return c20696;
+    }
+
+    public void setC20696(String c20696) {
+        this.c20696 = c20696;
+        notifyPropertyChanged(BR.c20696);
+    }
+
 
     @Bindable
     public String getC20696x() {
@@ -5700,6 +5830,16 @@ public class Form extends BaseObservable implements Observable {
             this.c204 = json.getString("c204");
             this.c205 = json.getString("c205");
             this.c206 = json.getString("c206");
+            this.c20601 = json.getString("c20601");
+            this.c20602 = json.getString("c20602");
+            this.c20603 = json.getString("c20603");
+            this.c20604 = json.getString("c20604");
+            this.c20605 = json.getString("c20605");
+            this.c20606 = json.getString("c20606");
+            this.c20607 = json.getString("c20607");
+            this.c20608 = json.getString("c20608");
+            this.c20698 = json.getString("c20698");
+            this.c20696 = json.getString("c20696");
             this.c20696x = json.getString("c20696x");
         }
     }
@@ -6258,6 +6398,16 @@ public class Form extends BaseObservable implements Observable {
                 .put("c204", c204)
                 .put("c205", c205)
                 .put("c206", c206)
+                .put("c20601", c20601)
+                .put("c20602", c20602)
+                .put("c20603", c20603)
+                .put("c20604", c20604)
+                .put("c20605", c20605)
+                .put("c20606", c20606)
+                .put("c20607", c20607)
+                .put("c20608", c20608)
+                .put("c20698", c20698)
+                .put("c20696", c20696)
                 .put("c20696x", c20696x);
         return json.toString();
     }
