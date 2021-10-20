@@ -62,10 +62,34 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                         ) {*/
                         MainApp.familyList.add(MainApp.familyMember);
-                        if (MainApp.familyMember.isMwra()) {
+                        //  memGender = MainApp.familyMember.getA204();
+                        // boolean memAgeCheck = Integer.parseInt(MainApp.familyMember.getA206()) > 18;
+
+                        switch (MainApp.familyMember.getA204()) {
+                            case "1":
+                                MainApp.fatherList.add(MainApp.familyMember);
+                                //MainApp.mwraCount++;
+                                break;
+                            case "2":
+                                MainApp.motherList.add(MainApp.familyMember);
+                                //MainApp.adolCount++;
+                                break;
+
+                        }
+
+                        String motherSno = MainApp.familyMember.getA213();
+                        FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
+                        if (!motherSno.equals("")
+                                && !motherSno.equals("97")
+                                && !MainApp.mwraList.contains(Integer.parseInt(motherSno))
+                                && mother.getA211().equals("1")
+                        ) {
+                            MainApp.mwraList.add(Integer.parseInt(motherSno));
+                        }
+                      /*  if (MainApp.familyMember.isMwra()) {
                             MainApp.mwraList.add(MainApp.familyList.size() - 1);
                             //MainApp.mwraCount++;
-                        }
+                        }*/
                         MainApp.memberCount++;
                         familyMembersAdapter.notifyItemInserted(MainApp.familyList.size() - 1);
                         //  Collections.sort(MainApp.fm, new SortByStatus());
@@ -91,16 +115,36 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         db = MainApp.appInfo.dbHelper;
         MainApp.familyList = new ArrayList<>();
         MainApp.mwraList = new ArrayList<Integer>();
+        MainApp.fatherList = new ArrayList<>();
+        MainApp.motherList = new ArrayList<>();
         Log.d(TAG, "onCreate: familyList " + MainApp.familyList.size());
         try {
             MainApp.familyList = db.getMemberBYUID(MainApp.form.getUid());
             int fmCount = 0;
             for (FamilyMembers fm : MainApp.familyList) {
                 fmCount++;
-                if (fm.isMwra()) {
+
+                switch (fm.getA204()) {
+                    case "1":
+                        MainApp.fatherList.add(fm);
+                        //MainApp.mwraCount++;
+                        break;
+                    case "2":
+                        MainApp.motherList.add(fm);
+                        //MainApp.adolCount++;
+                        break;
+
+                }
+
+
+                String motherSno = fm.getA213(); // mother's line number from child
+                if (!motherSno.equals("") && !motherSno.equals("97") && !MainApp.mwraList.contains(Integer.parseInt(motherSno))) {
+                    MainApp.mwraList.add(Integer.parseInt(motherSno));
+                }
+        /*        if (fm.isMwra()) {
                     MainApp.mwraList.add(fmCount - 1);
                     //MainApp.mwraCount++;
-                }
+                }*/
 
             }
 
@@ -173,6 +217,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         bi.totalmember.setText(MainApp.familyMemberTotal+ " M completed");*/
     }
 
+
     private void checkCompleteFm() {
         //     if (!MainApp.form.getIStatus().equals("1")) {
         int compCount = MainApp.familyList.size();
@@ -229,49 +274,38 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
     private void proceedSelect() {
 
+
+        // Select Index Mother using KishGrid
         MainApp.selectedMWRA = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.mwraList.size());
         int indx = MainApp.mwraList.get(Integer.parseInt(MainApp.selectedMWRA));
 
-      /*  int aCount = 0;
-        for (int i = 0; i < MainApp.familyList.size(); i++) {
-
-            // Get MWRA from list
-            MainApp.familyMember = MainApp.familyList.get(i);
-
-            // Unselect and Disable if MWRA has been previously selected and refused
-            if (MainApp.familyMember.getIndexed().equals("1")) {
-                db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "-1");
-                MainApp.familyList.get(i).setIndexed("-1");
-                familyMembersAdapter.notifyItemChanged(i);
-            }
-
-            // Count not refused and available mwra
-            if (MainApp.familyMember.getIndexed().equals("") && MainApp.familyMember.getH227().equals("1")) {
-                aCount++;
-            }
-        }
-
-        if (aCount < 1) {
-            Toast.makeText(this, "No MWRA available for selection.", Toast.LENGTH_LONG).show();
-            MainApp.selectedMWRA = "";
-            bi.btnRand.setVisibility(View.INVISIBLE);
-            //bi.btnContinue.setVisibility(View.VISIBLE);
-            return;
-
-        }
-
-        Random r = new Random();
-        int indx = r.nextInt(MainApp.memberCount);
-*/
-
         // Updating database to mark indexed mother
-        MainApp.familyMember = MainApp.familyList.get(indx);
+        MainApp.familyMember = MainApp.familyList.get(indx - 1);
         db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "1");
 
         // Updating adapter
         MainApp.familyList.get(indx).setIndexed("1");
 
-        familyMembersAdapter.notifyItemChanged(indx);
+        familyMembersAdapter.notifyItemChanged(indx - 1);
+        int i = 0;
+        MainApp.childOfSelectedMWRAList = new ArrayList<>();
+        for (FamilyMembers fm : MainApp.familyList) {
+            if (fm.getA213().equals(MainApp.familyMember.getA201())) {
+                MainApp.childOfSelectedMWRAList.add(Integer.parseInt(fm.getA201()));
+            }
+        }
+
+        MainApp.selectedChild = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.childOfSelectedMWRAList.size());
+        indx = MainApp.childOfSelectedMWRAList.get(Integer.parseInt(MainApp.selectedChild));
+
+        MainApp.familyMember = MainApp.familyList.get(indx - 1);
+        db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "2");
+
+        // Updating adapter
+        MainApp.familyList.get(indx - 1).setIndexed("1");
+
+        familyMembersAdapter.notifyItemChanged(indx - 1);
+
         bi.btnRand.setVisibility(View.INVISIBLE);
         bi.btnContinue.setVisibility(View.VISIBLE);
         bi.btnContinue.setEnabled(true);

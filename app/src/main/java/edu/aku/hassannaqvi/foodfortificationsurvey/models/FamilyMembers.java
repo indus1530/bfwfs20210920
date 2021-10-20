@@ -61,7 +61,7 @@ public class FamilyMembers extends BaseObservable {
     private String a205d = StringUtils.EMPTY;
     private String a205m = StringUtils.EMPTY;
     private String a205y = StringUtils.EMPTY;
-    private String a206 = StringUtils.EMPTY;
+    private String a206 = "0";
     private String a207t = StringUtils.EMPTY;
     private String a208t = StringUtils.EMPTY;
     private String a209t = StringUtils.EMPTY;
@@ -342,7 +342,6 @@ public class FamilyMembers extends BaseObservable {
         if (a205y.equals("9998")) {
             setA205m("98");
             setA206("");
-
         }
         // Calculate age
         CaluculateAge();

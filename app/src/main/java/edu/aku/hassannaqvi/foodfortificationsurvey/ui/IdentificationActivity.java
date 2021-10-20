@@ -48,7 +48,7 @@ public class IdentificationActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_identification);
         bi.setCallback(this);
         db = MainApp.appInfo.dbHelper;
-        populateSpinner();
+       // populateSpinner();
 
         openIntent = new Intent();
         switch (MainApp.idType) {

@@ -180,7 +180,8 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:hint="@string/a110"
-                                    android:inputType="number" />
+                                    android:inputType="number"
+                                    app:mask="###-##" />
 
                                 <Button
                                     android:layout_width="wrap_content"

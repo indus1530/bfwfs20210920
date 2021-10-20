@@ -554,10 +554,8 @@
                             android:gravity="center"
                             android:hint="###"
                             android:inputType="number"
-                            android:text="@={form.a110}"
-                            app:maxValue="100"
-                            app:minValue="0"
-                            app:type="range" />
+                            app:mask="###-##"
+                            android:text="@={form.a110}" />
 
                     </LinearLayout>
 

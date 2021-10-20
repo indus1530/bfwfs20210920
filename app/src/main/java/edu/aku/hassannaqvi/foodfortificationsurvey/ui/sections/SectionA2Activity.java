@@ -5,8 +5,9 @@ import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.memberCou
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,20 +17,24 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 
-import java.util.Calendar;
+import java.util.ArrayList;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionA2Binding;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 
 
 public class SectionA2Activity extends AppCompatActivity {
     private static final String TAG = "SectionA2Activity";
     ActivitySectionA2Binding bi;
     private DatabaseHelper db;
-
+    private ArrayList<String> fatherNames;
+    private ArrayList<String> fatherCodes;
+    private ArrayList<String> motherNames;
+    private ArrayList<String> motherCodes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,70 @@ public class SectionA2Activity extends AppCompatActivity {
 
         db = MainApp.appInfo.dbHelper;
         bi.btnContinue.setText(MainApp.familyMember.getUid().equals("") ? "Save" : "Update");
+
+
+        populateSpinner();
+    }
+
+    private void populateSpinner() {
+
+        fatherNames = new ArrayList<>();
+        fatherCodes = new ArrayList<>();
+
+        motherNames = new ArrayList<>();
+        motherCodes = new ArrayList<>();
+
+        fatherNames.add("...");
+        fatherCodes.add("...");
+        for (FamilyMembers fl : MainApp.fatherList) {
+            fatherNames.add(fl.getA202());
+            fatherCodes.add(fl.getA201());
+        }
+        fatherNames.add("Not Available/Died");
+        fatherCodes.add("97");
+
+        motherNames.add("...");
+        motherCodes.add("...");
+        for (FamilyMembers fl : MainApp.motherList) {
+            motherNames.add(fl.getA202());
+            motherCodes.add(fl.getA201());
+        }
+        motherNames.add("Not Available/Died");
+        motherCodes.add("97");
+
+        // Apply the adapter to the Father spinner
+        bi.a212.setAdapter(new ArrayAdapter<>(SectionA2Activity.this, R.layout.custom_spinner, fatherNames));
+
+        bi.a212.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                if (position == 0) return;
+                MainApp.familyMember.setA212(fatherCodes.get(position));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+
+        });
+
+        // Apply the adapter to the Mother spinner
+        bi.a213.setAdapter(new ArrayAdapter<>(SectionA2Activity.this, R.layout.custom_spinner, motherNames));
+
+        bi.a213.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                if (position == 0) return;
+                MainApp.familyMember.setA213(motherCodes.get(position));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+
+        });
 
 
     }

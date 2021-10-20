@@ -20,6 +20,7 @@
     <color name="grayDark1">#696969</color>
     <color name="grayLight">#EEEEEE</color>
     <color name="greenLight">#d600ef00</color>
+    <color name="fuchsia">#d6ef00ef</color>
     <color name="redLight">#d6ef0000</color>
     <color name="gray">#757575</color>
     <color name="green">#009900</color>

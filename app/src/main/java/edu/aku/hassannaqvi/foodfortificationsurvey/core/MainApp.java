@@ -62,9 +62,13 @@ public class MainApp extends Application {
     public static List<String> subjectNames;
     public static List<FamilyMembers> familyList;
     public static List<Integer> mwraList;
+    public static List<Integer> childOfSelectedMWRAList;
+    public static List<FamilyMembers> fatherList;
+    public static List<FamilyMembers> motherList;
     //public static FamilyMembers familyMember;
     public static int memberCount = 0;
     public static String selectedMWRA;
+    public static String selectedChild;
     public static int memberCountComplete;
     public static boolean memberComplete;
     //public static int mwraCount;

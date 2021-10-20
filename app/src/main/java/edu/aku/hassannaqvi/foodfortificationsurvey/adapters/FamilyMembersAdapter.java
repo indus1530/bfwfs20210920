@@ -86,7 +86,8 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
 
         cloaked.setVisibility(members.isMwra() ? View.GONE : View.VISIBLE);
         mainIcon.setImageResource((members.getA204().equals("1") ? R.drawable.ic_boy : R.drawable.ic_girl));
-        mainIcon.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : (members.getA204().equals("1") ? mContext.getResources().getColor(R.color.boy_blue) : mContext.getResources().getColor(R.color.girl_pink)));
+        mainIcon.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : members.getIndexed().equals("2") ? mContext.getResources().getColor(R.color.fuchsia) : members.getA204().equals("1") ? mContext.getResources().getColor(R.color.boy_blue) : mContext.getResources().getColor(R.color.girl_pink));
+        //  mainIcon.setBackgroundColor(  ((ColorDrawable) mainIcon.getBackground()).getColor());
         if (!MainApp.selectedMWRA.equals("")) {
             cloaked.setVisibility(members.getIndexed().equals("1") ? View.GONE : View.VISIBLE);
         }
