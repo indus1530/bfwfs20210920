@@ -888,7 +888,7 @@
                             android:id="@+id/a30616"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->a306.clearCheck() + form.setA306(``)}"
+                            android:onCheckedChanged="@{()->a306.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
