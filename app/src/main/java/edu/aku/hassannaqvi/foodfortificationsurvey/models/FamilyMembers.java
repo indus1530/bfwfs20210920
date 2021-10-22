@@ -61,7 +61,7 @@ public class FamilyMembers extends BaseObservable {
     private String a205d = StringUtils.EMPTY;
     private String a205m = StringUtils.EMPTY;
     private String a205y = StringUtils.EMPTY;
-    private String a206 = "0";
+    private String a206 = StringUtils.EMPTY;
     private String a207t = StringUtils.EMPTY;
     private String a208t = StringUtils.EMPTY;
     private String a209t = StringUtils.EMPTY;
@@ -326,6 +326,7 @@ public class FamilyMembers extends BaseObservable {
         this.a205m = a205m;
         if (a205m.equals("98")) {
             setA205d("98");
+            //  setA206("");
         }
         CaluculateAge();
         notifyPropertyChanged(BR.a205m);
@@ -559,6 +560,11 @@ public class FamilyMembers extends BaseObservable {
 
         if (!this.a205y.equals("") && !this.a205y.equals("9998") && !this.a205m.equals("") && !this.a205d.equals("")) {
 
+            if ((Integer.parseInt(this.a205m) > 12 && !this.a205m.equals("98")) || (Integer.parseInt(this.a205d) > 31 && !this.a205d.equals("98")) || Integer.parseInt(this.a205y) < 1920) {
+                setA206("");
+                return;
+            }
+
             int day = !this.a205d.equals("98") ? Integer.parseInt(this.a205d) : 15;
             int month = !this.a205m.equals("98") ? Integer.parseInt(this.a205m) : 6;
             int year = Integer.parseInt(this.a205y);
@@ -586,7 +592,10 @@ public class FamilyMembers extends BaseObservable {
                 Log.d(TAG, "CaluculateAge: Y-" + tYear + " M-" + tMonth + " D-" + tDay);
                /* setH231d(String.valueOf(tDay));
                 setH231m(String.valueOf(tMonth));*/
+
                 setA206(String.valueOf(tYear));
+                if (tYear < 0)
+                    setA206("");
                 //setAge(String.valueOf(((tYear) * 12) + tMonth));
 
 

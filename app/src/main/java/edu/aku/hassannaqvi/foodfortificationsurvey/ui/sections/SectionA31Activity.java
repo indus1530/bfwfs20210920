@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.form;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,9 +33,13 @@ public class SectionA31Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
+
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a31);
         bi.setCallback(this);
         bi.setForm(form);
+        db = MainApp.appInfo.getDbHelper();
+
         setListener();
 
     }
@@ -49,7 +54,6 @@ public class SectionA31Activity extends AppCompatActivity {
 
 
     private boolean updateDB() {
-        db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
             updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA3, form.sA3toString());

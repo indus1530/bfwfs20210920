@@ -19,6 +19,7 @@
 
     <style name="AppThemeEnglish1" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
+        <item name="android:textSize">16dp</item>
 
         <item name="fontFamily">@font/roboto</item>
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -40,14 +41,15 @@
         <item name="android:fillAfter">true</item>
         <item name="android:enterFadeDuration">600</item>
         <item name="android:exitFadeDuration">200</item>
-        <item name="android:layoutDirection">locale</item>
+        <item name="android:layoutDirection">ltr</item>
         <item name="android:animateLayoutChanges">false</item>
     </style>
 
     <style name="AppThemeUrdu" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
+        <item name="android:textSize">18dp</item>
 
-        <item name="fontFamily">@font/urdu_nastaleeq</item>
+        <item name="fontFamily">@font/jameel_noori_nastaleeq</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -67,7 +69,7 @@
         <item name="android:fillAfter">true</item>
         <item name="android:enterFadeDuration">600</item>
         <item name="android:exitFadeDuration">200</item>
-        <item name="android:layoutDirection">locale</item>
+        <item name="android:layoutDirection">rtl</item>
         <item name="android:animateLayoutChanges">false</item>
     </style>
 
@@ -81,7 +83,6 @@
         <item name="android:windowFullscreen">true</item>
 
         <item name="fontFamily">@font/roboto</item>
-        <item name="android:layoutDirection">ltr</item>
         <item name="android:actionBarStyle">@style/topBarStyle</item>
     </style>
 
@@ -94,7 +95,6 @@
     <style name="labels" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/roboto</item>
@@ -115,7 +115,6 @@
     <style name="labelsHead" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:textColor">@color/colorPrimary</item>
@@ -205,7 +204,6 @@
     <style name="spinner" parent="Widget.AppCompat.Spinner">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textColor">#ff0000</item>
         <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
         <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
@@ -215,7 +213,6 @@
 
     <style name="spinnerDropDownItemStyle">
         <item name="android:padding">4dp</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textColor">#FFFF00</item>
         <item name="android:background">@null</item>
 
@@ -223,7 +220,6 @@
 
     <style name="spinnerItemStyle">
         <item name="android:padding">4dp</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textColor">#FF00FF</item>
         <item name="android:text">SpinnerItemText</item>
         <item name="android:background">@null</item>
@@ -251,7 +247,6 @@
         <item name="android:paddingEnd">4dp</item>
         <item name="android:minHeight">52dp</item>
         <item name="android:minWidth">56dp</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
@@ -264,7 +259,6 @@
         <item name="android:textColor">@color/redLight</item>
         <item name="android:padding">4dp</item>
         <item name="android:minHeight">52dp</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:letterSpacing">0.04</item>
     </style>
@@ -280,7 +274,6 @@
         <item name="android:paddingBottom">4dp</item>-->
         <item name="android:minHeight">16dp</item>
         <item name="android:layout_height">16dp</item>
-        <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
@@ -290,7 +283,6 @@
         <item name="android:padding">8dp</item>
         <item name="android:layout_margin">7dp</item>
         <item name="android:minHeight">16dp</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
@@ -339,7 +331,7 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:typeface">sans</item>
-        <item name="android:fontFamily">@font/urdu_nastaleeq</item>
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
         <item name="android:maxHeight">@dimen/abc_action_bar_default_height_material</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="titleTextAppearance">@style/Widget.AppCompat.Toolbar</item>
@@ -361,7 +353,7 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:typeface">sans</item>
-        <item name="android:fontFamily">@font/urdu_nastaleeq</item>
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
         <item name="android:maxHeight">@dimen/abc_action_bar_default_height_material</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="titleTextAppearance">@style/Toolbar.TitleText</item>
@@ -382,7 +374,6 @@
     </style>
 
     <style name="Toolbar.SubtitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
-        <item name="android:textSize">11sp</item>
         <item name="android:textStyle">italic</item>
         <item name="android:background">@null</item>
     </style>
@@ -393,9 +384,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:layoutDirection">ltr</item>
         <item name="android:fontFamily">@font/roboto</item>
 
 
@@ -415,7 +404,6 @@
         <item name="android:singleLine">true</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-        <item name="android:textDirection">ltr</item>
 
     </style>
 
@@ -423,10 +411,7 @@
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:drawable">@null</item>
         <item name="android:padding">4dp</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:text">SpinnerItemText</item>
-        <item name="android:layoutDirection">ltr</item>
-        <item name="android:textDirection">ltr</item>
 
         <item name="android:background">@null</item>
 
@@ -435,9 +420,6 @@
     <style name="SpinnerDropDownItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:padding">4dp</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:layoutDirection">ltr</item>
-        <item name="android:textDirection">ltr</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:background">@null</item>
 
@@ -465,7 +447,6 @@
 
     <style name="CustomPopupTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColorPrimary">@color/colorPrimary</item>
-        <item name="android:textSize">16dp</item>
     </style>
 
     <style name="Theme.splashscreen" parent="Theme.MaterialComponents.NoActionBar">

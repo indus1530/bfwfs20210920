@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.form;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ public class SectionF1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
         bi.setCallback(this);
         bi.setForm(form);

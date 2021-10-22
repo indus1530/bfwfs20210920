@@ -7,8 +7,8 @@
         <import type="android.view.View" />
 
         <variable
-            name="form"
-            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.Form" />
+            name="foodConsumption"
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.FoodConsumption" />
 
         <variable
             name="callback"
@@ -109,64 +109,64 @@
                                     android:id="@+id/g10101a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10101(`1`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`1`)}"
                                     android:text="@string/g10101a" />
 
                                 <RadioButton
                                     android:id="@+id/g10101b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10101(`2`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`2`)}"
                                     android:text="@string/g10101b" />
 
                                 <RadioButton
                                     android:id="@+id/g10101c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10101(`3`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`3`)}"
                                     android:text="@string/g10101c" />
 
                                 <RadioButton
                                     android:id="@+id/g10101d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10101(`4`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`4`)}"
                                     android:text="@string/g10101d" />
 
                                 <RadioButton
                                     android:id="@+id/g10101e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10101(`5`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`5`)}"
                                     android:text="@string/g10101e" />
 
                                 <RadioButton
                                     android:id="@+id/g10101f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10101(`6`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`6`)}"
                                     android:text="@string/g10101f" />
 
                                 <RadioButton
                                     android:id="@+id/g10101g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10101(`7`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`7`)}"
                                     android:text="@string/g10101g" />
 
                                 <RadioButton
                                     android:id="@+id/g10101h"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10101.equals(`8`)}"
-                                    android:onClick="@{()->form.setG10101(`8`)}"
+                                    android:checked="@{foodConsumption.g10101.equals(`8`)}"
+                                    android:onClick="@{()->foodConsumption.setG10101(`8`)}"
                                     android:text="@string/g10101h" />
 
                             </RadioGroup>
@@ -187,64 +187,64 @@
                                     android:id="@+id/g10102a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10102(`1`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`1`)}"
                                     android:text="@string/g10102a" />
 
                                 <RadioButton
                                     android:id="@+id/g10102b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10102(`2`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`2`)}"
                                     android:text="@string/g10102b" />
 
                                 <RadioButton
                                     android:id="@+id/g10102c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10102(`3`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`3`)}"
                                     android:text="@string/g10102c" />
 
                                 <RadioButton
                                     android:id="@+id/g10102d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10102(`4`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`4`)}"
                                     android:text="@string/g10102d" />
 
                                 <RadioButton
                                     android:id="@+id/g10102e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10102(`5`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`5`)}"
                                     android:text="@string/g10102e" />
 
                                 <RadioButton
                                     android:id="@+id/g10102f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10102(`6`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`6`)}"
                                     android:text="@string/g10102f" />
 
                                 <RadioButton
                                     android:id="@+id/g10102g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10102(`7`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`7`)}"
                                     android:text="@string/g10102g" />
 
                                 <RadioButton
                                     android:id="@+id/g10102h"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10102.equals(`8`)}"
-                                    android:onClick="@{()->form.setG10102(`8`)}"
+                                    android:checked="@{foodConsumption.g10102.equals(`8`)}"
+                                    android:onClick="@{()->foodConsumption.setG10102(`8`)}"
                                     android:text="@string/g10102h" />
 
                             </RadioGroup>
@@ -265,64 +265,64 @@
                                     android:id="@+id/g10103a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10103(`1`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`1`)}"
                                     android:text="@string/g10103a" />
 
                                 <RadioButton
                                     android:id="@+id/g10103b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10103(`2`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`2`)}"
                                     android:text="@string/g10103b" />
 
                                 <RadioButton
                                     android:id="@+id/g10103c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10103(`3`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`3`)}"
                                     android:text="@string/g10103c" />
 
                                 <RadioButton
                                     android:id="@+id/g10103d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10103(`4`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`4`)}"
                                     android:text="@string/g10103d" />
 
                                 <RadioButton
                                     android:id="@+id/g10103e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10103(`5`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`5`)}"
                                     android:text="@string/g10103e" />
 
                                 <RadioButton
                                     android:id="@+id/g10103f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10103(`6`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`6`)}"
                                     android:text="@string/g10103f" />
 
                                 <RadioButton
                                     android:id="@+id/g10103g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10103(`7`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`7`)}"
                                     android:text="@string/g10103g" />
 
                                 <RadioButton
                                     android:id="@+id/g10103h"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10103.equals(`8`)}"
-                                    android:onClick="@{()->form.setG10103(`8`)}"
+                                    android:checked="@{foodConsumption.g10103.equals(`8`)}"
+                                    android:onClick="@{()->foodConsumption.setG10103(`8`)}"
                                     android:text="@string/g10103h" />
 
                             </RadioGroup>
@@ -384,64 +384,64 @@
                                     android:id="@+id/g10201a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10201(`1`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`1`)}"
                                     android:text="@string/g10201a" />
 
                                 <RadioButton
                                     android:id="@+id/g10201b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10201(`2`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`2`)}"
                                     android:text="@string/g10201b" />
 
                                 <RadioButton
                                     android:id="@+id/g10201c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10201(`3`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`3`)}"
                                     android:text="@string/g10201c" />
 
                                 <RadioButton
                                     android:id="@+id/g10201d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10201(`4`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`4`)}"
                                     android:text="@string/g10201d" />
 
                                 <RadioButton
                                     android:id="@+id/g10201e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10201(`5`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`5`)}"
                                     android:text="@string/g10201e" />
 
                                 <RadioButton
                                     android:id="@+id/g10201f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10201(`6`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`6`)}"
                                     android:text="@string/g10201f" />
 
                                 <RadioButton
                                     android:id="@+id/g10201g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10201(`7`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`7`)}"
                                     android:text="@string/g10201g" />
 
                                 <RadioButton
                                     android:id="@+id/g10201h"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10201.equals(`8`)}"
-                                    android:onClick="@{()->form.setG10201(`8`)}"
+                                    android:checked="@{foodConsumption.g10201.equals(`8`)}"
+                                    android:onClick="@{()->foodConsumption.setG10201(`8`)}"
                                     android:text="@string/g10201h" />
 
                             </RadioGroup>
@@ -462,64 +462,64 @@
                                     android:id="@+id/g10202a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10202(`1`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`1`)}"
                                     android:text="@string/g10202a" />
 
                                 <RadioButton
                                     android:id="@+id/g10202b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10202(`2`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`2`)}"
                                     android:text="@string/g10202b" />
 
                                 <RadioButton
                                     android:id="@+id/g10202c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10202(`3`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`3`)}"
                                     android:text="@string/g10202c" />
 
                                 <RadioButton
                                     android:id="@+id/g10202d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10202(`4`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`4`)}"
                                     android:text="@string/g10202d" />
 
                                 <RadioButton
                                     android:id="@+id/g10202e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10202(`5`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`5`)}"
                                     android:text="@string/g10202e" />
 
                                 <RadioButton
                                     android:id="@+id/g10202f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10202(`6`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`6`)}"
                                     android:text="@string/g10202f" />
 
                                 <RadioButton
                                     android:id="@+id/g10202g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10202(`7`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`7`)}"
                                     android:text="@string/g10202g" />
 
                                 <RadioButton
                                     android:id="@+id/g10202h"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10202.equals(`8`)}"
-                                    android:onClick="@{()->form.setG10202(`8`)}"
+                                    android:checked="@{foodConsumption.g10202.equals(`8`)}"
+                                    android:onClick="@{()->foodConsumption.setG10202(`8`)}"
                                     android:text="@string/g10202h" />
 
                             </RadioGroup>
@@ -540,64 +540,64 @@
                                     android:id="@+id/g10203a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10203(`1`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`1`)}"
                                     android:text="@string/g10203a" />
 
                                 <RadioButton
                                     android:id="@+id/g10203b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10203(`2`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`2`)}"
                                     android:text="@string/g10203b" />
 
                                 <RadioButton
                                     android:id="@+id/g10203c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10203(`3`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`3`)}"
                                     android:text="@string/g10203c" />
 
                                 <RadioButton
                                     android:id="@+id/g10203d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10203(`4`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`4`)}"
                                     android:text="@string/g10203d" />
 
                                 <RadioButton
                                     android:id="@+id/g10203e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10203(`5`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`5`)}"
                                     android:text="@string/g10203e" />
 
                                 <RadioButton
                                     android:id="@+id/g10203f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10203(`6`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`6`)}"
                                     android:text="@string/g10203f" />
 
                                 <RadioButton
                                     android:id="@+id/g10203g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10203(`7`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`7`)}"
                                     android:text="@string/g10203g" />
 
                                 <RadioButton
                                     android:id="@+id/g10203h"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10203.equals(`8`)}"
-                                    android:onClick="@{()->form.setG10203(`8`)}"
+                                    android:checked="@{foodConsumption.g10203.equals(`8`)}"
+                                    android:onClick="@{()->foodConsumption.setG10203(`8`)}"
                                     android:text="@string/g10203h" />
 
                             </RadioGroup>
@@ -659,56 +659,56 @@
                                     android:id="@+id/g10301a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10301(`1`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`1`)}"
                                     android:text="@string/g10301a" />
 
                                 <RadioButton
                                     android:id="@+id/g10301b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10301(`2`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`2`)}"
                                     android:text="@string/g10301b" />
 
                                 <RadioButton
                                     android:id="@+id/g10301c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10301(`3`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`3`)}"
                                     android:text="@string/g10301c" />
 
                                 <RadioButton
                                     android:id="@+id/g10301d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10301(`4`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`4`)}"
                                     android:text="@string/g10301d" />
 
                                 <RadioButton
                                     android:id="@+id/g10301e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10301(`5`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`5`)}"
                                     android:text="@string/g10301e" />
 
                                 <RadioButton
                                     android:id="@+id/g10301f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10301(`6`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`6`)}"
                                     android:text="@string/g10301f" />
 
                                 <RadioButton
                                     android:id="@+id/g10301g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10301.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10301(`7`)}"
+                                    android:checked="@{foodConsumption.g10301.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10301(`7`)}"
                                     android:text="@string/g10301g" />
 
                             </RadioGroup>
@@ -729,56 +729,56 @@
                                     android:id="@+id/g10302a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10302(`1`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`1`)}"
                                     android:text="@string/g10302a" />
 
                                 <RadioButton
                                     android:id="@+id/g10302b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10302(`2`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`2`)}"
                                     android:text="@string/g10302b" />
 
                                 <RadioButton
                                     android:id="@+id/g10302c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10302(`3`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`3`)}"
                                     android:text="@string/g10302c" />
 
                                 <RadioButton
                                     android:id="@+id/g10302d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10302(`4`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`4`)}"
                                     android:text="@string/g10302d" />
 
                                 <RadioButton
                                     android:id="@+id/g10302e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10302(`5`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`5`)}"
                                     android:text="@string/g10302e" />
 
                                 <RadioButton
                                     android:id="@+id/g10302f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10302(`6`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`6`)}"
                                     android:text="@string/g10302f" />
 
                                 <RadioButton
                                     android:id="@+id/g10302g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10302.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10302(`7`)}"
+                                    android:checked="@{foodConsumption.g10302.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10302(`7`)}"
                                     android:text="@string/g10302g" />
 
                             </RadioGroup>
@@ -840,56 +840,56 @@
                                     android:id="@+id/g10401a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10401(`1`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`1`)}"
                                     android:text="@string/g10401a" />
 
                                 <RadioButton
                                     android:id="@+id/g10401b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10401(`2`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`2`)}"
                                     android:text="@string/g10401b" />
 
                                 <RadioButton
                                     android:id="@+id/g10401c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10401(`3`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`3`)}"
                                     android:text="@string/g10401c" />
 
                                 <RadioButton
                                     android:id="@+id/g10401d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10401(`4`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`4`)}"
                                     android:text="@string/g10401d" />
 
                                 <RadioButton
                                     android:id="@+id/g10401e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10401(`5`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`5`)}"
                                     android:text="@string/g10401e" />
 
                                 <RadioButton
                                     android:id="@+id/g10401f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10401(`6`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`6`)}"
                                     android:text="@string/g10401f" />
 
                                 <RadioButton
                                     android:id="@+id/g10401g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10401.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10401(`7`)}"
+                                    android:checked="@{foodConsumption.g10401.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10401(`7`)}"
                                     android:text="@string/g10401g" />
 
                             </RadioGroup>
@@ -910,56 +910,56 @@
                                     android:id="@+id/g10402a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10402(`1`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`1`)}"
                                     android:text="@string/g10402a" />
 
                                 <RadioButton
                                     android:id="@+id/g10402b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10402(`2`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`2`)}"
                                     android:text="@string/g10402b" />
 
                                 <RadioButton
                                     android:id="@+id/g10402c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10402(`3`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`3`)}"
                                     android:text="@string/g10402c" />
 
                                 <RadioButton
                                     android:id="@+id/g10402d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10402(`4`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`4`)}"
                                     android:text="@string/g10402d" />
 
                                 <RadioButton
                                     android:id="@+id/g10402e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10402(`5`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`5`)}"
                                     android:text="@string/g10402e" />
 
                                 <RadioButton
                                     android:id="@+id/g10402f"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`6`)}"
-                                    android:onClick="@{()->form.setG10402(`6`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`6`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`6`)}"
                                     android:text="@string/g10402f" />
 
                                 <RadioButton
                                     android:id="@+id/g10402g"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10402.equals(`7`)}"
-                                    android:onClick="@{()->form.setG10402(`7`)}"
+                                    android:checked="@{foodConsumption.g10402.equals(`7`)}"
+                                    android:onClick="@{()->foodConsumption.setG10402(`7`)}"
                                     android:text="@string/g10402g" />
 
                             </RadioGroup>
@@ -1009,32 +1009,32 @@
                                 android:id="@+id/g10501"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g105.equals(`1`)}"
-                                android:onClick="@{()->form.setG105(`1`)}"
+                                android:checked="@{foodConsumption.g105.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`1`)}"
                                 android:text="@string/g10501" />
 
                             <RadioButton
                                 android:id="@+id/g10502"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g105.equals(`2`)}"
-                                android:onClick="@{()->form.setG105(`2`)}"
+                                android:checked="@{foodConsumption.g105.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`2`)}"
                                 android:text="@string/g10502" />
 
                             <RadioButton
                                 android:id="@+id/g10503"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g105.equals(`3`)}"
-                                android:onClick="@{()->form.setG105(`3`)}"
+                                android:checked="@{foodConsumption.g105.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`3`)}"
                                 android:text="@string/g10503" />
 
                             <RadioButton
                                 android:id="@+id/g10504"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g105.equals(`4`)}"
-                                android:onClick="@{()->form.setG105(`4`)}"
+                                android:checked="@{foodConsumption.g105.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`4`)}"
                                 android:text="@string/g10504" />
 
                         </RadioGroup>
@@ -1094,40 +1094,40 @@
                                     android:id="@+id/g10601a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10601.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10601(`1`)}"
+                                    android:checked="@{foodConsumption.g10601.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10601(`1`)}"
                                     android:text="@string/g10601a" />
 
                                 <RadioButton
                                     android:id="@+id/g10601b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10601.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10601(`2`)}"
+                                    android:checked="@{foodConsumption.g10601.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10601(`2`)}"
                                     android:text="@string/g10601b" />
 
                                 <RadioButton
                                     android:id="@+id/g10601c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10601.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10601(`3`)}"
+                                    android:checked="@{foodConsumption.g10601.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10601(`3`)}"
                                     android:text="@string/g10601c" />
 
                                 <RadioButton
                                     android:id="@+id/g10601d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10601.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10601(`4`)}"
+                                    android:checked="@{foodConsumption.g10601.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10601(`4`)}"
                                     android:text="@string/g10601d" />
 
                                 <RadioButton
                                     android:id="@+id/g10601e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10601.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10601(`5`)}"
+                                    android:checked="@{foodConsumption.g10601.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10601(`5`)}"
                                     android:text="@string/g10601e" />
 
                             </RadioGroup>
@@ -1148,40 +1148,40 @@
                                     android:id="@+id/g10602a"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10602.equals(`1`)}"
-                                    android:onClick="@{()->form.setG10602(`1`)}"
+                                    android:checked="@{foodConsumption.g10602.equals(`1`)}"
+                                    android:onClick="@{()->foodConsumption.setG10602(`1`)}"
                                     android:text="@string/g10602a" />
 
                                 <RadioButton
                                     android:id="@+id/g10602b"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10602.equals(`2`)}"
-                                    android:onClick="@{()->form.setG10602(`2`)}"
+                                    android:checked="@{foodConsumption.g10602.equals(`2`)}"
+                                    android:onClick="@{()->foodConsumption.setG10602(`2`)}"
                                     android:text="@string/g10602b" />
 
                                 <RadioButton
                                     android:id="@+id/g10602c"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10602.equals(`3`)}"
-                                    android:onClick="@{()->form.setG10602(`3`)}"
+                                    android:checked="@{foodConsumption.g10602.equals(`3`)}"
+                                    android:onClick="@{()->foodConsumption.setG10602(`3`)}"
                                     android:text="@string/g10602c" />
 
                                 <RadioButton
                                     android:id="@+id/g10602d"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10602.equals(`4`)}"
-                                    android:onClick="@{()->form.setG10602(`4`)}"
+                                    android:checked="@{foodConsumption.g10602.equals(`4`)}"
+                                    android:onClick="@{()->foodConsumption.setG10602(`4`)}"
                                     android:text="@string/g10602d" />
 
                                 <RadioButton
                                     android:id="@+id/g10602e"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:checked="@{form.g10602.equals(`5`)}"
-                                    android:onClick="@{()->form.setG10602(`5`)}"
+                                    android:checked="@{foodConsumption.g10602.equals(`5`)}"
+                                    android:onClick="@{()->foodConsumption.setG10602(`5`)}"
                                     android:text="@string/g10602e" />
 
                             </RadioGroup>

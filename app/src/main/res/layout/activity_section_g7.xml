@@ -7,8 +7,8 @@
         <import type="android.view.View" />
 
         <variable
-            name="form"
-            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.Form" />
+            name="foodConsumption"
+            type="edu.aku.hassannaqvi.foodfortificationsurvey.models.FoodConsumption" />
 
         <variable
             name="callback"
@@ -90,40 +90,40 @@
                                 android:id="@+id/g70101"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g701.equals(`1`)}"
-                                android:onClick="@{()->form.setG701(`1`)}"
+                                android:checked="@{foodConsumption.g701.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG701(`1`)}"
                                 android:text="@string/g70101" />
 
                             <RadioButton
                                 android:id="@+id/g70102"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g701.equals(`2`)}"
-                                android:onClick="@{()->form.setG701(`2`)}"
+                                android:checked="@{foodConsumption.g701.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG701(`2`)}"
                                 android:text="@string/g70102" />
 
                             <RadioButton
                                 android:id="@+id/g70103"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g701.equals(`3`)}"
-                                android:onClick="@{()->form.setG701(`3`)}"
+                                android:checked="@{foodConsumption.g701.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG701(`3`)}"
                                 android:text="@string/g70103" />
 
                             <RadioButton
                                 android:id="@+id/g70104"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g701.equals(`4`)}"
-                                android:onClick="@{()->form.setG701(`4`)}"
+                                android:checked="@{foodConsumption.g701.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG701(`4`)}"
                                 android:text="@string/g70104" />
 
                             <RadioButton
                                 android:id="@+id/g70105"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.g701.equals(`5`)}"
-                                android:onClick="@{()->form.setG701(`5`)}"
+                                android:checked="@{foodConsumption.g701.equals(`5`)}"
+                                android:onClick="@{()->foodConsumption.setG701(`5`)}"
                                 android:text="@string/g70105" />
 
                         </RadioGroup>

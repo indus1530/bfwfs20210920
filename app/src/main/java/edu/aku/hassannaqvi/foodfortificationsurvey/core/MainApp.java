@@ -14,6 +14,7 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.BuildConfig;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FoodConsumption;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.RandomHH;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
@@ -74,6 +75,8 @@ public class MainApp extends Application {
     //public static int mwraCount;
     public static FamilyMembers mwra;
     public static RandomHH currentHousehold;
+    public static List<FoodConsumption> foodConsumption;
+    public static int foodIndex;
 
 
     public static void hideSystemUI(View decorView) {

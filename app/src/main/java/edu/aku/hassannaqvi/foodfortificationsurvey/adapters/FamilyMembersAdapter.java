@@ -54,6 +54,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         TextView fMaritalStatus = viewHolder.fMatitalStatus;
         TextView secStatus = viewHolder.secStatus;
         View cloaked = viewHolder.cloak;
+        View indexedBar = viewHolder.indexedBar;
 
         //String pregStatus = familyMember.getRb07().equals("1") ? "Pregnant" : "Not Pregnant";
 
@@ -86,11 +87,13 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
 
         cloaked.setVisibility(members.isMwra() ? View.GONE : View.VISIBLE);
         mainIcon.setImageResource((members.getA204().equals("1") ? R.drawable.ic_boy : R.drawable.ic_girl));
-        mainIcon.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : members.getIndexed().equals("2") ? mContext.getResources().getColor(R.color.fuchsia) : members.getA204().equals("1") ? mContext.getResources().getColor(R.color.boy_blue) : mContext.getResources().getColor(R.color.girl_pink));
+        MainApp.selectedMWRA = members.getIndexed().equals("1") || members.getIndexed().equals("2") ? "-" : "";
+        mainIcon.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : members.getIndexed().equals("2") ? mContext.getResources().getColor(android.R.color.holo_orange_dark) : members.getA204().equals("1") ? mContext.getResources().getColor(R.color.boy_blue) : mContext.getResources().getColor(R.color.girl_pink));
         //  mainIcon.setBackgroundColor(  ((ColorDrawable) mainIcon.getBackground()).getColor());
         if (!MainApp.selectedMWRA.equals("")) {
             cloaked.setVisibility(members.getIndexed().equals("1") ? View.GONE : View.VISIBLE);
         }
+        indexedBar.setVisibility(members.getIndexed().equals("") ? View.GONE : View.VISIBLE);
         //fMaritalStatus.setText("Children: " + familyMember.getH226m() + " boy(s), " + familyMember.getH226f() + " girl(s)");
       /*  viewHolder.itemView.setOnClickListener(v -> {
             // Get the current state of the item
@@ -138,6 +141,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         private final ImageView fmRow;
         private final ImageView mainIcon;
         private final View cloak;
+        private final View indexedBar;
 
 
         public ViewHolder(View v) {
@@ -151,6 +155,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
             fmRow = v.findViewById(R.id.cfmRow);
             mainIcon = v.findViewById(R.id.mainIcon);
             cloak = v.findViewById(R.id.cloaked);
+            indexedBar = v.findViewById(R.id.indexedBar);
 
         }
 

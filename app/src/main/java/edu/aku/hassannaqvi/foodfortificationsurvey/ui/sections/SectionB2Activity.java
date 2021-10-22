@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.form;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,10 +33,12 @@ public class SectionB2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
+
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b2);
         bi.setCallback(this);
         bi.setForm(form);
-
+        db = MainApp.appInfo.getDbHelper();
     }
 
 
@@ -60,7 +63,15 @@ public class SectionB2Activity extends AppCompatActivity {
     public void btnContinue(View view) {
         if (!formValidation()) return;
         if (updateDB()) {
+            try {
+                MainApp.foodConsumption = db.getFoodConsumptionBYUID(MainApp.form.getUid());
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Toast.makeText(this, "JSONException(FoodConsumption): " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+            MainApp.foodIndex = -1;
             finish();
+
             startActivity(new Intent(this, SectionC1Activity.class));
         } else Toast.makeText(this, R.string.fail_db_upd, Toast.LENGTH_SHORT).show();
     }

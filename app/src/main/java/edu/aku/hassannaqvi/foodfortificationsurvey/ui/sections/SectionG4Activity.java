@@ -1,6 +1,6 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
-import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.form;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,9 +32,10 @@ public class SectionG4Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g4);
         bi.setCallback(this);
-        bi.setForm(form);
+        bi.setFoodConsumption(MainApp.foodConsumption.get(MainApp.foodIndex));
 
     }
 
@@ -43,7 +44,7 @@ public class SectionG4Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
         long updcount = 0;
         try {
-            updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SG4, form.sG4toString());
+            updcount = db.updatesFoodConsumptionColumn(TableContracts.FoodConsumptionTable.COLUMN_SG4, MainApp.foodConsumption.get(MainApp.foodIndex).sG4toString());
         } catch (JSONException e) {
             e.printStackTrace();
             Log.d(TAG, R.string.upd_db_form + e.getMessage());

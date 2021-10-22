@@ -78,13 +78,16 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                         }
 
                         String motherSno = MainApp.familyMember.getA213();
-                        FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
                         if (!motherSno.equals("")
                                 && !motherSno.equals("97")
                                 && !MainApp.mwraList.contains(Integer.parseInt(motherSno))
-                                && mother.getA211().equals("1")
+
                         ) {
-                            MainApp.mwraList.add(Integer.parseInt(motherSno));
+                            FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
+
+                            if (mother.getA211().equals("1")) {
+                                MainApp.mwraList.add(Integer.parseInt(motherSno));
+                            }
                         }
                       /*  if (MainApp.familyMember.isMwra()) {
                             MainApp.mwraList.add(MainApp.familyList.size() - 1);
@@ -108,6 +111,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //setContentView(R.layout.activity_mwra);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_family_list);
         bi.setCallback(this);
@@ -140,6 +144,11 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                 String motherSno = fm.getA213(); // mother's line number from child
                 if (!motherSno.equals("") && !motherSno.equals("97") && !MainApp.mwraList.contains(Integer.parseInt(motherSno))) {
                     MainApp.mwraList.add(Integer.parseInt(motherSno));
+                    FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
+
+                    if (mother.getA211().equals("1")) {
+                        MainApp.mwraList.add(Integer.parseInt(motherSno));
+                    }
                 }
         /*        if (fm.isMwra()) {
                     MainApp.mwraList.add(fmCount - 1);

@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.D
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_VERSION;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_ENUMBLOCKS;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_FAMILY_MEMBERS;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_FOODS_CONSUMPTION;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_FORMS;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_RANDOM;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.SQL_CREATE_USERS;
@@ -29,6 +30,7 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.EnumBlocksTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FamilyMemberListTable;
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FoodConsumptionTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.RandomTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.UsersTable;
@@ -36,6 +38,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.Vers
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.EnumBlocks;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
+import edu.aku.hassannaqvi.foodfortificationsurvey.models.FoodConsumption;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Form;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.RandomHH;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
@@ -63,6 +66,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_ENUMBLOCKS);
         db.execSQL(SQL_CREATE_RANDOM);
         db.execSQL(SQL_CREATE_FORMS);
+        db.execSQL(SQL_CREATE_FOODS_CONSUMPTION);
         db.execSQL(SQL_CREATE_FAMILY_MEMBERS);
         db.execSQL(SQL_CREATE_VERSIONAPP);
 
@@ -93,22 +97,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_USERNAME, form.getUserName());
         values.put(FormsTable.COLUMN_SYSDATE, form.getSysDate());
         values.put(FormsTable.COLUMN_SA1, form.sA1toString());
-        values.put(FormsTable.COLUMN_SA3, form.sA3toString());
+/*        values.put(FormsTable.COLUMN_SA3, form.sA3toString());
         values.put(FormsTable.COLUMN_SB1, form.sB1toString());
-        values.put(FormsTable.COLUMN_SC1, form.sC1toString());
         values.put(FormsTable.COLUMN_SC2, form.sC2toString());
         values.put(FormsTable.COLUMN_SD1, form.sD1toString());
         values.put(FormsTable.COLUMN_SE1, form.sE1toString());
         values.put(FormsTable.COLUMN_SF1, form.sF1toString());
         values.put(FormsTable.COLUMN_SF2, form.sF2toString());
-        values.put(FormsTable.COLUMN_SF3, form.sF3toString());
-        values.put(FormsTable.COLUMN_SG1, form.sG1toString());
-        values.put(FormsTable.COLUMN_SG2, form.sG2toString());
-        values.put(FormsTable.COLUMN_SG3, form.sG3toString());
-        values.put(FormsTable.COLUMN_SG4, form.sG4toString());
-        values.put(FormsTable.COLUMN_SG5, form.sG5toString());
-        values.put(FormsTable.COLUMN_SG6, form.sG6toString());
-        values.put(FormsTable.COLUMN_SG7, form.sG7toString());
+        values.put(FormsTable.COLUMN_SF3, form.sF3toString());*/
 
 
         values.put(FormsTable.COLUMN_ISTATUS, form.getiStatus());
@@ -123,6 +119,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         newRowId = db.insert(
                 FormsTable.TABLE_NAME,
                 FormsTable.COLUMN_NAME_NULLABLE,
+                values);
+        return newRowId;
+    }
+
+    //ADDITION in DB
+    public Long addFoodConsumption(FoodConsumption foodConsumption) throws JSONException {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(FoodConsumptionTable.COLUMN_PROJECT_NAME, foodConsumption.getProjectName());
+        values.put(FoodConsumptionTable.COLUMN_UID, foodConsumption.getUid());
+        values.put(FoodConsumptionTable.COLUMN_UUID, foodConsumption.getUuid());
+        values.put(FoodConsumptionTable.COLUMN_ENUM_BLOCK, foodConsumption.getEbCode());
+        values.put(FoodConsumptionTable.COLUMN_HHID, foodConsumption.getHhid());
+        values.put(FoodConsumptionTable.COLUMN_SNO, foodConsumption.getSno());
+        values.put(FoodConsumptionTable.COLUMN_USERNAME, foodConsumption.getUserName());
+        values.put(FoodConsumptionTable.COLUMN_SYSDATE, foodConsumption.getSysDate());
+
+        values.put(FoodConsumptionTable.COLUMN_SC1, foodConsumption.sC1toString());
+      
+/*        values.put(FoodConsumptionTable.COLUMN_SG1, foodConsumption.sG1toString());
+        values.put(FoodConsumptionTable.COLUMN_SG2, foodConsumption.sG2toString());
+        values.put(FoodConsumptionTable.COLUMN_SG3, foodConsumption.sG3toString());
+        values.put(FoodConsumptionTable.COLUMN_SG4, foodConsumption.sG4toString());
+        values.put(FoodConsumptionTable.COLUMN_SG5, foodConsumption.sG5toString());
+        values.put(FoodConsumptionTable.COLUMN_SG6, foodConsumption.sG6toString());
+        values.put(FoodConsumptionTable.COLUMN_SG7, foodConsumption.sG7toString());*/
+
+
+        values.put(FoodConsumptionTable.COLUMN_ISTATUS, foodConsumption.getiStatus());
+
+        values.put(FoodConsumptionTable.COLUMN_DEVICETAGID, foodConsumption.getDeviceTag());
+        values.put(FoodConsumptionTable.COLUMN_DEVICEID, foodConsumption.getDeviceId());
+        values.put(FoodConsumptionTable.COLUMN_APPVERSION, foodConsumption.getAppver());
+
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                FoodConsumptionTable.TABLE_NAME,
+                FoodConsumptionTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -172,6 +212,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(MainApp.form.getId())};
 
         return db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    public int updatesFoodConsumptionColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = FoodConsumptionTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.foodConsumption.get(MainApp.foodIndex).getId())};
+
+        return db.update(FoodConsumptionTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1029,6 +1084,46 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         }
         return membersByUID;
+    }
+
+    public List<FoodConsumption> getFoodConsumptionBYUID(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FoodConsumptionTable.COLUMN_UUID + "=? ";
+
+        String[] whereArgs = {uid};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FoodConsumptionTable.COLUMN_ID + " ASC";
+
+        List<FoodConsumption> foodConsumption = new ArrayList<>();
+        try {
+            c = db.query(
+                    FoodConsumptionTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                foodConsumption.add(new FoodConsumption().Hydrate(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return foodConsumption;
     }
 
     public int updatesfamilyListColumn(String column, String value) {

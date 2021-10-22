@@ -310,67 +310,67 @@
                                         android:text="Options" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103aa" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ab" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ac" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ad" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ae" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103af" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ag" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ah" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103ai" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103aj" />
 
                                     <TextView
-                                        style="@style/textView"
+                                        style="@style/radiobutton"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="@string/b103a96" />

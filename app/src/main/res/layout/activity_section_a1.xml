@@ -31,12 +31,10 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ToolbarTheme"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
             app:subtitle="@string/secta"
-            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/modatitle"
-            app:titleTextAppearance="@style/Toolbar.TitleText" />
+            app:title="@string/modatitle" />
 
 
         <ScrollView
@@ -75,6 +73,7 @@
                 <!-- a101t DatePicker -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa101t"
+                    android:layout_gravity="start"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -104,6 +103,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layoutDirection="ltr"
+                            android:textDirection="ltr"
                             android:orientation="horizontal">
 
                             <TextView
@@ -132,6 +133,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layoutDirection="ltr"
+                            android:textDirection="ltr"
+
                             android:orientation="horizontal">
 
                             <com.edittextpicker.aliazaz.EditTextPicker

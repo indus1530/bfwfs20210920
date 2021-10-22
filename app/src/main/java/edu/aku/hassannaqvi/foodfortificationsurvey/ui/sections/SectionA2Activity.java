@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections;
 
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.familyMember;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.memberCount;
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -39,6 +40,8 @@ public class SectionA2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
+
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
         bi.setCallback(this);
         familyMember.setA201(String.valueOf(memberCount + 1));

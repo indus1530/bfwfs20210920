@@ -1,5 +1,7 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui;
 
+import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -45,6 +47,7 @@ public class IdentificationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_identification);
         bi.setCallback(this);
         db = MainApp.appInfo.dbHelper;

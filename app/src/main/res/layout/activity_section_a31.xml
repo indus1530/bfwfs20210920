@@ -31,12 +31,10 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            android:theme="@style/ToolbarTheme"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/CustomToolbarTheme"
+            app:popupTheme="@style/CustomPopupTheme"
             app:subtitle="@string/seca3"
-            app:subtitleTextAppearance="@style/Toolbar.SubtitleText"
-            app:title="@string/modatitle"
-            app:titleTextAppearance="@style/Toolbar.TitleText" />
+            app:title="@string/modatitle" />
 
 
         <ScrollView
@@ -888,8 +886,10 @@
                             android:id="@+id/a30616"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->a306.clearCheck() + form.setA306(``)}"
                             android:orientation="horizontal">
+                            <!--
+                                                        android:onCheckedChanged="@{()->a306.clearCheck() + form.setA306(``)}"
+                            -->
 
                             <RadioButton
                                 android:id="@+id/a3061601"
@@ -958,7 +958,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`1`)}"
-                                android:enabled="@{!form.a30616.equals(`2`)}"
                                 android:onClick="@{()->form.setA306(`1`)}"
                                 android:text="@string/a30601" />
 
@@ -967,7 +966,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`2`)}"
-                                android:enabled="@{!form.a30616.equals(`2`)}"
                                 android:onClick="@{()->form.setA306(`2`)}"
                                 android:text="@string/a30602" />
 
@@ -976,7 +974,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`3`)}"
-                                android:enabled="@{!form.a30616.equals(`2`)}"
                                 android:onClick="@{()->form.setA306(`3`)}"
                                 android:text="@string/a30603" />
 
@@ -985,7 +982,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`4`)}"
-                                android:enabled="@{!form.a30616.equals(`2`)}"
                                 android:onClick="@{()->form.setA306(`4`)}"
                                 android:text="@string/a30604" />
 
@@ -994,7 +990,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`5`)}"
-                                android:enabled="@{!form.a30616.equals(`2`)}"
                                 android:onClick="@{()->form.setA306(`5`)}"
                                 android:text="@string/a30605" />
 
@@ -1009,7 +1004,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`6`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
+
                                 android:onClick="@{()->form.setA306(`6`)}"
                                 android:text="@string/a30606" />
 
@@ -1018,7 +1013,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`7`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
+
                                 android:onClick="@{()->form.setA306(`7`)}"
                                 android:text="@string/a30607" />
 
@@ -1027,7 +1022,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`8`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
+
                                 android:onClick="@{()->form.setA306(`8`)}"
                                 android:text="@string/a30608" />
 
@@ -1042,7 +1037,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`9`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
+
                                 android:onClick="@{()->form.setA306(`9`)}"
                                 android:text="@string/a30609" />
 
@@ -1051,7 +1046,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`10`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`10`)}"
                                 android:text="@string/a30610" />
 
@@ -1060,7 +1054,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`11`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`11`)}"
                                 android:text="@string/a30611" />
 
@@ -1069,7 +1062,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`12`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`12`)}"
                                 android:text="@string/a30612" />
 
@@ -1078,7 +1070,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`13`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`13`)}"
                                 android:text="@string/a30613" />
 
@@ -1087,7 +1078,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`14`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`14`)}"
                                 android:text="@string/a30614" />
 
@@ -1096,7 +1086,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`15`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`15`)}"
                                 android:text="@string/a30615" />
 
@@ -1105,7 +1094,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.a306.equals(`96`)}"
-                                android:enabled="@{!form.a30616.equals(`1`)}"
                                 android:onClick="@{()->form.setA306(`96`)}"
                                 android:text="@string/a30696" />
 
