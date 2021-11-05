@@ -101,7 +101,6 @@ public class FoodConsumption extends BaseObservable implements Observable {
     private String c1131 = StringUtils.EMPTY;
     private String c1132 = StringUtils.EMPTY;
     private String c1133 = StringUtils.EMPTY;
-
     public String g101b = StringUtils.EMPTY;
     public String g102b = StringUtils.EMPTY;
     public String g103b = StringUtils.EMPTY;
@@ -809,6 +808,286 @@ public class FoodConsumption extends BaseObservable implements Observable {
     }
 
 
+
+    @Bindable
+    public String getG101b() {
+        return g101b;
+    }
+
+    public void setG101b(String g101b) {
+        this.g101b = g101b;
+        notifyPropertyChanged(BR.g101b);
+    }
+
+    @Bindable
+    public String getG102b() {
+        return g102b;
+    }
+
+    public void setG102b(String g102b) {
+        this.g102b = g102b;
+        notifyPropertyChanged(BR.g102b);
+    }
+
+    @Bindable
+    public String getG103b() {
+        return g103b;
+    }
+
+    public void setG103b(String g103b) {
+        this.g103b = g103b;
+        notifyPropertyChanged(BR.g103b);
+    }
+
+    @Bindable
+    public String getG104b() {
+        return g104b;
+    }
+
+    public void setG104b(String g104b) {
+        this.g104b = g104b;
+        notifyPropertyChanged(BR.g104b);
+    }
+
+    @Bindable
+    public String getG105() {
+        return g105;
+    }
+
+    public void setG105(String g105) {
+        this.g105 = g105;
+        notifyPropertyChanged(BR.g105);
+    }
+
+    @Bindable
+    public String getG106b() {
+        return g106b;
+    }
+
+    public void setG106b(String g106b) {
+        this.g106b = g106b;
+        notifyPropertyChanged(BR.g106b);
+    }
+
+    @Bindable
+    public String getG201() {
+        return g201;
+    }
+
+    public void setG201(String g201) {
+        this.g201 = g201;
+        notifyPropertyChanged(BR.g201);
+    }
+
+    @Bindable
+    public String getG202() {
+        return g202;
+    }
+
+    public void setG202(String g202) {
+        this.g202 = g202;
+        notifyPropertyChanged(BR.g202);
+    }
+
+    @Bindable
+    public String getG203() {
+        return g203;
+    }
+
+    public void setG203(String g203) {
+        this.g203 = g203;
+        notifyPropertyChanged(BR.g203);
+    }
+
+    @Bindable
+    public String getG204() {
+        return g204;
+    }
+
+    public void setG204(String g204) {
+        this.g204 = g204;
+        notifyPropertyChanged(BR.g204);
+    }
+
+    @Bindable
+    public String getG205b() {
+        return g205b;
+    }
+
+    public void setG205b(String g205b) {
+        this.g205b = g205b;
+        notifyPropertyChanged(BR.g205b);
+    }
+
+    @Bindable
+    public String getG206b() {
+        return g206b;
+    }
+
+    public void setG206b(String g206b) {
+        this.g206b = g206b;
+        notifyPropertyChanged(BR.g206b);
+    }
+
+    @Bindable
+    public String getG207() {
+        return g207;
+    }
+
+    public void setG207(String g207) {
+        this.g207 = g207;
+        notifyPropertyChanged(BR.g207);
+    }
+
+    @Bindable
+    public String getG208() {
+        return g208;
+    }
+
+    public void setG208(String g208) {
+        this.g208 = g208;
+        notifyPropertyChanged(BR.g208);
+    }
+
+    @Bindable
+    public String getG209b() {
+        return g209b;
+    }
+
+    public void setG209b(String g209b) {
+        this.g209b = g209b;
+        notifyPropertyChanged(BR.g209b);
+    }
+
+    @Bindable
+    public String getG210() {
+        return g210;
+    }
+
+    public void setG210(String g210) {
+        this.g210 = g210;
+        notifyPropertyChanged(BR.g210);
+    }
+
+    @Bindable
+    public String getG301b() {
+        return g301b;
+    }
+
+    public void setG301b(String g301b) {
+        this.g301b = g301b;
+        notifyPropertyChanged(BR.g301b);
+    }
+
+    @Bindable
+    public String getG302a1() {
+        return g302a1;
+    }
+
+    public void setG302a1(String g302a1) {
+        this.g302a1 = g302a1;
+        notifyPropertyChanged(BR.g302a1);
+    }
+
+    @Bindable
+    public String getG302b() {
+        return g302b;
+    }
+
+    public void setG302b(String g302b) {
+        this.g302b = g302b;
+        notifyPropertyChanged(BR.g302b);
+    }
+
+    @Bindable
+    public String getG303b() {
+        return g303b;
+    }
+
+    public void setG303b(String g303b) {
+        this.g303b = g303b;
+        notifyPropertyChanged(BR.g303b);
+    }
+
+    @Bindable
+    public String getG304b() {
+        return g304b;
+    }
+
+    public void setG304b(String g304b) {
+        this.g304b = g304b;
+        notifyPropertyChanged(BR.g304b);
+    }
+
+    @Bindable
+    public String getG305b() {
+        return g305b;
+    }
+
+    public void setG305b(String g305b) {
+        this.g305b = g305b;
+        notifyPropertyChanged(BR.g305b);
+    }
+
+    @Bindable
+    public String getG306b() {
+        return g306b;
+    }
+
+    public void setG306b(String g306b) {
+        this.g306b = g306b;
+        notifyPropertyChanged(BR.g306b);
+    }
+
+    @Bindable
+    public String getG307b() {
+        return g307b;
+    }
+
+    public void setG307b(String g307b) {
+        this.g307b = g307b;
+        notifyPropertyChanged(BR.g307b);
+    }
+
+    @Bindable
+    public String getG308b() {
+        return g308b;
+    }
+
+    public void setG308b(String g308b) {
+        this.g308b = g308b;
+        notifyPropertyChanged(BR.g308b);
+    }
+
+    @Bindable
+    public String getG309b() {
+        return g309b;
+    }
+
+    public void setG309b(String g309b) {
+        this.g309b = g309b;
+        notifyPropertyChanged(BR.g309b);
+    }
+
+    @Bindable
+    public String getG310b() {
+        return g310b;
+    }
+
+    public void setG310b(String g310b) {
+        this.g310b = g310b;
+        notifyPropertyChanged(BR.g310b);
+    }
+
+    @Bindable
+    public String getG311b() {
+        return g311b;
+    }
+
+    public void setG311b(String g311b) {
+        this.g311b = g311b;
+        notifyPropertyChanged(BR.g311b);
+    }
 
     @Bindable
     public String getG401() {

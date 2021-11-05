@@ -34,7 +34,6 @@ public class SectionB1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
-
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b1);
         bi.setCallback(this);
         bi.setForm(form);
