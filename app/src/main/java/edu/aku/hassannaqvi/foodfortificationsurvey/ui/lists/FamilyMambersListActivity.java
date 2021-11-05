@@ -32,6 +32,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC1Activity;
 
 
 public class FamilyMambersListActivity extends AppCompatActivity {
@@ -64,19 +65,19 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                         MainApp.familyList.add(MainApp.familyMember);
                         //  memGender = MainApp.familyMember.getA204();
                         // boolean memAgeCheck = Integer.parseInt(MainApp.familyMember.getA206()) > 18;
+                        if (!MainApp.familyMember.getA207t().equals("2")) {
+                            switch (MainApp.familyMember.getA204()) {
+                                case "1":
+                                    MainApp.fatherList.add(MainApp.familyMember);
+                                    //MainApp.mwraCount++;
+                                    break;
+                                case "2":
+                                    MainApp.motherList.add(MainApp.familyMember);
+                                    //MainApp.adolCount++;
+                                    break;
 
-                        switch (MainApp.familyMember.getA204()) {
-                            case "1":
-                                MainApp.fatherList.add(MainApp.familyMember);
-                                //MainApp.mwraCount++;
-                                break;
-                            case "2":
-                                MainApp.motherList.add(MainApp.familyMember);
-                                //MainApp.adolCount++;
-                                break;
-
+                            }
                         }
-
                         String motherSno = MainApp.familyMember.getA213();
                         if (!motherSno.equals("")
                                 && !motherSno.equals("97")
@@ -405,4 +406,6 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         proceedSelect();
         /*       }*/
     }
+
+
 }

@@ -1409,7 +1409,7 @@
                             android:tag="a33101"
                             android:text="@={form.a33101x}"
                             android:visibility='@{form.a331.equals(`1`) ? View.VISIBLE : View.GONE}'
-                            app:maxValue="10000"
+                            app:maxValue="999999"
                             app:minValue="0"
                             app:type="range" />
 

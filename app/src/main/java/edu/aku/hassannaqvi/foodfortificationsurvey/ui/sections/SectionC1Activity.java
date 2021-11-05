@@ -28,6 +28,7 @@ public class SectionC1Activity extends AppCompatActivity {
     private static final String TAG = "SectionC1Activity";
     ActivitySectionC1Binding bi;
     private DatabaseHelper db;
+    //public String c1res = "";
 
 
     @Override
@@ -39,6 +40,22 @@ public class SectionC1Activity extends AppCompatActivity {
         db = MainApp.appInfo.getDbHelper();
 
         MainApp.foodIndex++;
+        // Mother
+        if (MainApp.foodIndex == 0) {
+            bi.c1res01.setVisibility(View.VISIBLE);
+            bi.c1res02.setVisibility(View.GONE);
+        }
+        // Child
+        else if (MainApp.foodIndex == 1) {
+            bi.c1res01.setVisibility(View.GONE);
+            bi.c1res02.setVisibility(View.VISIBLE);
+        }
+        // Otherwise
+        else {
+            bi.c1res01.setVisibility(View.VISIBLE);
+            bi.c1res02.setVisibility(View.VISIBLE);
+        }
+
         if (MainApp.foodConsumption.size() < MainApp.foodIndex + 1)
             MainApp.foodConsumption.add(new FoodConsumption());
         bi.setFoodConsumption(MainApp.foodConsumption.get(MainApp.foodIndex));

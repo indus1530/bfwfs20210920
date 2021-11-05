@@ -879,7 +879,8 @@
     <string name="b11608">Niacin</string>
     <string name="b11609">Calcium</string>
     <string name="b11696">Other specify </string>
-    <string name="b117">Take 2 Photos of Packing (1. Show the Barnd/Logo of Fortification 2. Ingredients/contents of fortification</string>
+    <string name="b117">Take 2 Photos of Packing </string>
+    <string name="b117info"> 1. Show the Barnd/Logo of Fortification \n 2. Ingredients/contents of fortification</string>
     <string name="modctitle">MODULE-C: WHEAT FLOUR CONSUMPTION:</string>
     <string name="c1sec1title">SECTION C1: INDIVIDUAL WHEAT FLOUR CONSUMPTION:</string>
     <string name="c1s1int1">Now I would like to ask about how often and how much you and [NAME OF CHILD] consume specific foods made from wheat flour.</string>

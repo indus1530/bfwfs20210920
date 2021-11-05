@@ -235,7 +235,77 @@
 
 
                     </androidx.cardview.widget.CardView>
+                    <!--    &lt;!&ndash; b117  Input   &ndash;&gt;
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fldGrpCVb117"
+                            style="@style/cardView"
+                            >
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bottom"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/quesNum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/Q_b117" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="@string/b117" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/b117"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:enabled="false"
+                                        android:textColor="#F40303"
+                                        android:textSize="14sp" />
+                                    &lt;!&ndash;android:onClick="@{(v) -> callback.takePhoto()}"&ndash;&gt;
+                                    <ImageButton
+                                        android:id="@+id/Photo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginEnd="12dp"
+                                        android:background="@color/grayLight"
+                                        android:fontFamily="@font/roboto"
+                                        android:minWidth="56dp"
+                                        android:minHeight="56dp"
+                                        android:onClick="TakePhoto"
+                                        android:src="@drawable/ic_camera"
+                                        android:textColor="@color/white" />
+                                </RelativeLayout>
+                                &lt;!&ndash;               <EditText
+                                                   android:id="@+id/b117"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:hint="@string/b117"
+                                                   android:text="@={form.b117}" />&ndash;&gt;
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>-->
 
                 </LinearLayout>
 

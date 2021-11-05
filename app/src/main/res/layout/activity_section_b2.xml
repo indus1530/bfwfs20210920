@@ -763,7 +763,7 @@
                                 android:maxLength="2"
                                 android:text="@={form.b110d}"
                                 app:maxValue="90"
-                                app:minValue="1"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -791,7 +791,7 @@
                                 android:maxLength="1"
                                 android:text="@={form.b110m}"
                                 app:maxValue="3"
-                                app:minValue="1"
+                                app:minValue="0"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1305,13 +1305,15 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="###"
+                                android:text="@={form.b11601}"
                                 android:inputType="number"
                                 android:maxLength="3"
-                                android:text="@={form.b11601}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
+
 
                         </LinearLayout>
 
@@ -1338,8 +1340,11 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11602}"
-                                app:maxValue="100"
-                                app:minValue="0"
+
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1367,8 +1372,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11603}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1396,8 +1403,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11604}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1425,8 +1434,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11605}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1454,8 +1465,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11606}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1483,8 +1496,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11607}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1512,8 +1527,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11608}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1541,8 +1558,10 @@
                                 android:inputType="number"
                                 android:maxLength="3"
                                 android:text="@={form.b11609}"
-                                app:maxValue="100"
-                                app:minValue="0"
+                                app:mask="###.##"
+                                app:maxValue="900.00"
+                                app:minValue="000.00"
+                                app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1575,7 +1594,6 @@
 
                 </androidx.cardview.widget.CardView>
 
-
                 <!-- b117  Input   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVb117"
@@ -1606,18 +1624,54 @@
 
                         </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/b117"
+                        <TextView
+                            style="@style/info"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/b117info" />
+
+                        <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b117"
-                            android:text="@={form.b117}" />
+                            android:gravity="center_horizontal">
+
+
+                            <TextView
+                                android:id="@+id/b117"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:enabled="false"
+                                android:text="@={form.b117}"
+                                android:textColor="#F40303"
+                                android:textSize="14sp" />
+                            <!--android:onClick="@{(v) -> callback.takePhoto()}"-->
+                            <ImageButton
+                                android:id="@+id/Photo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="12dp"
+                                android:background="@color/grayLight"
+                                android:fontFamily="@font/roboto"
+                                android:minWidth="56dp"
+                                android:minHeight="56dp"
+                                android:onClick="TakePhoto"
+                                android:src="@drawable/ic_camera"
+                                android:textColor="@color/white" />
+                        </RelativeLayout>
+                        <!--               <EditText
+                                           android:id="@+id/b117"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:hint="@string/b117"
+                                           android:text="@={form.b117}" />-->
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-
-
                 <!--EndButton LinearLayout-->
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -7,6 +7,7 @@ import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.D
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_NAME;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -25,6 +26,10 @@ import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -62,6 +67,7 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityLoginBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB2Activity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -76,6 +82,39 @@ public class LoginActivity extends AppCompatActivity {
     ArrayAdapter<String> provinceAdapter;
     int attemptCounter = 0;
     private int countryCode;
+   /* private int PhotoSerial = 0;
+    private String photolist;
+    ActivityResultLauncher<Intent> takePhotoLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // There are no request codes
+                        //Intent data = result.getData();
+                        Intent data = result.getData();
+
+                        Toast.makeText(LoginActivity.this, "Photo Taken", Toast.LENGTH_SHORT).show();
+
+                        String fileName = data.getStringExtra("FileName");
+                        //   photolist = photolist + fileName + ";";
+                        PhotoSerial++;
+
+                        bi.b117.setText(bi.b117.getText().toString() + PhotoSerial + " - " + fileName + ";\r\n");
+                    } else {
+                        Toast.makeText(LoginActivity.this, "Photo Cancelled", Toast.LENGTH_SHORT).show();
+
+                        //TODO: Implement functionality below when photo was not taken
+                        // ...
+                        bi.b117.setText("Photo not taken.");
+                    }
+
+                    if (result.getResultCode() == Activity.RESULT_CANCELED) {
+                        Toast.makeText(LoginActivity.this, "No family member added.", Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+            });*/
 
     public static String encrypt(String plain) {
         try {
@@ -210,7 +249,8 @@ public class LoginActivity extends AppCompatActivity {
                 MainApp.editor.apply();
             }
 
-            File folder = new File(Environment.getExternalStorageDirectory() + File.separator + PROJECT_NAME);
+            // File folder = new File(Environment.getExternalStorageDirectory() + File.separator + PROJECT_NAME);
+            File folder = new File(this.getExternalFilesDir("Backups"), File.separator);
             boolean success = true;
             if (!folder.exists()) {
                 success = folder.mkdirs();
@@ -434,5 +474,18 @@ public class LoginActivity extends AppCompatActivity {
 
         changeLanguage(Integer.parseInt(sharedPref.getString("lang", "0")));
     }
+
+/*    public void TakePhoto(View view) {
+
+        Intent intent = new Intent(this, TakePhoto.class);
+        intent.putExtra("picID", "picid");
+        intent.putExtra("id", "id");
+        if (PhotoSerial == 0) {
+            intent.putExtra("picView", "Brand/logo");} else {
+            intent.putExtra("picView", "Ingredients");
+        }
+        takePhotoLauncher.launch(intent);
+
+    }*/
 }
 

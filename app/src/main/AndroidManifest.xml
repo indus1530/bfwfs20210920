@@ -4,14 +4,13 @@
     package="edu.aku.hassannaqvi.foodfortificationsurvey">
 
     <uses-sdk
-        android:targetSdkVersion="17"
+        android:targetSdkVersion="22"
         tools:overrideLibrary="com.google.zxing.client.android" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -43,7 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".ui.TakePhoto"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".ui.sections.SectionA1Activity"
@@ -166,11 +169,7 @@
             android:name=".ui.IdentificationActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name="edu.aku.hassannaqvi.foodfortificationsurvey.ui.TakePhoto"
-            android:hardwareAccelerated="true"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme" />
+
         <activity
             android:name="edu.aku.hassannaqvi.foodfortificationsurvey.database.AndroidDatabaseManager"
             android:theme="@style/AppTheme" />

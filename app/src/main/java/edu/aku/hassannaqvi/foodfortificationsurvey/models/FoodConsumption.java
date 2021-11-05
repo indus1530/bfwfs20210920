@@ -102,6 +102,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     private String c1132 = StringUtils.EMPTY;
     private String c1133 = StringUtils.EMPTY;
 
+    private String g101 = StringUtils.EMPTY;
     private String g10101 = StringUtils.EMPTY;
     private String g10102 = StringUtils.EMPTY;
     private String g10103 = StringUtils.EMPTY;
