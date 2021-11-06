@@ -835,6 +835,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG101(String g101) {
         this.g101 = g101;
+        setG101b(this.g101.equals("97") ? "" : this.g101b);
         notifyPropertyChanged(BR.g101);
     }
 
@@ -855,6 +856,8 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG102(String g102) {
         this.g102 = g102;
+        setG102b(this.g102.equals("97") ? "" : this.g102b);
+
         notifyPropertyChanged(BR.g102);
     }
 
@@ -875,6 +878,8 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG103(String g103) {
         this.g103 = g103;
+        setG103b(this.g103.equals("97") ? "" : this.g103b);
+
         notifyPropertyChanged(BR.g103);
     }
 
@@ -895,6 +900,8 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG104(String g104) {
         this.g104 = g104;
+        setG104b(this.g104.equals("97") ? "" : this.g104b);
+
         notifyPropertyChanged(BR.g104);
     }
 
@@ -925,6 +932,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG106(String g106) {
         this.g106 = g106;
+        setG106b(this.g106.equals("97") ? "" : this.g106b);
         notifyPropertyChanged(BR.g106);
     }
 
@@ -985,6 +993,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG205(String g205) {
         this.g205 = g205;
+        setG205b(this.g205.equals("97") ? "" : this.g205b);
         notifyPropertyChanged(BR.g205);
     }
 
@@ -1045,6 +1054,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG209(String g209) {
         this.g209 = g209;
+        setG209b(this.g209.equals("97") ? "" : this.g209b);
         notifyPropertyChanged(BR.g209);
     }
 
@@ -1075,6 +1085,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG301(String g301) {
         this.g301 = g301;
+        setG301b(this.g301.equals("97") ? "" : this.g301b);
         notifyPropertyChanged(BR.g301);
     }
 
@@ -1095,6 +1106,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG302(String g302) {
         this.g302 = g302;
+        setG302b(this.g302.equals("97") ? "" : this.g302b);
         notifyPropertyChanged(BR.g302);
     }
 
@@ -1115,6 +1127,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG303(String g303) {
         this.g303 = g303;
+        setG303b(this.g303.equals("97") ? "" : this.g303b);
         notifyPropertyChanged(BR.g303);
     }
 
@@ -1135,6 +1148,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG304(String g304) {
         this.g304 = g304;
+        setG304b(this.g304.equals("97") ? "" : this.g304b);
         notifyPropertyChanged(BR.g304);
     }
 
@@ -1155,6 +1169,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG305(String g305) {
         this.g305 = g305;
+        setG305b(this.g305.equals("97") ? "" : this.g305b);
         notifyPropertyChanged(BR.g305);
     }
 
@@ -1175,6 +1190,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG306(String g306) {
         this.g306 = g306;
+        setG306b(this.g306.equals("97") ? "" : this.g306b);
         notifyPropertyChanged(BR.g306);
     }
 
@@ -1195,6 +1211,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG307(String g307) {
         this.g307 = g307;
+        setG307b(this.g307.equals("97") ? "" : this.g307b);
         notifyPropertyChanged(BR.g307);
     }
 
@@ -1215,6 +1232,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG308(String g308) {
         this.g308 = g308;
+        setG308b(this.g308.equals("97") ? "" : this.g308b);
         notifyPropertyChanged(BR.g308);
     }
 
@@ -1235,6 +1253,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG309(String g309) {
         this.g309 = g309;
+        setG309b(this.g309.equals("97") ? "" : this.g309b);
         notifyPropertyChanged(BR.g309);
     }
 
@@ -1255,6 +1274,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG310(String g310) {
         this.g310 = g310;
+        setG310b(this.g310.equals("97") ? "" : this.g310b);
         notifyPropertyChanged(BR.g310);
     }
 
@@ -1275,6 +1295,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG311(String g311) {
         this.g311 = g311;
+        setG311b(this.g311.equals("97") ? "" : this.g311b);
         notifyPropertyChanged(BR.g311);
     }
 

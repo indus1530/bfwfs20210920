@@ -372,7 +372,7 @@ public class FamilyMembers extends BaseObservable {
             int ageInYears = Integer.parseInt(getA206());
             boolean genderCheck = getA204().equals("2");
             boolean maritalCheck = !getA207t().equals("2");
-            setMwra(maritalCheck && genderCheck && ageInYears > 14 && ageInYears < 50);
+            setMwra(maritalCheck && genderCheck && ageInYears > 18);
         }
         notifyPropertyChanged(BR.a207t);
     }
@@ -498,7 +498,7 @@ public class FamilyMembers extends BaseObservable {
                 int ageInYears = Integer.parseInt(getA206());
                 boolean genderCheck = getA204().equals("2");
                 boolean maritalCheck = !getA207t().equals("2");
-                setMwra(maritalCheck && genderCheck && ageInYears > 14 && ageInYears < 50);
+                setMwra(maritalCheck && genderCheck && ageInYears > 18);
             }
         }
     }

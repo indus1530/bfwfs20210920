@@ -48,7 +48,6 @@ public class SectionA2Activity extends AppCompatActivity {
 
 
         bi.setMember(familyMember);
-
         db = MainApp.appInfo.dbHelper;
         bi.btnContinue.setText(MainApp.familyMember.getUid().equals("") ? "Save" : "Update");
 

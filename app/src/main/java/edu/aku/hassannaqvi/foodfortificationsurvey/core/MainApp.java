@@ -77,6 +77,7 @@ public class MainApp extends Application {
     public static RandomHH currentHousehold;
     public static List<FoodConsumption> foodConsumption;
     public static int foodIndex;
+    public static boolean hhheadSelected = false;
 
 
     public static void hideSystemUI(View decorView) {

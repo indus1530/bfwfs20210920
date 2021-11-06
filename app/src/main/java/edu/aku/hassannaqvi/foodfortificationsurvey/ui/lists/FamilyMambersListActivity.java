@@ -63,6 +63,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                         ) {*/
                         MainApp.familyList.add(MainApp.familyMember);
+                        MainApp.hhheadSelected = MainApp.familyMember.getA203t().equals("1");
                         //  memGender = MainApp.familyMember.getA204();
                         // boolean memAgeCheck = Integer.parseInt(MainApp.familyMember.getA206()) > 18;
                         if (!MainApp.familyMember.getA207t().equals("2")) {

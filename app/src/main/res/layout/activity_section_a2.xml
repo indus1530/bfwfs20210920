@@ -959,6 +959,7 @@
                                 android:layout_height="wrap_content"
                                 android:checked="@{member.a210.equals(`1`)}"
                                 android:onClick="@{()->member.setA210(`1`)}"
+                                android:enabled="@{member.a204.equals(`2`)}"
                                 android:text="@string/a21001" />
 
                             <RadioButton
