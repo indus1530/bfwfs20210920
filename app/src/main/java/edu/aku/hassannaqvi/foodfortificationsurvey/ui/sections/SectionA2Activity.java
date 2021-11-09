@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -54,6 +55,19 @@ public class SectionA2Activity extends AppCompatActivity {
 
         populateSpinner();
     }
+
+    public void a206OnCheckChange(CharSequence s, int start, int before, int count) {
+        if (!bi.a206.isRangeTextValidate())
+            return;
+
+        if (Integer.parseInt(bi.a206.getText().toString()) >= 10) {
+            bi.fldGrpCVa210.setVisibility(View.VISIBLE);
+        } else {
+            Clear.clearAllFields(bi.fldGrpCVa210);
+            bi.fldGrpCVa210.setVisibility(View.GONE);
+        }
+    }
+
 
     private void populateSpinner() {
 

@@ -555,6 +555,7 @@
                             android:id="@+id/a206"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:onTextChanged="@{callback::a206OnCheckChange}"
                             android:gravity="center"
                             android:hint="###"
                             android:inputType="number"
