@@ -2115,14 +2115,6 @@
                                     android:onClick="@{()->foodConsumption.setC1113(`5`)}"
                                     android:text="@string/c111305" />
 
-                                <RadioButton
-                                    android:id="@+id/c111306"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:checked="@{foodConsumption.c1113.equals(`6`)}"
-                                    android:onClick="@{()->foodConsumption.setC1113(`6`)}"
-                                    android:text="@string/c111306" />
-
                             </RadioGroup>
 
                         </LinearLayout>
@@ -2297,14 +2289,6 @@
                                     android:checked="@{foodConsumption.c1123.equals(`5`)}"
                                     android:onClick="@{()->foodConsumption.setC1123(`5`)}"
                                     android:text="@string/c112305" />
-
-                                <RadioButton
-                                    android:id="@+id/c112306"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:checked="@{foodConsumption.c1123.equals(`6`)}"
-                                    android:onClick="@{()->foodConsumption.setC1123(`6`)}"
-                                    android:text="@string/c112306" />
 
                             </RadioGroup>
 

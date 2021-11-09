@@ -76,7 +76,7 @@
     <string name="dkn"> Don’t Know </string>
     <string name="none"> No one </string>
     <string name="never"> Never</string>
-    <string name="na"> Applicable /Not Available  </string>
+    <string name="na"> Applicable /Not Available </string>
     <string name="nap"> Not Applicable </string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_field_required">This field is required</string>
@@ -95,7 +95,7 @@
     <string name="km"> Kilometers </string>
     <string name="cm"> cm </string>
     <string name="in"> Inch </string>
-    <string name="rupees">  Rupees </string>
+    <string name="rupees"> Rupees </string>
     <string name="num"> Number </string>
     <string name="name"> Name </string>
     <string name="contactnum">Contact Number </string>
@@ -306,7 +306,7 @@
     <string name="insa" translatable="false">This section will be filled from the index mother</string>
     <string name="a301">What language do you usually speak in your household?</string>
     <string name="a30101">Sindhi</string>
-    <string name="a30102">Siraiki</string>
+    <string name="a30102">Saraiki</string>
     <string name="a30103">Balochi</string>
     <string name="a30104">Urdu</string>
     <string name="a30105">Kutchi</string>
@@ -430,12 +430,11 @@
     <string name="a30901">Number of minutes </string>
     <string name="a30998">Don’t Know  </string>
     <string name="a310">Who usually fetch water for the household?</string>
-    <string name="a310t">Probe: Is this person under age 15? What sex?</string>
     <string name="a31001">Adult woman (age 15+ years) </string>
     <string name="a31002">Adult man (age 15+ years)  </string>
     <string name="a31003">Female child (under 15)  </string>
-    <string name="a31004"> Male child (under 15) </string>
-    <string name="a31005"> Whoever is available </string>
+    <string name="a31004">Male child (under 15)  </string>
+    <string name="a31005">Whoever is available </string>
     <string name="a311">How does that water taste?</string>
     <string name="a31101">Sweet</string>
     <string name="a31102">Brackish</string>
@@ -466,7 +465,7 @@
     <string name="a317t">In the house </string>
     <string name="a31701">Separate room used as a kitchen</string>
     <string name="a31702">Elsewhere in the house</string>
-    <string name="a317t1">Ourside the house</string>
+    <string name="a317t1">Outside the house</string>
     <string name="a31703">In a separate building </string>
     <string name="a31704">Outdoors (open place) </string>
     <string name="a31796">Other (Specify) </string>
@@ -540,7 +539,7 @@
     <string name="a31918a">Yes</string>
     <string name="a31918b">No</string>
 
-    <string name="a320">Do you have your own mobile phone sepretelly? </string>
+    <string name="a320">Do you have your own mobile phone separately? </string>
     <string name="a32001">Yes</string>
     <string name="a32002">No</string>
 
@@ -647,7 +646,7 @@
     <string name="b102">Usually from were, your Household purchase wheat flour?</string>
     <string name="b10201">From a retailer shop </string>
     <string name="b10202">From a wholesale shop/super store </string>
-    <string name="b10203">From near by small Atta chakki </string>
+    <string name="b10203">From nearby small Atta chakki </string>
     <string name="b10204">From a Large-scale Atta Chakki</string>
     <string name="b10205">From a flour mill </string>
     <string name="b10206">Donation/Aid </string>
@@ -656,10 +655,10 @@
     <string name="b10296">Other (Specify) </string>
     <string name="b103">Usually from which source your household purchase/get wheat flour for each month of year?</string>
     <string name="b103a"> January </string>
-    <string name="b103aa">Not purchased /consumed</string>
+    <string name="b103aa">Not purchased/consumed</string>
     <string name="b103ab">Retailer shop</string>
     <string name="b103ac">wholesale shop/super store</string>
-    <string name="b103ad">Near by small Atta chak</string>
+    <string name="b103ad">Nearby small Atta chak</string>
     <string name="b103ae">Large-scale Atta Chaki</string>
     <string name="b103af">Flour mill </string>
     <string name="b103ag">Gift </string>
@@ -668,10 +667,10 @@
     <string name="b103aj">Not remember</string>
     <string name="b103a96">Other (Specify) </string>
     <string name="b103b"> February </string>
-    <string name="b103ba">Not purchased /consumed</string>
+    <string name="b103ba">Not purchased/consumed</string>
     <string name="b103bb">Retailer shop</string>
     <string name="b103bc">wholesale shop/super store</string>
-    <string name="b103bd">Near by small Atta chak</string>
+    <string name="b103bd">Nearby small Atta chak</string>
     <string name="b103be">Large-scale Atta Chaki</string>
     <string name="b103bf">Flour mill </string>
     <string name="b103bg">Gift </string>
@@ -680,10 +679,10 @@
     <string name="b103bj">Not remember</string>
     <string name="b103b96">Other (Specify) </string>
     <string name="b103c">March  </string>
-    <string name="b103ca">Not purchased /consumed</string>
+    <string name="b103ca">Not purchased/consumed</string>
     <string name="b103cb">Retailer shop</string>
     <string name="b103cc">wholesale shop/super store</string>
-    <string name="b103cd">Near by small Atta chak</string>
+    <string name="b103cd">Nearby small Atta chak</string>
     <string name="b103ce">Large-scale Atta Chaki</string>
     <string name="b103cf">Flour mill </string>
     <string name="b103cg">Gift </string>
@@ -692,10 +691,10 @@
     <string name="b103cj">Not remember</string>
     <string name="b103c96">Other (Specify) </string>
     <string name="b103d">April</string>
-    <string name="b103da">Not purchased /consumed</string>
+    <string name="b103da">Not purchased/consumed</string>
     <string name="b103db">Retailer shop</string>
     <string name="b103dc">wholesale shop/super store</string>
-    <string name="b103dd">Near by small Atta chak</string>
+    <string name="b103dd">Nearby small Atta chak</string>
     <string name="b103de">Large-scale Atta Chaki</string>
     <string name="b103df">Flour mill </string>
     <string name="b103dg">Gift </string>
@@ -704,10 +703,10 @@
     <string name="b103dj">Not remember</string>
     <string name="b103d96">Other (Specify) </string>
     <string name="b103e">May</string>
-    <string name="b103ea">Not purchased /consumed</string>
+    <string name="b103ea">Not purchased/consumed</string>
     <string name="b103eb">Retailer shop</string>
     <string name="b103ec">wholesale shop/super store</string>
-    <string name="b103ed">Near by small Atta chak</string>
+    <string name="b103ed">Nearby small Atta chak</string>
     <string name="b103ee">Large-scale Atta Chaki</string>
     <string name="b103ef">Flour mill </string>
     <string name="b103eg">Gift </string>
@@ -716,10 +715,10 @@
     <string name="b103ej">Not remember</string>
     <string name="b103e96">Other (Specify) </string>
     <string name="b103f">June </string>
-    <string name="b103fa">Not purchased /consumed</string>
+    <string name="b103fa">Not purchased/consumed</string>
     <string name="b103fb">Retailer shop</string>
     <string name="b103fc">wholesale shop/super store</string>
-    <string name="b103fd">Near by small Atta chak</string>
+    <string name="b103fd">Nearby small Atta chak</string>
     <string name="b103fe">Large-scale Atta Chaki</string>
     <string name="b103ff">Flour mill </string>
     <string name="b103fg">Gift </string>
@@ -728,10 +727,10 @@
     <string name="b103fj">Not remember</string>
     <string name="b103f96">Other (Specify) </string>
     <string name="b103g">July </string>
-    <string name="b103ga">Not purchased /consumed</string>
+    <string name="b103ga">Not purchased/consumed</string>
     <string name="b103gb">Retailer shop</string>
     <string name="b103gc">wholesale shop/super store</string>
-    <string name="b103gd">Near by small Atta chak</string>
+    <string name="b103gd">Nearby small Atta chak</string>
     <string name="b103ge">Large-scale Atta Chaki</string>
     <string name="b103gf">Flour mill </string>
     <string name="b103gg">Gift </string>
@@ -740,10 +739,10 @@
     <string name="b103gj">Not remember</string>
     <string name="b103g96">Other (Specify) </string>
     <string name="b103h">August   </string>
-    <string name="b103ha">Not purchased /consumed</string>
+    <string name="b103ha">Not purchased/consumed</string>
     <string name="b103hb">Retailer shop</string>
     <string name="b103hc">wholesale shop/super store</string>
-    <string name="b103hd">Near by small Atta chak</string>
+    <string name="b103hd">Nearby small Atta chak</string>
     <string name="b103he">Large-scale Atta Chaki</string>
     <string name="b103hf">Flour mill </string>
     <string name="b103hg">Gift </string>
@@ -752,10 +751,10 @@
     <string name="b103hj">Not remember</string>
     <string name="b103h96">Other specify </string>
     <string name="b103i">September </string>
-    <string name="b103ia">Not purchased /consumed</string>
+    <string name="b103ia">Not purchased/consumed</string>
     <string name="b103ib">Retailer shop</string>
     <string name="b103ic">wholesale shop/super store</string>
-    <string name="b103id">Near by small Atta chak</string>
+    <string name="b103id">Nearby small Atta chak</string>
     <string name="b103ie">Large-scale Atta Chaki</string>
     <string name="b103if">Flour mill </string>
     <string name="b103ig">Gift </string>
@@ -764,10 +763,10 @@
     <string name="b103ij">Not remember</string>
     <string name="b103i96">Other (Specify) </string>
     <string name="b103j">October</string>
-    <string name="b103ja">Not purchased /consumed</string>
+    <string name="b103ja">Not purchased/consumed</string>
     <string name="b103jb">Retailer shop</string>
     <string name="b103jc">wholesale shop/super store</string>
-    <string name="b103jd">Near by small Atta chak</string>
+    <string name="b103jd">Nearby small Atta chak</string>
     <string name="b103je">Large-scale Atta Chaki</string>
     <string name="b103jf">Flour mill </string>
     <string name="b103jg">Gift </string>
@@ -776,10 +775,10 @@
     <string name="b103jj">Not remember</string>
     <string name="b103j96">Other (Specify) </string>
     <string name="b103k">November </string>
-    <string name="b103ka">Not purchased /consumed</string>
+    <string name="b103ka">Not purchased/consumed</string>
     <string name="b103kb">Retailer shop</string>
     <string name="b103kc">wholesale shop/super store</string>
-    <string name="b103kd">Near by small Atta chak</string>
+    <string name="b103kd">Nearby small Atta chak</string>
     <string name="b103ke">Large-scale Atta Chaki</string>
     <string name="b103kf">Flour mill </string>
     <string name="b103kg">Gift </string>
@@ -788,10 +787,10 @@
     <string name="b103kj">Not remember</string>
     <string name="b103k96">Other specify </string>
     <string name="b103l">December</string>
-    <string name="b103la">Not purchased /consumed</string>
+    <string name="b103la">Not purchased/consumed</string>
     <string name="b103lb">Retailer shop</string>
     <string name="b103lc">wholesale shop/super store</string>
-    <string name="b103ld">Near by small Atta chak</string>
+    <string name="b103ld">Nearby small Atta chak</string>
     <string name="b103le">Large-scale Atta Chaki</string>
     <string name="b103lf">Flour mill </string>
     <string name="b103lg">Gift </string>
@@ -802,7 +801,7 @@
     <string name="b104">The last time your household got wheat flour, where did you purchased it from?</string>
     <string name="b10401">From a retailer shop </string>
     <string name="b10402">From a wholesale shop/super store </string>
-    <string name="b10403">From near by small Atta chakki </string>
+    <string name="b10403">From nearby small Atta chakki </string>
     <string name="b10404">From a Large-scale Atta Chakki</string>
     <string name="b10405">From a flour mill </string>
     <string name="b10406">Donation/Aid </string>
@@ -824,6 +823,7 @@
     <string name="b10511">Traditional </string>
     <string name="b10512">Own source/shop </string>
     <string name="b10513">Get in credit </string>
+    <string name="b10514">Get in exchange of food for work</string>
     <string name="b10598">Don’t Know </string>
     <string name="b10596">Other (Specify) </string>
     <string name="b106">The last time your household got wheat flour, was it branded or unbranded?</string>
@@ -856,7 +856,7 @@
     <string name="b11201">Total members </string>
     <string name="b11202">Adult Male </string>
     <string name="b11203">Adult Females </string>
-    <string name="b11204">Children unde 5Y </string>
+    <string name="b11204">Children under 5Y </string>
     <string name="b11205">Children 5-under 18Y</string>
     <string name="b113"> Do you have the wheat flour package, you purchased/got last time in your home now ? </string>
     <string name="b11301"> Yes </string>
@@ -868,7 +868,7 @@
     <string name="b11501">5 Kilogram </string>
     <string name="b11502">10 Kilogram </string>
     <string name="b11596">Other specify </string>
-    <string name="b116">If yes, write the quantity/percentage of of all micronutrients in fortified flour? </string>
+    <string name="b116">If yes, write the quantity of all micronutrients in fortified flour? </string>
     <string name="b11601">Vitamin A </string>
     <string name="b11602">Vitamin B12</string>
     <string name="b11603">Iron</string>
@@ -878,7 +878,8 @@
     <string name="b11607">Riboflavin</string>
     <string name="b11608">Niacin</string>
     <string name="b11609">Calcium</string>
-    <string name="b11696">Other specify </string>
+    <string name="b116961">Other micronutrients  </string>
+    <string name="b116962">Quantity of other micronutrient </string>
     <string name="b117">Take 2 Photos of Packing </string>
     <string name="b117info"> 1. Show the Barnd/Logo of Fortification \n 2. Ingredients/contents of fortification</string>
     <string name="modctitle">MODULE-C: WHEAT FLOUR CONSUMPTION:</string>
@@ -891,7 +892,7 @@
     <string name="c1res">Name of Respondent</string>
     <string name="c1res01">Caregiver/MWRA</string>
     <string name="c1res02">Child [CHILD NAME]</string>
-    <string name="c101">Home made bread (Dough bread, Paratha, Sweet bread, Sweet mashed bread, Wheat halwa, Dough bread turnover or filled with vegetable or meat etc.)</string>
+    <string name="c101">Homemade bread (Dough bread, Paratha, Sweet bread, Sweet mashed bread, Wheat halwa, Dough bread turnover or filled with vegetable or meat etc.)</string>
     <string name="c1011">Had the food item </string>
     <string name="c101101">Yes</string>
     <string name="c101102">No</string>
@@ -906,7 +907,7 @@
     <string name="c101304">1-2 pieces </string>
     <string name="c101305">3-4 pieces</string>
     <string name="c101306">More than 4 pieces</string>
-    <string name="c102">Bread outside (Naan, Sheermal, Tandoori Bread, Chappati, Puri etc)</string>
+    <string name="c102">Bread outside (Naan, Sheermal, Tandoori Bread, Chappati, Puri, etc.)</string>
     <string name="c1021">Had the food item </string>
     <string name="c102101">Yes</string>
     <string name="c102102">No</string>
@@ -919,7 +920,7 @@
     <string name="c102302">½ piece </string>
     <string name="c102303">1 piece</string>
     <string name="c102304">1-2 pieces </string>
-    <string name="c102305">3-4 pieces</string>
+    <string name="c102305">3–4 pieces</string>
     <string name="c102306">More than 4 pieces</string>
     <string name="c103">Bread processed /bakery, raw Local (Bread white, Bread bun, Bread brown etc.) </string>
     <string name="c1031">Had the food item </string>
@@ -951,7 +952,7 @@
     <string name="c104304">1-2 pieces </string>
     <string name="c104305">3-4 pieces</string>
     <string name="c104306">More than 4 pieces</string>
-    <string name="c105">Bakery Items (Cake, Pastry, muffins, Cream Roll, Doughnuts, Bakry Biscuit, Rusk, Cake Rusk, Crisp, puff pastry (plain or filled with vegetable, meat, or cream, Bun etc) </string>
+    <string name="c105">Bakery Items (Cake, Pastry, muffins, Cream Roll, Doughnuts, Bakery Biscuit, Rusk, Cake Rusk, Crisp, puff pastry (plain or filled with vegetable, meat, cream, bun, etc.) </string>
     <string name="c1051">Had the food item </string>
     <string name="c105101">Yes</string>
     <string name="c105102">No</string>
@@ -996,7 +997,7 @@
     <string name="c107304">1-2 Scoop </string>
     <string name="c107305">3-4 Scoop</string>
     <string name="c107306">More than 4 Scoop</string>
-    <string name="c108">Wheat based Haleem/Nihari (Beef haleem, Chicken haleem, plain haleem, etc.)</string>
+    <string name="c108">Wheat based Haleem/Nihari (Beef Haleem, Chicken Haleem, plain Haleem, etc.)</string>
     <string name="c1081">Had the food item </string>
     <string name="c108101">Yes</string>
     <string name="c108102">No</string>
@@ -1011,7 +1012,7 @@
     <string name="c108304">1-2 (Plate/Bowl) </string>
     <string name="c108305">3-4 (Plate/Bowl)</string>
     <string name="c108306">More than 4 (Plate/Bowl)</string>
-    <string name="c109">Sweets in which wheat flour used (for Ex: Ladoo, Wheat bars, Jalaibi, Juicy morsel, Burfi, Gulab Jaman, made from refined wheat flour, etc)</string>
+    <string name="c109">Sweets in which wheat flour used (for Ex: Ladoo, Wheat bars, Jalaibi, Juicy morsel, Burfi, Gulab Jaman, made from refined wheat flour, etc.)</string>
     <string name="c1091">Had the food item </string>
     <string name="c109101">Yes</string>
     <string name="c109102">No</string>
@@ -1041,7 +1042,7 @@
     <string name="c110304">1-2 pieces </string>
     <string name="c110305">3-4 pieces</string>
     <string name="c110306">More than 4 pieces</string>
-    <string name="c111">Chinees/Italian Food (Pasta, Noodles, Spaghetti, Macaroni etc)</string>
+    <string name="c111">Chinees/Italian Food (Pasta, Noodles, Spaghetti, Macaroni, etc.)</string>
     <string name="c1111">Had the food item </string>
     <string name="c111101">Yes</string>
     <string name="c111102">No</string>
@@ -1055,7 +1056,6 @@
     <string name="c111303">1 piece</string>
     <string name="c111304">1-2 pieces </string>
     <string name="c111305">3-4 pieces</string>
-    <string name="c111306">More than 4 pieces</string>
     <string name="c112">Wheat porridge, Wheat flakes, Semolina (Kheer, Halwa, Gol gapay, sweets made from semolina etc.), Vermicelli (vermicelli sweet, Vermicelli boiled, vermicelli cooked with milk etc.) </string>
     <string name="c1121">Had the food item </string>
     <string name="c112101">Yes</string>
@@ -1070,8 +1070,7 @@
     <string name="c112303">1 piece</string>
     <string name="c112304">1-2 pieces </string>
     <string name="c112305">3-4 pieces</string>
-    <string name="c112306">More than 4 pieces</string>
-    <string name="c113">Fast/Junk Food (Pizza, Sandwich, Burger, Roll, Broast etc) </string>
+    <string name="c113">Fast/Junk Food (Pizza, Sandwich, Burger, Roll, Breast, etc.) </string>
     <string name="c1131">Had the food item </string>
     <string name="c113101">Yes</string>
     <string name="c113102">No</string>
@@ -1105,7 +1104,7 @@
     <string name="c203">Do you ferment or use fermented wheat flour in your Household?</string>
     <string name="c20301">Yes</string>
     <string name="c20302">No</string>
-    <string name="c204"> How much time does its take for wheat flour to be fermented and ready to cook ? </string>
+    <string name="c204"> How much time does it take for wheat flour to be fermented and ready to cook ? </string>
     <string name="c204a" translatable="false"> Time in Hours </string>
     <string name="c205"> For how long do you use wheat flour once Fermented ? </string>
     <string name="c205a" translatable="false"> Days </string>
@@ -1120,8 +1119,8 @@
     <string name="c20608">No benefits</string>
     <string name="c20698">Don’t Know</string>
     <string name="c20696">Other specify</string>
-    <string name="modulef" translatable="false">HOUSEHOLD DOOD INSECURITY, DIETARY DIVERSITY AND SOURCE ASSESSMENT</string>
-    <string name="sectionf1" translatable="false">HOUSEHOLD DOOD INSECURITY EXPERIENCE SCALE</string>
+    <string name="modulef" translatable="false">HOUSEHOLD FOOD INSECURITY, DIETARY DIVERSITY AND SOURCE ASSESSMENT</string>
+    <string name="sectionf1" translatable="false">HOUSEHOLD FOOD INSECURITY EXPERIENCE SCALE</string>
     <string name="insf" translatable="false">THIS SECTION WILL BE DILLED WITH INDEX MOTHER</string>
     <string name="f101">You or others in your household worried about not having enough food to eat because of a lack of money or other resources</string>
     <string name="f10101">Yes</string>
@@ -1138,9 +1137,9 @@
     <string name="f10303">Don’t Know </string>
     <string name="f10399">Refused</string>
     <string name="f104"> How often did this happen ? </string>
-    <string name="f104a" translatable="false"> Rarely (once or twice in the past four weeks) </string>
-    <string name="f104b" translatable="false"> Sometimes (three to ten times in the past four weeks) </string>
-    <string name="f104c" translatable="false"> Often (more than ten times in the past four weeks) </string>
+    <string name="f104a"> Rarely (once or twice in the past four weeks) </string>
+    <string name="f104b"> Sometimes (three to ten times in the past four weeks) </string>
+    <string name="f104c"> Often (more than ten times in the past four weeks) </string>
     <string name="f105">Was there a time when you or others in your household ate only a few kinds of foods because of lack of money or other resources?</string>
     <string name="f10501">Yes</string>
     <string name="f10502">No</string>
@@ -1150,7 +1149,7 @@
     <string name="f10601">Rarely (once or twice in the past four weeks)</string>
     <string name="f10602">Sometimes (three to ten times in the past four weeks)</string>
     <string name="f10603">Often (more than ten times in the past four weeks)</string>
-    <string name="f107">Was there a time when you or others in your household had to skip a meal because there was not enough money or other resources to get food?</string>
+    <string name="f107">In the past 12 months, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?</string>
     <string name="f10701">Yes</string>
     <string name="f10702">No</string>
     <string name="f10798">Don’t Know </string>
@@ -1195,12 +1194,12 @@
     <string name="f11601">Rarely (once or twice in the past four weeks)</string>
     <string name="f11602">Sometimes (three to ten times in the past four weeks)</string>
     <string name="f11603">Often (more than ten times in the past four weeks)</string>
-    <string name="f117">Was there a time when you or others in your household went without eating for a whole day because ofa lack of money or other resources?</string>
+    <string name="f117">Was there a time when you or others in your household went without eating for a whole day because of a lack of money or other resources?</string>
     <string name="f11701">Yes</string>
     <string name="f11702">No</string>
     <string name="f11798">Don’t Know </string>
     <string name="f11799">Refused</string>
-    <string name="f118">How often did this happen?      </string>
+    <string name="f118">How often did this happen? </string>
     <string name="f11801">Rarely (once or twice in the past four weeks)</string>
     <string name="f11802">Sometimes (three to ten times in the past four weeks)</string>
     <string name="f11803">Often (more than ten times in the past four weeks)</string>
@@ -1268,13 +1267,14 @@
     <string name="f20201">Less</string>
     <string name="f20202">Same</string>
     <string name="f20203">More</string>
-    <string name="f203">Yesterday, how many meals were eaten Ey children</string>
+    <string name="f203">Yesterday, how many meals were eaten by children</string>
     <string name="f204">How does this compare to usual for the children?</string>
     <string name="f20401">Less</string>
     <string name="f20402">Same</string>
     <string name="f20403">More</string>
     <string name="sectionf3" translatable="false">HOUSEHOLD DIETARY DIVERSITY AND SOURCE ASSESMENT </string>
-    <string name="f301">foods made from grains (bread, wheat, rice, maize, etc</string>
+    <string name="f301t">I would like to ask you about all the different foods that your household members have eaten in last 24 hours</string>
+    <string name="f301">foods made from grains (bread, wheat, rice, maize, etc,</string>
     <string name="f30101">Not Consumed </string>
     <string name="f30102">own production</string>
     <string name="f30103">Purchase</string>
@@ -1284,7 +1284,7 @@
     <string name="f30107">Gift</string>
     <string name="f30108">food aid</string>
     <string name="f30109">Other</string>
-    <string name="f302">White roots and tubaers and plantains (potato, sweet potato, etc)  </string>
+    <string name="f302">White roots and tubers and plantains (potato, sweet potato, etc,)  </string>
     <string name="f30201">Not Consumed </string>
     <string name="f30202">own production</string>
     <string name="f30203">Purchase</string>
@@ -1415,14 +1415,15 @@
     <string name="f31408">food aid</string>
     <string name="f31409">Other</string>
     <string name="moduleg" translatable="false">SEMI-QUANTITATIVE FOOD FREQUENCY</string>
-    <string name="modulegins">This section will Be asked Drom mother (MWRA 18 &amp; Above Y) for herself and her index child of 6 months to &lt; =18 years (Separately) </string>
+    <string name="modulegins">This section will be asked from mother (MWRA 18 &amp; Above Y) for herself and her index child of 6 months to &lt; =18 years (Separately) </string>
     <string name="sectiong1">BEVERAGES</string>
-    <string name="g101">Full sugar carbonatedsoft drinks (i.e. Pepsi/Coca-Cola)</string>
+    <string name="g101info">4.	I am going to begin Ey asking you to recall what %1$s usually have taken to drink or eat in the past year at home or outside of home.    </string>
+    <string name="g101">Full sugar carbonated soft drinks (i.e. Pepsi/Coca-Cola)</string>
     <string name="g101a1">At home </string>
     <string name="g101a2">Outside of home </string>
     <string name="g101a3">Both</string>
     <string name="g101a97">Never</string>
-    <string name="g101b">Quantity</string>
+    <string name="g101b">Frequency</string>
     <string name="g101b1">1 bottle per day  </string>
     <string name="g101b2">2 bottles per day  </string>
     <string name="g101b3">3 or more bottles per day  </string>
@@ -1436,7 +1437,7 @@
     <string name="g102a2">Outside of home </string>
     <string name="g102a3">Both</string>
     <string name="g102a97">Never</string>
-    <string name="g102b">Quantity</string>
+    <string name="g102b">Frequency</string>
     <string name="g102b1">1 bottle per day  </string>
     <string name="g102b2">2 bottles per day  </string>
     <string name="g102b3">3 or more bottles per day  </string>
@@ -1449,7 +1450,7 @@
     <string name="g103a1">With sugar </string>
     <string name="g103a2">Without sugar </string>
     <string name="g103a97">Never</string>
-    <string name="g103b">Quantity</string>
+    <string name="g103b">Frequency</string>
     <string name="g103b1">1 cup per day</string>
     <string name="g103b2">2 cups per day </string>
     <string name="g103b3">3 or more cups per day </string>
@@ -1461,7 +1462,7 @@
     <string name="g104a1">With sugar </string>
     <string name="g104a2">Without sugar </string>
     <string name="g104a97">Never</string>
-    <string name="g104b">Qunaity</string>
+    <string name="g104b">Frequency</string>
     <string name="g104b1">1 cup per day</string>
     <string name="g104b2">2 cups per day </string>
     <string name="g104b3">3 or more cups per day </string>
@@ -1478,7 +1479,7 @@
     <string name="g106a1">Tap</string>
     <string name="g106a2">Bottled</string>
     <string name="g106a97">Never</string>
-    <string name="g106b">Quantity</string>
+    <string name="g106b">Frequency</string>
     <string name="g106b1">1 glass per day  </string>
     <string name="g106b2">2-3 glasses per day  </string>
     <string name="g106b3">3-6 glasses per day  </string>
@@ -1523,7 +1524,7 @@
     <string name="g205a1">Plain</string>
     <string name="g205a2">Sweetened</string>
     <string name="g205a97">Never</string>
-    <string name="g205b">Quantity</string>
+    <string name="g205b">Frequency</string>
     <string name="g205b1">1 cup per day</string>
     <string name="g205b2">2 cup per day</string>
     <string name="g205b3">3 or more cups per day </string>
@@ -1538,7 +1539,7 @@
     <string name="g206a4">Cheddar</string>
     <string name="g206a96">Other</string>
     <string name="g206a97">Never</string>
-    <string name="g206b">Qunaity</string>
+    <string name="g206b">Frequency</string>
     <string name="g206b1">1 slice/cup per day </string>
     <string name="g206b2">2-3 slices/cups per </string>
     <string name="g206b3">More than 3 slices/cups per day </string>
@@ -1566,7 +1567,7 @@
     <string name="g209a1">Banaspati/Dalda  </string>
     <string name="g209a2">Desi </string>
     <string name="g209a97">Never</string>
-    <string name="g209b">Qunaity</string>
+    <string name="g209b">Frequency</string>
     <string name="g209b1">1 spoon per day  </string>
     <string name="g209b2">2-4 spoons per </string>
     <string name="g209b3">More than 4 spoons per day  </string>
@@ -1588,7 +1589,7 @@
     <string name="g301a2">Outside of home </string>
     <string name="g301a3">Both</string>
     <string name="g301a97">Never</string>
-    <string name="g301b">Quanity</string>
+    <string name="g301b">Frequency</string>
     <string name="g301b1">Once per week </string>
     <string name="g301b2">2-4 times per week  </string>
     <string name="g301b3">More than 4 times per week  </string>
@@ -1599,7 +1600,7 @@
     <string name="g302a2">Outside of home </string>
     <string name="g302a3">Both</string>
     <string name="g302a97">Never</string>
-    <string name="g302b">Quanity</string>
+    <string name="g302b">Frequency</string>
     <string name="g302b1">Once per week </string>
     <string name="g302b2">2-4 times per week  </string>
     <string name="g302b3">More than 4 times per week  </string>
@@ -1621,7 +1622,7 @@
     <string name="g304a2">Outside of home </string>
     <string name="g304a3">Both</string>
     <string name="g304a97">Never</string>
-    <string name="g304b">Quanity</string>
+    <string name="g304b">Frequency</string>
     <string name="g304b1">Once per week </string>
     <string name="g304b2">2-4 times per week  </string>
     <string name="g304b3">More than 4 times per week  </string>
@@ -1632,7 +1633,7 @@
     <string name="g305a2">Outside of home </string>
     <string name="g305a3">Both</string>
     <string name="g305a97">Never</string>
-    <string name="g305b">Quanity</string>
+    <string name="g305b">Frequency</string>
     <string name="g305b1">Once per week </string>
     <string name="g305b2">2-4 times per week  </string>
     <string name="g305b3">More than 4 times per week  </string>
@@ -1643,7 +1644,7 @@
     <string name="g306a2">Outside of home </string>
     <string name="g306a3">Both</string>
     <string name="g306a97">Never</string>
-    <string name="g306b">Quanity</string>
+    <string name="g306b">Frequency</string>
     <string name="g306b1">Once per week </string>
     <string name="g306b2">2-4 times per week  </string>
     <string name="g306b3">More than 4 times per week  </string>
@@ -1654,7 +1655,7 @@
     <string name="g307a2">Outside of home </string>
     <string name="g307a3">Both</string>
     <string name="g307a97">Never</string>
-    <string name="g307b">Quanity</string>
+    <string name="g307b">Frequency</string>
     <string name="g307b1">Once per week </string>
     <string name="g307b2">2-4 times per week  </string>
     <string name="g307b3">More than 4 times per week  </string>
@@ -1665,7 +1666,7 @@
     <string name="g308a2">Outside of home </string>
     <string name="g308a3">Both</string>
     <string name="g308a97">Never</string>
-    <string name="g308b">Quanity</string>
+    <string name="g308b">Frequency</string>
     <string name="g308b1">Once per week </string>
     <string name="g308b2">2-4 times per week  </string>
     <string name="g308b3">More than 4 times per week  </string>
@@ -1676,7 +1677,7 @@
     <string name="g309a2">Outside of home </string>
     <string name="g309a3">Both</string>
     <string name="g309a97">Never</string>
-    <string name="g309b">Quanity</string>
+    <string name="g309b">Frequency</string>
     <string name="g309b1">Once per week </string>
     <string name="g309b2">2-4 times per week  </string>
     <string name="g309b3">More than 4 times per week  </string>
@@ -1687,7 +1688,7 @@
     <string name="g310a2">Outside of home </string>
     <string name="g310a3">Both</string>
     <string name="g310a97">Never</string>
-    <string name="g310b">Quanity</string>
+    <string name="g310b">Frequency</string>
     <string name="g310b1">Once per week </string>
     <string name="g310b2">2-4 times per week  </string>
     <string name="g310b3">More than 4 times per week  </string>
@@ -1698,7 +1699,7 @@
     <string name="g311a2">Outside of home </string>
     <string name="g311a3">Both</string>
     <string name="g311a97">Never</string>
-    <string name="g311b">Quanity</string>
+    <string name="g311b">Frequency</string>
     <string name="g311b1">Once per week </string>
     <string name="g311b2">2-4 times per week  </string>
     <string name="g311b3">More than 4 times per week  </string>
@@ -1932,13 +1933,13 @@
     <string name="e11303">Difficult to cultivate </string>
     <string name="e11304">High input cost </string>
     <string name="e11305">No Market to sale </string>
-    <string name="e11306">Seed is not easility available </string>
+    <string name="e11306">Seed is not easily available </string>
     <string name="e11396">Other specify </string>
     <string name="e114">If you would know that biofortified varieties of wheat have more nutrient value, more production, more price of yield, easier to cultivate and easily available, as compared to common varieties, will you cultivate it regularly? </string>
     <string name="e11401">Yes</string>
     <string name="e11402">No</string>
     <string name="e11498">Don’t Know </string>
-    <string name="e115"> IF Yes / No / Don\’t Know, What are the Advantages / Disadvansteges ? </string>
+    <string name="e115"> IF Yes / No / Don\’t Know, What are the Advantages / Disadvantages ? </string>
     <string name="e11501">More nutrient value </string>
     <string name="e11501a">Yes</string>
     <string name="e11501b">No</string>

@@ -1493,19 +1493,19 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <TextView
-                                style="@style/sub_labels"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/a310t" />
+                            <!--            <TextView
+                                            style="@style/sub_labels"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/a310t" />
 
-                            <RadioButton
-                                android:id="@+id/a31001"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:checked="@{form.a310.equals(`1`)}"
-                                android:onClick="@{()->form.setA310(`1`)}"
-                                android:text="@string/a31001" />
+                         -->               <RadioButton
+                            android:id="@+id/a31001"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="@{form.a310.equals(`1`)}"
+                            android:onClick="@{()->form.setA310(`1`)}"
+                            android:text="@string/a31001" />
 
                             <RadioButton
                                 android:id="@+id/a31002"
@@ -1538,6 +1538,7 @@
                                 android:checked="@{form.a310.equals(`5`)}"
                                 android:onClick="@{()->form.setA310(`5`)}"
                                 android:text="@string/a31005" />
+
 
                         </RadioGroup>
 

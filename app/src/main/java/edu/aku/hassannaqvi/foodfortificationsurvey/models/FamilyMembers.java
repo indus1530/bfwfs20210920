@@ -357,6 +357,10 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA206(String a206) {
         this.a206 = a206;
+        if (!a206.equals("")) {
+            setA207t(Integer.valueOf(a206) >= 10 ? this.a207t : "2");
+            setA208t(Integer.valueOf(a206) >= 3 ? this.a208t : "2");
+        }
         notifyPropertyChanged(BR.a206);
     }
 

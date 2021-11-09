@@ -740,7 +740,6 @@
                             android:id="@+id/e109"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->e110.clearCheck() + e111.clearCheck() + e11201.clearCheck() + e11202.clearCheck() + e11203.clearCheck() + e11204.clearCheck() + e11205.clearCheck() + e113.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -811,7 +810,6 @@
                             android:id="@+id/e110"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->e111.clearCheck() + e11201.clearCheck() + e11202.clearCheck() + e11203.clearCheck() + e11204.clearCheck() + e11205.clearCheck() + e113.clearCheck()}"
                             android:orientation="horizontal">
 
                             <RadioButton
@@ -1190,7 +1188,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- e113  Radio   -->
+                <!-- e113  CheckBox   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVe113"
                     style="@style/cardView"
@@ -1214,71 +1212,73 @@
                                 android:text="@string/Q_e113" />
 
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:text="@string/e113" />
-
                         </LinearLayout>
 
-                        <RadioGroup
-                            android:id="@+id/e113"
+                        <LinearLayout
+                            android:id="@+id/e113check"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:tag="0">
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11301"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`1`)}"
-                                android:onClick="@{()->form.setE113(`1`)}"
+                                android:checked="@{form.e11301.equals(`1`)}"
+                                android:onClick="@{()->form.setE11301(form.e11301.equals(`1`)?``:`1`)}"
                                 android:text="@string/e11301" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11302"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`2`)}"
-                                android:onClick="@{()->form.setE113(`2`)}"
+                                android:checked="@{form.e11302.equals(`2`)}"
+                                android:onClick="@{()->form.setE11302(form.e11302.equals(`2`)?``:`2`)}"
                                 android:text="@string/e11302" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11303"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`3`)}"
-                                android:onClick="@{()->form.setE113(`3`)}"
+                                android:checked="@{form.e11303.equals(`3`)}"
+                                android:onClick="@{()->form.setE11303(form.e11303.equals(`3`)?``:`3`)}"
                                 android:text="@string/e11303" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11304"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`4`)}"
-                                android:onClick="@{()->form.setE113(`4`)}"
+                                android:checked="@{form.e11304.equals(`4`)}"
+                                android:onClick="@{()->form.setE11304(form.e11304.equals(`4`)?``:`4`)}"
                                 android:text="@string/e11304" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11305"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`5`)}"
-                                android:onClick="@{()->form.setE113(`5`)}"
+                                android:checked="@{form.e11305.equals(`5`)}"
+                                android:onClick="@{()->form.setE11305(form.e11305.equals(`5`)?``:`5`)}"
                                 android:text="@string/e11305" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11306"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`6`)}"
-                                android:onClick="@{()->form.setE113(`6`)}"
+                                android:checked="@{form.e11306.equals(`6`)}"
+                                android:onClick="@{()->form.setE11306(form.e11306.equals(`6`)?``:`6`)}"
                                 android:text="@string/e11306" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/e11396"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.e113.equals(`96`)}"
-                                android:onClick="@{()->form.setE113(`96`)}"
+                                android:checked="@{form.e11396.equals(`96`)}"
+                                android:onClick="@{()->form.setE11396(form.e11396.equals(`96`)?``:`96`)}"
                                 android:text="@string/e11396" />
 
                             <EditText
@@ -1289,12 +1289,9 @@
                                 android:hint="@string/e11396"
                                 android:tag="e11396"
                                 android:text="@={form.e11396x}"
-                                android:visibility='@{form.e113.equals(`96`) ? View.VISIBLE : View.GONE}' />
-
-                        </RadioGroup>
-
+                                android:visibility='@{e11396.checked? View.VISIBLE : View.GONE}' />
+                        </LinearLayout>
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
 
 

@@ -976,7 +976,7 @@
                             android:tag="a32701"
                             android:text="@={form.a32701x}"
                             android:visibility="@{form.a327.equals(`1`)? View.VISIBLE : View.GONE}"
-                            app:maxValue="100"
+                            app:maxValue="999"
                             app:minValue="0"
                             app:type="range" />
 
@@ -991,7 +991,7 @@
                             android:tag="a32702"
                             android:text="@={form.a32702x}"
                             android:visibility="@{form.a327.equals(`2`)? View.VISIBLE : View.GONE}"
-                            app:maxValue="100"
+                            app:maxValue="999"
                             app:minValue="0"
                             app:type="range" />
 
@@ -1399,11 +1399,11 @@
                             android:gravity="center"
                             android:hint="###"
                             android:inputType="number"
-                            android:maxLength="3"
+                            android:maxLength="5"
                             android:tag="a33101"
                             android:text="@={form.a33101x}"
                             android:visibility='@{form.a331.equals(`1`) ? View.VISIBLE : View.GONE}'
-                            app:maxValue="999999"
+                            app:maxValue="99999"
                             app:minValue="0"
                             app:type="range" />
 

@@ -47,7 +47,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
+<TextView
+    android:id="@+id/g101info"
+    style="@style/info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
             <!-- g101  Radio   -->
             <androidx.cardview.widget.CardView
