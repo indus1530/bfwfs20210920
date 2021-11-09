@@ -62,6 +62,13 @@ public class SectionB1Activity extends AppCompatActivity {
     public void btnContinue(View view) {
         if (!formValidation()) return;
         if (updateDB()) {
+            try {
+                MainApp.foodConsumption = db.getFoodConsumptionBYUID(MainApp.form.getUid());
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Toast.makeText(this, "JSONException(FoodConsumption): " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+            MainApp.foodIndex = -1;
             if (MainApp.form.getB101().equals("1")) {
                 startActivity(new Intent(this, SectionB2Activity.class));
                 finish();

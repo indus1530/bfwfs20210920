@@ -83,7 +83,7 @@
     <string name="a114t">کیا آپ کے گھرانے میں 18 سال یا اس سے کم عمرکا کوئی بچہ ہے؟</string>
     <string name="a11401">ہاں</string>
     <string name="a11402">نہیں</string>
-    <string name="a115t">کیا اس گھر میں8 1 سال یا اس سے زیادہ کی کوئی تولیدی عمر کی خاتون رہتی ہے؟</string>
+    <string name="a115t">کیا اس گھر میں 18 سال یا اس سے زیادہ کی کوئی تولیدی عمر کی خاتون رہتی ہے؟</string>
     <string name="a11501">ہاں</string>
     <string name="a11502">نہیں</string>
     <string name="a116t">گھرانے کے انٹرویوکا نتیجہ</string>
@@ -521,7 +521,7 @@
     <string name="b10202">تھوک کی دکان/سپر سٹور سے </string>
     <string name="b10203">قریب کی چھوٹی آٹے کی چکی س</string>
     <string name="b10204">بڑے پیمانے کی آٹے کی چکی سے</string>
-    <string name="b10205">بڑے فلور مل سے </string>
+    <string name="b10205">بڑی فلور مل سے </string>
     <string name="b10206">عطیہ /امداد  </string>
     <string name="b10207">تحفہ</string>
     <string name="b10208">اپنی گندم پسوائی </string>

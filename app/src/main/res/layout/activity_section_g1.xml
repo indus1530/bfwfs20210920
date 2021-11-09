@@ -47,263 +47,264 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-<TextView
-    android:id="@+id/g101info"
-    style="@style/info"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
 
-            <!-- g101  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg101"
-                style="@style/cardView">
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/g101info"
+                    style="@style/info"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content" />
+
+                <!-- g101  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg101"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g101" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g101" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g101" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g101" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g101"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/g101a1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g101.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG101(`1`)}"
+                                android:text="@string/g101a1" />
+
+                            <RadioButton
+                                android:id="@+id/g101a2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g101.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG101(`2`)}"
+                                android:text="@string/g101a2" />
+
+                            <RadioButton
+                                android:id="@+id/g101a3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g101.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG101(`3`)}"
+                                android:text="@string/g101a3" />
+
+                            <RadioButton
+                                android:id="@+id/g101a97"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g101.equals(`97`)}"
+                                android:onClick="@{()->foodConsumption.setG101(`97`)}"
+                                android:text="@string/g101a97" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g101"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g101a1"
-                            android:text="@string/g101a1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g101.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG101(`1`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g101a2"
-                            android:text="@string/g101a2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g101.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG101(`2`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g101a3"
-                            android:text="@string/g101a3"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g101.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG101(`3`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g101a97"
-                            android:text="@string/g101a97"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g101.equals(`97`)}"
-                            android:onClick="@{()->foodConsumption.setG101(`97`)}" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g101b  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg101b"
-                android:visibility="@{foodConsumption.g101.equals(`97`)?View.GONE:View.VISIBLE}"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g101b  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg101b"
+                    style="@style/cardView"
+                    android:visibility="@{foodConsumption.g101.equals(`97`)?View.GONE:View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g101b" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g101b" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g101b" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g101b" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g101b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/g101b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`1`)}"
+                                android:text="@string/g101b1" />
+
+                            <RadioButton
+                                android:id="@+id/g101b2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`2`)}"
+                                android:text="@string/g101b2" />
+
+                            <RadioButton
+                                android:id="@+id/g101b3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`3`)}"
+                                android:text="@string/g101b3" />
+
+                            <RadioButton
+                                android:id="@+id/g101b4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`4`)}"
+                                android:text="@string/g101b4" />
+
+                            <RadioButton
+                                android:id="@+id/g101b5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`5`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`5`)}"
+                                android:text="@string/g101b5" />
+
+                            <RadioButton
+                                android:id="@+id/g101b6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`6`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`6`)}"
+                                android:text="@string/g101b6" />
+
+                            <RadioButton
+                                android:id="@+id/g101b7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`7`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`7`)}"
+                                android:text="@string/g101b7" />
+
+                            <RadioButton
+                                android:id="@+id/g101b8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g101b.equals(`8`)}"
+                                android:onClick="@{()->foodConsumption.setG101b(`8`)}"
+                                android:text="@string/g101b8" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g101b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g101b1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`1`)}"
-                            android:text="@string/g101b1" />
-
-                        <RadioButton
-                            android:id="@+id/g101b2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`2`)}"
-                            android:text="@string/g101b2" />
-
-                        <RadioButton
-                            android:id="@+id/g101b3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`3`)}"
-                            android:text="@string/g101b3" />
-
-                        <RadioButton
-                            android:id="@+id/g101b4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`4`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`4`)}"
-                            android:text="@string/g101b4" />
-
-                        <RadioButton
-                            android:id="@+id/g101b5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`5`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`5`)}"
-                            android:text="@string/g101b5" />
-
-                        <RadioButton
-                            android:id="@+id/g101b6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`6`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`6`)}"
-                            android:text="@string/g101b6" />
-
-                        <RadioButton
-                            android:id="@+id/g101b7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`7`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`7`)}"
-                            android:text="@string/g101b7" />
-
-                        <RadioButton
-                            android:id="@+id/g101b8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g101b.equals(`8`)}"
-                            android:onClick="@{()->foodConsumption.setG101b(`8`)}"
-                            android:text="@string/g101b8" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g102  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg102"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g102  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg102"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g102" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g102" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g102" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g102" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g102"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/g102a1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g102.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG102(`1`)}"
+                                android:text="@string/g102a1" />
+
+                            <RadioButton
+                                android:id="@+id/g102a2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g102.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG102(`2`)}"
+                                android:text="@string/g102a2" />
+
+                            <RadioButton
+                                android:id="@+id/g102a3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g102.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG102(`3`)}"
+                                android:text="@string/g102a3" />
+
+                            <RadioButton
+                                android:id="@+id/g102a97"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g102.equals(`97`)}"
+                                android:onClick="@{()->foodConsumption.setG102(`97`)}"
+                                android:text="@string/g102a97" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g102"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g102a1"
-                            android:text="@string/g102a1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g102.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG102(`1`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g102a2"
-                            android:text="@string/g102a2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g102.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG102(`2`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g102a3"
-                            android:text="@string/g102a3"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g102.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG102(`3`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g102a97"
-                            android:text="@string/g102a97"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g102.equals(`97`)}"
-                            android:onClick="@{()->foodConsumption.setG102(`97`)}" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g102b  Radio   -->
+                <!-- g102b  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVg102b"
                     android:visibility="@{foodConsumption.g102.equals(`97`)?View.GONE:View.VISIBLE}"
@@ -317,622 +318,622 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g102b" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g102b" />
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g102b" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g102b" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g102b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/g102b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`1`)}"
+                                android:text="@string/g102b1" />
+
+                            <RadioButton
+                                android:id="@+id/g102b2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`2`)}"
+                                android:text="@string/g102b2" />
+
+                            <RadioButton
+                                android:id="@+id/g102b3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`3`)}"
+                                android:text="@string/g102b3" />
+
+                            <RadioButton
+                                android:id="@+id/g102b4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`4`)}"
+                                android:text="@string/g102b4" />
+
+                            <RadioButton
+                                android:id="@+id/g102b5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`5`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`5`)}"
+                                android:text="@string/g102b5" />
+
+                            <RadioButton
+                                android:id="@+id/g102b6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`6`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`6`)}"
+                                android:text="@string/g102b6" />
+
+                            <RadioButton
+                                android:id="@+id/g102b7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`7`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`7`)}"
+                                android:text="@string/g102b7" />
+
+                            <RadioButton
+                                android:id="@+id/g102b8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g102b.equals(`8`)}"
+                                android:onClick="@{()->foodConsumption.setG102b(`8`)}"
+                                android:text="@string/g102b8" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g102b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g102b1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`1`)}"
-                            android:text="@string/g102b1" />
-
-                        <RadioButton
-                            android:id="@+id/g102b2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`2`)}"
-                            android:text="@string/g102b2" />
-
-                        <RadioButton
-                            android:id="@+id/g102b3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`3`)}"
-                            android:text="@string/g102b3" />
-
-                        <RadioButton
-                            android:id="@+id/g102b4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`4`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`4`)}"
-                            android:text="@string/g102b4" />
-
-                        <RadioButton
-                            android:id="@+id/g102b5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`5`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`5`)}"
-                            android:text="@string/g102b5" />
-
-                        <RadioButton
-                            android:id="@+id/g102b6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`6`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`6`)}"
-                            android:text="@string/g102b6" />
-
-                        <RadioButton
-                            android:id="@+id/g102b7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`7`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`7`)}"
-                            android:text="@string/g102b7" />
-
-                        <RadioButton
-                            android:id="@+id/g102b8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g102b.equals(`8`)}"
-                            android:onClick="@{()->foodConsumption.setG102b(`8`)}"
-                            android:text="@string/g102b8" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g103  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg103"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g103  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg103"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g103" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g103" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g103" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g103" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g103"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/g103a1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g103.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG103(`1`)}"
+                                android:text="@string/g103a1" />
+
+                            <RadioButton
+                                android:id="@+id/g103a2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g103.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG103(`2`)}"
+                                android:text="@string/g103a2" />
+
+                            <RadioButton
+                                android:id="@+id/g103a97"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g103.equals(`97`)}"
+                                android:onClick="@{()->foodConsumption.setG103(`97`)}"
+                                android:text="@string/g103a97" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g103"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g103a1"
-                            android:text="@string/g103a1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g103.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG103(`1`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g103a2"
-                            android:text="@string/g103a2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g103.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG103(`2`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g103a97"
-                            android:text="@string/g103a97"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g103.equals(`97`)}"
-                            android:onClick="@{()->foodConsumption.setG103(`97`)}" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g103b  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg103b"
-                android:visibility="@{foodConsumption.g103.equals(`97`)?View.GONE:View.VISIBLE}"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g103b  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg103b"
+                    style="@style/cardView"
+                    android:visibility="@{foodConsumption.g103.equals(`97`)?View.GONE:View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g103b" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g103b" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g103b" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g103b" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g103b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/g103b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`1`)}"
+                                android:text="@string/g103b1" />
+
+                            <RadioButton
+                                android:id="@+id/g103b2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`2`)}"
+                                android:text="@string/g103b2" />
+
+                            <RadioButton
+                                android:id="@+id/g103b3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`3`)}"
+                                android:text="@string/g103b3" />
+
+                            <RadioButton
+                                android:id="@+id/g103b4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`4`)}"
+                                android:text="@string/g103b4" />
+
+                            <RadioButton
+                                android:id="@+id/g103b5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`5`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`5`)}"
+                                android:text="@string/g103b5" />
+
+                            <RadioButton
+                                android:id="@+id/g103b6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`6`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`6`)}"
+                                android:text="@string/g103b6" />
+
+                            <RadioButton
+                                android:id="@+id/g103b7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g103b.equals(`7`)}"
+                                android:onClick="@{()->foodConsumption.setG103b(`7`)}"
+                                android:text="@string/g103b7" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g103b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g103b1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`1`)}"
-                            android:text="@string/g103b1" />
-
-                        <RadioButton
-                            android:id="@+id/g103b2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`2`)}"
-                            android:text="@string/g103b2" />
-
-                        <RadioButton
-                            android:id="@+id/g103b3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`3`)}"
-                            android:text="@string/g103b3" />
-
-                        <RadioButton
-                            android:id="@+id/g103b4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`4`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`4`)}"
-                            android:text="@string/g103b4" />
-
-                        <RadioButton
-                            android:id="@+id/g103b5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`5`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`5`)}"
-                            android:text="@string/g103b5" />
-
-                        <RadioButton
-                            android:id="@+id/g103b6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`6`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`6`)}"
-                            android:text="@string/g103b6" />
-
-                        <RadioButton
-                            android:id="@+id/g103b7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g103b.equals(`7`)}"
-                            android:onClick="@{()->foodConsumption.setG103b(`7`)}"
-                            android:text="@string/g103b7" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g104  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg104"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g104  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg104"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g104" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g104" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g104" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g104" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g104"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/g104a1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g104.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG104(`1`)}"
+                                android:text="@string/g104a1" />
+
+                            <RadioButton
+                                android:id="@+id/g104a2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g104.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG104(`2`)}"
+                                android:text="@string/g104a2" />
+
+                            <RadioButton
+                                android:id="@+id/g104a97"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g104.equals(`97`)}"
+                                android:onClick="@{()->foodConsumption.setG104(`97`)}"
+                                android:text="@string/g104a97" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g104"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g104a1"
-                            android:text="@string/g104a1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g104.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG104(`1`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g104a2"
-                            android:text="@string/g104a2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g104.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG104(`2`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g104a97"
-                            android:text="@string/g104a97"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g104.equals(`97`)}"
-                            android:onClick="@{()->foodConsumption.setG104(`97`)}" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g104b  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg104b"
-                android:visibility="@{foodConsumption.g104.equals(`97`)?View.GONE:View.VISIBLE}"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g104b  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg104b"
+                    style="@style/cardView"
+                    android:visibility="@{foodConsumption.g104.equals(`97`)?View.GONE:View.VISIBLE}">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g104b" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g104b" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g104b" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g104b" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g104b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/g104b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`1`)}"
+                                android:text="@string/g104b1" />
+
+                            <RadioButton
+                                android:id="@+id/g104b2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`2`)}"
+                                android:text="@string/g104b2" />
+
+                            <RadioButton
+                                android:id="@+id/g104b3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`3`)}"
+                                android:text="@string/g104b3" />
+
+                            <RadioButton
+                                android:id="@+id/g104b4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`4`)}"
+                                android:text="@string/g104b4" />
+
+                            <RadioButton
+                                android:id="@+id/g104b5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`5`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`5`)}"
+                                android:text="@string/g104b5" />
+
+                            <RadioButton
+                                android:id="@+id/g104b6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`6`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`6`)}"
+                                android:text="@string/g104b6" />
+
+                            <RadioButton
+                                android:id="@+id/g104b7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g104b.equals(`7`)}"
+                                android:onClick="@{()->foodConsumption.setG104b(`7`)}"
+                                android:text="@string/g104b7" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g104b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g104b1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`1`)}"
-                            android:text="@string/g104b1" />
-
-                        <RadioButton
-                            android:id="@+id/g104b2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`2`)}"
-                            android:text="@string/g104b2" />
-
-                        <RadioButton
-                            android:id="@+id/g104b3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`3`)}"
-                            android:text="@string/g104b3" />
-
-                        <RadioButton
-                            android:id="@+id/g104b4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`4`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`4`)}"
-                            android:text="@string/g104b4" />
-
-                        <RadioButton
-                            android:id="@+id/g104b5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`5`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`5`)}"
-                            android:text="@string/g104b5" />
-
-                        <RadioButton
-                            android:id="@+id/g104b6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`6`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`6`)}"
-                            android:text="@string/g104b6" />
-
-                        <RadioButton
-                            android:id="@+id/g104b7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g104b.equals(`7`)}"
-                            android:onClick="@{()->foodConsumption.setG104b(`7`)}"
-                            android:text="@string/g104b7" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g105  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg105"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g105  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg105"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g105" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g105" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g105" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g105" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g105"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/g10501"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g105.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`1`)}"
+                                android:text="@string/g10501" />
+
+                            <RadioButton
+                                android:id="@+id/g10502"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g105.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`2`)}"
+                                android:text="@string/g10502" />
+
+                            <RadioButton
+                                android:id="@+id/g10503"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g105.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`3`)}"
+                                android:text="@string/g10503" />
+
+                            <RadioButton
+                                android:id="@+id/g10504"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g105.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG105(`4`)}"
+                                android:text="@string/g10504" />
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g105"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g10501"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g105.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG105(`1`)}"
-                            android:text="@string/g10501" />
-
-                        <RadioButton
-                            android:id="@+id/g10502"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g105.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG105(`2`)}"
-                            android:text="@string/g10502" />
-
-                        <RadioButton
-                            android:id="@+id/g10503"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g105.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG105(`3`)}"
-                            android:text="@string/g10503" />
-
-                        <RadioButton
-                            android:id="@+id/g10504"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g105.equals(`4`)}"
-                            android:onClick="@{()->foodConsumption.setG105(`4`)}"
-                            android:text="@string/g10504" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g106  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg106"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g106  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg106"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g106" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g106" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g106" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g106" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g106"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/g106a1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g106.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG106(`1`)}"
+                                android:text="@string/g106a1" />
+
+                            <RadioButton
+                                android:id="@+id/g106a2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="@{foodConsumption.g106.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG106(`2`)}"
+                                android:text="@string/g106a2" />
+
+                            <!--                        <RadioButton
+                                                        android:id="@+id/g106a97"
+                                                        android:text="@string/g106a97"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:checked="@{foodConsumption.g106.equals(`97`)}"
+                                                        android:onClick="@{()->foodConsumption.setG106(`97`)}" />-->
+                        </RadioGroup>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <RadioGroup
-                        android:id="@+id/g106"
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g106a1"
-                            android:text="@string/g106a1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g106.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG106(`1`)}" />
-
-                        <RadioButton
-                            android:id="@+id/g106a2"
-                            android:text="@string/g106a2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:checked="@{foodConsumption.g106.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG106(`2`)}" />
-
-                        <!--                        <RadioButton
-                                                    android:id="@+id/g106a97"
-                                                    android:text="@string/g106a97"
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:checked="@{foodConsumption.g106.equals(`97`)}"
-                                                    android:onClick="@{()->foodConsumption.setG106(`97`)}" />-->
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- g106b  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg106b"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <!-- g106b  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVg106b"
+                    style="@style/cardView">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_g106b" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="@string/g106b" />
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_g106b" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/g106b" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/g106b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/g106b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g106b.equals(`1`)}"
+                                android:onClick="@{()->foodConsumption.setG106b(`1`)}"
+                                android:text="@string/g106b1" />
+
+                            <RadioButton
+                                android:id="@+id/g106b2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g106b.equals(`2`)}"
+                                android:onClick="@{()->foodConsumption.setG106b(`2`)}"
+                                android:text="@string/g106b2" />
+
+                            <RadioButton
+                                android:id="@+id/g106b3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g106b.equals(`3`)}"
+                                android:onClick="@{()->foodConsumption.setG106b(`3`)}"
+                                android:text="@string/g106b3" />
+
+                            <RadioButton
+                                android:id="@+id/g106b4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g106b.equals(`4`)}"
+                                android:onClick="@{()->foodConsumption.setG106b(`4`)}"
+                                android:text="@string/g106b4" />
+
+                            <RadioButton
+                                android:id="@+id/g106b5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="@{foodConsumption.g106b.equals(`5`)}"
+                                android:onClick="@{()->foodConsumption.setG106b(`5`)}"
+                                android:text="@string/g106b5" />
+                        </RadioGroup>
                     </LinearLayout>
-
-                    <RadioGroup
-                        android:id="@+id/g106b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/g106b1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g106b.equals(`1`)}"
-                            android:onClick="@{()->foodConsumption.setG106b(`1`)}"
-                            android:text="@string/g106b1" />
-
-                        <RadioButton
-                            android:id="@+id/g106b2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g106b.equals(`2`)}"
-                            android:onClick="@{()->foodConsumption.setG106b(`2`)}"
-                            android:text="@string/g106b2" />
-
-                        <RadioButton
-                            android:id="@+id/g106b3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g106b.equals(`3`)}"
-                            android:onClick="@{()->foodConsumption.setG106b(`3`)}"
-                            android:text="@string/g106b3" />
-
-                        <RadioButton
-                            android:id="@+id/g106b4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g106b.equals(`4`)}"
-                            android:onClick="@{()->foodConsumption.setG106b(`4`)}"
-                            android:text="@string/g106b4" />
-
-                        <RadioButton
-                            android:id="@+id/g106b5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{foodConsumption.g106b.equals(`5`)}"
-                            android:onClick="@{()->foodConsumption.setG106b(`5`)}"
-                            android:text="@string/g106b5" />
-                    </RadioGroup>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
                 <!--EndButton LinearLayout-->
