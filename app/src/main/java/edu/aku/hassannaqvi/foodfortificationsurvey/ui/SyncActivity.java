@@ -157,24 +157,24 @@ public class SyncActivity extends AppCompatActivity {
                 bi.mTextViewS.setVisibility(View.GONE);
                 bi.pBar.setVisibility(View.GONE);
                 downloadTables.clear();
-                boolean sync_flag = getIntent().getBooleanExtra("login", false);
-                if (sync_flag) {
+                // boolean sync_flag = getIntent().getBooleanExtra("login", false);
+                //     if (sync_flag) {
 
-                    downloadTables.add(new SyncModel(UsersTable.TABLE_NAME));
+                downloadTables.add(new SyncModel(UsersTable.TABLE_NAME));
 
-                    downloadTables.add(new SyncModel(EnumBlocksTable.TABLE_NAME));
-                    downloadTables.add(new SyncModel(RandomTable.TABLE_NAME));
-                    downloadTables.add(new SyncModel(VersionTable.TABLE_NAME));
-                } else {
+                downloadTables.add(new SyncModel(EnumBlocksTable.TABLE_NAME));
+                downloadTables.add(new SyncModel(RandomTable.TABLE_NAME));
+                downloadTables.add(new SyncModel(VersionTable.TABLE_NAME));
+              /*  } else {
                     // Set tables to DOWNLOAD
                     downloadTables.add(new SyncModel(UsersTable.TABLE_NAME));
                     downloadTables.add(new SyncModel(VersionTable.TABLE_NAME));
 
-                 /*   String select = " idCamp, camp_no, dist_id, district, ucCode, ucName, area_name, plan_date ";
+                 *//*   String select = " idCamp, camp_no, dist_id, district, ucCode, ucName, area_name, plan_date ";
                     String filter = " camp_status = 'Planned' AND locked = 0 ";
                     downloadTables.add(new SyncModel(Camps.TableCamp.TABLE_NAME, select, filter));
-                    downloadTables.add(new SyncModel(Doctor.TableDoctor.TABLE_NAME));*/
-                }
+                    downloadTables.add(new SyncModel(Doctor.TableDoctor.TABLE_NAME));*//*
+                }*/
                 MainApp.downloadData = new String[downloadTables.size()];
                 setAdapter(downloadTables);
                 BeginDownload();
