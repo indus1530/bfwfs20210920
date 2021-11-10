@@ -232,6 +232,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 selectionArgs);
     }
 
+    public int updatesfamilyListColumn(String column, String value) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+
+        String selection = FamilyMemberListTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.familyMember.getId())};
+
+        return db.update(FamilyMemberListTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
     public int updatesMemberColumn(String column, String value) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -1236,21 +1251,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         }
         return foodConsumption;
-    }
-
-    public int updatesfamilyListColumn(String column, String value) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = FamilyMemberListTable._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(MainApp.familyMember.getId())};
-
-        return db.update(FamilyMemberListTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
     }
 
 
