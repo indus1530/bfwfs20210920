@@ -91,7 +91,7 @@
                             android:id="@+id/g301a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g301.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG301(`2`)}"
                             android:text="@string/g301a2" />
@@ -244,7 +244,7 @@
                             android:id="@+id/g302a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g302.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG302(`2`)}"
                             android:text="@string/g302a2" />
@@ -397,7 +397,7 @@
                             android:id="@+id/g30302"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g303.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG303(`2`)}"
                             android:text="@string/g30302" />
@@ -550,7 +550,7 @@
                             android:id="@+id/g304a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g304.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG304(`2`)}"
                             android:text="@string/g304a2" />
@@ -703,7 +703,7 @@
                             android:id="@+id/g305a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g305.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG305(`2`)}"
                             android:text="@string/g305a2" />
@@ -856,7 +856,7 @@
                             android:id="@+id/g306a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g306.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG306(`2`)}"
                             android:text="@string/g306a2" />
@@ -1008,7 +1008,7 @@
                             android:id="@+id/g307a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g307.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG307(`2`)}"
                             android:text="@string/g307a2" />
@@ -1161,7 +1161,7 @@
                             android:id="@+id/g308a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g308.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG308(`2`)}"
                             android:text="@string/g308a2" />
@@ -1314,7 +1314,7 @@
                             android:id="@+id/g309a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g309.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG309(`2`)}"
                             android:text="@string/g309a2" />
@@ -1467,7 +1467,7 @@
                             android:id="@+id/g310a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g310.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG310(`2`)}"
                             android:text="@string/g310a2" />
@@ -1620,7 +1620,7 @@
                             android:id="@+id/g311a2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:checked="@{foodConsumption.g311.equals(`2`)}"
                             android:onClick="@{()->foodConsumption.setG311(`2`)}"
                             android:text="@string/g311a2" />
