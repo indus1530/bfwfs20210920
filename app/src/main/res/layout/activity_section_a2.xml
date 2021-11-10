@@ -193,6 +193,7 @@
                         </LinearLayout>
 
                         <RadioGroup
+                            android:onCheckedChanged="@{()->a207t.clearCheck() }"
                             android:id="@+id/a203t"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -573,7 +574,7 @@
                 <!-- a207t  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa207t"
-                    android:visibility="@{!member.a206.equals(``)?Integer.parseInt(member.a206)>=10?View.VISIBLE:View.GONE:View.VISIBLE}"
+                    android:visibility="@{!member.a206.equals(``)?Integer.parseInt(member.a206) > 10?View.VISIBLE:View.GONE:View.VISIBLE}"
                     style="@style/cardView">
 
                     <LinearLayout
@@ -614,6 +615,7 @@
                                 android:text="@string/a20701" />
 
                             <RadioButton
+                                android:enabled="@{!member.a203t.equals(`2`)}"
                                 android:id="@+id/a20702"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"

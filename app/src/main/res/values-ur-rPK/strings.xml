@@ -95,7 +95,7 @@
     <string name="a11605">خالی گھر/غیر  رہائشی</string>
     <string name="a11606">گھر نہیں ملا </string>
     <string name="a11607"> گھرانے میں 18 سال یا اس سے کم عمر کا کوئی بچہ یا نوعمر موجود نہیں ہے</string>
-    <string name="a11608">گھرانے میں18سال یا اس سے زیادہ کی تولیدی عمر کی خاتون نہیں ہے </string>
+    <string name="a11608"> گھرانے میں 18 سال یا اس سے زیادہ کی تولیدی عمر کی خاتون نہیں ہے </string>
     <string name="a11696">دیگر وضاحت کریں </string>
     <string name="secta2">گھرانے کے افراد کی معلومات</string>
     <string name="a2ins">اب میں آپ سے گھر کے افراد کے متعلق سوالات پوچھنا چاہونگی جو اس گھر میں آپ کے ساتھ رہتے ہیں اور ایک ہی باورچی خانه استعمال کرتے ہیں۔ </string>
@@ -2212,8 +2212,8 @@
     <string name="istatus04">انکار کردیا</string>
     <string name="istatus05">خالی گھر/غیر  رہائشی</string>
     <string name="istatus06">گھر نہیں ملا </string>
-    <string name="istatus07">رانے میں 18 سال یا اس سے کم عمر کا کوئی بچہ یا نوعمر موجود نہیں ہں</string>
-    <string name="istatus08">گھرانے میں18سال یا اس سے زیادہ کی تولیدی عمر کی خاتون نہیں ہے </string>
+    <string name="istatus07"> گھرانے میں 18 سال یا اس سے کم عمر کا کوئی بچہ یا نوعمر موجود نہیں ہں</string>
+    <string name="istatus08">گھرانے میں 18 سال یا اس سے زیادہ کی تولیدی عمر کی خاتون نہیں ہے </string>
     <string name="istatus96">دیگر وضاحت کریں </string>
     <string name="open_new_form">OPEN NEW FORM</string>
     <string name="country">زبان تبدیل کریں</string>
