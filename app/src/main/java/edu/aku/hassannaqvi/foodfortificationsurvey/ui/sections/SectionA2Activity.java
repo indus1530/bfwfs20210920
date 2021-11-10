@@ -45,7 +45,7 @@ public class SectionA2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
         bi.setCallback(this);
         familyMember.setA201(String.valueOf(memberCount + 1));
-
+        bi.a20301.setEnabled(!MainApp.hhheadSelected);
 
         bi.setMember(familyMember);
         db = MainApp.appInfo.dbHelper;

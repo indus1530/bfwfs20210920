@@ -32,7 +32,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA31Activity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionC1Activity;
 
 
 public class FamilyMambersListActivity extends AppCompatActivity {
@@ -63,7 +62,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                         ) {*/
                         MainApp.familyList.add(MainApp.familyMember);
-                        MainApp.hhheadSelected = MainApp.familyMember.getA203t().equals("1");
+                        MainApp.hhheadSelected = MainApp.familyMember.getA203t().equals("1") || MainApp.hhheadSelected;
                         //  memGender = MainApp.familyMember.getA204();
                         // boolean memAgeCheck = Integer.parseInt(MainApp.familyMember.getA206()) > 18;
                         if (!MainApp.familyMember.getA207t().equals("2")) {
@@ -174,6 +173,8 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                 bi.btnContinue.setVisibility(View.VISIBLE);
                 break;
             }
+
+            MainApp.hhheadSelected = MainApp.familyList.get(i).getA203t().equals("1") || MainApp.hhheadSelected;
 
 
         }
