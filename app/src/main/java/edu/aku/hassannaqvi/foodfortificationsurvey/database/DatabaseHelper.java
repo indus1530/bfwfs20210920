@@ -629,7 +629,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //update SyncedTables
-    public void updateSyncedforms(String id) {
+    public void updateSyncedformHH(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column

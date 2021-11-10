@@ -261,6 +261,7 @@ public class Form extends BaseObservable implements Observable {
     private String b11607 = StringUtils.EMPTY;
     private String b11608 = StringUtils.EMPTY;
     private String b11609 = StringUtils.EMPTY;
+    private String b11610 = StringUtils.EMPTY;
     private String b116961 = StringUtils.EMPTY;
     private String b116962 = StringUtils.EMPTY;
     private String b117 = StringUtils.EMPTY;
@@ -2678,6 +2679,7 @@ public class Form extends BaseObservable implements Observable {
         setB11607(b113.equals("2") ? "" : this.b11607);
         setB11608(b113.equals("2") ? "" : this.b11608);
         setB11609(b113.equals("2") ? "" : this.b11609);
+        setB11610(b113.equals("2") ? "" : this.b11610);
         setB116961(b113.equals("2") ? "" : this.b116961);
         setB117(b113.equals("2") ? "" : this.b117);
         notifyPropertyChanged(BR.b113);
@@ -2700,6 +2702,7 @@ public class Form extends BaseObservable implements Observable {
         setB11607(b114.equals("2") ? "" : this.b11607);
         setB11608(b114.equals("2") ? "" : this.b11608);
         setB11609(b114.equals("2") ? "" : this.b11609);
+        setB11610(b114.equals("2") ? "" : this.b11610);
         setB116961(b114.equals("2") ? "" : this.b116961);
         setB117(b114.equals("2") ? "" : this.b117);
         notifyPropertyChanged(BR.b114);
@@ -2814,6 +2817,19 @@ public class Form extends BaseObservable implements Observable {
     public void setB11609(String b11609) {
         this.b11609 = b11609;
         notifyPropertyChanged(BR.b11609);
+    }
+
+    @Bindable
+    public String getB11610() {
+        return b11610;
+    }
+
+    public void setB11610(String b11610) {
+        if (this.b11610.equals(b11610)) return; // for all checkboxes
+        this.b11610 = b11610;
+        setB116961(b11610.equals("10") ? this.b116961 : ""); // for all skips, mention all skipped questions
+        setB116962(b11610.equals("10") ? this.b116962 : ""); // for all skips, mention all skipped questions
+        notifyPropertyChanged(BR.b11610);
     }
 
     @Bindable
@@ -4567,6 +4583,7 @@ public class Form extends BaseObservable implements Observable {
             this.b11607 = json.getString("b11607");
             this.b11608 = json.getString("b11608");
             this.b11609 = json.getString("b11609");
+            this.b11610 = json.getString("b11610");
             this.b116961 = json.getString("b116961");
             this.b116962 = json.getString("b116962");
 
@@ -4974,6 +4991,7 @@ public class Form extends BaseObservable implements Observable {
                 .put("b11607", b11607)
                 .put("b11608", b11608)
                 .put("b11609", b11609)
+                .put("b11610", b11610)
                 .put("b116961", b116961)
                 .put("b116962", b116962)
                 .put("b117", b117);

@@ -1585,7 +1585,10 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/b11601check"
+                                android:id="@+id/b11610"
+                                android:checked="@{form.b11610.equals(`10`)}"
+                                android:onClick="@{()->form.setB11610(form.b11610.equals(`10`)?``:`10`)}"
+                                android:tag="-1"
                                 style="@style/sub_labels"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
@@ -1612,7 +1615,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:visibility="@{b11601check.checked?View.VISIBLE:View.GONE}">
+                            android:visibility="@{b11610.checked?View.VISIBLE:View.GONE}">
 
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/b116961"

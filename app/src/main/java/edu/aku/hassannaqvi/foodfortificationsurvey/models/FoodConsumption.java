@@ -901,6 +901,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setG104(String g104) {
         this.g104 = g104;
         setG104b(this.g104.equals("97") ? "" : this.g104b);
+        setG105(this.g104.equals("97") ? "" : this.g105);
 
         notifyPropertyChanged(BR.g104);
     }
