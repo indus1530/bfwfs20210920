@@ -1014,6 +1014,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setG206(String g206) {
         this.g206 = g206;
+        setG206b(g206.equals("97") ? "" : this.g206b);
         notifyPropertyChanged(BR.g206);
     }
 

@@ -111,8 +111,8 @@ public class SectionA1Activity extends AppCompatActivity {
         if (updateDB()) {
             Intent i;
 
-            // Check Consent = Yes
-            if (bi.a11101.isChecked()) {
+            // Check Consent and MWRA = Yes
+            if (bi.a11101.isChecked() && bi.a11501.isChecked()) {
                 i = new Intent(this, FamilyMambersListActivity.class).putExtra("complete", true);
             } else {
                 i = new Intent(this, EndingActivity.class).putExtra("complete", false);

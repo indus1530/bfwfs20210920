@@ -676,6 +676,7 @@
 
             <!-- g206b  Radio   -->
             <androidx.cardview.widget.CardView
+                android:visibility="@{foodConsumption.g206.equals(`97`) ? View.GONE : View.VISIBLE}"
                 android:id="@+id/fldGrpCVg206b"
                 style="@style/cardView">
 
