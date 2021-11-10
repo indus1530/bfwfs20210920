@@ -48,6 +48,8 @@ import java.util.concurrent.TimeUnit;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.adapters.SyncListAdapter;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.EnumBlocksTable;
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FamilyMemberListTable;
+import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FoodConsumptionTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.FormsTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.RandomTable;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts.UsersTable;
@@ -142,6 +144,14 @@ public class SyncActivity extends AppCompatActivity {
                 // Forms
                 uploadTables.add(new SyncModel(FormsTable.TABLE_NAME));
                 MainApp.uploadData.add(db.getUnsyncedForms());
+
+                //FamilyMember
+                uploadTables.add(new SyncModel(FamilyMemberListTable.TABLE_NAME));
+                MainApp.uploadData.add(db.getUnsyncedFamilyMemberList());
+
+                //FoodConsumption
+                uploadTables.add(new SyncModel(FoodConsumptionTable.TABLE_NAME));
+                MainApp.uploadData.add(db.getUnsyncedFoodConsumption());
 
 
                 MainApp.downloadData = new String[uploadData.size()];

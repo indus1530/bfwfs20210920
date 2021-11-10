@@ -102,7 +102,7 @@
                                 android:id="@+id/g101a2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
+                                android:layout_weight="2"
                                 android:checked="@{foodConsumption.g101.equals(`2`)}"
                                 android:onClick="@{()->foodConsumption.setG101(`2`)}"
                                 android:text="@string/g101a2" />
@@ -278,7 +278,7 @@
                                 android:id="@+id/g102a2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
+                                android:layout_weight="2"
                                 android:checked="@{foodConsumption.g102.equals(`2`)}"
                                 android:onClick="@{()->foodConsumption.setG102(`2`)}"
                                 android:text="@string/g102a2" />
