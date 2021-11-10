@@ -360,7 +360,12 @@ public class FamilyMembers extends BaseObservable {
         if (!a206.equals("")) {
             setA207t(Integer.valueOf(a206) >= 10 ? this.a207t : "2");
             setA208t(Integer.valueOf(a206) >= 3 ? this.a208t : "2");
+            setA210(Integer.valueOf(a206) > 10 ? this.a210 : "");
+        } else {
+            setA207t("");
+            setA208t("");
         }
+
         notifyPropertyChanged(BR.a206);
     }
 

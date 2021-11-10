@@ -555,7 +555,7 @@
                             android:id="@+id/a206"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onTextChanged="@{callback::a206OnCheckChange}"
+                            android:onTextChanged="@{()->a207t.clearCheck() + a208t.clearCheck()+ a210.clearCheck()}"
                             android:gravity="center"
                             android:hint="###"
                             android:inputType="number"
@@ -925,6 +925,7 @@
 
                 <!-- a210  Radio   -->
                 <androidx.cardview.widget.CardView
+                    android:visibility="@{!member.a206.equals(``)?Integer.parseInt(member.a206) > 10 ? View.VISIBLE : View.GONE : View.VISIBLE}"
                     android:id="@+id/fldGrpCVa210"
                     style="@style/cardView">
 
