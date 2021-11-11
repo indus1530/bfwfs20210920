@@ -268,7 +268,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         }
         //MainApp.familyList = new ArrayList<>();
         finish();
-        startActivity(new Intent(this, !MainApp.familyMember.getIndexed().equals("1") ? EndingActivity.class : SectionA31Activity.class).putExtra("complete", true));
+        startActivity(new Intent(this, MainApp.selectedMWRA.equals("") ? EndingActivity.class : SectionA31Activity.class).putExtra("complete", true));
 
         //MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA));
 
