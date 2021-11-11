@@ -423,8 +423,8 @@
     <string name="a30715">Bottled water</string>
     <string name="a30796">Other (Specify) </string>
     <string name="a308">Where is that water source located?</string>
-    <string name="a30801">In own yard / </string>
-    <string name="a30802">plot out of dwelling </string>
+    <string name="a30801">In own dwelling</string>
+    <string name="a30802">In own yard / plot (Out of dwelling)</string>
     <string name="a30803">Elsewhere </string>
     <string name="a309">How long does it take to get to the water source to get water and come back?</string>
     <string name="a30901">Number of minutes </string>

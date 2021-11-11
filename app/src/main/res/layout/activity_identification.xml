@@ -76,6 +76,7 @@
                                 android:text="@string/a105" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
+                                android:maxLength="9"
                                 android:id="@+id/a105"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
