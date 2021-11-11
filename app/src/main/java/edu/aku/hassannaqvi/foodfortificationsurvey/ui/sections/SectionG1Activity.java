@@ -40,7 +40,10 @@ public class SectionG1Activity extends AppCompatActivity {
 
         MainApp.foodIndex++;
         bi.setFoodConsumption(MainApp.foodConsumption.get(MainApp.foodIndex));
-        String respName = MainApp.foodIndex == 0 ? "Mother" : "Child";
+        String motherName = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA)).getA202();
+        String childName = MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getA202();
+
+        String respName = MainApp.foodIndex == 0 ? motherName : childName;
         bi.g101info.setText(String.format(getResources().getString(R.string.g101info), respName));
 
     }

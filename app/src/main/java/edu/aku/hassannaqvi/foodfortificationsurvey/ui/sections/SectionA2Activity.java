@@ -45,7 +45,24 @@ public class SectionA2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
         bi.setCallback(this);
         familyMember.setA201(String.valueOf(memberCount + 1));
-        bi.a20301.setEnabled(!MainApp.hhheadSelected);
+
+        // first is always head of household
+        boolean headCheck = (memberCount == 0);
+        bi.a20301.setEnabled(headCheck);
+        bi.a20302.setEnabled(!headCheck);
+        bi.a20303.setEnabled(!headCheck);
+        bi.a20304.setEnabled(!headCheck);
+        bi.a20305.setEnabled(!headCheck);
+        bi.a20306.setEnabled(!headCheck);
+        bi.a20307.setEnabled(!headCheck);
+        bi.a20308.setEnabled(!headCheck);
+        bi.a20309.setEnabled(!headCheck);
+        bi.a20310.setEnabled(!headCheck);
+        bi.a20311.setEnabled(!headCheck);
+        bi.a20312.setEnabled(!headCheck);
+        bi.a20313.setEnabled(!headCheck);
+        bi.a20314.setEnabled(!headCheck);
+        bi.a20396.setEnabled(!headCheck);
 
         bi.setMember(familyMember);
         db = MainApp.appInfo.dbHelper;

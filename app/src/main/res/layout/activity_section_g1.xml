@@ -51,6 +51,7 @@
                 <TextView
                     android:id="@+id/g101info"
                     style="@style/info"
+                    android:text="@string/g101info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -294,9 +295,8 @@
 
                             <RadioButton
                                 android:id="@+id/g102a97"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
                                 android:checked="@{foodConsumption.g102.equals(`97`)}"
                                 android:onClick="@{()->foodConsumption.setG102(`97`)}"
                                 android:text="@string/g102a97" />

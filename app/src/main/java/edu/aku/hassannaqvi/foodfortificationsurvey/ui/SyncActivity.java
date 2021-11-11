@@ -143,16 +143,31 @@ public class SyncActivity extends AppCompatActivity {
 
                 // Forms
                 uploadTables.add(new SyncModel(FormsTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedForms());
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedForms());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(this, "JSONException(Forms)" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
 
                 //FamilyMember
                 uploadTables.add(new SyncModel(FamilyMemberListTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedFamilyMemberList());
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedFamilyMemberList());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(this, "JSONException(FamilyMemberList)" + e.getMessage(), Toast.LENGTH_SHORT).show();
+
+                }
 
                 //FoodConsumption
                 uploadTables.add(new SyncModel(FoodConsumptionTable.TABLE_NAME));
-                MainApp.uploadData.add(db.getUnsyncedFoodConsumption());
-
+                try {
+                    MainApp.uploadData.add(db.getUnsyncedFoodConsumption());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(this, "JSONException(FoodConsumption)" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
 
                 MainApp.downloadData = new String[uploadData.size()];
 

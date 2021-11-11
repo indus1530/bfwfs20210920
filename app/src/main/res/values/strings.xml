@@ -1417,7 +1417,7 @@
     <string name="moduleg" translatable="false">SEMI-QUANTITATIVE FOOD FREQUENCY</string>
     <string name="modulegins">This section will be asked from mother (MWRA 18 &amp; Above Y) for herself and her index child of 6 months to &lt; =18 years (Separately) </string>
     <string name="sectiong1">BEVERAGES</string>
-    <string name="g101info">4.	I am going to begin Ey asking you to recall what %1$s usually have taken to drink or eat in the past year at home or outside of home.    </string>
+    <string name="g101info">I am going to begin by asking you to recall what %1$s usually have taken to drink or eat in the past year at home or outside of home.    </string>
     <string name="g101">Full sugar carbonated soft drinks (i.e. Pepsi/Coca-Cola)</string>
     <string name="g101a1">At home </string>
     <string name="g101a2">Outside of home </string>

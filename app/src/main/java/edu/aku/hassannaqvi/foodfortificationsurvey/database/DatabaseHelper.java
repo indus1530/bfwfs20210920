@@ -588,7 +588,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //get UnSyncedTables
-    public JSONArray getUnsyncedForms() {
+    public JSONArray getUnsyncedForms() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = null;
@@ -606,53 +606,40 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = FormsTable.COLUMN_ID + " ASC";
 
         JSONArray allForms = new JSONArray();
-        try {
-            c = db.query(
-                    FormsTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                /** WorkManager Upload
-                 /*Form fc = new Form();
-                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedForms: " + c.getCount());
-                Form form = new Form();
-                allForms.put(form.Hydrate(c).toJSONObject());
+
+        c = db.query(
+                FormsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            /** WorkManager Upload
+             /*Form fc = new Form();
+             allFC.add(fc.Hydrate(c));*/
+            Log.d(TAG, "getUnsyncedForms: " + c.getCount());
+            Form form = new Form();
+            allForms.put(form.Hydrate(c).toJSONObject());
 
 
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Log.d(TAG, "getUnsyncedForms: getUnsyncedForms " + e.getMessage()
-            );
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
         }
-        Log.d(TAG, "getUnsyncedForms: " + allForms.toString().length());
-        Log.d(TAG, "getUnsyncedForms: " + allForms);
+        c.close();
+        db.close();
         return allForms;
     }
 
 
-    public JSONArray getUnsyncedFamilyMemberList() {
+    public JSONArray getUnsyncedFamilyMemberList() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = null;
 
         String whereClause;
         //whereClause = null;
-        whereClause = FamilyMemberListTable.COLUMN_SYNCED + " is null AND " +
-                FormsTable.COLUMN_ISTATUS + "!= ''";
+        whereClause = FamilyMemberListTable.COLUMN_SYNCED + " is null ";
 
         String[] whereArgs = null;
 
@@ -662,53 +649,45 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = FamilyMemberListTable.COLUMN_ID + " ASC";
 
         JSONArray allFamilyMemberList = new JSONArray();
-        try {
-            c = db.query(
-                    FamilyMemberListTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                /** WorkManager Upload
-                 /*Form fc = new Form();
-                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedFamilyMemberList: " + c.getCount());
-                Form form = new Form();
-                allFamilyMemberList.put(form.Hydrate(c).toJSONObject());
+        c = db.query(
+                FamilyMemberListTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            /** WorkManager Upload
+             /*Form fc = new Form();
+             allFC.add(fc.Hydrate(c));*/
+            Log.d(TAG, "getUnsyncedFamilyMemberList: " + c.getCount());
+
+            FamilyMembers familyMember = new FamilyMembers().Hydrate(c);
+            if (checkFormHHStatus(familyMember.getUuid()))
+                allFamilyMemberList.put(familyMember.toJSONObject());
 
 
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Log.d(TAG, "getUnsyncedFamilyMemberList: getUnsyncedFamilyMemberList " + e.getMessage()
-            );
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
         }
+
+        c.close();
+        db.close();
+
         Log.d(TAG, "getUnsyncedFamilyMemberList: " + allFamilyMemberList.toString().length());
         Log.d(TAG, "getUnsyncedFamilyMemberList: " + allFamilyMemberList);
         return allFamilyMemberList;
     }
 
 
-    public JSONArray getUnsyncedFoodConsumption() {
+    public JSONArray getUnsyncedFoodConsumption() throws JSONException {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = null;
 
         String whereClause;
         //whereClause = null;
-        whereClause = FoodConsumptionTable.COLUMN_SYNCED + " is null AND " +
-                FormsTable.COLUMN_ISTATUS + "!= ''";
+        whereClause = FoodConsumptionTable.COLUMN_SYNCED + " is null";
 
         String[] whereArgs = null;
 
@@ -717,42 +696,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String orderBy = FoodConsumptionTable.COLUMN_ID + " ASC";
 
-        JSONArray allForms = new JSONArray();
-        try {
-            c = db.query(
-                    FoodConsumptionTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                /** WorkManager Upload
-                 /*Form fc = new Form();
-                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedFoodConsumption: " + c.getCount());
-                Form form = new Form();
-                allForms.put(form.Hydrate(c).toJSONObject());
-
-
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Log.d(TAG, "getUnsyncedFoodConsumption: getUnsyncedFoodConsumption " + e.getMessage()
-            );
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
+        JSONArray allFoodConsumption = new JSONArray();
+        c = db.query(
+                FoodConsumptionTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            /** WorkManager Upload
+             /*Form fc = new Form();
+             allFC.add(fc.Hydrate(c));*/
+            Log.d(TAG, "getUnsyncedFoodConsumption: " + c.getCount());
+            FoodConsumption foodConsumption = new FoodConsumption().Hydrate(c);
+            if (checkFormHHStatus(foodConsumption.getUuid()))
+                allFoodConsumption.put(foodConsumption.toJSONObject());
         }
-        Log.d(TAG, "getUnsyncedFoodConsumption: " + allForms.toString().length());
-        Log.d(TAG, "getUnsyncedFoodConsumption: " + allForms);
-        return allForms;
+        c.close();
+        db.close();
+
+        Log.d(TAG, "getUnsyncedFoodConsumption: " + allFoodConsumption.toString().length());
+        Log.d(TAG, "getUnsyncedFoodConsumption: " + allFoodConsumption);
+        return allFoodConsumption;
     }
 
     //update SyncedTables
@@ -775,6 +743,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
+    public void updateSyncedFamilyMember(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(FamilyMemberListTable.COLUMN_SYNCED, true);
+        values.put(FamilyMemberListTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+// Which row to update, based on the title
+        String where = FamilyMemberListTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                FamilyMemberListTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+
+    public void updateSyncedfoodconsumption(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(FoodConsumptionTable.COLUMN_SYNCED, true);
+        values.put(FoodConsumptionTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+// Which row to update, based on the title
+        String where = FoodConsumptionTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                FoodConsumptionTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
 
     public ArrayList<Cursor> getData(String Query) {
         //get writable database
@@ -1253,5 +1259,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return foodConsumption;
     }
 
+    public boolean checkFormHHStatus(String uid) throws JSONException {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = null;
+
+        String whereClause;
+        whereClause = FormsTable.COLUMN_UID + "=? AND " +
+                FormsTable.COLUMN_ISTATUS + " !=? ";
+
+        String[] whereArgs = {uid, ""};
+
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = FormsTable.COLUMN_ID + " ASC";
+
+        Form HHForm = null;
+
+        c = db.query(
+                FormsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy,
+                "1"// The sort order
+        );
+
+        int cCount = c.getCount();
+        db.close();
+
+        return cCount > 0;
+    }
 
 }

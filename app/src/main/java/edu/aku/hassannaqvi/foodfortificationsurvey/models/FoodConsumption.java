@@ -181,7 +181,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
         setAppver(MainApp.appInfo.getAppVersion());
-        setAppver(MainApp.appInfo.getAppVersion());
+      // setAppver(MainApp.appInfo.getAppVersion());
 
     }
 

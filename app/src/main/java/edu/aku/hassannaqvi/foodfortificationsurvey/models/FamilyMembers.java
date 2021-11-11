@@ -17,7 +17,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 
 import edu.aku.hassannaqvi.foodfortificationsurvey.BR;
@@ -75,14 +74,14 @@ public class FamilyMembers extends BaseObservable {
 
     public FamilyMembers() {
 
-        setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
-        setUserName(MainApp.user.getUserName());
-        setUuid(MainApp.form.getUid());
+        //  setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
+        // setUserName(MainApp.user.getUserName());
+        //  setUuid(MainApp.form.getUid());
         setDeviceId(MainApp.deviceid);
         setAppver(MainApp.appInfo.getAppVersion());
-        setAppver(MainApp.appInfo.getAppVersion());
-        setEbCode(MainApp.currentHousehold.getEbcode());
-        setHhid(MainApp.currentHousehold.getHhno());
+        //  setAppver(MainApp.appInfo.getAppVersion());
+        //     setEbCode(MainApp.currentHousehold.getEbcode());
+        //    setHhid(MainApp.currentHousehold.getHhno());
 
     }
 
@@ -513,18 +512,17 @@ public class FamilyMembers extends BaseObservable {
     }
 
 
-    public JSONObject toJSONObject() {
+    public JSONObject toJSONObject() throws JSONException {
 
         JSONObject json = new JSONObject();
 
-        try {
-            json.put(FamilyMemberListTable.COLUMN_ID, this.id);
-            json.put(FamilyMemberListTable.COLUMN_UID, this.uid);
-            json.put(FamilyMemberListTable.COLUMN_UUID, this.uuid);
-            json.put(FamilyMemberListTable.COLUMN_EB_CODE, this.ebCode);
-            json.put(FamilyMemberListTable.COLUMN_HHID, this.hhid);
-            json.put(FamilyMemberListTable.COLUMN_USERNAME, this.userName);
-            json.put(FamilyMemberListTable.COLUMN_SYSDATE, this.sysDate);
+        json.put(FamilyMemberListTable.COLUMN_ID, this.id);
+        json.put(FamilyMemberListTable.COLUMN_UID, this.uid);
+        json.put(FamilyMemberListTable.COLUMN_UUID, this.uuid);
+        json.put(FamilyMemberListTable.COLUMN_EB_CODE, this.ebCode);
+        json.put(FamilyMemberListTable.COLUMN_HHID, this.hhid);
+        json.put(FamilyMemberListTable.COLUMN_USERNAME, this.userName);
+        json.put(FamilyMemberListTable.COLUMN_SYSDATE, this.sysDate);
             json.put(FamilyMemberListTable.COLUMN_INDEXED, this.indexed);
             json.put(FamilyMemberListTable.COLUMN_DEVICEID, this.deviceId);
             json.put(FamilyMemberListTable.COLUMN_DEVICETAGID, this.deviceTag);
@@ -534,11 +532,7 @@ public class FamilyMembers extends BaseObservable {
 
             json.put(FamilyMemberListTable.COLUMN_SA2, new JSONObject(sA2toString()));
             return json;
-        } catch (JSONException e) {
-            e.printStackTrace();
-            Log.d(TAG, "toJSONObject: " + e.getMessage());
-            return null;
-        }
+
     }
 
     public String sA2toString() throws JSONException {

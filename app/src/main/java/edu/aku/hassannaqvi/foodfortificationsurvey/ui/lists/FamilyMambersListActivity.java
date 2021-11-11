@@ -62,7 +62,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                         ) {*/
                         MainApp.familyList.add(MainApp.familyMember);
-                        MainApp.hhheadSelected = MainApp.familyMember.getA203t().equals("1") || MainApp.hhheadSelected;
+                        MainApp.hhheadSelected = MainApp.familyMember.getA203t().equals("1");
                         //  memGender = MainApp.familyMember.getA204();
                         // boolean memAgeCheck = Integer.parseInt(MainApp.familyMember.getA206()) > 18;
                         if (!MainApp.familyMember.getA207t().equals("2")) {
@@ -128,19 +128,20 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             int fmCount = 0;
             for (FamilyMembers fm : MainApp.familyList) {
                 fmCount++;
+                if (!fm.getA207t().equals("2")) {
 
-                switch (fm.getA204()) {
-                    case "1":
-                        MainApp.fatherList.add(fm);
-                        //MainApp.mwraCount++;
-                        break;
-                    case "2":
-                        MainApp.motherList.add(fm);
-                        //MainApp.adolCount++;
-                        break;
+                    switch (fm.getA204()) {
+                        case "1":
+                            MainApp.fatherList.add(fm);
+                            //MainApp.mwraCount++;
+                            break;
+                        case "2":
+                            MainApp.motherList.add(fm);
+                            //MainApp.adolCount++;
+                            break;
 
+                    }
                 }
-
 
                 String motherSno = fm.getA213(); // mother's line number from child
                 if (!motherSno.equals("") && !motherSno.equals("97") && !MainApp.mwraList.contains(Integer.parseInt(motherSno))) {
@@ -164,6 +165,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_LONG).show();
         }
         MainApp.selectedMWRA = "";
+        MainApp.selectedChild = "";
         // Set Selected MWRA
         for (int i = 0; i < MainApp.familyList.size(); i++) {
             if (MainApp.familyList.get(i).getIndexed().equals("1")) {
@@ -171,11 +173,11 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                 bi.btnRand.setVisibility(View.INVISIBLE);
                 bi.btnContinue.setVisibility(View.VISIBLE);
-                break;
+                // break;
             }
-
-            MainApp.hhheadSelected = MainApp.familyList.get(i).getA203t().equals("1") || MainApp.hhheadSelected;
-
+            if (MainApp.familyList.get(i).getIndexed().equals("2"))
+                MainApp.selectedChild = String.valueOf(i);
+            MainApp.hhheadSelected = MainApp.familyList.get(i).getA203t().equals("1");
 
         }
 
@@ -192,12 +194,12 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!MainApp.form.getiStatus().equals("1")) {
+                if (!MainApp.form.getiStatus().equals("1") || MainApp.selectedMWRA.equals("")) {
                     //     Toast.makeText(MwraActivity.this, "Opening Mwra Form", Toast.LENGTH_LONG).show();
                     MainApp.familyMember = new FamilyMembers();
                     addFemale();
                 } else {
-                    Toast.makeText(FamilyMambersListActivity.this, "This form has been locked. You cannot add new MWRA to locked forms", Toast.LENGTH_LONG).show();
+                    Toast.makeText(FamilyMambersListActivity.this, "This form has been locked. You cannot add new family member to locked forms", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -264,7 +266,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             Toast.makeText(this, "JSONException(FamilyMembers): " + e.getMessage(), Toast.LENGTH_LONG).show();
 
         }
-        MainApp.familyList = new ArrayList<>();
+        //MainApp.familyList = new ArrayList<>();
         finish();
         startActivity(new Intent(this, !MainApp.familyMember.getIndexed().equals("1") ? EndingActivity.class : SectionA31Activity.class).putExtra("complete", true));
 
@@ -298,7 +300,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         // Updating adapter
         MainApp.familyList.get(indx).setIndexed("1");
 
-        familyMembersAdapter.notifyItemChanged(indx - 1);
+        //familyMembersAdapter.notifyItemChanged(indx - 1);
         int i = 0;
         MainApp.childOfSelectedMWRAList = new ArrayList<>();
         for (FamilyMembers fm : MainApp.familyList) {
@@ -316,7 +318,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         // Updating adapter
         MainApp.familyList.get(indx - 1).setIndexed("1");
 
-        familyMembersAdapter.notifyItemChanged(indx - 1);
+        familyMembersAdapter.notifyDataSetChanged();
 
         bi.btnRand.setVisibility(View.INVISIBLE);
         bi.btnContinue.setVisibility(View.VISIBLE);
