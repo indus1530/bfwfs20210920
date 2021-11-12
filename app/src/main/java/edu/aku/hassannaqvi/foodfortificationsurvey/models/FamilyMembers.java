@@ -353,7 +353,6 @@ public class FamilyMembers extends BaseObservable {
         if (a205y.equals("9998")) {
             setA205m("98");
             setA206("");
-            setAgeInMonth("0");
         }
         // Calculate age
         CaluculateAge();
@@ -372,10 +371,15 @@ public class FamilyMembers extends BaseObservable {
             setA207t(Integer.valueOf(a206) >= 10 ? this.a207t : "2");
             setA208t(Integer.valueOf(a206) >= 3 ? this.a208t : "2");
             setA210(Integer.valueOf(a206) > 10 ? this.a210 : "");
+            if (a205y.equals("9998")) {
+                setAgeInMonth(String.valueOf(Integer.parseInt(this.a206) * 12));
+            }
         } else {
             setA207t("");
             setA208t("");
+            setAgeInMonth("");
         }
+
 
         notifyPropertyChanged(BR.a206);
     }
