@@ -1688,6 +1688,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layoutDirection="ltr"
                             android:gravity="center_horizontal">
 
 
@@ -1699,6 +1700,7 @@
                                 android:enabled="false"
                                 android:text="@={form.b117}"
                                 android:textColor="#F40303"
+                                android:textDirection="ltr"
                                 android:textSize="14sp" />
                             <!--android:onClick="@{(v) -> callback.takePhoto()}"-->
                             <ImageButton

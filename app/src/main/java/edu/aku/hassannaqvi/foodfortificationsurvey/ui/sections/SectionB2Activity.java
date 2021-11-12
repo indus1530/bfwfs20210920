@@ -77,6 +77,8 @@ public class SectionB2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b2);
         bi.setCallback(this);
         bi.setForm(form);
+        if (!form.getB117().equals(""))
+            PhotoSerial = 2;
         db = MainApp.appInfo.getDbHelper();
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
