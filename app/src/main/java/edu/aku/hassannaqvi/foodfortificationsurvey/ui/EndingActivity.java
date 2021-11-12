@@ -34,7 +34,8 @@ public class EndingActivity extends AppCompatActivity {
         setSupportActionBar(bi.toolbar);
         setSupportActionBar(bi.toolbar);
         //setTitle(R.string.section1_mainheading);
-
+        if (MainApp.superuser)
+            bi.btnEnd.setText("End Review");
         db = MainApp.appInfo.dbHelper;
         boolean check = getIntent().getBooleanExtra("complete", false);
         //sectionMainCheck = getIntent().getIntExtra("status", 0);
@@ -92,6 +93,8 @@ public class EndingActivity extends AppCompatActivity {
 
 
     private boolean UpdateDB() {
+        if (MainApp.superuser) return true;
+
         int updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_ISTATUS, form.getiStatus());
         return updcount > 0;
     }
@@ -104,7 +107,13 @@ public class EndingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(getApplicationContext(), "Back Press Not Allowed", Toast.LENGTH_LONG).show();
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 }

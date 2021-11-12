@@ -1,13 +1,11 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.ui;
 
-import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.URDU;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp.sharedPref;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_COPY;
 import static edu.aku.hassannaqvi.foodfortificationsurvey.database.CreateTable.DATABASE_NAME;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -15,7 +13,6 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Environment;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Base64;
@@ -26,10 +23,6 @@ import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -67,7 +60,6 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivityLoginBinding;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.Users;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionB2Activity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -354,8 +346,9 @@ public class LoginActivity extends AppCompatActivity {
                     || (username.equals("test1234") && password.equals("test1234"))
                     || db.doLogin(username, password)
             ) {
-                MainApp.admin = username.contains("@") || username.contains("test1234");
                 MainApp.user.setUserName(username);
+                MainApp.admin = username.contains("@") || username.contains("test1234");
+                MainApp.superuser = MainApp.user.getDesignation().equals("Supervisor");
 
                 Intent iLogin = new Intent(edu.aku.hassannaqvi.foodfortificationsurvey.ui.LoginActivity.this, MainActivity.class);
                 startActivity(iLogin);

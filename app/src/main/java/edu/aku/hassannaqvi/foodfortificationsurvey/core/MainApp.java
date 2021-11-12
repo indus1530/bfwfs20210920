@@ -50,6 +50,7 @@ public class MainApp extends Application {
     public static AppInfo appInfo;
     public static Users user;
     public static Boolean admin = false;
+    public static Boolean superuser = false;
     public static List<JSONArray> uploadData;
     public static SharedPreferences.Editor editor;
     public static SharedPreferences sharedPref;

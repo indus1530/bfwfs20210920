@@ -80,11 +80,21 @@ public class FamilyMembers extends BaseObservable {
         setDeviceId(MainApp.deviceid);
         setAppver(MainApp.appInfo.getAppVersion());
         //  setAppver(MainApp.appInfo.getAppVersion());
-        //     setEbCode(MainApp.currentHousehold.getEbcode());
-        //    setHhid(MainApp.currentHousehold.getHhno());
+        //
+        //
 
     }
 
+    public void populateMeta() {
+
+        setSysDate(MainApp.form.getSysDate());
+        setUserName(MainApp.form.getUserName());
+        setDeviceId(MainApp.form.getDeviceId());
+        setUuid(MainApp.form.getUid());
+        setAppver(MainApp.form.getAppver());
+        setEbCode(MainApp.form.getEbCode());
+        setHhid(MainApp.form.getHhid());
+    }
 
     public String getProjectName() {
         return projectName;

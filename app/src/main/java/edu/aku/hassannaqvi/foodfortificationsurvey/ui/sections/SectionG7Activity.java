@@ -36,12 +36,15 @@ public class SectionG7Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g7);
         bi.setCallback(this);
         bi.setFoodConsumption(MainApp.foodConsumption.get(MainApp.foodIndex));
-
+        db = MainApp.appInfo.getDbHelper();
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
     }
 
 
     private boolean updateDB() {
-        db = MainApp.appInfo.getDbHelper();
+        if (MainApp.superuser) return true;
+
         long updcount = 0;
         try {
             updcount = db.updatesFoodConsumptionColumn(TableContracts.FoodConsumptionTable.COLUMN_SG7, MainApp.foodConsumption.get(MainApp.foodIndex).sG7toString());
@@ -87,8 +90,13 @@ public class SectionG7Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 

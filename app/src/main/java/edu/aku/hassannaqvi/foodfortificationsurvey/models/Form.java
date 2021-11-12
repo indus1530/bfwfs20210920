@@ -409,6 +409,16 @@ public class Form extends BaseObservable implements Observable {
     }
 
 
+    public void populateMeta() {
+
+        setSysDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).format(new Date().getTime()));
+        setUserName(MainApp.user.getUserName());
+        setDeviceId(MainApp.deviceid);
+        //   setUuid(MainApp.form.getUid());  // not applicable in Form table
+        setAppver(MainApp.appInfo.getAppVersion());
+
+    }
+
     public String getProjectName() {
         return projectName;
     }
@@ -630,9 +640,6 @@ public class Form extends BaseObservable implements Observable {
     public void setsF3(String sF3) {
         this.sF3 = sF3;
     }
-
-
-
 
 
     @Bindable
@@ -4770,7 +4777,6 @@ public class Form extends BaseObservable implements Observable {
     }
 
 
-
     public String sA1toString() throws JSONException {
         Log.d(TAG, "sA1toString: ");
         JSONObject json = new JSONObject();
@@ -5164,7 +5170,6 @@ public class Form extends BaseObservable implements Observable {
                 .put("f314", f314);
         return json.toString();
     }
-
 
 
     public JSONObject toJSONObject() throws JSONException {

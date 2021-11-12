@@ -39,7 +39,8 @@ public class SectionA31Activity extends AppCompatActivity {
         bi.setCallback(this);
         bi.setForm(form);
         db = MainApp.appInfo.getDbHelper();
-
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
         setListener();
 
     }
@@ -54,6 +55,8 @@ public class SectionA31Activity extends AppCompatActivity {
 
 
     private boolean updateDB() {
+        if (MainApp.superuser) return true;
+
         long updcount = 0;
         try {
             updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA3, form.sA3toString());
@@ -92,8 +95,13 @@ public class SectionA31Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 

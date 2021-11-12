@@ -1,6 +1,8 @@
 package edu.aku.hassannaqvi.foodfortificationsurvey.adapters;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +17,7 @@ import java.util.List;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
+import edu.aku.hassannaqvi.foodfortificationsurvey.ui.sections.SectionA2Activity;
 
 
 public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdapter.ViewHolder> {
@@ -95,22 +98,16 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
             indexedBar.setVisibility(members.getIndexed().equals("") ? View.GONE : View.VISIBLE);
         }
         //fMaritalStatus.setText("Children: " + familyMember.getH226m() + " boy(s), " + familyMember.getH226f() + " girl(s)");
-      /*  viewHolder.itemView.setOnClickListener(v -> {
+        viewHolder.itemView.setOnClickListener(v -> {
             // Get the current state of the item
 
-            MainApp.familyMember = MainApp.familyMember.get(position);
-            Intent intent = new Intent(mContext, SectionBActivity.class);
-
-            intent.putExtra("position", position);
-
-            MainApp.selectedFemale = position;
-
-            intent.putExtra("position", position);
+            MainApp.familyMember = MainApp.familyList.get(position);
+            Intent intent = new Intent(mContext, SectionA2Activity.class);
 
             ((Activity) mContext).startActivityForResult(intent, 2);
 
 
-        });*/
+        });
 
     }
 

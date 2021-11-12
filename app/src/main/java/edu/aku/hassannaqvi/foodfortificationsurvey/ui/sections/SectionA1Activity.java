@@ -43,6 +43,8 @@ public class SectionA1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a1);
         bi.setCallback(this);
         bi.setForm(form);
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
         db = MainApp.appInfo.dbHelper;
         form.setA102(String.valueOf(new SimpleDateFormat("HH:mm:ss", Locale.ENGLISH).format(new Date().getTime())));
 
@@ -68,7 +70,8 @@ public class SectionA1Activity extends AppCompatActivity {
 
 
     private boolean insertNewRecord() {
-        if (!form.getUid().equals("")) return true;
+        if (!form.getUid().equals("") || MainApp.superuser) return true;
+        MainApp.form.populateMeta();
         long rowId = 0;
         try {
             rowId = db.addForm(form);
@@ -89,6 +92,8 @@ public class SectionA1Activity extends AppCompatActivity {
     }
 
     private boolean updateDB() {
+        if (MainApp.superuser) return true;
+
         int updcount = 0;
         try {
             updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SA1, form.sA1toString());
@@ -138,8 +143,13 @@ public class SectionA1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
+        // Allow BackPress
+        super.onBackPressed();
+
+        // Dont Allow BackPress
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
     }
 
 

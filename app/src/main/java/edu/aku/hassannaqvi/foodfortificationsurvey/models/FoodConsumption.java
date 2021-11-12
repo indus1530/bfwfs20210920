@@ -31,6 +31,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     private String id = StringUtils.EMPTY;
     private String uid = StringUtils.EMPTY;
     private String uuid = StringUtils.EMPTY;
+    private String fmuid = StringUtils.EMPTY;
     private String userName = StringUtils.EMPTY;
     private String sysDate = StringUtils.EMPTY;
     private String ebCode = StringUtils.EMPTY;
@@ -181,10 +182,21 @@ public class FoodConsumption extends BaseObservable implements Observable {
         setUserName(MainApp.user.getUserName());
         setDeviceId(MainApp.deviceid);
         setAppver(MainApp.appInfo.getAppVersion());
-      // setAppver(MainApp.appInfo.getAppVersion());
+        // setAppver(MainApp.appInfo.getAppVersion());
 
     }
 
+    public void populateMeta() {
+
+        setSysDate(MainApp.form.getSysDate());
+        setUserName(MainApp.form.getUserName());
+        setDeviceId(MainApp.form.getDeviceId());
+        setUuid(MainApp.form.getUid());
+        // setFmuid(MainApp.familyMember.getUid());  // implemented in Section C1 Activity after populateMeta
+        setAppver(MainApp.form.getAppver());
+        setEbCode(MainApp.form.getEbCode());
+        setHhid(MainApp.form.getHhid());
+    }
 
     public String getProjectName() {
         return projectName;
@@ -216,6 +228,14 @@ public class FoodConsumption extends BaseObservable implements Observable {
 
     public void setUuid(String uuid) {
         this.uuid = uuid;
+    }
+
+    public String getFmuid() {
+        return fmuid;
+    }
+
+    public void setFmuid(String fmuid) {
+        this.fmuid = fmuid;
     }
 
     @Bindable
@@ -1589,6 +1609,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
             JSONObject json = null;
             json = new JSONObject(string);
             this.c1res = json.getString("c1res");
+            this.fmuid = json.has("fmuid") ? json.getString("fmuid") : "";
             this.c1011 = json.getString("c1011");
             this.c1012 = json.getString("c1012");
             this.c1013 = json.getString("c1013");
@@ -1766,6 +1787,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
         JSONObject json = new JSONObject();
 
         json.put("c1res", c1res)
+                .put("fmuid", fmuid)
                 .put("c1011", c1011)
                 .put("c1012", c1012)
                 .put("c1013", c1013)

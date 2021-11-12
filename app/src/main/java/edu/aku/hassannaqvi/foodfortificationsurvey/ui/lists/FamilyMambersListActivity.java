@@ -21,7 +21,6 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 
-import edu.aku.hassannaqvi.foodfortificationsurvey.MainActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.R;
 import edu.aku.hassannaqvi.foodfortificationsurvey.adapters.FamilyMembersAdapter;
 import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
@@ -46,7 +45,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             new ActivityResultCallback<ActivityResult>() {
                 @Override
                 public void onActivityResult(ActivityResult result) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
+                    if (result.getResultCode() == Activity.RESULT_OK && !MainApp.superuser) {
                         // There are no request codes
                         //Intent data = result.getData();
                         Intent data = result.getData();
@@ -116,7 +115,8 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_mwra);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_family_list);
         bi.setCallback(this);
-
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
         db = MainApp.appInfo.dbHelper;
         MainApp.familyList = new ArrayList<>();
         MainApp.mwraList = new ArrayList<Integer>();
@@ -170,9 +170,10 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         for (int i = 0; i < MainApp.familyList.size(); i++) {
             if (MainApp.familyList.get(i).getIndexed().equals("1")) {
                 MainApp.selectedMWRA = String.valueOf(i);
-
                 bi.btnRand.setVisibility(View.INVISIBLE);
-                bi.btnContinue.setVisibility(View.VISIBLE);
+                //bi.btnContinue.setVisibility(View.VISIBLE);
+                bi.btnContinue.setEnabled(true);
+                bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_green));
                 // break;
             }
             if (MainApp.familyList.get(i).getIndexed().equals("2"))
@@ -182,7 +183,9 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         }
 
         bi.btnContinue.setEnabled(!MainApp.selectedMWRA.equals(""));
-        bi.btnContinue.setVisibility(!MainApp.selectedMWRA.equals("") ? View.VISIBLE : View.INVISIBLE);
+        bi.btnContinue.setBackground(!MainApp.selectedMWRA.equals("") ? getResources().getDrawable(R.drawable.button_shape_green) : getResources().getDrawable(R.drawable.button_shape_gray));
+
+        //bi.btnContinue.setVisibility(!MainApp.selectedMWRA.equals("") ? View.VISIBLE : View.INVISIBLE);
         MainApp.memberCount = Math.round(MainApp.familyList.size());
 
         familyMembersAdapter = new FamilyMembersAdapter(this, MainApp.familyList);
@@ -194,7 +197,10 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!MainApp.form.getiStatus().equals("1") || MainApp.selectedMWRA.equals("")) {
+                if (MainApp.superuser) {
+                    Toast.makeText(FamilyMambersListActivity.this, "Supervisors cannot add new members.", Toast.LENGTH_LONG).show();
+
+                } else if (!MainApp.form.getiStatus().equals("1") || MainApp.selectedMWRA.equals("")) {
                     //     Toast.makeText(MwraActivity.this, "Opening Mwra Form", Toast.LENGTH_LONG).show();
                     MainApp.familyMember = new FamilyMembers();
                     addFemale();
@@ -217,11 +223,16 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         if (MainApp.mwraList.size() > 0 && MainApp.selectedMWRA.equals("")) {
             //MainApp.fm.get(Integer.parseInt(String.valueOf(MainApp.selectedMWRA))).setStatus("1");
             bi.btnRand.setVisibility(View.VISIBLE);
-            bi.btnContinue.setVisibility(View.INVISIBLE);
+            // bi.btnContinue.setVisibility(View.INVISIBLE);
+            bi.btnContinue.setEnabled(false);
+            bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_gray));
 
         } else {
             bi.btnRand.setVisibility(View.INVISIBLE);
-            bi.btnContinue.setVisibility(View.VISIBLE);
+            // bi.btnContinue.setVisibility(View.VISIBLE);
+            bi.btnContinue.setEnabled(true);
+            bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_green));
+
         }
         checkCompleteFm();
 
@@ -321,8 +332,9 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         familyMembersAdapter.notifyDataSetChanged();
 
         bi.btnRand.setVisibility(View.INVISIBLE);
-        bi.btnContinue.setVisibility(View.VISIBLE);
+        // bi.btnContinue.setVisibility(View.VISIBLE);
         bi.btnContinue.setEnabled(true);
+        bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_green));
 
 
     }
@@ -380,7 +392,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
     public void btnEnd(View view) {
 
         finish();
-        startActivity(new Intent(this, MainActivity.class));
+        // startActivity(new Intent(this, MainActivity.class));
         /*   } else {
                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show()
            }*/

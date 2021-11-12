@@ -44,6 +44,8 @@ public class SectionA2Activity extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a2);
         bi.setCallback(this);
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
         familyMember.setA201(String.valueOf(memberCount + 1));
 
         // first is always head of household
@@ -156,6 +158,11 @@ public class SectionA2Activity extends AppCompatActivity {
 
     private boolean insertNewRecord() {
         if (!familyMember.getUid().equals("")) return true;
+        if (MainApp.superuser) return true;
+
+        // Populate MetaData from MainApp.Forms and any other master tables
+        MainApp.familyMember.populateMeta();
+
         long rowId = 0;
         try {
             rowId = db.addFamilyMembers(familyMember);
@@ -176,6 +183,8 @@ public class SectionA2Activity extends AppCompatActivity {
     }
 
     private boolean updateDB() {
+        if (MainApp.superuser) return true;
+
         int updcount = 0;
         try {
             updcount = db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_SA2, familyMember.sA2toString());
@@ -192,6 +201,7 @@ public class SectionA2Activity extends AppCompatActivity {
 
 
     public void btnContinue(View view) {
+
         if (!formValidation()) return;
         if (MainApp.familyMember.getUid().equals("") ? insertNewRecord() : updateDB()) {
             setResult(RESULT_OK);
@@ -214,9 +224,14 @@ public class SectionA2Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
+        // Allow BackPress
+        setResult(Activity.RESULT_CANCELED);
+        finish();
+        super.onBackPressed();
+
+        // Dont Allow BackPress
         // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
     }
-
-
 }

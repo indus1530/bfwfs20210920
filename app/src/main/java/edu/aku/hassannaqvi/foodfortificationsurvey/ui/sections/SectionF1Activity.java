@@ -37,12 +37,15 @@ public class SectionF1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f1);
         bi.setCallback(this);
         bi.setForm(form);
-
+        db = MainApp.appInfo.getDbHelper();
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
     }
 
 
     private boolean updateDB() {
-        db = MainApp.appInfo.getDbHelper();
+        if (MainApp.superuser) return true;
+
         long updcount = 0;
         try {
             updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SF1, form.sF1toString());
@@ -81,8 +84,13 @@ public class SectionF1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 

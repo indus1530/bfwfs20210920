@@ -120,9 +120,13 @@ public class SyncActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
+        // Allow BackPress
         super.onBackPressed();
-        setResult(RESULT_OK);
-        finish();
+
+        // Dont Allow BackPress
+        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
     @SuppressLint("NonConstantResourceId")

@@ -46,10 +46,15 @@ public class SectionG1Activity extends AppCompatActivity {
         String respName = MainApp.foodIndex == 0 ? motherName : childName;
         bi.g101info.setText(String.format(getResources().getString(R.string.g101info), respName));
 
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
     }
 
 
     private boolean updateDB() {
+
+        if (MainApp.superuser) return true;
+
         long updcount = 0;
         try {
             updcount = db.updatesFoodConsumptionColumn(TableContracts.FoodConsumptionTable.COLUMN_SG1, MainApp.foodConsumption.get(MainApp.foodIndex).sG1toString());
@@ -88,8 +93,13 @@ public class SectionG1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 

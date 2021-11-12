@@ -38,7 +38,8 @@ public class SectionC1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c1);
         bi.setCallback(this);
         db = MainApp.appInfo.getDbHelper();
-
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
         MainApp.foodIndex++;
         // Mother
         if (MainApp.foodIndex == 0) {
@@ -64,6 +65,24 @@ public class SectionC1Activity extends AppCompatActivity {
 
     private boolean insertNewRecord() {
         if (!MainApp.foodConsumption.get(MainApp.foodIndex).getUid().equals("")) return true;
+        if (MainApp.superuser) return true;
+
+        MainApp.foodConsumption.get(MainApp.foodIndex).populateMeta();
+        String memberPosition = "";
+        switch (MainApp.foodIndex) {
+            case 0:
+                memberPosition = MainApp.selectedMWRA;
+                break;
+            case 1:
+                memberPosition = MainApp.selectedChild;
+                break;
+            default:
+                memberPosition = "0";
+        }
+
+
+        MainApp.foodConsumption.get(MainApp.foodIndex).setFmuid(MainApp.familyList.get(Integer.parseInt(memberPosition)).getUid());
+
         long rowId = 0;
         try {
 
@@ -111,6 +130,8 @@ public class SectionC1Activity extends AppCompatActivity {
     }
 
     private boolean updateDB() {
+        if (MainApp.superuser) return true;
+
         int updcount = 0;
         try {
             updcount = db.updatesFoodConsumptionColumn(TableContracts.FoodConsumptionTable.COLUMN_SC1, MainApp.foodConsumption.get(MainApp.foodIndex).sC1toString());
@@ -160,8 +181,13 @@ public class SectionC1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 

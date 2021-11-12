@@ -81,7 +81,8 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:hint="@string/a105"
+                                android:hint="########### - 11 digits"
+
                                 android:inputType="number" />
 
                             <Button
@@ -180,7 +181,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:hint="@string/a110"
+                                    android:hint="###-##"
                                     android:inputType="number"
                                     app:mask="###-##" />
 

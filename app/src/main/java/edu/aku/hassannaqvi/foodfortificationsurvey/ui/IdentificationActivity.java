@@ -50,8 +50,10 @@ public class IdentificationActivity extends AppCompatActivity {
         setTheme(sharedPref.getString("lang", "1").equals("1") ? R.style.AppThemeEnglish1 : R.style.AppThemeUrdu);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_identification);
         bi.setCallback(this);
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
         db = MainApp.appInfo.dbHelper;
-       // populateSpinner();
+        // populateSpinner();
 
         openIntent = new Intent();
         switch (MainApp.idType) {
@@ -180,10 +182,15 @@ public class IdentificationActivity extends AppCompatActivity {
         if (!formValidation()) return;
         switch (MainApp.idType) {
             case 1:
-                if (!hhExists())
+                if (!hhExists()) {
                     saveDraftForm();
-                finish();
-                startActivity(openIntent);
+                }
+                if (MainApp.form.getSynced().equals("1") && !MainApp.superuser) { // Do not allow synced form to be edited
+                    Toast.makeText(this, "This form has been locked.", Toast.LENGTH_SHORT).show();
+                } else {
+                    finish();
+                    startActivity(openIntent);
+                }
                 break;
           /*  case 2:
                 if (hhExists()) {
@@ -385,5 +392,16 @@ public class IdentificationActivity extends AppCompatActivity {
             bi.ahhead.setText(null);
             bi.fldGrpHH.setVisibility(View.GONE);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        // Allow BackPress
+        super.onBackPressed();
+
+        // Dont Allow BackPress
+        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 }

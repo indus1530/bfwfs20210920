@@ -26,11 +26,8 @@ import edu.aku.hassannaqvi.foodfortificationsurvey.contracts.TableContracts;
 import edu.aku.hassannaqvi.foodfortificationsurvey.core.MainApp;
 import edu.aku.hassannaqvi.foodfortificationsurvey.database.DatabaseHelper;
 import edu.aku.hassannaqvi.foodfortificationsurvey.databinding.ActivitySectionB2Binding;
-import edu.aku.hassannaqvi.foodfortificationsurvey.models.FamilyMembers;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.EndingActivity;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.LoginActivity;
 import edu.aku.hassannaqvi.foodfortificationsurvey.ui.TakePhoto;
-import edu.aku.hassannaqvi.foodfortificationsurvey.ui.lists.FamilyMambersListActivity;
 
 
 public class SectionB2Activity extends AppCompatActivity {
@@ -81,11 +78,15 @@ public class SectionB2Activity extends AppCompatActivity {
         bi.setCallback(this);
         bi.setForm(form);
         db = MainApp.appInfo.getDbHelper();
+        if (MainApp.superuser)
+            bi.btnContinue.setText("Review Next");
     }
 
 
     private boolean updateDB() {
-        db = MainApp.appInfo.getDbHelper();
+
+        if (MainApp.superuser) return true;
+
         long updcount = 0;
         try {
             updcount = db.updatesFormColumn(TableContracts.FormsTable.COLUMN_SB1, form.sB1toString());
@@ -138,6 +139,11 @@ public class SectionB2Activity extends AppCompatActivity {
             }
 
         }
+
+        if (bi.b11301.isChecked() && PhotoSerial < 2) {
+            Validator.emptyCustomTextBox(this, bi.b117, "Two photos of packaging are required.");
+            return false;
+        }
         return true;
     }
 
@@ -160,8 +166,13 @@ public class SectionB2Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
-        setResult(RESULT_CANCELED);
+
+        // Allow BackPress
+        // super.onBackPressed();
+
+        // Dont Allow BackPress
+        Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
+
     }
 
 }

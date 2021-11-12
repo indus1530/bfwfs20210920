@@ -112,6 +112,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_DEVICETAGID, form.getDeviceTag());
         values.put(FormsTable.COLUMN_DEVICEID, form.getDeviceId());
         values.put(FormsTable.COLUMN_APPVERSION, form.getAppver());
+        values.put(FormsTable.COLUMN_SYNCED, form.getSynced());
+        values.put(FormsTable.COLUMN_SYNCED_DATE, form.getSyncDate());
 
 
         // Insert the new row, returning the primary key value of the new row
@@ -290,6 +292,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 UsersTable.COLUMN_USERNAME,
                 UsersTable.COLUMN_PASSWORD,
                 UsersTable.COLUMN_FULLNAME,
+                UsersTable.COLUMN_DESIGNATION,
         };
         String whereClause = UsersTable.COLUMN_USERNAME + "=? AND " + UsersTable.COLUMN_PASSWORD + "=?";
         String[] whereArgs = {username, password};
@@ -297,7 +300,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
         String orderBy = UsersTable.COLUMN_ID + " ASC";
 
-        Users loggedInUser = null;
+        Users loggedInUser = new Users();
         try {
             c = db.query(
                     UsersTable.TABLE_NAME,  // The table to query
@@ -514,6 +517,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values.put(UsersTable.COLUMN_USERNAME, user.getUserName());
                 values.put(UsersTable.COLUMN_PASSWORD, user.getPassword());
                 values.put(UsersTable.COLUMN_FULLNAME, user.getFullname());
+                values.put(UsersTable.COLUMN_DESIGNATION, user.getDesignation());
                 long rowID = db.insert(UsersTable.TABLE_NAME, null, values);
                 if (rowID != -1) insertCount++;
             }
@@ -595,7 +599,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String whereClause;
         //whereClause = null;
-        whereClause = FormsTable.COLUMN_SYNCED + " is null AND " +
+        whereClause = FormsTable.COLUMN_SYNCED + " = '' AND " +
                 FormsTable.COLUMN_ISTATUS + "!= ''";
 
         String[] whereArgs = null;
@@ -1152,7 +1156,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = FamilyMemberListTable.COLUMN_ID + " ASC";
 
         ArrayList<FamilyMembers> membersByUID = new ArrayList<>();
-        try {
             c = db.query(
                     FamilyMemberListTable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
@@ -1167,14 +1170,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                 membersByUID.add(mwra);
             }
-        } finally {
-            if (c != null) {
                 c.close();
-            }
-            if (db != null) {
                 db.close();
-            }
-        }
+
         return membersByUID;
     }
 
