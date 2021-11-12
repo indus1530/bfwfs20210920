@@ -353,6 +353,7 @@ public class FamilyMembers extends BaseObservable {
         if (a205y.equals("9998")) {
             setA205m("98");
             setA206("");
+            setAgeInMonth("0");
         }
         // Calculate age
         CaluculateAge();
@@ -617,7 +618,7 @@ public class FamilyMembers extends BaseObservable {
 
                 Log.d(TAG, "CaluculateAge: " + (mYear) + "-" + mMonth + "-" + mDay);
 */
-                setAgeInMonth(String.valueOf(cal.get(Calendar.MONTH)));
+                setAgeInMonth(String.valueOf(MILLISECONDS.toDays(millis) / 30));
                 long tYear = MILLISECONDS.toDays(millis) / 365;
                 long tMonth = (MILLISECONDS.toDays(millis) - (tYear * 365)) / 30;
                 long tDay = MILLISECONDS.toDays(millis) - ((tYear * 365) + (tMonth * 30));
