@@ -1130,8 +1130,9 @@
                 <!-- a212  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa212"
-                    android:visibility="@{!member.a206.equals(``)?Integer.parseInt(member.a206) &lt; 18?View.VISIBLE:View.GONE:View.GONE}"
+                    android:visibility="@{!member.ageInMonth.equals(``)?Integer.parseInt(member.ageInMonth)>=6 &amp;&amp; Integer.parseInt(member.ageInMonth) &lt;=216?View.VISIBLE:View.GONE:View.GONE}"
                     style="@style/cardView">
+                    <!--                    android:visibility="@{!member.a206.equals(``)?Integer.parseInt(member.a206) &lt; 18?View.VISIBLE:View.GONE:View.GONE}"-->
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1168,7 +1169,7 @@
                 <!-- a213  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVa213"
-                    android:visibility="@{!member.a206.equals(``)?Integer.parseInt(member.a206) &lt; 18?View.VISIBLE:View.GONE:View.GONE}"
+                    android:visibility="@{!member.ageInMonth.equals(``)?Integer.parseInt(member.ageInMonth)>=6 &amp;&amp; Integer.parseInt(member.ageInMonth) &lt;=216?View.VISIBLE:View.GONE:View.GONE}"
                     style="@style/cardView">
 
                     <LinearLayout

@@ -68,6 +68,7 @@ public class FamilyMembers extends BaseObservable {
     private String a211 = StringUtils.EMPTY;
     private String a212 = StringUtils.EMPTY;
     private String a213 = StringUtils.EMPTY;
+    private String ageInMonth = StringUtils.EMPTY;
     private boolean expanded;
     private boolean mwra;
 
@@ -379,6 +380,24 @@ public class FamilyMembers extends BaseObservable {
     }
 
     @Bindable
+    public String getAgeInMonth() {
+        return ageInMonth;
+    }
+
+    public void setAgeInMonth(String ageInMonth) {
+        this.ageInMonth = ageInMonth;
+        if (Integer.parseInt(ageInMonth) >= 6 && Integer.parseInt(ageInMonth) <= 216) {
+        /*    setA207t(this.a207t);
+            setA208t(this.a208t);*/
+        } else {
+            setA207t("");
+            setA208t("");
+        }
+
+        notifyPropertyChanged(BR.ageInMonth);
+    }
+
+    @Bindable
     public String getA207t() {
         return a207t;
     }
@@ -598,6 +617,7 @@ public class FamilyMembers extends BaseObservable {
 
                 Log.d(TAG, "CaluculateAge: " + (mYear) + "-" + mMonth + "-" + mDay);
 */
+                setAgeInMonth(String.valueOf(cal.get(Calendar.MONTH)));
                 long tYear = MILLISECONDS.toDays(millis) / 365;
                 long tMonth = (MILLISECONDS.toDays(millis) - (tYear * 365)) / 30;
                 long tDay = MILLISECONDS.toDays(millis) - ((tYear * 365) + (tMonth * 30));
