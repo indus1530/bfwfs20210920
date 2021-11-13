@@ -131,6 +131,7 @@ public class DataDownWorkerALL extends Worker {
                 Log.d(TAG, "Content Length: " + length);
 
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+//                InputStream in = new GZIPInputStream(urlConnection.getInputStream());
 
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
