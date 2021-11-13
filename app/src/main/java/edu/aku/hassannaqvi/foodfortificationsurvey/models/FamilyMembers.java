@@ -391,12 +391,14 @@ public class FamilyMembers extends BaseObservable {
 
     public void setAgeInMonth(String ageInMonth) {
         this.ageInMonth = ageInMonth;
-        if (Integer.parseInt(ageInMonth) >= 6 && Integer.parseInt(ageInMonth) <= 216) {
+        if (!ageInMonth.equals("")) {
+            if (Integer.parseInt(ageInMonth) >= 6 && Integer.parseInt(ageInMonth) <= 216) {
         /*    setA207t(this.a207t);
             setA208t(this.a208t);*/
-        } else {
-            setA207t("");
-            setA208t("");
+            } else {
+                setA207t("");
+                setA208t("");
+            }
         }
 
         notifyPropertyChanged(BR.ageInMonth);
@@ -557,15 +559,15 @@ public class FamilyMembers extends BaseObservable {
         json.put(FamilyMemberListTable.COLUMN_HHID, this.hhid);
         json.put(FamilyMemberListTable.COLUMN_USERNAME, this.userName);
         json.put(FamilyMemberListTable.COLUMN_SYSDATE, this.sysDate);
-            json.put(FamilyMemberListTable.COLUMN_INDEXED, this.indexed);
-            json.put(FamilyMemberListTable.COLUMN_DEVICEID, this.deviceId);
-            json.put(FamilyMemberListTable.COLUMN_DEVICETAGID, this.deviceTag);
-            json.put(FamilyMemberListTable.COLUMN_ISTATUS, this.iStatus);
-            //  json.put(FamilyMemberListTable.COLUMN_SYNCED, this.synced);
-            //  json.put(FamilyMemberListTable.COLUMN_SYNCED_DATE, this.syncDate);
+        json.put(FamilyMemberListTable.COLUMN_INDEXED, this.indexed);
+        json.put(FamilyMemberListTable.COLUMN_DEVICEID, this.deviceId);
+        json.put(FamilyMemberListTable.COLUMN_DEVICETAGID, this.deviceTag);
+        json.put(FamilyMemberListTable.COLUMN_ISTATUS, this.iStatus);
+        //  json.put(FamilyMemberListTable.COLUMN_SYNCED, this.synced);
+        //  json.put(FamilyMemberListTable.COLUMN_SYNCED_DATE, this.syncDate);
 
-            json.put(FamilyMemberListTable.COLUMN_SA2, new JSONObject(sA2toString()));
-            return json;
+        json.put(FamilyMemberListTable.COLUMN_SA2, new JSONObject(sA2toString()));
+        return json;
 
     }
 

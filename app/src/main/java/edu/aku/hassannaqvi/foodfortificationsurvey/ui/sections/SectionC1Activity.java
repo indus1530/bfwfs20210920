@@ -41,13 +41,20 @@ public class SectionC1Activity extends AppCompatActivity {
         if (MainApp.superuser)
             bi.btnContinue.setText("Review Next");
         MainApp.foodIndex++;
+
+        String motherName = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA)).getA202();
+        String childName = MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).getA202();
+
         // Mother
         if (MainApp.foodIndex == 0) {
+
+            bi.c1res01.setText(motherName);
             bi.c1res01.setVisibility(View.VISIBLE);
             bi.c1res02.setVisibility(View.GONE);
         }
         // Child
         else if (MainApp.foodIndex == 1) {
+            bi.c1res01.setText(childName);
             bi.c1res01.setVisibility(View.GONE);
             bi.c1res02.setVisibility(View.VISIBLE);
         }

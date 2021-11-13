@@ -11,11 +11,10 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
 
@@ -95,6 +94,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                         }*/
                         MainApp.memberCount++;
                         familyMembersAdapter.notifyItemInserted(MainApp.familyList.size() - 1);
+                        //familyMembersAdapter.notifyItemInserted(Integer.parseInt(MainApp.familyMember.getA213())-1);
                         //  Collections.sort(MainApp.fm, new SortByStatus());
                         //fmAdapter.notifyDataSetChanged();
 
@@ -182,6 +182,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
         }
 
+        bi.familyComplete.setChecked(!MainApp.selectedMWRA.equals(""));
         bi.btnContinue.setEnabled(!MainApp.selectedMWRA.equals(""));
         bi.btnContinue.setBackground(!MainApp.selectedMWRA.equals("") ? getResources().getDrawable(R.drawable.button_shape_green) : getResources().getDrawable(R.drawable.button_shape_gray));
 
@@ -193,14 +194,13 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         bi.rvMwra.setLayoutManager(new LinearLayoutManager(this));
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        bi.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (MainApp.superuser) {
                     Toast.makeText(FamilyMambersListActivity.this, "Supervisors cannot add new members.", Toast.LENGTH_LONG).show();
 
-                } else if (!MainApp.form.getiStatus().equals("1") || MainApp.selectedMWRA.equals("")) {
+                } else if ((!MainApp.form.getiStatus().equals("1") || MainApp.selectedMWRA.equals("")) && !bi.familyComplete.isChecked()) {
                     //     Toast.makeText(MwraActivity.this, "Opening Mwra Form", Toast.LENGTH_LONG).show();
                     MainApp.familyMember = new FamilyMembers();
                     addFemale();
@@ -220,9 +220,9 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
         //MainApp.familyMember = new MWRA();
         //MainApp.child = new Child();
-        if (MainApp.mwraList.size() > 0 && MainApp.selectedMWRA.equals("")) {
+      /*  if (MainApp.mwraList.size() > 0 && MainApp.selectedMWRA.equals("")) {
             //MainApp.fm.get(Integer.parseInt(String.valueOf(MainApp.selectedMWRA))).setStatus("1");
-            bi.btnRand.setVisibility(View.VISIBLE);
+           bi.btnRand.setVisibility(View.VISIBLE);
             // bi.btnContinue.setVisibility(View.INVISIBLE);
             bi.btnContinue.setEnabled(false);
             bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_gray));
@@ -233,7 +233,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             bi.btnContinue.setEnabled(true);
             bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_green));
 
-        }
+        }*/
         checkCompleteFm();
 
 
@@ -279,7 +279,9 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         }
         //MainApp.familyList = new ArrayList<>();
         finish();
-        startActivity(new Intent(this, MainApp.selectedMWRA.equals("") ? EndingActivity.class : SectionA31Activity.class).putExtra("complete", true));
+        Intent i = new Intent(this, MainApp.selectedMWRA.equals("") ? EndingActivity.class : SectionA31Activity.class);
+        i.putExtra("complete", !MainApp.selectedMWRA.equals(""));
+        startActivity(i);
 
         //MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA));
 
@@ -419,9 +421,38 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 /*        if (MainApp.familyList.size() < Integer.parseInt(MainApp.form.getH220b())) {
             displayProceedDialog();
         } else {*/
-        proceedSelect();
+        if (MainApp.mwraList.size() > 0 && MainApp.selectedMWRA.equals("")) {
+            proceedSelect();
+        } else {
+            bi.btnRand.setVisibility(View.VISIBLE);
+        }
         /*       }*/
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == RESULT_OK)
 
+            // A213 is line number
+            familyMembersAdapter.notifyItemInserted(Integer.parseInt(MainApp.familyMember.getA213()) - 1);
+
+    }
+
+    public void finalizeFamily(View view) {
+        if (MainApp.mwraList.size() > 0 && MainApp.selectedMWRA.equals("")) {
+            //MainApp.fm.get(Integer.parseInt(String.valueOf(MainApp.selectedMWRA))).setStatus("1");
+            bi.btnRand.setVisibility(View.VISIBLE);
+            // bi.btnContinue.setVisibility(View.INVISIBLE);
+            bi.btnContinue.setEnabled(false);
+            bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_gray));
+
+        } else {
+            bi.btnRand.setVisibility(View.INVISIBLE);
+            // bi.btnContinue.setVisibility(View.VISIBLE);
+            bi.btnContinue.setEnabled(true);
+            bi.btnContinue.setBackground(getResources().getDrawable(R.drawable.button_shape_green));
+
+        }
+    }
 }

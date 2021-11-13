@@ -57,7 +57,7 @@ public class SectionB2Activity extends AppCompatActivity {
 
                         //TODO: Implement functionality below when photo was not taken
                         // ...
-                        bi.b117.setText("Photo not taken.");
+                        // bi.b117.setText("Photo not taken.");
                     }
 
                     if (result.getResultCode() == Activity.RESULT_CANCELED) {
