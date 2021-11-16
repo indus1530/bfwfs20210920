@@ -250,6 +250,7 @@
                                 android:text="@={foodConsumption.c101204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1011.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -461,6 +462,7 @@
                                 android:text="@={foodConsumption.c102204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1021.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -673,6 +675,7 @@
                                 android:text="@={foodConsumption.c103204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1031.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -885,6 +888,7 @@
                                 android:text="@={foodConsumption.c104204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1041.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1097,6 +1101,7 @@
                                 android:text="@={foodConsumption.c105204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1051.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1309,6 +1314,7 @@
                                 android:text="@={foodConsumption.c106204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1061.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1521,6 +1527,7 @@
                                 android:text="@={foodConsumption.c107204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1071.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1733,6 +1740,7 @@
                                 android:text="@={foodConsumption.c108204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1081.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -1945,6 +1953,7 @@
                                 android:text="@={foodConsumption.c109204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1091.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -2157,6 +2166,7 @@
                                 android:text="@={foodConsumption.c110204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1101.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -2369,6 +2379,7 @@
                                 android:text="@={foodConsumption.c111204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1111.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -2573,6 +2584,7 @@
                                 android:text="@={foodConsumption.c112204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1121.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>
@@ -2777,6 +2789,7 @@
                                 android:text="@={foodConsumption.c113204x}"
                                 app:maxValue="99"
                                 app:minValue="1"
+                                android:visibility="@{foodConsumption.c1131.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:type="range" />
 
                         </LinearLayout>

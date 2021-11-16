@@ -1298,7 +1298,258 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="(mg/kg) ملی گرام/کلوگرام " />
-                        <!--B11601-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/b116check"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:tag="0">
+
+                                <CheckBox
+                                    android:id="@+id/b11601"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11601.equals(`1`)}"
+                                    android:onClick="@{()->form.setB11601(form.b11601.equals(`1`)?``:`1`)}"
+                                    android:text="@string/b11601" />
+
+                                <CheckBox
+                                    android:id="@+id/b11602"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11602.equals(`2`)}"
+                                    android:onClick="@{()->form.setB11602(form.b11602.equals(`2`)?``:`2`)}"
+                                    android:text="@string/b11602" />
+
+                                <CheckBox
+                                    android:id="@+id/b11603"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11603.equals(`3`)}"
+                                    android:onClick="@{()->form.setB11603(form.b11603.equals(`3`)?``:`3`)}"
+                                    android:text="@string/b11603" />
+
+                                <CheckBox
+                                    android:id="@+id/b11604"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11604.equals(`4`)}"
+                                    android:onClick="@{()->form.setB11604(form.b11604.equals(`4`)?``:`4`)}"
+                                    android:text="@string/b11604" />
+
+                                <CheckBox
+                                    android:id="@+id/b11605"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11605.equals(`5`)}"
+                                    android:onClick="@{()->form.setB11605(form.b11605.equals(`5`)?``:`5`)}"
+                                    android:text="@string/b11605" />
+
+                                <CheckBox
+                                    android:id="@+id/b11606"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11606.equals(`6`)}"
+                                    android:onClick="@{()->form.setB11606(form.b11606.equals(`6`)?``:`6`)}"
+                                    android:text="@string/b11606" />
+
+                                <CheckBox
+                                    android:id="@+id/b11607"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11607.equals(`7`)}"
+                                    android:onClick="@{()->form.setB11607(form.b11607.equals(`7`)?``:`7`)}"
+                                    android:text="@string/b11607" />
+
+                                <CheckBox
+                                    android:id="@+id/b11608"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11608.equals(`8`)}"
+                                    android:onClick="@{()->form.setB11608(form.b11608.equals(`8`)?``:`8`)}"
+                                    android:text="@string/b11608" />
+
+                                <CheckBox
+                                    android:id="@+id/b11609"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:checked="@{form.b11609.equals(`9`)}"
+                                    android:onClick="@{()->form.setB11609(form.b11609.equals(`9`)?``:`9`)}"
+                                    android:text="@string/b11609" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="0dp">
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11601x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11601.equals(`1`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11601"
+                                    android:text="@={form.b11601x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11602x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11602.equals(`2`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11602"
+                                    android:text="@={form.b11602x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11603x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11603.equals(`3`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11603"
+                                    android:text="@={form.b11603x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11604x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11604.equals(`4`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11604"
+                                    android:text="@={form.b11604x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11605x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11605.equals(`5`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11605"
+                                    android:text="@={form.b11605x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11606x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11606.equals(`6`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11606"
+                                    android:text="@={form.b11606x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11607x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11607.equals(`7`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11607"
+                                    android:text="@={form.b11607x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11608x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11608.equals(`8`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11608"
+                                    android:text="@={form.b11608x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/b11609x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:enabled="@{form.b11609.equals(`9`)}"
+                                    android:gravity="center"
+                                    android:hint="###"
+                                    android:inputType="number"
+                                    android:maxLength="3"
+                                    android:tag="b11609"
+                                    android:text="@={form.b11609x}"
+                                    app:mask="###.##"
+                                    app:maxValue="1000"
+                                    app:minValue="000.00"
+                                    app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
+                                    app:type="range" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!--&lt;!&ndash;B11601&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1329,7 +1580,7 @@
 
                         </LinearLayout>
 
-                        <!--B11602-->
+                        &lt;!&ndash;B11602&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1361,7 +1612,7 @@
 
                         </LinearLayout>
 
-                        <!--B11603-->
+                        &lt;!&ndash;B11603&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1392,7 +1643,7 @@
 
                         </LinearLayout>
 
-                        <!--B11604-->
+                        &lt;!&ndash;B11604&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1423,7 +1674,7 @@
 
                         </LinearLayout>
 
-                        <!--B11605-->
+                        &lt;!&ndash;B11605&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1454,7 +1705,7 @@
 
                         </LinearLayout>
 
-                        <!--B11606-->
+                        &lt;!&ndash;B11606&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1485,7 +1736,7 @@
 
                         </LinearLayout>
 
-                        <!--B11607-->
+                        &lt;!&ndash;B11607&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1516,7 +1767,7 @@
 
                         </LinearLayout>
 
-                        <!--B11608-->
+                        &lt;!&ndash;B11608&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1547,7 +1798,7 @@
 
                         </LinearLayout>
 
-                        <!--B11609-->
+                        &lt;!&ndash;B11609&ndash;&gt;
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1576,7 +1827,7 @@
                                 app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                                 app:type="range" />
 
-                        </LinearLayout>
+                        </LinearLayout>-->
 
                         <!--B116961-->
                         <LinearLayout
@@ -1610,6 +1861,7 @@
                                 android:textColor="@color/white" />
 
                         </LinearLayout>
+
                         <!--B116962-->
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1645,6 +1897,7 @@
 
 
                         </LinearLayout>
+
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
