@@ -228,6 +228,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c101204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1012"
+                                android:text="@={foodConsumption.c101204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1011.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -405,8 +434,36 @@
                                 android:checked="@{foodConsumption.c1022.equals(`3`)}"
                                 android:onClick="@{()->foodConsumption.setC1022(`3`)}"
                                 android:text="@string/c102203" />
-
                         </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c102204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1022"
+                                android:text="@={foodConsumption.c102204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -594,6 +651,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c103204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1032"
+                                android:text="@={foodConsumption.c103204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1031.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -773,6 +859,35 @@
                                 android:text="@string/c104203" />
 
                         </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c104204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1042"
+                                android:text="@={foodConsumption.c104204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -960,6 +1075,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c105204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1052"
+                                android:text="@={foodConsumption.c105204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1051.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -1139,6 +1283,35 @@
                                 android:text="@string/c106203" />
 
                         </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c106204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1062"
+                                android:text="@={foodConsumption.c106204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1326,6 +1499,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c107204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1072"
+                                android:text="@={foodConsumption.c107204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1071.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -1505,6 +1707,35 @@
                                 android:text="@string/c108203" />
 
                         </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c108204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1082"
+                                android:text="@={foodConsumption.c108204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1692,6 +1923,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c109204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1092"
+                                android:text="@={foodConsumption.c109204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1091.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -1871,6 +2131,35 @@
                                 android:text="@string/c110203" />
 
                         </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c110204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1102"
+                                android:text="@={foodConsumption.c110204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -2058,6 +2347,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c111204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1112"
+                                android:text="@={foodConsumption.c111204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1111.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -2233,6 +2551,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c112204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1122"
+                                android:text="@={foodConsumption.c112204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:visibility="@{foodConsumption.c1121.equals(`1`) ? View.VISIBLE : View.GONE}">
 
@@ -2404,6 +2751,35 @@
                                 android:text="@string/c113203" />
 
                         </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub_labels"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="@string/c1count" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/c113204x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:tag="c1132"
+                                android:text="@={foodConsumption.c113204x}"
+                                app:maxValue="99"
+                                app:minValue="1"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"

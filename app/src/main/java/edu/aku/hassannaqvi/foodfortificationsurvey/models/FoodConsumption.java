@@ -102,6 +102,19 @@ public class FoodConsumption extends BaseObservable implements Observable {
     private String c1131 = StringUtils.EMPTY;
     private String c1132 = StringUtils.EMPTY;
     private String c1133 = StringUtils.EMPTY;
+    private String c101204x = StringUtils.EMPTY;
+    private String c102204x = StringUtils.EMPTY;
+    private String c103204x = StringUtils.EMPTY;
+    private String c104204x = StringUtils.EMPTY;
+    private String c105204x = StringUtils.EMPTY;
+    private String c106204x = StringUtils.EMPTY;
+    private String c107204x = StringUtils.EMPTY;
+    private String c108204x = StringUtils.EMPTY;
+    private String c109204x = StringUtils.EMPTY;
+    private String c110204x = StringUtils.EMPTY;
+    private String c111204x = StringUtils.EMPTY;
+    private String c112204x = StringUtils.EMPTY;
+    private String c113204x = StringUtils.EMPTY;
 
 
     public String g101 = StringUtils.EMPTY;
@@ -439,6 +452,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1011(String c1011) {
         this.c1011 = c1011;
         setC1012(c1011.equals("2") ? "" : this.c1012);
+        setC101204x(c1011.equals("2") ? "" : this.c101204x);
         setC1013(c1011.equals("2") ? "" : this.c1013);
         notifyPropertyChanged(BR.c1011);
     }
@@ -471,6 +485,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1021(String c1021) {
         this.c1021 = c1021;
         setC1022(c1021.equals("2") ? "" : this.c1022);
+        setC102204x(c1021.equals("2") ? "" : this.c102204x);
         setC1023(c1021.equals("2") ? "" : this.c1023);
         notifyPropertyChanged(BR.c1021);
     }
@@ -503,6 +518,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1031(String c1031) {
         this.c1031 = c1031;
         setC1032(c1031.equals("2") ? "" : this.c1032);
+        setC103204x(c1031.equals("2") ? "" : this.c103204x);
         setC1033(c1031.equals("2") ? "" : this.c1033);
         notifyPropertyChanged(BR.c1031);
     }
@@ -535,6 +551,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1041(String c1041) {
         this.c1041 = c1041;
         setC1042(c1041.equals("2") ? "" : this.c1042);
+        setC104204x(c1041.equals("2") ? "" : this.c104204x);
         setC1043(c1041.equals("2") ? "" : this.c1043);
         notifyPropertyChanged(BR.c1041);
     }
@@ -567,6 +584,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1051(String c1051) {
         this.c1051 = c1051;
         setC1052(c1051.equals("2") ? "" : this.c1052);
+        setC105204x(c1051.equals("2") ? "" : this.c105204x);
         setC1053(c1051.equals("2") ? "" : this.c1053);
         notifyPropertyChanged(BR.c1051);
     }
@@ -599,6 +617,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1061(String c1061) {
         this.c1061 = c1061;
         setC1062(c1061.equals("2") ? "" : this.c1062);
+        setC106204x(c1061.equals("2") ? "" : this.c106204x);
         setC1063(c1061.equals("2") ? "" : this.c1063);
         notifyPropertyChanged(BR.c1061);
     }
@@ -631,6 +650,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1071(String c1071) {
         this.c1071 = c1071;
         setC1072(c1071.equals("2") ? "" : this.c1072);
+        setC107204x(c1071.equals("2") ? "" : this.c107204x);
         setC1073(c1071.equals("2") ? "" : this.c1073);
         notifyPropertyChanged(BR.c1071);
     }
@@ -663,6 +683,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1081(String c1081) {
         this.c1081 = c1081;
         setC1082(c1081.equals("2") ? "" : this.c1082);
+        setC108204x(c1081.equals("2") ? "" : this.c108204x);
         setC1083(c1081.equals("2") ? "" : this.c1083);
         notifyPropertyChanged(BR.c1081);
     }
@@ -695,6 +716,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1091(String c1091) {
         this.c1091 = c1091;
         setC1092(c1091.equals("2") ? "" : this.c1092);
+        setC109204x(c1091.equals("2") ? "" : this.c109204x);
         setC1093(c1091.equals("2") ? "" : this.c1093);
         notifyPropertyChanged(BR.c1091);
     }
@@ -727,6 +749,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1101(String c1101) {
         this.c1101 = c1101;
         setC1102(c1101.equals("2") ? "" : this.c1102);
+        setC110204x(c1101.equals("2") ? "" : this.c110204x);
         setC1103(c1101.equals("2") ? "" : this.c1103);
         notifyPropertyChanged(BR.c1101);
     }
@@ -759,6 +782,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1111(String c1111) {
         this.c1111 = c1111;
         setC1112(c1111.equals("2") ? "" : this.c1112);
+        setC111204x(c1111.equals("2") ? "" : this.c111204x);
         setC1113(c1111.equals("2") ? "" : this.c1113);
         notifyPropertyChanged(BR.c1111);
     }
@@ -791,6 +815,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1121(String c1121) {
         this.c1121 = c1121;
         setC1122(c1121.equals("2") ? "" : this.c1122);
+        setC112204x(c1121.equals("2") ? "" : this.c112204x);
         setC1123(c1121.equals("2") ? "" : this.c1123);
         notifyPropertyChanged(BR.c1121);
     }
@@ -823,6 +848,7 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1131(String c1131) {
         this.c1131 = c1131;
         setC1132(c1131.equals("2") ? "" : this.c1132);
+        setC113204x(c1131.equals("2") ? "" : this.c113204x);
         setC1133(c1131.equals("2") ? "" : this.c1133);
         notifyPropertyChanged(BR.c1131);
     }
@@ -845,6 +871,137 @@ public class FoodConsumption extends BaseObservable implements Observable {
     public void setC1133(String c1133) {
         this.c1133 = c1133;
         notifyPropertyChanged(BR.c1133);
+    }
+
+
+    @Bindable
+    public String getC101204x() {
+        return c101204x;
+    }
+
+    public void setC101204x(String C101204x) {
+        this.c101204x = C101204x;
+        notifyPropertyChanged(BR.c101204x);
+    }
+
+    @Bindable
+    public String getC102204x() {
+        return c102204x;
+    }
+
+    public void setC102204x(String c102204x) {
+        this.c102204x = c102204x;
+        notifyPropertyChanged(BR.c102204x);
+    }
+
+    @Bindable
+    public String getC103204x() {
+        return c103204x;
+    }
+
+    public void setC103204x(String c103204x) {
+        this.c103204x = c103204x;
+        notifyPropertyChanged(BR.c103204x);
+    }
+
+    @Bindable
+    public String getC104204x() {
+        return c104204x;
+    }
+
+    public void setC104204x(String c104204x) {
+        this.c104204x = c104204x;
+        notifyPropertyChanged(BR.c104204x);
+    }
+
+    @Bindable
+    public String getC105204x() {
+        return c105204x;
+    }
+
+    public void setC105204x(String c105204x) {
+        this.c105204x = c105204x;
+        notifyPropertyChanged(BR.c105204x);
+    }
+
+    @Bindable
+    public String getC106204x() {
+        return c106204x;
+    }
+
+    public void setC106204x(String c106204x) {
+        this.c106204x = c106204x;
+        notifyPropertyChanged(BR.c106204x);
+    }
+
+    @Bindable
+    public String getC107204x() {
+        return c107204x;
+    }
+
+    public void setC107204x(String c107204x) {
+        this.c107204x = c107204x;
+        notifyPropertyChanged(BR.c107204x);
+    }
+
+    @Bindable
+    public String getC108204x() {
+        return c108204x;
+    }
+
+    public void setC108204x(String c108204x) {
+        this.c108204x = c108204x;
+        notifyPropertyChanged(BR.c108204x);
+    }
+
+    @Bindable
+    public String getC109204x() {
+        return c109204x;
+    }
+
+    public void setC109204x(String c109204x) {
+        this.c109204x = c109204x;
+        notifyPropertyChanged(BR.c109204x);
+    }
+
+    @Bindable
+    public String getC110204x() {
+        return c110204x;
+    }
+
+    public void setC110204x(String c110204x) {
+        this.c110204x = c110204x;
+        notifyPropertyChanged(BR.c110204x);
+    }
+
+    @Bindable
+    public String getC111204x() {
+        return c111204x;
+    }
+
+    public void setC111204x(String c111204x) {
+        this.c111204x = c111204x;
+        notifyPropertyChanged(BR.c111204x);
+    }
+
+    @Bindable
+    public String getC112204x() {
+        return c112204x;
+    }
+
+    public void setC112204x(String c112204x) {
+        this.c112204x = c112204x;
+        notifyPropertyChanged(BR.c112204x);
+    }
+
+    @Bindable
+    public String getC113204x() {
+        return c113204x;
+    }
+
+    public void setC113204x(String c113204x) {
+        this.c113204x = c113204x;
+        notifyPropertyChanged(BR.c113204x);
     }
 
 
@@ -1649,6 +1806,19 @@ public class FoodConsumption extends BaseObservable implements Observable {
             this.c1131 = json.getString("c1131");
             this.c1132 = json.getString("c1132");
             this.c1133 = json.getString("c1133");
+            this.c101204x = json.getString("c101204x");
+            this.c102204x = json.getString("c102204x");
+            this.c103204x = json.getString("c103204x");
+            this.c104204x = json.getString("c104204x");
+            this.c105204x = json.getString("c105204x");
+            this.c106204x = json.getString("c106204x");
+            this.c107204x = json.getString("c107204x");
+            this.c108204x = json.getString("c108204x");
+            this.c109204x = json.getString("c109204x");
+            this.c110204x = json.getString("c110204x");
+            this.c111204x = json.getString("c111204x");
+            this.c112204x = json.getString("c112204x");
+            this.c113204x = json.getString("c113204x");
         }
     }
 
@@ -1826,7 +1996,20 @@ public class FoodConsumption extends BaseObservable implements Observable {
                 .put("c1123", c1123)
                 .put("c1131", c1131)
                 .put("c1132", c1132)
-                .put("c1133", c1133);
+                .put("c1133", c1133)
+                .put("c101204x", c101204x)
+                .put("c102204x", c102204x)
+                .put("c103204x", c103204x)
+                .put("c104204x", c104204x)
+                .put("c105204x", c105204x)
+                .put("c106204x", c106204x)
+                .put("c107204x", c107204x)
+                .put("c108204x", c108204x)
+                .put("c109204x", c109204x)
+                .put("c110204x", c110204x)
+                .put("c111204x", c111204x)
+                .put("c112204x", c112204x)
+                .put("c113204x", c113204x);
         return json.toString();
     }
 

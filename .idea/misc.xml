@@ -12,8 +12,8 @@
         <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_a2.xml" value="0.5" />
         <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_a31.xml" value="0.5" />
         <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_b1.xml" value="0.5125" />
-        <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_b2.xml" value="0.5125" />
-        <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_c1.xml" value="0.5125" />
+        <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_b2.xml" value="0.5" />
+        <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_c1.xml" value="0.5" />
         <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_c2.xml" value="0.46" />
         <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_g1.xml" value="0.40870062965083" />
         <entry key="..\:/Android Office Work/foodfortificationsurvey/app/src/main/res/layout/activity_section_g2.xml" value="0.5578125" />
@@ -128,7 +128,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
