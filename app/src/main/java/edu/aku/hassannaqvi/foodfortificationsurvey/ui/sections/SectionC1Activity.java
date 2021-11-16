@@ -54,7 +54,7 @@ public class SectionC1Activity extends AppCompatActivity {
         }
         // Child
         else if (MainApp.foodIndex == 1) {
-            bi.c1res01.setText(childName);
+            bi.c1res02.setText(childName);
             bi.c1res01.setVisibility(View.GONE);
             bi.c1res02.setVisibility(View.VISIBLE);
         }
