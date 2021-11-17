@@ -53,11 +53,11 @@
 
 
 
-                        <TextView
-                            style="@style/info"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/inse" />
+                <TextView
+                    style="@style/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inse" />
 
                 <!-- e101  Radio   -->
                 <androidx.cardview.widget.CardView
