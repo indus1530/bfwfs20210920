@@ -303,18 +303,20 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
 
         // Select Index Mother using KishGrid
-        MainApp.selectedMWRA = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.mwraList.size());
-        int indx = MainApp.mwraList.get(Integer.parseInt(MainApp.selectedMWRA));
+        String kishGridMWRA = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.mwraList.size());
+        int indx = MainApp.mwraList.get(Integer.parseInt(kishGridMWRA));
 
         // Updating database to mark indexed mother
-        MainApp.familyMember = MainApp.familyList.get(indx - 1);
+        MainApp.selectedMWRA = String.valueOf(indx - 1);
+        MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA));
         db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "1");
 
         // Updating adapter
-        MainApp.familyList.get(indx - 1).setIndexed("1");
+        MainApp.familyList.get(Integer.parseInt(MainApp.selectedMWRA)).setIndexed("1");
 
-        //familyMembersAdapter.notifyItemChanged(indx - 1);
+        familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.selectedMWRA));
         int i = 0;
+
         MainApp.childOfSelectedMWRAList = new ArrayList<>();
         for (FamilyMembers fm : MainApp.familyList) {
             if (fm.getA213().equals(MainApp.familyMember.getA201())) {
@@ -322,16 +324,17 @@ public class FamilyMambersListActivity extends AppCompatActivity {
             }
         }
 
-        MainApp.selectedChild = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.childOfSelectedMWRAList.size());
-        indx = MainApp.childOfSelectedMWRAList.get(Integer.parseInt(MainApp.selectedChild));
+        String kishGridChild = MainApp.kishGrid(Integer.parseInt(MainApp.form.getSno()), MainApp.childOfSelectedMWRAList.size());
+        indx = MainApp.childOfSelectedMWRAList.get(Integer.parseInt(kishGridChild));
 
-        MainApp.familyMember = MainApp.familyList.get(indx - 1);
+        MainApp.selectedChild = String.valueOf((indx -1));
+        MainApp.familyMember = MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild));
         db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "2");
 
         // Updating adapter
-        MainApp.familyList.get(indx - 1).setIndexed("1");
+        MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).setIndexed("1");
 
-        familyMembersAdapter.notifyDataSetChanged();
+        familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.selectedChild));
 
         bi.btnRand.setVisibility(View.INVISIBLE);
         // bi.btnContinue.setVisibility(View.VISIBLE);
