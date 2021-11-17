@@ -664,7 +664,7 @@ public class SyncActivity extends AppCompatActivity {
                 Toast.makeText(this, "No photos to upload.", Toast.LENGTH_SHORT).show();
             }
         } else {
-            bi.mTextViewS.setText("No photots were taken.");
+            bi.mTextViewS.setText("No photos were taken.");
 
             Toast.makeText(this, "No photos were taken", Toast.LENGTH_SHORT).show();
         }

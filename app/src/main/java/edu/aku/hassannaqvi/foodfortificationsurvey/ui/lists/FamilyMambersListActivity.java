@@ -145,7 +145,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
 
                 String motherSno = fm.getA213(); // mother's line number from child
                 if (!motherSno.equals("") && !motherSno.equals("97") && !MainApp.mwraList.contains(Integer.parseInt(motherSno))) {
-                    MainApp.mwraList.add(Integer.parseInt(motherSno));
+                   // MainApp.mwraList.add(Integer.parseInt(motherSno));
                     FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
 
                     if (mother.getA211().equals("1")) {
@@ -311,7 +311,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "1");
 
         // Updating adapter
-        MainApp.familyList.get(indx).setIndexed("1");
+        MainApp.familyList.get(indx - 1).setIndexed("1");
 
         //familyMembersAdapter.notifyItemChanged(indx - 1);
         int i = 0;
