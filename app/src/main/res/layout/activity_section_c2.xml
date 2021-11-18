@@ -474,6 +474,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.c20601.equals(`1`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20601(form.c20601.equals(`1`)?``:`1`)}"
                                 android:text="@string/c20601" />
 
@@ -481,7 +482,8 @@
                                 android:id="@+id/c20602"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`2`)}"
+                                android:checked="@{form.c20602.equals(`2`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20602(form.c20602.equals(`2`)?``:`2`)}"
                                 android:text="@string/c20602" />
 
@@ -489,7 +491,8 @@
                                 android:id="@+id/c20603"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`3`)}"
+                                android:checked="@{form.c20603.equals(`3`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20603(form.c20603.equals(`3`)?``:`3`)}"
                                 android:text="@string/c20603" />
 
@@ -497,7 +500,8 @@
                                 android:id="@+id/c20604"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`4`)}"
+                                android:checked="@{form.c20604.equals(`4`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20604(form.c20604.equals(`4`)?``:`4`)}"
                                 android:text="@string/c20604" />
 
@@ -505,7 +509,8 @@
                                 android:id="@+id/c20605"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`5`)}"
+                                android:checked="@{form.c20605.equals(`5`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20605(form.c20605.equals(`5`)?``:`5`)}"
                                 android:text="@string/c20605" />
 
@@ -513,7 +518,8 @@
                                 android:id="@+id/c20606"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`6`)}"
+                                android:checked="@{form.c20606.equals(`6`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20606(form.c20606.equals(`6`)?``:`6`)}"
                                 android:text="@string/c20606" />
 
@@ -521,7 +527,8 @@
                                 android:id="@+id/c20607"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`7`)}"
+                                android:checked="@{form.c20607.equals(`7`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20607(form.c20607.equals(`7`)?``:`7`)}"
                                 android:text="@string/c20607" />
 
@@ -529,7 +536,8 @@
                                 android:id="@+id/c20608"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`8`)}"
+                                android:checked="@{form.c20608.equals(`8`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20608(form.c20608.equals(`8`)?``:`8`)}"
                                 android:text="@string/c20608" />
 
@@ -537,7 +545,7 @@
                                 android:id="@+id/c20698"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`98`)}"
+                                android:checked="@{form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20698(form.c20698.equals(`98`)?``:`98`)}"
                                 android:text="@string/c20698" />
 
@@ -545,7 +553,8 @@
                                 android:id="@+id/c20696"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:checked="@{form.c206.equals(`96`)}"
+                                android:checked="@{form.c20696.equals(`96`)}"
+                                android:enabled="@{!form.c20698.equals(`98`)}"
                                 android:onClick="@{()->form.setC20696(form.c20696.equals(`96`)?``:`96`)}"
                                 android:text="@string/c20696" />
 
@@ -557,7 +566,7 @@
                                 android:hint="@string/c20696"
                                 android:tag="c20696"
                                 android:text="@={form.c20696x}"
-                                android:visibility="@{form.c206.equals(`96`) ? View.VISIBLE : View.GONE}" />
+                                android:visibility="@{form.c20696.equals(`96`) ? View.VISIBLE : View.GONE}" />
 
                         </LinearLayout>
 

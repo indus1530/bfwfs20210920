@@ -91,6 +91,7 @@ public class SectionA1Activity extends AppCompatActivity {
         }
     }
 
+
     private boolean updateDB() {
         if (MainApp.superuser) return true;
 
@@ -131,13 +132,26 @@ public class SectionA1Activity extends AppCompatActivity {
 
 
     public void btnEnd(View view) {
-        finish();
-        startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+        if (!formValidationEnd()) return;
+        if (!insertNewRecord()) return;
+        if (updateDB()) {
+            finish();
+            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+        } else {
+            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+        }
+        /*finish();
+        startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));*/
     }
 
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
+    }
+
+
+    private boolean formValidationEnd() {
+        return Validator.emptyCheckingContainer(this, bi.GrpName01);
     }
 
 
