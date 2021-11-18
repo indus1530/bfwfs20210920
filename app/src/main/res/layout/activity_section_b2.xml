@@ -372,6 +372,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{form.b10514.equals(`14`)}"
+                                android:enabled="@{!form.b10598.equals(`98`)}"
                                 android:onClick="@{()->form.setB10514(form.b10514.equals(`14`)?``:`14`)}"
                                 android:text="@string/b10514" />
                         </LinearLayout>
