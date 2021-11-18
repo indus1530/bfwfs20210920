@@ -4013,6 +4013,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11301(String e11301) {
+        if (this.e11301.equals(e11301)) return; // for all checkboxes
         this.e11301 = e11301;
         notifyPropertyChanged(BR.e11301);
     }
@@ -4023,6 +4024,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11302(String e11302) {
+        if (this.e11302.equals(e11302)) return; // for all checkboxes
         this.e11302 = e11302;
         notifyPropertyChanged(BR.e11302);
     }
@@ -4033,6 +4035,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11303(String e11303) {
+        if (this.e11303.equals(e11303)) return; // for all checkboxes
         this.e11303 = e11303;
         notifyPropertyChanged(BR.e11303);
     }
@@ -4043,6 +4046,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11304(String e11304) {
+        if (this.e11304.equals(e11304)) return; // for all checkboxes
         this.e11304 = e11304;
         notifyPropertyChanged(BR.e11304);
     }
@@ -4053,6 +4057,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11305(String e11305) {
+        if (this.e11305.equals(e11305)) return; // for all checkboxes
         this.e11305 = e11305;
         notifyPropertyChanged(BR.e11305);
     }
@@ -4063,6 +4068,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11306(String e11306) {
+        if (this.e11306.equals(e11306)) return; // for all checkboxes
         this.e11306 = e11306;
         notifyPropertyChanged(BR.e11306);
     }
@@ -4073,6 +4079,7 @@ public class Form extends BaseObservable implements Observable {
     }
 
     public void setE11396(String e11396) {
+        if (this.e11396.equals(e11396)) return; // for all checkboxes
         this.e11396 = e11396;
         setE11396x(e113.equals("96") ? this.e11396x : "");
         notifyPropertyChanged(BR.e11396);
