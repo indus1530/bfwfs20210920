@@ -152,7 +152,6 @@
                             android:id="@+id/c1011"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1012.clearCheck() + c1013.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -177,7 +176,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1011.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1011(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1011(`2`) + c1012.clearCheck() + c1013.clearCheck()}"
                                 android:text="@string/c101102" />
 
                         </RadioGroup>
@@ -365,7 +364,6 @@
                             android:id="@+id/c1021"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1022.clearCheck() + c1023.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -390,7 +388,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1021.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1021(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1021(`2`) + c1022.clearCheck() + c1023.clearCheck()}"
                                 android:text="@string/c102102" />
 
                         </RadioGroup>
@@ -577,7 +575,6 @@
                             android:id="@+id/c1031"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1032.clearCheck() + c1033.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -602,7 +599,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1031.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1031(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1031(`2`) + c1032.clearCheck() + c1033.clearCheck()}"
                                 android:text="@string/c103102" />
 
                         </RadioGroup>
@@ -790,7 +787,6 @@
                             android:id="@+id/c1041"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1042.clearCheck() + c1043.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -815,7 +811,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1041.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1041(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1041(`2`) + c1042.clearCheck() + c1043.clearCheck()}"
                                 android:text="@string/c104102" />
 
                         </RadioGroup>
@@ -1003,7 +999,6 @@
                             android:id="@+id/c1051"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1052.clearCheck() + c1053.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1028,7 +1023,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1051.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1051(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1051(`2`) + c1052.clearCheck() + c1053.clearCheck()}"
                                 android:text="@string/c105102" />
 
                         </RadioGroup>
@@ -1216,7 +1211,6 @@
                             android:id="@+id/c1061"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1062.clearCheck() + c1063.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1241,7 +1235,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1061.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1061(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1061(`2`) + c1062.clearCheck() + c1063.clearCheck()}"
                                 android:text="@string/c106102" />
 
                         </RadioGroup>
@@ -1429,7 +1423,6 @@
                             android:id="@+id/c1071"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1072.clearCheck() + c1073.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1454,7 +1447,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1071.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1071(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1071(`2`) + c1072.clearCheck() + c1073.clearCheck()}"
                                 android:text="@string/c107102" />
 
                         </RadioGroup>
@@ -1642,7 +1635,6 @@
                             android:id="@+id/c1081"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1082.clearCheck() + c1083.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1667,7 +1659,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1081.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1081(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1081(`2`) + c1082.clearCheck() + c1083.clearCheck()}"
                                 android:text="@string/c108102" />
 
                         </RadioGroup>
@@ -1855,7 +1847,6 @@
                             android:id="@+id/c1091"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1092.clearCheck() + c1093.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1880,7 +1871,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1091.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1091(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1091(`2`) + c1092.clearCheck() + c1093.clearCheck()}"
                                 android:text="@string/c109102" />
 
                         </RadioGroup>
@@ -2068,7 +2059,6 @@
                             android:id="@+id/c1101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1102.clearCheck() + c1103.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2093,7 +2083,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1101.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1101(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1101(`2`) + c1102.clearCheck() + c1103.clearCheck()}"
                                 android:text="@string/c110102" />
 
                         </RadioGroup>
@@ -2281,7 +2271,6 @@
                             android:id="@+id/c1111"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1112.clearCheck() + c1113.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2306,7 +2295,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1111.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1111(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1111(`2`) + c1112.clearCheck() + c1113.clearCheck()}"
                                 android:text="@string/c111102" />
 
                         </RadioGroup>
@@ -2486,7 +2475,6 @@
                             android:id="@+id/c1121"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1122.clearCheck() + c1123.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2511,7 +2499,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1121.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1121(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1121(`2`) + c1122.clearCheck() + c1123.clearCheck()}"
                                 android:text="@string/c112102" />
 
                         </RadioGroup>
@@ -2691,7 +2679,6 @@
                             android:id="@+id/c1131"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c1132.clearCheck() + c1133.clearCheck()}"
                             android:orientation="horizontal">
 
                             <TextView
@@ -2716,7 +2703,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:checked="@{foodConsumption.c1131.equals(`2`)}"
-                                android:onClick="@{()->foodConsumption.setC1131(`2`)}"
+                                android:onClick="@{()->foodConsumption.setC1131(`2`) + c1132.clearCheck() + c1133.clearCheck()}"
                                 android:text="@string/c113102" />
 
                         </RadioGroup>

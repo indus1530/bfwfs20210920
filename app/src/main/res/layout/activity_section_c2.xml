@@ -91,9 +91,7 @@
                             android:id="@+id/c201"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onCheckedChanged="@{()->c202.clearCheck() + c203.clearCheck()}"
                             android:orientation="horizontal">
-                            <!--                            + c206.clearCheck()-->
 
                             <RadioButton
                                 android:id="@+id/c20101"
@@ -110,7 +108,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:checked="@{form.c201.equals(`2`)}"
-                                android:onClick="@{()->form.setC201(`2`)}"
+                                android:onClick="@{()->form.setC201(`2`) + c202.clearCheck() + c203.clearCheck()}"
                                 android:text="@string/c20102" />
 
                         </RadioGroup>
@@ -279,7 +277,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
-                            <!--                            android:onCheckedChanged="@{()->c206.clearCheck()}"-->
 
                             <RadioButton
                                 android:id="@+id/c20301"

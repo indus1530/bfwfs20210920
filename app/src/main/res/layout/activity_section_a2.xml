@@ -193,7 +193,6 @@
                         </LinearLayout>
 
                         <RadioGroup
-                            android:onCheckedChanged="@{()->a207t.clearCheck() }"
                             android:id="@+id/a203t"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -211,7 +210,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="@{member.a203t.equals(`2`)}"
-                                android:onClick="@{()->member.setA203t(`2`)}"
+                                android:onClick="@{()->member.setA203t(`2`) + a20702.setChecked(false)}"
                                 android:text="@string/a20302" />
 
                             <RadioButton
@@ -615,10 +614,10 @@
                                 android:text="@string/a20701" />
 
                             <RadioButton
-                                android:enabled="@{!member.a203t.equals(`2`)}"
                                 android:id="@+id/a20702"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:enabled="@{!member.a203t.equals(`2`)}"
                                 android:checked="@{member.a207t.equals(`2`)}"
                                 android:onClick="@{()->member.setA207t(`2`)}"
                                 android:text="@string/a20702" />
