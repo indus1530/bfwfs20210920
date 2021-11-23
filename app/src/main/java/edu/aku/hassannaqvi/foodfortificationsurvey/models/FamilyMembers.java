@@ -396,8 +396,8 @@ public class FamilyMembers extends BaseObservable {
         /*    setA207t(this.a207t);
             setA208t(this.a208t);*/
             } else {
-                setA207t("");
-                setA208t("");
+/*                setA207t("");
+                setA208t("");*/
             }
         }
 
@@ -428,7 +428,7 @@ public class FamilyMembers extends BaseObservable {
 
     public void setA208t(String a208t) {
         this.a208t = a208t;
-        setA209t(a208t.equals("2") ? this.a209t : "");
+        setA209t(a208t.equals("2") ? "" : this.a209t);
         notifyPropertyChanged(BR.a208t);
     }
 

@@ -499,12 +499,12 @@
                             android:layout_height="wrap_content"
                             android:enabled="@{form.e105.equals(`1`)}"
                             android:gravity="center"
-                            android:hint="####"
+                            android:hint="#####"
                             android:inputType="number"
-                            android:maxLength="4"
+                            android:maxLength="5"
                             android:tag="e10501"
                             android:text="@={form.e10501x}"
-                            app:maxValue="1000"
+                            app:maxValue="10000"
                             app:minValue="1"
                             app:type="range" />
 
@@ -609,11 +609,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:hint="####"
+                            android:hint="#####"
                             android:inputType="number"
-                            android:maxLength="4"
+                            android:maxLength="5"
                             android:text="@={form.e107}"
-                            app:maxValue="1000"
+                            app:maxValue="10000"
                             app:minValue="0"
                             app:type="range" />
 

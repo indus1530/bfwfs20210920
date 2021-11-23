@@ -170,8 +170,8 @@
     <string name="a21007">زراعت سے متعلق</string>
     <string name="a21008">بزنس/کاروبار</string>
     <string name="a21009">طالب علم</string>
-    <string name="a21010">بیروزگار</string>
-    <string name="a21011">بے روزگار</string>
+    <string name="a21010">بے روزگار</string>
+    <string name="a21011">ریٹائرڈ</string>
     <string name="a21012">ٹیچر/استاد</string>
     <string name="a21099">لاگو نہیں ہوتا</string>
     <string name="a211">(نام) کیا اس وقت موجود ہے</string>
@@ -687,7 +687,7 @@
     <string name="b10502">معیاراچھا ہے</string>
     <string name="b10503">مقدارپورا ملتا ہے </string>
     <string name="b10504"> ذائقہ اچھا ہے </string>
-    <string name="b10505">ذائقہ اچھا ہے </string>
+    <string name="b10505">قیمت مناسب ہے </string>
     <string name="b10506">غذائیت والا ہے </string>
     <string name="b10507">برانڈ کا امیج </string>
     <string name="b10508">پیکیجنگ ڈیزائن اچھی ہے</string>

@@ -617,8 +617,8 @@
                                 android:id="@+id/a20702"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:enabled="@{!member.a203t.equals(`2`)}"
                                 android:checked="@{member.a207t.equals(`2`)}"
+                                android:enabled="@{!member.a203t.equals(`2`)}"
                                 android:onClick="@{()->member.setA207t(`2`)}"
                                 android:text="@string/a20702" />
 
