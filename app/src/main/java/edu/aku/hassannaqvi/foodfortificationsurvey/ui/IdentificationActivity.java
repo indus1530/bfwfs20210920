@@ -51,7 +51,7 @@ public class IdentificationActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_identification);
         bi.setCallback(this);
         if (MainApp.superuser)
-            bi.btnContinue.setText("Review Next");
+            bi.btnContinue.setText("Review Form");
         db = MainApp.appInfo.dbHelper;
         // populateSpinner();
 

@@ -84,7 +84,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                         ) {
                             FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
 
-                            if (mother.getA211().equals("1")) {
+                            if (mother.getA211().equals("1") && Integer.parseInt(mother.getA206()) >= 18) {
                                 MainApp.mwraList.add(Integer.parseInt(motherSno));
                             }
                         }
@@ -122,6 +122,8 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         MainApp.mwraList = new ArrayList<Integer>();
         MainApp.fatherList = new ArrayList<>();
         MainApp.motherList = new ArrayList<>();
+
+        bi.hhNo.setText("Family of: " + MainApp.form.getEbCode() + "-" + MainApp.form.getHhid());
         Log.d(TAG, "onCreate: familyList " + MainApp.familyList.size());
         try {
             MainApp.familyList = db.getMemberBYUID(MainApp.form.getUid());
@@ -148,7 +150,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                    // MainApp.mwraList.add(Integer.parseInt(motherSno));
                     FamilyMembers mother = MainApp.familyList.get(Integer.parseInt(motherSno) - 1);
 
-                    if (mother.getA211().equals("1")) {
+                    if (mother.getA211().equals("1") && Integer.parseInt(mother.getA206()) >= 18) {
                         MainApp.mwraList.add(Integer.parseInt(motherSno));
                     }
                 }

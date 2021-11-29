@@ -49,6 +49,13 @@
                 android:orientation="vertical"
                 android:paddingTop="56dp">
 
+                <TextView
+                    android:id="@+id/hh_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="HH NO" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
