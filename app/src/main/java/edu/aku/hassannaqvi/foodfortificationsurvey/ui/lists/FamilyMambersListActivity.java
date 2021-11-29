@@ -334,7 +334,7 @@ public class FamilyMambersListActivity extends AppCompatActivity {
         db.updatesfamilyListColumn(TableContracts.FamilyMemberListTable.COLUMN_INDEXED, "2");
 
         // Updating adapter
-        MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).setIndexed("1");
+        MainApp.familyList.get(Integer.parseInt(MainApp.selectedChild)).setIndexed("2");
 
         familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.selectedChild));
 

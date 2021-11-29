@@ -26,6 +26,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
     private final List<FamilyMembers> member;
     private final int mExpandedPosition = -1;
     private final int completeCount;
+    private boolean motherPresent = false;
 
     /**
      * Initialize the dataset of the Adapter.
@@ -58,6 +59,8 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         TextView secStatus = viewHolder.secStatus;
         View cloaked = viewHolder.cloak;
         View indexedBar = viewHolder.indexedBar;
+        TextView motherName = viewHolder.motherName;
+
 
         //String pregStatus = familyMember.getRb07().equals("1") ? "Pregnant" : "Not Pregnant";
 
@@ -65,6 +68,25 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
 
         fName.setText(members.getA202());
         fAge.setText(members.getA206() + "y ");
+        motherName.setText(null);
+        String motherRelation = "";
+
+/** Select mother IF
+ *  Mother is alive and present in house
+ */
+        if (!members.getA213().equals("") && !members.getA213().equals("97")
+        ) {
+            if (members.getA204().equals("1")) {
+                motherRelation = " S/o ";
+            } else {
+                motherRelation = " D/o ";
+
+            }
+            motherName.setText(motherRelation + MainApp.familyList.get(Integer.parseInt(members.getA213()) - 1).getA202());
+            motherPresent = MainApp.familyList.get(Integer.parseInt(members.getA213()) - 1).getA211().equals("1");
+
+
+        }
 
         String marStatus = "";
         switch (members.getA207t()) {
@@ -84,12 +106,40 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
                 marStatus = "Value Unknown";
                 break;
         }
+        String idxStatus = "";
+
+        int idxColor;
+        switch (members.getIndexed()) {
+            case "1":
+                idxStatus = " Mother  ";
+                idxColor = mContext.getResources().getColor(R.color.motherBg);
+                break;
+            case "2":
+                idxStatus = "  Child  ";
+                idxColor = mContext.getResources().getColor(R.color.childBg);
+                break;
+       /*     case "3":
+                idxStatus = " Adol. M ";
+                idxColor = mContext.getResources().getColor(R.color.adolMaleBg);
+                break;
+            case "4":
+                idxStatus = " Adol. F ";
+                idxColor = mContext.getResources().getColor(R.color.adolFemaleBg);
+                break;*/
+
+            default:
+                idxStatus = "         ";
+                idxColor = mContext.getResources().getColor(R.color.white);
+
+                break;
+        }
 
         fMaritalStatus.setText(marStatus);
-
+        secStatus.setText(idxStatus);
+        secStatus.setBackgroundColor(idxColor);
 
         cloaked.setVisibility(members.isMwra() ? View.GONE : View.VISIBLE);
-        mainIcon.setImageResource((members.getA204().equals("1") ? R.drawable.ic_boy : R.drawable.ic_girl));
+        mainIcon.setImageResource(members.getA211().equals("1") ? ((members.getA204().equals("1") ? R.drawable.ic_boy : R.drawable.ic_girl)) : R.drawable.ic_not_available);
         //MainApp.selectedMWRA = members.getIndexed().equals("1") || members.getIndexed().equals("2") ? "-" : "";
         mainIcon.setBackgroundColor(members.getIndexed().equals("1") ? mContext.getResources().getColor(R.color.greenLight) : members.getIndexed().equals("2") ? mContext.getResources().getColor(android.R.color.holo_orange_dark) : members.getA204().equals("1") ? mContext.getResources().getColor(R.color.boy_blue) : mContext.getResources().getColor(R.color.girl_pink));
         //  mainIcon.setBackgroundColor(  ((ColorDrawable) mainIcon.getBackground()).getColor());
@@ -139,6 +189,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
         private final ImageView mainIcon;
         private final View cloak;
         private final View indexedBar;
+        private final TextView motherName;
 
 
         public ViewHolder(View v) {
@@ -153,6 +204,7 @@ public class FamilyMembersAdapter extends RecyclerView.Adapter<FamilyMembersAdap
             mainIcon = v.findViewById(R.id.mainIcon);
             cloak = v.findViewById(R.id.cloaked);
             indexedBar = v.findViewById(R.id.indexedBar);
+            motherName = v.findViewById(R.id.chh08);
 
         }
 
