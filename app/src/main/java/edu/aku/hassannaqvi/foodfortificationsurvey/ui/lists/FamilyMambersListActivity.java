@@ -45,6 +45,8 @@ public class FamilyMambersListActivity extends AppCompatActivity {
                 @Override
                 public void onActivityResult(ActivityResult result) {
                     if (result.getResultCode() == Activity.RESULT_OK && !MainApp.superuser) {
+                        Toast.makeText(FamilyMambersListActivity.this, "MemberInfoLauncher", Toast.LENGTH_SHORT).show();
+
                         // There are no request codes
                         //Intent data = result.getData();
                         Intent data = result.getData();
@@ -437,10 +439,10 @@ public class FamilyMambersListActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == RESULT_OK)
-
-            // A213 is line number
-            familyMembersAdapter.notifyItemInserted(Integer.parseInt(MainApp.familyMember.getA213()) - 1);
+        if (requestCode == 2)
+            Toast.makeText(this, "onActivityResult", Toast.LENGTH_SHORT).show();
+        // A213 is line number
+        familyMembersAdapter.notifyItemChanged(Integer.parseInt(MainApp.familyMember.getA201()) - 1);
 
     }
 
