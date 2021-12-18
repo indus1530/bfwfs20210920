@@ -253,8 +253,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10301"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f103.equals(`1`)}"
                                 android:onClick="@{()->form.setF103(`1`)}"
@@ -262,8 +262,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10302"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f103.equals(`2`)}"
                                 android:onClick="@{()->form.setF103(`2`) + f104.clearCheck()}"
@@ -271,8 +271,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10303"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f103.equals(`98`)}"
                                 android:onClick="@{()->form.setF103(`98`) + f104.clearCheck()}"
@@ -280,8 +280,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10399"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f103.equals(`99`)}"
                                 android:onClick="@{()->form.setF103(`99`) + f104.clearCheck()}"
