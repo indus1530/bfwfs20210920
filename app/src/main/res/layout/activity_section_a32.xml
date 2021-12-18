@@ -734,8 +734,8 @@
 
                             <RadioButton
                                 android:id="@+id/a32401"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a324.equals(`1`)}"
                                 android:onClick="@{()->form.setA324(`1`)}"
@@ -743,8 +743,8 @@
 
                             <RadioButton
                                 android:id="@+id/a32402"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a324.equals(`2`)}"
                                 android:onClick="@{()->form.setA324(`2`)}"
@@ -935,62 +935,80 @@
 
                             <RadioButton
                                 android:id="@+id/a32701"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a327.equals(`1`)}"
                                 android:onClick="@{()->form.setA327(`1`)}"
                                 android:text="@string/a32701" />
 
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/a32701x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="###"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:tag="a32701"
+                                android:text="@={form.a32701x}"
+                                android:visibility="@{form.a327.equals(`1`)? View.VISIBLE : View.GONE}"
+                                app:maxValue="999"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent" />
+
                             <RadioButton
                                 android:id="@+id/a32702"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a327.equals(`2`)}"
                                 android:onClick="@{()->form.setA327(`2`)}"
                                 android:text="@string/a32702" />
 
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/a32702x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="###"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:tag="a32702"
+                                android:text="@={form.a32702x}"
+                                android:visibility="@{form.a327.equals(`2`)? View.VISIBLE : View.GONE}"
+                                app:maxValue="999"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent" />
+
                             <RadioButton
                                 android:id="@+id/a32798"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.a327.equals(`98`)}"
                                 android:onClick="@{()->form.setA327(`98`)}"
                                 android:text="@string/a32798" />
 
                         </RadioGroup>
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/a32701x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:hint="###"
-                            android:inputType="number"
-                            android:maxLength="3"
-                            android:tag="a32701"
-                            android:text="@={form.a32701x}"
-                            android:visibility="@{form.a327.equals(`1`)? View.VISIBLE : View.GONE}"
-                            app:maxValue="999"
-                            app:minValue="0"
-                            app:type="range" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/a32702x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:hint="###"
-                            android:inputType="number"
-                            android:maxLength="3"
-                            android:tag="a32702"
-                            android:text="@={form.a32702x}"
-                            android:visibility="@{form.a327.equals(`2`)? View.VISIBLE : View.GONE}"
-                            app:maxValue="999"
-                            app:minValue="0"
-                            app:type="range" />
 
                     </LinearLayout>
 
@@ -1154,13 +1172,12 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:padding="0dp">
+                                android:orientation="vertical">
 
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/a32901x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:enabled="@{form.a32901.equals(`1`)}"
                                     android:gravity="center"
                                     android:hint="###"
@@ -1175,14 +1192,14 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/a32902x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
+                                    android:enabled="@{form.a32902.equals(`2`)}"
                                     android:gravity="center"
                                     android:hint="###"
                                     android:inputType="number"
                                     android:maxLength="3"
                                     android:tag="a32902"
                                     android:text="@={form.a32902x}"
-                                    android:enabled="@{form.a32902.equals(`2`)}"
                                     app:maxValue="100"
                                     app:minValue="0"
                                     app:type="range" />
@@ -1190,7 +1207,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/a32903x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:gravity="center"
                                     android:hint="###"
                                     android:inputType="number"
@@ -1205,7 +1222,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/a32904x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:gravity="center"
                                     android:hint="###"
                                     android:inputType="number"
@@ -1220,7 +1237,7 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/a32905x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
                                     android:gravity="center"
                                     android:hint="###"
                                     android:inputType="number"
@@ -1235,14 +1252,14 @@
                                 <com.edittextpicker.aliazaz.EditTextPicker
                                     android:id="@+id/a32906x"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="52dp"
+                                    android:enabled="@{form.a32906.equals(`6`)}"
                                     android:gravity="center"
                                     android:hint="###"
                                     android:inputType="number"
                                     android:maxLength="3"
                                     android:tag="a32906"
                                     android:text="@={form.a32906x}"
-                                    android:enabled="@{form.a32906.equals(`6`)}"
                                     app:maxValue="100"
                                     app:minValue="0"
                                     app:type="range" />
