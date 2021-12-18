@@ -2550,7 +2550,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:visibility="@{foodConsumption.c1121.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -2562,7 +2563,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c112204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -2570,7 +2571,6 @@
                                 android:maxLength="2"
                                 android:tag="c1122"
                                 android:text="@={foodConsumption.c112204x}"
-                                android:visibility="@{foodConsumption.c1121.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:maxValue="99"
                                 app:minValue="1"
                                 app:type="range" />
