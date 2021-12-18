@@ -240,7 +240,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c101204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="52dp"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -451,7 +451,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c102204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -663,7 +663,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c103204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -875,7 +875,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c104204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -1087,7 +1087,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c105204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -1299,7 +1299,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c106204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
@@ -1511,7 +1511,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/c107204x"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="3"
                                 android:gravity="center"
                                 android:hint="##"
