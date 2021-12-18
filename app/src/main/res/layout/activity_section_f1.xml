@@ -360,7 +360,6 @@
                 </androidx.cardview.widget.CardView>
 
 
-
                 <!-- f105  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVf105"
@@ -398,8 +397,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10501"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f105.equals(`1`)}"
                                 android:onClick="@{()->form.setF105(`1`)}"
@@ -407,8 +406,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10502"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f105.equals(`2`)}"
                                 android:onClick="@{()->form.setF105(`2`) + f102.clearCheck()}"
@@ -416,8 +415,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10503"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f105.equals(`98`)}"
                                 android:onClick="@{()->form.setF105(`98`) + f102.clearCheck()}"
@@ -425,8 +424,8 @@
 
                             <RadioButton
                                 android:id="@+id/f10599"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:checked="@{form.f105.equals(`99`)}"
                                 android:onClick="@{()->form.setF105(`99`) + f102.clearCheck()}"
