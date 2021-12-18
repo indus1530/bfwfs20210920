@@ -227,7 +227,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:visibility="@{foodConsumption.c1011.equals(`1`) ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 style="@style/sub_labels"
@@ -247,7 +248,6 @@
                                 android:maxLength="2"
                                 android:tag="c1012"
                                 android:text="@={foodConsumption.c101204x}"
-                                android:visibility="@{foodConsumption.c1011.equals(`1`) ? View.VISIBLE : View.GONE}"
                                 app:maxValue="99"
                                 app:minValue="1"
                                 app:type="range" />
